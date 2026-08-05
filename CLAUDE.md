@@ -32,24 +32,48 @@ Ce qu'il ne faut **plus** faire : glisser le dossier sur Netlify à la main.
 Sur le site voisin (esquirols.fr), c'est ainsi que la version en ligne s'est
 retrouvée avec un mois de retard sans que personne ne s'en aperçoive.
 
-## Le point noir à traiter en priorité : le poids des images
+## Les images : la règle à ne pas relâcher
 
-**16 Mo d'images pour 19 pages.** C'est, de très loin, le principal défaut de
-ce site.
+Le site pesait **15,5 Mo d'images**, dont **15,6 Mo sur la seule page
+`galerie.html`**. Les visiteurs arrivent en vacances, sur téléphone, avec une
+4G rurale — parfois depuis un gîte sans wifi. Une page qui met une minute à
+s'afficher est refermée avant d'avoir servi à quoi que ce soit.
 
-Le contexte compte : les visiteurs arrivent en vacances, souvent sur téléphone,
-souvent avec une 4G rurale médiocre — parfois depuis un gîte sans wifi. Une
-page qui met huit secondes à afficher une photo du lac est une page refermée
-avant d'avoir servi à quoi que ce soit.
+Après optimisation, ce qu'un visiteur télécharge vraiment :
 
-Règles à appliquer à toute nouvelle image :
+| Page                | Avant   | Sur téléphone | Sur ordinateur |
+| ------------------- | ------- | ------------- | -------------- |
+| `galerie.html`      | 15,6 Mo | **1,8 Mo**    | 4,0 Mo         |
+| `index.html`        | 2,3 Mo  | **0,2 Mo**    | 0,5 Mo         |
+| `l-orb.html`        | 5,3 Mo  | **0,5 Mo**    | 1,1 Mo         |
 
-- format **WebP** (ou AVIF), jamais un JPEG sorti d'appareil photo ;
-- largeur maximale **1600 px** pour une photo pleine largeur, 800 px pour une
-  vignette ;
-- viser **moins de 200 ko** par image, idéalement moins de 100 ;
-- toujours `width`, `height`, un `alt` descriptif, et `loading="lazy"` pour
-  tout ce qui n'est pas visible d'emblée.
+**Toute nouvelle photo doit passer par la même préparation** : trois versions
+WebP (640, 1000, 1600 px) plus un repli JPEG à 1600 px de côté long, servies
+en `<picture>` :
+
+```html
+<picture>
+  <source type="image/webp" sizes="(max-width: 900px) 100vw, 900px"
+    srcset="images/photo-640.webp 640w,
+            images/photo-1000.webp 1000w,
+            images/photo-1600.webp 1600w">
+  <img src="images/photo.jpg" alt="…" width="1600" height="1067"
+       loading="lazy" decoding="async">
+</picture>
+```
+
+Règles :
+
+- **jamais** un JPEG sorti d'appareil photo tel quel (2000 px, 1,2 Mo) ;
+- côté long **1600 px maximum** : la mise en page ne va pas au-delà ;
+- `width` et `height` **obligatoires** — sans eux la page saute quand la photo
+  arrive, en pleine lecture ;
+- `loading="lazy"` partout **sauf** la photo d'ouverture, qui prend
+  `fetchpriority="high"` : la retarder ne fait rien gagner ;
+- un `alt` qui décrit ce qu'on voit, toujours.
+
+Sur `galerie.html`, l'attribut `sizes` vaut `30vw` : la grille fait trois
+colonnes, le navigateur choisit donc la version 640 px et non la 1000.
 
 ## Conventions
 
