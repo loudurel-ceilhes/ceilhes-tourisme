@@ -1,6 +1,15 @@
 [build]
   publish = "."
 
+# Netlify retirait le « .html » des liens internes à la volée, alors que les
+# balises canoniques, les og:url, le sitemap et les données structurées
+# annoncent toutes l'adresse AVEC .html. Google voyait donc deux adresses pour
+# chaque page. On coupe la réécriture : tout dit désormais la même chose.
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = false
+
 [[redirects]]
   from = "/randonnees-vtt.html"
   to = "/randonnees.html"
