@@ -473,7 +473,7 @@ footer small a{color:var(--lac-clair)}
 /* agenda */
 .agenda-list{display:grid;gap:1rem;max-width:880px;margin:0 auto}
 .ev-card{display:flex;gap:1.2rem;align-items:center;background:var(--blanc);border-radius:16px;padding:1rem 1.3rem;box-shadow:var(--ombre);text-decoration:none;color:var(--texte);transition:transform .3s var(--ease),box-shadow .3s;border-left:4px solid var(--ocre)}
-.ev-card:hover{transform:translateX(4px);box-shadow:var(--ombre-h)}
+a.ev-card:hover{transform:translateX(4px);box-shadow:var(--ombre-h)}
 .ev-date{flex:0 0 60px;text-align:center;background:var(--foret-fonce);color:#fff;border-radius:12px;padding:.5rem 0}
 .ev-date .d{display:block;font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;line-height:1;color:var(--or)}
 .ev-date .m{display:block;font-size:.64rem;text-transform:uppercase;letter-spacing:1px;margin-top:.2rem}
@@ -511,3 +511,11 @@ footer small a{color:var(--lac-clair)}
    dans le fichier avait disparu. */
 .page-nav a{font-weight:600;color:var(--foret);text-decoration:underline;text-underline-offset:4px;padding:.7rem 0;display:inline-block}
 .page-nav a:hover{color:var(--lac)}
+
+/* Mention de source de l agenda. La Licence Ouverte impose de citer le
+   createur de la donnee et sa date de mise a jour : ce bloc est une
+   OBLIGATION, pas une decoration. Ne pas le retirer. */
+.agenda-attribution{margin-top:1.6rem;font-size:.86rem;line-height:1.7;color:var(--texte);opacity:.85;text-align:center;max-width:62ch;margin-left:auto;margin-right:auto}
+.agenda-attribution a{color:var(--foret);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+/* Le resume de l evenement, sous son titre. */
+.ev-body p{margin-top:.35rem;font-size:.9rem;line-height:1.55;color:var(--texte);opacity:.82}

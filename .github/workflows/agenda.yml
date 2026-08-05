@@ -1,0 +1,50 @@
+name: Agenda à jour
+
+# Met à jour l'agenda du village à partir des données ouvertes de
+# DATAtourisme (source : office de tourisme du Grand Orb, Licence Ouverte 2.0).
+#
+# Rien à faire à la main : GitHub lance le script chaque matin, et ne publie
+# que si quelque chose a changé. Le site se met alors à jour tout seul.
+
+on:
+  schedule:
+    # 6 h 15 UTC, soit 8 h 15 l'été et 7 h 15 l'hiver. Un horaire décalé de
+    # l'heure pile évite l'embouteillage des tâches planifiées chez GitHub.
+    - cron: '15 6 * * *'
+  # Permet aussi de le déclencher à la main depuis l'onglet Actions.
+  workflow_dispatch:
+
+# Nécessaire pour que l'action puisse enregistrer ses modifications.
+permissions:
+  contents: write
+
+jobs:
+  mettre-a-jour:
+    name: Récupérer les événements et publier
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Récupérer les événements à venir
+        run: node scripts/agenda.mjs
+
+      - name: Publier si l'agenda a changé
+        run: |
+          if git diff --quiet -- agenda.html; then
+            echo "Aucun changement dans l'agenda — rien à publier."
+            exit 0
+          fi
+          git config user.name "Agenda du village"
+          git config user.email "actions@users.noreply.github.com"
+          git add agenda.html
+          git commit -m "agenda : mise à jour depuis les données ouvertes de Grand Orb
+
+          Source : office de tourisme du Grand Orb, via DATAtourisme
+          (Licence Ouverte 2.0). Mise à jour automatique quotidienne."
+          git push
+          echo "Agenda mis à jour et publié."
