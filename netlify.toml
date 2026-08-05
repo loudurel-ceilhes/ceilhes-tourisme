@@ -21,12 +21,6 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Les polices ne changent jamais sans changer de nom : un an.
-[[headers]]
-  for = "/assets/fonts/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
 # Le style et le script changent à chaque correction. `no-cache` ne veut PAS
 # dire « ne pas garder en mémoire » : le navigateur garde sa copie mais
 # demande à chaque fois si elle est encore bonne. Si oui, le serveur répond
@@ -38,6 +32,15 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, no-cache"
+
+# ⚠️ ORDRE IMPORTANT : cette règle vient APRÈS la précédente, sinon la règle
+# générale /assets/* l'écrase. Chez Netlify, à égalité de correspondance,
+# c'est la dernière déclarée qui l'emporte.
+# Les polices ne changent jamais sans changer de nom : un an de cache.
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 # Sans ce type, le navigateur reçoit le manifeste en « octet-stream » et
 # l'ignore : pas d'icône ni de nom corrects à l'ajout sur l'écran d'accueil.
