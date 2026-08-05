@@ -4,6 +4,27 @@
    Une seule feuille consolidée (remplace les couches v1 → v9).
    ========================================================================== */
 
+/* ------------------------------------------------------------
+   POLICES — hébergées sur notre propre site.
+
+   Elles venaient de fonts.googleapis.com et fonts.gstatic.com : deux
+   connexions vers des serveurs extérieurs avant de pouvoir afficher la
+   première ligne. Sur la 4G d'une vallée, cela se compte en centaines de
+   millisecondes — et plus aucune donnée de visiteur ne part chez Google.
+
+   Cormorant Garamond et Outfit sont sous licence SIL Open Font License 1.1.
+   Sous-ensemble latin uniquement : il couvre le français.
+   ------------------------------------------------------------ */
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/cormorant-garamond-italic-400.woff2') format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/cormorant-garamond-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/cormorant-garamond-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/cormorant-garamond-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/outfit-normal-300.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/outfit-normal-300.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/outfit-normal-300.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/outfit-normal-300.woff2') format('woff2')}
+
+
 :root{
   --foret:#1e4234;
   --foret-fonce:#0e241c;
