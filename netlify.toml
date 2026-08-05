@@ -1,5 +1,11 @@
 [build]
   publish = "."
+  # Colle une empreinte du contenu à l'adresse du style et du script
+  # (styles.css?v=39135ee0). Sans elle, un navigateur qui a gardé l'ancienne
+  # feuille de style continue de l'appliquer pendant des jours — c'est ce qui
+  # affichait les photos de la galerie étirées quatre fois en hauteur alors que
+  # la correction était en ligne. Détails dans scripts/version-assets.mjs.
+  command = "node scripts/version-assets.mjs"
 
 # Netlify retirait le « .html » des liens internes à la volée, alors que les
 # balises canoniques, les og:url, le sitemap et les données structurées

@@ -85,6 +85,34 @@ Règles :
 Sur `galerie.html`, l'attribut `sizes` vaut `30vw` : la grille fait trois
 colonnes, le navigateur choisit donc la version 640 px et non la 1000.
 
+### Le piège qui a fait croire que la correction ne marchait pas
+
+La règle `height:auto` a été corrigée, publiée, vérifiée en ligne… et Lou a
+continué de voir les photos étirées pendant des jours. Ce n'était pas le site :
+**son navigateur appliquait encore la feuille de style d'avant**, mise en cache
+quand `/assets/*` était encore servi avec un an de validité.
+
+Leçon : **on ne peut pas annuler un cache déjà posé.** Tant que la copie n'a
+pas expiré, le navigateur ne redemande rien. La seule sortie est de changer
+l'**adresse** du fichier.
+
+D'où `scripts/version-assets.mjs`, que Netlify lance à chaque publication
+(`command` dans `netlify.toml`) : il transforme `assets/styles.css` en
+`assets/styles.css?v=39135ee0`, l'empreinte étant calculée sur le contenu.
+Elle ne bouge que si le fichier a vraiment changé.
+
+**Écrivez donc toujours `assets/styles.css` tout court dans le HTML** : la
+publication s'occupe du reste. Le script est idempotent, on peut le relancer
+sans risque :
+
+```bash
+node scripts/version-assets.mjs
+```
+
+Signe qui doit alerter : « j'ai corrigé, c'est en ligne, mais lui voit encore
+l'ancien ». Avant de chercher un bug, vérifier ce que le navigateur applique
+vraiment — pas ce que le fichier contient.
+
 ## Conventions
 
 - **Langue** : tout le contenu visible est en français. Noms de fichiers en
