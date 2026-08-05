@@ -21,12 +21,23 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Le style et le script, eux, changent à chaque correction. Un cache long
-# ferait voir l'ancienne version pendant des jours à un habitué.
+# Les polices ne changent jamais sans changer de nom : un an.
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Le style et le script changent à chaque correction. `no-cache` ne veut PAS
+# dire « ne pas garder en mémoire » : le navigateur garde sa copie mais
+# demande à chaque fois si elle est encore bonne. Si oui, le serveur répond
+# « pas de changement » en quelques octets. Coût quasi nul, et fin des
+# affichages bancals où un ancien style rencontre un nouveau contenu.
+# (Vécu : après avoir rapatrié les polices, elles ne s'appliquaient pas —
+# le navigateur servait le CSS de la veille pendant une heure.)
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, no-cache"
 
 # Sans ce type, le navigateur reçoit le manifeste en « octet-stream » et
 # l'ignore : pas d'icône ni de nom corrects à l'ajout sur l'écran d'accueil.
