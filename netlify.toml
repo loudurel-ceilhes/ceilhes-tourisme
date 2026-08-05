@@ -6,7 +6,31 @@
   to = "/randonnees.html"
   status = 301
 
+# Les photos ne changent jamais sans changer de nom : on les garde un an.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Le style et le script, eux, changent à chaque correction. Un cache long
+# ferait voir l'ancienne version pendant des jours à un habitué.
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=3600"
+
+# Sans ce type, le navigateur reçoit le manifeste en « octet-stream » et
+# l'ignore : pas d'icône ni de nom corrects à l'ajout sur l'écran d'accueil.
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+    Cache-Control = "public, max-age=86400"
+
+# Sécurité de base.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
