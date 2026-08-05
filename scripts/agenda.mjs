@@ -33,8 +33,47 @@ const SEC = 'ceilhes-et-rocozels'
 /** Jeu de données « fêtes et manifestations » de DATAtourisme. */
 const API =
   'https://tabular-api.data.gouv.fr/api/resources/2c6023f2-ffce-4c1a-9728-bdc020e463b5/data/'
-const COMMUNE = 'Ceilhes'
-const MAX = 40
+
+/**
+ * Les communes retenues, écrites EXACTEMENT comme dans le flux.
+ *
+ * ⚠️ Ne jamais filtrer sur le seul nom de commune : le flux est national, et
+ * une recherche par ressemblance attrape n'importe quoi. Vérifié : « Fayet »
+ * remonte Chavaniac-Lafayette (Haute-Loire) et « Clapier » remonte Clapiers,
+ * près de Montpellier. D'où le filtrage sur « code postal # nom exact ».
+ *
+ * Le Clapier (12540) et Fayet (12360) ne publient rien dans DATAtourisme :
+ * les ajouter ici ne servirait à rien tant que c'est le cas, mais la ligne
+ * peut être décommentée le jour où ils s'y mettent.
+ */
+const COMMUNES = [
+  '34260#Ceilhes-et-Rocozels',
+  '34260#Avène',
+  '34260#Camplong',
+  "34260#Le Bousquet-d'Orb",
+  '34650#Lunas',
+  '34650#Roqueredonde',
+  '34700#Lodève',
+  '12360#Camarès',
+  '12360#Sylvanès',
+  // '12540#Le Clapier',  — aucune fiche publiée à ce jour
+  // '12360#Fayet',       — aucune fiche publiée à ce jour
+]
+
+/** Codes postaux à interroger, déduits de la liste ci-dessus. */
+const CODES = [...new Set(COMMUNES.map((c) => c.split('#')[0]))]
+
+/** La commune du site : ses événements passent toujours en premier. */
+const ICI = '34260#Ceilhes-et-Rocozels'
+
+/**
+ * Nombre d'événements des communes voisines affichés au maximum.
+ *
+ * ⚠️ Sans ce découpage, Lodève (musée, cinéma, médiathèque : 54 fiches)
+ * remplit la page à elle seule et la féria de Ceilhes disparaît. Or c'est un
+ * site sur Ceilhes : ses rendez-vous passent d'abord, toujours et tous.
+ */
+const MAX_ALENTOURS = 30
 
 /* -------------------------------------------------------------------------- */
 
@@ -131,15 +170,35 @@ function couper(texte, max = 190) {
   return t.slice(0, t.lastIndexOf(' ', max)) + '…'
 }
 
+/**
+ * Récupère toutes les fiches des codes postaux voulus, en suivant la
+ * pagination, puis ne garde que les communes de notre liste.
+ */
 async function recuperer() {
-  const url = `${API}?Code_postal_et_commune__contains=${encodeURIComponent(COMMUNE)}&page_size=${MAX}`
-  const rep = await fetch(url, {
-    headers: { 'User-Agent': 'ceilhes-tourisme.fr (agenda, contact via le site)' },
-  })
-  if (!rep.ok) throw new Error(`DATAtourisme a répondu ${rep.status}`)
-  const json = await rep.json()
-  return json.data ?? []
+  const retenues = new Set(COMMUNES)
+  const tout = []
+
+  for (const code of CODES) {
+    let page = 1
+    for (;;) {
+      const url = `${API}?Code_postal_et_commune__contains=${code}&page_size=100&page=${page}`
+      const rep = await fetch(url, {
+        headers: { 'User-Agent': 'ceilhes-tourisme.fr (agenda du village)' },
+      })
+      if (!rep.ok) throw new Error(`DATAtourisme a répondu ${rep.status} pour ${code}`)
+      const json = await rep.json()
+      const lot = json.data ?? []
+      tout.push(...lot.filter((e) => retenues.has(e.Code_postal_et_commune)))
+      if (lot.length < 100) break
+      page += 1
+      if (page > 20) break // garde-fou : jamais de boucle infinie
+    }
+  }
+  return tout
 }
+
+/** « 34260#Ceilhes-et-Rocozels » → « Ceilhes-et-Rocozels ». */
+const nomCommune = (v) => String(v || '').split('#')[1] || ''
 
 async function main() {
   const essai = process.argv.includes('--dry-run')
@@ -154,6 +213,9 @@ async function main() {
       date: prochaineDate(e.Periodes_regroupees, aujourdhui),
       description: e.Description,
       adresse: e.Adresse_postale,
+      commune: nomCommune(e.Code_postal_et_commune),
+      codePostal: String(e.Code_postal_et_commune || '').split('#')[0],
+      identifiant: e.Code_postal_et_commune,
       lat: e.Latitude,
       lon: e.Longitude,
       createur: e.Createur_de_la_donnee,
@@ -164,32 +226,53 @@ async function main() {
     .filter((e) => e.date && e.nom)
     .sort((a, b) => a.date - b.date)
 
+  const ici = evenements.filter((e) => e.identifiant === ICI)
+  const alentours = evenements
+    .filter((e) => e.identifiant !== ICI)
+    .slice(0, MAX_ALENTOURS)
+
   if (!evenements.length) {
     console.log('Aucun événement à venir dans le flux — la page est laissée telle quelle.')
     return
   }
 
-  const cartes = evenements
-    .map((e) => {
-      const j = e.date.getUTCDate()
-      const m = MOIS[e.date.getUTCMonth()]
-      const id = 'ev-' + e.nom.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 48)
-      return `      <article class="ev-card reveal" id="${id}">
+  /** Fabrique les cartes d'une liste. `avecLieu` : afficher la commune. */
+  const enCartes = (liste, avecLieu) =>
+    liste
+      .map((e) => {
+        const j = e.date.getUTCDate()
+        const m = MOIS[e.date.getUTCMonth()]
+        const id =
+          'ev-' +
+          e.nom
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[̀-ͯ]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '')
+            .slice(0, 48)
+        // La commune n'est utile que pour les alentours : sur les cartes de
+        // Ceilhes elle serait répétée à chaque ligne pour rien.
+        const lieu = avecLieu ? `\n          <span class="ev-lieu">${echappe(e.commune)}</span>` : ''
+        return `      <article class="ev-card reveal" id="${id}">
         <div class="ev-date"><span class="d">${j}</span><span class="m">${m}</span></div>
         <div class="ev-body">
-          <span class="ev-tag">${etiquette(e.nom)}</span>
+          <span class="ev-tag">${etiquette(e.nom)}</span>${lieu}
           <h3>${echappe(e.nom)}</h3>
           <p>${echappe(couper(e.description))}</p>
         </div>
       </article>`
-    })
-    .join('\n')
+      })
+      .join('\n')
+
+  const cartesIci = enCartes(ici, false)
+  const cartesAlentours = enCartes(alentours, true)
 
   // Balisage Event : c'est lui qui peut faire apparaître les animations
   // directement dans Google, avec leur date.
   const jsonld = {
     '@context': 'https://schema.org',
-    '@graph': evenements.slice(0, 25).map((e) => ({
+    '@graph': [...ici, ...alentours].slice(0, 40).map((e) => ({
       '@type': 'Event',
       name: e.nom,
       startDate: e.date.toISOString().slice(0, 10),
@@ -199,12 +282,12 @@ async function main() {
       url: `https://ceilhes-tourisme.fr/${SEC}`.replace(`/${SEC}`, '/agenda.html'),
       location: {
         '@type': 'Place',
-        name: e.adresse || 'Ceilhes-et-Rocozels',
+        name: e.adresse || e.commune,
         address: {
           '@type': 'PostalAddress',
           streetAddress: e.adresse || undefined,
-          addressLocality: 'Ceilhes-et-Rocozels',
-          postalCode: '34260',
+          addressLocality: e.commune,
+          postalCode: e.codePostal,
           addressCountry: 'FR',
         },
         geo: e.lat && e.lon
@@ -217,12 +300,25 @@ async function main() {
   const maj = evenements.map((e) => e.maj).filter(Boolean).sort().pop()
   const createur = evenements.find((e) => e.createur)?.createur ?? 'Office de tourisme du Grand Orb'
 
-  const bloc = `<!-- @agenda -->
+  const communesAlentours = [...new Set(alentours.map((e) => e.commune))].sort()
+
+  const blocAlentours = alentours.length
+    ? `
+    <h2 class="agenda-titre">Aux alentours</h2>
+    <p class="agenda-sous-titre">Les rendez-vous des villages voisins : ${communesAlentours.join(', ')}.</p>
     <div class="agenda-list">
-${cartes}
-    </div>
+${cartesAlentours}
+    </div>`
+    : ''
+
+  const bloc = `<!-- @agenda -->
+    <h2 class="agenda-titre">À Ceilhes-et-Rocozels</h2>
+    <div class="agenda-list">
+${cartesIci || '      <p class="agenda-vide">Pas de rendez-vous annoncé au village pour le moment. Les animations des alentours sont ci-dessous.</p>'}
+    </div>${blocAlentours}
     <p class="agenda-attribution">
-      ${evenements.length} rendez-vous à venir. Source :
+      ${ici.length} rendez-vous au village et ${alentours.length} aux alentours.
+      Source :
       <strong>${echappe(createur)}</strong>, via
       <a href="https://www.datatourisme.fr/" rel="noopener" target="_blank">DATAtourisme</a>
       (Licence Ouverte 2.0)${maj ? ` — donnée mise à jour le ${maj.split('-').reverse().join('/')}` : ''}.
@@ -245,9 +341,9 @@ ${cartes}
   }
 
   if (essai) {
-    console.log(`${evenements.length} événement(s) à venir :`)
-    for (const e of evenements) {
-      console.log(`  ${e.date.toISOString().slice(0, 10)}  ${etiquette(e.nom).padEnd(16)} ${e.nom}`)
+    console.log(`${ici.length} au village, ${alentours.length} aux alentours :`)
+    for (const e of [...ici, ...alentours]) {
+      console.log(`  ${e.date.toISOString().slice(0, 10)}  ${(e.commune||'').padEnd(22)} ${e.nom.slice(0,52)}`)
     }
     console.log('\n(--dry-run : agenda.html non modifié)')
     return

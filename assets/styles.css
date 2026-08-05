@@ -519,3 +519,23 @@ a.ev-card:hover{transform:translateX(4px);box-shadow:var(--ombre-h)}
 .agenda-attribution a{color:var(--foret);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 /* Le resume de l evenement, sous son titre. */
 .ev-body p{margin-top:.35rem;font-size:.9rem;line-height:1.55;color:var(--texte);opacity:.82}
+
+/* Tableaux de reglementation. Sur telephone ils debordent : on les laisse
+   defiler horizontalement DANS leur cadre plutot que de faire deborder
+   toute la page. */
+.tableau-peche{display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:1.4rem}
+.tableau-peche>table{width:100%;border-collapse:collapse;background:var(--blanc);border-radius:14px;overflow:hidden;box-shadow:var(--ombre);font-size:.94rem}
+.tableau-peche caption{caption-side:top;text-align:left;padding:.9rem 1.1rem .5rem;font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--foret)}
+.tableau-peche th,.tableau-peche td{padding:.7rem 1.1rem;text-align:left;vertical-align:top;border-top:1px solid var(--pierre)}
+.tableau-peche th{font-weight:600;color:var(--foret);width:46%}
+.tableau-peche tr:first-child th,.tableau-peche tr:first-child td{border-top:none}
+.note-peche{margin-top:1.4rem;padding:1rem 1.2rem;background:rgba(201,143,78,.12);border-left:4px solid var(--ocre);border-radius:10px;font-size:.92rem;line-height:1.7}
+
+/* Agenda sur plusieurs communes : Ceilhes d abord, les voisins ensuite. */
+.agenda-titre{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--foret);margin:2.6rem 0 .3rem}
+.agenda-titre:first-of-type{margin-top:.6rem}
+.agenda-sous-titre{font-size:.92rem;color:var(--texte);opacity:.8;margin-bottom:1.1rem}
+/* La commune, sur les cartes des villages voisins : sans elle, le lecteur
+   ne sait pas s il fait 2 ou 30 km. */
+.ev-lieu{display:inline-block;margin-left:.5rem;font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--lac);vertical-align:middle}
+.agenda-vide{padding:1.2rem;background:var(--blanc);border-radius:14px;box-shadow:var(--ombre);font-size:.95rem}
