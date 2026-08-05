@@ -34,6 +34,17 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;letter-spacing:-.01em}
    hauteur. C'est exactement ce qui est arrivé à la galerie.
    Les règles qui imposent height:100% ou aspect-ratio restent prioritaires. */
 img{max-width:100%;height:auto}
+
+/* Coordonnées d'un prestataire à la suite d'un texte : elles doivent se
+   repérer d'un coup d'œil sans faire un pavé. Les liens de téléphone et de
+   courriel gardent une zone tactile confortable, on les touche au doigt en
+   pleine rue.
+
+   ⚠️ Le bleu lac (--lac) serait naturel ici, mais il ne donne que 4,24:1 sur
+   le fond sable, sous le seuil de 4,5. Le vert forêt passe partout (10:1).
+   Mesuré, pas supposé. */
+.contact-inline{margin-top:.6rem;font-size:.94rem;line-height:1.9;color:var(--texte)}
+.contact-inline a{font-weight:600;color:var(--foret);text-decoration:underline;text-underline-offset:3px;padding:.35rem 0;display:inline-block}
 ::selection{background:var(--lac-clair);color:var(--foret-fonce)}
 :focus-visible{outline:3px solid var(--ocre);outline-offset:3px;border-radius:4px}
 .skip{position:absolute;left:-9999px;top:0;z-index:3000;background:var(--foret-fonce);color:var(--blanc);padding:.7rem 1.2rem;border-radius:0 0 12px 0}
@@ -472,4 +483,10 @@ footer small a{color:var(--lac-clair)}
 .faq details p{margin-top:.7rem;font-weight:300;font-size:.95rem}
 
 /* navigation bas de page */
-.page-nav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:
+.page-nav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:2.2rem 5vw 3rem}
+/* Reconstitue : le fichier s arretait net sur « padding: » sans valeur.
+   Les declarations precedentes s appliquaient quand meme (les navigateurs
+   savent recuperer une regle incomplete), mais tout ce qui aurait suivi
+   dans le fichier avait disparu. */
+.page-nav a{font-weight:600;color:var(--foret);text-decoration:underline;text-underline-offset:4px;padding:.7rem 0;display:inline-block}
+.page-nav a:hover{color:var(--lac)}
