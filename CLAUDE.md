@@ -68,6 +68,16 @@ Règles :
 - côté long **1600 px maximum** : la mise en page ne va pas au-delà ;
 - `width` et `height` **obligatoires** — sans eux la page saute quand la photo
   arrive, en pleine lecture ;
+
+  ⚠️ **Leur complément indispensable : `height:auto` en CSS.** Ces attributs
+  imposent une hauteur réelle si le style ne dit pas le contraire. La règle
+  globale `img{max-width:100%;height:auto}` est là pour ça — **ne jamais la
+  retirer**. Sans elle, une photo de 1600×1200 placée dans une colonne de
+  galerie de 300 px s'affiche en 300×1200 : étirée sur tout l'écran. C'est
+  exactement ce qui est arrivé le jour où les attributs ont été ajoutés.
+  Les règles qui imposent volontairement `height:100%` ou `aspect-ratio`
+  (`.photo-duo`, `.banner`, `.feature`…) sont plus spécifiques et continuent
+  de s'appliquer normalement ;
 - `loading="lazy"` partout **sauf** la photo d'ouverture, qui prend
   `fetchpriority="high"` : la retarder ne fait rien gagner ;
 - un `alt` qui décrit ce qu'on voit, toujours.
