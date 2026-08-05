@@ -27,7 +27,13 @@
 html{scroll-behavior:smooth}
 body{font-family:'Outfit',sans-serif;color:var(--texte);background:var(--sable);overflow-x:hidden;line-height:1.7}
 h1,h2,h3{font-family:'Cormorant Garamond',serif;letter-spacing:-.01em}
-img{max-width:100%}
+/* ⚠️ `height:auto` est OBLIGATOIRE dès lors que les balises <img> portent des
+   attributs width et height — ce qui est le cas partout, pour éviter que la
+   page ne saute au chargement. Sans lui, une règle qui fixe width:100% laisse
+   la hauteur de l'attribut s'appliquer telle quelle, et l'image est étirée en
+   hauteur. C'est exactement ce qui est arrivé à la galerie.
+   Les règles qui imposent height:100% ou aspect-ratio restent prioritaires. */
+img{max-width:100%;height:auto}
 ::selection{background:var(--lac-clair);color:var(--foret-fonce)}
 :focus-visible{outline:3px solid var(--ocre);outline-offset:3px;border-radius:4px}
 .skip{position:absolute;left:-9999px;top:0;z-index:3000;background:var(--foret-fonce);color:var(--blanc);padding:.7rem 1.2rem;border-radius:0 0 12px 0}
