@@ -39,6 +39,7 @@ const RACINE = fileURLToPath(new URL('..', import.meta.url))
 const DOMAINES_FRAGILES = [
   'facebook.com', 'instagram.com', 'pagesjaunes.fr', 'linkedin.com',
   'tripadvisor.', 'booking.com', 'societe.com', 'kompass.com', 'yelp.',
+  'sitytrail.com', // limite sévèrement la cadence des robots (HTTP 429)
 ]
 
 const PAGES_OUTILS = new Set(['reglage-carte.html'])
@@ -147,6 +148,9 @@ async function main() {
     while (files.length) {
       const file = files.shift()
       for (const { url, ou } of file) {
+        // Une petite pause entre deux requêtes vers un même site : certains
+        // limitent la cadence et répondraient 429 à une rafale.
+        if (file.length > 1) await new Promise((r) => setTimeout(r, 1200))
         const r = await tester(url)
         fait++
         if (fait % 25 === 0) console.error(`… ${fait}/${total}`)

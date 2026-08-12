@@ -83,7 +83,7 @@
           },
           "telephone": "06 72 80 16 96",
           "email": "lapartduloup1@orange.fr",
-          "site": "https://www.lapartduloup.com",
+          "site": null,
           "facebook": null,
           "instagram": null,
           "adresse": "Hameau des Planes, 34260 Avène",
@@ -98,7 +98,7 @@
             "https://www.lapartduloup.com/",
             "https://bio34.com/annuaire/gaec-la-part-du-loup-avene"
           ],
-          "note": "Émilie et Basile Dequiedt, brebis laitières 100 % bio (lait AOP Roquefort, fromages, yaourts, glaces). L'email est affiché sans arobase dans la source (« lapartduloup1orange.fr ») : forme reconstituée à vérifier. Présence Facebook/Instagram mentionnée mais URL non retrouvée.",
+          "note": "Émilie et Basile Dequiedt, brebis laitières 100 % bio (lait AOP Roquefort, fromages, yaourts, glaces). L'email est affiché sans arobase dans la source (« lapartduloup1orange.fr ») : forme reconstituée à vérifier. Présence Facebook/Instagram mentionnée mais URL non retrouvée. Ancien site https://www.lapartduloup.com expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.7464,
@@ -403,7 +403,7 @@
           "portrait": null,
           "telephone": "04 67 95 41 69",
           "email": "maraval.christophe@free.fr",
-          "site": "https://safrandeshautscantons.fr",
+          "site": null,
           "facebook": null,
           "instagram": null,
           "adresse": "8 impasse des Causses, 34260 La Tour-sur-Orb",
@@ -418,7 +418,7 @@
             "https://www.francebleu.fr/emissions/circuit-court-dans-l-herault/herault/les-circuits-courts-dans-l-herault-avec-sandrine-maraval-safran-et-miels-des-hauts-cantons-la-tour",
             "https://www.jds.fr/bedarieux/foires-et-salons/marches/les-mercredis-au-pays-safran-des-hauts-cantons-de-l-herault-7-aout-2024-547994_A"
           ],
-          "note": "Sandrine et Christophe Maraval ; certifiés bio Ecocert depuis 2016. Téléphone signalé confirmé.",
+          "note": "Sandrine et Christophe Maraval ; certifiés bio Ecocert depuis 2016. Téléphone signalé confirmé. Ancien site https://safrandeshautscantons.fr expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.6533,
@@ -501,7 +501,7 @@
           "portrait": null,
           "telephone": "04 67 23 88 98",
           "email": null,
-          "site": "http://www.pechegravezon.fr",
+          "site": null,
           "facebook": "https://www.facebook.com/pages/category/Fish-Farm/Pisciculture-du-Gravezon-884970911853175/",
           "instagram": null,
           "adresse": "Route de Joncels, 34650 Lunas",
@@ -514,7 +514,7 @@
             "https://www.touteslesadresses.fr/company-address-phone-company-email-francais-en-ligne/pisciculture/2452488/pisciculture-du-gravezon-route-joncels-herault-lunas-0467238898",
             "https://www.aqua-tourisme.fr/pisciculture/pisciculture-du-gravezon/"
           ],
-          "note": "En activité depuis 1977 ; truites arc-en-ciel, fario et saumon de fontaine.",
+          "note": "En activité depuis 1977 ; truites arc-en-ciel, fario et saumon de fontaine. Ancien site http://www.pechegravezon.fr expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.7075,
@@ -568,7 +568,7 @@
           "portrait": null,
           "telephone": "06 20 08 24 90",
           "email": null,
-          "site": "http://www.aupresdemoncep.fr",
+          "site": null,
           "facebook": null,
           "instagram": null,
           "adresse": "1 chemin de Bernaude, 34600 Les Aires",
@@ -584,7 +584,7 @@
             "https://www.vinsnaturels.fr/003_viticulteurs/Languedoc-Roussillon-Aupr%C3%A8s-de-mon-cep-Ian-LU--594.html",
             "https://www.raisin.digital/en/artisans/natural-winemakers/ian-lu-aupres-de-mon-cep-1-6183/"
           ],
-          "note": "Domaine créé en 2014. Téléphone signalé confirmé par la fiche Grand Orb. Certifications citées par vinsnaturels.fr (bio, Demeter, Nature & Progrès, mention Biodyvin) : à reconfirmer directement auprès du vigneron.",
+          "note": "Domaine créé en 2014. Téléphone signalé confirmé par la fiche Grand Orb. Certifications citées par vinsnaturels.fr (bio, Demeter, Nature & Progrès, mention Biodyvin) : à reconfirmer directement auprès du vigneron. Ancien site http://www.aupresdemoncep.fr expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.5814,
@@ -833,7 +833,7 @@
           "portrait": null,
           "telephone": "06 08 16 54 13",
           "email": "salvignol.jerome@orange.fr",
-          "site": "https://www.lesescargotsbarre.com",
+          "site": null,
           "facebook": "https://www.facebook.com/jerome.salvignol.948/",
           "instagram": null,
           "adresse": "Rue de l'Église, 81320 Barre",
@@ -845,7 +845,7 @@
             "https://www.producteurs.fr/producteur-les-escargots-de-barre-81320-barre-7493.html",
             "https://www.intramuros.org/barre/commerces/18141"
           ],
-          "note": null,
+          "note": "Ancien site https://www.lesescargotsbarre.com expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.7519,
@@ -1952,7 +1952,7 @@
           "portrait": null,
           "telephone": "04 67 44 09 93",
           "email": "vigneronspegairolles@gmail.com",
-          "site": "http://www.vigneronsdepegairolles.com/",
+          "site": null,
           "facebook": null,
           "instagram": null,
           "adresse": "34700 Pégairolles-de-l'Escalette",
@@ -1965,7 +1965,7 @@
             "https://www.languedoc-coeur-herault.fr/annuaire/cave-cooperative-les-vignerons-de-pegairolles",
             "https://pegairolles-de-l-escalette.fr/artisanat.php"
           ],
-          "note": "Téléphone et email signalés confirmés par la fiche Hérault Tourisme et le site de la cave. Le marché des producteurs (dont le Pélardon de Pégairolles) se tient devant la cave le vendredi matin.",
+          "note": "Téléphone et email signalés confirmés par la fiche Hérault Tourisme et le site de la cave. Le marché des producteurs (dont le Pélardon de Pégairolles) se tient devant la cave le vendredi matin. Ancien site http://www.vigneronsdepegairolles.com/ expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.8028,
@@ -2292,7 +2292,7 @@
           "portrait": null,
           "telephone": "05 65 78 14 09",
           "email": "les-escargots-dularzac@orange.fr",
-          "site": "https://www.escargots-larzac.fr",
+          "site": null,
           "facebook": "https://www.facebook.com/p/Les-Escargots-du-Larzac-100063732863764/",
           "instagram": null,
           "adresse": "608 avenue Simone Veil, 12230 La Cavalerie",
@@ -2304,7 +2304,7 @@
             "https://hoodspot.fr/eleveur/les-escargots-du-larzac-88940993400011/",
             "https://www.tourisme-larzac.com/fr/diffusio/organisez-votre-sejour/deguster/produits-du-terroir/la-cavalerie/les-escargots-du-larzac_TFO126627844969.php"
           ],
-          "note": "Email signalé confirmé. Horaires précis de vente à la ferme non trouvés en ligne : à demander par téléphone.",
+          "note": "Email signalé confirmé. Horaires précis de vente à la ferme non trouvés en ligne : à demander par téléphone. Ancien site https://www.escargots-larzac.fr expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             44.0097,
@@ -2519,7 +2519,7 @@
           "portrait": null,
           "telephone": "05 65 62 76 19",
           "email": "gaecdespradous@gmail.com",
-          "site": "http://www.fermedufrayssinet.fr",
+          "site": null,
           "facebook": "https://www.facebook.com/fermedufrayssinet/",
           "instagram": null,
           "adresse": "Le Frayssinet, 12230 Sainte-Eulalie-de-Cernon",
@@ -2531,7 +2531,7 @@
             "https://www.tourisme-aveyron.com/fr/diffusio/accueil-de-groupes-artisans-entreprises/ferme-du-frayssinet-sainte-eulalie-de-cernon_TFO380550554696",
             "https://www.guide-tarn-aveyron.com/en/tourism/discover/tourist-sites/discovery-farms/sainte-eulalie-de-cernon-740/ferme-du-frayssinet-298.html"
           ],
-          "note": "Téléphone signalé confirmé ; portable également référencé : 06 73 06 64 39. Martine, Alain et Benoît Fabrègues ; brebis laitières (lait livré à la coopérative des Bergers du Larzac) et vaches Aubrac. Ferme d'accueil du Parc naturel régional des Grands Causses.",
+          "note": "Téléphone signalé confirmé ; portable également référencé : 06 73 06 64 39. Martine, Alain et Benoît Fabrègues ; brebis laitières (lait livré à la coopérative des Bergers du Larzac) et vaches Aubrac. Ferme d'accueil du Parc naturel régional des Grands Causses. Ancien site http://www.fermedufrayssinet.fr expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.982,
@@ -2550,7 +2550,7 @@
           "portrait": null,
           "telephone": "05 65 62 56 99",
           "email": "agneaudescledelles@gmail.com",
-          "site": "http://agneau-des-cledelles-larzac.fr",
+          "site": null,
           "facebook": null,
           "instagram": null,
           "adresse": "Bengouzal, 12230 Sainte-Eulalie-de-Cernon",
@@ -2562,7 +2562,7 @@
             "https://monproducteur.aveyron.fr/entreAidePro/482/5894-l-agneau-des-cledelles.htm",
             "https://www.acheteralasource.com/producteur/84498"
           ],
-          "note": "Téléphone et email signalés confirmés par l'annuaire départemental et le site propre.",
+          "note": "Téléphone et email signalés confirmés par l'annuaire départemental et le site propre. Ancien site http://agneau-des-cledelles-larzac.fr expiré (constaté par le gardien des liens le 12/08/2026).",
           "maj": "2026-08-12",
           "gps": [
             43.9637,
@@ -2647,7 +2647,7 @@
           "portrait": null,
           "telephone": "06 95 15 33 45",
           "email": "domaine@ferrussac.fr",
-          "site": "https://www.ferrussac.fr",
+          "site": "https://ferrussac.fr",
           "facebook": "https://www.facebook.com/domainedeferrussac/",
           "instagram": null,
           "adresse": "Ferrussac, 34520 La Vacquerie-et-Saint-Martin-de-Castries",
