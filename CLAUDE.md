@@ -160,6 +160,16 @@ réelle des fermes, puis « Copier les corrections » produit un bloc à envoyer
 à Claude, qui reporte les coordonnées dans `data/producteurs.json` avec
 `gpsPrecision: "exacte"`.
 
+## Le gardien des liens
+
+Chaque lundi matin, GitHub lance `scripts/gardien-liens.mjs`
+(`.github/workflows/gardien-liens.yml`) : les ~300 liens extérieurs et tous
+les liens internes du site sont testés. En cas de casse, un signalement
+étiqueté `gardien-des-liens` s'ouvre sur le dépôt avec la liste — il suffit
+de demander à Claude de réparer. Les domaines qui refusent les robots
+(Facebook, Pages Jaunes…) sont exclus du test pour éviter les fausses
+alertes. Le même gardien veille sur le dépôt esquirols.
+
 ## Conventions
 
 - **Langue** : tout le contenu visible est en français. Noms de fichiers en

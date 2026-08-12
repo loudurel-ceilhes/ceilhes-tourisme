@@ -1,0 +1,83 @@
+name: Gardien des liens
+
+# Vérifie chaque semaine que tous les liens du site répondent encore
+# (sites de producteurs, offices de tourisme, notices de monuments, liens
+# entre pages…). En cas de liens cassés, un signalement (« issue ») est
+# ouvert sur le dépôt avec la liste — il suffit alors de demander à Claude
+# de réparer. Rien à faire à la main.
+#
+# Détails du fonctionnement dans scripts/gardien-liens.mjs.
+
+on:
+  schedule:
+    # Le lundi à 5 h 40 UTC (6 h 40 / 7 h 40 heure française) : le rapport
+    # attend au réveil. Horaire décalé de l'heure pile pour éviter
+    # l'embouteillage des tâches planifiées chez GitHub.
+    - cron: '40 5 * * 1'
+  # Permet aussi de le déclencher à la main depuis l'onglet Actions.
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  verifier:
+    name: Vérifier les liens et signaler
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Vérifier tous les liens
+        run: node scripts/gardien-liens.mjs > rapport-liens.json
+        timeout-minutes: 25
+
+      - name: Ouvrir un signalement si des liens sont cassés
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const r = JSON.parse(fs.readFileSync('rapport-liens.json', 'utf8'));
+            const problemes = (r.casses?.length || 0) + (r.internesCasses?.length || 0);
+
+            core.summary.addHeading('Gardien des liens');
+            core.summary.addRaw(`${r.verifie} liens vérifiés — ${r.casses.length} cassés, ${r.douteux.length} douteux, ${r.internesCasses.length} liens internes morts.`);
+            await core.summary.write();
+
+            if (!problemes) {
+              console.log('Tout répond. Rien à signaler.');
+              return;
+            }
+
+            const ligne = (l) => `- ${l.url || l.cible}\n  - où : ${(l.ou || [l.depuis]).join(', ')}${l.detail ? `\n  - erreur : ${l.detail}` : ''}`;
+            let corps = `Le gardien des liens a trouvé des adresses qui ne répondent plus.\n\n`;
+            if (r.internesCasses.length) corps += `## Liens internes morts (pages du site)\n${r.internesCasses.map(ligne).join('\n')}\n\n`;
+            if (r.casses.length) corps += `## Liens extérieurs cassés\n${r.casses.map(ligne).join('\n')}\n\n`;
+            if (r.douteux.length) corps += `## Douteux (le site refuse peut-être juste les robots)\n${r.douteux.map(ligne).join('\n')}\n\n`;
+            corps += `---\nPour réparer : demander à Claude « répare les liens cassés signalés par le gardien ». Chaque lien retiré doit être remplacé ou la fiche mise à jour dans le fichier de données correspondant (voir CLAUDE.md).`;
+
+            // Une seule issue ouverte à la fois : on met à jour l'existante.
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'gardien-des-liens',
+            });
+            if (issues.length) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issues[0].number,
+                title: `🔗 Liens cassés : ${problemes}`,
+                body: corps,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: `🔗 Liens cassés : ${problemes}`,
+                body: corps,
+                labels: ['gardien-des-liens'],
+              });
+            }
