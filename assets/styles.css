@@ -380,6 +380,9 @@ footer small a{color:var(--lac-clair)}
 .prod-card h4{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--foret-fonce)}
 .prod-card .where{font-size:.74rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--lac);font-weight:600;margin:.15rem 0 .5rem}
 .prod-card p{font-size:.88rem;font-weight:300}
+.prod-card .tag{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;color:var(--foret);background:var(--brume);border-radius:999px;padding:.3rem .75rem;margin-top:.9rem}
+.prod-card .portrait{display:inline-block;font-size:.84rem;font-weight:600;color:var(--lac);margin-top:.9rem;margin-right:.9rem;text-decoration:none;border-bottom:1px solid var(--lac-clair)}
+.prod-card .portrait:hover{color:var(--foret-fonce);border-bottom-color:var(--ocre)}
 
 /* ---------- ANNUAIRE / HÉBERGEURS ---------- */
 .dir-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin-top:2.5rem}
