@@ -72,7 +72,20 @@ function domaine(url) {
   }
 }
 
-/** La ligne de contact d'une fiche (téléphone · site), si on a de quoi. */
+/**
+ * Le lien « Itinéraire » : ouvre Google Maps sur l'adresse précise de la
+ * ferme. C'est Google qui géolocalise l'adresse au moment du clic, sur
+ * l'appareil du visiteur — bien plus précis que notre épingle posée au
+ * centre de la commune. Si l'adresse en contient plusieurs (séparées par
+ * « ; »), on prend la première ; sans adresse, on cherche « nom, lieu ».
+ */
+function lienMaps(p) {
+  const adr = (p.adresse || '').split(';')[0].trim()
+  const requete = adr || `${p.nom}, ${p.lieu}`
+  return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(requete)
+}
+
+/** La ligne de contact d'une fiche (téléphone · site · itinéraire). */
 function contact(p) {
   const morceaux = []
   if (p.telephone) {
@@ -83,7 +96,9 @@ function contact(p) {
       `<a href="${echappe(p.site)}" target="_blank" rel="noopener">🌐 ${echappe(domaine(p.site))}</a>`
     )
   }
-  if (!morceaux.length) return ''
+  morceaux.push(
+    `<a href="${echappe(lienMaps(p))}" target="_blank" rel="noopener">🧭 Itinéraire</a>`
+  )
   return `\n        <div class="contact">${morceaux.join('<span class="sep"> · </span>')}</div>`
 }
 
@@ -140,6 +155,7 @@ function carte(zones) {
         approx: p.gpsPrecision !== 'exacte',
         tel: p.telephone || null,
         site: p.site || null,
+        maps: lienMaps(p),
       })
     }
   })

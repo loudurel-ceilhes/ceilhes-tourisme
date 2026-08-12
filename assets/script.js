@@ -104,7 +104,7 @@ if(window.L && document.getElementById('carte-prod')){
     groupe.forEach((r,i)=>{
       let [lat,lng]=r.gps;
       if(groupe.length>1){const angle=2*Math.PI*i/groupe.length,ray=0.006;lat+=ray*Math.cos(angle);lng+=ray*Math.sin(angle)/Math.cos(lat*Math.PI/180);}
-      const contacts=[r.tel?'<a href="tel:+33'+r.tel.replace(/\D/g,'').slice(1)+'">📞 '+r.tel+'</a>':'',r.site?'<a href="'+r.site+'" target="_blank" rel="noopener">🌐 site</a>':''].filter(Boolean).join(' · ');
+      const contacts=[r.tel?'<a href="tel:+33'+r.tel.replace(/\D/g,'').slice(1)+'">📞 '+r.tel+'</a>':'',r.site?'<a href="'+r.site+'" target="_blank" rel="noopener">🌐 site</a>':'',r.maps?'<a href="'+r.maps+'" target="_blank" rel="noopener">🧭 Itinéraire</a>':''].filter(Boolean).join(' · ');
       const html='<div class="popup-fiche"><b>'+r.picto+' '+r.nom+'</b><br>'+r.lieu+(contacts?'<br>'+contacts:'')+'<br><a href="#'+r.id+'">Voir la fiche ↓</a></div>';
       L.marker([lat,lng],{icon:epingle(donnees.couleurs[r.zone])}).bindPopup(html).addTo(carte);
       bornes.push([lat,lng]);
