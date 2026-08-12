@@ -113,6 +113,28 @@ Signe qui doit alerter : « j'ai corrigé, c'est en ligne, mais lui voit encore
 l'ancien ». Avant de chercher un bug, vérifier ce que le navigateur applique
 vraiment — pas ce que le fichier contient.
 
+## L'annuaire des producteurs : un fichier de données, pas du HTML
+
+Les fiches producteurs de `terroir.html` (80 et quelques) ne se modifient
+**jamais dans le HTML** : elles sont fabriquées depuis
+**`data/producteurs.json`** par `scripts/producteurs.mjs`, que Netlify lance
+à chaque publication (avec `version-assets.mjs`). Le HTML généré est aussi
+enregistré dans le dépôt, entre les balises `<!-- @producteurs -->` et
+`<!-- @/producteurs -->` de la page.
+
+Corriger un téléphone, ajouter une ferme, retirer une fiche : tout se passe
+dans le fichier JSON (une entrée par producteur : nom, lieu, description,
+téléphone, email, site, vente, labels, sources…). Puis :
+
+```bash
+node scripts/producteurs.mjs   # refabrique les fiches dans terroir.html
+```
+
+L'email n'est volontairement **pas affiché** sur la page (anti-spam) ; il
+reste dans le fichier. Chaque fiche garde ses `sources` (adresses web où
+l'info a été vérifiée) et sa date `maj` : une fiche sans source ne devrait
+pas exister.
+
 ## Conventions
 
 - **Langue** : tout le contenu visible est en français. Noms de fichiers en

@@ -1,0 +1,796 @@
+{
+  "zones": [
+    {
+      "titre": "Autour du village — haute vallée de l'Orb",
+      "sousTitre": "Avène, Lunas, Joncels, Camplong, La Tour-sur-Orb, Bédarieux… les voisins immédiats.",
+      "producteurs": [
+        {
+          "id": "gaec-de-la-source-de-l-orb",
+          "nom": "GAEC de la Source de l'Orb",
+          "picto": "🐄",
+          "lieu": "Romiguières",
+          "description": "Éleveurs de Limousines depuis 2001, aux sources mêmes de l'Orb : bœuf, veau (élevé sous la mère) et agneau en vente directe.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "gaec-des-monts-et-des-sources",
+          "nom": "GAEC des Monts et des Sources",
+          "picto": "🐖",
+          "lieu": "Hameau de Vinas, Avène",
+          "description": "Porc, agneau et chevreau élevés en plein air, transformés à la ferme, sans additifs — vente directe.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "la-part-du-loup",
+          "nom": "La Part du Loup",
+          "picto": "🧀",
+          "lieu": "Hameau des Planes, Avène",
+          "description": "Fromages, yaourts et glaces au lait de brebis bio, fabriqués à la ferme sur les hauteurs d'Avène.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": {
+            "url": "https://esquirols.fr/journal-la-part-du-loup.html",
+            "libelle": "Lire son portrait →"
+          }
+        },
+        {
+          "id": "les-cocottes-d-avene",
+          "nom": "Les Cocottes d'Avène",
+          "picto": "🥚",
+          "lieu": "Les Planes, Avène",
+          "description": "Les œufs fermiers de Laurence Rouquette : sur place à la demande, et en dépôt dans les commerces du pays — dont Ceilhes.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "ferme-du-licidou",
+          "nom": "Ferme du Licidou",
+          "picto": "🐑",
+          "lieu": "Hameau de Vinas, Avène",
+          "description": "190 brebis laitières : fromages fermiers au lait cru (Licidou, Picou, tomme La Vinette), yaourts et agneau. Vente à la ferme de décembre à juillet, au rythme de la lactation.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-terrasses-de-baude",
+          "nom": "Les Terrasses de Baude",
+          "picto": "🌱",
+          "lieu": "Joncels",
+          "description": "Une association qui fait revivre les terrasses de Joncels : agriculture respectueuse de l'environnement, ateliers, sorties nature et animations culturelles.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "le-fournil-de-fonbine",
+          "nom": "Le Fournil de Fonbine",
+          "picto": "🥖",
+          "lieu": "Hameau de Fonbine, Joncels",
+          "description": "Pain artisanal pétri et cuit au hameau, à retrouver sur les marchés du pays.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "le-pain-de-l-arche",
+          "nom": "Le pain de l'Arche",
+          "picto": "🔥",
+          "lieu": "La Borie Noble, Roqueredonde",
+          "description": "La communauté de l'Arche, fondée par Lanza del Vasto en 1948, cuit pains, pâtisseries et pizzas au feu de bois — vente le samedi après-midi à la Borie Noble.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "domaine-de-gravezon-eric-pailles",
+          "nom": "Domaine de Gravezon — Éric Paillès",
+          "picto": "🍷",
+          "lieu": "Joncels",
+          "description": "Sur 4 hectares de vignes héritées du début du XX<sup>e</sup> siècle, Éric Paillès cultive des cépages oubliés (villard blanc, aramon, grenache…) identifiés avec l'INRA de Montpellier.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-sorbets-deci-dela",
+          "nom": "Les Sorbets Deci Delà",
+          "picto": "🍧",
+          "lieu": "Lunas",
+          "description": "Sorbets artisanaux aux fruits et aux plantes aromatiques — ceux-là mêmes qu'on déguste en terrasse à l'Esquirol.",
+          "badge": "🍧 En terrasse à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "miellerie-du-mas-valette-philippe-chevalier",
+          "nom": "Miellerie du Mas Valette — Philippe Chevalier",
+          "picto": "🍯",
+          "lieu": "Route de Ceilhes, Avène",
+          "description": "Apiculteur depuis plus de quarante ans, Philippe Chevalier récolte les miels des Monts d'Orb — propolis, pollen et bonbons au miel — à deux pas du village. Visite et achat sur rendez-vous.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": {
+            "url": "https://esquirols.fr/journal-miels-philippe-chevalier.html",
+            "libelle": "Choisir son pot →"
+          }
+        },
+        {
+          "id": "les-ruchers-des-monts-d-avene",
+          "nom": "Les Ruchers des Monts d'Avène",
+          "picto": "🐝",
+          "lieu": "Le Bousquet-d'Orb",
+          "description": "Miels de pays issus des ruchers installés sur les hauteurs des Monts d'Orb.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "safran-des-hauts-cantons",
+          "nom": "Safran des Hauts Cantons",
+          "picto": "🌸",
+          "lieu": "La Tour-sur-Orb",
+          "description": "Safran, miel, plantes aromatiques, truffes et conserves artisanales. Vente sur place les mardis, jeudis et samedis matin.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-mandaline",
+          "nom": "La Mandaline",
+          "picto": "🥬",
+          "lieu": "Camplong",
+          "description": "Maraîchage bio diversifié sur sol vivant, safran, fruits et petite pépinière. Retrait à la ferme, marché BioNat de Bédarieux le samedi matin.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "brasserie-pompon",
+          "nom": "Brasserie Pompon",
+          "picto": "🍺",
+          "lieu": "Camplong",
+          "description": "Bières artisanales brassées avec l'eau des sources granitiques de Camplong — et baptisées en hommage à Pompon, petit chien emblématique du village.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "pisciculture-du-gravezon",
+          "nom": "Pisciculture du Gravezon",
+          "picto": "🐟",
+          "lieu": "Lunas",
+          "description": "Truites et saumons de fontaine élevés en eau vive depuis 1977 : vente au détail sur place, parcours de pêche et aire de pique-nique.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "domaine-de-clovallon",
+          "nom": "Domaine de Clovallon",
+          "picto": "🍇",
+          "lieu": "Bédarieux",
+          "description": "Vins bio et biodynamie de la haute vallée de l'Orb, pionnier du pinot noir en Languedoc. Dégustation et vente à la propriété sur rendez-vous.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "aupres-de-mon-cep",
+          "nom": "Auprès de mon Cep",
+          "picto": "🍷",
+          "lieu": "Les Aires",
+          "description": "Micro-domaine en biodynamie certifié Demeter : vins naturels sans sulfites ajoutés, vignes labourées au cheval.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "brasserie-des-aucels",
+          "nom": "Brasserie des Aucels",
+          "picto": "🍺",
+          "lieu": "Bédarieux",
+          "description": "Plus de trente bières bio, limonades et sodas artisanaux. Boutique à l'année, visites, dégustations et ateliers de brassage.",
+          "badge": null,
+          "portrait": null
+        }
+      ]
+    },
+    {
+      "titre": "Monts de Lacaune & vallée de la Mare",
+      "sousTitre": "Derrière la crête, côté Tarn : Murat-sur-Vèbre — la commune voisine — et Lacaune, pays des salaisons ; puis la vallée de la Mare et le Caroux.",
+      "producteurs": [
+        {
+          "id": "charcuterie-millas",
+          "nom": "Charcuterie Millas",
+          "picto": "🥓",
+          "lieu": "Murat-sur-Vèbre (81)",
+          "description": "Jambons IGP Lacaune, melsat et bougnette sans sel nitrité, avec les porcs de trois éleveurs à moins de 30 km. Boutiques à Lacaune et Moulin-Mage.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "salaisons-ray-gal",
+          "nom": "Salaisons Ray-Gal",
+          "picto": "🍖",
+          "lieu": "Lacaune-les-Bains (81)",
+          "description": "Les salaisons de la famille Galiber, séchées à l'air libre. Boutique de vente directe — et distributeur automatique de charcuterie, pour les fringales tardives.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "maison-oberti",
+          "nom": "Maison Oberti",
+          "picto": "🐖",
+          "lieu": "Lacaune-les-Bains (81)",
+          "description": "Maison familiale de salaisons depuis 1956 : jambons et saucissons de Lacaune, vente directe en boutique.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "moulin-du-louat",
+          "nom": "Moulin du Louat",
+          "picto": "🐄",
+          "lieu": "Murat-sur-Vèbre (81)",
+          "description": "Bœuf, veau, porc, charcuteries et pommes de terre de Géraldine et Yannick Feliu : magasin à la ferme et livraisons en Aveyron et Hérault.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "fromagerie-lou-caoussarel",
+          "nom": "Fromagerie Lou Caoussarel",
+          "picto": "🐑",
+          "lieu": "Le Causse, Murat-sur-Vèbre (81)",
+          "description": "Fromages de brebis au lait cru depuis 1990, sur les hauteurs des monts de Lacaune.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-du-rouquis",
+          "nom": "GAEC du Rouquis",
+          "picto": "🥛",
+          "lieu": "La Trivalle, Moulin-Mage (81)",
+          "description": "Yaourts et caillés de brebis, nature ou vanille, de janvier à début août. À la ferme, et en dépôt à l'épicerie de Brusque.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-escargots-de-barre",
+          "nom": "Les Escargots de Barre",
+          "picto": "🐌",
+          "lieu": "Barre (81)",
+          "description": "Gros-gris et petits-gris élevés en plein air par Jérôme Salvignol, frais et en conserves. Visites commentées gratuites.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "miellerie-le-gazel",
+          "nom": "Miellerie Le Gazel",
+          "picto": "🍯",
+          "lieu": "Senaux (81)",
+          "description": "Miels de montagne, confitures et pain d'épices. Sur rendez-vous à la miellerie, et au marché de Lacaune le dimanche matin d'avril à octobre.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "le-jardin-de-celine",
+          "nom": "Le Jardin de Céline",
+          "picto": "🥕",
+          "lieu": "Saint-Gervais-sur-Mare",
+          "description": "Maraîchage bio en variétés anciennes, travaillé en traction animale : légumes, chutneys, veloutés et confitures. À la ferme et en paniers.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-ferme-du-deves",
+          "nom": "La Ferme du Devès",
+          "picto": "🐔",
+          "lieu": "Castanet-le-Haut",
+          "description": "Œufs et poulets bio à 880 mètres d'altitude, sur le GR 653 : ferme pédagogique, table d'accueil paysan et gîte d'étape.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-ruchers-de-l-orb",
+          "nom": "Les Ruchers de l'Orb",
+          "picto": "🐝",
+          "lieu": "Mons-la-Trivalle",
+          "description": "Les 110 ruches bio d'Agathe Thommeret transhument sur les flancs du Caroux. Vente à la ferme sur demande et en boutiques locales.",
+          "badge": null,
+          "portrait": null
+        }
+      ]
+    },
+    {
+      "titre": "Sud Aveyron — du rougier de Camarès au pays de Roquefort",
+      "sousTitre": "Sylvanès, Camarès, Mélagues, Brusque, la vallée du Dourdou… et les caves de Roquefort à une petite heure.",
+      "producteurs": [
+        {
+          "id": "la-fermiere-de-sylvanes",
+          "nom": "La Fermière de Sylvanès",
+          "picto": "🥩",
+          "lieu": "Ramondedieu, Sylvanès (12)",
+          "description": "Chez Patrice et Nadine Ramondenc : colis de viande sur commande, charcuterie fermière (pâtés, melsat, fricandeaux, saucisse à l'huile) et conserves cuisinées, en vente directe à la ferme.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": {
+            "url": "https://esquirols.fr/journal-fermiere-de-sylvanes.html",
+            "libelle": "Lire son portrait →"
+          }
+        },
+        {
+          "id": "gaec-de-brioge",
+          "nom": "GAEC de Brioge",
+          "picto": "🐓",
+          "lieu": "Brioges, Mélagues (12)",
+          "description": "Volailles fermières et œufs de Sylvie et Jean-Louis Rivemale : à la ferme, en livraison et sur les marchés de Camarès et Saint-Affrique.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "le-jardin-du-fada",
+          "nom": "Le Jardin du Fada",
+          "picto": "🌰",
+          "lieu": "La Baume, Sylvanès (12)",
+          "description": "Huiles de noix et de tournesol, jus de pomme, crème et liqueur de châtaigne, vin de noix chez Daniel Fabre. Vente à la ferme tous les jours en milieu de journée.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "ferme-de-saint-pierre-d-issis",
+          "nom": "Ferme de Saint-Pierre d'Issis",
+          "picto": "🐑",
+          "lieu": "Camarès (12)",
+          "description": "Brebis laitières en zone Roquefort, polyculture : Roquefort, œufs, miel, agneau, lentilles et pois chiches au point de vente de la ferme. Visite gratuite le vendredi sur réservation.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-ferme-de-galamans",
+          "nom": "La Ferme de Galamans",
+          "picto": "🧺",
+          "lieu": "Montlaur (12)",
+          "description": "420 brebis laitières en plein rougier de Camarès : visites avec dégustation et boutique de produits fermiers ouverte toute l'année.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-paysans-du-rance",
+          "nom": "Les Paysans du Rance",
+          "picto": "🧑‍🌾",
+          "lieu": "Belmont-sur-Rance (12)",
+          "description": "La boutique paysanne d'une soixantaine de fermes du Rance, aux trois quarts bio : fromages de brebis, viandes, légumes — mardi, jeudi et dimanche matin.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "pisciculture-les-sources-de-l-avance",
+          "nom": "Pisciculture Les Sources de l'Avance",
+          "picto": "🎣",
+          "lieu": "Brusque (12)",
+          "description": "Truites arc-en-ciel et saumons de fontaine élevés en eau de source, vente de poisson frais sur place.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-pimpanelle",
+          "nom": "La Pimpanelle",
+          "picto": "🍎",
+          "lieu": "Rebourguil (12)",
+          "description": "L'atelier coopératif d'une soixantaine de paysans du Sud-Aveyron : crème de châtaigne, confitures, jus et soupes — avec boutique de produits locaux attenante.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "domaine-de-bias",
+          "nom": "Domaine de Bias",
+          "picto": "🍷",
+          "lieu": "Vabres-l'Abbaye (12)",
+          "description": "Dans la vallée du Dourdou, les jumeaux Alazard cultivent pinot noir, chardonnay et roussanne sur 6 hectares certifiés HVE. Vente directe au domaine.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "roquefort-le-vieux-berger-maison-combes",
+          "nom": "Roquefort Le Vieux Berger — Maison Combes",
+          "picto": "🧀",
+          "lieu": "Roquefort-sur-Soulzon (12)",
+          "description": "Le plus petit fabricant de Roquefort, artisan familial depuis 1923. Visite libre gratuite en semaine avec dégustation, boutique au pied du Combalou.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": {
+            "url": "https://esquirols.fr/journal-roquefort-vieux-berger.html",
+            "libelle": "Lire son portrait →"
+          }
+        },
+        {
+          "id": "roquefort-carles",
+          "nom": "Roquefort Carles",
+          "picto": "🧀",
+          "lieu": "Roquefort-sur-Soulzon (12)",
+          "description": "Maison familiale depuis 1927 : Roquefort au lait cru ensemencé au moulage, avec un penicillium « maison » cultivé sur pains. Boutique au cœur du village, caves sur rendez-vous.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "maison-gabriel-coulet",
+          "nom": "Maison Gabriel Coulet",
+          "picto": "🧀",
+          "lieu": "Roquefort-sur-Soulzon (12)",
+          "description": "Cinq générations depuis 1872. Visite gratuite des caves et de leurs fleurines naturelles, dégustation offerte, tous les jours.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-ferme-d-alfred",
+          "nom": "La Ferme d'Alfred",
+          "picto": "🥖",
+          "lieu": "Mas de Bousquel, Montagnol (12)",
+          "description": "Les pains au levain d'Alexia Amourdedieu — nature, seigle, petit épeautre — sur commande au fournil et en dépôt à Camarès.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "le-fournil-paysan",
+          "nom": "Le Fournil Paysan",
+          "picto": "🌾",
+          "lieu": "Salelles, Saint-Izaire (12)",
+          "description": "Paysanne-boulangère bio : le blé de la ferme, moulu sur meule de pierre, cuit au levain et au feu de bois.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "maison-bourrel",
+          "nom": "Maison Bourrel",
+          "picto": "🍪",
+          "lieu": "Belmont-sur-Rance (12)",
+          "description": "Biscuiterie artisanale faite main : macarons aux noix, craquelés au citron — et croquants au Roquefort. Boutique sur place.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "l-arc-en-miel",
+          "nom": "L'Arc en Miel",
+          "picto": "🐝",
+          "lieu": "Saint-Affrique (12)",
+          "description": "Apiculture bio au Mas de Rouby : visites immersives de la ferme d'abeilles, dégustation commentée d'une dizaine de miels, ateliers.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "fromagerie-du-mas",
+          "nom": "Fromagerie du Mas",
+          "picto": "🧀",
+          "lieu": "Mas de Babeau, Rebourguil (12)",
+          "description": "Les 320 brebis de Stéphan et Karine Mas : tomme, pérail, recuite et yaourts au lait cru. À la ferme du lundi au samedi, marché de Camarès l'été.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-ferme-aux-12-chevres",
+          "nom": "La Ferme aux 12 Chèvres",
+          "picto": "🍦",
+          "lieu": "Hucaloup, Laval-Roquecézière (12)",
+          "description": "Les glaces à l'italienne au lait de chèvre de Virginie Stordeur — au marché de pays de Saint-Sernin-sur-Rance en été.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-du-ramonetage",
+          "nom": "GAEC du Ramonetage",
+          "picto": "🐑",
+          "lieu": "Camarès (12)",
+          "description": "L'agneau élevé sous la mère de la ferme de Camplong, en caissettes Label Rouge. Retrait à la ferme sur commande.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-blondes-aubrac",
+          "nom": "GAEC Blondes Aubrac",
+          "picto": "🐂",
+          "lieu": "Mounes-Prohencoux (12)",
+          "description": "Bœuf de race Aubrac en caissettes, sur commande, avec livraison à domicile.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-de-puech-aussel",
+          "nom": "GAEC de Puech Aussel",
+          "picto": "🐄",
+          "lieu": "Montlaur (12)",
+          "description": "Veau de race Aubrac en caissettes, toute l'année à la ferme sur commande.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-ferme-de-saint-louis",
+          "nom": "La Ferme de Saint Louis",
+          "picto": "🐖",
+          "lieu": "La Prade, Belmont-sur-Rance (12)",
+          "description": "Porc élevé sur paille : charcuterie fermière, conserves cuisinées et caissettes, sans colorants ni conservateurs.",
+          "badge": null,
+          "portrait": null
+        }
+      ]
+    },
+    {
+      "titre": "Lodévois & Salagou",
+      "sousTitre": "Sous l'Escalette et autour du lac : Lauroux, Pégairolles, Saint-Jean-de-la-Blaquière, Octon — le pays des Terrasses du Larzac.",
+      "producteurs": [
+        {
+          "id": "gaec-de-la-vallee-de-lauroux",
+          "nom": "GAEC de la Vallée de Lauroux",
+          "picto": "🐐",
+          "lieu": "Lauroux",
+          "description": "Fromages de chèvre et agneau élevés en plein air, en bio, dans la vallée sous l'Escalette. Sur les marchés de Lodève et Pézenas.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": null
+        },
+        {
+          "id": "pelardon-de-pegairolles",
+          "nom": "Pélardon de Pégairolles",
+          "picto": "🐐",
+          "lieu": "Pégairolles-de-l'Escalette",
+          "description": "Le Pélardon AOP au lait cru de la famille Chabrier, maintes fois médaillé — en boutiques à Lodève et au Caylar, et sur les marchés.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "confiserie-d-olives-de-saint-jean",
+          "nom": "Confiserie d'olives de Saint-Jean",
+          "picto": "🫒",
+          "lieu": "Saint-Jean-de-la-Blaquière",
+          "description": "La coopérative (1947) confit la Lucques du Languedoc : olives au thym, à l'ail ou au fenouil, tapenades et huile. Boutique tous les jours sauf dimanche.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "miellerie-thierry-berthomieu",
+          "nom": "Miellerie Thierry Berthomieu",
+          "picto": "🍯",
+          "lieu": "Le Théronel, Fozières",
+          "description": "Miels de garrigue certifiés bio depuis 2008, récoltés et vendus à la miellerie.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "ferme-de-germane",
+          "nom": "Ferme de Germane",
+          "picto": "🐂",
+          "lieu": "Plateau de Germane, Salagou",
+          "description": "Bœuf Galloway bio nourri à l'herbe, agneau de brebis transhumantes — et fraises, abricots et prunes bio. Vente à la ferme.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "flor-de-salagou",
+          "nom": "Flor de Salagou",
+          "picto": "🍑",
+          "lieu": "Mourèze",
+          "description": "Les confitures d'un Maître Confiturier de France : figue, abricot, gelée de thym, confits d'oignon. Dégustation et vente sur place.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-fromages-du-salagou",
+          "nom": "Les Fromages du Salagou",
+          "picto": "🧀",
+          "lieu": "Lodève",
+          "description": "Fromager-affineur artisanal au lait cru des fermes du pays : Pélardon AOP, tommette de brebis du Larzac, Petit Lodévois.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "mas-fabregous",
+          "nom": "Mas Fabregous",
+          "picto": "🍇",
+          "lieu": "Soubès",
+          "description": "Vins bio du nord des Terrasses du Larzac, sur 37 parcelles entre 300 et 460 mètres d'altitude. Vente au domaine.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-vignerons-de-pegairolles",
+          "nom": "Les Vignerons de Pégairolles",
+          "picto": "🍷",
+          "lieu": "Pégairolles-de-l'Escalette",
+          "description": "La plus ancienne et la plus petite cave coopérative de l'Hérault (1927) : Terrasses du Larzac cultivées en terrasses à murets de pierre sèche. Dégustations et balades vigneronnes.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "mas-des-chimeres",
+          "nom": "Mas des Chimères",
+          "picto": "🍇",
+          "lieu": "Octon",
+          "description": "Les vins bio de la famille Dardé, sur les terres rouges et les basaltes du Salagou. Caveau de vente au village.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "domaine-de-malavieille",
+          "nom": "Domaine de Malavieille",
+          "picto": "🍷",
+          "lieu": "Mérifons",
+          "description": "Bio depuis 2003, biodynamie Demeter depuis 2005 : une vingtaine de cépages sur grès rouges et basaltes. Caves sur rendez-vous.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "le-clos-du-serres",
+          "nom": "Le Clos du Serres",
+          "picto": "🍇",
+          "lieu": "Saint-Jean-de-la-Blaquière",
+          "description": "Quinze hectares bio en AOP Terrasses du Larzac, de la roussanne au mourvèdre. Caveau au domaine.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "mas-lasta",
+          "nom": "Mas Lasta",
+          "picto": "🍷",
+          "lieu": "Saint-Privat",
+          "description": "Vieilles vignes adossées au causse : vins bio « méthode nature », sans intrants ni sulfites, par Anne-Laure Sicard.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "domaine-du-pas-de-l-escalette",
+          "nom": "Domaine du Pas de l'Escalette",
+          "picto": "🍇",
+          "lieu": "Poujols",
+          "description": "Vingt hectares en terrasses à 350 mètres, entre clapas, en bio et biodynamie — au pied du même col que la vallée de Lauroux.",
+          "badge": null,
+          "portrait": null
+        }
+      ]
+    },
+    {
+      "titre": "Le Larzac",
+      "sousTitre": "Du Caylar à Nant par La Couvertoirade : le causse des brebis, des templiers et des lavognes.",
+      "producteurs": [
+        {
+          "id": "les-bergers-du-larzac",
+          "nom": "Les Bergers du Larzac",
+          "picto": "🐑",
+          "lieu": "La Cavalerie (12)",
+          "description": "Vingt producteurs du Larzac et du Lévézou réunis en coopérative : pérails, tommes et fromages de brebis, en conventionnel et en bio. Boutique de vente directe à La Cavalerie.",
+          "badge": "🛒 En rayon à L'Esquirol",
+          "portrait": {
+            "url": "https://esquirols.fr/journal-fromage-brebis-larzac.html",
+            "libelle": "Lire l'article →"
+          }
+        },
+        {
+          "id": "gaec-du-causse",
+          "nom": "GAEC du Causse",
+          "picto": "🥛",
+          "lieu": "Le Caylar",
+          "description": "Des vaches laitières sur le Larzac : lait, beurre cru, crème fraîche, yaourts et fromages transformés à la ferme. Vente le vendredi en fin d'après-midi.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-des-traversiers",
+          "nom": "GAEC des Traversiers",
+          "picto": "🐑",
+          "lieu": "La Couvertoirade (12)",
+          "description": "Fromages et yaourts de brebis certifiés bio, à 500 mètres de la cité templière. Vente à la ferme.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "miel-safran-du-larzac",
+          "nom": "Miel & Safran du Larzac",
+          "picto": "🍯",
+          "lieu": "Sorbs",
+          "description": "Guillaume Perier conduit 180 ruches en bio — miels de thym, bruyère, châtaignier — et cultive le safran. Sur rendez-vous et aux marchés d'été de La Couvertoirade.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "les-escargots-du-larzac",
+          "nom": "Les Escargots du Larzac",
+          "picto": "🐌",
+          "lieu": "La Cavalerie (12)",
+          "description": "Gros-gris et bourgogne élevés en plein air sur le plateau, préparés persillés, au Roquefort ou au jambon de pays. À la ferme et sur les marchés.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-brasserie-du-larzac",
+          "nom": "La Brasserie du Larzac",
+          "picto": "🍺",
+          "lieu": "La Blaquière, Larzac (12)",
+          "description": "Bières bio non filtrées ni pasteurisées, brassées au cœur du plateau — une dizaine de références, vente à la brasserie et visite sur réservation.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "ferme-du-mas-du-pre",
+          "nom": "Ferme du Mas du Pré",
+          "picto": "🐑",
+          "lieu": "Vallée du Durzon, Nant (12)",
+          "description": "« Lou Fernandou » : pérails et fromages de brebis, tout le lait du troupeau transformé sur place. Point de vente à la ferme.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-des-liquisses",
+          "nom": "GAEC des Liquisses",
+          "picto": "🌾",
+          "lieu": "Les Liquisses, Nant (12)",
+          "description": "Les « Perles bio du Larzac » de la famille Brun : lentilles vertes, pois chiches, pois blonds et farines, cultivés depuis 1984.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "aromatiques-du-larzac",
+          "nom": "Aromatiques du Larzac",
+          "picto": "🌿",
+          "lieu": "Les Homs, Nant (12)",
+          "description": "Trente plantes aromatiques bio à la ferme des Homs : tisanes, vinaigres, hydrolats — et le fameux Pastis des Homs. Boutique à l'année, visite-dégustation l'été.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "pisciculture-du-mas-de-pommiers",
+          "nom": "Pisciculture du Mas de Pommiers",
+          "picto": "🐟",
+          "lieu": "Nant (12)",
+          "description": "Truites arc-en-ciel et fario bio, saumon de fontaine, en eau courante depuis 2006. À la ferme et sur les marchés de Millau et La Cavalerie.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "la-voie-lactee",
+          "nom": "La Voie Lactée",
+          "picto": "🍦",
+          "lieu": "Piquetalen, La Bastide-Pradines (12)",
+          "description": "Les glaces fermières bio de la famille Arnal, au lait des brebis de la ferme.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "ferme-du-frayssinet",
+          "nom": "Ferme du Frayssinet",
+          "picto": "🐄",
+          "lieu": "Sainte-Eulalie-de-Cernon (12)",
+          "description": "Brebis laitières de Roquefort et vaches Aubrac : visites guidées avec dégustation ou goûter, d'avril à fin octobre.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "l-agneau-des-cledelles",
+          "nom": "L'Agneau des Clédelles",
+          "picto": "🐑",
+          "lieu": "Bengouzal, Sainte-Eulalie-de-Cernon (12)",
+          "description": "Agneau du Larzac élevé en plein air : viande découpée à la demande d'avril à septembre, conserves toute l'année. Retrait à la ferme sur commande.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-de-la-doline",
+          "nom": "GAEC de la Doline",
+          "picto": "🐑",
+          "lieu": "La Jasse, L'Hospitalet-du-Larzac (12)",
+          "description": "Agneau bio de 350 brebis menées sur 300 hectares de causse. À la ferme, sur commande.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "gaec-des-licides",
+          "nom": "GAEC des Licides",
+          "picto": "🐓",
+          "lieu": "Campestre-et-Luc (30)",
+          "description": "Poulets et pintades fermiers, œufs, et bœuf croisé Aubrac-Limousine en colis — à la ferme, uniquement sur commande.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "domaine-de-ferrussac",
+          "nom": "Domaine de Ferrussac",
+          "picto": "🍷",
+          "lieu": "La Vacquerie-et-Saint-Martin",
+          "description": "Des Terrasses du Larzac en bio et des bœufs Aubrac, sur 700 hectares de causse semés de dolmens et de lavognes. Dégustation au domaine.",
+          "badge": null,
+          "portrait": null
+        },
+        {
+          "id": "boutique-bistrot-paysans",
+          "nom": "Boutique & Bistrot Paysans",
+          "picto": "🧺",
+          "lieu": "Place du Claux, Nant (12)",
+          "description": "Une quinzaine de fermes du Larzac et des vallées y vendent en direct, en tenant la boutique à tour de rôle : fromages, viandes, miel, légumes, plantes.",
+          "badge": null,
+          "portrait": null
+        }
+      ]
+    }
+  ]
+}
