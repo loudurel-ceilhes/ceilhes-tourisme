@@ -1,0 +1,583 @@
+{
+  "marches": [
+    {
+      "commune": "Bédarieux",
+      "departement": "34",
+      "jour": "lundi",
+      "horaires": "matin, jusqu'à 13h",
+      "periode": "toute l'année, y compris jours fériés",
+      "lieu": "cœur de ville : rue de la République et place aux Fruits",
+      "type": "alimentaire et non-alimentaire, plein vent",
+      "note": "Grand marché de la haute vallée de l'Orb ; nombre d'étals triplé l'été ; marché aux puces en plus sur la promenade de la Perspective d'avril à septembre",
+      "sources": [
+        "https://www.bedarieux.fr/Vivre/Ma-ville/Marches-et-salons/1/71.html",
+        "https://www.jours-de-marche.fr/34600-bedarieux/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 0,
+      "saisonnier": false
+    },
+    {
+      "commune": "Lamalou-les-Bains",
+      "departement": "34",
+      "jour": "mardi",
+      "horaires": "7h30-13h",
+      "periode": "toute l'année",
+      "lieu": "centre-ville, autour de la place Fernand Gouges",
+      "type": "alimentaire et non-alimentaire, plein vent",
+      "note": null,
+      "sources": [
+        "https://www.jours-de-marche.fr/34240-lamalou-les-bains/",
+        "https://alternativi.fr/annuaire/marche/lamalou-les-bains-34240"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 1,
+      "saisonnier": false
+    },
+    {
+      "commune": "Murat-sur-Vèbre",
+      "departement": "81",
+      "jour": "mardi",
+      "horaires": "8h-13h",
+      "periode": "toute l'année",
+      "lieu": "la halle, avenue de l'Albigeois",
+      "type": "alimentaire et terroir (fromages, volailles fermières, miel, ail de Lautrec)",
+      "note": null,
+      "sources": [
+        "https://www.jours-de-marche.fr/81320-murat-sur-vebre/",
+        "https://www.tourisme-tarn.com/agenda/marche-foire-aux-produits-du-terroir/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 1,
+      "saisonnier": false
+    },
+    {
+      "commune": "Clermont-l'Hérault",
+      "departement": "34",
+      "jour": "mercredi",
+      "horaires": "8h-12h",
+      "periode": "toute l'année",
+      "lieu": "centre-ville : le Planol, place de la République, rue du Doyen René Gosse, allées Salengro",
+      "type": "alimentaire et non-alimentaire, plein vent (120 à 150 exposants)",
+      "note": null,
+      "sources": [
+        "https://www.ville-clermont-herault.fr/vie-pratique/869-marche-du-mercredi&Itemid=201",
+        "https://www.herault-tourisme.com/fr/fiche/fetes-et-manifestations/marche-traditionnel-clermont-l-herault_TFOFMALAR034V52JTIB/",
+        "https://www.jours-de-marche.fr/34800-clermont-l-herault/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 2,
+      "saisonnier": false
+    },
+    {
+      "commune": "Camarès",
+      "departement": "12",
+      "jour": "mercredi",
+      "horaires": "9h-12h30",
+      "periode": "toute l'année",
+      "lieu": "place du Foirail",
+      "type": "alimentaire",
+      "note": null,
+      "sources": [
+        "https://www.jours-de-marche.fr/12360-camares/",
+        "https://www.mairie.biz/marche-camares-12360.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 2,
+      "saisonnier": false
+    },
+    {
+      "commune": "Lamalou-les-Bains",
+      "departement": "34",
+      "jour": "jeudi et samedi",
+      "horaires": "matin",
+      "periode": "toute l'année",
+      "lieu": "halles couvertes, place Fernand Gouges",
+      "type": "alimentaire, halles",
+      "note": null,
+      "sources": [
+        "https://alternativi.fr/annuaire/marche/lamalou-les-bains-34240",
+        "https://www.annuaire-mairie.fr/marche-lamalou-les-bains.html"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": false
+    },
+    {
+      "commune": "Saint-Gervais-sur-Mare",
+      "departement": "34",
+      "jour": "jeudi",
+      "horaires": "matin",
+      "periode": "toute l'année",
+      "lieu": "place du Quai",
+      "type": "alimentaire, plein vent",
+      "note": null,
+      "sources": [
+        "https://stgervaissurmare.fr/marche-hebdomadaire/",
+        "https://www.jours-de-marche.fr/34610-saint-gervais-sur-mare/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": false
+    },
+    {
+      "commune": "Graissessac",
+      "departement": "34",
+      "jour": "jeudi",
+      "horaires": "8h-12h",
+      "periode": "toute l'année",
+      "lieu": "place Gambetta",
+      "type": "alimentaire",
+      "note": null,
+      "sources": [
+        "https://www.annuaire-mairie.fr/marche-graissessac.html",
+        "https://www.jours-de-marche.fr/34260-graissessac/"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": false
+    },
+    {
+      "commune": "Belmont-sur-Rance",
+      "departement": "12",
+      "jour": "jeudi et dimanche",
+      "horaires": "8h-12h30",
+      "periode": "toute l'année",
+      "lieu": "centre du village / aire des Rougiers selon les sources",
+      "type": "alimentaire, produits régionaux",
+      "note": "Sources en partie divergentes sur l'emplacement et sur l'existence des deux jours ; à confirmer auprès de la mairie",
+      "sources": [
+        "https://www.jours-de-marche.fr/12370-belmont-sur-rance/",
+        "https://www.annuaire-mairie.fr/marche-belmont-sur-rance.html"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": false
+    },
+    {
+      "commune": "Saint-Sernin-sur-Rance",
+      "departement": "12",
+      "jour": "jeudi",
+      "horaires": "matin",
+      "periode": "toute l'année",
+      "lieu": null,
+      "type": "alimentaire",
+      "note": "Un marché gourmand de producteurs est aussi organisé ponctuellement l'été (dates annuelles à vérifier)",
+      "sources": [
+        "https://www.jours-de-marche.fr/12380-saint-sernin-sur-rance/",
+        "https://www.annuaire-mairie.fr/marche-saint-sernin-sur-rance.html"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": false
+    },
+    {
+      "commune": "La Tour-sur-Orb",
+      "departement": "34",
+      "jour": "vendredi",
+      "horaires": "15h-18h",
+      "periode": "toute l'année (à confirmer en hiver)",
+      "lieu": "boulodrome du village",
+      "type": "producteurs et artisans",
+      "note": null,
+      "sources": [
+        "https://www.alentoor.fr/la-tour-sur-orb/agenda/marche",
+        "https://www.annuaire-mairie.fr/marche-la-tour-sur-orb.html"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 4,
+      "saisonnier": false
+    },
+    {
+      "commune": "Le Bousquet-d'Orb",
+      "departement": "34",
+      "jour": "samedi",
+      "horaires": "8h-13h",
+      "periode": "toute l'année",
+      "lieu": "cours Jean Jaurès (centre du village)",
+      "type": "alimentaire et producteurs, plein vent",
+      "note": "Étals bio également signalés au square du Poilu le même matin",
+      "sources": [
+        "https://www.herault-tourisme.com/fr/fiche/fetes-et-manifestations/marche-traditionnel-plein-vent-le-bousquet-d-orb-le-bousquet-d-orb_TFOFMALAR034V52N4A8/",
+        "https://www.jours-de-marche.fr/34260-le-bousquet-d-orb/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 5,
+      "saisonnier": false
+    },
+    {
+      "commune": "Bédarieux",
+      "departement": "34",
+      "jour": "samedi",
+      "horaires": "8h-12h",
+      "periode": "toute l'année",
+      "lieu": "centre-ville",
+      "type": "marché BioNat : producteurs bio et naturels",
+      "note": null,
+      "sources": [
+        "https://www.bedarieux.fr/Vivre/Ma-ville/Marches-et-salons/1/71.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 5,
+      "saisonnier": false
+    },
+    {
+      "commune": "Hérépian",
+      "departement": "34",
+      "jour": "samedi",
+      "horaires": "8h-12h",
+      "periode": "toute l'année",
+      "lieu": "place Étienne Pascal",
+      "type": "alimentaire, plein vent",
+      "note": null,
+      "sources": [
+        "https://herepian.bureau-meteor.fr/la-commune/economie-et-emploi/le-marche-hebdomadaire/",
+        "https://www.eterritoire.fr/detail/sorties-occitanie/marche-traditionnel-d-herepian/1258489293/occitanie,herault,herepian(34600)"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 5,
+      "saisonnier": false
+    },
+    {
+      "commune": "Lodève",
+      "departement": "34",
+      "jour": "samedi",
+      "horaires": "7h30-13h",
+      "periode": "toute l'année",
+      "lieu": "place du Marché et centre-ville",
+      "type": "alimentaire et non-alimentaire, plein vent (90 à 120 exposants)",
+      "note": "Certaines sources mentionnent aussi un petit marché le mardi, non confirmé par l'office de tourisme",
+      "sources": [
+        "https://www.herault-tourisme.com/fr/fiche/fetes-et-manifestations/marche-traditionnel-de-lodeve-lodeve_TFOFMALAR034V52I2MR/",
+        "https://lodeve.fr/evenements/marche-traditionnel/",
+        "https://www.jours-de-marche.fr/34700-lodeve/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 5,
+      "saisonnier": false
+    },
+    {
+      "commune": "Saint-Affrique",
+      "departement": "12",
+      "jour": "samedi",
+      "horaires": "matin",
+      "periode": "toute l'année",
+      "lieu": "boulevard Victor Hugo et place de l'hôtel de ville",
+      "type": "alimentaire et non-alimentaire, plein vent",
+      "note": null,
+      "sources": [
+        "https://ville-saintaffrique.fr/vie-quotidienne/commerces-et-marches/",
+        "https://www.jours-de-marche.fr/12400-saint-affrique/",
+        "https://www.tourisme-aveyron.com/fr/diffusio/agenda/marche-de-plein-air-saint-affrique_TFO373716169694"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 5,
+      "saisonnier": false
+    },
+    {
+      "commune": "Le Caylar",
+      "departement": "34",
+      "jour": "dimanche",
+      "horaires": "8h-12h",
+      "periode": "toute l'année",
+      "lieu": "centre du village",
+      "type": "alimentaire",
+      "note": null,
+      "sources": [
+        "https://www.jours-de-marche.fr/34520-le-caylar/",
+        "https://www.annuaire-mairie.fr/marche-le-caylar.html"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 6,
+      "saisonnier": false
+    },
+    {
+      "commune": "Lacaune",
+      "departement": "81",
+      "jour": "dimanche",
+      "horaires": "8h-13h",
+      "periode": "toute l'année",
+      "lieu": "place de l'église et centre-ville",
+      "type": "alimentaire (charcuterie de Lacaune, fromages, produits fermiers)",
+      "note": null,
+      "sources": [
+        "https://www.tourisme-tarn.com/agenda/marche-de-lacaune/",
+        "https://www.jours-de-marche.fr/81230-lacaune/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 6,
+      "saisonnier": false
+    },
+    {
+      "commune": "Lacaune",
+      "departement": "81",
+      "jour": "3e samedi du mois (foire) et 3e vendredi du mois (producteurs)",
+      "horaires": "7h-13h",
+      "periode": "toute l'année",
+      "lieu": "centre-ville",
+      "type": "foire mensuelle et marché de producteurs régionaux",
+      "note": "Des marchés gourmands d'été existent aussi (voir lacaune.com), dates publiées chaque saison",
+      "sources": [
+        "https://www.jours-de-marche.fr/81230-lacaune/",
+        "https://www.lacaune.com/vivre-%C3%A0-lacaune/march%C3%A9s-gourmands-de-l-%C3%A9t%C3%A9/"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 7,
+      "saisonnier": false
+    },
+    {
+      "commune": "Soubès",
+      "departement": "34",
+      "jour": "lundi",
+      "horaires": "19h-22h",
+      "periode": "juillet-août (du 6 juillet au 24 août en 2026)",
+      "lieu": "place du Terral",
+      "type": "marché gourmand de producteurs, nocturne, avec concerts",
+      "note": null,
+      "sources": [
+        "https://www.herault-tourisme.com/fr/fiche/fetes-et-manifestations/marche-des-producteurs-de-pays-a-soubes-soubes_TFOFMALAR034V52SQCE/",
+        "https://www.escapadeslr.com/agenda-marches-gourmands-de-producteurs-a-soubes-soubes-herault-1540.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 0,
+      "saisonnier": true
+    },
+    {
+      "commune": "Ceilhes-et-Rocozels",
+      "departement": "34",
+      "jour": "mardi (2 mardis par mois : les 7 et 21 juillet, 4 et 18 août en 2026)",
+      "horaires": "à partir de 18h30",
+      "periode": "juillet-août",
+      "lieu": "plan d'eau du Bouloc",
+      "type": "marché des producteurs de pays, nocturne, avec concerts",
+      "note": "Rendez-vous estival avec animation musicale ; dates précises publiées chaque année",
+      "sources": [
+        "https://www.herault-tourisme.com/fr/fiche/fetes-et-manifestations/marche-des-producteurs-de-pays-ceilhes-et-rocozels_TFOFMALAR034V525SNT/",
+        "https://www.haut-languedoc-vignobles.com/agenda/les-marches-et-fetes-traditionnelles/bienvenu-a-la-ferme-marche-des-producteurs-de-pays-3680995"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 1,
+      "saisonnier": true
+    },
+    {
+      "commune": "Avène",
+      "departement": "34",
+      "jour": "mercredi",
+      "horaires": "9h-12h30",
+      "periode": "saison thermale (printemps-automne)",
+      "lieu": "place du marché (repli salle polyvalente en cas de pluie)",
+      "type": "alimentaire, plein vent",
+      "note": "Ouvre avec la saison thermale ; renforcé en producteurs et artisans en juillet-août (« marché estival »)",
+      "sources": [
+        "https://commune-avene.fr/marche-hebdomadaire-du-mercredi-matin-a-avene/",
+        "https://www.jours-de-marche.fr/34260-avene/"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 2,
+      "saisonnier": true
+    },
+    {
+      "commune": "Lunas",
+      "departement": "34",
+      "jour": "mercredi (1er mercredi du mois de mars à novembre, plus le 3e mercredi en juillet-août)",
+      "horaires": "17h-21h",
+      "periode": "mars à novembre (nocturnes surtout juin-septembre)",
+      "lieu": "place de l'église",
+      "type": "producteurs, nocturne",
+      "note": "Pas de marché hebdomadaire classique à Lunas : formule fin d'après-midi/soirée, 1 à 2 fois par mois",
+      "sources": [
+        "https://www.jours-de-marche.fr/34650-lunas/",
+        "https://www.jds.fr/bedarieux/foires-et-salons/marches/marche-nocturne-511508_A"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 2,
+      "saisonnier": true
+    },
+    {
+      "commune": "Le Caylar",
+      "departement": "34",
+      "jour": "mercredi",
+      "horaires": "18h30-22h",
+      "periode": "juillet-août",
+      "lieu": "la place du village",
+      "type": "marché des producteurs de pays, nocturne",
+      "note": null,
+      "sources": [
+        "https://le-caylar-en-larzac.fr/a-la-une/marches-des-producteurs-tous-les-mercredis-soirs-de-juillet-et-aout/",
+        "https://www.escapadeslr.com/agenda-marche-des-producteurs-de-pays-du-caylar-le-caylar-herault-784.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 2,
+      "saisonnier": true
+    },
+    {
+      "commune": "Camarès",
+      "departement": "12",
+      "jour": "mercredi",
+      "horaires": "8h30-12h30",
+      "periode": "juillet-août (du 1er juillet au 26 août en 2026)",
+      "lieu": "place du Foirail",
+      "type": "marché estival de producteurs et artisans",
+      "note": "Version renforcée du marché hebdomadaire : produits fermiers (biscotins, vins, fromages, charcuteries) et artisanat",
+      "sources": [
+        "https://www.tourisme-aveyron.com/fr/diffusio/agenda/marche-estival-producteurs-et-artisans-camares_TFO073137968934",
+        "https://www.guide-tarn-aveyron.com/fr/agenda/marches/camares-556/marche-estival-producteurs-et-artisans-32948.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 2,
+      "saisonnier": true
+    },
+    {
+      "commune": "La Couvertoirade",
+      "departement": "12",
+      "jour": "jeudi",
+      "horaires": "17h30-22h (animations à partir de 18h30)",
+      "periode": "juillet-août",
+      "lieu": "place du village (cité templière)",
+      "type": "producteurs locaux (Larzac, majorité bio), nocturne, avec animations",
+      "note": "Les sources divergent légèrement sur l'heure de début : 17h30 selon larzac.org, 18h30 selon le site du village",
+      "sources": [
+        "https://lacouvertoirade.com/event/les-marches-nocture/",
+        "https://larzac.org/info/marche-de-la-couvertoirade-3/",
+        "https://www.tourisme-larzac.com/fr/organisez-votre-sejour/deguster/marches-et-rendez-vous-gourmands"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": true
+    },
+    {
+      "commune": "Saint-Affrique",
+      "departement": "12",
+      "jour": "jeudi",
+      "horaires": "à partir de 18h",
+      "periode": "juillet-août (du 9 juillet au 20 août en 2026)",
+      "lieu": "jardin public",
+      "type": "marché gourmand nocturne (Fermiers de l'Aveyron) : repas fermiers sur place, concerts",
+      "note": null,
+      "sources": [
+        "https://www.tourisme-aveyron.com/fr/diffusio/agenda/les-marches-gourmands-de-fermiers-de-l-aveyron-saint-affrique_TFO321104949625",
+        "https://www.guide-tarn-aveyron.com/fr/agenda/concerts/saint-affrique-729/les-marches-gourmands-de-fermiers-de-l-aveyron-30436.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": true
+    },
+    {
+      "commune": "La Salvetat-sur-Agoût",
+      "departement": "34",
+      "jour": "jeudi et samedi (plus le dimanche d'avril à mi-novembre)",
+      "horaires": "8h-12h30",
+      "periode": "toute l'année (rythme renforcé en saison)",
+      "lieu": "centre du village ; esplanade des Troubadours en juillet-août",
+      "type": "alimentaire, producteurs (fromages, volailles, miel)",
+      "note": "Les sources divergent sur le détail jeudi/samedi/dimanche selon la saison ; le jeudi matin est le jour le plus constant",
+      "sources": [
+        "https://www.jours-de-marche.fr/34330-la-salvetat-sur-agout/",
+        "https://www.annuaire-mairie.fr/marche-la-salvetat-sur-agout.html"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 3,
+      "saisonnier": false
+    },
+    {
+      "commune": "Campestre-et-Luc",
+      "departement": "30",
+      "jour": "vendredi",
+      "horaires": "17h30-20h30 (18h selon certaines sources)",
+      "periode": "juillet-août",
+      "lieu": "au hangar",
+      "type": "producteurs et vignerons locaux, nocturne",
+      "note": "Buvette, bières locales et artisanat en plus des étals alimentaires",
+      "sources": [
+        "https://www.sudcevennes.com/agenda/6059718_marche-de-campestre-et-luc/",
+        "https://www.tourisme-larzac.com/fr/organisez-votre-sejour/deguster/marches-et-rendez-vous-gourmands"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 4,
+      "saisonnier": true
+    },
+    {
+      "commune": "Sylvanès",
+      "departement": "12",
+      "jour": "vendredi",
+      "horaires": "soir",
+      "periode": "été (juillet-août)",
+      "lieu": "place du village, près de l'abbaye",
+      "type": "producteurs et artisans, nocturne (repas sur place, ambiance musicale)",
+      "note": "Charcuterie, bœuf d'Aubrac, fromages de chèvre, bière artisanale ; à confirmer chaque saison auprès de l'abbaye (05 65 98 20 20)",
+      "sources": [
+        "https://www.eterritoire.fr/territoires/occitanie/aveyron/sylvanes/12274/4374?agenda=",
+        "https://www.jours-de-marche.fr/12-aveyron/"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 4,
+      "saisonnier": true
+    },
+    {
+      "commune": "Avène",
+      "departement": "34",
+      "jour": "2e jeudi du mois",
+      "horaires": "17h-19h",
+      "periode": "mai à novembre",
+      "lieu": "atrium d'Eau Thermale Avène l'hôtel (Avène-les-Bains)",
+      "type": "producteurs et artisans locaux",
+      "note": "Marché mensuel en intérieur, destiné aux curistes et visiteurs",
+      "sources": [
+        "https://www.eauthermaleavene-lhotel.com/marche-des-artisans-et-producteurs-locaux-eau-thermale-avene-lhotel"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 7,
+      "saisonnier": true
+    },
+    {
+      "commune": "La Salvetat-sur-Agoût",
+      "departement": "34",
+      "jour": "variable selon les années (mardi en 2026 ; lundi ou mercredi selon d'autres sources)",
+      "horaires": "19h-23h",
+      "periode": "juillet-août, quelques dates par été",
+      "lieu": "esplanade des Troubadours",
+      "type": "marché gourmand nocturne : producteurs, artisans, concerts",
+      "note": "Dates ponctuelles publiées chaque saison par l'office de tourisme ; jour non fixe d'une année à l'autre",
+      "sources": [
+        "https://www.destinationhautlanguedoc.fr/agenda/marche-nocturne-2",
+        "https://www.eterritoire.fr/detail/activites-touristiques/marche-nocturne/1032581244/occitanie,herault,la-salvetat-sur-agout(34330)",
+        "https://www.panache-salvetois.fr/marches-festifs-organises-salvetat-agout-fil-annee.html"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "jourTri": 7,
+      "saisonnier": true
+    }
+  ]
+}

@@ -391,6 +391,16 @@ footer small a{color:var(--lac-clair)}
 .prod-card .contact a:hover{color:var(--foret-fonce)}
 .prod-card .contact .sep{color:var(--ocre)}
 .zone-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--foret-fonce);margin:2.8rem 0 .3rem;text-align:center}
+.marches{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.6rem;background:var(--blanc);border-radius:var(--r);box-shadow:var(--ombre);padding:1.8rem 2rem;border-bottom:3px solid var(--ocre)}
+.marches h5{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--foret-fonce);margin:0 0 .7rem}
+.marches ul{list-style:none;margin:0;padding:0}
+.marches li{font-size:.88rem;font-weight:300;padding:.28rem 0;border-bottom:1px dashed var(--pierre)}
+.marches li:last-child{border-bottom:none}
+.marches li.jour{border-bottom:none;padding-top:.7rem;color:var(--lac);text-transform:uppercase;font-size:.72rem;letter-spacing:1.5px}
+.marches li.jour b{font-weight:600}
+.marches li.chez-nous{background:var(--brume);border-radius:8px;padding:.45rem .6rem;border-bottom:none}
+.marches li small{color:var(--ocre)}
+.marches li em{font-style:normal;opacity:.75}
 .zone-sub{text-align:center;font-size:.86rem;font-weight:300;margin:0 0 1.5rem;color:var(--texte)}
 
 /* ---------- ANNUAIRE / HÉBERGEURS ---------- */
