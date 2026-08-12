@@ -11,7 +11,27 @@
           "lieu": "Romiguières",
           "description": "Éleveurs de Limousines depuis 2001, aux sources mêmes de l'Orb : bœuf, veau (élevé sous la mère) et agneau en vente directe.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 30 76 43 76",
+          "email": "elevagebovin-sourceorb@hotmail.fr",
+          "site": "https://www.elevagebovin-sourceorb.com",
+          "facebook": "https://www.facebook.com/ventedirecteboeufveau34/",
+          "instagram": null,
+          "adresse": "Le Village, 34650 Romiguières",
+          "vente": "Colis de bœuf et veau sous vide (dès 5 kg) : retrait à la ferme sur rendez-vous, livraison gratuite en remorque frigorifique, points de rencontre le long de l'A75 Béziers/Le Caylar, dépôt au magasin de producteurs de Portiragnes.",
+          "labels": [
+            "Blason Prestige (gamme Label Rouge)",
+            "Bienvenue à la ferme"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.acheteralasource.com/producteur/41067",
+            "https://www.cliketik.fr/?CristolOlivier2=",
+            "https://www.parcs-naturels-regionaux.fr/consommer-parc/produits-locaux/viandes/gaec-de-la-source-de-lorb",
+            "https://www.facebook.com/ventedirecteboeufveau34/"
+          ],
+          "note": "Olivier Cristol et Caroline Cambon ; élevage limousin depuis 2001. Apparaît aussi sous la raison sociale « EARL de la Source de l'Orb ». Téléphone signalé confirmé par plusieurs annuaires.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-des-monts-et-des-sources",
@@ -20,7 +40,23 @@
           "lieu": "Hameau de Vinas, Avène",
           "description": "Porc, agneau et chevreau élevés en plein air, transformés à la ferme, sans additifs — vente directe.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 32 89 68 65",
+          "email": "hugues.raynaud@orange.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Hameau de Vinas, 34260 Avène",
+          "vente": "Boutique à la ferme : viandes de porc, agneau et chevreau élevés en plein air, transformées sur place sans additifs, plus fruits, légumes et dépôt d'une trentaine de producteurs locaux.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.cliketik.fr/?RaynaudHugues=",
+            "https://www.vivreengrandorb.fr/avene/ferme-des-monts-et-des-sources-/",
+            "https://www.haut-languedoc-vignobles.com/preparer/deguster/visites-de-producteurs-et-boutiques-de-terroir/boutique-ferme-des-monts-et-des-sources-1921401"
+          ],
+          "note": "Contact : Hugues Raynaud. Autres numéros relevés : 06 07 88 30 21 et 04 67 97 21 82. Horaires précis de la boutique non trouvés en ligne : appeler avant de venir.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-part-du-loup",
@@ -32,7 +68,26 @@
           "portrait": {
             "url": "https://esquirols.fr/journal-la-part-du-loup.html",
             "libelle": "Lire son portrait →"
-          }
+          },
+          "telephone": "06 72 80 16 96",
+          "email": "lapartduloup1@orange.fr",
+          "site": "https://www.lapartduloup.com",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Hameau des Planes, 34260 Avène",
+          "vente": "Vente à la ferme du lundi au samedi de 8h30 à 12h30 ; marchés du Caylar, d'Avène, de Pézenas et de La Couvertoirade ; aussi via AMAP et magasins.",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.vivreengrandorb.fr/avene/ferme-la-part-du-loup/",
+            "https://www.defermeenferme.com/participant-2766-la-part-du-loup",
+            "https://www.lapartduloup.com/",
+            "https://bio34.com/annuaire/gaec-la-part-du-loup-avene"
+          ],
+          "note": "Émilie et Basile Dequiedt, brebis laitières 100 % bio (lait AOP Roquefort, fromages, yaourts, glaces). L'email est affiché sans arobase dans la source (« lapartduloup1orange.fr ») : forme reconstituée à vérifier. Présence Facebook/Instagram mentionnée mais URL non retrouvée.",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-cocottes-d-avene",
@@ -41,7 +96,21 @@
           "lieu": "Les Planes, Avène",
           "description": "Les œufs fermiers de Laurence Rouquette : sur place à la demande, et en dépôt dans les commerces du pays — dont Ceilhes.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 76 93 17 14",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Les Planes, 34260 Avène",
+          "vente": "Œufs vendus à la ferme sur demande et en dépôt : Le Local (Bédarieux), Chez Cécile (Camplong), L'Esquirol (Ceilhes-et-Rocozels), Les Jardins d'Émilien (Le Bousquet-d'Orb), marché du Caroux (Villemagne-l'Argentière).",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://cliketik.fr/?LesCocottesDAvene="
+          ],
+          "note": "Laurence Rouquette. Téléphone signalé confirmé par la fiche CliketiK, seule source en ligne détaillée trouvée.",
+          "maj": "2026-08-12"
         },
         {
           "id": "ferme-du-licidou",
@@ -50,16 +119,50 @@
           "lieu": "Hameau de Vinas, Avène",
           "description": "190 brebis laitières : fromages fermiers au lait cru (Licidou, Picou, tomme La Vinette), yaourts et agneau. Vente à la ferme de décembre à juillet, au rythme de la lactation.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 23 11 07",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Hameau de Vinas, 34260 Avène",
+          "vente": "Fromages et yaourts au lait cru de brebis fabriqués du 1er décembre au 31 juillet ; vente à la ferme sur rendez-vous et au marché du Bousquet-d'Orb le samedi matin ; agneau de Pâques sur commande.",
+          "labels": [
+            "Bienvenue à la ferme"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.bienvenue-a-la-ferme.com/occitanie/herault/avene/ferme/la-ferme-du-licidou/630586",
+            "https://www.vivreengrandorb.fr/avene/gaec-le-licidou-/",
+            "https://ville-data.com/que-faire/visite-cave-ferme-degustation/FERME-DU-LICIDOU/Avene/34-12095-34019"
+          ],
+          "note": "Myriam Fontaine et Patrick Blanc, 190 brebis Lacaune en agriculture raisonnée (pas de label AB). Second numéro relevé : 06 79 98 49 73.",
+          "maj": "2026-08-12"
         },
         {
-          "id": "les-terrasses-de-baude",
-          "nom": "Les Terrasses de Baude",
+          "id": "les-terrasses-de-baudes",
+          "nom": "Les Terrasses de Baudes",
           "picto": "🌱",
           "lieu": "Joncels",
           "description": "Une association qui fait revivre les terrasses de Joncels : agriculture respectueuse de l'environnement, ateliers, sorties nature et animations culturelles.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": null,
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "La Placette, 34650 Joncels",
+          "vente": null,
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "https://www.net1901.org/association/LES-TERRASSES-DE-BAUDES,3463804.html",
+            "https://annuaire-entreprises.data.gouv.fr/entreprise/les-terrasses-de-baudes-841338916",
+            "https://hoodspot.fr/associations/les-terrasses-de-baudes-84133891600015/"
+          ],
+          "note": "Association fondée en 2018 (SIREN 841338916), objet : développer une activité agricole favorisant la sensibilisation à l'environnement, la valorisation du patrimoine rural et le lien social ; propose aussi des animations culturelles. Aucun téléphone, email, site ni réseau social trouvés ; activité maraîchère actuelle non confirmée en ligne — contact possible par courrier ou via la mairie de Joncels.",
+          "maj": "2026-08-12"
         },
         {
           "id": "le-fournil-de-fonbine",
@@ -68,7 +171,25 @@
           "lieu": "Hameau de Fonbine, Joncels",
           "description": "Pain artisanal pétri et cuit au hameau, à retrouver sur les marchés du pays.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 23 46 25",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Hameau de Fonbine, 34260 Avène",
+          "vente": "Pains bio au levain (dont épeautre) et brioches cuits au four à bois traditionnel ; pizza végétarienne le vendredi soir ; fougasses tomates séchées-olives noires.",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://boulangerie.contact/34-herault/avene/boulangerie/27473-fournil-de-fonbine.html",
+            "https://www.grandorb.fr/tourisme/Detail/Produits-du-terroir/La-Boulangerie-de-Fonbine/DEGLAR034V52BN0V.html",
+            "https://www.societe.com/societe/le-pain-de-fonbine-882390206.html"
+          ],
+          "note": "Le hameau de Fonbine est géographiquement côté Joncels, mais l'entreprise (SARL Le Pain de Fonbine, créée en 2020) est domiciliée à 34260 Avène dans toutes les sources. « Bio » annoncé par les fiches, certification non vérifiée. Horaires précis non trouvés.",
+          "maj": "2026-08-12"
         },
         {
           "id": "le-pain-de-l-arche",
@@ -77,16 +198,48 @@
           "lieu": "La Borie Noble, Roqueredonde",
           "description": "La communauté de l'Arche, fondée par Lanza del Vasto en 1948, cuit pains, pâtisseries et pizzas au feu de bois — vente le samedi après-midi à la Borie Noble.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": null,
+          "email": null,
+          "site": "https://archecom.org/la-borie-noble",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "La Borie Noble, 34650 Roqueredonde",
+          "vente": "Pain au levain pétri à la main et cuit au four à bois (pain d'épeautre réputé), vente sur place à la communauté de l'Arche.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://archecom.org/la-borie-noble",
+            "https://www.myboulange.fr/34/roqueredonde/boulangerie-de-la-borie-noble-158636",
+            "https://boulangerie.contact/34-herault/roqueredonde/boulangerie/27472-boulangerie-de-la-borie-noble.html"
+          ],
+          "note": "Communauté de l'Arche (Lanza del Vasto), toujours active. Aucun téléphone ni email de la boulangerie trouvés en ligne ; passer par le formulaire de contact d'archecom.org. Jours de fournée non publiés.",
+          "maj": "2026-08-12"
         },
         {
           "id": "domaine-de-gravezon-eric-pailles",
           "nom": "Domaine de Gravezon — Éric Paillès",
           "picto": "🍷",
           "lieu": "Joncels",
-          "description": "Sur 4 hectares de vignes héritées du début du XX<sup>e</sup> siècle, Éric Paillès cultive des cépages oubliés (villard blanc, aramon, grenache…) identifiés avec l'INRA de Montpellier.",
+          "description": "Sur 4 hectares de vignes héritées du début du XXᵉ siècle, Éric Paillès cultive des cépages oubliés (villard blanc, aramon, grenache…) identifiés avec l'INRA de Montpellier.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 82 15 62 78",
+          "email": "pailles.eric@wanadoo.fr",
+          "site": null,
+          "facebook": "https://www.facebook.com/p/Domaine-De-Gravezon-100063172363708/",
+          "instagram": null,
+          "adresse": "Le Village, 34650 Joncels",
+          "vente": "Vente au domaine (4 ha, cépages patrimoniaux : Villard blanc, Grenache, Aramon) ; distribué aux Caves Notre Dame et Caves des Poètes à Béziers.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://cavesnotredame-beziers.com/announcement/domaine-de-gravezon-eric-pailles-joncels/",
+            "https://www.vigneron-independant.com/domaine-de-gravezon",
+            "https://www.haut-languedoc-vignobles.com/les-adresses-labellisees/domaine-de-gravezon-2780646"
+          ],
+          "note": "Adhérent Vignerons Indépendants. L'email est affiché sans arobase dans la source (« pailles.ericwanadoo.fr ») : forme reconstituée à vérifier.",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-sorbets-deci-dela",
@@ -95,7 +248,24 @@
           "lieu": "Lunas",
           "description": "Sorbets artisanaux aux fruits et aux plantes aromatiques — ceux-là mêmes qu'on déguste en terrasse à l'Esquirol.",
           "badge": "🍧 En terrasse à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": null,
+          "email": "manonduclos@laposte.net",
+          "site": null,
+          "facebook": "https://www.facebook.com/p/Les-sorbets-deci-del%C3%A0-100069972835657/",
+          "instagram": null,
+          "adresse": "1 Grand Rue, 34650 Lunas-les-Châteaux",
+          "vente": "Sorbets de fruits et de plantes aromatiques (cassis, groseille, mûre, griotte, violette) vendus sur les marchés locaux, notamment le marché estival de Lunas, depuis l'été 2021.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://cliketik.fr/?LesSorbetsDeciDela=",
+            "https://lunas-les-chateaux.fr/entreprises-et-services/",
+            "https://franceactive-occitanie.org/stories/des-sorbets-faits-maison-a-lunas/",
+            "https://www.facebook.com/p/Les-sorbets-deci-del%C3%A0-100069972835657/"
+          ],
+          "note": "Manon Duclos, installée en 2021, cueillette sauvage autour de Lunas. Aucun téléphone public trouvé.",
+          "maj": "2026-08-12"
         },
         {
           "id": "miellerie-du-mas-valette-philippe-chevalier",
@@ -107,7 +277,24 @@
           "portrait": {
             "url": "https://esquirols.fr/journal-miels-philippe-chevalier.html",
             "libelle": "Choisir son pot →"
-          }
+          },
+          "telephone": "06 84 30 70 58",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Mas Valette, route de Ceilhes, 34260 Avène",
+          "vente": "Miels (garrigue, fleurs, châtaignier, acacia, lavande), propolis et pollen ; vente principalement sur les marchés locaux et à la miellerie sur rendez-vous.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-occitanie.com/fr/fiche/degustation/miellerie-du-mas-valette-avene_TFODEGLAR034V51SJ1S/",
+            "https://www.vivreengrandorb.fr/avene/meillerie-mas-valette-/",
+            "https://cliketik.fr/?ChevalierPhilippe=",
+            "https://www.lesproduitsdularzac.fr/fr_FR/producteurs/philippe-chevalier"
+          ],
+          "note": "Philippe Chevalier et Annie Audoli, plus de 40 ans d'expérience. Téléphone signalé confirmé par les fiches tourisme.",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-ruchers-des-monts-d-avene",
@@ -116,7 +303,23 @@
           "lieu": "Le Bousquet-d'Orb",
           "description": "Miels de pays issus des ruchers installés sur les hauteurs des Monts d'Orb.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 23 89 47",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "29 bis route d'Avène, 34260 Le Bousquet-d'Orb",
+          "vente": "Vente directe tous les jours (appeler avant), visites du rucher sur rendez-vous, miels et produits dérivés aussi en dépôt dans plusieurs commerces locaux.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.grandorb.fr/tourisme/Detail/Produits-du-terroir/Les-Ruchers-des-Monts-d-Avene/DEGLAR034FS001VW.html",
+            "https://ville-data.com/que-faire/visite-cave-ferme-degustation/LES-RUCHERS-DES-MONTS-D-AVENE/Le-Bousquet-d-Orb/34-12186-34038",
+            "https://cliketik.fr/?SalsSebastien="
+          ],
+          "note": "Apiculteur : Sébastien Sals. Second numéro relevé : 06 88 12 61 43.",
+          "maj": "2026-08-12"
         },
         {
           "id": "safran-des-hauts-cantons",
@@ -125,7 +328,26 @@
           "lieu": "La Tour-sur-Orb",
           "description": "Safran, miel, plantes aromatiques, truffes et conserves artisanales. Vente sur place les mardis, jeudis et samedis matin.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 95 41 69",
+          "email": "maraval.christophe@free.fr",
+          "site": "https://safrandeshautscantons.fr",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "8 impasse des Causses, 34260 La Tour-sur-Orb",
+          "vente": "Safran, miels (fleurs, châtaignier, miel au safran), confitures et gelées artisanales ; vente à la ferme, par correspondance et sur les marchés et salons ; visites de la safranière l'été (Mercredis au Pays).",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-occitanie.com/fr/fiche/degustation/safran-des-hauts-cantons-de-l-herault-la-tour-sur-orb_TFODEGLAR034V51SJ0Y/",
+            "http://annuairebio.mobi/operateur/70228",
+            "https://www.francebleu.fr/emissions/circuit-court-dans-l-herault/herault/les-circuits-courts-dans-l-herault-avec-sandrine-maraval-safran-et-miels-des-hauts-cantons-la-tour",
+            "https://www.jds.fr/bedarieux/foires-et-salons/marches/les-mercredis-au-pays-safran-des-hauts-cantons-de-l-herault-7-aout-2024-547994_A"
+          ],
+          "note": "Sandrine et Christophe Maraval ; certifiés bio Ecocert depuis 2016. Téléphone signalé confirmé.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-mandaline",
@@ -134,7 +356,25 @@
           "lieu": "Camplong",
           "description": "Maraîchage bio diversifié sur sol vivant, safran, fruits et petite pépinière. Retrait à la ferme, marché BioNat de Bédarieux le samedi matin.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 35 95 65 89",
+          "email": "lamandaline@laposte.net",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "7 chemin de St-Sauveur, 34260 Camplong",
+          "vente": "Légumes, safran, fruits et gelées bio : retrait à la ferme à Camplong, marché BioNat de Bédarieux le samedi matin, marché de Lamalou-les-Bains le mardi matin ; livraison gratuite entre Camplong et Bédarieux dès 15 €.",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.cliketik.fr/?CamplongLaMandalineMaraichage=",
+            "https://www.vivreengrandorb.fr/camplong/lamandaline/",
+            "https://www.societe.com/societe/la-mandaline-922216502.html"
+          ],
+          "note": "Stéphane et Céline Di Marcantonio ; maraîchage sur sol vivant, terrains en agriculture biologique depuis 2008, société créée en 2022.",
+          "maj": "2026-08-12"
         },
         {
           "id": "brasserie-pompon",
@@ -143,7 +383,23 @@
           "lieu": "Camplong",
           "description": "Bières artisanales brassées avec l'eau des sources granitiques de Camplong — et baptisées en hommage à Pompon, petit chien emblématique du village.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 20 02 24 10",
+          "email": null,
+          "site": "https://brasseriepompon.odoo.com",
+          "facebook": "https://www.facebook.com/p/Bi%C3%A8re-de-michel-Brasserie-Pompon-61566854580480/",
+          "instagram": null,
+          "adresse": "3 rue du Pompon, 34260 Camplong",
+          "vente": "Bières artisanales (blonde 4,3°, NEIPA) brassées à l'eau de source granitique de Camplong, en bouteilles et fûts de 20 L, avec location de tireuse.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://brasseriepompon.odoo.com/",
+            "https://www.vivreengrandorb.fr/camplong/brasserie-pompon/",
+            "https://cliketik.fr/?CamplongBrasseriePompon="
+          ],
+          "note": "Téléphone signalé confirmé. Brasserie installée dans les caves voûtées du village.",
+          "maj": "2026-08-12"
         },
         {
           "id": "pisciculture-du-gravezon",
@@ -152,7 +408,24 @@
           "lieu": "Lunas",
           "description": "Truites et saumons de fontaine élevés en eau vive depuis 1977 : vente au détail sur place, parcours de pêche et aire de pique-nique.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 23 88 98",
+          "email": null,
+          "site": "http://www.pechegravezon.fr",
+          "facebook": "https://www.facebook.com/pages/category/Fish-Farm/Pisciculture-du-Gravezon-884970911853175/",
+          "instagram": null,
+          "adresse": "Route de Joncels, 34650 Lunas",
+          "vente": "Ouvert tous les jours sauf lundi, 9h30-19h, du 1er mars à la 3e semaine de septembre : parcours de pêche (truites payées au poids, dès 8,80 €/kg), vente de truites au détail sur place ou en livraison, aire de pique-nique.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "http://www.pechegravezon.fr/accueil.html",
+            "https://www.pagesjaunes.fr/pros/58142373",
+            "https://www.touteslesadresses.fr/company-address-phone-company-email-francais-en-ligne/pisciculture/2452488/pisciculture-du-gravezon-route-joncels-herault-lunas-0467238898",
+            "https://www.aqua-tourisme.fr/pisciculture/pisciculture-du-gravezon/"
+          ],
+          "note": "En activité depuis 1977 ; truites arc-en-ciel, fario et saumon de fontaine.",
+          "maj": "2026-08-12"
         },
         {
           "id": "domaine-de-clovallon",
@@ -161,7 +434,27 @@
           "lieu": "Bédarieux",
           "description": "Vins bio et biodynamie de la haute vallée de l'Orb, pionnier du pinot noir en Languedoc. Dégustation et vente à la propriété sur rendez-vous.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 95 19 72",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Ancienne route de Béziers, BP 21, 34600 Bédarieux",
+          "vente": "Vente au domaine sur rendez-vous ; caveau de dégustation à Faugères (route de Pézenas, près de la mairie) ouvert tous les jours sauf dimanche de 14h30 à 17h30.",
+          "labels": [
+            "AB",
+            "Demeter"
+          ],
+          "actif": "oui",
+          "sources": [
+            "http://m.herault-tourisme.com/degustation/bedarieux/domaine-de-clovallon/tourisme-DEGLAR034FS0016M-1.html",
+            "https://www.la-bouteille.com/393_domaine-de-clovallon",
+            "https://bio34.com/annuaire/domaine-de-clovallon-bedarieux",
+            "https://espace-vin.com/domaine/domaine-de-clovallon/"
+          ],
+          "note": "Fondé par Catherine Roque en 1989, dirigé par sa fille Alix Roque depuis 2012 ; 12 ha en biodynamie certifiée Demeter, pinot noir emblématique. Téléphone signalé confirmé. L'adresse « route du Col des Buis » fournie n'apparaît pas dans les sources, qui donnent l'ancienne route de Béziers.",
+          "maj": "2026-08-12"
         },
         {
           "id": "aupres-de-mon-cep",
@@ -170,7 +463,27 @@
           "lieu": "Les Aires",
           "description": "Micro-domaine en biodynamie certifié Demeter : vins naturels sans sulfites ajoutés, vignes labourées au cheval.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 20 08 24 90",
+          "email": null,
+          "site": "http://www.aupresdemoncep.fr",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "1 chemin de Bernaude, 34600 Les Aires",
+          "vente": "Vins nature sans sulfites ajoutés, vendanges manuelles, travail au cheval ; cuvées uniques chaque année, distribuées chez des cavistes de vin nature (Mains Rouges, etc.).",
+          "labels": [
+            "AB",
+            "Demeter",
+            "Nature & Progrès"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.grandorb.fr/tourisme/Detail/Produits-du-terroir/Aupres-de-Mon-Cep/DEGLAR034V51KQ3S.html",
+            "https://www.vinsnaturels.fr/003_viticulteurs/Languedoc-Roussillon-Aupr%C3%A8s-de-mon-cep-Ian-LU--594.html",
+            "https://www.raisin.digital/en/artisans/natural-winemakers/ian-lu-aupres-de-mon-cep-1-6183/"
+          ],
+          "note": "Domaine créé en 2014. Téléphone signalé confirmé par la fiche Grand Orb. Certifications citées par vinsnaturels.fr (bio, Demeter, Nature & Progrès, mention Biodyvin) : à reconfirmer directement auprès du vigneron.",
+          "maj": "2026-08-12"
         },
         {
           "id": "brasserie-des-aucels",
@@ -179,7 +492,26 @@
           "lieu": "Bédarieux",
           "description": "Plus de trente bières bio, limonades et sodas artisanaux. Boutique à l'année, visites, dégustations et ateliers de brassage.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 30 40 64 85",
+          "email": null,
+          "site": "https://www.brasseriedesaucels.fr",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "84 avenue Jean Jaurès, 34600 Bédarieux",
+          "vente": "Bières bio, limonades et sodas artisanaux ; vente sur place en semaine (env. lun-mar 9h-18h, jeu 9h-19h, ven 9h-20h, fermé mer/sam/dim — à confirmer par téléphone) ; stages de brassage et location de tireuses.",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.brasseriedesaucels.fr/",
+            "https://www.pagesjaunes.fr/pros/58135480",
+            "https://www.foodbevg.com/FR/B%C3%A9darieux/466748460393148/Brasserie-des-Aucels",
+            "https://www.vivreengrandorb.fr/bedarieux/brasseriedesaucels/"
+          ],
+          "note": "Fondée en décembre 2017 ; blonde médaille d'argent au Concours international de Lyon 2023. Téléphone signalé confirmé.",
+          "maj": "2026-08-12"
         }
       ]
     },
@@ -194,7 +526,27 @@
           "lieu": "Murat-sur-Vèbre (81)",
           "description": "Jambons IGP Lacaune, melsat et bougnette sans sel nitrité, avec les porcs de trois éleveurs à moins de 30 km. Boutiques à Lacaune et Moulin-Mage.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 63 37 14 72",
+          "email": "contact@charcuterie-millas.fr",
+          "site": "https://charcuterie-millas.fr",
+          "facebook": "https://www.facebook.com/charcuterie.millas/",
+          "instagram": "https://www.instagram.com/charcuteriemillas/",
+          "adresse": "Atelier-magasin : 4891 route d'Albi, Moulin-Mage, 81320 Murat-sur-Vèbre ; boutique : 6 avenue de Naurois, 81230 Lacaune",
+          "vente": "Atelier de Moulin-Mage ouvert 9h-12h/15h-19h (fermé le dimanche) ; boutique de Lacaune mardi-samedi 9h-12h30/15h-19h et dimanche 9h-12h30.",
+          "labels": [
+            "IGP Lacaune",
+            "Collège Culinaire de France"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://charcuterie-millas.fr/",
+            "https://charcuterie-millas.fr/nous-contacter",
+            "https://www.pagesjaunes.fr/pros/09579493",
+            "https://college-culinaire-de-france.fr/adherent/7728-CHARCUTERIE%20MILLAS"
+          ],
+          "note": "L'une des six salaisonneries habilitées IGP Lacaune. Porcs élevés sur paille par trois éleveurs du Tarn et de l'Aveyron.",
+          "maj": "2026-08-12"
         },
         {
           "id": "salaisons-ray-gal",
@@ -203,7 +555,23 @@
           "lieu": "Lacaune-les-Bains (81)",
           "description": "Les salaisons de la famille Galiber, séchées à l'air libre. Boutique de vente directe — et distributeur automatique de charcuterie, pour les fringales tardives.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 63 37 02 54",
+          "email": "contact@leraygaldelacaune.fr",
+          "site": "https://www.leraygaldelacaune.fr",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "25 avenue du Montalet, 81230 Lacaune",
+          "vente": "Vente directe à l'atelier et commande en ligne.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.leraygaldelacaune.fr/",
+            "https://www.leraygaldelacaune.fr/contact-3",
+            "https://www.charcuterie-leraygal-occitanie.com/"
+          ],
+          "note": null,
+          "maj": "2026-08-12"
         },
         {
           "id": "maison-oberti",
@@ -212,7 +580,25 @@
           "lieu": "Lacaune-les-Bains (81)",
           "description": "Maison familiale de salaisons depuis 1956 : jambons et saucissons de Lacaune, vente directe en boutique.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 63 37 00 21",
+          "email": "contact.salaisons@oberti.fr",
+          "site": "https://www.oberti.fr",
+          "facebook": "https://www.facebook.com/SalaisonsOberti/",
+          "instagram": null,
+          "adresse": "Chemin de Granisse, 81230 Lacaune",
+          "vente": "Boutique à l'atelier avec circuit de visite audioguidé et dégustation, lundi-samedi 9h30-11h15 et 14h-17h45 ; vente par correspondance.",
+          "labels": [
+            "IGP Lacaune"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.oberti.fr/nous-contacter",
+            "https://www.oberti.fr/content/8-visitez-notre-atelier-de-fabrication-et-notre-boutique",
+            "https://www.salaisons-lacaune.fr/les-salaisonniers-de-lacaune/"
+          ],
+          "note": "Boutique-visites : 05 63 50 82 04 / 06 47 02 69 42.",
+          "maj": "2026-08-12"
         },
         {
           "id": "moulin-du-louat",
@@ -221,7 +607,23 @@
           "lieu": "Murat-sur-Vèbre (81)",
           "description": "Bœuf, veau, porc, charcuteries et pommes de terre de Géraldine et Yannick Feliu : magasin à la ferme et livraisons en Aveyron et Hérault.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 87 91 33 97",
+          "email": null,
+          "site": "https://www.moulindelouat.fr",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Le Louat, 81320 Murat-sur-Vèbre",
+          "vente": "Magasin à la ferme ouvert tous les jours (charcuteries et conserves) ; bœuf, veau et porc en colis sur commande ; tournées de livraison en Aveyron et Hérault tous les deux mois.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.moulindelouat.fr/",
+            "https://www.moulindelouat.fr/contact",
+            "https://www.acheteralasource.com/producteur/112823"
+          ],
+          "note": "Élevage sans OGM (mention du site).",
+          "maj": "2026-08-12"
         },
         {
           "id": "fromagerie-lou-caoussarel",
@@ -230,7 +632,21 @@
           "lieu": "Le Causse, Murat-sur-Vèbre (81)",
           "description": "Fromages de brebis au lait cru depuis 1990, sur les hauteurs des monts de Lacaune.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 63 37 13 65",
+          "email": null,
+          "site": null,
+          "facebook": "https://www.facebook.com/p/Fromagerie-Lou-Caoussarel-100063045919561/",
+          "instagram": null,
+          "adresse": "Le Causse, 81320 Murat-sur-Vèbre",
+          "vente": "Vente à la ferme.",
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "http://www.murat-sur-vebre.fr/fr/economie/produits-de-la-ferme_72.html"
+          ],
+          "note": "Aucune trace d'activité datée 2025-2026 : à confirmer par téléphone.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-du-rouquis",
@@ -239,7 +655,22 @@
           "lieu": "La Trivalle, Moulin-Mage (81)",
           "description": "Yaourts et caillés de brebis, nature ou vanille, de janvier à début août. À la ferme, et en dépôt à l'épicerie de Brusque.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 63 37 22 06",
+          "email": "lerouquis@gmail.com",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "La Trivalle, 81320 Moulin-Mage",
+          "vente": "Yaourts et caillés de brebis en saison (janvier à début août), à la ferme, sur commande et au magasin Le Terroir à Lacaune.",
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "https://www.destinationhautlanguedoc.fr/sites/destinationhautlanguedoc.fr/files/2025-04/guide_producteurs_2023.pdf",
+            "https://www.societe.com/societe/earl-du-rouquis-534833702.html"
+          ],
+          "note": "Autre tél. : 06 88 30 04 55. Coordonnées du guide OT 2023 (rediffusé 2025) : à confirmer par téléphone.",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-escargots-de-barre",
@@ -248,7 +679,23 @@
           "lieu": "Barre (81)",
           "description": "Gros-gris et petits-gris élevés en plein air par Jérôme Salvignol, frais et en conserves. Visites commentées gratuites.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 08 16 54 13",
+          "email": "salvignol.jerome@orange.fr",
+          "site": "https://www.lesescargotsbarre.com",
+          "facebook": "https://www.facebook.com/jerome.salvignol.948/",
+          "instagram": null,
+          "adresse": "Rue de l'Église, 81320 Barre",
+          "vente": "Vente à la ferme et sur les marchés (dont le marché gourmand de La Salvetat-sur-Agoût en été) ; dépôt chez Trésors des Monts de Lacaune.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.lesescargotsbarre.com/",
+            "https://www.producteurs.fr/producteur-les-escargots-de-barre-81320-barre-7493.html",
+            "https://www.intramuros.org/barre/commerces/18141"
+          ],
+          "note": null,
+          "maj": "2026-08-12"
         },
         {
           "id": "miellerie-le-gazel",
@@ -257,7 +704,22 @@
           "lieu": "Senaux (81)",
           "description": "Miels de montagne, confitures et pain d'épices. Sur rendez-vous à la miellerie, et au marché de Lacaune le dimanche matin d'avril à octobre.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 63 37 58 19",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Les Farguelles, 81530 Senaux",
+          "vente": "Vente à la miellerie sur rendez-vous ; marché de Lacaune le dimanche matin d'avril à l'automne.",
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "https://www.intramuros.org/senaux/commerces/17882",
+            "https://cliketik.fr/?GazelMarieAndree="
+          ],
+          "note": "Autre tél. : 06 76 10 57 70. Environ 250 ruches. Annuaires locaux sans date récente : à confirmer par téléphone.",
+          "maj": "2026-08-12"
         },
         {
           "id": "le-jardin-de-celine",
@@ -266,7 +728,25 @@
           "lieu": "Saint-Gervais-sur-Mare",
           "description": "Maraîchage bio en variétés anciennes, travaillé en traction animale : légumes, chutneys, veloutés et confitures. À la ferme et en paniers.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 86 60 94 50",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "61 rue de Castres, 34610 Saint-Gervais-sur-Mare",
+          "vente": "À la ferme et en paniers sur abonnement ; dépôt à L'Arbre à Pains (Saint-Gervais) mercredi et vendredi 17h-19h.",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://bio34.com/annuaire/le-jardin-de-celine-saint-gervais-sur-mare",
+            "https://www.tourisme-occitanie.com/fr/fiche/degustation/le-jardin-de-celine-st-gervais-sur-mare_TFODEGLAR034FS00200/",
+            "https://www.cliketik.fr/?PuygrenierCeline="
+          ],
+          "note": "0,72 ha, variétés anciennes, traction animale (poneys).",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-ferme-du-deves",
@@ -275,7 +755,26 @@
           "lieu": "Castanet-le-Haut",
           "description": "Œufs et poulets bio à 880 mètres d'altitude, sur le GR 653 : ferme pédagogique, table d'accueil paysan et gîte d'étape.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 82 69 24 21",
+          "email": "lafermedudeves@gmail.com",
+          "site": null,
+          "facebook": "https://www.facebook.com/profile.php?id=100075907177447",
+          "instagram": null,
+          "adresse": "Le Devès, 34610 Castanet-le-Haut",
+          "vente": "Œufs bio sur commande et poulets fermiers bio à la ferme (livraison possible) ; table paysanne toute l'année sur réservation.",
+          "labels": [
+            "AB",
+            "Accueil Paysan"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.intramuros.org/castanet-le-haut/commerces/17937",
+            "https://catalogue.accueil-paysan.com/fr/catalog/structure/1468/",
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/la-ferme-du-deves-castanet-le-haut_TFODEGLAR034V52I3QQ/"
+          ],
+          "note": "Environ 250 pondeuses et 300 poulets bio, installés depuis 2017.",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-ruchers-de-l-orb",
@@ -284,7 +783,25 @@
           "lieu": "Mons-la-Trivalle",
           "description": "Les 110 ruches bio d'Agathe Thommeret transhument sur les flancs du Caroux. Vente à la ferme sur demande et en boutiques locales.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 31 52 30 91",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "5 place du Roujas, 34390 Mons-la-Trivalle",
+          "vente": "Vente à la miellerie sur demande ; miel, pollen frais et propolis en épiceries de la vallée et sur les marchés.",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.minervois-caroux.com/annuaire/les-ruchers-de-l-orb",
+            "https://cliketik.fr/?LesRuchersDeLOrb=",
+            "https://www.parc-haut-languedoc.fr/actualites/les-ruchers-de-lorb-les-petites-histoires-du-haut-languedoc"
+          ],
+          "note": "Ruches Warré, apiculture bio non transhumante.",
+          "maj": "2026-08-12"
         }
       ]
     },
@@ -302,16 +819,48 @@
           "portrait": {
             "url": "https://esquirols.fr/journal-fermiere-de-sylvanes.html",
             "libelle": "Lire son portrait →"
-          }
+          },
+          "telephone": "05 65 99 50 99",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Ramondedieu, 12360 Sylvanès",
+          "vente": "Boutique à la ferme, charcuterie artisanale (pâtés, melsat, boudin, saucisses, conserves) ; horaires indiqués lun-sam 9h-12h / 14h-18h (non vérifiés, appeler avant)",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/autres-commerces/la-fermiere-de-sylvanes-sylvanes_TFO403517386701",
+            "https://www.annuaire-horaire.fr/societe/Charcuterie-Sylvanes-La-Fermiere-de-Sylvanes/1446341",
+            "https://www.societe.com/societe/la-fermiere-de-sylvanes-833875701.html"
+          ],
+          "note": "SAS créée en 2017, Patrice Ramondenc président. Un annuaire inverse cite aussi un ancien numéro 05 65 49 56 44 ; le 05 65 99 50 99 est le plus largement repris.",
+          "maj": "2026-08-12"
         },
         {
-          "id": "gaec-de-brioge",
-          "nom": "GAEC de Brioge",
+          "id": "gaec-de-brioges",
+          "nom": "GAEC de Brioges",
           "picto": "🐓",
           "lieu": "Brioges, Mélagues (12)",
           "description": "Volailles fermières et œufs de Sylvie et Jean-Louis Rivemale : à la ferme, en livraison et sur les marchés de Camarès et Saint-Affrique.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 87 25 02 05",
+          "email": "rivemale.jeanlouis@nordnet.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Brioges, 12360 Mélagues",
+          "vente": "Vente à la ferme et livraison sur rendez-vous ; marché de Camarès le mercredi (toute l'année) et marché nocturne des producteurs de pays à Saint-Affrique ; dépôts Intermarché et Vival Camarès, commerces de Brusque",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://cliketik.fr/?GaecDeBrioges=",
+            "https://monproducteur.aveyron.fr/entreAidePro/2483/5894-gaec-de-brioges.htm",
+            "https://www.societe.com/societe/gaec-de-brioges-828036988.html"
+          ],
+          "note": "Second numéro signalé : 06 83 06 08 96. Environ 5000 volailles/an (poulets cou nu, pintades, chapons) + poules pondeuses.",
+          "maj": "2026-08-12"
         },
         {
           "id": "le-jardin-du-fada",
@@ -320,7 +869,23 @@
           "lieu": "La Baume, Sylvanès (12)",
           "description": "Huiles de noix et de tournesol, jus de pomme, crème et liqueur de châtaigne, vin de noix chez Daniel Fabre. Vente à la ferme tous les jours en milieu de journée.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 85 39 40 61",
+          "email": "lelegumemasque@orange.fr",
+          "site": "http://lejardindufada.blogspot.com/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "La Baume, 12360 Sylvanès",
+          "vente": "Vente à la ferme toute l'année, tous les jours de 11h à 15h et sur rendez-vous ; huiles (noix, tournesol), jus de fruits, crème de châtaigne, liqueur de châtaigne, vin de noix ; service de pressage ; boutique en ligne via Cobeia",
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "https://www.illicomesproduitslocaux.fr/producteur/3582-fabre-daniel/notre-ferme.html",
+            "https://www.cobeia.com/s/le-jardin-du-fada",
+            "https://producteur.direct/b/le-jardin-du-fada"
+          ],
+          "note": "Téléphone signalé confirmé par le carnet des circuits courts. Pas de trace datée 2025-2026, à confirmer par appel.",
+          "maj": "2026-08-12"
         },
         {
           "id": "ferme-de-saint-pierre-d-issis",
@@ -329,7 +894,25 @@
           "lieu": "Camarès (12)",
           "description": "Brebis laitières en zone Roquefort, polyculture : Roquefort, œufs, miel, agneau, lentilles et pois chiches au point de vente de la ferme. Visite gratuite le vendredi sur réservation.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "07 71 26 76 09",
+          "email": "christophecurie12@orange.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "175 chemin de Saint-Pierre d'Issis, 12360 Camarès",
+          "vente": "Boutique à la ferme : œufs, viande d'agneau, miel, lentilles et pois chiches (sans traitement) ; visite gratuite de la ferme chaque vendredi sur réservation",
+          "labels": [
+            "AOP Roquefort (lait livré à la coopérative La Pastourelle)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/autres-commerces/ferme-de-st-pierre-d-issis-camares_TFO404055308522",
+            "https://monproducteur.aveyron.fr/entreAidePro/437/5894-ferme-st-pierre-d-issis.htm",
+            "https://www.alentoor.fr/camares/alimentation/vente-ferme/1603105-ferme-de-saint-pierre-d-issis"
+          ],
+          "note": "GAEC de 3 associés (contact Christophe Curie), polyculture-élevage brebis laitières Roquefort.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-ferme-de-galamans",
@@ -338,7 +921,25 @@
           "lieu": "Montlaur (12)",
           "description": "420 brebis laitières en plein rougier de Camarès : visites avec dégustation et boutique de produits fermiers ouverte toute l'année.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 74 14 39 94",
+          "email": "lafermedegalamans@gmail.com",
+          "site": null,
+          "facebook": "https://www.facebook.com/lafermedegalamans/",
+          "instagram": null,
+          "adresse": "Galamans, 12400 Montlaur",
+          "vente": "Boutique fermière ouverte toute l'année (vente directe de Roquefort La Pastourelle et produits de la ferme) ; visites de ferme avec dégustation",
+          "labels": [
+            "AOP Roquefort (via coopérative La Pastourelle)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/la-ferme-de-galamans-montlaur_TFO455724223159",
+            "https://rando.parc-grands-causses.fr/fr/service/107865-La-Ferme-de-Galamans",
+            "https://www.societe.com/societe/la-ferme-de-galamans-892895491.html"
+          ],
+          "note": "Troupeau de 420 brebis laitières ; société créée en 2021.",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-paysans-du-rance",
@@ -347,7 +948,23 @@
           "lieu": "Belmont-sur-Rance (12)",
           "description": "La boutique paysanne d'une soixantaine de fermes du Rance, aux trois quarts bio : fromages de brebis, viandes, légumes — mardi, jeudi et dimanche matin.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": null,
+          "email": "paysansdurance@mailo.com",
+          "site": null,
+          "facebook": "https://www.facebook.com/p/Les-Paysans-du-Rance-100057432520083/",
+          "instagram": null,
+          "adresse": "Place Georges Mouls, 12370 Belmont-sur-Rance",
+          "vente": "Boutique collective de producteurs et artisans : ouverture relevée mardi et jeudi 9h-12h30 (dimanche 9h-12h30 cité par certaines sources) ; légumes bio de saison, miel bio, pérail et fromages de brebis",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.pagesjaunes.fr/pros/60336006",
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/les-paysans-du-rance-belmont-sur-rance_TFO299413804479",
+            "https://www.epiciersdefrance.org/annuaire/epicerie-paysans-du-rance"
+          ],
+          "note": "Horaires relevés entre 2020 et 2023, à reconfirmer par email avant visite. Pas de téléphone public trouvé.",
+          "maj": "2026-08-12"
         },
         {
           "id": "pisciculture-les-sources-de-l-avance",
@@ -356,7 +973,23 @@
           "lieu": "Brusque (12)",
           "description": "Truites arc-en-ciel et saumons de fontaine élevés en eau de source, vente de poisson frais sur place.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": null,
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "772 chemin de Mialet, 12360 Brusque",
+          "vente": "Vente directe de truite arc-en-ciel et saumon de fontaine, dégustation sur place ; horaires non publiés",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.pagesjaunes.fr/pros/61053857",
+            "https://annuaire-entreprises.data.gouv.fr/etablissement/39433179700057",
+            "https://fr.mappy.com/poi/61318857b493337a0fab40dd"
+          ],
+          "note": "SARL (gérant Marc Lamothe), établissement de Brusque ouvert en 2021, arrêté préfectoral ICPE au nom de la pisciculture. Numéro masqué derrière « Afficher le n° » sur PagesJaunes, non récupérable ici.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-pimpanelle",
@@ -365,7 +998,25 @@
           "lieu": "Rebourguil (12)",
           "description": "L'atelier coopératif d'une soixantaine de paysans du Sud-Aveyron : crème de châtaigne, confitures, jus et soupes — avec boutique de produits locaux attenante.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 84 20 70 34",
+          "email": "pimpanelle12@orange.fr",
+          "site": null,
+          "facebook": "https://www.facebook.com/people/La-Pimpanelle/100028246406583/",
+          "instagram": null,
+          "adresse": "Saint-Pierre, 12400 Rebourguil",
+          "vente": "Atelier coopératif (SCOP) de transformation de fruits et légumes avec boutique attenante ; ouvert toute l'année sur rendez-vous ; compotes, confitures, jus, soupes, ratatouille et produits locaux",
+          "labels": [
+            "Transformation certifiée bio CERTIPAQ FR-BIO-09"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://ville-data.com/que-faire/visite-cave-ferme-degustation/La-Pimpanelle/Rebourguil/12-21405-12195",
+            "https://www.industrie.coop/structure-adherente/pimpanelle",
+            "https://www.aveyrondigitalnews.fr/2018/11/28/sud-aveyron-la-pimpanelle-un-nouvel-atelier-de-transformation-de-fruits-et-legumes/"
+          ],
+          "note": "Installée à Rebourguil depuis l'été 2019 ; travaille pour particuliers et professionnels, bio et non bio.",
+          "maj": "2026-08-12"
         },
         {
           "id": "domaine-de-bias",
@@ -374,7 +1025,26 @@
           "lieu": "Vabres-l'Abbaye (12)",
           "description": "Dans la vallée du Dourdou, les jumeaux Alazard cultivent pinot noir, chardonnay et roussanne sur 6 hectares certifiés HVE. Vente directe au domaine.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 77 17 02 03",
+          "email": "dom.alazard@orange.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Bias, 12400 Vabres-l'Abbaye",
+          "vente": "Cave ouverte le vendredi 16h-21h de mai à octobre ; visites et dégustations sur rendez-vous téléphonique le reste de l'année ; vins IGP Aveyron blanc, rouge, rosé et Cuvée du Rouergue",
+          "labels": [
+            "HVE (Haute Valeur Environnementale)",
+            "IGP Vins d'Aveyron"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/domaine-de-bias-vabres-l-abbaye_TFO453378880986",
+            "https://www.bienvenue-a-la-ferme.com/occitanie/aveyron/vabres-l-abbaye/ferme/domaine-de-bias/668206",
+            "https://www.roquefort-tourisme.fr/fr/je-m-inspire/nos-producteurs/vente-directe/fiche_domaine-de-bias-4026"
+          ],
+          "note": "EARL Domaine Alazard ; premier millésime 2015 ; nouveau membre du réseau Bienvenue à la Ferme.",
+          "maj": "2026-08-12"
         },
         {
           "id": "roquefort-le-vieux-berger-maison-combes",
@@ -386,7 +1056,26 @@
           "portrait": {
             "url": "https://esquirols.fr/journal-roquefort-vieux-berger.html",
             "libelle": "Lire son portrait →"
-          }
+          },
+          "telephone": "05 65 59 91 48",
+          "email": "vieux.berger@wanadoo.fr",
+          "site": "https://www.le-vieux-berger.com/",
+          "facebook": "https://www.facebook.com/roquefortvieuxberger/",
+          "instagram": null,
+          "adresse": "7 avenue du Combalou, 12250 Roquefort-sur-Soulzon",
+          "vente": "Vente directe lun-jeu 9h-12h15 / 13h30-17h30, ven 9h-12h15 / 13h30-16h30 ; fermé week-ends et jours fériés ; visites d'entreprise proposées via l'office de tourisme",
+          "labels": [
+            "AOP Roquefort",
+            "Entreprise du Patrimoine Vivant (depuis 2012)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/roquefort-le-vieux-berger-roquefort-sur-soulzon_TFO063126163401",
+            "https://www.tourisme-occitanie.com/fr/fiche/activite/visite-entreprise-roquefort-le-vieux-berger-maison-combes-roquefort-sur-soulzon_TFOASCCRTL1688651041/",
+            "https://www.le-vieux-berger.com/"
+          ],
+          "note": "Maison familiale depuis 1923, trois générations, dirigée par Vincent Combes, dernier fabricant 100 % artisanal de Roquefort.",
+          "maj": "2026-08-12"
         },
         {
           "id": "roquefort-carles",
@@ -395,7 +1084,25 @@
           "lieu": "Roquefort-sur-Soulzon (12)",
           "description": "Maison familiale depuis 1927 : Roquefort au lait cru ensemencé au moulage, avec un penicillium « maison » cultivé sur pains. Boutique au cœur du village, caves sur rendez-vous.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 59 90 28",
+          "email": null,
+          "site": "https://www.roquefort-carles.fr/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "6 avenue de Lauras, 12250 Roquefort-sur-Soulzon",
+          "vente": "Vente directe à la boutique du lundi au vendredi 8h15-17h30, fermée samedi et dimanche ; découpe à la demande (gammes Convoitise et Élégance)",
+          "labels": [
+            "AOP Roquefort"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://roquefort-carles.fr/fr/boutique",
+            "https://www.roquefort-carles.fr/fr/contact.html",
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/boutique-roquefort-carles-roquefort-sur-soulzon_TFO118940360283"
+          ],
+          "note": "Roquefort artisanal au lait cru depuis 1927.",
+          "maj": "2026-08-12"
         },
         {
           "id": "maison-gabriel-coulet",
@@ -404,7 +1111,25 @@
           "lieu": "Roquefort-sur-Soulzon (12)",
           "description": "Cinq générations depuis 1872. Visite gratuite des caves et de leurs fleurines naturelles, dégustation offerte, tous les jours.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 59 24 27",
+          "email": null,
+          "site": "https://www.gabriel-coulet.fr/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "3-7 avenue de Lauras, 12250 Roquefort-sur-Soulzon (le numéro exact varie selon les sources : boutique citée au 3 et au 5-7)",
+          "vente": "Boutique (plus de 150 produits régionaux) et visite gratuite des caves toute l'année selon saison, avec film et dégustation",
+          "labels": [
+            "AOP Roquefort"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.guide-tarn-aveyron.com/en/tourism/tasting/products/cheese/roquefort-sur-soulzon-726/boutique-maison-gabriel-coulet-7065.html",
+            "https://www.petitfute.co.uk/v23455-roquefort-sur-soulzon-12250/c650-produits-gourmands-vins/c1104-epicerie/c1115-epicerie-regionale/c693-aveyron/26381-roquefort-gabriel-coulet.html",
+            "https://millavois.com/2025/07/31/venez-vivre-lexperience-roquefort-avec-la-maison-gabriel-coulet/"
+          ],
+          "note": "Maison fondée en 1872 ; activité confirmée par un article de presse de juillet 2025. Second numéro cité : 05 65 59 90 21.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-ferme-d-alfred",
@@ -413,7 +1138,22 @@
           "lieu": "Mas de Bousquel, Montagnol (12)",
           "description": "Les pains au levain d'Alexia Amourdedieu — nature, seigle, petit épeautre — sur commande au fournil et en dépôt à Camarès.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 29 85 51 78",
+          "email": "alexiamourdedieu@gmail.com",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Mas de Bousquel, 12360 Montagnol",
+          "vente": "Pain au levain (nature, blanc, seigle, épeautre) toute l'année sur commande au fournil ; dépôt au Vival de Camarès",
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "https://www.ccmrr.fr/uploads/2021/05/brochure_circuits_courts_2021-web.pdf",
+            "https://www.tourisme-aveyron.com/sites/default/files/upload/decouvrir/territoires/rougier-aveyron-sud/envie-de/saveurs-locales/brochure_circuits_courts_2021-web.pdf"
+          ],
+          "note": "Coordonnées issues du carnet des circuits courts (2021) ; aucune trace en ligne plus récente trouvée, à vérifier par téléphone.",
+          "maj": "2026-08-12"
         },
         {
           "id": "le-fournil-paysan",
@@ -422,7 +1162,25 @@
           "lieu": "Salelles, Saint-Izaire (12)",
           "description": "Paysanne-boulangère bio : le blé de la ferme, moulu sur meule de pierre, cuit au levain et au feu de bois.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "07 89 33 55 76",
+          "email": "gaecdesalelles@gmail.com",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Salelles, 12480 Saint-Izaire",
+          "vente": "Pain bio au levain naturel cuit au four à bois ; vente à la ferme lundi et jeudi 17h-20h30 ; sur commande par téléphone ou email ; dépôts Biocoop et épicerie Del Païs à Saint-Affrique, casiers réfrigérés du « local paysan » de Saint-Izaire",
+          "labels": [
+            "Agriculture Biologique (blé cultivé en bio, farine moulue à la meule de pierre)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/gaec-de-salelles-saint-izaire_TFO453310256397",
+            "https://www.vivrelocal-vitrinedusaintaffricain-paysderoquefort.fr/annuaire/busid/6416/le-fournil-paysan-gaec-de-salelles",
+            "https://www.saint-izaire.fr/inauguration-du-local-paysan/"
+          ],
+          "note": "L'entreprise individuelle « Le Fournil Paysan » (Léa Cabal-Zinck) a été radiée en 2017 ; l'activité se poursuit au sein du GAEC de Salelles (pain et viande).",
+          "maj": "2026-08-12"
         },
         {
           "id": "maison-bourrel",
@@ -431,7 +1189,23 @@
           "lieu": "Belmont-sur-Rance (12)",
           "description": "Biscuiterie artisanale faite main : macarons aux noix, craquelés au citron — et croquants au Roquefort. Boutique sur place.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 81 08 79 20",
+          "email": "maisonbourrel@free.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "81 avenue de Saint-Affrique, 12370 Belmont-sur-Rance (une source ; l'adresse « place Georges Mouls » fournie n'a pas été confirmée)",
+          "vente": "Biscuiterie artisanale, fabrication et cuisson sur place (macarons aux noix, craquelés citron, chips au Roquefort) ; horaires souples, appeler avant de passer",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.fabrique-en-aveyron.fr/entreprises/maison-bourrel/",
+            "https://www.tourisme-aveyron.com/fr/diffusio/autres-commerces/maison-bourrel-belmont-sur-rance_TFO392569330358",
+            "https://www.belmont-sur-rance-aveyron.fr/vie-locale/commerces-et-professionnels/"
+          ],
+          "note": "Fondée en 1998 ; produits également distribués via revendeurs (Le Panier du Causse, La Petite Distrib).",
+          "maj": "2026-08-12"
         },
         {
           "id": "l-arc-en-miel",
@@ -440,7 +1214,26 @@
           "lieu": "Saint-Affrique (12)",
           "description": "Apiculture bio au Mas de Rouby : visites immersives de la ferme d'abeilles, dégustation commentée d'une dizaine de miels, ateliers.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 29 78 03 00",
+          "email": null,
+          "site": "https://www.larcenmiel.fr/",
+          "facebook": "https://www.facebook.com/Larcenmiel/",
+          "instagram": null,
+          "adresse": "633 chemin du Mas de Rouby (Mas de Rouby Haut), 12400 Saint-Affrique",
+          "vente": "Vente directe à la miellerie et boutique en ligne ; visites immersives, ateliers cire et stages sur réservation ; miels de printemps, toutes fleurs, châtaignier, montagne, serpolet (300 ruches)",
+          "labels": [
+            "Agriculture Biologique",
+            "Nature & Progrès"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.larcenmiel.fr/post/miel-bio-direct-producteur",
+            "https://www.larcenmiel.fr/contact",
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/ferme-d-abeilles-l-arc-en-miel-saint-affrique_TFO288198827660"
+          ],
+          "note": null,
+          "maj": "2026-08-12"
         },
         {
           "id": "fromagerie-du-mas",
@@ -449,7 +1242,23 @@
           "lieu": "Mas de Babeau, Rebourguil (12)",
           "description": "Les 320 brebis de Stéphan et Karine Mas : tomme, pérail, recuite et yaourts au lait cru. À la ferme du lundi au samedi, marché de Camarès l'été.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 74 42 06 04",
+          "email": "fromageriedumas@orange.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Mas de Babeau, 12400 Rebourguil (le long de la D999)",
+          "vente": "Vente à la ferme tous les jours sauf dimanche (8 mois de l'année, pendant la lactation) ; marchés de Saint-Affrique et Camarès ; tomme, pérail, yaourts, recuite, caillé au lait cru de brebis Lacaune (320 brebis) ; également sur La Ruche qui dit Oui",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://monproducteur.aveyron.fr/entreAidePro/2490/5894-gaec-du-mas-de-babeau.htm",
+            "https://fr.mappy.com/poi/600d852316f27d627fe1e446",
+            "https://laruchequiditoui.fr/fr-FR/producers/1977/farm"
+          ],
+          "note": "Exploitation de Karine et Stephan, fromagerie fermière créée en 1997.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-ferme-aux-12-chevres",
@@ -458,7 +1267,23 @@
           "lieu": "Hucaloup, Laval-Roquecézière (12)",
           "description": "Les glaces à l'italienne au lait de chèvre de Virginie Stordeur — au marché de pays de Saint-Sernin-sur-Rance en été.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 42 83 48 30",
+          "email": null,
+          "site": null,
+          "facebook": "https://www.facebook.com/people/La-ferme-aux-12-ch%C3%A8vres/100067042173120/",
+          "instagram": null,
+          "adresse": "Hucaloup, 12380 Laval-Roquecézière",
+          "vente": "Glaces à l'italienne au lait de chèvre ; marché de pays de Saint-Sernin-sur-Rance en juillet-août ; disponible pour événements",
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "https://www.ccmrr.fr/uploads/2021/05/brochure_circuits_courts_2021-web.pdf",
+            "https://www.facebook.com/people/La-ferme-aux-12-ch%C3%A8vres/100067042173120/",
+            "https://www.jours-de-marche.fr/producteur-local/12380-laval-roqueceziere/"
+          ],
+          "note": "Micro-ferme ; téléphone issu du carnet des circuits courts 2021, pas de confirmation récente trouvée en ligne.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-du-ramonetage",
@@ -467,7 +1292,24 @@
           "lieu": "Camarès (12)",
           "description": "L'agneau élevé sous la mère de la ferme de Camplong, en caissettes Label Rouge. Retrait à la ferme sur commande.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 77 42 07 11",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "2 route d'Andabre, Camplong, 12360 Camarès",
+          "vente": "Caissettes d'agneau élevé sous la mère, sur commande par téléphone toute l'année ; retrait à la ferme (découpé et emballé) ou livraison sur rendez-vous",
+          "labels": [
+            "Label Rouge « Lou Paillol » (agneau fermier)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://monproducteur.aveyron.fr/entreAidePro/2395/5894-ferme-de-camplong-gaec-du-ramonetage.htm",
+            "https://www.ccmrr.fr/uploads/2021/05/brochure_circuits_courts_2021-web.pdf"
+          ],
+          "note": "Téléphone signalé confirmé par la fiche monproducteur.aveyron.fr (plateforme du Département de l'Aveyron).",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-blondes-aubrac",
@@ -476,7 +1318,22 @@
           "lieu": "Mounes-Prohencoux (12)",
           "description": "Bœuf de race Aubrac en caissettes, sur commande, avec livraison à domicile.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 49 55 45",
+          "email": "gayraud_jean-louis@orange.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Le Bourg, 12370 Mounès-Prohencoux",
+          "vente": "Viande de bœuf de race Aubrac en vente sur commande avec livraison à domicile",
+          "labels": [],
+          "actif": "incertain",
+          "sources": [
+            "https://www.ccmrr.fr/uploads/2021/05/brochure_circuits_courts_2021-web.pdf",
+            "https://fr.kompass.com/c/blondes-aubrac/fra040sl3/"
+          ],
+          "note": "Société créée en 2017 et toujours immatriculée ; coordonnées issues du carnet des circuits courts 2021, vente directe à reconfirmer.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-de-puech-aussel",
@@ -485,7 +1342,23 @@
           "lieu": "Montlaur (12)",
           "description": "Veau de race Aubrac en caissettes, toute l'année à la ferme sur commande.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 99 86 04",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Puech Aussel, 12400 Montlaur",
+          "vente": "Caissettes de viande et veaux de race Aubrac, vente sur commande, à la ferme et sur rendez-vous",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://fr.kompass.com/c/mcd3/fra06dfhq/",
+            "https://www.societe.com/societe/gaec-de-puech-aussel-326067949.html",
+            "https://www.tourisme-aveyron.com/sites/default/files/users/user117/brochure_circuits_courts_2022-web.pdf"
+          ],
+          "note": "Téléphone signalé confirmé (Kompass). Élevage laitier avec vente directe de veau Aubrac en complément ; GAEC toujours immatriculé, gérants Éric et Olivier Barbe.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-ferme-de-saint-louis",
@@ -494,7 +1367,23 @@
           "lieu": "La Prade, Belmont-sur-Rance (12)",
           "description": "Porc élevé sur paille : charcuterie fermière, conserves cuisinées et caissettes, sans colorants ni conservateurs.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 99 98 69",
+          "email": "earlstlouis.12@wanadoo.fr",
+          "site": "http://www.charcuteriestlouis.com/",
+          "facebook": "https://www.facebook.com/p/GAEC-de-ST-LOUIS-VENTE-Directe-de-Produits-Fermiers-100063746342497/",
+          "instagram": null,
+          "adresse": "La Prade, 12370 Belmont-sur-Rance",
+          "vente": "Vente à la ferme : mardi-mercredi 10h-12h / 14h-18h, jeudi-vendredi 9h-12h / 14h-18h, samedi 9h-12h ; porcs élevés sur paille (sans antibiotiques ni OGM), charcuterie, conserves cuisinées, caissettes sur commande ; également agneaux sous la mère",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/autres-commerces/ferme-de-saint-louis-belmont-sur-rance_TFO295351705324",
+            "http://www.charcuteriestlouis.com/pages/coordonnees/",
+            "https://www.fabrique-en-aveyron.fr/entreprises/sas-la-ferme-de-saint-louis/"
+          ],
+          "note": "Téléphone signalé confirmé. Second numéro : 06 40 37 72 25. Produits garantis sans colorants ni conservateurs.",
+          "maj": "2026-08-12"
         }
       ]
     },
@@ -509,7 +1398,26 @@
           "lieu": "Lauroux",
           "description": "Fromages de chèvre et agneau élevés en plein air, en bio, dans la vallée sous l'Escalette. Sur les marchés de Lodève et Pézenas.",
           "badge": "🛒 En rayon à L'Esquirol",
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 96 43 45",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Chemin des Cailles, 34700 Lauroux",
+          "vente": "Vente au magasin de producteurs « Aux P'tits Producteurs » à Lodève ; marchés : Lodève (samedi), Sète (jeudi) selon Biolocal, Pézenas également cité par une autre source",
+          "labels": [
+            "AB (certifié Ecocert depuis 2007)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.biolocal.org/2020/04/29/gaec-vallee-de-lauroux-jean-francois-galtier/",
+            "https://www.bio34.com/jean-francois_galtier_p175.php",
+            "https://www.yelp.fr/biz/galtier-jean-francois-lauroux",
+            "http://www.lestroupeauxdacote.com/accueil/trouver-un-eleveur/bio/gaec-de-la-vallee-de-lauroux-moutons-1.html"
+          ],
+          "note": "Les deux téléphones signalés sont confirmés (fiche Biolocal). Fromages de chèvre et agneau bio, chèvres alpines et brebis Rouge du Roussillon. Fiche Yelp mise à jour en 2026 ; jours de marché à reconfirmer (Sète/Pézenas divergent selon les sources). Autres numéros : 06 01 86 94 79.",
+          "maj": "2026-08-12"
         },
         {
           "id": "pelardon-de-pegairolles",
@@ -518,16 +1426,54 @@
           "lieu": "Pégairolles-de-l'Escalette",
           "description": "Le Pélardon AOP au lait cru de la famille Chabrier, maintes fois médaillé — en boutiques à Lodève et au Caylar, et sur les marchés.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 19 24 09 31",
+          "email": "rensvandoorne@hotmail.com",
+          "site": null,
+          "facebook": "https://www.facebook.com/PELARDON/",
+          "instagram": null,
+          "adresse": "La Bergerie, route du Cimetière, 34700 Pégairolles-de-l'Escalette",
+          "vente": "Vente directe le vendredi matin devant la cave coopérative de Pégairolles ; en été le mardi soir au marché paysan de Lodève ; boutiques de Lodève et du Caylar, marchés régionaux",
+          "labels": [
+            "AOP Pélardon"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.fromagesdechevre.com/producteur/pelardon-de-pegairolles/",
+            "https://www.petitfute.co.uk/v19278-pegairolles-de-l-escalette-34700/c650-produits-gourmands-vins/c661-fromagerie-cremerie/1883294-pelardon-de-pegairolles.html",
+            "https://www.francebleu.fr/emissions/circuit-court-dans-l-herault/herault/circuit-court-avec-les-producteurs-et-artisans-de-l-herault-202",
+            "http://www.whatsup-lodeve-larzac.com/les-pelardons-de-pegairolles/"
+          ],
+          "note": "80 chèvres alpines et saanen, 65 000-70 000 pélardons/an, une quinzaine de médailles au concours Sud de France. Pélardon AOP au lait cru. Autres numéros : 04 67 88 00 78.",
+          "maj": "2026-08-12"
         },
         {
           "id": "confiserie-d-olives-de-saint-jean",
           "nom": "Confiserie d'olives de Saint-Jean",
           "picto": "🫒",
           "lieu": "Saint-Jean-de-la-Blaquière",
-          "description": "La coopérative (1947) confit la Lucques du Languedoc : olives au thym, à l'ail ou au fenouil, tapenades et huile. Boutique tous les jours sauf dimanche.",
+          "description": "La coopérative (1947) confit la Lucques du Languedoc : olives au thym, à l'ail ou au fenouil, tapenades et huile — aujourd'hui unie au moulin L'Oli d'Oc de Clermont-l'Hérault.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 44 70 52",
+          "email": null,
+          "site": "https://www.olidoc.com/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Route de Lodève, 34700 Saint-Jean-de-la-Blaquière",
+          "vente": "Boutique ouverte 9h-12h / 14h-18h, fermée le dimanche (selon Petit Futé) ; olives Lucques, escabèche, tapenades, huile",
+          "labels": [
+            "AOP Lucques du Languedoc"
+          ],
+          "actif": "incertain",
+          "sources": [
+            "https://www.petitfute.com/v19342-saint-jean-de-la-blaquiere-34700/c650-produits-gourmands-vins/c1256-producteur/c659-huile-d-olive/1574048-confiserie-cooperative-d-olives.html",
+            "https://www.cylex-locale.fr/entreprises/confiserie-coop%C3%A9rative-interd%C3%A9partementale-d'olives-10390275.html",
+            "https://www.languedoc-coeur-herault.fr/annuaire/huilerie-confiserie-cooperative-interdepartementale-de-clermont-l-herault-l-oli-d-oc",
+            "https://www.olidoc.com/content/6-la-cooperative-oleicole"
+          ],
+          "note": "Fusionnée en 2004 avec l'huilerie coopérative de Clermont-l'Hérault (L'Oli d'Oc, Moulin d'Augustin, av. Louis Villaret, Clermont-l'Hérault, magasin ouvert en 2025-2026). Le maintien d'un point de vente permanent à Saint-Jean même est à vérifier ; sinon passer par L'Oli d'Oc à Clermont.",
+          "maj": "2026-08-12"
         },
         {
           "id": "miellerie-thierry-berthomieu",
@@ -536,7 +1482,26 @@
           "lieu": "Le Théronel, Fozières",
           "description": "Miels de garrigue certifiés bio depuis 2008, récoltés et vendus à la miellerie.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 12 87 23 01",
+          "email": "apigr.thierry@gmail.com",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Le Thérondel (route du Thérondel), 34700 Fozières",
+          "vente": "Vente directe à la miellerie (miel, gelée royale)",
+          "labels": [
+            "AB (depuis 2008)"
+          ],
+          "actif": "incertain",
+          "sources": [
+            "https://apiculteurs.nosavis.com/apiculteur/herault-34/fozieres-34700/berthomieu+thierry-851/",
+            "https://www.acheteralasource.com/producteur/76867",
+            "https://www.pagesjaunes.fr/pros/09688160",
+            "http://www.biodecocagne.fr/26__apiculteur-thierry-berthomieu"
+          ],
+          "note": "Coordonnées cohérentes entre plusieurs annuaires, mais aucune confirmation datée 2025-2026 de l'activité trouvée ; appeler avant de se déplacer. Le lieu-dit apparaît sous les graphies « Le Théronel », « Le Thérondel » et « Therondel » selon les sources.",
+          "maj": "2026-08-12"
         },
         {
           "id": "ferme-de-germane",
@@ -545,7 +1510,26 @@
           "lieu": "Plateau de Germane, Salagou",
           "description": "Bœuf Galloway bio nourri à l'herbe, agneau de brebis transhumantes — et fraises, abricots et prunes bio. Vente à la ferme.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 31 71 29 64",
+          "email": "germanesalagou@gmail.com",
+          "site": null,
+          "facebook": "https://www.facebook.com/GaecGermaneSalagou/",
+          "instagram": null,
+          "adresse": "Plateau de Germane (siège : 49 rue des Jasses), 34800 Clermont-l'Hérault",
+          "vente": "Vente en colis (bœuf, demi-agneau minimum) ; agneau de fin février à mi-août ; fraises, abricots, prunes en saison ; point de vente relais cité à Gignac (Zone Cosmo, 04 67 66 38 84)",
+          "labels": [
+            "AB (conversion bio depuis 2016)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.destination-salagou.fr/annuaire/ferme-de-germane",
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/gaec-germane-salagou-clermont-l-herault_TFODEGLAR034V51WY5R/",
+            "http://www.lestroupeauxdacote.com/accueil/trouver-un-eleveur/bio/gaec-germane-salagou-agneau-1.html",
+            "https://www.facebook.com/GaecGermaneSalagou/?locale=fr_FR"
+          ],
+          "note": "Le téléphone signalé 06 31 71 29 64 est confirmé. Élevage historique de brebis (transhumance Pyrénées) + colis de bœuf et fruits ; la race Galloway signalée n'a pas pu être confirmée par les sources consultées. GAEC créé en octobre 2016. Autres numéros : 04 67 96 25 46.",
+          "maj": "2026-08-12"
         },
         {
           "id": "flor-de-salagou",
@@ -554,16 +1538,24 @@
           "lieu": "Mourèze",
           "description": "Les confitures d'un Maître Confiturier de France : figue, abricot, gelée de thym, confits d'oignon. Dégustation et vente sur place.",
           "badge": null,
-          "portrait": null
-        },
-        {
-          "id": "les-fromages-du-salagou",
-          "nom": "Les Fromages du Salagou",
-          "picto": "🧀",
-          "lieu": "Lodève",
-          "description": "Fromager-affineur artisanal au lait cru des fermes du pays : Pélardon AOP, tommette de brebis du Larzac, Petit Lodévois.",
-          "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 84 76 38 70",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "49 route de la Dolomie, 34800 Mourèze",
+          "vente": "Boutique-dégustation dans une ancienne cave vinicole au cœur du cirque de Mourèze, ouverte 7j/7 de 13h30 à 18h30 (selon annuaires) ; buvette-snacking en saison",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/flor-de-salagou-moureze_TFODEGLAR034FS000BD/",
+            "https://fr.mappy.com/poi/683fc54e0a9e547646fba695",
+            "https://www.destination-salagou.fr/annuaire/flor-de-salagou",
+            "https://www.grizette.com/elles-sont-occitanie-sabine-moulin-le-flor-de-salagou/"
+          ],
+          "note": "Sabine Moulin est « Maître confiturier de France » : confitures (figue, abricot, orange…), gelée de thym, confits d'oignons et d'olives, glaces fermières au lait de brebis ; cave à vins naturels et bio. Horaires probablement saisonniers, à confirmer par téléphone.",
+          "maj": "2026-08-12"
         },
         {
           "id": "mas-fabregous",
@@ -572,7 +1564,26 @@
           "lieu": "Soubès",
           "description": "Vins bio du nord des Terrasses du Larzac, sur 37 parcelles entre 300 et 460 mètres d'altitude. Vente au domaine.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 03 63 58 67",
+          "email": "masfabregous@gmail.com",
+          "site": "https://mas-fabregous.fr/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "1772 route d'Aubaygues, 34700 Soubès",
+          "vente": "Caveau : retrait de bouteilles et dégustations sur rendez-vous ; boutique en ligne sur le site",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://mas-fabregous.fr/contact/",
+            "https://mas-fabregous.fr/",
+            "https://www.hachette-vins.com/guide-vins/producteurs/49399/mas-fabregous/",
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/mas-fabregous-fozieres_TFODEGLAR034FS000SV/"
+          ],
+          "note": "17 ha en bio depuis plus de 20 ans, 300-400 m d'altitude, AOP Terrasses du Larzac / AOC Languedoc / IGP. Domaine familial repris en 1988, cave créée en 2004.",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-vignerons-de-pegairolles",
@@ -581,7 +1592,24 @@
           "lieu": "Pégairolles-de-l'Escalette",
           "description": "La plus ancienne et la plus petite cave coopérative de l'Hérault (1927) : Terrasses du Larzac cultivées en terrasses à murets de pierre sèche. Dégustations et balades vigneronnes.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 44 09 93",
+          "email": "vigneronspegairolles@gmail.com",
+          "site": "http://www.vigneronsdepegairolles.com/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "34700 Pégairolles-de-l'Escalette",
+          "vente": "Caveau ouvert le vendredi : 8h-16h en hiver, 9h-17h en été ; autres jours sur rendez-vous",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/cave-cooperative-les-vignerons-de-pegairolles-pegairolles-de-l-escalette_TFODEGLAR034FS00040/",
+            "http://www.vigneronsdepegairolles.com/html/FR/contact-infos-fr.html",
+            "https://www.languedoc-coeur-herault.fr/annuaire/cave-cooperative-les-vignerons-de-pegairolles",
+            "https://pegairolles-de-l-escalette.fr/artisanat.php"
+          ],
+          "note": "Téléphone et email signalés confirmés par la fiche Hérault Tourisme et le site de la cave. Le marché des producteurs (dont le Pélardon de Pégairolles) se tient devant la cave le vendredi matin.",
+          "maj": "2026-08-12"
         },
         {
           "id": "mas-des-chimeres",
@@ -590,7 +1618,26 @@
           "lieu": "Octon",
           "description": "Les vins bio de la famille Dardé, sur les terres rouges et les basaltes du Salagou. Caveau de vente au village.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 96 22 70",
+          "email": "mas.des.chimeres@wanadoo.fr",
+          "site": "https://masdeschimeres.com/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "26 rue de la Vialle, 34800 Octon",
+          "vente": "Caveau : du 1er janvier au 30 juin 2026, semaine 17h30-18h30 et samedi 15h-18h30 (fermé dimanche et fériés) ; du 1er juillet au 31 août 2026, tous les jours 10h-12h et 17h-19h",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://masdeschimeres.com/",
+            "https://masdeschimeres.com/vente-au-caveau/",
+            "https://masdeschimeres.com/contact/",
+            "https://bio34.com/annuaire/mas-des-chimeres-octon"
+          ],
+          "note": "Vignerons bio au bord du lac du Salagou : AOC Terrasses du Larzac (rouges), vins de pays des Coteaux du Salagou (rouge, rosé, blanc), muscat. Horaires 2026 publiés sur leur site : activité confirmée.",
+          "maj": "2026-08-12"
         },
         {
           "id": "domaine-de-malavieille",
@@ -599,7 +1646,26 @@
           "lieu": "Mérifons",
           "description": "Bio depuis 2003, biodynamie Demeter depuis 2005 : une vingtaine de cépages sur grès rouges et basaltes. Caves sur rendez-vous.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 96 34 67",
+          "email": "domainemalavieille.merifons@wanadoo.fr",
+          "site": "https://www.domainemalavieille.com/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Malavieille, 34800 Mérifons",
+          "vente": "Vente au domaine ; visites guidées des caves sur demande",
+          "labels": [
+            "AB",
+            "Demeter"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.demeter.fr/adherents/domaine-de-malavieille/",
+            "https://www.domainemalavieille.com/contact_fr.html",
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/domaine-de-malavieille-merifons_TFODEGLAR034FS001NB/"
+          ],
+          "note": "Téléphone signalé confirmé (site du domaine et fiche Demeter France). Vignoble en biodynamie certifiée Demeter dans la vallée du Salagou.",
+          "maj": "2026-08-12"
         },
         {
           "id": "le-clos-du-serres",
@@ -608,7 +1674,26 @@
           "lieu": "Saint-Jean-de-la-Blaquière",
           "description": "Quinze hectares bio en AOP Terrasses du Larzac, de la roussanne au mourvèdre. Caveau au domaine.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 88 35 90 07",
+          "email": null,
+          "site": "https://www.leclosduserres.fr/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Route du Viala, 440 Les Condamines, 34700 Saint-Jean-de-la-Blaquière",
+          "vente": "Dégustation et vente au caveau sur rendez-vous",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.leclosduserres.fr/",
+            "https://fr.gaultmillau.com/fr/wineries/le-clos-du-serres",
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/domaine-le-clos-du-serres-saint-jean-de-la-blaquiere_TFODEGLAR034FS000SO/",
+            "https://www.raisin.digital/fr/decouvrir/france/occitanie/vignerons-naturels/beatrice-sebastien-fillon-le-clos-du-serres-7984/"
+          ],
+          "note": "15 ha en bio depuis 2006, AOC Terrasses du Larzac et Languedoc ; référencé Raisin (vins naturels) et Gault&Millau. Email non trouvé publiquement — formulaire de contact sur le site.",
+          "maj": "2026-08-12"
         },
         {
           "id": "mas-lasta",
@@ -617,7 +1702,26 @@
           "lieu": "Saint-Privat",
           "description": "Vieilles vignes adossées au causse : vins bio « méthode nature », sans intrants ni sulfites, par Anne-Laure Sicard.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 86 97 77 45",
+          "email": "mas.lasta@yahoo.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "6 route Rouquette, 34700 Saint-Jean-de-la-Blaquière (vignes à Saint-Privat)",
+          "vente": "Accueil du lundi au samedi 8h-18h selon la fiche Hérault Tourisme — appeler avant",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://bio34.com/annuaire/mas-lasta-lodeve",
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/mas-lasta-lodeve_TFODEGLAR034V51C1NX/",
+            "https://www.raisin.digital/en/explore/france/occitania/natural-winemakers/anne-laure-sicard-mas-lasta-11438/",
+            "https://www.vinsnaturels.fr/003_viticulteurs/Languedoc-Roussillon-Mas-Lasta-Anne-Laure-Sicard-738.html"
+          ],
+          "note": "9 ha, 11 parcelles à 400-500 m sur Saint-Privat, conduites en bio/biodynamie (traction animale), vinification sans intrants ; premier millésime 2016. L'adresse postale est à Saint-Jean-de-la-Blaquière, le vignoble à Saint-Privat.",
+          "maj": "2026-08-12"
         },
         {
           "id": "domaine-du-pas-de-l-escalette",
@@ -626,7 +1730,26 @@
           "lieu": "Poujols",
           "description": "Vingt hectares en terrasses à 350 mètres, entre clapas, en bio et biodynamie — au pied du même col que la vallée de Lauroux.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "04 67 96 13 42",
+          "email": "contact@pasdelescalette.com",
+          "site": "https://pasdelescalette.com/",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Le Champ de Peyrottes, 34700 Poujols",
+          "vente": "Dégustation uniquement sur rendez-vous : lundi, mardi, jeudi, vendredi 9h-12h30 et 14h-17h ; dégustation gratuite, groupes de 4 à 15 personnes",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://pasdelescalette.com/contact-us",
+            "https://www.languedoc-coeur-herault.fr/annuaire/domaine-du-pas-de-l-escalette",
+            "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/domaine-du-pas-de-l-escalette-poujols_TFODEGLAR034FS000SN/",
+            "https://www.justacote.com/poujols-34700/producteur/domaine-du-pas-de-lescalette-1183066.htm"
+          ],
+          "note": "Téléphone signalé confirmé (site du domaine et annuaires touristiques). AOP Terrasses du Larzac, vignes en terrasses au pied du pas de l'Escalette. Autres numéros : 06 73 84 35 89.",
+          "maj": "2026-08-12"
         }
       ]
     },
@@ -644,7 +1767,25 @@
           "portrait": {
             "url": "https://esquirols.fr/journal-fromage-brebis-larzac.html",
             "libelle": "Lire l'article →"
-          }
+          },
+          "telephone": "05 65 62 71 45",
+          "email": "contact@bergersdularzac.fr",
+          "site": "https://www.fromages-bergersdularzac-aveyron.fr",
+          "facebook": "https://www.facebook.com/BergersduLARZAC/",
+          "instagram": "https://www.instagram.com/bergersdularzac/",
+          "adresse": "45 rue des Carbonnières, ZAE Millau Sud, 12230 La Cavalerie",
+          "vente": "Magasin à la fromagerie : lun-ven 9h-19h, sam 9h-13h et 13h30-18h",
+          "labels": [
+            "AB (une partie de la gamme : 9 fromages bio sur ~26)"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.fromages-bergersdularzac-aveyron.fr/notre-cooperative/les-bergers-du-larzac",
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/fromagerie-cooperative-des-bergers-du-larzac-la-cavalerie_TFO128189268597",
+            "https://www.annuaire-horaire.fr/societe/Fromagerie-LA-CAVALERIE-Cooperative-des-Bergers-du-Larzac/1460662"
+          ],
+          "note": "Coopérative d'environ 33 éleveurs de brebis. Le domaine bergersdularzac.fr est aussi référencé pour cette coopérative ; le site officiel confirmé est fromages-bergersdularzac-aveyron.fr.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-du-causse",
@@ -653,7 +1794,23 @@
           "lieu": "Le Caylar",
           "description": "Des vaches laitières sur le Larzac : lait, beurre cru, crème fraîche, yaourts et fromages transformés à la ferme. Vente le vendredi en fin d'après-midi.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 16 40 44 96",
+          "email": "gaecducausse@gmail.com",
+          "site": "https://www.fermeducausse.com",
+          "facebook": "https://www.facebook.com/LaFermeDuCausse/",
+          "instagram": null,
+          "adresse": "Route de Saint-Pierre, 34520 Le Caylar",
+          "vente": "Vente à la ferme le vendredi 16h-18h30 (et samedi matin 9h-12h selon sources) ; boutique paysanne au Caylar",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.fermeducausse.com/",
+            "https://www.acheteralasource.com/producteur/239132",
+            "https://www.tourisme-lodevois-larzac.fr/annuaire/ferme-du-causse"
+          ],
+          "note": "Gérant : Guillaume Camplo. Lait de 30 vaches transformé à la ferme (beurre, crème, lait, yaourts, crèmes dessert, fromages). Élevage annoncé « selon les principes de l'agriculture biologique » mais certification AB non confirmée par les sources. Deux horaires de vente circulent (vendredi soir / samedi matin) : à confirmer par téléphone.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-des-traversiers",
@@ -662,7 +1819,25 @@
           "lieu": "La Couvertoirade (12)",
           "description": "Fromages et yaourts de brebis certifiés bio, à 500 mètres de la cité templière. Vente à la ferme.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 82 16 30 04 (Marie)",
+          "email": "gaecdestraversiers@gmail.com",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Les Traversiers, 12230 La Couvertoirade (à 500 m de la cité templière)",
+          "vente": "Vente à la ferme, boutiques de producteurs locales, marché des producteurs de La Couvertoirade le jeudi soir (18h) en juillet-août",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/gaec-des-traversiers-la-couvertoirade_TFO118662071417",
+            "https://www.paysansdenature.fr/annuaire-paysans-de-nature/gaec-des-taversiers-pierre-pariset/",
+            "https://www.etapedularzac.com/gaec-des-traversiers/"
+          ],
+          "note": "Pierre Pariset, Isabelle Duvigneau et Marie Evrard ; 320 brebis Lacaune converties en bio. Tomme, fromage sans lactose, yaourts de brebis. Une annonce de recherche d'associé-e a été publiée (agriculturepaysanne.org). Autres numéros : 06 76 36 87 27 (Isabelle).",
+          "maj": "2026-08-12"
         },
         {
           "id": "miel-safran-du-larzac",
@@ -671,7 +1846,23 @@
           "lieu": "Sorbs",
           "description": "Guillaume Perier conduit 180 ruches en bio — miels de thym, bruyère, châtaignier — et cultive le safran. Sur rendez-vous et aux marchés d'été de La Couvertoirade.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 14 82 14 58",
+          "email": "safrandularzac@gmail.com",
+          "site": "https://safranetmieldularzac.wordpress.com",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Chemin de la Baraque, 34520 Sorbs",
+          "vente": "À la ferme sur rendez-vous ; marchés de producteurs juillet-août : La Couvertoirade jeudi 18h-21h, Campestre-et-Luc vendredi 17h-20h ; revendeurs locaux",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://safranetmieldularzac.wordpress.com/contact/",
+            "https://safranetmieldularzac.wordpress.com/vente-de-miel/",
+            "https://www.jours-de-marche.fr/producteur-local/safran-du-larzac-342.html"
+          ],
+          "note": "Téléphone signalé confirmé par la page contact du site. Environ 180 ruches conduites « selon les principes de l'apiculture biologique », certification AB non confirmée. Tarifs 2025 publiés sur le site (activité en cours).",
+          "maj": "2026-08-12"
         },
         {
           "id": "les-escargots-du-larzac",
@@ -680,7 +1871,23 @@
           "lieu": "La Cavalerie (12)",
           "description": "Gros-gris et bourgogne élevés en plein air sur le plateau, préparés persillés, au Roquefort ou au jambon de pays. À la ferme et sur les marchés.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 78 14 09",
+          "email": "les-escargots-dularzac@orange.fr",
+          "site": "https://www.escargots-larzac.fr",
+          "facebook": "https://www.facebook.com/p/Les-Escargots-du-Larzac-100063732863764/",
+          "instagram": null,
+          "adresse": "608 avenue Simone Veil, 12230 La Cavalerie",
+          "vente": "Vente à la ferme et sur les marchés de l'Aveyron ; escargots persillés, au Roquefort, au jambon de pays (par 12 ou 24)",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://www.escargots-larzac.fr/contact",
+            "https://hoodspot.fr/eleveur/les-escargots-du-larzac-88940993400011/",
+            "https://www.tourisme-larzac.com/fr/diffusio/organisez-votre-sejour/deguster/produits-du-terroir/la-cavalerie/les-escargots-du-larzac_TFO126627844969.php"
+          ],
+          "note": "Email signalé confirmé. Horaires précis de vente à la ferme non trouvés en ligne : à demander par téléphone.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-brasserie-du-larzac",
@@ -689,7 +1896,25 @@
           "lieu": "La Blaquière, Larzac (12)",
           "description": "Bières bio non filtrées ni pasteurisées, brassées au cœur du plateau — une dizaine de références, vente à la brasserie et visite sur réservation.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "07 81 12 69 01",
+          "email": "labrasseriedularzac@gmail.com",
+          "site": null,
+          "facebook": "https://www.facebook.com/brasserie.larzac/",
+          "instagram": "https://www.instagram.com/la_brasserie_du_larzac/",
+          "adresse": "La Blaquière, 12100 Millau",
+          "vente": "Vente directe et café à la brasserie : avril-juin et septembre le vendredi 16h-18h ; juillet-août mardi-samedi 15h-19h ; visites sur réservation",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/la-brasserie-du-larzac-millau_TFO394390000811",
+            "https://biere-tourisme.fr/brasserie/la-brasserie-du-larzac/",
+            "https://www.instagram.com/la_brasserie_du_larzac/"
+          ],
+          "note": "Téléphone signalé confirmé. Bières bio non filtrées, non pasteurisées (une dizaine de références). Très active en 2025 : nouvelle West Causse IPA et 5 médailles au Concours international de Lyon 2025. Pas de site web propre identifié.",
+          "maj": "2026-08-12"
         },
         {
           "id": "ferme-du-mas-du-pre",
@@ -698,7 +1923,23 @@
           "lieu": "Vallée du Durzon, Nant (12)",
           "description": "« Lou Fernandou » : pérails et fromages de brebis, tout le lait du troupeau transformé sur place. Point de vente à la ferme.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 62 26 57",
+          "email": "loufernandou@wanadoo.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Le Mas du Pré, 12230 Nant",
+          "vente": "Vente à la ferme tous les jours 17h-19h30 ; sur commande et dans les boutiques de producteurs locales",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://monproducteur.aveyron.fr/entreAidePro/430/5894-ferme-du-mas-du-pre-lou-fernandou.htm",
+            "https://www.pagesjaunes.fr/pros/12172257",
+            "https://paysansducoin.fr/producteur/lou-fernandou/"
+          ],
+          "note": "Téléphone fixe signalé confirmé ; un portable est aussi référencé (06 89 76 93 49). Mary Mazel, pérail de brebis Lacaune (150 brebis), ferme créée en 1991. Fiche Yelp mise à jour en mars 2026.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-des-liquisses",
@@ -707,7 +1948,25 @@
           "lieu": "Les Liquisses, Nant (12)",
           "description": "Les « Perles bio du Larzac » de la famille Brun : lentilles vertes, pois chiches, pois blonds et farines, cultivés depuis 1984.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 62 12 44",
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Les Liquisses Basses, 12230 Nant",
+          "vente": "Vente à la ferme sur commande, par correspondance et dans les boutiques de producteurs (Les Produits du Larzac, bienmanger.com…)",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-larzac.com/sites/default/files/uploads/les_producteurs_du_larzac_et_vallees.pdf",
+            "https://www.bienmanger.com/1R3153_Gaec_Liquisses_Produits.html",
+            "https://www.lesproduitsdularzac.fr/fr_FR/producteurs/gaec-des-liquisses"
+          ],
+          "note": "Jean-Marc, Claudy et Hervé Brun. Lentilles vertes « Perles bio du Larzac » et pois chiches bio ; céréales également en bio. Pas d'email public trouvé.",
+          "maj": "2026-08-12"
         },
         {
           "id": "aromatiques-du-larzac",
@@ -716,7 +1975,25 @@
           "lieu": "Les Homs, Nant (12)",
           "description": "Trente plantes aromatiques bio à la ferme des Homs : tisanes, vinaigres, hydrolats — et le fameux Pastis des Homs. Boutique à l'année, visite-dégustation l'été.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 62 22 56",
+          "email": "contact@aromatiquesdularzac.com",
+          "site": "https://aromatiquesdularzac.com",
+          "facebook": "https://www.facebook.com/Aromatiquesdularzac/",
+          "instagram": null,
+          "adresse": "Les Homs, 12230 Nant",
+          "vente": "Boutique à la ferme ouverte toute l'année (nov-avril : lun-ven 10h-12h30 / 14h-18h) ; en été visite-dégustation gratuite le vendredi 16h sur réservation ; sentier de visite libre de 550 m",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://aromatiquesdularzac.com/",
+            "https://www.annuairevert.com/societe/2986-aromatiques-du-larzac",
+            "https://www.nant-mairie.fr/fiche/sites-naturels/parcours-de-visite-libre-des-aromatiques-du-larzac-nant_TFO12168-PNA-20260325160440036/"
+          ],
+          "note": "Plantes aromatiques bio (thym, romarin, lavande…) : Pastis des Homs, apéritifs, vinaigres, tisanes, huiles essentielles, hydrolats. Fiche mairie de Nant datée 2026 (activité en cours).",
+          "maj": "2026-08-12"
         },
         {
           "id": "pisciculture-du-mas-de-pommiers",
@@ -725,7 +2002,25 @@
           "lieu": "Nant (12)",
           "description": "Truites arc-en-ciel et fario bio, saumon de fontaine, en eau courante depuis 2006. À la ferme et sur les marchés de Millau et La Cavalerie.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 62 14 39",
+          "email": "lecussan@wanadoo.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Mas de Pommiers, 12230 Nant",
+          "vente": "Vente directe à la pisciculture ; présent au Marché des Pays de l'Aveyron",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/pisciculture-du-mas-de-pommiers-nant_TFO246815346145",
+            "https://dans-lassiette.aveyron.fr/producteur/scea-pisciculture-du-mas-de-pommiers",
+            "https://www.acheteralasource.com/producteur/77371"
+          ],
+          "note": "M. et Mme Lecussan ; truites et ombles de fontaine bio élevés en eau courante (6 000 m² de bassins). Horaires précis non publiés en ligne : appeler avant de passer.",
+          "maj": "2026-08-12"
         },
         {
           "id": "la-voie-lactee",
@@ -734,7 +2029,25 @@
           "lieu": "Piquetalen, La Bastide-Pradines (12)",
           "description": "Les glaces fermières bio de la famille Arnal, au lait des brebis de la ferme.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 19 28 42 52",
+          "email": "arnal.bea@orange.fr",
+          "site": "https://www.glace-fermiere-aveyron.fr",
+          "facebook": "https://www.facebook.com/lafermedepiquetalen/",
+          "instagram": null,
+          "adresse": "Piquetalen, 12490 La Bastide-Pradines",
+          "vente": "Vente à la ferme (lundi, mardi, jeudi, samedi 11h-17h selon sources ; caissettes de viande sur commande) ; marchés de producteurs locaux",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/la-voie-lactee-la-ferme-de-piquetalen-du-larzac-la-bastide-pradines_TFO168281150401",
+            "https://www.parc-grands-causses.fr/la-voie-lactee-la-ferme-de-piquetalen-du-larzac-0",
+            "https://www.glace-fermiere-aveyron.fr/"
+          ],
+          "note": "Francis et Béatrice Arnal. Glaces fermières au lait de brebis ou de vache selon la saison (plus de 30 parfums), œufs, veau, agneau et porc bio. Certaines sources indiquent une vente « sur commande uniquement » : confirmer les jours d'ouverture par téléphone. Autres numéros : 05 65 58 15 04.",
+          "maj": "2026-08-12"
         },
         {
           "id": "ferme-du-frayssinet",
@@ -743,7 +2056,23 @@
           "lieu": "Sainte-Eulalie-de-Cernon (12)",
           "description": "Brebis laitières de Roquefort et vaches Aubrac : visites guidées avec dégustation ou goûter, d'avril à fin octobre.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 62 76 19",
+          "email": "gaecdespradous@gmail.com",
+          "site": "http://www.fermedufrayssinet.fr",
+          "facebook": "https://www.facebook.com/fermedufrayssinet/",
+          "instagram": null,
+          "adresse": "Le Frayssinet, 12230 Sainte-Eulalie-de-Cernon",
+          "vente": "Visites guidées avec goûter/dégustation sur réservation du 15 juin au 15 septembre",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "http://www.fermedufrayssinet.fr/",
+            "https://www.tourisme-aveyron.com/fr/diffusio/accueil-de-groupes-artisans-entreprises/ferme-du-frayssinet-sainte-eulalie-de-cernon_TFO380550554696",
+            "https://www.guide-tarn-aveyron.com/en/tourism/discover/tourist-sites/discovery-farms/sainte-eulalie-de-cernon-740/ferme-du-frayssinet-298.html"
+          ],
+          "note": "Téléphone signalé confirmé ; portable également référencé : 06 73 06 64 39. Martine, Alain et Benoît Fabrègues ; brebis laitières (lait livré à la coopérative des Bergers du Larzac) et vaches Aubrac. Ferme d'accueil du Parc naturel régional des Grands Causses.",
+          "maj": "2026-08-12"
         },
         {
           "id": "l-agneau-des-cledelles",
@@ -752,7 +2081,23 @@
           "lieu": "Bengouzal, Sainte-Eulalie-de-Cernon (12)",
           "description": "Agneau du Larzac élevé en plein air : viande découpée à la demande d'avril à septembre, conserves toute l'année. Retrait à la ferme sur commande.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 62 56 99",
+          "email": "agneaudescledelles@gmail.com",
+          "site": "http://agneau-des-cledelles-larzac.fr",
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Bengouzal, 12230 Sainte-Eulalie-de-Cernon",
+          "vente": "Vente directe toute l'année (agneau du Larzac élevé en plein air)",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "http://agneau-des-cledelles-larzac.fr/",
+            "https://monproducteur.aveyron.fr/entreAidePro/482/5894-l-agneau-des-cledelles.htm",
+            "https://www.acheteralasource.com/producteur/84498"
+          ],
+          "note": "Téléphone et email signalés confirmés par l'annuaire départemental et le site propre.",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-de-la-doline",
@@ -761,7 +2106,25 @@
           "lieu": "La Jasse, L'Hospitalet-du-Larzac (12)",
           "description": "Agneau bio de 350 brebis menées sur 300 hectares de causse. À la ferme, sur commande.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 75 06 83 05",
+          "email": "gaecdeladoline@gmail.com",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "La Jasse, 12230 L'Hospitalet-du-Larzac",
+          "vente": "Vente directe d'agneaux : de septembre à décembre (agneaux d'herbe nés au printemps) et de mars à juillet (agneaux nés en bergerie)",
+          "labels": [
+            "AB"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://annuaire.agencebio.org/operateur/47595/gaec-de-la-doline",
+            "https://ville-data.com/que-faire/visite-cave-ferme-degustation/GAEC-de-la-Doline/L-Hospitalet-du-Larzac/12-8059-12115",
+            "https://ecocampingdularzac.org/les-agneaux-bio-de-la-doline?lang=en"
+          ],
+          "note": "350 brebis sur près de 300 ha, en agriculture biologique depuis 2006 (référencé à l'annuaire officiel de l'Agence Bio).",
+          "maj": "2026-08-12"
         },
         {
           "id": "gaec-des-licides",
@@ -770,7 +2133,25 @@
           "lieu": "Campestre-et-Luc (30)",
           "description": "Poulets et pintades fermiers, œufs, et bœuf croisé Aubrac-Limousine en colis — à la ferme, uniquement sur commande.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 69 45 71 89",
+          "email": "fredobrunel@hotmail.fr",
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": "Les Licides, 30770 Campestre-et-Luc",
+          "vente": "Vente directe à la ferme : poulets, pintades, œufs fermiers ; présent au marché de producteurs de Campestre-et-Luc en été",
+          "labels": [
+            "Bienvenue à la ferme"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.bienvenue-a-la-ferme.com/occitanie/gard/campestre-et-luc/ferme/gaec-des-licides/466302",
+            "https://www.alzon.fr/les-eleveurs-pres-de-chez-nous/",
+            "https://www.societe.com/societe/gaec-les-licides-447819616.html"
+          ],
+          "note": "Téléphone signalé confirmé. La vente de bœuf mentionnée n'a pas été confirmée par les sources en ligne (volailles et œufs confirmés). Dénomination légale récente : « GAEC l'Étoile des Licides ».",
+          "maj": "2026-08-12"
         },
         {
           "id": "domaine-de-ferrussac",
@@ -779,7 +2160,25 @@
           "lieu": "La Vacquerie-et-Saint-Martin",
           "description": "Des Terrasses du Larzac en bio et des bœufs Aubrac, sur 700 hectares de causse semés de dolmens et de lavognes. Dégustation au domaine.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "06 95 15 33 45",
+          "email": "domaine@ferrussac.fr",
+          "site": "https://www.ferrussac.fr",
+          "facebook": "https://www.facebook.com/domainedeferrussac/",
+          "instagram": null,
+          "adresse": "Ferrussac, 34520 La Vacquerie-et-Saint-Martin-de-Castries",
+          "vente": "Dégustation et vente au caveau sur rendez-vous (06 95 15 33 45) ; également chez des cavistes et boutiques de producteurs",
+          "labels": [
+            "AOP Terrasses du Larzac"
+          ],
+          "actif": "oui",
+          "sources": [
+            "https://www.ferrussac.fr/index.html",
+            "https://www.languedoc-coeur-herault.fr/annuaire/domaine-de-ferrussac",
+            "https://dis-leur.fr/vignobles-domaine-de-ferrussac-signe-particulier-aime-le-bon-vin-et-les-bovins/"
+          ],
+          "note": "Renaud (famille de Ferrussac) : vignoble à 300-350 m d'altitude conduit en agriculture biologique (certification AB probable mais non vérifiée formellement) et élevage de bovins Aubrac sur plus de 700 ha.",
+          "maj": "2026-08-12"
         },
         {
           "id": "boutique-bistrot-paysans",
@@ -788,7 +2187,23 @@
           "lieu": "Place du Claux, Nant (12)",
           "description": "Une quinzaine de fermes du Larzac et des vallées y vendent en direct, en tenant la boutique à tour de rôle : fromages, viandes, miel, légumes, plantes.",
           "badge": null,
-          "portrait": null
+          "portrait": null,
+          "telephone": "05 65 47 51 33",
+          "email": "boutiqueetbistrotpaysans@gmail.com",
+          "site": null,
+          "facebook": "https://www.facebook.com/boutiqueetbistrotpaysans/",
+          "instagram": null,
+          "adresse": "5 place du Claux, 12230 Nant",
+          "vente": "Boutique collective d'une quinzaine de paysans des Causses et Cévennes (fruits, légumes, fromages, viandes, conserves, miel, vins, bières, glaces…) ; ouvert notamment le dimanche matin ; bistrot sur place",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://monproducteur.aveyron.fr/entreAidePro/2444/5894-boutique-et-bistrot-paysans.htm",
+            "https://www.nantaveyron.fr/boutique-bistrot-paysans.html",
+            "https://www.pagesjaunes.fr/pros/59132724"
+          ],
+          "note": "Téléphone signalé confirmé. Installée dans l'ancien Grand Café du village ; les producteurs tiennent la boutique à tour de rôle. Les horaires détaillés varient selon les sources (matinées 9h-13h tous les jours ou presque, plus 15h30-19h30 certains jours) : vérifier par téléphone selon la saison.",
+          "maj": "2026-08-12"
         }
       ]
     }
