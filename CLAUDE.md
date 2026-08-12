@@ -137,10 +137,16 @@ pas exister.
 
 La **carte interactive** en haut de l'annuaire vient des mêmes données : le
 champ `gps` ([latitude, longitude]) place l'épingle, `gpsPrecision` vaut
-`"commune"` (centre de la commune, source Wikipédia) tant que personne n'a
-relevé la position exacte de la ferme. Pour affiner une épingle : remplacer
-les coordonnées dans le JSON et passer `gpsPrecision` à `"exacte"`. Un
-producteur sans `gps` reste dans l'annuaire mais pas sur la carte.
+`"commune"` (centre de la commune, source Wikipédia), `"lieu-dit"` (hameau
+géolocalisé) ou `"exacte"` (position relevée à la ferme). Un producteur sans
+`gps` reste dans l'annuaire mais pas sur la carte.
+
+Pour affiner une épingle sans toucher au JSON :
+**ceilhes-tourisme.fr/reglage-carte.html** — page-outil interne (hors menu,
+hors sitemap, non indexée). On y fait glisser les épingles sur la position
+réelle des fermes, puis « Copier les corrections » produit un bloc à envoyer
+à Claude, qui reporte les coordonnées dans `data/producteurs.json` avec
+`gpsPrecision: "exacte"`.
 
 ## Conventions
 

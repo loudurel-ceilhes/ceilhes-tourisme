@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réglage de la carte des producteurs — outil interne</title>
+<!-- Page-outil interne : pas dans le menu, pas dans le sitemap, pas indexée.
+     Elle sert à affiner la position des épingles de la carte des producteurs
+     (terroir.html) : on fait glisser une épingle sur la position réelle de la
+     ferme, puis on copie le bloc de corrections et on l'envoie à Claude (ou on
+     reporte les coordonnées à la main dans data/producteurs.json). -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  body{background:var(--sable);padding:1.2rem 4vw 3rem;font-family:'Outfit',sans-serif}
+  h1{font-family:'Cormorant Garamond',serif;color:var(--foret-fonce);font-size:1.7rem;margin:.4rem 0}
+  .aide{font-size:.9rem;font-weight:300;max-width:900px;margin:0 0 1rem}
+  #carte-reglage{height:70vh;border-radius:var(--r);box-shadow:var(--ombre);z-index:1}
+  .barre{display:flex;gap:.8rem;align-items:center;margin:1rem 0;flex-wrap:wrap}
+  .barre button{font:inherit;font-weight:600;padding:.55rem 1.1rem;border:none;border-radius:999px;background:var(--ocre);color:#fff;cursor:pointer}
+  .barre button:disabled{opacity:.45;cursor:default}
+  .barre .etat{font-size:.88rem}
+  textarea{width:100%;height:9rem;font:0.82rem/1.4 monospace;border-radius:var(--r);border:1px solid var(--pierre);padding:.8rem;background:var(--blanc)}
+  .marqueur-nom{background:var(--foret-fonce);color:#fff;border-radius:6px;padding:1px 7px;font-size:.72rem;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+</style>
+</head>
+<body>
+<h1>Réglage de la carte des producteurs</h1>
+<p class="aide"><strong>Mode d'emploi :</strong> zoome sur une ferme que tu connais, puis <strong>fais glisser son épingle</strong> jusqu'à sa position réelle (le fond de carte affiche les bâtiments en zoomant). L'épingle devient verte, et le bloc de corrections en bas se remplit tout seul. Quand tu as fini, clique « Copier les corrections » et envoie le texte à Claude — ou garde cette page ouverte et recommence plus tard, rien n'est perdu tant que tu ne fermes pas l'onglet. Les positions actuelles sont au centre de la commune : un écart de quelques kilomètres est normal.</p>
+<div id="carte-reglage"></div>
+<div class="barre">
+  <button id="copier" disabled>Copier les corrections</button>
+  <button id="annuler" disabled>Annuler la dernière</button>
+  <span class="etat" id="etat">Aucune correction pour l'instant.</span>
+</div>
+<textarea id="sortie" readonly placeholder="Les corrections apparaîtront ici, au format à envoyer à Claude."></textarea>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(async function(){
+  const rep = await fetch('data/producteurs.json');
+  const donnees = await rep.json();
+  const carte = L.map('carte-reglage').setView([43.82, 3.05], 11);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(carte);
+
+  const corrections = {}; // id -> {nom, lat, lng}
+  const ordre = [];       // pour « annuler la dernière »
+  const etat = document.getElementById('etat');
+  const sortie = document.getElementById('sortie');
+  const btnCopier = document.getElementById('copier');
+  const btnAnnuler = document.getElementById('annuler');
+
+  function pin(couleur){return L.divIcon({className:'',html:'<div style="width:22px;height:22px;border-radius:50% 50% 50% 0;background:'+couleur+';transform:rotate(-45deg);border:2.5px solid #fff;box-shadow:0 3px 8px rgba(0,0,0,.4)"></div>',iconSize:[22,22],iconAnchor:[11,22]});}
+
+  function rafraichir(){
+    const n = ordre.length;
+    etat.textContent = n ? n + ' correction' + (n>1?'s':'') + ' — pense à copier avant de fermer !' : 'Aucune correction pour l\'instant.';
+    btnCopier.disabled = btnAnnuler.disabled = !n;
+    sortie.value = n ? 'Corrections de la carte des producteurs :\n' +
+      ordre.map(id => `- ${id} : ${corrections[id].lat}, ${corrections[id].lng}  (${corrections[id].nom})`).join('\n') : '';
+  }
+
+  const marqueurs = {};
+  donnees.zones.forEach(z => z.producteurs.forEach(p => {
+    if (!Array.isArray(p.gps)) return;
+    const m = L.marker(p.gps, {icon: pin(p.gpsPrecision === 'exacte' ? '#2e7d8c' : z.couleur || '#c98f4e'), draggable: true})
+      .addTo(carte)
+      .bindTooltip(p.nom + ' — ' + p.lieu, {direction:'top', className:'marqueur-nom'});
+    m.on('dragend', () => {
+      const pos = m.getLatLng();
+      if (!corrections[p.id]) ordre.push(p.id);
+      corrections[p.id] = {nom: p.nom, lat: +pos.lat.toFixed(5), lng: +pos.lng.toFixed(5)};
+      m.setIcon(pin('#1e7d3c'));
+      rafraichir();
+    });
+    marqueurs[p.id] = {m, gps: p.gps, couleurOrigine: p.gpsPrecision === 'exacte' ? '#2e7d8c' : z.couleur || '#c98f4e'};
+  }));
+
+  btnAnnuler.onclick = () => {
+    const id = ordre.pop();
+    if (!id) return;
+    delete corrections[id];
+    const {m, gps, couleurOrigine} = marqueurs[id];
+    m.setLatLng(gps); m.setIcon(pin(couleurOrigine));
+    rafraichir();
+  };
+  btnCopier.onclick = async () => {
+    await navigator.clipboard.writeText(sortie.value);
+    etat.textContent = 'Copié ! Colle le texte dans un message à Claude.';
+  };
+  rafraichir();
+})();
+</script>
+</body>
+</html>
