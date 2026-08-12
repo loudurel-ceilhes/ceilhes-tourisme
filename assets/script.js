@@ -85,6 +85,33 @@ if(window.L && document.getElementById('map')){
   gVillage.addTo(map);gEau.addTo(map);gAutour.addTo(map);
   L.control.layers(null,{'🏘️ Village & commerces':gVillage,'💧 Lacs & baignade':gEau,'⛰️ À découvrir autour':gAutour},{collapsed:false}).addTo(map);
 }
+// ----- Carte des producteurs (page Terroir) -----
+// Les repères viennent du bloc JSON #donnees-carte, fabriqué par
+// scripts/producteurs.mjs depuis data/producteurs.json. Plusieurs fermes
+// partagent souvent la même commune : on écarte alors légèrement les
+// épingles en cercle pour qu'elles restent toutes cliquables.
+if(window.L && document.getElementById('carte-prod')){
+  const donnees=JSON.parse(document.getElementById('donnees-carte').textContent);
+  const carte=L.map('carte-prod',{scrollWheelZoom:false}).setView([43.78,3.1],10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:18}).addTo(carte);
+  carte.on('click',()=>carte.scrollWheelZoom.enable());
+  function epingle(couleur){return L.divIcon({className:'',html:'<div style="width:20px;height:20px;border-radius:50% 50% 50% 0;background:'+couleur+';transform:rotate(-45deg);border:2.5px solid #fff;box-shadow:0 3px 8px rgba(0,0,0,.4)"></div>',iconSize:[20,20],iconAnchor:[10,20],popupAnchor:[0,-20]});}
+  // Regroupe par point pour éviter les épingles empilées.
+  const parPoint={};
+  donnees.reperes.forEach(r=>{const cle=r.gps.join(',');(parPoint[cle]=parPoint[cle]||[]).push(r);});
+  const bornes=[];
+  Object.values(parPoint).forEach(groupe=>{
+    groupe.forEach((r,i)=>{
+      let [lat,lng]=r.gps;
+      if(groupe.length>1){const angle=2*Math.PI*i/groupe.length,ray=0.006;lat+=ray*Math.cos(angle);lng+=ray*Math.sin(angle)/Math.cos(lat*Math.PI/180);}
+      const contacts=[r.tel?'<a href="tel:+33'+r.tel.replace(/\D/g,'').slice(1)+'">📞 '+r.tel+'</a>':'',r.site?'<a href="'+r.site+'" target="_blank" rel="noopener">🌐 site</a>':''].filter(Boolean).join(' · ');
+      const html='<div class="popup-fiche"><b>'+r.picto+' '+r.nom+'</b><br>'+r.lieu+(contacts?'<br>'+contacts:'')+'<br><a href="#'+r.id+'">Voir la fiche ↓</a></div>';
+      L.marker([lat,lng],{icon:epingle(donnees.couleurs[r.zone])}).bindPopup(html).addTo(carte);
+      bornes.push([lat,lng]);
+    });
+  });
+  if(bornes.length)carte.fitBounds(bornes,{padding:[30,30]});
+}
 // ----- Filtre annuaire (catégories) -----
 const catChips=document.querySelectorAll('.cat-chips .chip');
 if(catChips.length){catChips.forEach(c=>c.addEventListener('click',()=>{catChips.forEach(x=>x.classList.remove('active'));c.classList.add('active');const cat=c.dataset.cat;document.querySelectorAll('.dir-card').forEach(card=>{card.style.display=(cat==='tous'||card.dataset.cat===cat)?'':'none';});}));}

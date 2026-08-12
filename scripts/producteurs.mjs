@@ -119,6 +119,42 @@ function zone(z) {
   ].join('\n')
 }
 
+/**
+ * La carte des producteurs : le conteneur, la légende, et les données des
+ * repères dans un bloc JSON que assets/script.js lit pour poser les épingles
+ * (voir « Carte des producteurs » dans script.js). Un producteur sans champ
+ * gps n'apparaît simplement pas sur la carte.
+ */
+function carte(zones) {
+  const reperes = []
+  zones.forEach((z, i) => {
+    for (const p of z.producteurs) {
+      if (!Array.isArray(p.gps) || p.gps.length !== 2) continue
+      reperes.push({
+        id: p.id,
+        nom: p.nom,
+        picto: p.picto,
+        lieu: p.lieu,
+        zone: i,
+        gps: p.gps,
+        approx: p.gpsPrecision !== 'exacte',
+        tel: p.telephone || null,
+        site: p.site || null,
+      })
+    }
+  })
+  if (!reperes.length) return ''
+  const legende = zones
+    .map((z) => `      <span><span class="dot" style="background:${z.couleur}"></span> ${echappe(z.titre.split('—')[0].trim())}</span>`)
+    .join('\n')
+  return `    <div id="carte-prod" class="reveal" aria-label="Carte des producteurs"></div>
+    <div class="map-legend reveal">
+${legende}
+    </div>
+    <p class="reveal" style="text-align:center;font-size:.8rem;font-weight:300;margin-top:.6rem">Chaque repère est placé sur sa commune — appelez avant de prendre la route, les fermes sont parfois à l'écart du village.</p>
+    <script type="application/json" id="donnees-carte">${JSON.stringify({ couleurs: zones.map((z) => z.couleur), reperes })}</script>`
+}
+
 async function main() {
   const essai = process.argv.includes('--dry-run')
   const { zones } = JSON.parse(await readFile(DONNEES, 'utf8'))
@@ -140,6 +176,8 @@ async function main() {
   if (total < 10) throw new Error(`Seulement ${total} producteurs : fichier suspect, on ne touche à rien`)
 
   const bloc = `<!-- @producteurs — généré par scripts/producteurs.mjs depuis data/producteurs.json : ne pas modifier à la main, modifier le fichier de données -->
+${carte(zones)}
+
 ${zones.map(zone).join('\n\n')}
     <!-- @/producteurs -->`
 
