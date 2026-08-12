@@ -383,6 +383,8 @@ footer small a{color:var(--lac-clair)}
 .prod-card .tag{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;color:var(--foret);background:var(--brume);border-radius:999px;padding:.3rem .75rem;margin-top:.9rem}
 .prod-card .portrait{display:inline-block;font-size:.84rem;font-weight:600;color:var(--lac);margin-top:.9rem;margin-right:.9rem;text-decoration:none;border-bottom:1px solid var(--lac-clair)}
 .prod-card .portrait:hover{color:var(--foret-fonce);border-bottom-color:var(--ocre)}
+.zone-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--foret-fonce);margin:2.8rem 0 .3rem;text-align:center}
+.zone-sub{text-align:center;font-size:.86rem;font-weight:300;margin:0 0 1.5rem;color:var(--texte)}
 
 /* ---------- ANNUAIRE / HÉBERGEURS ---------- */
 .dir-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin-top:2.5rem}
