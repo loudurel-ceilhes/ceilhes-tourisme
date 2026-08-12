@@ -7,7 +7,7 @@
   #    feuille de style continue de l'appliquer pendant des jours — c'est ce qui
   #    affichait les photos de la galerie étirées quatre fois en hauteur alors que
   #    la correction était en ligne. Détails dans scripts/version-assets.mjs.
-  command = "node scripts/producteurs.mjs && node scripts/version-assets.mjs"
+  command = "node scripts/producteurs.mjs && node scripts/marches.mjs && node scripts/monuments.mjs && node scripts/version-assets.mjs"
 
 # Netlify retirait le « .html » des liens internes à la volée, alors que les
 # balises canoniques, les og:url, le sitemap et les données structurées

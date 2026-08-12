@@ -1,0 +1,539 @@
+{
+  "groupes": {
+    "village": "Au village",
+    "vallee": "La haute vallée de l’Orb",
+    "lodevois": "Lodévois & vallée de l’Orb aval",
+    "larzac": "Le Larzac des Templiers",
+    "aveyron": "Sud Aveyron & monts de Lacaune"
+  },
+  "monuments": [
+    {
+      "nom": "Église paroissiale Saint-Jean-Baptiste de Ceilhes",
+      "commune": "Ceilhes-et-Rocozels",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1986",
+      "merimee": "PA00103425",
+      "description": "Église mentionnée dès 1135, clocher roman et chevet du XIIe siècle, nef et sanctuaire du XIVe siècle avec contreforts portant des mâchicoulis défensifs ; inscrite par arrêté du 26 novembre 1986.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103425/ceilhes-et-rocozels-eglise-paroissiale-saint-jean-baptiste-de-ceilhes"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "village"
+    },
+    {
+      "nom": "Église Saint-Jacques de Rocozels",
+      "commune": "Ceilhes-et-Rocozels",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1986",
+      "merimee": "PA00103426",
+      "description": "Ancienne chapelle castrale probable, cédée en 1180 par l'évêque de Béziers à l'ordre du Temple, édifice rectangulaire à nef unique et chevet plat ; inscrite par arrêté du 26 novembre 1986.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103426/ceilhes-et-rocozels-eglise-saint-jacques-de-rocozels"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "village"
+    },
+    {
+      "nom": "Ancienne abbaye Saint-Pierre de Lunas (abbaye de Joncels)",
+      "commune": "Joncels",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1988",
+      "merimee": "PA00103465",
+      "description": "Abbaye bénédictine fondée probablement au VIIe siècle ; l'église paroissiale (ancienne abbatiale) et les vestiges du cloître roman sont inscrits par arrêté du 1er septembre 1988.",
+      "sources": [
+        "https://monumentum.fr/ancienne-abbaye-saint-pierre-lunas-pa00103465.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Ancienne chapelle Saint-Georges",
+      "commune": "Lunas",
+      "departement": "34",
+      "protection": "classé MH",
+      "annee": "1997",
+      "merimee": "PA00103495",
+      "description": "Église préromane de tradition wisigothique des IXe-Xe siècles, en partie ruinée, avec arc triomphal outrepassé porté par des colonnes de marbre dont une d'origine gallo-romaine ; classée le 17 juillet 1997.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103495/lunas-ancienne-chapelle-saint-georges",
+        "https://fr.wikipedia.org/wiki/Chapelle_Saint-Georges_de_Lunas"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Église Saint-Pancrace",
+      "commune": "Lunas",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "2001",
+      "merimee": "PA34000027",
+      "description": "Église romane du XIIe siècle agrandie aux XIIIe-XIVe siècles, chœur probablement repris au XVe siècle ; inscrite en 2001.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa34000027/lunas-eglise-saint-pancrace"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Chapelle Notre-Dame de Nize",
+      "commune": "Lunas",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "2001",
+      "merimee": "PA34000028",
+      "description": "Ancien sanctuaire préroman puis chapelle de pèlerinage à clocher et nef romans du XIIe siècle ; l'ensemble chapelle, ermitage et source est inscrit par arrêté du 28 mai 2001.",
+      "sources": [
+        "https://monumentum.fr/chapelle-notre-dame-nize-pa34000028.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Château de Dio (restes)",
+      "commune": "Dio-et-Valquières",
+      "departement": "34",
+      "protection": "classé MH",
+      "annee": "1930",
+      "merimee": "PA00103447",
+      "description": "Forteresse médiévale dominant le village, vaste corps carré dont la partie basse à baies géminées date du XIIe siècle, couronnement à créneaux et mâchicoulis remanié au XVIe siècle ; classée par arrêté du 24 octobre 1930.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103447/dio-et-valquieres-restes-du-chateau-de-dio",
+        "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Dio"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Église paroissiale Saint-Étienne de Dio",
+      "commune": "Dio-et-Valquières",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1998",
+      "merimee": "PA34000016",
+      "description": "Église du XIIe siècle élevée par les moines de l'abbaye de Psalmodi, à l'est du village de Dio ; inscrite par arrêté du 5 mai 1998.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa34000016/dio-et-valquieres-eglise-paroissiale-saint-etienne-de-dio",
+        "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89tienne_de_Dio"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Église paroissiale Saint-André de Valquières",
+      "commune": "Dio-et-Valquières",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1998",
+      "merimee": "PA34000015",
+      "description": "Église commencée au XIIe siècle puis profondément transformée au XIVe siècle (voûte en berceau de la nef, chœur, chapelles voûtées) ; inscrite par arrêté du 5 mai 1998.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa34000015/dio-et-valquieres-eglise-paroissiale-saint-andre-de-valquieres",
+        "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Andr%C3%A9_de_Valqui%C3%A8res"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Château de Cazilhac",
+      "commune": "Le Bousquet-d'Orb",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1987",
+      "merimee": "PA00103396",
+      "description": "Site fortifié dès le XIIe siècle, ayant sans doute appartenu aux moines de l'abbaye bénédictine de Joncels ; façades, toitures et terrasses de jardin inscrites par arrêté du 9 avril 1987.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103396/le-bousquet-dorb-chateau-de-cazilhac"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Église Notre-Dame-de-la-Pitié de Boussagues",
+      "commune": "La Tour-sur-Orb",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1988",
+      "merimee": "PA00103736",
+      "description": "Église du village médiéval de Boussagues, chœur de la fin du XIIe ou du début du XIIIe siècle, nef reconstruite en 1520 avec clocher et sacristie ; inscrite par arrêté du 6 janvier 1988.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103736/la-tour-sur-orb-eglise-notre-dame-de-la-pitie-de-boussagues",
+        "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-la-Piti%C3%A9_de_Boussagues"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Maison du Bailli, dite « manoir Toulouse-Lautrec », à Boussagues",
+      "commune": "La Tour-sur-Orb",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "2018",
+      "merimee": "PA34000122",
+      "description": "Demeure seigneuriale du village médiéval de Boussagues liée à la famille de Toulouse-Lautrec ; façades, toitures et tour inscrites par arrêté du 5 septembre 2018.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa34000122/la-tour-sur-orb-maison-du-bailli-ou-manoir-toulouse-lautrec-a-boussagues"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Église Saint-Cyr-et-Sainte-Julite (Sainte-Julie-et-Saint-Cyr) de Saint-Xist",
+      "commune": "La Tour-sur-Orb",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1979",
+      "merimee": "PA00103737",
+      "description": "Église mentionnée en 1135 comme dépendance de l'abbaye de Villemagne, édifice de la fin du XIIIe ou du XIVe siècle avec chapelles latérales et cloître des XVe-XVIIe siècles ; église et cloître inscrits le 27 décembre 1979.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103737/la-tour-sur-orb-eglise-sainte-julie-et-saint-cyr-de-saint-xist",
+        "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Cyr-et-Sainte-Julite_de_Saint-Xist"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Ancienne résidence des abbés de Joncels (château de Brousson)",
+      "commune": "La Tour-sur-Orb",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1964",
+      "merimee": "PA00103738",
+      "description": "Château bâti au XVIIe siècle (après 1645), avec chapelle ajoutée en 1669-1670, ancienne résidence des abbés de Joncels ; inscrit par arrêté du 21 janvier 1964.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103738/la-tour-sur-orb-ancienne-residence-des-abbes-de-joncels"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Ancienne usine de chaux",
+      "commune": "La Tour-sur-Orb",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "2010",
+      "merimee": "PA34000078",
+      "description": "Ensemble complet de production de chaux représentatif de la seconde moitié du XIXe siècle, conservant les traces du processus de l'extraction à l'ensachage ; inscrit par arrêté du 17 mars 2010.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa34000078/la-tour-sur-orb-ancienne-usine-de-chaux"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "vallee"
+    },
+    {
+      "nom": "Ancien hospice ou hôpital Saint-Louis",
+      "commune": "Bédarieux",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "2015",
+      "merimee": "PA34000102",
+      "description": "Hospice construit de 1822 à 1826 grâce au legs de l'abbé Jean Martel ; l'église en totalité ainsi que les façades et toitures de l'ancien hospice sont inscrites par arrêté du 13 avril 2015.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa34000102/bedarieux-ancien-hospice-ou-hopital-saint-louis",
+        "https://pop.culture.gouv.fr/notice/merimee/PA34000102"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Maison Donnadille",
+      "commune": "Bédarieux",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "2016",
+      "merimee": "PA34000113",
+      "description": "Maison bourgeoise de la fin du XIXe siècle financée par Pierre Donnadille et dessinée par l'architecte montpelliérain Léopold Carlier ; inscrite par arrêté du 23 décembre 2016.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa34000113/bedarieux-maison-donnadille",
+        "https://pop.culture.gouv.fr/notice/merimee/PA34000113"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Ancienne cathédrale Saint-Fulcran",
+      "commune": "Lodève",
+      "departement": "34",
+      "protection": "classé MH",
+      "annee": "1840",
+      "merimee": "PA00103478",
+      "description": "Cathédrale de style gothique languedocien des XIIIe-XIVe siècles, sur un site consacré en 975 par l'évêque Fulcran, avec façade occidentale fortifiée ; classée sur la liste de 1840.",
+      "sources": [
+        "https://monumentum.fr/ancienne-cathedrale-actuelle-eglise-paroissiale-saint-fulcran-pa00103478.html",
+        "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Saint-Fulcran_de_Lod%C3%A8ve"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Ancien groupe épiscopal (cloître, palais épiscopal, actuel hôtel de ville)",
+      "commune": "Lodève",
+      "departement": "34",
+      "protection": "classé MH",
+      "annee": "2005",
+      "merimee": "PA00103479",
+      "description": "Ensemble épiscopal comprenant bâtiments claustraux, salle capitulaire, palais épiscopal reconstruit à partir de 1667 puis 1735-1744 et jardins, hôtel de ville depuis 1809 ; classé par arrêté du 27 juin 2005.",
+      "sources": [
+        "https://monumentum.fr/ancien-groupe-episcopal-pa00103479.html",
+        "https://pop.culture.gouv.fr/notice/merimee/PA00103479"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Pont de Montifort",
+      "commune": "Lodève",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1964",
+      "merimee": "PA00103490",
+      "description": "Pont médiéval en dos d'âne très prononcé à chaussée étroite franchissant la Soulondre, daté du XIVe siècle ; inscrit par arrêté du 12 mai 1964.",
+      "sources": [
+        "https://monumentum.fr/pont-montifort-pa00103490.html",
+        "https://museedupatrimoine.fr/pont-de-montifort-a-lodeve-herault/5729.html"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Halles (halle Dardé)",
+      "commune": "Lodève",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1994",
+      "merimee": "PA00132612",
+      "description": "Halle construite en 1819 sur l'emplacement de l'ancienne église Saint-Pierre, abritant aujourd'hui trois œuvres du sculpteur lodévois Paul Dardé ; inscrite en avril 1994.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00132612/lodeve-halles"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Ancien château ou donjon",
+      "commune": "Soubès",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1988",
+      "merimee": "PA00103732",
+      "description": "Donjon médiéval du XIIIe siècle établi sur un promontoire rocheux aménagé pour la défense, avec caves voûtées en berceau en partie creusées dans le tuf ; inscrit par arrêté du 10 février 1988.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103732/soubes-ancien-chateau-ou-donjon"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Château",
+      "commune": "Pégairolles-de-l'Escalette",
+      "departement": "34",
+      "protection": "inscrit MH",
+      "annee": "1984",
+      "merimee": "PA00103630",
+      "description": "Château dont la première mention remonte à 824, lorsque Louis le Pieux le céda à l'évêque de Lodève ; façades et toitures, y compris les galeries, inscrites par arrêté du 28 décembre 1984.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00103630/pegairolles-de-lescalette-chateau"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "lodevois"
+    },
+    {
+      "nom": "Anciens remparts",
+      "commune": "La Couvertoirade",
+      "departement": "12",
+      "protection": "classé MH",
+      "annee": "1895",
+      "merimee": "PA00094009",
+      "description": "Enceinte polygonale de la cité templière puis hospitalière du Larzac, reconstruite en 1445 par les Hospitaliers, percée de deux portes au nord et au sud ; classée par arrêté du 6 avril 1895.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00094009/la-couvertoirade-anciens-remparts"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Donjon et restes du château",
+      "commune": "La Couvertoirade",
+      "departement": "12",
+      "protection": "classé MH",
+      "annee": "1945",
+      "merimee": "PA00094005",
+      "description": "Château templier fondé après la donation du Larzac aux Templiers (1158, confirmée en 1182), passé aux Hospitaliers en 1312, avec donjon roman à contreforts ; classé en 1945.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00094005/la-couvertoirade-donjon-et-les-restes-du-chateau"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Église et ancien cimetière",
+      "commune": "La Couvertoirade",
+      "departement": "12",
+      "protection": "classé MH",
+      "annee": "1945",
+      "merimee": "PA00094006",
+      "description": "Église fortifiée de la cité, couverte de lauzes et fondée au nord directement sur le rocher, avec son ancien cimetière ; classée par arrêté du 26 mai 1945.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00094006/la-couvertoirade-eglise-et-ancien-cimetiere"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Maison adossée au front nord des remparts (hôtel de Grailhe)",
+      "commune": "La Couvertoirade",
+      "departement": "12",
+      "protection": "inscrit MH",
+      "annee": "1934",
+      "merimee": "PA00094007",
+      "description": "Maison Renaissance appuyée aux remparts, dont la porte sur cour à cartouche sculpté (heaume et lion) et les deux petites baies qui l'encadrent sont inscrites le 26 mars 1934.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00094007/la-couvertoirade-maison-adossee-au-front-nord-des-remparts",
+        "https://pop.culture.gouv.fr/notice/merimee/PA00094007"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Ancienne abbaye de Sylvanès",
+      "commune": "Sylvanès",
+      "departement": "12",
+      "protection": "classé MH",
+      "annee": "1862",
+      "merimee": "PA00094188",
+      "description": "Abbaye cistercienne du XIIe siècle fondée à la suite de la conversion du seigneur brigand Pons de Léras, remarquable abbatiale à nef unique de 44 m voûtée en berceau brisé ; classée en 1862.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00094188/sylvanes-ancienne-abbaye"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "aveyron"
+    },
+    {
+      "nom": "Mine d'argent de Cénomes",
+      "commune": "Montagnol",
+      "departement": "12",
+      "protection": "classé MH",
+      "annee": "2015",
+      "merimee": "PA12000069",
+      "description": "Mine de cuivre argentifère exploitée par les Romains d'environ 70 av. J.-C. à 30 ap. J.-C., exceptionnellement conservée grâce à son réemploi en cave fromagère au XVIIIe siècle ; sol et sous-sol classés par arrêté du 11 décembre 2015 (après inscription du 24 février 2015).",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa12000069/montagnol-mine-dargent",
+        "https://pop.culture.gouv.fr/notice/merimee/PA12000069"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "aveyron"
+    },
+    {
+      "nom": "Ancien château des Templiers, ancienne commanderie des Hospitaliers",
+      "commune": "Sainte-Eulalie-de-Cernon",
+      "departement": "12",
+      "protection": "inscrit MH",
+      "annee": "1976, 2003",
+      "merimee": "PA00094146",
+      "description": "Siège de la plus puissante commanderie templière puis hospitalière du Larzac, château du milieu du XIIIe siècle remanié jusqu'au XVIIe siècle ; ancienne commanderie inscrite le 16 août 1976, ancien château en totalité inscrit le 31 mars 2003.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00094146/sainte-eulalie-de-cernon-ancien-chateau-des-templiers-ancienne-commanderie-des-hospitaliers"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Église Sainte-Eulalie",
+      "commune": "Sainte-Eulalie-de-Cernon",
+      "departement": "12",
+      "protection": "inscrit MH",
+      "annee": "1927",
+      "merimee": "PA00094147",
+      "description": "Église élevée par les Templiers à la fin du XIIe siècle puis intégrée vers le milieu du XIIIe siècle au couvent fortifié de la commanderie ; inscrite par arrêté du 12 mai 1927.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00094147/sainte-eulalie-de-cernon-eglise",
+        "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Eulalie_de_Sainte-Eulalie-de-Cernon"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Fortifications",
+      "commune": "La Cavalerie",
+      "departement": "12",
+      "protection": "inscrit MH",
+      "annee": "1998",
+      "merimee": "PA12000014",
+      "description": "Enceinte hospitalière en quadrilatère d'environ 90 m sur 60 m, flanquée de tours rondes avec tour-porte à l'est, protégeant le village templier puis hospitalier du Larzac ; inscrite par arrêté du 28 septembre 1998.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa12000014/la-cavalerie-fortifications",
+        "https://fr.wikipedia.org/wiki/La_Cavalerie_(Aveyron)"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Dolmen de la Fabière",
+      "commune": "La Cavalerie",
+      "departement": "12",
+      "protection": "classé MH",
+      "annee": "1889",
+      "merimee": "PA00093995",
+      "description": "Dolmen du causse du Larzac, classé au titre des monuments historiques en 1889.",
+      "sources": [
+        "https://monumentum.fr/monument-historique/pa00093995/la-cavalerie-dolmen-de-la-fabiere",
+        "https://fr.wikipedia.org/wiki/Dolmen_de_la_Fabi%C3%A8re"
+      ],
+      "confiance": "haute",
+      "maj": "2026-08-12",
+      "groupe": "larzac"
+    },
+    {
+      "nom": "Statues-menhirs du groupe rouergat (Candoubre, Paillemalbiau dite de Camp-Grand, Moulin de Louat…)",
+      "commune": "Murat-sur-Vèbre",
+      "departement": "81",
+      "protection": "inscrit MH (au titre objet)",
+      "annee": "2019",
+      "merimee": null,
+      "description": "Ensemble de statues-menhirs néolithiques du groupe rouergat découvertes sur la commune, protégées au titre des monuments historiques (objets, base Palissy) le 30 octobre 2019 ; plusieurs sont présentées au centre d'interprétation des mégalithes de Murat-sur-Vèbre.",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Statue-menhir_de_Candoubre",
+        "https://fr.wikipedia.org/wiki/Statue-menhir_de_Paillemalbiau",
+        "https://www.tourisme-tarn.com/uk/patrimoine-culturel/statue-menhir-du-moulin-de-louat-1/"
+      ],
+      "confiance": "moyenne",
+      "maj": "2026-08-12",
+      "groupe": "aveyron"
+    }
+  ]
+}

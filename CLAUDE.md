@@ -113,6 +113,18 @@ Signe qui doit alerter : « j'ai corrigé, c'est en ligne, mais lui voit encore
 l'ancien ». Avant de chercher un bug, vérifier ce que le navigateur applique
 vraiment — pas ce que le fichier contient.
 
+## Les annuaires : des fichiers de données, pas du HTML
+
+Trois sections du site sont fabriquées depuis des fichiers de données par
+des scripts que Netlify lance à chaque publication (même modèle que
+l'agenda) : les **producteurs** (`data/producteurs.json` →
+`scripts/producteurs.mjs`, balises `@producteurs` de `terroir.html`), les
+**marchés** (`data/marches.json` → `scripts/marches.mjs`, balises `@marches`
+de `terroir.html`) et les **monuments historiques** (`data/monuments.json` →
+`scripts/monuments.mjs`, balises `@monuments` de `patrimoine.html`).
+La règle est la même partout : on ne modifie jamais le HTML entre les
+balises, on modifie le fichier de données puis on relance le script.
+
 ## L'annuaire des producteurs : un fichier de données, pas du HTML
 
 Les fiches producteurs de `terroir.html` (80 et quelques) ne se modifient
