@@ -64,11 +64,11 @@
           "note": "Contact : Hugues Raynaud. Autres numéros relevés : 06 07 88 30 21 et 04 67 97 21 82. Horaires précis de la boutique non trouvés en ligne : appeler avant de venir.",
           "maj": "2026-08-12",
           "gps": [
-            43.7572,
-            3.0992
+            43.7524,
+            3.1387
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.cartesfrance.fr/carte-france-ville/34019_Avene.html"
         },
         {
           "id": "la-part-du-loup",
@@ -101,11 +101,11 @@
           "note": "Émilie et Basile Dequiedt, brebis laitières 100 % bio (lait AOP Roquefort, fromages, yaourts, glaces). L'email est affiché sans arobase dans la source (« lapartduloup1orange.fr ») : forme reconstituée à vérifier. Présence Facebook/Instagram mentionnée mais URL non retrouvée.",
           "maj": "2026-08-12",
           "gps": [
-            43.7572,
-            3.0992
+            43.7464,
+            3.1344
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://fr.mappy.com/plan/lieu-dit/34260-les-planes"
         },
         {
           "id": "les-cocottes-d-avene",
@@ -130,11 +130,11 @@
           "note": "Laurence Rouquette. Téléphone signalé confirmé par la fiche CliketiK, seule source en ligne détaillée trouvée.",
           "maj": "2026-08-12",
           "gps": [
-            43.7572,
-            3.0992
+            43.7464,
+            3.1344
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://fr.mappy.com/plan/lieu-dit/34260-les-planes"
         },
         {
           "id": "ferme-du-licidou",
@@ -163,11 +163,11 @@
           "note": "Myriam Fontaine et Patrick Blanc, 190 brebis Lacaune en agriculture raisonnée (pas de label AB). Second numéro relevé : 06 79 98 49 73.",
           "maj": "2026-08-12",
           "gps": [
-            43.7572,
-            3.0992
+            43.7524,
+            3.1387
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.cartesfrance.fr/carte-france-ville/34019_Avene.html"
         },
         {
           "id": "les-terrasses-de-baudes",
@@ -227,11 +227,11 @@
           "note": "Le hameau de Fonbine est géographiquement côté Joncels, mais l'entreprise (SARL Le Pain de Fonbine, créée en 2020) est domiciliée à 34260 Avène dans toutes les sources. « Bio » annoncé par les fiches, certification non vérifiée. Horaires précis non trouvés.",
           "maj": "2026-08-12",
           "gps": [
-            43.7383,
-            3.1653
+            43.7664,
+            3.1383
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Joncels"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://mapcarta.com/fr/N3167875461"
         },
         {
           "id": "le-pain-de-l-arche",
@@ -258,11 +258,11 @@
           "note": "Communauté de l'Arche (Lanza del Vasto), toujours active. Aucun téléphone ni email de la boulangerie trouvés en ligne ; passer par le formulaire de contact d'archecom.org. Jours de fournée non publiés.",
           "maj": "2026-08-12",
           "gps": [
-            43.8003,
-            3.2122
+            43.78,
+            3.2
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Roqueredonde"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.weathercrave.com/weather-forecast-france/village-828771/weather-forecast-la-borie-noble-today"
         },
         {
           "id": "domaine-de-gravezon-eric-pailles",
@@ -758,11 +758,11 @@
           "note": "Élevage sans OGM (mention du site).",
           "maj": "2026-08-12",
           "gps": [
-            43.6853,
-            2.8539
+            43.7149,
+            2.8101
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Murat-sur-V%C3%A8bre"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.megalithic.co.uk/article.php?sid=27658"
         },
         {
           "id": "fromagerie-lou-caoussarel",
@@ -817,11 +817,11 @@
           "note": "Autre tél. : 06 88 30 04 55. Coordonnées du guide OT 2023 (rediffusé 2025) : à confirmer par téléphone.",
           "maj": "2026-08-12",
           "gps": [
-            43.7119,
-            2.8053
+            43.7058,
+            2.7661
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Moulin-Mage"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://mapcarta.com/fr/36957716"
         },
         {
           "id": "les-escargots-de-barre",
@@ -945,11 +945,11 @@
           "note": "Environ 250 pondeuses et 300 poulets bio, installés depuis 2017.",
           "maj": "2026-08-12",
           "gps": [
-            43.6686,
-            2.9725
+            43.6719,
+            2.9215
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Castanet-le-Haut"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://park4night.com/en/place/304769"
         },
         {
           "id": "les-ruchers-de-l-orb",
@@ -1019,11 +1019,11 @@
           "note": "SAS créée en 2017, Patrice Ramondenc président. Un annuaire inverse cite aussi un ancien numéro 05 65 49 56 44 ; le 05 65 99 50 99 est le plus largement repris.",
           "maj": "2026-08-12",
           "gps": [
-            43.8342,
-            2.9592
+            43.8203,
+            2.9398
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Sylvan%C3%A8s"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://sortie-visite.com/la-fermiere-de-sylvanes/Sylvanes-12274"
         },
         {
           "id": "gaec-de-brioges",
@@ -1050,11 +1050,11 @@
           "note": "Second numéro signalé : 06 83 06 08 96. Environ 5000 volailles/an (poulets cou nu, pintades, chapons) + poules pondeuses.",
           "maj": "2026-08-12",
           "gps": [
-            43.7394,
-            3.0175
+            43.7428,
+            3.0418
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/M%C3%A9lagues"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/visite-et-repas-a-la-ferme-chez-sylvie-et-jean-louis-melagues_TFO497867357386"
         },
         {
           "id": "le-jardin-du-fada",
@@ -1147,11 +1147,11 @@
           "note": "Troupeau de 420 brebis laitières ; société créée en 2021.",
           "maj": "2026-08-12",
           "gps": [
-            43.88,
-            2.8344
+            43.8439,
+            2.8285
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Montlaur_(Aveyron)"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/la-ferme-de-galamans-montlaur_TFO455724223159"
         },
         {
           "id": "les-paysans-du-rance",
@@ -1242,11 +1242,11 @@
           "note": "Installée à Rebourguil depuis l'été 2019 ; travaille pour particuliers et professionnels, bio et non bio.",
           "maj": "2026-08-12",
           "gps": [
-            43.8881,
-            2.775
+            43.8743,
+            2.7696
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Rebourguil"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tripori.com/la-pimpanelle-TFO412615246866/"
         },
         {
           "id": "domaine-de-bias",
@@ -1276,11 +1276,11 @@
           "note": "EARL Domaine Alazard ; premier millésime 2015 ; nouveau membre du réseau Bienvenue à la Ferme.",
           "maj": "2026-08-12",
           "gps": [
-            43.945,
-            2.8369
+            43.9256,
+            2.8273
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Vabres-l%27Abbaye"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/domaine-de-bias-vabres-l-abbaye_TFO453378880986"
         },
         {
           "id": "roquefort-le-vieux-berger-maison-combes",
@@ -1409,11 +1409,11 @@
           "note": "Coordonnées issues du carnet des circuits courts (2021) ; aucune trace en ligne plus récente trouvée, à vérifier par téléphone.",
           "maj": "2026-08-12",
           "gps": [
-            43.8383,
-            3.0133
+            43.8187,
+            3.0379
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Montagnol"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/en/diffusio/gites-rentals/chambres-d-hotes-le-mas-de-bousquel-montagnol_TFO068317636945"
         },
         {
           "id": "le-fournil-paysan",
@@ -1442,11 +1442,11 @@
           "note": "L'entreprise individuelle « Le Fournil Paysan » (Léa Cabal-Zinck) a été radiée en 2017 ; l'activité se poursuit au sein du GAEC de Salelles (pain et viande).",
           "maj": "2026-08-12",
           "gps": [
-            43.9747,
-            2.7206
+            43.9749,
+            2.7215
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Saint-Izaire"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/gaec-de-salelles-saint-izaire_TFO453310256397"
         },
         {
           "id": "maison-bourrel",
@@ -1538,11 +1538,11 @@
           "note": "Exploitation de Karine et Stephan, fromagerie fermière créée en 1997.",
           "maj": "2026-08-12",
           "gps": [
-            43.8881,
-            2.775
+            43.8682,
+            2.7395
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Rebourguil"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/autres-commerces/fromagerie-du-mas-rebourguil_TFO403515566742"
         },
         {
           "id": "la-ferme-aux-12-chevres",
@@ -1569,11 +1569,11 @@
           "note": "Micro-ferme ; téléphone issu du carnet des circuits courts 2021, pas de confirmation récente trouvée en ligne.",
           "maj": "2026-08-12",
           "gps": [
-            43.8069,
-            2.6478
+            43.8291,
+            2.6236
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Laval-Roquecezi%C3%A8re"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://mapcarta.com/N5920216235"
         },
         {
           "id": "gaec-du-ramonetage",
@@ -1693,11 +1693,11 @@
           "note": "Téléphone signalé confirmé. Second numéro : 06 40 37 72 25. Produits garantis sans colorants ni conservateurs.",
           "maj": "2026-08-12",
           "gps": [
-            43.8178,
-            2.7558
+            43.8053,
+            2.7344
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Belmont-sur-Rance"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/autres-commerces/ferme-de-saint-louis-belmont-sur-rance_TFO295351705324"
         }
       ],
       "couleur": "#a04b3c"
@@ -2036,11 +2036,11 @@
           "note": "Téléphone signalé confirmé (site du domaine et fiche Demeter France). Vignoble en biodynamie certifiée Demeter dans la vallée du Salagou.",
           "maj": "2026-08-12",
           "gps": [
-            43.6356,
-            3.2861
+            43.6321,
+            3.2959
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/M%C3%A9rifons"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://mapcarta.com/fr/N1995460887"
         },
         {
           "id": "le-clos-du-serres",
@@ -2245,11 +2245,11 @@
           "note": "Pierre Pariset, Isabelle Duvigneau et Marie Evrard ; 320 brebis Lacaune converties en bio. Tomme, fromage sans lactose, yaourts de brebis. Une annonce de recherche d'associé-e a été publiée (agriculturepaysanne.org). Autres numéros : 06 76 36 87 27 (Isabelle).",
           "maj": "2026-08-12",
           "gps": [
-            43.9139,
-            3.3172
+            43.9167,
+            3.3088
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/La_Couvertoirade"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://ville-data.com/que-faire/visite-cave-ferme-degustation/GAEC-des-Traversiers/La-Couvertoirade/12-8259-12082"
         },
         {
           "id": "miel-safran-du-larzac",
@@ -2371,11 +2371,11 @@
           "note": "Téléphone fixe signalé confirmé ; un portable est aussi référencé (06 89 76 93 49). Mary Mazel, pérail de brebis Lacaune (150 brebis), ferme créée en 1991. Fiche Yelp mise à jour en mars 2026.",
           "maj": "2026-08-12",
           "gps": [
-            44.0219,
-            3.3011
+            43.997,
+            3.2852
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-larzac.com/fr/diffusio/organisez-votre-sejour/bouger/randonnee-pied/nant/la-source-du-durzon_TFOGEOTK34662.php"
         },
         {
           "id": "gaec-des-liquisses",
@@ -2404,11 +2404,11 @@
           "note": "Jean-Marc, Claudy et Hervé Brun. Lentilles vertes « Perles bio du Larzac » et pois chiches bio ; céréales également en bio. Pas d'email public trouvé.",
           "maj": "2026-08-12",
           "gps": [
-            44.0219,
-            3.3011
+            44.0276,
+            3.2523
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://fr.geoview.info/liquisses_basses,345131550n"
         },
         {
           "id": "aromatiques-du-larzac",
@@ -2437,11 +2437,11 @@
           "note": "Plantes aromatiques bio (thym, romarin, lavande…) : Pastis des Homs, apéritifs, vinaigres, tisanes, huiles essentielles, hydrolats. Fiche mairie de Nant datée 2026 (activité en cours).",
           "maj": "2026-08-12",
           "gps": [
-            44.0219,
-            3.3011
+            44.0603,
+            3.2635
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://mapcarta.com/fr/N1723071010"
         },
         {
           "id": "pisciculture-du-mas-de-pommiers",
@@ -2470,11 +2470,11 @@
           "note": "M. et Mme Lecussan ; truites et ombles de fontaine bio élevés en eau courante (6 000 m² de bassins). Horaires précis non publiés en ligne : appeler avant de passer.",
           "maj": "2026-08-12",
           "gps": [
-            44.0219,
-            3.3011
+            43.9908,
+            3.2615
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/pisciculture-du-mas-de-pommiers-nant_TFO246815346145"
         },
         {
           "id": "la-voie-lactee",
@@ -2503,11 +2503,11 @@
           "note": "Francis et Béatrice Arnal. Glaces fermières au lait de brebis ou de vache selon la saison (plus de 30 parfums), œufs, veau, agneau et porc bio. Certaines sources indiquent une vente « sur commande uniquement » : confirmer les jours d'ouverture par téléphone. Autres numéros : 05 65 58 15 04.",
           "maj": "2026-08-12",
           "gps": [
-            44.0025,
+            44.019,
             3.0472
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/La_Bastide-Pradines"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.guide-tarn-aveyron.com/en/tourism/tasting/products/meat/la-bastide-pradines-620/ferme-gaec-de-piquetalen-5815.html"
         },
         {
           "id": "ferme-du-frayssinet",
@@ -2534,11 +2534,11 @@
           "note": "Téléphone signalé confirmé ; portable également référencé : 06 73 06 64 39. Martine, Alain et Benoît Fabrègues ; brebis laitières (lait livré à la coopérative des Bergers du Larzac) et vaches Aubrac. Ferme d'accueil du Parc naturel régional des Grands Causses.",
           "maj": "2026-08-12",
           "gps": [
-            43.9817,
-            3.1361
+            43.982,
+            3.1337
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Sainte-Eulalie-de-Cernon"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.guide-tarn-aveyron.com/en/tourism/discover/tourist-sites/discovery-farms/sainte-eulalie-de-cernon-740/ferme-du-frayssinet-298.html"
         },
         {
           "id": "l-agneau-des-cledelles",
@@ -2565,11 +2565,11 @@
           "note": "Téléphone et email signalés confirmés par l'annuaire départemental et le site propre.",
           "maj": "2026-08-12",
           "gps": [
-            43.9817,
-            3.1361
+            43.9637,
+            3.1263
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/Sainte-Eulalie-de-Cernon"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/sites-naturels/serre-de-cougouille-et-sa-table-d-orientation-sainte-eulalie-de-cernon_TFO387282284010"
         },
         {
           "id": "gaec-de-la-doline",
@@ -2664,11 +2664,11 @@
           "note": "Renaud (famille de Ferrussac) : vignoble à 300-350 m d'altitude conduit en agriculture biologique (certification AB probable mais non vérifiée formellement) et élevage de bovins Aubrac sur plus de 700 ha.",
           "maj": "2026-08-12",
           "gps": [
-            43.79,
-            3.4611
+            43.7968,
+            3.4946
           ],
-          "gpsPrecision": "commune",
-          "gpsSource": "https://fr.wikipedia.org/wiki/La_Vacquerie-et-Saint-Martin-de-Castries"
+          "gpsPrecision": "lieu-dit",
+          "gpsSource": "http://www.ferrussac.fr/plan.html"
         },
         {
           "id": "boutique-bistrot-paysans",
