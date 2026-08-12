@@ -31,7 +31,13 @@
             "https://www.facebook.com/ventedirecteboeufveau34/"
           ],
           "note": "Olivier Cristol et Caroline Cambon ; élevage limousin depuis 2001. Apparaît aussi sous la raison sociale « EARL de la Source de l'Orb ». Téléphone signalé confirmé par plusieurs annuaires.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8192,
+            3.2311
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Romigui%C3%A8res"
         },
         {
           "id": "gaec-des-monts-et-des-sources",
@@ -56,7 +62,13 @@
             "https://www.haut-languedoc-vignobles.com/preparer/deguster/visites-de-producteurs-et-boutiques-de-terroir/boutique-ferme-des-monts-et-des-sources-1921401"
           ],
           "note": "Contact : Hugues Raynaud. Autres numéros relevés : 06 07 88 30 21 et 04 67 97 21 82. Horaires précis de la boutique non trouvés en ligne : appeler avant de venir.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7572,
+            3.0992
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
         },
         {
           "id": "la-part-du-loup",
@@ -87,7 +99,13 @@
             "https://bio34.com/annuaire/gaec-la-part-du-loup-avene"
           ],
           "note": "Émilie et Basile Dequiedt, brebis laitières 100 % bio (lait AOP Roquefort, fromages, yaourts, glaces). L'email est affiché sans arobase dans la source (« lapartduloup1orange.fr ») : forme reconstituée à vérifier. Présence Facebook/Instagram mentionnée mais URL non retrouvée.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7572,
+            3.0992
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
         },
         {
           "id": "les-cocottes-d-avene",
@@ -110,7 +128,13 @@
             "https://cliketik.fr/?LesCocottesDAvene="
           ],
           "note": "Laurence Rouquette. Téléphone signalé confirmé par la fiche CliketiK, seule source en ligne détaillée trouvée.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7572,
+            3.0992
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
         },
         {
           "id": "ferme-du-licidou",
@@ -137,7 +161,13 @@
             "https://ville-data.com/que-faire/visite-cave-ferme-degustation/FERME-DU-LICIDOU/Avene/34-12095-34019"
           ],
           "note": "Myriam Fontaine et Patrick Blanc, 190 brebis Lacaune en agriculture raisonnée (pas de label AB). Second numéro relevé : 06 79 98 49 73.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7572,
+            3.0992
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
         },
         {
           "id": "les-terrasses-de-baudes",
@@ -162,7 +192,13 @@
             "https://hoodspot.fr/associations/les-terrasses-de-baudes-84133891600015/"
           ],
           "note": "Association fondée en 2018 (SIREN 841338916), objet : développer une activité agricole favorisant la sensibilisation à l'environnement, la valorisation du patrimoine rural et le lien social ; propose aussi des animations culturelles. Aucun téléphone, email, site ni réseau social trouvés ; activité maraîchère actuelle non confirmée en ligne — contact possible par courrier ou via la mairie de Joncels.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7383,
+            3.1653
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Joncels"
         },
         {
           "id": "le-fournil-de-fonbine",
@@ -189,7 +225,13 @@
             "https://www.societe.com/societe/le-pain-de-fonbine-882390206.html"
           ],
           "note": "Le hameau de Fonbine est géographiquement côté Joncels, mais l'entreprise (SARL Le Pain de Fonbine, créée en 2020) est domiciliée à 34260 Avène dans toutes les sources. « Bio » annoncé par les fiches, certification non vérifiée. Horaires précis non trouvés.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7383,
+            3.1653
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Joncels"
         },
         {
           "id": "le-pain-de-l-arche",
@@ -214,7 +256,13 @@
             "https://boulangerie.contact/34-herault/roqueredonde/boulangerie/27472-boulangerie-de-la-borie-noble.html"
           ],
           "note": "Communauté de l'Arche (Lanza del Vasto), toujours active. Aucun téléphone ni email de la boulangerie trouvés en ligne ; passer par le formulaire de contact d'archecom.org. Jours de fournée non publiés.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8003,
+            3.2122
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Roqueredonde"
         },
         {
           "id": "domaine-de-gravezon-eric-pailles",
@@ -239,7 +287,13 @@
             "https://www.haut-languedoc-vignobles.com/les-adresses-labellisees/domaine-de-gravezon-2780646"
           ],
           "note": "Adhérent Vignerons Indépendants. L'email est affiché sans arobase dans la source (« pailles.ericwanadoo.fr ») : forme reconstituée à vérifier.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7383,
+            3.1653
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Joncels"
         },
         {
           "id": "les-sorbets-deci-dela",
@@ -265,7 +319,13 @@
             "https://www.facebook.com/p/Les-sorbets-deci-del%C3%A0-100069972835657/"
           ],
           "note": "Manon Duclos, installée en 2021, cueillette sauvage autour de Lunas. Aucun téléphone public trouvé.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7075,
+            3.1942
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Lunas_(H%C3%A9rault)"
         },
         {
           "id": "miellerie-du-mas-valette-philippe-chevalier",
@@ -294,7 +354,13 @@
             "https://www.lesproduitsdularzac.fr/fr_FR/producteurs/philippe-chevalier"
           ],
           "note": "Philippe Chevalier et Annie Audoli, plus de 40 ans d'expérience. Téléphone signalé confirmé par les fiches tourisme.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7572,
+            3.0992
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Av%C3%A8ne"
         },
         {
           "id": "les-ruchers-des-monts-d-avene",
@@ -319,7 +385,13 @@
             "https://cliketik.fr/?SalsSebastien="
           ],
           "note": "Apiculteur : Sébastien Sals. Second numéro relevé : 06 88 12 61 43.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6936,
+            3.1672
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Le_Bousquet-d%27Orb"
         },
         {
           "id": "safran-des-hauts-cantons",
@@ -347,7 +419,13 @@
             "https://www.jds.fr/bedarieux/foires-et-salons/marches/les-mercredis-au-pays-safran-des-hauts-cantons-de-l-herault-7-aout-2024-547994_A"
           ],
           "note": "Sandrine et Christophe Maraval ; certifiés bio Ecocert depuis 2016. Téléphone signalé confirmé.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6533,
+            3.1489
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/La_Tour-sur-Orb"
         },
         {
           "id": "la-mandaline",
@@ -374,7 +452,13 @@
             "https://www.societe.com/societe/la-mandaline-922216502.html"
           ],
           "note": "Stéphane et Céline Di Marcantonio ; maraîchage sur sol vivant, terrains en agriculture biologique depuis 2008, société créée en 2022.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6736,
+            3.1192
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Camplong"
         },
         {
           "id": "brasserie-pompon",
@@ -399,7 +483,13 @@
             "https://cliketik.fr/?CamplongBrasseriePompon="
           ],
           "note": "Téléphone signalé confirmé. Brasserie installée dans les caves voûtées du village.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6736,
+            3.1192
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Camplong"
         },
         {
           "id": "pisciculture-du-gravezon",
@@ -425,7 +515,13 @@
             "https://www.aqua-tourisme.fr/pisciculture/pisciculture-du-gravezon/"
           ],
           "note": "En activité depuis 1977 ; truites arc-en-ciel, fario et saumon de fontaine.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7075,
+            3.1942
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Lunas_(H%C3%A9rault)"
         },
         {
           "id": "domaine-de-clovallon",
@@ -454,7 +550,13 @@
             "https://espace-vin.com/domaine/domaine-de-clovallon/"
           ],
           "note": "Fondé par Catherine Roque en 1989, dirigé par sa fille Alix Roque depuis 2012 ; 12 ha en biodynamie certifiée Demeter, pinot noir emblématique. Téléphone signalé confirmé. L'adresse « route du Col des Buis » fournie n'apparaît pas dans les sources, qui donnent l'ancienne route de Béziers.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6158,
+            3.1589
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/B%C3%A9darieux"
         },
         {
           "id": "aupres-de-mon-cep",
@@ -483,7 +585,13 @@
             "https://www.raisin.digital/en/artisans/natural-winemakers/ian-lu-aupres-de-mon-cep-1-6183/"
           ],
           "note": "Domaine créé en 2014. Téléphone signalé confirmé par la fiche Grand Orb. Certifications citées par vinsnaturels.fr (bio, Demeter, Nature & Progrès, mention Biodyvin) : à reconfirmer directement auprès du vigneron.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.5814,
+            3.1039
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Les_Aires"
         },
         {
           "id": "brasserie-des-aucels",
@@ -511,7 +619,13 @@
             "https://www.vivreengrandorb.fr/bedarieux/brasseriedesaucels/"
           ],
           "note": "Fondée en décembre 2017 ; blonde médaille d'argent au Concours international de Lyon 2023. Téléphone signalé confirmé.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6158,
+            3.1589
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/B%C3%A9darieux"
         }
       ],
       "couleur": "#2e7d8c"
@@ -547,7 +661,13 @@
             "https://college-culinaire-de-france.fr/adherent/7728-CHARCUTERIE%20MILLAS"
           ],
           "note": "L'une des six salaisonneries habilitées IGP Lacaune. Porcs élevés sur paille par trois éleveurs du Tarn et de l'Aveyron.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6853,
+            2.8539
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Murat-sur-V%C3%A8bre"
         },
         {
           "id": "salaisons-ray-gal",
@@ -572,7 +692,13 @@
             "https://www.charcuterie-leraygal-occitanie.com/"
           ],
           "note": null,
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7086,
+            2.6922
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Lacaune_(Tarn)"
         },
         {
           "id": "maison-oberti",
@@ -599,7 +725,13 @@
             "https://www.salaisons-lacaune.fr/les-salaisonniers-de-lacaune/"
           ],
           "note": "Boutique-visites : 05 63 50 82 04 / 06 47 02 69 42.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7086,
+            2.6922
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Lacaune_(Tarn)"
         },
         {
           "id": "moulin-du-louat",
@@ -624,7 +756,13 @@
             "https://www.acheteralasource.com/producteur/112823"
           ],
           "note": "Élevage sans OGM (mention du site).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6853,
+            2.8539
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Murat-sur-V%C3%A8bre"
         },
         {
           "id": "fromagerie-lou-caoussarel",
@@ -647,7 +785,13 @@
             "http://www.murat-sur-vebre.fr/fr/economie/produits-de-la-ferme_72.html"
           ],
           "note": "Aucune trace d'activité datée 2025-2026 : à confirmer par téléphone.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6853,
+            2.8539
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Murat-sur-V%C3%A8bre"
         },
         {
           "id": "gaec-du-rouquis",
@@ -671,7 +815,13 @@
             "https://www.societe.com/societe/earl-du-rouquis-534833702.html"
           ],
           "note": "Autre tél. : 06 88 30 04 55. Coordonnées du guide OT 2023 (rediffusé 2025) : à confirmer par téléphone.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7119,
+            2.8053
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Moulin-Mage"
         },
         {
           "id": "les-escargots-de-barre",
@@ -696,7 +846,13 @@
             "https://www.intramuros.org/barre/commerces/18141"
           ],
           "note": null,
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7519,
+            2.8261
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Barre_(Tarn)"
         },
         {
           "id": "miellerie-le-gazel",
@@ -720,7 +876,13 @@
             "https://cliketik.fr/?GazelMarieAndree="
           ],
           "note": "Autre tél. : 06 76 10 57 70. Environ 250 ruches. Annuaires locaux sans date récente : à confirmer par téléphone.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7586,
+            2.6189
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Senaux"
         },
         {
           "id": "le-jardin-de-celine",
@@ -747,7 +909,13 @@
             "https://www.cliketik.fr/?PuygrenierCeline="
           ],
           "note": "0,72 ha, variétés anciennes, traction animale (poneys).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6528,
+            3.0408
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Saint-Gervais-sur-Mare"
         },
         {
           "id": "la-ferme-du-deves",
@@ -775,7 +943,13 @@
             "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/la-ferme-du-deves-castanet-le-haut_TFODEGLAR034V52I3QQ/"
           ],
           "note": "Environ 250 pondeuses et 300 poulets bio, installés depuis 2017.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6686,
+            2.9725
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Castanet-le-Haut"
         },
         {
           "id": "les-ruchers-de-l-orb",
@@ -802,7 +976,13 @@
             "https://www.parc-haut-languedoc.fr/actualites/les-ruchers-de-lorb-les-petites-histoires-du-haut-languedoc"
           ],
           "note": "Ruches Warré, apiculture bio non transhumante.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.5722,
+            2.9561
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Mons_(H%C3%A9rault)"
         }
       ],
       "couleur": "#1e4234"
@@ -837,7 +1017,13 @@
             "https://www.societe.com/societe/la-fermiere-de-sylvanes-833875701.html"
           ],
           "note": "SAS créée en 2017, Patrice Ramondenc président. Un annuaire inverse cite aussi un ancien numéro 05 65 49 56 44 ; le 05 65 99 50 99 est le plus largement repris.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8342,
+            2.9592
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Sylvan%C3%A8s"
         },
         {
           "id": "gaec-de-brioges",
@@ -862,7 +1048,13 @@
             "https://www.societe.com/societe/gaec-de-brioges-828036988.html"
           ],
           "note": "Second numéro signalé : 06 83 06 08 96. Environ 5000 volailles/an (poulets cou nu, pintades, chapons) + poules pondeuses.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7394,
+            3.0175
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/M%C3%A9lagues"
         },
         {
           "id": "le-jardin-du-fada",
@@ -887,7 +1079,13 @@
             "https://producteur.direct/b/le-jardin-du-fada"
           ],
           "note": "Téléphone signalé confirmé par le carnet des circuits courts. Pas de trace datée 2025-2026, à confirmer par appel.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8342,
+            2.9592
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Sylvan%C3%A8s"
         },
         {
           "id": "ferme-de-saint-pierre-d-issis",
@@ -914,7 +1112,13 @@
             "https://www.alentoor.fr/camares/alimentation/vente-ferme/1603105-ferme-de-saint-pierre-d-issis"
           ],
           "note": "GAEC de 3 associés (contact Christophe Curie), polyculture-élevage brebis laitières Roquefort.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8233,
+            2.8803
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Camar%C3%A8s"
         },
         {
           "id": "la-ferme-de-galamans",
@@ -941,7 +1145,13 @@
             "https://www.societe.com/societe/la-ferme-de-galamans-892895491.html"
           ],
           "note": "Troupeau de 420 brebis laitières ; société créée en 2021.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.88,
+            2.8344
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Montlaur_(Aveyron)"
         },
         {
           "id": "les-paysans-du-rance",
@@ -966,7 +1176,13 @@
             "https://www.epiciersdefrance.org/annuaire/epicerie-paysans-du-rance"
           ],
           "note": "Horaires relevés entre 2020 et 2023, à reconfirmer par email avant visite. Pas de téléphone public trouvé.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8178,
+            2.7558
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Belmont-sur-Rance"
         },
         {
           "id": "pisciculture-les-sources-de-l-avance",
@@ -991,7 +1207,13 @@
             "https://fr.mappy.com/poi/61318857b493337a0fab40dd"
           ],
           "note": "SARL (gérant Marc Lamothe), établissement de Brusque ouvert en 2021, arrêté préfectoral ICPE au nom de la pisciculture. Numéro masqué derrière « Afficher le n° » sur PagesJaunes, non récupérable ici.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.765,
+            2.9484
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Brusque_(Aveyron)"
         },
         {
           "id": "la-pimpanelle",
@@ -1018,7 +1240,13 @@
             "https://www.aveyrondigitalnews.fr/2018/11/28/sud-aveyron-la-pimpanelle-un-nouvel-atelier-de-transformation-de-fruits-et-legumes/"
           ],
           "note": "Installée à Rebourguil depuis l'été 2019 ; travaille pour particuliers et professionnels, bio et non bio.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8881,
+            2.775
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Rebourguil"
         },
         {
           "id": "domaine-de-bias",
@@ -1046,7 +1274,13 @@
             "https://www.roquefort-tourisme.fr/fr/je-m-inspire/nos-producteurs/vente-directe/fiche_domaine-de-bias-4026"
           ],
           "note": "EARL Domaine Alazard ; premier millésime 2015 ; nouveau membre du réseau Bienvenue à la Ferme.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.945,
+            2.8369
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Vabres-l%27Abbaye"
         },
         {
           "id": "roquefort-le-vieux-berger-maison-combes",
@@ -1077,7 +1311,13 @@
             "https://www.le-vieux-berger.com/"
           ],
           "note": "Maison familiale depuis 1923, trois générations, dirigée par Vincent Combes, dernier fabricant 100 % artisanal de Roquefort.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9767,
+            2.9889
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Roquefort-sur-Soulzon"
         },
         {
           "id": "roquefort-carles",
@@ -1104,7 +1344,13 @@
             "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/boutique-roquefort-carles-roquefort-sur-soulzon_TFO118940360283"
           ],
           "note": "Roquefort artisanal au lait cru depuis 1927.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9767,
+            2.9889
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Roquefort-sur-Soulzon"
         },
         {
           "id": "maison-gabriel-coulet",
@@ -1131,7 +1377,13 @@
             "https://millavois.com/2025/07/31/venez-vivre-lexperience-roquefort-avec-la-maison-gabriel-coulet/"
           ],
           "note": "Maison fondée en 1872 ; activité confirmée par un article de presse de juillet 2025. Second numéro cité : 05 65 59 90 21.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9767,
+            2.9889
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Roquefort-sur-Soulzon"
         },
         {
           "id": "la-ferme-d-alfred",
@@ -1155,7 +1407,13 @@
             "https://www.tourisme-aveyron.com/sites/default/files/upload/decouvrir/territoires/rougier-aveyron-sud/envie-de/saveurs-locales/brochure_circuits_courts_2021-web.pdf"
           ],
           "note": "Coordonnées issues du carnet des circuits courts (2021) ; aucune trace en ligne plus récente trouvée, à vérifier par téléphone.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8383,
+            3.0133
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Montagnol"
         },
         {
           "id": "le-fournil-paysan",
@@ -1182,7 +1440,13 @@
             "https://www.saint-izaire.fr/inauguration-du-local-paysan/"
           ],
           "note": "L'entreprise individuelle « Le Fournil Paysan » (Léa Cabal-Zinck) a été radiée en 2017 ; l'activité se poursuit au sein du GAEC de Salelles (pain et viande).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9747,
+            2.7206
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Saint-Izaire"
         },
         {
           "id": "maison-bourrel",
@@ -1207,7 +1471,13 @@
             "https://www.belmont-sur-rance-aveyron.fr/vie-locale/commerces-et-professionnels/"
           ],
           "note": "Fondée en 1998 ; produits également distribués via revendeurs (Le Panier du Causse, La Petite Distrib).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8178,
+            2.7558
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Belmont-sur-Rance"
         },
         {
           "id": "l-arc-en-miel",
@@ -1235,7 +1505,13 @@
             "https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/ferme-d-abeilles-l-arc-en-miel-saint-affrique_TFO288198827660"
           ],
           "note": null,
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9592,
+            2.8872
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Saint-Affrique"
         },
         {
           "id": "fromagerie-du-mas",
@@ -1260,7 +1536,13 @@
             "https://laruchequiditoui.fr/fr-FR/producers/1977/farm"
           ],
           "note": "Exploitation de Karine et Stephan, fromagerie fermière créée en 1997.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8881,
+            2.775
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Rebourguil"
         },
         {
           "id": "la-ferme-aux-12-chevres",
@@ -1285,7 +1567,13 @@
             "https://www.jours-de-marche.fr/producteur-local/12380-laval-roqueceziere/"
           ],
           "note": "Micro-ferme ; téléphone issu du carnet des circuits courts 2021, pas de confirmation récente trouvée en ligne.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8069,
+            2.6478
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Laval-Roquecezi%C3%A8re"
         },
         {
           "id": "gaec-du-ramonetage",
@@ -1311,7 +1599,13 @@
             "https://www.ccmrr.fr/uploads/2021/05/brochure_circuits_courts_2021-web.pdf"
           ],
           "note": "Téléphone signalé confirmé par la fiche monproducteur.aveyron.fr (plateforme du Département de l'Aveyron).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8233,
+            2.8803
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Camar%C3%A8s"
         },
         {
           "id": "gaec-blondes-aubrac",
@@ -1335,7 +1629,13 @@
             "https://fr.kompass.com/c/blondes-aubrac/fra040sl3/"
           ],
           "note": "Société créée en 2017 et toujours immatriculée ; coordonnées issues du carnet des circuits courts 2021, vente directe à reconfirmer.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7867,
+            2.8533
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Mounes-Prohencoux"
         },
         {
           "id": "gaec-de-puech-aussel",
@@ -1360,7 +1660,13 @@
             "https://www.tourisme-aveyron.com/sites/default/files/users/user117/brochure_circuits_courts_2022-web.pdf"
           ],
           "note": "Téléphone signalé confirmé (Kompass). Élevage laitier avec vente directe de veau Aubrac en complément ; GAEC toujours immatriculé, gérants Éric et Olivier Barbe.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.88,
+            2.8344
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Montlaur_(Aveyron)"
         },
         {
           "id": "la-ferme-de-saint-louis",
@@ -1385,7 +1691,13 @@
             "https://www.fabrique-en-aveyron.fr/entreprises/sas-la-ferme-de-saint-louis/"
           ],
           "note": "Téléphone signalé confirmé. Second numéro : 06 40 37 72 25. Produits garantis sans colorants ni conservateurs.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8178,
+            2.7558
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Belmont-sur-Rance"
         }
       ],
       "couleur": "#a04b3c"
@@ -1420,7 +1732,13 @@
             "http://www.lestroupeauxdacote.com/accueil/trouver-un-eleveur/bio/gaec-de-la-vallee-de-lauroux-moutons-1.html"
           ],
           "note": "Les deux téléphones signalés sont confirmés (fiche Biolocal). Fromages de chèvre et agneau bio, chèvres alpines et brebis Rouge du Roussillon. Fiche Yelp mise à jour en 2026 ; jours de marché à reconfirmer (Sète/Pézenas divergent selon les sources). Autres numéros : 06 01 86 94 79.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7786,
+            3.29
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Lauroux"
         },
         {
           "id": "pelardon-de-pegairolles",
@@ -1448,7 +1766,13 @@
             "http://www.whatsup-lodeve-larzac.com/les-pelardons-de-pegairolles/"
           ],
           "note": "80 chèvres alpines et saanen, 65 000-70 000 pélardons/an, une quinzaine de médailles au concours Sud de France. Pélardon AOP au lait cru. Autres numéros : 04 67 88 00 78.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8028,
+            3.3231
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/P%C3%A9gairolles-de-l%27Escalette"
         },
         {
           "id": "confiserie-d-olives-de-saint-jean",
@@ -1476,7 +1800,13 @@
             "https://www.olidoc.com/content/6-la-cooperative-oleicole"
           ],
           "note": "Fusionnée en 2004 avec l'huilerie coopérative de Clermont-l'Hérault (L'Oli d'Oc, Moulin d'Augustin, av. Louis Villaret, Clermont-l'Hérault, magasin ouvert en 2025-2026). Le maintien d'un point de vente permanent à Saint-Jean même est à vérifier ; sinon passer par L'Oli d'Oc à Clermont.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.715,
+            3.4228
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Saint-Jean-de-la-Blaqui%C3%A8re"
         },
         {
           "id": "miellerie-thierry-berthomieu",
@@ -1504,7 +1834,13 @@
             "http://www.biodecocagne.fr/26__apiculteur-thierry-berthomieu"
           ],
           "note": "Coordonnées cohérentes entre plusieurs annuaires, mais aucune confirmation datée 2025-2026 de l'activité trouvée ; appeler avant de se déplacer. Le lieu-dit apparaît sous les graphies « Le Théronel », « Le Thérondel » et « Therondel » selon les sources.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7525,
+            3.3578
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Fozi%C3%A8res"
         },
         {
           "id": "ferme-de-germane",
@@ -1532,7 +1868,13 @@
             "https://www.facebook.com/GaecGermaneSalagou/?locale=fr_FR"
           ],
           "note": "Le téléphone signalé 06 31 71 29 64 est confirmé. Élevage historique de brebis (transhumance Pyrénées) + colis de bœuf et fruits ; la race Galloway signalée n'a pas pu être confirmée par les sources consultées. GAEC créé en octobre 2016. Autres numéros : 04 67 96 25 46.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.648,
+            3.398
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "Point approché (pas de coordonnées officielles trouvées) : centre du plateau basaltique entre Lacoste et le barrage du Salagou, estimé d'après https://www.herault-tourisme.com/fr/fiche/patrimoine-naturel/plateau-basaltique-de-la-germane-lacoste_TFOPNALAR034V50VSBN/ et le départ de randonnée à 43.6497, 3.43566 (Cirkwi)"
         },
         {
           "id": "flor-de-salagou",
@@ -1558,7 +1900,13 @@
             "https://www.grizette.com/elles-sont-occitanie-sabine-moulin-le-flor-de-salagou/"
           ],
           "note": "Sabine Moulin est « Maître confiturier de France » : confitures (figue, abricot, orange…), gelée de thym, confits d'oignons et d'olives, glaces fermières au lait de brebis ; cave à vins naturels et bio. Horaires probablement saisonniers, à confirmer par téléphone.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.62,
+            3.3567
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Mour%C3%A8ze"
         },
         {
           "id": "mas-fabregous",
@@ -1586,7 +1934,13 @@
             "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/mas-fabregous-fozieres_TFODEGLAR034FS000SV/"
           ],
           "note": "17 ha en bio depuis plus de 20 ans, 300-400 m d'altitude, AOP Terrasses du Larzac / AOC Languedoc / IGP. Domaine familial repris en 1988, cave créée en 2004.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7667,
+            3.3461
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Soub%C3%A8s"
         },
         {
           "id": "les-vignerons-de-pegairolles",
@@ -1612,7 +1966,13 @@
             "https://pegairolles-de-l-escalette.fr/artisanat.php"
           ],
           "note": "Téléphone et email signalés confirmés par la fiche Hérault Tourisme et le site de la cave. Le marché des producteurs (dont le Pélardon de Pégairolles) se tient devant la cave le vendredi matin.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8028,
+            3.3231
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/P%C3%A9gairolles-de-l%27Escalette"
         },
         {
           "id": "mas-des-chimeres",
@@ -1640,7 +2000,13 @@
             "https://bio34.com/annuaire/mas-des-chimeres-octon"
           ],
           "note": "Vignerons bio au bord du lac du Salagou : AOC Terrasses du Larzac (rouges), vins de pays des Coteaux du Salagou (rouge, rosé, blanc), muscat. Horaires 2026 publiés sur leur site : activité confirmée.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6542,
+            3.3028
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Octon"
         },
         {
           "id": "domaine-de-malavieille",
@@ -1668,7 +2034,13 @@
             "https://www.herault-tourisme.com/fr/fiche/producteurs-du-terroir/domaine-de-malavieille-merifons_TFODEGLAR034FS001NB/"
           ],
           "note": "Téléphone signalé confirmé (site du domaine et fiche Demeter France). Vignoble en biodynamie certifiée Demeter dans la vallée du Salagou.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.6356,
+            3.2861
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/M%C3%A9rifons"
         },
         {
           "id": "le-clos-du-serres",
@@ -1696,7 +2068,13 @@
             "https://www.raisin.digital/fr/decouvrir/france/occitanie/vignerons-naturels/beatrice-sebastien-fillon-le-clos-du-serres-7984/"
           ],
           "note": "15 ha en bio depuis 2006, AOC Terrasses du Larzac et Languedoc ; référencé Raisin (vins naturels) et Gault&Millau. Email non trouvé publiquement — formulaire de contact sur le site.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.715,
+            3.4228
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Saint-Jean-de-la-Blaqui%C3%A8re"
         },
         {
           "id": "mas-lasta",
@@ -1724,7 +2102,13 @@
             "https://www.vinsnaturels.fr/003_viticulteurs/Languedoc-Roussillon-Mas-Lasta-Anne-Laure-Sicard-738.html"
           ],
           "note": "9 ha, 11 parcelles à 400-500 m sur Saint-Privat, conduites en bio/biodynamie (traction animale), vinification sans intrants ; premier millésime 2016. L'adresse postale est à Saint-Jean-de-la-Blaquière, le vignoble à Saint-Privat.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7531,
+            3.425
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Saint-Privat_(H%C3%A9rault)"
         },
         {
           "id": "domaine-du-pas-de-l-escalette",
@@ -1752,7 +2136,13 @@
             "https://www.justacote.com/poujols-34700/producteur/domaine-du-pas-de-lescalette-1183066.htm"
           ],
           "note": "Téléphone signalé confirmé (site du domaine et annuaires touristiques). AOP Terrasses du Larzac, vignes en terrasses au pied du pas de l'Escalette. Autres numéros : 06 73 84 35 89.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.7647,
+            3.3242
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Poujols"
         }
       ],
       "couleur": "#c98f4e"
@@ -1789,7 +2179,13 @@
             "https://www.annuaire-horaire.fr/societe/Fromagerie-LA-CAVALERIE-Cooperative-des-Bergers-du-Larzac/1460662"
           ],
           "note": "Coopérative d'environ 33 éleveurs de brebis. Le domaine bergersdularzac.fr est aussi référencé pour cette coopérative ; le site officiel confirmé est fromages-bergersdularzac-aveyron.fr.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0097,
+            3.16
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/La_Cavalerie_(Aveyron)"
         },
         {
           "id": "gaec-du-causse",
@@ -1814,7 +2210,13 @@
             "https://www.tourisme-lodevois-larzac.fr/annuaire/ferme-du-causse"
           ],
           "note": "Gérant : Guillaume Camplo. Lait de 30 vaches transformé à la ferme (beurre, crème, lait, yaourts, crèmes dessert, fromages). Élevage annoncé « selon les principes de l'agriculture biologique » mais certification AB non confirmée par les sources. Deux horaires de vente circulent (vendredi soir / samedi matin) : à confirmer par téléphone.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8639,
+            3.3197
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Le_Caylar"
         },
         {
           "id": "gaec-des-traversiers",
@@ -1841,7 +2243,13 @@
             "https://www.etapedularzac.com/gaec-des-traversiers/"
           ],
           "note": "Pierre Pariset, Isabelle Duvigneau et Marie Evrard ; 320 brebis Lacaune converties en bio. Tomme, fromage sans lactose, yaourts de brebis. Une annonce de recherche d'associé-e a été publiée (agriculturepaysanne.org). Autres numéros : 06 76 36 87 27 (Isabelle).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9139,
+            3.3172
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/La_Couvertoirade"
         },
         {
           "id": "miel-safran-du-larzac",
@@ -1866,7 +2274,13 @@
             "https://www.jours-de-marche.fr/producteur-local/safran-du-larzac-342.html"
           ],
           "note": "Téléphone signalé confirmé par la page contact du site. Environ 180 ruches conduites « selon les principes de l'apiculture biologique », certification AB non confirmée. Tarifs 2025 publiés sur le site (activité en cours).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.8933,
+            3.4011
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Sorbs"
         },
         {
           "id": "les-escargots-du-larzac",
@@ -1891,7 +2305,13 @@
             "https://www.tourisme-larzac.com/fr/diffusio/organisez-votre-sejour/deguster/produits-du-terroir/la-cavalerie/les-escargots-du-larzac_TFO126627844969.php"
           ],
           "note": "Email signalé confirmé. Horaires précis de vente à la ferme non trouvés en ligne : à demander par téléphone.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0097,
+            3.16
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/La_Cavalerie_(Aveyron)"
         },
         {
           "id": "la-brasserie-du-larzac",
@@ -1918,7 +2338,13 @@
             "https://www.instagram.com/la_brasserie_du_larzac/"
           ],
           "note": "Téléphone signalé confirmé. Bières bio non filtrées, non pasteurisées (une dizaine de références). Très active en 2025 : nouvelle West Causse IPA et 5 médailles au Concours international de Lyon 2025. Pas de site web propre identifié.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0541,
+            3.1547
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "Hameau de la Blaquière (commune de Millau, au nord de La Cavalerie) — coordonnées du lieu-dit d'après https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/la-brasserie-du-larzac-millau_TFO394390000811 (établie au hameau)"
         },
         {
           "id": "ferme-du-mas-du-pre",
@@ -1943,7 +2369,13 @@
             "https://paysansducoin.fr/producteur/lou-fernandou/"
           ],
           "note": "Téléphone fixe signalé confirmé ; un portable est aussi référencé (06 89 76 93 49). Mary Mazel, pérail de brebis Lacaune (150 brebis), ferme créée en 1991. Fiche Yelp mise à jour en mars 2026.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0219,
+            3.3011
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
         },
         {
           "id": "gaec-des-liquisses",
@@ -1970,7 +2402,13 @@
             "https://www.lesproduitsdularzac.fr/fr_FR/producteurs/gaec-des-liquisses"
           ],
           "note": "Jean-Marc, Claudy et Hervé Brun. Lentilles vertes « Perles bio du Larzac » et pois chiches bio ; céréales également en bio. Pas d'email public trouvé.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0219,
+            3.3011
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
         },
         {
           "id": "aromatiques-du-larzac",
@@ -1997,7 +2435,13 @@
             "https://www.nant-mairie.fr/fiche/sites-naturels/parcours-de-visite-libre-des-aromatiques-du-larzac-nant_TFO12168-PNA-20260325160440036/"
           ],
           "note": "Plantes aromatiques bio (thym, romarin, lavande…) : Pastis des Homs, apéritifs, vinaigres, tisanes, huiles essentielles, hydrolats. Fiche mairie de Nant datée 2026 (activité en cours).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0219,
+            3.3011
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
         },
         {
           "id": "pisciculture-du-mas-de-pommiers",
@@ -2024,7 +2468,13 @@
             "https://www.acheteralasource.com/producteur/77371"
           ],
           "note": "M. et Mme Lecussan ; truites et ombles de fontaine bio élevés en eau courante (6 000 m² de bassins). Horaires précis non publiés en ligne : appeler avant de passer.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0219,
+            3.3011
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
         },
         {
           "id": "la-voie-lactee",
@@ -2051,7 +2501,13 @@
             "https://www.glace-fermiere-aveyron.fr/"
           ],
           "note": "Francis et Béatrice Arnal. Glaces fermières au lait de brebis ou de vache selon la saison (plus de 30 parfums), œufs, veau, agneau et porc bio. Certaines sources indiquent une vente « sur commande uniquement » : confirmer les jours d'ouverture par téléphone. Autres numéros : 05 65 58 15 04.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0025,
+            3.0472
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/La_Bastide-Pradines"
         },
         {
           "id": "ferme-du-frayssinet",
@@ -2076,7 +2532,13 @@
             "https://www.guide-tarn-aveyron.com/en/tourism/discover/tourist-sites/discovery-farms/sainte-eulalie-de-cernon-740/ferme-du-frayssinet-298.html"
           ],
           "note": "Téléphone signalé confirmé ; portable également référencé : 06 73 06 64 39. Martine, Alain et Benoît Fabrègues ; brebis laitières (lait livré à la coopérative des Bergers du Larzac) et vaches Aubrac. Ferme d'accueil du Parc naturel régional des Grands Causses.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9817,
+            3.1361
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Sainte-Eulalie-de-Cernon"
         },
         {
           "id": "l-agneau-des-cledelles",
@@ -2101,7 +2563,13 @@
             "https://www.acheteralasource.com/producteur/84498"
           ],
           "note": "Téléphone et email signalés confirmés par l'annuaire départemental et le site propre.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9817,
+            3.1361
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Sainte-Eulalie-de-Cernon"
         },
         {
           "id": "gaec-de-la-doline",
@@ -2128,7 +2596,13 @@
             "https://ecocampingdularzac.org/les-agneaux-bio-de-la-doline?lang=en"
           ],
           "note": "350 brebis sur près de 300 ha, en agriculture biologique depuis 2006 (référencé à l'annuaire officiel de l'Agence Bio).",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9742,
+            3.1969
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/L%27Hospitalet-du-Larzac"
         },
         {
           "id": "gaec-des-licides",
@@ -2155,7 +2629,13 @@
             "https://www.societe.com/societe/gaec-les-licides-447819616.html"
           ],
           "note": "Téléphone signalé confirmé. La vente de bœuf mentionnée n'a pas été confirmée par les sources en ligne (volailles et œufs confirmés). Dénomination légale récente : « GAEC l'Étoile des Licides ».",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.9536,
+            3.4206
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Campestre-et-Luc"
         },
         {
           "id": "domaine-de-ferrussac",
@@ -2182,7 +2662,13 @@
             "https://dis-leur.fr/vignobles-domaine-de-ferrussac-signe-particulier-aime-le-bon-vin-et-les-bovins/"
           ],
           "note": "Renaud (famille de Ferrussac) : vignoble à 300-350 m d'altitude conduit en agriculture biologique (certification AB probable mais non vérifiée formellement) et élevage de bovins Aubrac sur plus de 700 ha.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            43.79,
+            3.4611
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/La_Vacquerie-et-Saint-Martin-de-Castries"
         },
         {
           "id": "boutique-bistrot-paysans",
@@ -2207,7 +2693,13 @@
             "https://www.pagesjaunes.fr/pros/59132724"
           ],
           "note": "Téléphone signalé confirmé. Installée dans l'ancien Grand Café du village ; les producteurs tiennent la boutique à tour de rôle. Les horaires détaillés varient selon les sources (matinées 9h-13h tous les jours ou presque, plus 15h30-19h30 certains jours) : vérifier par téléphone selon la saison.",
-          "maj": "2026-08-12"
+          "maj": "2026-08-12",
+          "gps": [
+            44.0219,
+            3.3011
+          ],
+          "gpsPrecision": "commune",
+          "gpsSource": "https://fr.wikipedia.org/wiki/Nant"
         }
       ],
       "couleur": "#6d597a"

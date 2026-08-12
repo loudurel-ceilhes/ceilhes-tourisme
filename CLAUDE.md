@@ -135,6 +135,13 @@ reste dans le fichier. Chaque fiche garde ses `sources` (adresses web où
 l'info a été vérifiée) et sa date `maj` : une fiche sans source ne devrait
 pas exister.
 
+La **carte interactive** en haut de l'annuaire vient des mêmes données : le
+champ `gps` ([latitude, longitude]) place l'épingle, `gpsPrecision` vaut
+`"commune"` (centre de la commune, source Wikipédia) tant que personne n'a
+relevé la position exacte de la ferme. Pour affiner une épingle : remplacer
+les coordonnées dans le JSON et passer `gpsPrecision` à `"exacte"`. Un
+producteur sans `gps` reste dans l'annuaire mais pas sur la carte.
+
 ## Conventions
 
 - **Langue** : tout le contenu visible est en français. Noms de fichiers en
