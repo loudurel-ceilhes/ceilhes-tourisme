@@ -160,6 +160,23 @@ réelle des fermes, puis « Copier les corrections » produit un bloc à envoyer
 à Claude, qui reporte les coordonnées dans `data/producteurs.json` avec
 `gpsPrecision: "exacte"`.
 
+## Les pages d'accueil par langue
+
+Six pages accueillent les visiteurs étrangers : `en.html`, `de.html`,
+`nl.html`, `es.html`, `it.html`, `pt.html`. Chacune tient l'essentiel dans
+sa langue (lac, Orb, randos, terroir, patrimoine, venir/dormir) et invite à
+parcourir le reste du site avec la traduction du navigateur. Elles sont
+reliées entre elles et à l'accueil français par des balises `hreflang`
+(dans leur `<head>` et celui d'`index.html`), et par le **rang de langues du
+pied de page**, présent sur toutes les pages.
+
+Exception assumée à la règle du menu : ces pages ne figurent **pas** dans le
+menu principal (six entrées de plus le rendraient illisible) — le pied de
+page et les balises `hreflang` suffisent aux visiteurs et à Google. Toute
+modification importante du site (nouvelle activité majeure, changement
+d'accès…) mérite d'être reportée dans les six pages — elles sont courtes
+exprès pour que ça reste une petite tâche.
+
 ## Le gardien des liens
 
 Chaque lundi matin, GitHub lance `scripts/gardien-liens.mjs`
