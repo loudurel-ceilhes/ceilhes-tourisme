@@ -11,7 +11,7 @@
      reporte les coordonnées à la main dans data/producteurs.json). -->
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="assets/leaflet/leaflet.css">
 <style>
   body{background:var(--sable);padding:1.2rem 4vw 3rem;font-family:'Outfit',sans-serif}
   h1{font-family:'Cormorant Garamond',serif;color:var(--foret-fonce);font-size:1.7rem;margin:.4rem 0}
@@ -35,7 +35,7 @@
   <span class="etat" id="etat">Aucune correction pour l'instant.</span>
 </div>
 <textarea id="sortie" readonly placeholder="Les corrections apparaîtront ici, au format à envoyer à Claude."></textarea>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/leaflet/leaflet.js"></script>
 <script>
 (async function(){
   const rep = await fetch('data/producteurs.json');

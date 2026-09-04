@@ -65,3 +65,15 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "DENY"
+    # Ordonne au navigateur de toujours revenir en HTTPS pendant un an,
+    # même si quelqu'un tape l'adresse en http:// — coupe les attaques
+    # d'interception sur les réseaux publics (wifi de camping, etc.).
+    Strict-Transport-Security = "max-age=31536000"
+
+# La bibliothèque de cartes Leaflet est hébergée chez nous (comme les
+# polices), en version figée : elle ne change jamais sans changer de dossier.
+# Un an de cache, et plus aucune dépendance à un serveur extérieur.
+[[headers]]
+  for = "/assets/leaflet/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
