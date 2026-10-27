@@ -171,6 +171,39 @@ function couper(texte, max = 190) {
 }
 
 /**
+ * Télécharge une page du flux, avec patience.
+ *
+ * DATAtourisme tombe parfois en panne quelques minutes (réponses 5xx — vu
+ * les 24 et 27 octobre 2026). Plutôt que d'échouer au premier refus, on
+ * réessaie jusqu'à trois fois, en attendant de plus en plus longtemps.
+ * Une erreur « définitive » (une 404, par exemple : réessayer ne sert à
+ * rien) fait abandonner tout de suite.
+ */
+async function telecharger(url, code) {
+  const pauses = [30, 60, 120] // secondes d'attente avant chaque nouvel essai
+  for (let essai = 0; ; essai++) {
+    let souci
+    let definitif = false
+    try {
+      const rep = await fetch(url, {
+        headers: { 'User-Agent': 'ceilhes-tourisme.fr (agenda du village)' },
+        signal: AbortSignal.timeout(30000),
+      })
+      if (rep.ok) return await rep.json()
+      souci = `DATAtourisme a répondu ${rep.status} pour ${code}`
+      // 5xx = panne du serveur, 429 = « ralentissez » : ça passe souvent en
+      // réessayant. Tout autre refus est définitif.
+      definitif = ![429, 500, 502, 503, 504].includes(rep.status)
+    } catch (e) {
+      souci = `réseau en panne pour ${code} (${e.cause?.code || e.name || e.message})`
+    }
+    if (definitif || essai >= pauses.length) throw new Error(souci)
+    console.error(`${souci} — nouvel essai dans ${pauses[essai]} s`)
+    await new Promise((r) => setTimeout(r, pauses[essai] * 1000))
+  }
+}
+
+/**
  * Récupère toutes les fiches des codes postaux voulus, en suivant la
  * pagination, puis ne garde que les communes de notre liste.
  */
@@ -182,11 +215,7 @@ async function recuperer() {
     let page = 1
     for (;;) {
       const url = `${API}?Code_postal_et_commune__contains=${code}&page_size=100&page=${page}`
-      const rep = await fetch(url, {
-        headers: { 'User-Agent': 'ceilhes-tourisme.fr (agenda du village)' },
-      })
-      if (!rep.ok) throw new Error(`DATAtourisme a répondu ${rep.status} pour ${code}`)
-      const json = await rep.json()
+      const json = await telecharger(url, code)
       const lot = json.data ?? []
       tout.push(...lot.filter((e) => retenues.has(e.Code_postal_et_commune)))
       if (lot.length < 100) break

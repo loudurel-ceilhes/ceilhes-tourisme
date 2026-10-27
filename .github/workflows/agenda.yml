@@ -11,6 +11,10 @@ on:
     # 6 h 15 UTC, soit 8 h 15 l'été et 7 h 15 l'hiver. Un horaire décalé de
     # l'heure pile évite l'embouteillage des tâches planifiées chez GitHub.
     - cron: '15 6 * * *'
+    # Séance de rattrapage en fin d'après-midi : si la source était en panne
+    # le matin (c'est arrivé les 24 et 27 octobre 2026), ce second passage
+    # récupère la journée. Il ne publie que si quelque chose a changé.
+    - cron: '45 17 * * *'
   # Permet aussi de le déclencher à la main depuis l'onglet Actions.
   workflow_dispatch:
 
