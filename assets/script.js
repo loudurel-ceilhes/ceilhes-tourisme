@@ -71,7 +71,7 @@ if(totop)totop.addEventListener('click',()=>scrollTo({top:0,behavior:REDUCE?'ins
 // ----- Cascade -----
 document.querySelectorAll('.act-grid,.prod-grid,.lake-cards,.around-grid,.dir-grid,.infos-grid,.gal-grid,.hub-grid,.trail-grid,.species-grid,.factstrip,.stats .container').forEach(g=>{[...g.children].forEach((el,i)=>{el.style.transitionDelay=(i%6)*0.09+'s';el.addEventListener('transitionend',()=>{el.style.transitionDelay='0s';},{once:true});});});
 // ----- Tilt 3D -----
-if(matchMedia('(hover:hover)').matches&&!REDUCE){document.querySelectorAll('.act-card,.prod-card,.dir-card,.lake-card,.hub-card,.trail-card').forEach(card=>{card.classList.add('tilt');card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(800px) rotateY(${x*6}deg) rotateX(${-y*6}deg) translateY(-6px)`;});card.addEventListener('mouseleave',()=>{card.style.transform='';});});}
+if(matchMedia('(hover:hover)').matches&&!REDUCE){document.querySelectorAll('.act-card,.prod-card,a.dir-card,.lake-card,.hub-card,.trail-card').forEach(card=>{card.classList.add('tilt');card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(800px) rotateY(${x*6}deg) rotateX(${-y*6}deg) translateY(-6px)`;});card.addEventListener('mouseleave',()=>{card.style.transform='';});});}
 // ----- Galerie & lightbox -----
 const grid=document.getElementById('galGrid'),lb=document.getElementById('lightbox');
 if(grid&&lb&&typeof lb.showModal==='function'){
@@ -128,7 +128,7 @@ function initFilter(selector,cardSelector,key){
   function select(button){
     const value=button.dataset[key];
     buttons.forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});
-    cards.forEach(card=>{card.hidden=value!=='tous'&&card.dataset[key]!==value;});
+    cards.forEach(card=>{card.hidden=value!=='tous'&&!(card.dataset[key]||'').split(/\s+/).includes(value);});
     const count=cards.filter(card=>!card.hidden).length;
     status.textContent=`${count} résultat${count>1?'s':''}`;
   }

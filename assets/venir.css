@@ -1,0 +1,40 @@
+/* Les transports et contacts restent accessibles sans JavaScript. */
+.venir .section-head{margin-bottom:1.5rem}
+.venir-intro{max-width:650px;margin:1rem auto 0;font-size:1.05rem}
+.venir a{color:var(--foret);font-weight:500;text-underline-offset:.2em}
+.venir-choix{display:flex;flex-wrap:wrap;justify-content:center;gap:.65rem;margin-bottom:2rem}
+.venir-choix a{display:flex;align-items:center;min-height:44px;padding:.65rem 1.1rem;border:1px solid var(--foret);border-radius:50px;background:var(--blanc);text-decoration:none}
+.venir-choix a:hover,.venir-choix a:focus-visible{background:var(--brume)}
+.venir-grille{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;align-items:start}
+.venir-mode{min-width:0;padding:1.6rem;border:1px solid var(--pierre);border-radius:var(--r);background:var(--blanc)}
+#venir-voiture,#venir-transfert{grid-column:1/-1}
+#venir-voiture{background:var(--brume)}
+.venir-repere{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--foret)}
+.venir-mode h3{font-size:2rem;line-height:1.15;color:var(--foret-fonce);margin:.35rem 0 .85rem}
+.venir-mode p:not(.venir-repere){font-size:.95rem;line-height:1.7}
+.venir-mode p+p{margin-top:.75rem}
+.venir-mode .venir-conseil{padding:.85rem 1rem;background:var(--brume);border-left:3px solid var(--foret);border-radius:0 .4rem .4rem 0;margin-top:1.1rem}
+.venir-liens{display:flex;flex-wrap:wrap;gap:.35rem 1.25rem;margin-top:1rem}
+.venir-liens a{display:inline-flex;align-items:center;min-height:44px}
+.venir-mode details{padding:.85rem 0 0;margin:1rem 0 0;border:0;border-top:1px solid var(--pierre);background:transparent;box-shadow:none}
+.venir-mode summary{padding:0;color:var(--foret);font-size:.95rem;min-height:44px}
+.venir-mode details p{padding:.5rem 0 0}
+.venir-contacts{list-style:none;margin-top:1rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.venir-contacts li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.15rem 1rem;padding:.7rem 0;border-bottom:1px solid var(--pierre)}
+.venir-contacts strong{font-size:.95rem;color:var(--foret-fonce)}
+.venir-contacts span{display:block;font-size:.85rem;line-height:1.5;margin-top:.1rem}
+.venir-contacts a{display:inline-flex;align-items:center;min-height:44px;white-space:nowrap;font-size:.95rem}
+.venir-suite{margin-top:2rem}
+@media(max-width:700px){
+  .venir-grille{grid-template-columns:1fr}
+  .venir-contacts{grid-template-columns:1fr;gap:0}
+  .venir-mode{padding:1.2rem}
+  .venir-mode h3{font-size:1.8rem}
+  .venir-choix{justify-content:flex-start;gap:.5rem}
+  .venir-choix a{font-size:.9rem;padding:.55rem .85rem}
+}
+@media print{
+  .venir-choix{display:none}
+  .venir-grille{display:block}
+  .venir-mode{break-inside:avoid;margin-bottom:1rem}
+}

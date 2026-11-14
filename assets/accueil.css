@@ -37,6 +37,9 @@
 .sejour-programme-actions button{font:inherit;font-weight:500;background:var(--blanc);color:var(--foret);border:1px solid var(--foret);border-radius:.5rem;padding:.65rem 1rem;min-height:46px;cursor:pointer}
 .sejour-programme-actions button:hover{background:var(--brume)}
 .sejour-programme-actions p{font-size:.85rem;color:var(--foret)}
+.sejour-partage-retour:not(:empty),.sejour-lien-manuel{flex-basis:100%;min-width:0}
+.sejour-lien-manuel label{display:block;font-weight:500;font-size:.9rem;margin-bottom:.4rem}
+.sejour-lien-manuel input{width:100%;min-width:0;min-height:46px;padding:.65rem .8rem;border:1px solid var(--foret);border-radius:.5rem;background:var(--blanc);color:var(--foret-fonce);font:inherit;font-size:.9rem}
 @media(max-width:900px){.sejour-ready .sejour-etapes{grid-template-columns:1fr}}
 @media(max-width:640px){
   .sejour{padding:3.5rem 5vw}

@@ -429,8 +429,8 @@ footer small a{color:var(--lac-clair)}
 
 /* ---------- ANNUAIRE / HÉBERGEURS ---------- */
 .dir-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin-top:2.5rem}
-.dir-card{display:block;text-decoration:none;background:var(--blanc);border-radius:16px;padding:1.5rem 1.6rem;box-shadow:var(--ombre);transition:transform .3s var(--ease),box-shadow .3s;border-left:4px solid var(--ocre);cursor:pointer}
-.dir-card:hover{transform:translateY(-5px);box-shadow:var(--ombre-h)}
+.dir-card{display:block;text-decoration:none;background:var(--blanc);border-radius:16px;padding:1.5rem 1.6rem;box-shadow:var(--ombre);transition:transform .3s var(--ease),box-shadow .3s;border-left:4px solid var(--ocre)}
+a.dir-card:hover{transform:translateY(-5px);box-shadow:var(--ombre-h)}
 .dir-card .cat{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--lac);font-weight:600}
 .dir-card h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--foret-fonce);margin:.2rem 0 .35rem}
 .dir-card p{font-size:.85rem;font-weight:300;color:var(--texte)}

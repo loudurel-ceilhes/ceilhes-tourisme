@@ -55,6 +55,52 @@ class Sejour(unittest.TestCase):
         self.page.emulate_media(media='print')
         expect(self.page.locator('#village')).to_be_visible()
 
+    def test_adresse_rechargement_et_retour_navigateur(self):
+        self.go('?origine=partage#programme-weekend')
+        expect(self.page.locator('#programme-weekend')).to_be_visible()
+        self.page.locator('.sejour-choix [data-programme=enfants]').click()
+        self.assertEqual(urlsplit(self.page.url).query, 'origine=partage')
+        self.assertEqual(urlsplit(self.page.url).fragment, 'programme-enfants')
+        self.page.reload()
+        expect(self.page.locator('#programme-enfants')).to_be_visible()
+        self.page.go_back()
+        expect(self.page.locator('#programme-weekend')).to_be_visible()
+        self.page.go_forward()
+        expect(self.page.locator('#programme-enfants')).to_be_visible()
+        # Un lien vers une ancre de programme masque les autres programmes et
+        # dévoile sa cible, même si la page était déjà ouverte.
+        self.page.evaluate('location.hash = "programme-pluie"')
+        expect(self.page.locator('#programme-pluie')).to_be_visible()
+        expect(self.page.locator('#programme-pluie')).to_be_in_viewport()
+        expect(self.page.locator('.sejour-choix [data-programme=pluie]')).to_have_attribute('aria-selected', 'true')
+        self.page.go_back()
+        expect(self.page.locator('#programme-enfants')).to_be_visible()
+
+    def test_copie_du_lien_et_repli_manuel(self):
+        self.go('?origine=amis')
+        self.page.evaluate('''Object.defineProperty(navigator, 'clipboard', {
+            configurable: true, value: {writeText: async value => {window.lienCopie = value;}}
+        })''')
+        self.page.locator('.sejour-choix [data-programme=weekend]').click()
+        self.page.locator('#partager-programme').click()
+        copied = self.page.evaluate('window.lienCopie')
+        self.assertEqual(copied, self.base+'?origine=amis#programme-weekend')
+        expect(self.page.locator('#sejour-partage-retour')).to_contain_text('est copié')
+        expect(self.page.locator('#sejour-lien-manuel')).not_to_be_visible()
+        self.page.evaluate('''Object.defineProperty(navigator, 'clipboard', {
+            configurable: true, value: {writeText: async () => {throw new Error('refus');}}
+        })''')
+        self.page.locator('.sejour-choix [data-programme=enfants]').click()
+        self.page.locator('#partager-programme').click()
+        expect(self.page.locator('#sejour-lien')).to_be_focused()
+        expect(self.page.locator('#sejour-lien')).to_have_value(self.base+'?origine=amis#programme-enfants')
+        self.assertTrue(self.page.locator('#sejour-lien').evaluate('(input) => input.selectionEnd === input.value.length'))
+        self.page.set_viewport_size({'width':320,'height':568})
+        self.assertTrue(self.page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
+        self.page.locator('.sejour-choix [data-programme=journee]').click()
+        expect(self.page.locator('#sejour-lien-manuel')).not_to_be_visible()
+        expect(self.page.locator('#sejour-partage-retour')).to_be_empty()
+
     def test_programmes_sans_javascript(self):
         context = self.browser.new_context(java_script_enabled=False, viewport={'width':320,'height':568})
         try:
@@ -65,6 +111,7 @@ class Sejour(unittest.TestCase):
             expect(page.locator('.sejour-etapes li')).to_have_count(12)
             expect(page.locator('.sejour-choix')).not_to_be_visible()
             expect(page.locator('#imprimer-programme')).not_to_be_visible()
+            expect(page.locator('#partager-programme')).not_to_be_visible()
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
         finally:
             context.close()

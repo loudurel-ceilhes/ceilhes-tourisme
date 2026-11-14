@@ -221,6 +221,20 @@ class Parcours(unittest.TestCase):
         expect(button).to_have_attribute('aria-pressed', 'true')
         self.assertTrue(self.page.locator('.trail-card:not([hidden])').evaluate_all('(es)=>es.length>0&&es.every(e=>e.dataset.lv==="facile")'))
 
+    def test_annuaire_restauration_et_hebergement(self):
+        self.go('infos-pratiques.html#annuaire')
+        cards = self.page.locator('#annuaire .dir-card:not([hidden])')
+        self.page.locator('.cat-chips [data-cat=commerces]').click()
+        expect(cards.locator('h4')).to_have_text([
+            "L'Esquirol", 'Le Café du Lac', 'Le Relais de Ceilhes',
+            'Lascours — La Source in the Wood', 'Camping Le Bouloc'])
+        self.page.locator('.cat-chips [data-cat=hebergement]').click()
+        expect(cards.locator('h4')).to_have_text([
+            'Lascours — La Source in the Wood', 'Les Gîtes des Libellules',
+            'Les Gîtes de Rouvignac', 'Camping Le Bouloc', 'Le Village des Sources'])
+        self.page.locator('.cat-chips [data-cat=tous]').click()
+        expect(cards).to_have_count(19)
+
     def test_sans_javascript_et_si_script_indisponible(self):
         nojs = self.browser.new_context(java_script_enabled=False, viewport={'width':390,'height':667})
         try:

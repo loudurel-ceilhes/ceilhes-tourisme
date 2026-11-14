@@ -27,6 +27,7 @@
 <meta name="theme-color" content="#0E241C" />
 <link rel="stylesheet" href="assets/styles.css">
 <link rel="stylesheet" href="assets/manger.css">
+<link rel="stylesheet" href="assets/venir.css">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://ceilhes-tourisme.fr/"},{"@type":"ListItem","position":2,"name":"Infos pratiques","item":"https://ceilhes-tourisme.fr/infos-pratiques.html"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Peut-on se baigner à Ceilhes-et-Rocozels ?","acceptedAnswer":{"@type":"Answer","text":"La baignade dépend des autorisations et des conditions du jour, au Bouloc, au lac des Monts d'Orb comme dans l'Orb. Au Bouloc et au lac, elle est non surveillée. Consultez les résultats sanitaires récents, les informations de la mairie et les panneaux sur place avant de vous baigner ; un ancien classement ne garantit pas la qualité actuelle de l'eau."}},{"@type":"Question","name":"Y a-t-il des activités pour les enfants à Ceilhes-et-Rocozels ?","acceptedAnswer":{"@type":"Answer","text":"Oui : la bibliothèque et ses ateliers d'art gratuits (Ceilhes pour tous), et l'association EPO pour le sport l'été."}},{"@type":"Question","name":"Où dormir à Ceilhes-et-Rocozels ?","acceptedAnswer":{"@type":"Answer","text":"Deux campings au bord du lac et de beaux gîtes : Lascours, les Gîtes des Libellules et Rouvignac."}},{"@type":"Question","name":"Y a-t-il une station thermale à proximité ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les Thermes d'Avène sont à une dizaine de minutes, avec hôtel et restaurant gastronomique."}},{"@type":"Question","name":"Comment venir à Ceilhes-et-Rocozels ?","acceptedAnswer":{"@type":"Answer","text":"Le village est à 20 minutes de l'A75, à un peu plus d'une heure de Montpellier ou Béziers, et à environ 45 minutes de Millau."}},{"@type":"Question","name":"Peut-on venir à Ceilhes-et-Rocozels en train ?","acceptedAnswer":{"@type":"Answer","text":"Oui. La gare de Ceilhes-Roqueredonde est à 4 km du centre, sur la commune voisine de Roqueredonde. C'est une halte sans guichet ni personnel : le billet s'achète avant de partir. Elle est desservie par l'Intercités Aubrac (Clermont-Ferrand – Béziers) et par des TER. Le car liO 688 relie par ailleurs Bédarieux et Le Bousquet-d'Orb au centre du village."}},{"@type":"Question","name":"Où trouver du pain frais à Ceilhes-et-Rocozels ?","acceptedAnswer":{"@type":"Answer","text":"Il n'y a pas de boulangerie au village. Le pain frais arrive chaque matin à L'Esquirol, l'épicerie de producteurs, qui fait aussi bar, tabac, presse, point relais colis et retrait d'argent."}},{"@type":"Question","name":"Y a-t-il une station-service à Ceilhes-et-Rocozels ?","acceptedAnswer":{"@type":"Answer","text":"Non, il n'y a pas de pompe au village. La station-service la plus proche est celle de Cénomes (Montagnol, Aveyron) : libre-service à l'automate, ouverte 24h/24, gazole et sans plomb, à 11 km par le col Notre-Dame."}},{"@type":"Question","name":"Peut-on recharger une voiture électrique à Ceilhes-et-Rocozels ?","acceptedAnswer":{"@type":"Answer","text":"Oui : une borne Révéo se trouve avenue du Lac, avec 2 points de charge de 22 kW en prise Type 2. Il faut apporter son câble et déclencher la charge par l'application Révéo, un QR code ou un badge d'itinérance ; il n'y a pas de lecteur de carte bancaire."}}]}]</script>
 </head>
 <body class="inner">
@@ -61,23 +62,58 @@
   
 </header>
 <nav class="infos-sommaire" aria-label="Dans les infos pratiques">
-  <a href="#infos">Venir &amp; services</a>
+  <a href="#infos">Comment venir ?</a>
+  <a href="#services">Les services</a>
   <a href="#manger">Où manger ?</a>
   <a href="#annuaire">Les contacts du village</a>
   <a href="#faq">Questions fréquentes</a>
 </nav>
-<section id="infos">
+<section id="infos" class="venir" aria-labelledby="venir-titre">
   <div class="container">
     <div class="section-head reveal">
       <div class="kicker">Préparer sa venue</div>
-      <h2>Infos pratiques</h2>
+      <h2 id="venir-titre">Comment venir à Ceilhes ?</h2>
       <div class="line"></div>
+      <p class="venir-intro">En voiture ou en transports, repérez votre arrivée et préparez le dernier trajet jusqu'au village.</p>
     </div>
-    <div class="infos-grid">
-      <div class="info-box reveal"><h3>🚗 Accès</h3><p>À 20 minutes de l'A75 (Montpellier–Clermont-Ferrand). Comptez un peu plus d'une heure depuis Montpellier ou Béziers, et environ 45 minutes depuis Millau.</p></div>
-      <div class="info-box reveal"><h3>🛏️ Hébergement</h3><p>Gîtes (gîte de Lascours…), Village des Sources adapté aux familles, chambres d'hôtes et campings autour du lac et dans la vallée de l'Orb.</p></div>
+    <nav class="venir-choix" aria-label="Choisir son moyen de transport">
+      <a href="#venir-voiture">En voiture</a><a href="#venir-train">En train</a><a href="#venir-car">En car</a><a href="#venir-transfert">Taxis &amp; transferts</a>
+    </nav>
+    <div class="venir-grille">
+      <article class="venir-mode" id="venir-voiture">
+        <p class="venir-repere">Depuis l'A75</p><h3>En voiture</h3>
+        <p>Le village est à <strong>20 minutes de l'A75</strong> (Montpellier–Clermont-Ferrand). Comptez un peu plus d'une heure depuis Montpellier ou Béziers, et environ 45 minutes depuis Millau.</p>
+        <div class="venir-liens"><a href="#service-carburant">Faire le plein</a><a href="#service-recharge">Recharger sa voiture</a></div>
+      </article>
+      <article class="venir-mode" id="venir-train">
+        <p class="venir-repere">Gare à 4 km du centre</p><h3>En train</h3>
+        <p>La <strong>gare de Ceilhes-Roqueredonde</strong> se trouve sur la commune voisine de Roqueredonde. Cette halte n'a ni guichet ni personnel : achetez votre billet avant de partir.</p>
+        <p>Elle est desservie par l'<strong>Intercités Aubrac</strong> (Clermont-Ferrand ↔ Béziers, un aller-retour par jour) et quelques <strong>TER Béziers ↔ Millau</strong>. Des travaux peuvent entraîner des remplacements par autocar : <strong>vérifiez la circulation la veille</strong> sur SNCF Connect ou l'application liO.</p>
+        <p class="venir-conseil"><strong>Préparez les 4 derniers kilomètres.</strong> Organisez votre arrivée avec votre hébergeur ou <a href="#venir-transfert">un taxi</a> avant de prendre le train.</p>
+        <div class="venir-liens"><a href="https://www.sncf-connect.com" target="_blank" rel="noopener">Vérifier les trains sur SNCF Connect →</a></div>
+      </article>
+      <article class="venir-mode" id="venir-car">
+        <p class="venir-repere">Ligne liO 688 · Arrivée au village</p><h3>En car</h3>
+        <p>La <strong>ligne liO 688</strong> relie <strong>Le Bousquet-d'Orb au centre de Ceilhes</strong> par Avène-les-Bains et Rocozels, du lundi au vendredi. Certains services continuent jusqu'à Bédarieux.</p>
+        <p>Le service est pensé pour la vie locale : <strong>vérifiez les jours de circulation et le trajet retour</strong> avant de vous organiser.</p>
+        <details><summary>Correspondances et départ de Montpellier</summary><p>Pour Bédarieux les autres jours : correspondance au Bousquet-d'Orb (ligne 683 ou train). Depuis Montpellier, les lignes 682/685 (vers Bédarieux) et 661/681 (vers Lodève et Le Caylar par l'autoroute) font l'approche.</p></details>
+        <div class="venir-liens"><a href="https://www.herault-transport.fr/lignes-regulieres" target="_blank" rel="noopener">Consulter les horaires Hérault Transport →</a></div>
+      </article>
+      <article class="venir-mode" id="venir-transfert">
+        <p class="venir-repere">Dernier trajet · À organiser à l'avance</p><h3>Taxis &amp; transferts</h3>
+        <p>Il n'y a pas de taxi basé à Ceilhes même. Contactez les professionnels de la vallée pour préparer votre arrivée.</p>
+        <ul class="venir-contacts">
+          <li><div><strong>Douarche</strong><span>Le Bousquet-d'Orb · Taxi conventionné et transferts gare</span></div><a href="tel:+33467238056">04 67 23 80 56</a></li>
+          <li><div><strong>Taxi Alfred</strong><span>La Tour-sur-Orb</span></div><a href="tel:+33682833514">06 82 83 35 14</a></li>
+          <li><div><strong>Taxis Vallée d'Orb</strong><span>Bédarieux</span></div><a href="tel:+33467950001">04 67 95 00 01</a></li>
+        </ul>
+        <details><summary>Navette des curistes et transport à la demande</summary><p>Les curistes disposent de la <strong>navette du centre thermal d'Avène</strong> sur réservation : liaisons Montpellier et Béziers, au <a href="tel:+33467234630">04 67 23 46 30</a>.</p><p>Le <strong>transport à la demande liO</strong> est proposé à 2 € maximum, sur réservation la veille au <a href="tel:+33805608100">0 805 608 100</a>. Vérifiez que votre trajet est couvert.</p></details>
+      </article>
+    </div>
+    <div class="infos-grid venir-suite">
+      <div class="info-box reveal"><h3>🛏️ Hébergement</h3><p>Gîtes (gîte de Lascours…), Village des Sources adapté aux familles, chambres d'hôtes et campings autour du lac et dans la vallée de l'Orb. <a href="hebergeurs.html">Choisir son hébergement</a>.</p></div>
       <div class="info-box reveal"><h3>📅 Quand venir ?</h3><p>L'été pour la baignade, les activités nautiques et la fête votive ; le printemps et l'automne pour la randonnée et le VTT ; l'hiver pour le calme des forêts.</p></div>
-      <div class="info-box reveal"><h3>ℹ️ Renseignements</h3><p>Office de tourisme Grand Orb (Bédarieux, Lamalou-les-Bains, Avène) et mairie de Ceilhes-et-Rocozels pour les animations du village.</p></div>
+      <div class="info-box reveal"><h3>ℹ️ Renseignements</h3><p><a href="https://www.tourisme.grandorb.fr" target="_blank" rel="noopener">Office de tourisme Grand Orb</a> (Bédarieux, Lamalou-les-Bains, Avène) et <a href="https://ville-ceilhes.fr" target="_blank" rel="noopener">mairie de Ceilhes-et-Rocozels</a> pour les animations du village.</p></div>
     </div>
   </div>
 </section>
@@ -90,12 +126,9 @@
     </div>
     <div class="infos-grid">
       <div class="info-box reveal"><h3>🥖 Courses &amp; pain frais</h3><p>Pas de boulangerie au village : le pain frais arrive chaque matin à <a href="https://esquirols.fr/ceilhes.html" target="_blank" rel="noopener">L'Esquirol</a>, l'épicerie de producteurs qui fait aussi bar, tabac, presse, point relais colis et retrait d'argent. Venez tôt, il part vite.</p></div>
-      <div class="info-box reveal"><h3>⛽ Carburant</h3><p>Il n'y a pas de pompe à Ceilhes-et-Rocozels. La plus proche est la <strong>station-service de Cénomes</strong> (Montagnol, Aveyron) : libre-service à l'automate, <strong>24h/24</strong>, gazole et sans plomb — à 11 km par le col Notre-Dame, un quart d'heure de route.</p></div>
-      <div class="info-box reveal"><h3>🔌 Voiture électrique</h3><p>Une borne <a href="https://reveocharge.com" target="_blank" rel="noopener">Révéo</a> avenue du Lac : 2 points de charge, 22 kW, prise Type 2. <strong>Prévoyez votre câble</strong>, la borne n'en fournit pas, et déclenchez la charge par l'application, un QR code ou un badge d'itinérance (pas de lecteur de carte bancaire). Une autre borne existe à Montagnol-Cénomes.</p></div>
-      <div class="info-box reveal"><h3>🚆 En train</h3><p>La <strong>gare de Ceilhes-Roqueredonde</strong> est à 4 km du centre, sur la commune voisine de Roqueredonde. C'est une halte sans guichet ni personnel : achetez votre billet avant de partir. Elle est desservie par l'<strong>Intercités Aubrac</strong> (Clermont-Ferrand ↔ Béziers, un aller-retour par jour) et par quelques <strong>TER Béziers ↔ Millau</strong>. La ligne des Causses connaît des travaux et des remplacements par autocar : <strong>vérifiez la circulation la veille</strong> sur <a href="https://www.sncf-connect.com" target="_blank" rel="noopener">SNCF Connect</a> ou l'application liO.</p></div>
-      <div class="info-box reveal"><h3>🚌 En car</h3><p>La <strong>ligne liO 688</strong> relie <strong>Le Bousquet-d'Orb au centre de Ceilhes</strong> par Avène-les-Bains et Rocozels, du lundi au vendredi (certains services continuent jusqu'à Bédarieux). Pour Bédarieux les autres jours : correspondance au Bousquet-d'Orb (ligne 683 ou train). Le service est pensé pour la vie locale plutôt que pour le tourisme : consultez la fiche horaire sur <a href="https://www.herault-transport.fr/lignes-regulieres" target="_blank" rel="noopener">herault-transport.fr</a> avant de vous organiser. Depuis Montpellier, les lignes 682/685 (vers Bédarieux) et 661/681 (vers Lodève et Le Caylar par l'autoroute) font l'approche.</p></div>
-      <div class="info-box reveal"><h3>🚕 Taxis &amp; navettes</h3><p>Pas de taxi basé à Ceilhes même, mais la vallée est couverte : <strong>Douarche</strong> au Bousquet-d'Orb (04 67 23 80 56, taxi conventionné et transferts gare), <strong>Taxi Alfred</strong> à La Tour-sur-Orb (06 82 83 35 14) et <strong>Taxis Vallée d'Orb</strong> à Bédarieux (04 67 95 00 01). Les curistes disposent de la <strong>navette du centre thermal d'Avène</strong> sur réservation — liaisons Montpellier et Béziers (04 67 23 46 30). Il existe aussi un <strong>transport à la demande liO</strong> à 2 € maximum (réservation la veille au 0 805 608 100 — vérifiez que votre trajet est couvert).</p></div>
-      <div class="info-box reveal"><h3>🚲 À vélo</h3><p>La <strong>voie verte Passa Païs</strong> file de Bédarieux à Mazamet (80 km sur l'ancienne voie ferrée, au cœur du Parc du Haut-Languedoc). Location de vélos et de VAE sur le parcours : <strong>Caroux Freeride</strong> à Lamalou-les-Bains (04 67 23 30 84) et <strong>Cyclable Haut-Languedoc</strong> au Poujol-sur-Orb.</p></div>
+      <div class="info-box reveal" id="service-carburant"><h3>⛽ Carburant</h3><p>Il n'y a pas de pompe à Ceilhes-et-Rocozels. La plus proche est la <strong>station-service de Cénomes</strong> (Montagnol, Aveyron) : libre-service à l'automate, <strong>24h/24</strong>, gazole et sans plomb — à 11 km par le col Notre-Dame, un quart d'heure de route.</p></div>
+      <div class="info-box reveal" id="service-recharge"><h3>🔌 Voiture électrique</h3><p>Une borne <a href="https://reveocharge.com" target="_blank" rel="noopener">Révéo</a> avenue du Lac : 2 points de charge, 22 kW, prise Type 2. <strong>Prévoyez votre câble</strong>, la borne n'en fournit pas, et déclenchez la charge par l'application, un QR code ou un badge d'itinérance (pas de lecteur de carte bancaire). Une autre borne existe à Montagnol-Cénomes.</p></div>
+      <div class="info-box reveal"><h3>🚲 À vélo</h3><p>La <strong>voie verte Passa Païs</strong> file de Bédarieux à Mazamet (80 km sur l'ancienne voie ferrée, au cœur du Parc du Haut-Languedoc). Location de vélos et de VAE sur le parcours : <strong>Caroux Freeride</strong> à Lamalou-les-Bains (<a href="tel:+33467233084">04 67 23 30 84</a>) et <strong>Cyclable Haut-Languedoc</strong> au Poujol-sur-Orb.</p></div>
       <div class="info-box reveal"><h3>🚒 Secours</h3><p>Le village a son <a href="pompiers-ceilhes.html">centre de première intervention</a> et ses sapeurs-pompiers volontaires. En cas d'urgence : <strong>18</strong> ou <strong>112</strong> depuis un portable.</p></div>
     </div>
   </div>
@@ -152,10 +185,10 @@
     <a class="dir-card reveal" data-cat="commerces" href="https://esquirols.fr/ceilhes.html" target="_blank" rel="noopener"><div class="cat">Commerce · Restauration</div><h4>L'Esquirol</h4><p>Épicerie locavore, bar, tabac, presse, relais colis et terrasse d'été. Le QG du village.</p><span class="go">Découvrir →</span></a>
     <div class="dir-card reveal" data-cat="commerces"><div class="cat">Bar · Café</div><h4>Le Café du Lac</h4><p>Une pause au bord de l'eau : terrasse, boissons et convivialité face au lac.</p></div>
     <div class="dir-card reveal" data-cat="commerces"><div class="cat">Restauration</div><h4>Le Relais de Ceilhes</h4><p>Une halte gourmande au village, sur la route des Monts d'Orb.</p></div>
-    <a class="dir-card reveal" data-cat="hebergement" href="https://lascours34.fr" target="_blank" rel="noopener"><div class="cat">Mas, gîtes & restaurant</div><h4>Lascours — La Source in the Wood</h4><p>Mas cévenol rénové à Ceilhes : gîtes, restaurant et résidence d'artistes.</p><span class="go">Découvrir →</span></a>
+    <a class="dir-card reveal" data-cat="hebergement commerces" href="https://lascours34.fr" target="_blank" rel="noopener"><div class="cat">Mas, gîtes & restaurant</div><h4>Lascours — La Source in the Wood</h4><p>Mas cévenol rénové à Ceilhes : gîtes, restaurant et résidence d'artistes.</p><span class="go">Découvrir →</span></a>
     <a class="dir-card reveal" data-cat="hebergement" href="https://www.gitedeslibellules.com" target="_blank" rel="noopener"><div class="cat">Gîtes écologiques</div><h4>Les Gîtes des Libellules</h4><p>Hébergements écologiques en pleine nature, aux portes du Salagou (Joncels).</p><span class="go">Découvrir →</span></a>
     <a class="dir-card reveal" data-cat="hebergement" href="https://www.rouvignac.fr" target="_blank" rel="noopener"><div class="cat">9 gîtes 3★</div><h4>Les Gîtes de Rouvignac</h4><p>Hameau de charme à Avène, 33 ha de nature, 2 à 8 personnes.</p><span class="go">Réserver →</span></a>
-    <a class="dir-card reveal" data-cat="hebergement" href="https://www.camping-le-bouloc.fr" target="_blank" rel="noopener"><div class="cat">Camping ★★</div><h4>Camping Le Bouloc</h4><p>Au bord du lac et de l'Orb : emplacements, locations, snack et terrasse.</p><span class="go">Réserver →</span></a>
+    <a class="dir-card reveal" data-cat="hebergement commerces" href="https://www.camping-le-bouloc.fr" target="_blank" rel="noopener"><div class="cat">Camping ★★</div><h4>Camping Le Bouloc</h4><p>Au bord du lac et de l'Orb : emplacements, locations, snack et terrasse.</p><span class="go">Réserver →</span></a>
     <a class="dir-card reveal" data-cat="hebergement" href="https://levillagedessources.com" target="_blank" rel="noopener"><div class="cat">Camping ★★★</div><h4>Le Village des Sources</h4><p>À 500 m du lac : 109 emplacements, 81 chalets, piscine, sauna.</p><span class="go">Réserver →</span></a>
     <a class="dir-card reveal" data-cat="loisirs" href="https://www.herault-tourisme.com/fr/fiche/prestataires-d-activites/slag-aventures-ceilhes-et-rocozels_TFOASCLAR034V51SQGP/" target="_blank" rel="noopener"><div class="cat">Activités nature</div><h4>Slag'Aventures</h4><p>Prestataire d'activités de pleine nature au départ de Ceilhes-et-Rocozels.</p><span class="go">Voir la fiche →</span></a>
     <a class="dir-card reveal" data-cat="loisirs" href="https://www.herault-tourisme.com/fr/fiche/equipements-de-loisirs/plan-d-eau-le-bouloc-de-ceilhes-et-rocozels-ceilhes-et-rocozels_TFOLOILAR034FS000T7/" target="_blank" rel="noopener"><div class="cat">Loisirs</div><h4>Plan d'eau du Bouloc</h4><p>Baignade, pontons de pêche, jeux et pique-nique.</p><span class="go">Voir la fiche →</span></a>
