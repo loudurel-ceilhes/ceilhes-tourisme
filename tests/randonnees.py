@@ -83,10 +83,29 @@ class Randonnees(unittest.TestCase):
             expect(page.locator('#rando-filtres')).not_to_be_visible()
             rows = page.locator('#toutes-randos tbody tr')
             expect(page.locator('#toutes-randos tbody tr:visible')).to_have_count(rows.count())
+            expect(rows.first.locator('.r-cell-label')).to_have_text(['Type', 'Distance', 'Dénivelé', 'Durée', 'Niveau'])
+            expect(rows.first.locator('.r-cell-label').last).to_be_visible()
+            self.assertTrue(rows.evaluate_all('(rows)=>rows.every(row=>row.scrollWidth<=row.clientWidth)'))
             self.assertTrue(page.locator('[data-petites-balades]').get_attribute('href').startswith('#'))
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
         finally:
             nojs.close()
+
+    def test_donnees_comparables_sans_defilement_horizontal(self):
+        self.go('randonnees.html#toutes-randos')
+        first = self.page.locator('#toutes-randos tbody tr').first
+        expect(first.locator('.r-cell-value')).to_have_text(['À pied', '6,3 km', '+312 m', '2 h 10', 'Très facile'])
+        expect(self.page.get_by_role('columnheader', name='Dénivelé')).to_have_count(1)
+        for width in (320, 390, 768, 1440):
+            with self.subTest(width=width):
+                self.page.set_viewport_size({'width':width, 'height':900})
+                first.scroll_into_view_if_needed()
+                self.assertTrue(self.page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
+                self.assertTrue(first.locator('td').evaluate_all('(cells)=>cells.every(cell=>cell.getBoundingClientRect().right<=innerWidth && cell.scrollWidth<=cell.clientWidth)'))
+                if width <= 800:
+                    expect(first.locator('.r-cell-label').last).to_be_visible()
+                else:
+                    expect(first.locator('.r-cell-label').last).not_to_be_visible()
 
 
 if __name__ == '__main__':

@@ -54,6 +54,16 @@ BROWSER_EXECUTABLE=/usr/bin/chromium python3 -m unittest discover -s tests -p '*
 
 ## Mettre à jour le contenu
 
+Les fiches d'hébergements et de restauration indiquent leur source et la
+date de consultation. Les références détaillées et les points restant à
+confirmer sont dans `docs/sources-adresses.md`. Les photos sont accessibles
+par les galeries officielles des établissements.
+
+Le carnet `mon-sejour.html` conserve les choix dans le navigateur du
+visiteur, sans serveur ni compte. Son bouton d'impression permet de garder
+les adresses des fiches sur papier ou en PDF. Il n'effectue aucune réservation.
+Les formulaires de recherche restent indépendants de cette sélection.
+
 Les pages HTML ordinaires se modifient directement. Les fiches producteurs,
 marchés et monuments sont générées : modifier le fichier correspondant
 dans `data/`, puis lancer son générateur pour mettre à jour le HTML affiché

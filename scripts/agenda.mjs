@@ -25,6 +25,7 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { join } from 'node:path'
+import { createHash } from 'node:crypto'
 
 const RACINE = fileURLToPath(new URL('..', import.meta.url))
 const PAGE = join(RACINE, 'agenda.html')
@@ -135,6 +136,7 @@ export function preparerEvenements(brut, aujourdhui = dateParis()) {
       enCours: periode ? periode.debut < aujourdhui : false,
       dateTri: periode ? (periode.debut < aujourdhui ? aujourdhui : periode.debut) : null,
       description: e.Description, adresse: e.Adresse_postale,
+      contacts: e.Contacts_du_POI, sourceUri: e.URI_ID_du_POI,
       commune: nomCommune(e.Code_postal_et_commune),
       codePostal: String(e.Code_postal_et_commune || '').split('#')[0],
       identifiant: e.Code_postal_et_commune, lat: e.Latitude, lon: e.Longitude,
@@ -148,12 +150,61 @@ const dateLisible = (iso) => new Intl.DateTimeFormat('fr-FR', {
   day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
 }).format(new Date(iso + 'T00:00:00Z'))
 
+/** Une fiche garde son lien quand l'ordre ou les dates du flux changent. */
+export function identifiantEvenement(e) {
+  const cle = e.sourceUri || [e.codePostal, e.commune, e.nom, e.adresse].join('|')
+  return 'ev-' + createHash('sha256').update(String(cle)).digest('hex').slice(0, 16)
+}
+
+export function urlWeb(valeur) {
+  try {
+    const url = new URL(String(valeur || '').trim())
+    return ['https:', 'http:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''
+  } catch { return '' }
+}
+
+/** Le flux place souvent les téléphones dans le descriptif, pas dans Contacts. */
+export function contactsEvenement(e) {
+  const texte = [e.contacts, e.description].filter(Boolean).join('\n')
+  const numeros = [...texte.matchAll(/(?<![\d+])(?:\+33[\s.-]?[1-9]|0[1-9])(?:[\s.-]?\d{2}){4}(?!\d)/g)]
+  const telephones = [...new Set(numeros.map(([numero]) => {
+    const chiffres = numero.replace(/\D/g, '')
+    return chiffres.startsWith('33') ? '+' + chiffres : '+33' + chiffres.slice(1)
+  }))].map(numero => ({
+    href: 'tel:' + numero,
+    libelle: ('0' + numero.slice(3)).match(/.{2}/g).join(' '),
+  }))
+  const liens = [...new Set([...texte.matchAll(/https?:\/\/[^\s<>"'|]+/gi)]
+    .map(([lien]) => urlWeb(lien.replace(/[.,;!?)]*$/, ''))).filter(Boolean))]
+  return { telephones, liens }
+}
+
+function rendreDetails(e, id) {
+  const { telephones, liens } = contactsEvenement(e)
+  const description = String(e.description || '').trim()
+  const adresse = [e.adresse, [e.codePostal, e.commune].filter(Boolean).join(' ')].filter(Boolean).join(' · ')
+  const source = urlWeb(e.sourceUri)
+  const maj = String(e.maj || '').slice(0, 10)
+  const contacts = [
+    ...telephones.map(t => `<a href="${echappe(t.href)}">Appeler le ${echappe(t.libelle)}</a>`),
+    ...liens.map(lien => `<a href="${echappe(lien)}" target="_blank" rel="noopener">Site indiqué par l’organisateur · ${echappe(new URL(lien).hostname)} <span aria-hidden="true">↗</span></a>`),
+  ]
+  return `<details class="ev-details">
+            <summary>Voir les détails <span class="ev-detail-nom">de ${echappe(e.nom)}</span></summary>
+            <div class="ev-details-contenu">
+              ${description ? `<p class="ev-description">${echappe(description)}</p>` : '<p>Le descriptif n’est pas renseigné dans la source.</p>'}
+              ${adresse ? `<p class="ev-adresse"><strong>Lieu annoncé :</strong> ${echappe(adresse)}</p>` : ''}
+              ${contacts.length ? `<div class="ev-contacts" aria-label="Contacts et informations du rendez-vous">${contacts.join('')}</div>` : ''}
+              <p class="ev-source">${e.createur ? `${echappe(e.createur)} · ` : ''}${source ? `<a href="${echappe(source)}" target="_blank" rel="noopener">Donnée source DATAtourisme</a>` : 'Source : DATAtourisme'}${dateValide(maj) ? ` · fiche mise à jour le <time datetime="${maj}">${dateLisible(maj)}</time>` : ''}. Confirmez les horaires et les conditions auprès de l’organisateur.</p>
+              <a class="ev-permalien" href="#${id}">Lien vers ce rendez-vous</a>
+            </div>
+          </details>`.replace(/[ \t]+$/gm, '')
+}
+
 export function rendreCartes(liste, avecLieu) {
-  return liste.map((e, index) => {
+  return liste.map((e) => {
     const date = new Date((e.enCours ? e.fin : e.debut) + 'T00:00:00Z')
-    const id = 'ev-' + e.nom.toLowerCase().normalize('NFD')
-      .replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '').slice(0, 48) + '-' + e.commune.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-') + '-' + index
+    const id = identifiantEvenement(e)
     const lieu = avecLieu ? `\n          <span class="ev-lieu">${echappe(e.commune)}</span>` : ''
     // Toutes les occurrences doivent être lisibles : le filtre du week-end
     // peut retenir une seconde date, et pas uniquement la première affichée.
@@ -165,13 +216,14 @@ export function rendreCartes(liste, avecLieu) {
           : `Du <time datetime="${debut}">${dateLisible(debut)}</time> au <time datetime="${fin}">${dateLisible(fin)}</time>`
       return `<li class="ev-periode">${texte}</li>`
     }).join('')
-    return `      <article class="ev-card reveal" id="${id}" data-commune="${echappe(e.commune)}" data-activite="${echappe(etiquette(e.nom))}" data-periodes="${echappe(JSON.stringify(e.periodes))}">
+    return `      <article class="ev-card reveal" id="${id}" data-commune="${echappe(e.commune)}" data-activite="${echappe(etiquette(e.nom))}" data-periodes="${echappe(JSON.stringify(e.periodes))}" data-carnet-id="${id}" data-carnet-title="${echappe(e.nom)}" data-carnet-category="Événement" data-carnet-url="agenda.html#${id}">
         <div class="ev-date" aria-hidden="true"><span class="d">${date.getUTCDate()}</span><span class="m">${MOIS[date.getUTCMonth()]}</span></div>
         <div class="ev-body">
           <span class="ev-tag">${etiquette(e.nom)}</span>${lieu}
           <h3>${echappe(e.nom)}</h3>
           <ul class="ev-periodes" aria-label="Dates du rendez-vous">${periodes}</ul>
           <p>${echappe(couper(e.description))}</p>
+          ${rendreDetails(e, id)}
         </div>
       </article>`
   }).join('\n')
@@ -185,7 +237,7 @@ export function donneesStructurees(liste) {
       eventStatus: 'https://schema.org/EventScheduled',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       description: couper(e.description, 300) || undefined,
-      url: 'https://ceilhes-tourisme.fr/agenda.html',
+      url: 'https://ceilhes-tourisme.fr/agenda.html#' + identifiantEvenement(e),
       location: {
         '@type': 'Place', name: e.adresse || e.commune,
         address: {
@@ -238,7 +290,11 @@ function joliTitre(nom) {
 function couper(texte, max = 190) {
   const t = String(texte || '').replace(/\s+/g, ' ').trim()
   if (t.length <= max) return t
-  return t.slice(0, t.lastIndexOf(' ', max)) + '…'
+  // Une phrase complète évite un résumé qui s'arrête au milieu d'un contact.
+  const phrase = [...t.slice(0, max + 1).matchAll(/[.!?](?=\s|$)/g)].at(-1)?.index
+  if (phrase >= max / 2) return t.slice(0, phrase + 1)
+  const espace = t.lastIndexOf(' ', max)
+  return t.slice(0, espace > 0 ? espace : max) + '…'
 }
 
 /**

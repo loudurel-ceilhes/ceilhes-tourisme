@@ -125,7 +125,7 @@ function contact(p) {
 /** Une fiche producteur complète. */
 function fiche(p) {
   const lignes = [
-    `      <article class="prod-card reveal" id="${echappe(p.id)}" data-produits="${produits(p).join(' ')}" data-esquirol="${Boolean(p.badge)}" tabindex="-1">`,
+    `      <article class="prod-card reveal" id="${echappe(p.id)}" data-produits="${produits(p).join(' ')}" data-esquirol="${Boolean(p.badge)}" data-carnet-id="producteur-${echappe(p.id)}" data-carnet-title="${echappe(p.nom)}" data-carnet-category="Producteur" data-carnet-url="terroir.html#${echappe(p.id)}" tabindex="-1">`,
     `        <div class="picto" aria-hidden="true">${echappe(p.picto)}</div>`,
     `        <h4>${echappe(p.nom)}</h4>`,
     `        <div class="where">${echappe(p.lieu)}</div>`,

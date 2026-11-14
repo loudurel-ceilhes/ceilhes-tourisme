@@ -1,4 +1,27 @@
 /* Les accès pratiques de l'accueil restent lisibles sans JavaScript. */
+.accueil main>section{padding:4.5rem 5vw}
+.accueil .section-head{margin-bottom:2.4rem}
+.accueil .stats{padding:1.8rem 5vw}
+.accueil .stats .container{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.accueil .stat .num{font-size:2.7rem}
+.accueil .stat .label{font-size:.8rem;letter-spacing:.06em;opacity:.9}
+.accueil-histoire{color:var(--foret);font-weight:500;text-underline-offset:.2em}
+.accueil .accueil-orb{background:var(--brume);padding:2.5rem 5vw}
+.accueil-orb .container{display:flex;align-items:center;justify-content:space-between;gap:1.5rem 3rem}
+.accueil-orb h2{font-size:2.2rem;line-height:1.15;color:var(--foret-fonce);margin:.4rem 0 .6rem}
+.accueil-orb p{max-width:52rem;font-size:.96rem}
+.accueil-orb a{display:flex;align-items:center;gap:1rem;flex-shrink:0;min-height:44px;max-width:100%;color:var(--foret);font-weight:600;text-underline-offset:.2em}
+.accueil-orb a span{flex-shrink:0}
+.accueil .accueil-galerie{background:var(--nuit);color:var(--blanc);padding:3.5rem 5vw}
+.accueil-galerie .container{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2.5rem}
+.accueil-galerie-photo{display:block;aspect-ratio:16/9;overflow:hidden;border-radius:var(--r)}
+.accueil-galerie-photo picture{display:block;height:100%}
+.accueil-galerie-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.accueil-galerie .kicker{color:var(--or)}
+.accueil-galerie h2{font-size:2.5rem;line-height:1.15;margin:.4rem 0 .8rem}
+.accueil-galerie p{font-size:.96rem;max-width:40rem}
+.accueil-galerie a:not(.accueil-galerie-photo){display:inline-flex;align-items:center;gap:1rem;min-height:44px;color:var(--or);font-weight:500;text-underline-offset:.2em;margin-top:.8rem}
+.accueil-galerie .accueil-galerie-credit{font-size:.78rem;margin-top:.6rem}
 .sejour{background:var(--blanc);scroll-margin-top:5rem}
 .sejour .section-head{margin-bottom:2.2rem}
 .sejour-intro{max-width:650px;margin:1.1rem auto 0;font-size:1.05rem}
@@ -40,7 +63,23 @@
 .sejour-partage-retour:not(:empty),.sejour-lien-manuel{flex-basis:100%;min-width:0}
 .sejour-lien-manuel label{display:block;font-weight:500;font-size:.9rem;margin-bottom:.4rem}
 .sejour-lien-manuel input{width:100%;min-width:0;min-height:46px;padding:.65rem .8rem;border:1px solid var(--foret);border-radius:.5rem;background:var(--blanc);color:var(--foret-fonce);font:inherit;font-size:.9rem}
-@media(max-width:900px){.sejour-ready .sejour-etapes{grid-template-columns:1fr}}
+@media(max-width:900px){
+  .sejour-ready .sejour-etapes{grid-template-columns:1fr}
+  .accueil #village .split{grid-template-columns:minmax(0,1fr);gap:1.5rem}
+  .accueil #village .visu{aspect-ratio:16/9}
+  .accueil-orb .container{display:block}
+  .accueil-orb a{margin-top:1rem}
+}
+@media(max-width:700px){
+  .accueil main>section{padding:3rem 5vw}
+  .accueil .section-head{margin-bottom:1.8rem}
+  .accueil .stats .container{gap:.6rem}
+  .accueil .stat .num{font-size:2.3rem}
+  .accueil .stat .label{font-size:.78rem;letter-spacing:.025em}
+  .accueil-galerie .container{grid-template-columns:minmax(0,1fr);gap:1.3rem}
+  .accueil .accueil-galerie{padding:2.5rem 5vw}
+  .accueil-galerie h2{font-size:2rem}
+}
 @media(max-width:640px){
   .sejour{padding:3.5rem 5vw}
   .sejour-acces,.sejour-parcours{grid-template-columns:1fr}
@@ -56,6 +95,8 @@
   .sejour-parcours h4{font-size:1.8rem}
 }
 @media print{
+  .accueil main>section{padding:1rem 0}
+  .accueil .accueil-orb,.accueil .accueil-galerie{padding:1rem 0}
   body.imprimer-programme{background:var(--blanc)}
   .sejour-choix,.sejour-programme-actions{display:none!important}
   .sejour-parcours{display:block}
