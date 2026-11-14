@@ -24,7 +24,9 @@ jobs:
         run: node --test tests/*.test.mjs
 
   parcours:
-    runs-on: ubuntu-latest
+    # Playwright 1.58 prend en charge Ubuntu 24.04 ; ubuntu-latest peut
+    # basculer sur une version dont les bibliothèques ne sont pas compatibles.
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
