@@ -1,0 +1,41 @@
+/* Choisir une sortie avant les récits et les grands itinéraires. */
+.rando-choisir{padding:2rem 5vw;background:var(--blanc)}
+.rando-choisir h2{font-size:2rem;color:var(--foret-fonce);line-height:1.2}
+.rando-acces{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.2rem}
+.rando-acces a{display:block;padding:1.1rem;border:1px solid var(--pierre);border-radius:var(--r);background:var(--sable);color:var(--foret);text-decoration:none;min-width:0}
+.rando-acces a:hover,.rando-acces a:focus-visible{border-color:var(--foret);background:var(--brume)}
+.rando-acces strong{display:block;font-size:1.1rem}
+.rando-acces span{display:block;margin-top:.25rem;font-size:.9rem;line-height:1.5}
+.rando-portee{max-width:65ch;margin:-1rem auto 1.7rem;text-align:center;font-size:.94rem}
+.rando-portee a{color:var(--foret);text-underline-offset:.2em}
+.rando-note-durees{margin-top:1rem;font-size:.9rem;color:var(--foret)}
+.rando-filtres{margin-top:1.6rem;padding:1.3rem;background:var(--brume);border:1px solid var(--lac-clair);border-radius:var(--r)}
+.rando-champs{display:grid;grid-template-columns:1fr 1fr auto;gap:1rem;align-items:end}
+.rando-champs label{display:block;font-size:.92rem;font-weight:600;color:var(--foret);margin-bottom:.35rem}
+.rando-champs select,.rando-filtres button{min-height:44px;padding:.65rem .8rem;font:inherit;color:var(--foret);border:1px solid var(--foret);border-radius:.5rem;background:var(--blanc)}
+.rando-champs select{width:100%;min-width:0}
+.rando-filtres button{cursor:pointer}
+.rando-filtres button:hover{background:var(--pierre)}
+.rando-resultats{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+#rando-compteur{font-weight:600;color:var(--foret)}
+.rando-vide{padding:1rem;margin:1rem 0;border-left:3px solid var(--ocre);background:var(--sable)}
+#rando-partage-retour{margin-top:.6rem;font-size:.9rem}
+#rando-lien-manuel{margin-top:.7rem}
+#rando-lien-manuel label{display:block;font-size:.9rem}
+#rando-lien-manuel input{width:100%;font:inherit;min-height:44px;padding:.5rem;border:1px solid var(--foret);border-radius:.4rem;color:var(--foret);background:var(--blanc)}
+.rando-defilement{display:none}
+#toutes-randos:focus{outline:none}
+#toutes-randos caption{text-align:left;font-size:.9rem;padding:.8rem;color:var(--foret);background:var(--sable)}
+@media(max-width:650px){
+  .rando-acces,.rando-champs{grid-template-columns:1fr}
+  .rando-acces{gap:.65rem}
+  .rando-acces a{padding:.85rem 1rem}
+  .rando-filtres{padding:1rem}
+  .rando-resultats{align-items:flex-start;flex-direction:column}
+  .rando-champs button{justify-self:start}
+  .rando-defilement{display:block;font-size:.88rem;margin-top:1rem;color:var(--foret)}
+}
+@media print{
+  .rando-choisir,.rando-filtres,.rando-defilement{display:none!important}
+  #toutes-randos tbody tr[hidden]{display:none!important}
+}

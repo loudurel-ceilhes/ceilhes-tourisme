@@ -47,6 +47,26 @@ const RACINE = fileURLToPath(new URL('..', import.meta.url))
 const DONNEES = new URL('../data/producteurs.json', import.meta.url)
 const PAGE = new URL('../terroir.html', import.meta.url)
 
+// Les filtres s'appuient uniquement sur les produits déjà décrits dans les
+// fiches. La recherche libre complète ce classement pour les produits rares.
+// Les mots sont délimités après normalisation : « veau » ne doit pas classer
+// un « caveau » en viande, ni « jus » reconnaître « jusqu'au ».
+const mots = motif => new RegExp(`\\b(?:${motif})\\b`, 'i')
+const PRODUITS = [
+  ['laitages', 'Fromages & laitages', mots('fromages?|fromageries?|yaourts?|pelardons?|roquefort|perails?|tommes?|beurre|glaces?|lait cru|laits crus')],
+  ['miel', 'Miel', mots('miels?|mielleries?|apiculteurs?|apiculture|ruches?|ruchers?')],
+  ['viandes', 'Viandes, œufs & poissons', mots('viandes?|charcuteries?|charcutiers?|salaisons?|jambons?|saucisses?|saucissons?|boeufs?|veaux?|agneaux?|porcs?|chevreaux?|volailles?|poulets?|pintades?|oeufs?|truites?|poissons?|escargots?')],
+  ['vegetal', 'Fruits, légumes & plantes', mots('fruits?|legumes?|maraichage|maraichers?|maraicheres?|plantes?|safran|olives?|huiles?|lentilles?|pois chiches?|fraises?|abricots?|prunes?|chataignes?|noix')],
+  ['douceurs', 'Pains & douceurs', mots('pains?|fournils?|boulangers?|boulangeres?|boulangeries?|biscuits?|biscuiteries?|patisseries?|sorbets?|confitures?|glaces?|macarons?')],
+  ['boissons', 'Vins, bières & boissons', mots('vins?|vignes?|cepages?|vignerons?|vigneronnes?|bieres?|brasseries?|limonades?|jus|liqueurs?|pastis|roussanne|mourvedre|terrasses du larzac')],
+]
+
+function produits(p) {
+  const texte = `${p.nom} ${p.description}`.normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '').replaceAll('œ', 'oe').replaceAll('Œ', 'OE')
+  return PRODUITS.filter(([, , motif]) => motif.test(texte)).map(([id]) => id)
+}
+
 /** Échappe ce qui doit l'être dans du HTML. */
 function echappe(t) {
   return String(t)
@@ -105,12 +125,19 @@ function contact(p) {
 /** Une fiche producteur complète. */
 function fiche(p) {
   const lignes = [
-    `      <div class="prod-card reveal" id="${echappe(p.id)}">`,
-    `        <div class="picto">${p.picto}</div>`,
+    `      <article class="prod-card reveal" id="${echappe(p.id)}" data-produits="${produits(p).join(' ')}" data-esquirol="${Boolean(p.badge)}" tabindex="-1">`,
+    `        <div class="picto" aria-hidden="true">${echappe(p.picto)}</div>`,
     `        <h4>${echappe(p.nom)}</h4>`,
     `        <div class="where">${echappe(p.lieu)}</div>`,
     `        <p>${echappe(p.description)}</p>${contact(p)}`,
   ]
+  if (p.vente) lignes.push(`        <p class="prod-vente"><strong>Pour acheter :</strong> ${echappe(p.vente)}</p>`)
+  if (p.labels?.length) lignes.push(`        <p class="prod-labels"><strong>Labels :</strong> ${p.labels.map(echappe).join(' · ')}</p>`)
+  if (p.actif === 'incertain') lignes.push('        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>')
+  if (/^\d{4}-\d{2}-\d{2}$/.test(p.maj || '')) {
+    const [annee, mois, jour] = p.maj.split('-')
+    lignes.push(`        <p class="prod-maj">Fiche mise à jour le <time datetime="${p.maj}">${jour}/${mois}/${annee}</time></p>`)
+  }
   const pied = []
   if (p.portrait?.url) {
     pied.push(
@@ -119,25 +146,58 @@ function fiche(p) {
   }
   if (p.badge) pied.push(`<span class="tag">${echappe(p.badge)}</span>`)
   if (pied.length) lignes.push(`        ${pied.join('')}`)
-  lignes.push('      </div>')
+  lignes.push('      </article>')
   return lignes.join('\n')
 }
 
 /** Une zone : titre, sous-titre, grille de fiches. */
-function zone(z) {
+function zone(z, i) {
   return [
+    `    <div class="prod-zone" data-zone="${i}">`,
     `    <h4 class="zone-title reveal">${echappe(z.titre)}</h4>`,
     `    <p class="zone-sub reveal">${echappe(z.sousTitre)}</p>`,
     '    <div class="prod-grid">',
     ...z.producteurs.map(fiche),
     '    </div>',
+    '    </div>',
   ].join('\n')
+}
+
+function filtres(zones, total) {
+  return `    <form class="prod-filtres" id="filtres-producteurs" role="search" aria-label="Rechercher un producteur" hidden>
+      <div class="prod-champs">
+        <label for="recherche-producteurs">Un nom, un produit, une commune
+          <input id="recherche-producteurs" name="recherche" type="search" placeholder="Ex. : fromage, Avène, La Part du Loup" autocomplete="off" aria-controls="resultats-producteurs">
+        </label>
+        <label for="produit-producteurs">Produit
+          <select id="produit-producteurs" name="produit" aria-controls="resultats-producteurs">
+            <option value="">Tous les produits</option>
+${PRODUITS.map(([id, nom]) => `            <option value="${id}">${echappe(nom)}</option>`).join('\n')}
+          </select>
+        </label>
+        <label for="zone-producteurs">Autour de…
+          <select id="zone-producteurs" name="zone" aria-controls="resultats-producteurs">
+            <option value="">Tous les secteurs</option>
+${zones.map((z, i) => `            <option value="${i}">${echappe(z.titre.split('—')[0].trim())}</option>`).join('\n')}
+          </select>
+        </label>
+      </div>
+      <div class="prod-options">
+        <label class="prod-checkbox"><input type="checkbox" name="esquirol" id="esquirol-producteurs"> En rayon à L'Esquirol</label>
+        <button type="reset">Effacer les filtres</button>
+      </div>
+      <div class="prod-result-nav">
+        <p id="compte-producteurs" role="status" aria-live="polite" aria-atomic="true">${total} producteurs</p>
+        <a href="#resultats-producteurs">Voir les fiches ↓</a>
+      </div>
+    </form>
+    <p class="prod-conseil">Avant de partir, appelez pour confirmer l'ouverture et les produits disponibles. Les horaires peuvent évoluer selon la saison.</p>`
 }
 
 /**
  * La carte des producteurs : le conteneur, la légende, et les données des
- * repères dans un bloc JSON que assets/script.js lit pour poser les épingles
- * (voir « Carte des producteurs » dans script.js). Un producteur sans champ
+ * repères dans un bloc JSON que assets/producteurs.js lit pour poser les épingles.
+ * Un producteur sans champ
  * gps n'apparaît simplement pas sur la carte.
  */
 function carte(zones) {
@@ -163,12 +223,15 @@ function carte(zones) {
   const legende = zones
     .map((z) => `      <span><span class="dot" style="background:${z.couleur}"></span> ${echappe(z.titre.split('—')[0].trim())}</span>`)
     .join('\n')
-  return `    <div id="carte-prod" class="reveal" aria-label="Carte des producteurs"></div>
-    <div class="map-legend reveal">
+  return `    <p id="etat-carte-producteurs" class="prod-carte-note" role="status" hidden></p>
+    <div class="prod-carte" id="bloc-carte-producteurs" hidden>
+    <div id="carte-prod" aria-label="Carte des producteurs" role="region"></div>
+    <div class="map-legend">
 ${legende}
     </div>
-    <p class="reveal" style="text-align:center;font-size:.8rem;font-weight:300;margin-top:.6rem">Chaque repère est placé sur sa commune — appelez avant de prendre la route, les fermes sont parfois à l'écart du village.</p>
-    <script type="application/json" id="donnees-carte">${JSON.stringify({ couleurs: zones.map((z) => z.couleur), reperes })}</script>`
+    <p class="prod-carte-note">Les repères peuvent être approximatifs ou écartés pour rester lisibles. Utilisez le lien « Itinéraire » de la fiche pour préparer votre trajet.</p>
+    </div>
+    <script type="application/json" id="donnees-carte">${JSON.stringify({ couleurs: zones.map((z) => z.couleur), reperes }).replaceAll('<', '\\u003c')}</script>`
 }
 
 async function main() {
@@ -192,9 +255,15 @@ async function main() {
   if (total < 10) throw new Error(`Seulement ${total} producteurs : fichier suspect, on ne touche à rien`)
 
   const bloc = `<!-- @producteurs — généré par scripts/producteurs.mjs depuis data/producteurs.json : ne pas modifier à la main, modifier le fichier de données -->
+    <div id="annuaire-producteurs">
+${filtres(zones, total)}
 ${carte(zones)}
 
+    <div id="resultats-producteurs" tabindex="-1">
 ${zones.map(zone).join('\n\n')}
+    </div>
+    <p id="aucun-producteur" class="prod-vide" hidden>Aucun producteur ne correspond à ces critères. Essayez un autre mot ou effacez les filtres.</p>
+    </div>
     <!-- @/producteurs -->`
 
   let html = await readFile(PAGE, 'utf8')

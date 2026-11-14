@@ -1,0 +1,35 @@
+/* Repères pratiques des sorties, lisibles aussi sur papier. */
+.sortie-facts{margin:1.2rem 0;display:grid;gap:.8rem;font-size:.94rem;line-height:1.55}
+.sortie-facts div{padding-left:.9rem;border-left:3px solid var(--pierre)}
+.sortie-facts dt{font-weight:600;color:var(--foret)}
+.sortie-facts dd{margin:.15rem 0 0;color:var(--texte)}
+.sortie-facts a,.sortie-note a{color:var(--foret);text-decoration:underline;text-underline-offset:3px}
+.trail-card .sortie-facts{padding:0 1.5rem}
+.sortie-note{font-size:.9rem;line-height:1.6;color:var(--texte)}
+.sortie-pratique{padding:2rem;border:1px solid var(--pierre);border-radius:var(--r);background:var(--blanc);margin-top:1.5rem}
+.sortie-pratique h3{font-size:1.8rem;color:var(--foret);margin-bottom:.7rem}
+.sortie-pratique .sortie-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sortie-pratique p+p{margin-top:.7rem}
+.sortie-actions{display:flex;gap:.8rem 1.4rem;flex-wrap:wrap;margin-top:1rem}
+.sortie-actions a{color:var(--foret);font-weight:600;text-decoration:underline;text-underline-offset:3px;padding:.4rem 0}
+@media(max-width:600px){
+  .sortie-pratique{padding:1.3rem}
+  .sortie-pratique .sortie-facts{grid-template-columns:1fr}
+}
+@media print{
+  #nav,footer,#totop,#progress,.banner,.photo-fig,.fimg,.filter-chips{display:none!important}
+  body{background:var(--blanc);color:var(--texte)}
+  .subhero{min-height:0!important;padding:1rem 0!important;background:none!important}
+  .subhero .subbg{display:none}
+  .subhero h1,.subhero p,.subhero .surtitle{color:var(--texte)!important}
+  section{padding:1rem 0!important;background:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  .trail-grid,.feature,.feature.rev{display:block}
+  .trail-card,.sortie-pratique,.callout{break-inside:avoid;box-shadow:none!important;margin:1rem 0}
+  .trail-card[hidden]{display:block!important}
+  .sortie-facts{gap:.4rem}
+  .rtable-wrap{overflow:visible!important;box-shadow:none!important}
+  #toutes-randos table{min-width:0!important;font-size:.75rem!important}
+  #toutes-randos th,#toutes-randos td{white-space:normal!important;padding:.35rem!important}
+  a{color:var(--foret)!important}
+}

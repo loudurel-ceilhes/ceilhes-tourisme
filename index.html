@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ceilhes-et-Rocozels — Tourisme, lac, Orb & randonnées au cœur du Haut-Languedoc</title>
-<meta name="description" content="Découvrez Ceilhes-et-Rocozels (Hérault) : le lac des Monts d'Orb, le fleuve Orb, la baignade, les randonnées du Sentier des 2 Lacs, la nature du Parc, le…">
+<meta name="description" content="Préparez votre séjour à Ceilhes-et-Rocozels : balades, lac des Monts d'Orb, hébergements, bonnes adresses et idées de sorties dans le Haut-Languedoc.">
 <link rel="canonical" href="https://ceilhes-tourisme.fr/">
 <link rel="alternate" hreflang="en" href="https://ceilhes-tourisme.fr/en.html" />
 <link rel="alternate" hreflang="de" href="https://ceilhes-tourisme.fr/de.html" />
@@ -33,14 +33,16 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0E241C" />
-<link rel="stylesheet" href="assets/styles.css?v=39135ee0">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/accueil.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TouristDestination","name":"Ceilhes-et-Rocozels","description":"Village du Haut-Languedoc (Hérault), au bord du lac des Monts d'Orb et aux sources de l'Orb : baignade, randonnées, nature, terroir et patrimoine.","url":"https://ceilhes-tourisme.fr/","geo":{"@type":"GeoCoordinates","latitude":43.813,"longitude":3.095},"containedInPlace":{"@type":"AdministrativeArea","name":"Hérault — Parc naturel régional du Haut-Languedoc"}}</script>
 </head>
 <body>
+<a class="skip" href="#contenu">Aller au contenu</a>
 <div id="progress"></div>
-<nav id="nav">
+<nav id="nav" aria-label="Navigation principale">
   <a href="index.html" class="logo">Ceilhes<span>-et-</span>Rocozels</a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul id="menu">
     <li><a href="le-lac.html">Le lac</a></li>
     <li><a href="l-orb.html">L'Orb</a></li>
@@ -56,6 +58,7 @@
     <li><a href="infos-pratiques.html">Infos</a></li>
   </ul>
 </nav>
+<main id="contenu" tabindex="-1">
 <header class="hero" id="hero">
   <picture><source type="image/webp" srcset="images/leo/rayons-monts-orb-640.webp 640w, images/leo/rayons-monts-orb-1000.webp 1000w, images/leo/rayons-monts-orb-1600.webp 1600w" sizes="100vw"><img decoding="async" width="1600" height="1067" class="hero-photo" src="images/leo/rayons-monts-orb.jpg" alt="Rayons de soleil perçant les nuages au-dessus des monts d'Orb enneigés" fetchpriority="high"></picture>
   <div class="veil"></div>
@@ -64,19 +67,79 @@
     <h1>Ceilhes<em>-et-</em>Rocozels</h1>
     <p>Un village du Haut-Languedoc, entre forêts et eaux calmes, au bord du lac des Monts d'Orb.</p>
     <div class="cta">
-      <a href="le-lac.html" class="btn btn-primary">Découvrir le lac</a>
-      <a href="galerie.html" class="btn btn-secondary">La galerie photos</a>
+      <a href="#preparer-sejour" class="btn btn-primary">Préparer mon séjour</a>
+      <a href="le-lac.html" class="btn btn-secondary">Découvrir le lac</a>
     </div>
   </div>
   <div class="scroll-hint">Explorer</div>
 </header>
+<section id="preparer-sejour" class="sejour" aria-labelledby="sejour-titre">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Votre point de départ</div>
+      <h2 id="sejour-titre">Préparer votre séjour</h2>
+      <p class="sejour-intro">Une journée au village ou quelques jours au vert&nbsp;? Retrouvez l'essentiel, puis composez votre séjour à votre rythme.</p>
+    </div>
+    <ul class="sejour-acces" aria-label="Les informations essentielles pour votre séjour">
+      <li><a href="#explorer"><span class="sejour-num" aria-hidden="true">01</span><span><strong>Que faire ?</strong><span>Balades, lac, patrimoine et sorties.</span></span><span class="sejour-fleche" aria-hidden="true">→</span></a></li>
+      <li><a href="hebergeurs.html"><span class="sejour-num" aria-hidden="true">02</span><span><strong>Où dormir ?</strong><span>Gîtes, chambres d'hôtes et campings.</span></span><span class="sejour-fleche" aria-hidden="true">→</span></a></li>
+      <li><a href="infos-pratiques.html#manger"><span class="sejour-num" aria-hidden="true">03</span><span><strong>Où manger ?</strong><span>Restaurant, snack et épicerie du village.</span></span><span class="sejour-fleche" aria-hidden="true">→</span></a></li>
+      <li><a href="infos-pratiques.html#infos"><span class="sejour-num" aria-hidden="true">04</span><span><strong>Comment venir ?</strong><span>Accès, train, car et services sur place.</span></span><span class="sejour-fleche" aria-hidden="true">→</span></a></li>
+    </ul>
+    <div class="sejour-rendezvous"><p>Un marché, un concert, une animation ?</p><a href="agenda.html?periode=weekend#agenda-list">Que faire ce week-end ? <span aria-hidden="true">→</span></a></div>
+    <div class="sejour-idees" id="idees-sejour">
+      <div class="sejour-idees-entete"><h3>À chacun son rythme</h3><p>Choisissez une idée de sortie. Ces programmes sont des suggestions à adapter à la saison, à la météo et aux ouvertures.</p></div>
+      <div class="sejour-choix" aria-label="Choisir un programme" hidden>
+        <button type="button" data-programme="journee">Une journée</button>
+        <button type="button" data-programme="weekend">Un week-end</button>
+        <button type="button" data-programme="enfants">Avec des enfants</button>
+        <button type="button" data-programme="pluie">Quand il pleut</button>
+      </div>
+      <div class="sejour-parcours">
+        <article id="programme-journee" data-programme="journee">
+          <div class="sejour-programme-entete"><span class="sejour-etiquette">Village · Au bord de l'eau</span><h4>Une journée à Ceilhes</h4><p>Prendre le temps de découvrir le village, puis s'installer au bord de l'eau.</p></div>
+          <ol class="sejour-etapes">
+            <li><div><h5>Commencer dans les ruelles</h5><p>Découvrez le village et son histoire avec les <a href="patrimoine.html">repères du patrimoine</a>. Repérez les lieux qui vous intéressent, puis flânez à votre rythme.</p></div></li>
+            <li><div><h5>Choisir sa pause déjeuner</h5><p>Composez un pique-nique à <a href="terroir.html#terroir">l'épicerie du village</a>, ou retrouvez les <a href="infos-pratiques.html#manger">adresses où manger</a>. Vérifiez les ouvertures avant de partir.</p></div></li>
+            <li><div><h5>Finir par une pause au Bouloc</h5><p>Retrouvez les aires de pique-nique et les jeux du <a href="le-lac.html#repere-bouloc">plan d'eau du Bouloc</a>. Pour observer la rivière, découvrez aussi les <a href="l-orb.html#repere-gue">repères du gué</a>.</p></div></li>
+          </ol>
+        </article>
+        <article id="programme-weekend" data-programme="weekend">
+          <div class="sejour-programme-entete"><span class="sejour-etiquette">Deux jours · Nature &amp; terroir</span><h4>Un week-end au vert</h4><p>Un séjour à composer autour d'une sortie nature et des rencontres du pays.</p></div>
+          <ol class="sejour-etapes">
+            <li><div><h5>Préparer son point de chute</h5><p>Choisissez un <a href="hebergeurs.html">gîte ou un camping</a>, puis repérez <a href="infos-pratiques.html#infos">comment venir</a>. Réservez directement auprès de l'hébergeur.</p></div></li>
+            <li><div><h5>Garder une journée pour dehors</h5><p>Choisissez une <a href="randonnees.html#sentiers">randonnée adaptée à votre niveau</a> ou une <a href="randonnees.html#balade-bouloc">promenade libre près du Bouloc</a>. Consultez la fiche du parcours et les conditions avant de partir.</p></div></li>
+            <li><div><h5>Découvrir le pays le lendemain</h5><p>Rencontrez les <a href="terroir.html#annuaire-producteurs">producteurs des environs</a>, explorez le <a href="patrimoine.html">patrimoine</a> ou choisissez un <a href="agenda.html?periode=weekend#agenda-list">rendez-vous de ce week-end</a>. Contactez les producteurs avant une visite.</p></div></li>
+          </ol>
+        </article>
+        <article id="programme-enfants" data-programme="enfants">
+          <div class="sejour-programme-entete"><span class="sejour-etiquette">En famille · Petites découvertes</span><h4>Avec des enfants</h4><p>Des jeux, une pause gourmande et une animation à choisir selon l'âge des enfants.</p></div>
+          <ol class="sejour-etapes">
+            <li><div><h5>Commencer par les jeux</h5><p>Le <a href="le-lac.html#repere-bouloc">Bouloc</a> réunit jeux, terrain multisports et espaces de pique-nique. Restez ensemble près de l'eau ; la baignade dépend des conditions et autorisations du jour.</p></div></li>
+            <li><div><h5>Faire une pause à son rythme</h5><p>Prévoyez le pique-nique ou choisissez une <a href="infos-pratiques.html#manger">pause au village</a>. Prolongez par une <a href="randonnees.html#balade-bouloc">découverte libre des ruelles</a>, selon les accès adaptés à votre groupe.</p></div></li>
+            <li><div><h5>Repérer une animation</h5><p>Consultez les <a href="vie-associative.html#bibliotheque">ateliers de la bibliothèque</a> et <a href="agenda.html">l'agenda</a>. Vérifiez les dates, les âges accueillis et les réservations auprès des organisateurs.</p></div></li>
+          </ol>
+        </article>
+        <article id="programme-pluie" data-programme="pluie">
+          <div class="sejour-programme-entete"><span class="sejour-etiquette">À l'abri · Culture &amp; pause gourmande</span><h4>Quand il pleut</h4><p>Préparer une sortie à l'abri, avec des ouvertures à confirmer avant le trajet.</p></div>
+          <ol class="sejour-etapes">
+            <li><div><h5>Choisir une visite à Lodève</h5><p>Découvrez le <a href="alentours.html#alentours">musée de Lodève</a> parmi les sorties des alentours. Consultez ses horaires et les conditions de visite avant de vous déplacer.</p></div></li>
+            <li><div><h5>Regarder ce qui se passe au village</h5><p>Les <a href="vie-associative.html#bibliotheque">ateliers de la bibliothèque</a> et les <a href="agenda.html">rendez-vous annoncés</a> peuvent compléter la journée. Leur tenue et leur accès sont à vérifier.</p></div></li>
+            <li><div><h5>Se retrouver autour d'une table</h5><p>Retrouvez les <a href="infos-pratiques.html#manger">restaurants, cafés et épicerie</a> du village et de la commune. Contactez l'adresse choisie pour confirmer l'ouverture et, si nécessaire, réserver.</p></div></li>
+          </ol>
+        </article>
+      </div>
+      <div class="sejour-programme-actions" hidden><button type="button" id="imprimer-programme">Imprimer ce programme</button><p>Gardez les étapes avec vous, sur papier ou en PDF.</p></div>
+    </div>
+  </div>
+</section>
 <div class="stats">
   <div class="container">
-    <div class="stat reveal"><div class="num" data-count="430">0</div><div class="label">mètres d'altitude</div></div>
-    <div class="stat reveal"><div class="num" data-count="6">0</div><div class="label">km de lac</div></div>
-    <div class="stat reveal"><div class="num" data-count="20">0</div><div class="label">min de l'A75</div></div>
-    <div class="stat reveal"><div class="num" data-count="135">0</div><div class="label">km de l'Orb jusqu'à la mer</div></div>
-    <div class="stat reveal"><div class="num" data-count="1181">0</div><div class="label">église des Templiers</div></div>
+    <div class="stat reveal"><div class="num" data-count="430">430</div><div class="label">mètres d'altitude</div></div>
+    <div class="stat reveal"><div class="num" data-count="6">6</div><div class="label">km de lac</div></div>
+    <div class="stat reveal"><div class="num" data-count="20">20</div><div class="label">min de l'A75</div></div>
+    <div class="stat reveal"><div class="num" data-count="135">135</div><div class="label">km de l'Orb jusqu'à la mer</div></div>
+    <div class="stat reveal"><div class="num" data-count="1181">1181</div><div class="label">église des Templiers</div></div>
   </div>
 </div>
 <section id="village">
@@ -172,6 +235,7 @@
   </div>
   <div class="more reveal"><a class="btn btn-primary" href="galerie.html">Voir toute la galerie &rarr;</a></div>
 </section>
+</main>
 <footer>
   <div class="ftitle">Ceilhes-et-Rocozels</div>
   <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>
@@ -184,6 +248,7 @@
 </footer>
 
 <button id="totop" aria-label="Retour en haut">↑</button>
-<script src="assets/script.js?v=297c2526"></script>
+<script src="assets/script.js"></script>
+<script src="assets/sejour.js"></script>
 </body>
 </html>

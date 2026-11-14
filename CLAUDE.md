@@ -9,14 +9,17 @@ dire ce qu'elle fait.
 
 ## Ce qu'est ce site
 
-Site **100 % statique** : du HTML écrit à la main, aucun framework, aucune
-étape de construction. C'est volontaire : un site de village doit pouvoir être
-repris dans cinq ans sans réinstaller quoi que ce soit.
+Site **100 % statique** : du HTML, aucun framework ni dépendance applicative.
+Node 22 sert aux scripts locaux et à la génération des annuaires lors de la
+publication. Les pages restent lisibles directement, même sans ces outils.
+C'est volontaire : un site de village doit pouvoir être repris dans cinq ans.
 
-19 pages, dont `le-lac.html`, `l-orb.html`, `randonnees.html`,
-`randonnees-vtt.html`, `patrimoine.html`, `nature.html`, `terroir.html`,
+Les pages comprennent `le-lac.html`, `l-orb.html`, `randonnees.html`,
+`patrimoine.html`, `nature.html`, `terroir.html`,
 `thermes-avene.html`, `hebergeurs.html`, `agenda.html`, `alentours.html`,
-`galerie.html`, `vie-associative.html`, `infos-pratiques.html`.
+`galerie.html`, `vie-associative.html`, `infos-pratiques.html` et les six
+accueils étrangers. `randonnees-vtt.html` est une redirection, pas un fichier.
+Le vérificateur affiche le nombre réel de pages présentes.
 
 ## Publication : plus jamais de glisser-déposer
 
@@ -24,13 +27,47 @@ repris dans cinq ans sans réinstaller quoi que ce soit.
 qu'une modification y arrive, le site en ligne se met à jour en une minute
 environ.
 
-```bash
-git add -A && git commit -m "ce que j'ai changé" && git push
-```
+Avant publication, suivre [README-DEPLOIEMENT.md](README-DEPLOIEMENT.md) :
+contrôler les pages, tester les parcours et vérifier les résultats GitHub
+avant fusion. Ne pas publier automatiquement une tâche de préparation ou
+de revue : une mise en ligne doit faire partie de la demande de Lou.
 
 Ce qu'il ne faut **plus** faire : glisser le dossier sur Netlify à la main.
 Sur le site voisin (esquirols.fr), c'est ainsi que la version en ligne s'est
 retrouvée avec un mois de retard sans que personne ne s'en aperçoive.
+
+### Contrôles avant publication
+
+Ces deux commandes vérifient les liens locaux, les ressources, les ancres,
+les données, les menus et la génération, puis les cas de test associés :
+
+```bash
+node scripts/verifier-site.mjs
+node --test tests/*.test.mjs
+```
+
+Le vérificateur est en lecture seule : il génère une copie temporaire,
+vérifie les empreintes CSS/JS et compare deux passages. Les erreurs rendent
+un code de sortie non nul. Il ne remplace pas les essais au navigateur.
+`python3 -m unittest discover -s tests -p '*.py' -v` vérifie les interactions avec Playwright et
+démarre son propre serveur ; installation expliquée dans le README.
+
+La tâche `.github/workflows/verification.yml` exécute ces contrôles sur les
+pull requests et les envois ordinaires sur `main`, sans secret ni écriture dans
+le dépôt. Rendre ses résultats requis avant fusion se configure dans les
+règles GitHub ; ce réglage n'est pas modifié par le workflow.
+
+Netlify exécute aussi `node scripts/verifier-site.mjs --publication` à la
+fin de sa commande de construction. Ce mode contrôle uniquement les fichiers
+et empreintes déjà générés : il ne relance pas les générateurs ni la copie
+temporaire. Un échec bloque ce déploiement, même après un envoi direct sur
+`main`. Les tests de comportement et de navigateur restent dans GitHub.
+
+Les pushes effectués avec `GITHUB_TOKEN` ne déclenchent pas ce workflow.
+La tâche `.github/workflows/agenda.yml` lance donc le vérificateur et les
+tests Node directement après la génération, avant son commit et son push.
+Un échec arrête la publication de l'agenda. Les essais au navigateur restent
+dans `verification.yml`.
 
 ## Les images : la règle à ne pas relâcher
 

@@ -30,10 +30,11 @@
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="inner">
+<a class="skip" href="#contenu">Skip to content</a>
 <div id="progress"></div>
-<nav id="nav">
+<nav id="nav" aria-label="Navigation principale">
   <a href="index.html" class="logo">Ceilhes<span>-et-</span>Rocozels</a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul id="menu">
     <li><a href="le-lac.html">Le lac</a></li>
     <li><a href="l-orb.html">L'Orb</a></li>
@@ -49,6 +50,7 @@
     <li><a href="infos-pratiques.html">Infos</a></li>
   </ul>
 </nav>
+<main id="contenu" tabindex="-1">
 <header class="subhero">
   <picture><source type="image/webp" srcset="images/leo/lac-ete-640.webp 640w, images/leo/lac-ete-1000.webp 1000w, images/leo/lac-ete-1600.webp 1600w" sizes="100vw"><img loading="lazy" decoding="async" width="1600" height="1067" class="subbg" src="images/leo/lac-ete.jpg" alt="" aria-hidden="true" onerror="this.remove()"></picture>
   <div class="kicker">Welcome</div>
@@ -59,8 +61,8 @@
 <section id="decouvrir">
   <div class="container">
     <div class="infos-grid">
-      <div class="info-box reveal"><h3>🏊 The lake & swimming</h3><p>A 6-km lake (lac d'Avène) for canoeing, paddle-boarding and quiet swims — plus Le Bouloc, the family pond at the village entrance, with playground and fishing pontoons. Its water is officially rated “good quality”. <a href="le-lac.html">The lake (in French) →</a></p></div>
-      <div class="info-box reveal"><h3>🏞 The Orb river</h3><p>Natural rock pools that stay cool all summer — the locals' favourite place to swim. <a href="l-orb.html">The river (in French) →</a></p></div>
+      <div class="info-box reveal"><h3>🏊 The lake & swimming</h3><p>The 6-km Lac d'Avène is a setting for canoeing and paddle-boarding. Le Bouloc, at the village entrance, has playgrounds, picnic areas and fishing pontoons. Swimming at Le Bouloc and the lake is not supervised. Check current water-quality results, local notices and permitted areas before entering the water; an older rating does not establish today's conditions. <a href="le-lac.html#baignade">The lake and official information (in French) →</a></p><p><small>Advice updated <time datetime="2026-11-14">14 November 2026</time>.</small></p></div>
+      <div class="info-box reveal"><h3>🏞 The Orb river</h3><p>The Orb runs through the village, with a ford and natural rock pools. Enjoy the river from the bank, especially with children. Water levels and currents can change after rain; clear, cool water does not guarantee safe swimming. Check local restrictions and conditions before entering. <a href="l-orb.html#repere-gue">The river and access information (in French) →</a></p></div>
       <div class="info-box reveal"><h3>🥾 Hiking & biking</h3><p>Marked trails from the village, and a long-distance path linking our lake to Lac du Salagou. <a href="randonnees.html">The trails (in French) →</a></p></div>
       <div class="info-box reveal"><h3>🧀 Eat local</h3><p>L'Esquirol, the village grocery-café: local farm produce, and a lovely terrace in summer. Around us, 80+ farms sell direct — cheese, honey, wine, Roquefort. <a href="terroir.html">Producers & markets (in French) →</a></p></div>
       <div class="info-box reveal"><h3>🏛 Heritage</h3><p>Templar churches, the Cistercian abbey of Sylvanès, the fortified city of La Couvertoirade on the Larzac plateau. <a href="patrimoine.html">Heritage (in French) →</a></p></div>
@@ -82,6 +84,7 @@
     <div class="callout reveal" style="margin-top:2rem"><p>🌍 The rest of this site is in French — your browser's built-in translation renders it very well, and every map, phone number and opening time works in any language.</p><p style="margin-top:.8rem"><a href="index.html" style="font-weight:600;color:var(--lac)">Back to the French site →</a> &nbsp;·&nbsp; <a href="de.html">Deutsch</a> · <a href="nl.html">Nederlands</a> · <a href="es.html">Español</a> · <a href="it.html">Italiano</a> · <a href="pt.html">Português</a></p></div>
   </div>
 </section>
+</main>
 <footer>
   <div class="ftitle">Ceilhes-et-Rocozels</div>
   <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>

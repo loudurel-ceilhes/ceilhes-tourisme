@@ -47,6 +47,15 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Outfit',sans-serif;color:var(--texte);background:var(--sable);overflow-x:hidden;line-height:1.7}
+[hidden]{display:none!important}
+main{min-width:0}
+main:focus{outline:none}
+.page-reperes{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1rem;padding:1.2rem 5vw;background:var(--brume)}
+.page-reperes a{display:flex;align-items:center;min-height:44px;padding:.45rem .9rem;color:var(--foret);font-weight:600;text-underline-offset:4px;border:1px solid var(--foret);border-radius:50px}
+.page-reperes a:hover{background:var(--foret);color:var(--blanc)}
+.hosts-contact a{display:inline-block;min-height:44px;padding:.5rem 0;color:var(--foret);font-weight:600;text-underline-offset:3px}
+.feature .illustration-note{position:absolute;bottom:.75rem;left:.75rem;right:.75rem;z-index:3;width:max-content;max-width:calc(100% - 1.5rem);padding:.35rem .65rem;background:var(--foret-fonce);color:var(--blanc);border-radius:6px;font-size:.75rem;line-height:1.5}
+[id]{scroll-margin-top:5rem}
 h1,h2,h3{font-family:'Cormorant Garamond',serif;letter-spacing:-.01em}
 /* ⚠️ `height:auto` est OBLIGATOIRE dès lors que les balises <img> portent des
    attributs width et height — ce qui est le cas partout, pour éviter que la
@@ -102,17 +111,20 @@ body.menu-open{overflow:hidden}
   nav ul#menu a{font-size:.69rem;letter-spacing:.4px}
 }
 @media(max-width:1024px){
-  .burger{display:flex}
-  nav ul#menu{position:fixed;inset:0;height:100dvh;width:100%;background:rgba(9,23,18,.97);backdrop-filter:blur(10px);flex-direction:column;align-items:center;justify-content:center;gap:1.35rem;transform:translateX(100%);transition:transform .4s var(--ease);overflow-y:auto;padding:5.5rem 1.5rem 2rem;margin:0}
+  #nav:not(.nav-ready){position:relative;flex-wrap:wrap;background:var(--foret-fonce);gap:1rem}
+  nav ul#menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:.5rem;margin:0}
+  nav.nav-ready .burger{display:flex}
+  nav.nav-ready ul#menu{display:flex;position:fixed;inset:0;height:100dvh;width:100%;background:var(--foret-fonce);flex-direction:column;align-items:center;justify-content:flex-start;gap:.65rem;transform:translateX(100%);visibility:hidden;transition:transform .4s var(--ease);overflow-y:auto;padding:5.5rem 1.5rem 2rem;margin:0}
+  nav.nav-ready ul#menu.open{visibility:visible}
   nav ul#menu.open{transform:translateX(0)}
-  nav ul#menu a{font-size:1.15rem;color:#fff;letter-spacing:1.5px;text-transform:uppercase}
+  nav ul#menu a{display:flex;align-items:center;min-height:44px;font-size:1rem;color:var(--blanc);letter-spacing:1px;text-transform:uppercase}
   nav ul#menu a::after{display:none}
 }
 
 /* ---------- HERO PHOTO (accueil) ---------- */
 .hero{position:relative;height:100vh;height:100svh;min-height:640px;overflow:hidden;background:var(--foret-fonce)}
 .hero .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:heroIn 2.2s var(--ease) backwards,kenburns 26s var(--ease) 2.2s infinite alternate;will-change:transform,filter}
-.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,23,18,.42) 0%,rgba(9,23,18,.08) 42%,rgba(9,23,18,.16) 62%,rgba(9,23,18,.62) 100%);z-index:2}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--nuit) 45%,transparent) 0%,color-mix(in srgb,var(--nuit) 56%,transparent) 42%,color-mix(in srgb,var(--nuit) 62%,transparent) 62%,color-mix(in srgb,var(--nuit) 70%,transparent) 100%);z-index:2}
 .hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:10;padding:0 1.5rem}
 .hero-content .surtitle{color:rgba(255,255,255,.92);text-transform:uppercase;letter-spacing:6px;font-size:.82rem;font-weight:600;opacity:0;animation:fadeUp 1.1s .25s var(--ease) forwards;text-shadow:0 1px 14px rgba(0,0,0,.45)}
 .hero-content h1{font-size:clamp(3rem,9vw,6.8rem);color:#fff;font-weight:700;line-height:1.02;margin:.7rem 0 .5rem;opacity:0;animation:fadeUp 1.1s .5s var(--ease) forwards;text-shadow:0 4px 40px rgba(0,0,0,.45)}
@@ -131,7 +143,7 @@ body.menu-open{overflow:hidden}
 
 /* boutons */
 .btn{padding:.95rem 2.3rem;border-radius:50px;text-decoration:none;font-weight:500;font-size:.95rem;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s;display:inline-block}
-.btn-primary{background:var(--ocre);color:#fff;box-shadow:0 10px 28px rgba(146,94,42,.42)}
+.btn-primary{background:var(--ocre);color:var(--foret-fonce);box-shadow:0 10px 28px rgba(146,94,42,.42)}
 .btn-primary:hover{background:#b57c3e}
 .btn-secondary{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
 .btn-secondary:hover{background:rgba(255,255,255,.28)}
@@ -147,9 +159,9 @@ section{padding:6.5rem 5vw}
 .section-head h2{font-size:clamp(2.2rem,5vw,3.6rem);color:var(--foret-fonce);font-weight:700;margin-top:.45rem;line-height:1.06}
 .section-head h2 em{font-style:italic;color:var(--ocre);font-weight:600}
 .section-head .line{width:64px;height:3px;background:var(--ocre);margin:1.15rem auto 0;border-radius:2px}
-.reveal{opacity:0;transform:translateY(42px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal{opacity:1;transform:none}
 .reveal.visible{opacity:1;transform:translateY(0)}
-.section-head.reveal .line{width:0;transition:width .9s var(--ease) .4s}
+.section-head.reveal .line{width:64px}
 .section-head.reveal.visible .line{width:64px}
 .delay-1{transition-delay:.12s}
 .delay-2{transition-delay:.24s}
@@ -326,13 +338,18 @@ section{padding:6.5rem 5vw}
 .gal-grid figure:hover img{transform:scale(1.05);opacity:1}
 .gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:2rem 1.1rem .85rem;background:linear-gradient(0deg,rgba(5,14,10,.88),transparent);color:#fff;font-size:.84rem;font-weight:300;opacity:0;transition:opacity .4s}
 .gal-grid figure:hover figcaption{opacity:1}
+.gal-grid figure:focus-within figcaption{opacity:1}
+.gal-grid figcaption{pointer-events:none}
+.gal-photo{display:block;color:inherit}
+.gal-photo:focus-visible{outline-offset:-5px}
 .gal-intro{max-width:760px;margin:0 auto 2.8rem;text-align:center;color:rgba(255,255,255,.85);font-weight:300}
 .gal-intro a{color:var(--or)}
 
 /* lightbox */
-.lightbox{position:fixed;inset:0;background:rgba(5,13,10,.96);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;flex-direction:column;padding:2.5rem}
-.lightbox.open{display:flex}
-.lightbox.open img{animation:lbIn .38s var(--ease)}
+.lightbox{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;border:0;background:var(--foret-fonce);z-index:2000;display:none;align-items:center;justify-content:center;flex-direction:column;padding:4rem 1rem;color:var(--blanc)}
+.lightbox[open]{display:flex}
+.lightbox[open] img{animation:lbIn .38s var(--ease)}
+.lightbox::backdrop{background:var(--foret-fonce)}
 @keyframes lbIn{from{opacity:0;transform:scale(.965)}}
 .lightbox img{max-width:92vw;max-height:80vh;border-radius:10px;box-shadow:0 30px 90px rgba(0,0,0,.65)}
 .lightbox .cap{color:#fff;margin-top:1.1rem;font-size:.95rem;font-weight:300;text-align:center;max-width:80ch}
@@ -391,7 +408,7 @@ footer small a{color:var(--lac-clair)}
 .prod-card .contact a:hover{color:var(--foret-fonce)}
 .prod-card .contact .sep{color:var(--ocre)}
 .zone-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--foret-fonce);margin:2.8rem 0 .3rem;text-align:center}
-.marches{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.6rem;background:var(--blanc);border-radius:var(--r);box-shadow:var(--ombre);padding:1.8rem 2rem;border-bottom:3px solid var(--ocre)}
+.marches{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.6rem;background:var(--blanc);border-radius:var(--r);box-shadow:var(--ombre);padding:1.8rem 2rem;border-bottom:3px solid var(--ocre)}
 .marches h5{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--foret-fonce);margin:0 0 .7rem}
 .marches ul{list-style:none;margin:0;padding:0}
 .marches li{font-size:.88rem;font-weight:300;padding:.28rem 0;border-bottom:1px dashed var(--pierre)}
@@ -447,7 +464,9 @@ footer small a{color:var(--lac-clair)}
 .profile-wrap .cap{text-align:center;font-size:.78rem;opacity:.6;margin-top:.6rem}
 
 /* chips + sentiers */
-.filter-chips,.cat-chips{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:2rem}
+.filter-chips,.cat-chips{display:none;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:2rem}
+.filter-chips.filters-ready,.cat-chips.filters-ready{display:flex}
+.filter-status{text-align:center;margin:-1rem auto 1.5rem;color:var(--foret)}
 .chip{border:1px solid #cdbfa6;background:var(--pierre);color:var(--foret);padding:.45rem 1.2rem;border-radius:50px;font-size:.82rem;font-weight:600;cursor:pointer;transition:.25s}
 .chip.active,.chip:hover{background:var(--foret);color:#fff;border-color:var(--foret)}
 .trail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.8rem}
@@ -478,7 +497,8 @@ footer small a{color:var(--lac-clair)}
 .reslist a span{font-size:.82rem;font-weight:300;display:block;margin-top:.2rem}
 
 /* onglets nature / saisons */
-.hab-tabs,.season-tabs{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.8rem}
+.hab-tabs,.season-tabs{display:none;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.8rem}
+.tabs-ready.hab-tabs,.tabs-ready.season-tabs{display:flex}
 .hab-tab,.season-tab{border:none;background:var(--pierre);color:var(--foret);padding:.55rem 1.3rem;border-radius:50px;font-size:.85rem;font-weight:600;cursor:pointer;transition:.25s}
 .hab-tab.active{background:var(--foret);color:#fff}
 .season-tab.active{background:var(--ocre);color:#fff}
@@ -488,7 +508,7 @@ footer small a{color:var(--lac-clair)}
 .species h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--foret-fonce);margin:.3rem 0 .15rem}
 .species .lat{font-style:italic;font-size:.73rem;opacity:.6;margin-bottom:.4rem}
 .species p{font-size:.82rem;font-weight:300}
-.hab-panel,.season-panel{display:none}
+.hab-panel,.season-panel{display:block;margin-bottom:1.5rem}
 .hab-panel.active{display:block}
 .season-panel{max-width:760px;margin:0 auto;background:var(--blanc);border-radius:16px;padding:1.6rem 1.8rem;box-shadow:var(--ombre)}
 .season-panel.active{display:block}
@@ -506,7 +526,7 @@ a.ev-card:hover{transform:translateX(4px);box-shadow:var(--ombre-h)}
 .ev-date{flex:0 0 60px;text-align:center;background:var(--foret-fonce);color:#fff;border-radius:12px;padding:.5rem 0}
 .ev-date .d{display:block;font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;line-height:1;color:var(--or)}
 .ev-date .m{display:block;font-size:.64rem;text-transform:uppercase;letter-spacing:1px;margin-top:.2rem}
-.ev-body{flex:1}
+.ev-body{flex:1;min-width:0;overflow-wrap:anywhere}
 .ev-tag{display:inline-block;font-size:.67rem;text-transform:uppercase;letter-spacing:1px;color:var(--lac);font-weight:600;margin-bottom:.15rem}
 .ev-body h3{font-family:'Cormorant Garamond',serif;font-size:1.28rem;color:var(--foret-fonce);line-height:1.15}
 .ev-go{font-size:.76rem;color:var(--ocre);font-weight:600}
@@ -568,3 +588,22 @@ a.ev-card:hover{transform:translateX(4px);box-shadow:var(--ombre-h)}
    ne sait pas s il fait 2 ou 30 km. */
 .ev-lieu{display:inline-block;margin-left:.5rem;font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--lac);vertical-align:middle}
 .agenda-vide{padding:1.2rem;background:var(--blanc);border-radius:14px;box-shadow:var(--ombre);font-size:.95rem}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .hero-content .surtitle,.hero-content h1,.hero-content p,.hero-content .cta{opacity:1;transform:none;filter:none}
+}
+@media(max-width:600px){
+  .lightbox img{max-height:65vh}
+  .lightbox .nav-btn{top:auto;bottom:1rem;transform:none;width:44px;height:44px}
+  .lightbox .cap{font-size:.85rem;margin-bottom:2rem}
+  .trail-grid,.tableau-peche{grid-template-columns:minmax(0,1fr)}
+}
+@media print{
+  #nav,#progress,#totop,.skip,.lightbox,.filter-chips,.cat-chips,.hab-tabs,.season-tabs{display:none!important}
+  .reveal,.hero-content{opacity:1!important;transform:none!important}
+  .hab-panel,.season-panel{display:block!important}
+  section{padding:1rem 0}
+  .subhero{min-height:0;padding:2rem 0}
+  .subhero .subbg{display:none}
+}

@@ -23,12 +23,11 @@
  *   node scripts/agenda.mjs --dry-run  affiche sans rien écrire
  */
 import { readFile, writeFile } from 'node:fs/promises'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import { join } from 'node:path'
 
 const RACINE = fileURLToPath(new URL('..', import.meta.url))
 const PAGE = join(RACINE, 'agenda.html')
-const SEC = 'ceilhes-et-rocozels'
 
 /** Jeu de données « fêtes et manifestations » de DATAtourisme. */
 const API =
@@ -102,29 +101,101 @@ function etiquette(nom) {
   return '📅 Animation'
 }
 
-/**
- * « 2026-08-07<->2026-08-07|… » → la prochaine date à venir, ou null.
- *
- * Subtilité : pour une période DÉJÀ COMMENCÉE mais pas terminée (une
- * exposition de tout l'été, par exemple), on ne renvoie pas sa date de début
- * — qui est passée et ferait afficher « 1er juillet » à quelqu'un qui lit la
- * page en août. On renvoie aujourd'hui : l'événement est en cours.
- */
-function prochaineDate(periodes, aujourdhui) {
-  if (!periodes) return null
-  const dates = []
-  for (const bloc of String(periodes).split('|')) {
-    const [debut, fin] = bloc.split('<->')
-    if (!debut) continue
-    const d = new Date(debut + 'T00:00:00Z')
-    const f = new Date((fin || debut) + 'T23:59:59Z')
-    if (Number.isNaN(d.getTime())) continue
-    // Un événement est « à venir » tant que sa date de FIN n'est pas passée.
-    if (f >= aujourdhui) dates.push(d < aujourdhui ? aujourdhui : d)
+/** Date civile à Ceilhes, indépendante du fuseau du serveur. */
+export function dateParis(instant = new Date()) {
+  const morceaux = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).formatToParts(instant)
+  const champ = (nom) => morceaux.find((p) => p.type === nom).value
+  return `${champ('year')}-${champ('month')}-${champ('day')}`
+}
+
+const dateValide = (v) => /^\d{4}-\d{2}-\d{2}$/.test(v) &&
+  !Number.isNaN(Date.parse(v)) && new Date(v).toISOString().slice(0, 10) === v
+
+/** Garde les vrais débuts/fins, y compris pour une manifestation en cours. */
+export function periodesAVenir(valeur, aujourdhui) {
+  if (!valeur) return []
+  return String(valeur).split('|').map((bloc) => {
+    const [debut, dernier] = bloc.split('<->')
+    const fin = dernier || debut
+    return { debut, fin }
+  }).filter(({ debut, fin }) => dateValide(debut) && dateValide(fin) &&
+    debut <= fin && fin >= aujourdhui)
+    .sort((a, b) => a.debut.localeCompare(b.debut) || a.fin.localeCompare(b.fin))
+}
+
+export function preparerEvenements(brut, aujourdhui = dateParis()) {
+  return brut.map((e) => {
+    const periodes = periodesAVenir(e.Periodes_regroupees, aujourdhui)
+    const periode = periodes[0]
+    return {
+      nom: joliTitre(e.Nom_du_POI), periodes,
+      debut: periode?.debut, fin: periode?.fin,
+      enCours: periode ? periode.debut < aujourdhui : false,
+      dateTri: periode ? (periode.debut < aujourdhui ? aujourdhui : periode.debut) : null,
+      description: e.Description, adresse: e.Adresse_postale,
+      commune: nomCommune(e.Code_postal_et_commune),
+      codePostal: String(e.Code_postal_et_commune || '').split('#')[0],
+      identifiant: e.Code_postal_et_commune, lat: e.Latitude, lon: e.Longitude,
+      createur: e.Createur_de_la_donnee, maj: e.Date_de_mise_a_jour,
+    }
+  }).filter((e) => e.debut && e.nom)
+    .sort((a, b) => a.dateTri.localeCompare(b.dateTri) || a.nom.localeCompare(b.nom, 'fr'))
+}
+
+const dateLisible = (iso) => new Intl.DateTimeFormat('fr-FR', {
+  day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+}).format(new Date(iso + 'T00:00:00Z'))
+
+export function rendreCartes(liste, avecLieu) {
+  return liste.map((e, index) => {
+    const date = new Date((e.enCours ? e.fin : e.debut) + 'T00:00:00Z')
+    const id = 'ev-' + e.nom.toLowerCase().normalize('NFD')
+      .replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '').slice(0, 48) + '-' + e.commune.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-') + '-' + index
+    const lieu = avecLieu ? `\n          <span class="ev-lieu">${echappe(e.commune)}</span>` : ''
+    // Toutes les occurrences doivent être lisibles : le filtre du week-end
+    // peut retenir une seconde date, et pas uniquement la première affichée.
+    const periodes = e.periodes.map(({ debut, fin }, occurrence) => {
+      const texte = occurrence === 0 && e.enCours
+        ? `En cours jusqu’au <time datetime="${fin}">${dateLisible(fin)}</time>`
+        : debut === fin
+          ? `Le <time datetime="${debut}">${dateLisible(debut)}</time>`
+          : `Du <time datetime="${debut}">${dateLisible(debut)}</time> au <time datetime="${fin}">${dateLisible(fin)}</time>`
+      return `<li class="ev-periode">${texte}</li>`
+    }).join('')
+    return `      <article class="ev-card reveal" id="${id}" data-commune="${echappe(e.commune)}" data-activite="${echappe(etiquette(e.nom))}" data-periodes="${echappe(JSON.stringify(e.periodes))}">
+        <div class="ev-date" aria-hidden="true"><span class="d">${date.getUTCDate()}</span><span class="m">${MOIS[date.getUTCMonth()]}</span></div>
+        <div class="ev-body">
+          <span class="ev-tag">${etiquette(e.nom)}</span>${lieu}
+          <h3>${echappe(e.nom)}</h3>
+          <ul class="ev-periodes" aria-label="Dates du rendez-vous">${periodes}</ul>
+          <p>${echappe(couper(e.description))}</p>
+        </div>
+      </article>`
+  }).join('\n')
+}
+
+export function donneesStructurees(liste) {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': liste.slice(0, 40).flatMap((e) => e.periodes.map(({ debut, fin }) => ({
+      '@type': 'Event', name: e.nom, startDate: debut, endDate: fin,
+      eventStatus: 'https://schema.org/EventScheduled',
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      description: couper(e.description, 300) || undefined,
+      url: 'https://ceilhes-tourisme.fr/agenda.html',
+      location: {
+        '@type': 'Place', name: e.adresse || e.commune,
+        address: {
+          '@type': 'PostalAddress', streetAddress: e.adresse || undefined,
+          addressLocality: e.commune, postalCode: e.codePostal, addressCountry: 'FR',
+        },
+        geo: e.lat && e.lon ? { '@type': 'GeoCoordinates', latitude: e.lat, longitude: e.lon } : undefined,
+      },
+    }))),
   }
-  if (!dates.length) return null
-  dates.sort((a, b) => a - b)
-  return dates[0]
 }
 
 const echappe = (s) =>
@@ -231,29 +302,9 @@ const nomCommune = (v) => String(v || '').split('#')[1] || ''
 
 async function main() {
   const essai = process.argv.includes('--dry-run')
-  const aujourdhui = new Date()
-  aujourdhui.setUTCHours(0, 0, 0, 0)
-
+  const aujourdhui = dateParis()
   const brut = await recuperer()
-
-  const evenements = brut
-    .map((e) => ({
-      nom: joliTitre(e.Nom_du_POI),
-      date: prochaineDate(e.Periodes_regroupees, aujourdhui),
-      description: e.Description,
-      adresse: e.Adresse_postale,
-      commune: nomCommune(e.Code_postal_et_commune),
-      codePostal: String(e.Code_postal_et_commune || '').split('#')[0],
-      identifiant: e.Code_postal_et_commune,
-      lat: e.Latitude,
-      lon: e.Longitude,
-      createur: e.Createur_de_la_donnee,
-      maj: e.Date_de_mise_a_jour,
-    }))
-    // On ne garde que ce qui est encore à venir : afficher une date passée
-    // ne sert à personne, et Google le signale comme une erreur.
-    .filter((e) => e.date && e.nom)
-    .sort((a, b) => a.date - b.date)
+  const evenements = preparerEvenements(brut, aujourdhui)
 
   const ici = evenements.filter((e) => e.identifiant === ICI)
   const alentours = evenements
@@ -265,66 +316,9 @@ async function main() {
     return
   }
 
-  /** Fabrique les cartes d'une liste. `avecLieu` : afficher la commune. */
-  const enCartes = (liste, avecLieu) =>
-    liste
-      .map((e) => {
-        const j = e.date.getUTCDate()
-        const m = MOIS[e.date.getUTCMonth()]
-        const id =
-          'ev-' +
-          e.nom
-            .toLowerCase()
-            .normalize('NFD')
-            .replace(/[̀-ͯ]/g, '')
-            .replace(/[^a-z0-9]+/g, '-')
-            .replace(/^-|-$/g, '')
-            .slice(0, 48)
-        // La commune n'est utile que pour les alentours : sur les cartes de
-        // Ceilhes elle serait répétée à chaque ligne pour rien.
-        const lieu = avecLieu ? `\n          <span class="ev-lieu">${echappe(e.commune)}</span>` : ''
-        return `      <article class="ev-card reveal" id="${id}">
-        <div class="ev-date"><span class="d">${j}</span><span class="m">${m}</span></div>
-        <div class="ev-body">
-          <span class="ev-tag">${etiquette(e.nom)}</span>${lieu}
-          <h3>${echappe(e.nom)}</h3>
-          <p>${echappe(couper(e.description))}</p>
-        </div>
-      </article>`
-      })
-      .join('\n')
-
-  const cartesIci = enCartes(ici, false)
-  const cartesAlentours = enCartes(alentours, true)
-
-  // Balisage Event : c'est lui qui peut faire apparaître les animations
-  // directement dans Google, avec leur date.
-  const jsonld = {
-    '@context': 'https://schema.org',
-    '@graph': [...ici, ...alentours].slice(0, 40).map((e) => ({
-      '@type': 'Event',
-      name: e.nom,
-      startDate: e.date.toISOString().slice(0, 10),
-      eventStatus: 'https://schema.org/EventScheduled',
-      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-      description: couper(e.description, 300) || undefined,
-      url: `https://ceilhes-tourisme.fr/${SEC}`.replace(`/${SEC}`, '/agenda.html'),
-      location: {
-        '@type': 'Place',
-        name: e.adresse || e.commune,
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: e.adresse || undefined,
-          addressLocality: e.commune,
-          postalCode: e.codePostal,
-          addressCountry: 'FR',
-        },
-        geo: e.lat && e.lon
-          ? { '@type': 'GeoCoordinates', latitude: e.lat, longitude: e.lon }
-          : undefined,
-      },
-    })),
-  }
+  const cartesIci = rendreCartes(ici, false)
+  const cartesAlentours = rendreCartes(alentours, true)
+  const jsonld = donneesStructurees([...ici, ...alentours])
 
   const maj = evenements.map((e) => e.maj).filter(Boolean).sort().pop()
   const createur = evenements.find((e) => e.createur)?.createur ?? 'Office de tourisme du Grand Orb'
@@ -334,7 +328,7 @@ async function main() {
   const blocAlentours = alentours.length
     ? `
     <h2 class="agenda-titre">Aux alentours</h2>
-    <p class="agenda-sous-titre">Les rendez-vous des villages voisins : ${communesAlentours.join(', ')}.</p>
+    <p class="agenda-sous-titre">Les rendez-vous des villages voisins : ${echappe(communesAlentours.join(', '))}.</p>
     <div class="agenda-list">
 ${cartesAlentours}
     </div>`
@@ -351,9 +345,9 @@ ${cartesIci || '      <p class="agenda-vide">Pas de rendez-vous annoncé au vill
       <strong>${echappe(createur)}</strong>, via
       <a href="https://www.datatourisme.fr/" rel="noopener" target="_blank">DATAtourisme</a>
       (Licence Ouverte 2.0)${maj ? ` — donnée mise à jour le ${maj.split('-').reverse().join('/')}` : ''}.
-      Cette page se met à jour toute seule, chaque jour.
+      Actualisation automatique prévue chaque jour. Confirmez les horaires auprès de l’organisateur.
     </p>
-    <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
+    <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>
   <!-- @/agenda -->`
 
   let html = await readFile(PAGE, 'utf8')
@@ -372,7 +366,7 @@ ${cartesIci || '      <p class="agenda-vide">Pas de rendez-vous annoncé au vill
   if (essai) {
     console.log(`${ici.length} au village, ${alentours.length} aux alentours :`)
     for (const e of [...ici, ...alentours]) {
-      console.log(`  ${e.date.toISOString().slice(0, 10)}  ${(e.commune||'').padEnd(22)} ${e.nom.slice(0,52)}`)
+      console.log(`  ${e.debut} → ${e.fin}  ${(e.commune||'').padEnd(22)} ${e.nom.slice(0,52)}`)
     }
     console.log('\n(--dry-run : agenda.html non modifié)')
     return
@@ -382,7 +376,7 @@ ${cartesIci || '      <p class="agenda-vide">Pas de rendez-vous annoncé au vill
   console.log(`agenda.html mis à jour — ${evenements.length} événement(s) à venir, source ${createur}`)
 }
 
-main().catch((e) => {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main().catch((e) => {
   console.error('Échec de la mise à jour de l’agenda :', e.message)
   process.exit(1)
 })

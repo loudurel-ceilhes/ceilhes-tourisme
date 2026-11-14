@@ -58,7 +58,7 @@ async function main() {
   }
 
   const bloc = `<!-- @marches — généré par scripts/marches.mjs depuis data/marches.json : ne pas modifier à la main, modifier le fichier de données -->
-    <h4 class="zone-title reveal">Les marchés du pays</h4>
+    <h4 id="marches-du-pays" class="zone-title reveal">Les marchés du pays</h4>
     <p class="zone-sub reveal">Où remplir son panier, jour par jour — et les belles soirées de producteurs de l'été.</p>
     <div class="marches reveal">
       <div class="marches-col">

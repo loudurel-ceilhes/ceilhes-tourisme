@@ -26,14 +26,15 @@
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0E241C" />
 <link rel="stylesheet" href="assets/leaflet/leaflet.css">
-<link rel="stylesheet" href="assets/styles.css?v=39135ee0">
+<link rel="stylesheet" href="assets/styles.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://ceilhes-tourisme.fr/"},{"@type":"ListItem","position":2,"name":"Aux alentours","item":"https://ceilhes-tourisme.fr/alentours.html"}]}</script>
 </head>
 <body class="inner">
+<a class="skip" href="#contenu">Aller au contenu</a>
 <div id="progress"></div>
-<nav id="nav">
+<nav id="nav" aria-label="Navigation principale">
   <a href="index.html" class="logo">Ceilhes<span>-et-</span>Rocozels</a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul id="menu">
     <li><a href="le-lac.html">Le lac</a></li>
     <li><a href="l-orb.html">L'Orb</a></li>
@@ -41,7 +42,7 @@
     <li><a href="nature.html">Nature</a></li>
     <li><a href="terroir.html">Terroir</a></li>
     <li><a href="patrimoine.html">Patrimoine</a></li>
-    <li><a href="alentours.html" class="active">Alentours</a></li>
+    <li><a href="alentours.html" class="active" aria-current="page">Alentours</a></li>
     <li><a href="agenda.html">Agenda</a></li>
     <li><a href="vie-associative.html">Vie du village</a></li>
     <li><a href="hebergeurs.html">Hébergeurs</a></li>
@@ -49,6 +50,7 @@
     <li><a href="infos-pratiques.html">Infos</a></li>
   </ul>
 </nav>
+<main id="contenu" tabindex="-1">
 <header class="subhero">
   <picture><source type="image/webp" srcset="images/leo/rayons-or-640.webp 640w, images/leo/rayons-or-1000.webp 1000w, images/leo/rayons-or-1600.webp 1600w" sizes="100vw"><img loading="lazy" decoding="async" width="1600" height="1067" class="subbg" src="images/leo/rayons-or.jpg" alt="" aria-hidden="true" onerror="var c=this.nextElementSibling;if(c&&c.className==='credit')c.remove();this.remove()"></picture>
   <div class="crumb"><a href="index.html">Accueil</a> › Alentours</div>
@@ -131,6 +133,7 @@
   <div class="quote"><p>Les plateaux, des causses aux monts d'Orb.</p></div>
   <span class="credit">Photo © Léo Daniel</span>
 </div>
+</main>
 <footer>
   <div class="ftitle">Ceilhes-et-Rocozels</div>
   <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>
@@ -144,6 +147,6 @@
 
 <button id="totop" aria-label="Retour en haut">↑</button>
 <script src="assets/leaflet/leaflet.js"></script>
-<script src="assets/script.js?v=297c2526"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>

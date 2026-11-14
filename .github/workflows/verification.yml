@@ -1,0 +1,42 @@
+name: Vérification du site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Vérifier les pages et la génération sans modifier le dépôt
+        run: node scripts/verifier-site.mjs
+      - name: Tester les règles de génération et de vérification
+        run: node --test tests/*.test.mjs
+
+  parcours:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer le navigateur de contrôle
+        run: |
+          python -m pip install playwright==1.58.0
+          python -m playwright install --with-deps chromium
+      - name: Tester les parcours sur ordinateur et téléphone
+        run: python3 -m unittest discover -s tests -p '*.py' -v

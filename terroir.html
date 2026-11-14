@@ -25,21 +25,23 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0E241C" />
-<link rel="stylesheet" href="assets/styles.css?v=39135ee0">
+<link rel="stylesheet" href="assets/styles.css">
 <link rel="stylesheet" href="assets/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/producteurs.css">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://ceilhes-tourisme.fr/"},{"@type":"ListItem","position":2,"name":"Terroir & producteurs","item":"https://ceilhes-tourisme.fr/terroir.html"}]},{"@context":"https://schema.org","@type":"GroceryStore","name":"L'Esquirol","description":"Épicerie locavore, bar et restaurant — entreprise de l'économie sociale et solidaire à Ceilhes-et-Rocozels.","url":"https://esquirols.fr","telephone":"+33467977831","address":{"@type":"PostalAddress","streetAddress":"2 bis avenue du Lac","postalCode":"34260","addressLocality":"Ceilhes-et-Rocozels","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.80292,"longitude":3.11123}}]</script>
 </head>
 <body class="inner">
+<a class="skip" href="#contenu">Aller au contenu</a>
 <div id="progress"></div>
-<nav id="nav">
+<nav id="nav" aria-label="Navigation principale">
   <a href="index.html" class="logo">Ceilhes<span>-et-</span>Rocozels</a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul id="menu">
     <li><a href="le-lac.html">Le lac</a></li>
     <li><a href="l-orb.html">L'Orb</a></li>
     <li><a href="randonnees.html">Randonnées</a></li>
     <li><a href="nature.html">Nature</a></li>
-    <li><a href="terroir.html" class="active">Terroir</a></li>
+    <li><a href="terroir.html" class="active" aria-current="page">Terroir</a></li>
     <li><a href="patrimoine.html">Patrimoine</a></li>
     <li><a href="alentours.html">Alentours</a></li>
     <li><a href="agenda.html">Agenda</a></li>
@@ -49,6 +51,7 @@
     <li><a href="infos-pratiques.html">Infos</a></li>
   </ul>
 </nav>
+<main id="contenu" tabindex="-1">
 <header class="subhero">
   <picture><source type="image/webp" srcset="images/leo/poulain-640.webp 640w, images/leo/poulain-1000.webp 1000w, images/leo/poulain-1600.webp 1600w" sizes="100vw"><img loading="lazy" decoding="async" width="1600" height="1067" class="subbg" src="images/leo/poulain.jpg" alt="" aria-hidden="true" onerror="var c=this.nextElementSibling;if(c&&c.className==='credit')c.remove();this.remove()"></picture>
   <div class="crumb"><a href="index.html">Accueil</a> › Terroir</div>
@@ -58,6 +61,11 @@
   <p>Au cœur du village, L'Esquirol met à l'honneur les producteurs du pays. Fromages fermiers, miel des Monts d'Orb, viandes et charcuteries, vins et bières bio : le terroir du Haut-Languedoc en circuit court.</p>
   
 </header>
+<nav class="page-reperes" aria-label="Trouver les saveurs du pays">
+  <a href="#annuaire-producteurs">Chercher un producteur</a>
+  <a href="#marches-du-pays">Les marchés</a>
+  <a href="#terroir">L’épicerie du village</a>
+</nav>
 <section style="padding:3.4rem 5vw 0"><div class="container"><div class="photo-duo"><figure class="reveal"><picture><source type="image/webp" srcset="images/leo/brebis-pature-640.webp 640w, images/leo/brebis-pature-1000.webp 1000w, images/leo/brebis-pature-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="949" src="images/leo/brebis-pature.jpg" alt="Troupeau de brebis à la pâture, effet de filé" loading="lazy" onerror="this.closest('figure').remove()"></picture><figcaption>Brebis à la pâture — filé · © Léo Daniel</figcaption></figure><figure class="reveal"><picture><source type="image/webp" srcset="images/foins-1-640.webp 640w, images/foins-1-1000.webp 1000w, images/foins-1-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="1038" src="images/foins-1.jpg" alt="Bottes de foin dans les prés" loading="lazy" onerror="this.closest('figure').remove()"></picture><figcaption>Les foins · © Alain Dandonneau</figcaption></figure></div></div></section>
 
 <section id="terroir">
@@ -93,633 +101,906 @@
     <p class="reveal" style="text-align:center;font-weight:300;max-width:640px;margin:0 auto 1rem">Autour de Ceilhes, cinq pays de fermes : la haute vallée de l'Orb, les monts de Lacaune, le rougier de Camarès, le Lodévois et le Larzac. Plus de quatre-vingts adresses en vente directe — celles marquées 🛒 sont en rayon à L'Esquirol, pour goûter le territoire sans quitter le village.</p>
 
     <!-- @producteurs — généré par scripts/producteurs.mjs depuis data/producteurs.json : ne pas modifier à la main, modifier le fichier de données -->
-    <div id="carte-prod" class="reveal" aria-label="Carte des producteurs"></div>
-    <div class="map-legend reveal">
+    <div id="annuaire-producteurs">
+    <form class="prod-filtres" id="filtres-producteurs" role="search" aria-label="Rechercher un producteur" hidden>
+      <div class="prod-champs">
+        <label for="recherche-producteurs">Un nom, un produit, une commune
+          <input id="recherche-producteurs" name="recherche" type="search" placeholder="Ex. : fromage, Avène, La Part du Loup" autocomplete="off" aria-controls="resultats-producteurs">
+        </label>
+        <label for="produit-producteurs">Produit
+          <select id="produit-producteurs" name="produit" aria-controls="resultats-producteurs">
+            <option value="">Tous les produits</option>
+            <option value="laitages">Fromages &amp; laitages</option>
+            <option value="miel">Miel</option>
+            <option value="viandes">Viandes, œufs &amp; poissons</option>
+            <option value="vegetal">Fruits, légumes &amp; plantes</option>
+            <option value="douceurs">Pains &amp; douceurs</option>
+            <option value="boissons">Vins, bières &amp; boissons</option>
+          </select>
+        </label>
+        <label for="zone-producteurs">Autour de…
+          <select id="zone-producteurs" name="zone" aria-controls="resultats-producteurs">
+            <option value="">Tous les secteurs</option>
+            <option value="0">Autour du village</option>
+            <option value="1">Monts de Lacaune &amp; vallée de la Mare</option>
+            <option value="2">Sud Aveyron</option>
+            <option value="3">Lodévois &amp; Salagou</option>
+            <option value="4">Le Larzac</option>
+          </select>
+        </label>
+      </div>
+      <div class="prod-options">
+        <label class="prod-checkbox"><input type="checkbox" name="esquirol" id="esquirol-producteurs"> En rayon à L'Esquirol</label>
+        <button type="reset">Effacer les filtres</button>
+      </div>
+      <div class="prod-result-nav">
+        <p id="compte-producteurs" role="status" aria-live="polite" aria-atomic="true">82 producteurs</p>
+        <a href="#resultats-producteurs">Voir les fiches ↓</a>
+      </div>
+    </form>
+    <p class="prod-conseil">Avant de partir, appelez pour confirmer l'ouverture et les produits disponibles. Les horaires peuvent évoluer selon la saison.</p>
+    <p id="etat-carte-producteurs" class="prod-carte-note" role="status" hidden></p>
+    <div class="prod-carte" id="bloc-carte-producteurs" hidden>
+    <div id="carte-prod" aria-label="Carte des producteurs" role="region"></div>
+    <div class="map-legend">
       <span><span class="dot" style="background:#2e7d8c"></span> Autour du village</span>
       <span><span class="dot" style="background:#1e4234"></span> Monts de Lacaune &amp; vallée de la Mare</span>
       <span><span class="dot" style="background:#a04b3c"></span> Sud Aveyron</span>
       <span><span class="dot" style="background:#c98f4e"></span> Lodévois &amp; Salagou</span>
       <span><span class="dot" style="background:#6d597a"></span> Le Larzac</span>
     </div>
-    <p class="reveal" style="text-align:center;font-size:.8rem;font-weight:300;margin-top:.6rem">Chaque repère est placé sur sa commune — appelez avant de prendre la route, les fermes sont parfois à l'écart du village.</p>
+    <p class="prod-carte-note">Les repères peuvent être approximatifs ou écartés pour rester lisibles. Utilisez le lien « Itinéraire » de la fiche pour préparer votre trajet.</p>
+    </div>
     <script type="application/json" id="donnees-carte">{"couleurs":["#2e7d8c","#1e4234","#a04b3c","#c98f4e","#6d597a"],"reperes":[{"id":"gaec-de-la-source-de-l-orb","nom":"GAEC de la Source de l'Orb","picto":"🐄","lieu":"Romiguières","zone":0,"gps":[43.8192,3.2311],"approx":true,"tel":"06 30 76 43 76","site":"https://www.elevagebovin-sourceorb.com","maps":"https://www.google.com/maps/search/?api=1&query=Le%20Village%2C%2034650%20Romigui%C3%A8res"},{"id":"gaec-des-monts-et-des-sources","nom":"GAEC des Monts et des Sources","picto":"🐖","lieu":"Hameau de Vinas, Avène","zone":0,"gps":[43.7524,3.1387],"approx":true,"tel":"06 32 89 68 65","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Hameau%20de%20Vinas%2C%2034260%20Av%C3%A8ne"},{"id":"la-part-du-loup","nom":"La Part du Loup","picto":"🧀","lieu":"Hameau des Planes, Avène","zone":0,"gps":[43.7464,3.1344],"approx":true,"tel":"06 72 80 16 96","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Hameau%20des%20Planes%2C%2034260%20Av%C3%A8ne"},{"id":"les-cocottes-d-avene","nom":"Les Cocottes d'Avène","picto":"🥚","lieu":"Les Planes, Avène","zone":0,"gps":[43.7464,3.1344],"approx":true,"tel":"06 76 93 17 14","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Les%20Planes%2C%2034260%20Av%C3%A8ne"},{"id":"ferme-du-licidou","nom":"Ferme du Licidou","picto":"🐑","lieu":"Hameau de Vinas, Avène","zone":0,"gps":[43.7524,3.1387],"approx":true,"tel":"04 67 23 11 07","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Hameau%20de%20Vinas%2C%2034260%20Av%C3%A8ne"},{"id":"les-terrasses-de-baudes","nom":"Les Terrasses de Baudes","picto":"🌱","lieu":"Joncels","zone":0,"gps":[43.7383,3.1653],"approx":true,"tel":null,"site":null,"maps":"https://www.google.com/maps/search/?api=1&query=La%20Placette%2C%2034650%20Joncels"},{"id":"le-fournil-de-fonbine","nom":"Le Fournil de Fonbine","picto":"🥖","lieu":"Hameau de Fonbine, Joncels","zone":0,"gps":[43.7664,3.1383],"approx":true,"tel":"04 67 23 46 25","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Hameau%20de%20Fonbine%2C%2034260%20Av%C3%A8ne"},{"id":"le-pain-de-l-arche","nom":"Le pain de l'Arche","picto":"🔥","lieu":"La Borie Noble, Roqueredonde","zone":0,"gps":[43.78,3.2],"approx":true,"tel":null,"site":"https://archecom.org/la-borie-noble","maps":"https://www.google.com/maps/search/?api=1&query=La%20Borie%20Noble%2C%2034650%20Roqueredonde"},{"id":"domaine-de-gravezon-eric-pailles","nom":"Domaine de Gravezon — Éric Paillès","picto":"🍷","lieu":"Joncels","zone":0,"gps":[43.7383,3.1653],"approx":true,"tel":"06 82 15 62 78","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Le%20Village%2C%2034650%20Joncels"},{"id":"les-sorbets-deci-dela","nom":"Les Sorbets Deci Delà","picto":"🍧","lieu":"Lunas","zone":0,"gps":[43.7075,3.1942],"approx":true,"tel":null,"site":null,"maps":"https://www.google.com/maps/search/?api=1&query=1%20Grand%20Rue%2C%2034650%20Lunas-les-Ch%C3%A2teaux"},{"id":"miellerie-du-mas-valette-philippe-chevalier","nom":"Miellerie du Mas Valette — Philippe Chevalier","picto":"🍯","lieu":"Route de Ceilhes, Avène","zone":0,"gps":[43.7572,3.0992],"approx":true,"tel":"06 84 30 70 58","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Mas%20Valette%2C%20route%20de%20Ceilhes%2C%2034260%20Av%C3%A8ne"},{"id":"les-ruchers-des-monts-d-avene","nom":"Les Ruchers des Monts d'Avène","picto":"🐝","lieu":"Le Bousquet-d'Orb","zone":0,"gps":[43.6936,3.1672],"approx":true,"tel":"04 67 23 89 47","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=29%20bis%20route%20d'Av%C3%A8ne%2C%2034260%20Le%20Bousquet-d'Orb"},{"id":"safran-des-hauts-cantons","nom":"Safran des Hauts Cantons","picto":"🌸","lieu":"La Tour-sur-Orb","zone":0,"gps":[43.6533,3.1489],"approx":true,"tel":"04 67 95 41 69","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=8%20impasse%20des%20Causses%2C%2034260%20La%20Tour-sur-Orb"},{"id":"la-mandaline","nom":"La Mandaline","picto":"🥬","lieu":"Camplong","zone":0,"gps":[43.6736,3.1192],"approx":true,"tel":"06 35 95 65 89","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=7%20chemin%20de%20St-Sauveur%2C%2034260%20Camplong"},{"id":"brasserie-pompon","nom":"Brasserie Pompon","picto":"🍺","lieu":"Camplong","zone":0,"gps":[43.6736,3.1192],"approx":true,"tel":"06 20 02 24 10","site":"https://brasseriepompon.odoo.com","maps":"https://www.google.com/maps/search/?api=1&query=3%20rue%20du%20Pompon%2C%2034260%20Camplong"},{"id":"pisciculture-du-gravezon","nom":"Pisciculture du Gravezon","picto":"🐟","lieu":"Lunas","zone":0,"gps":[43.7075,3.1942],"approx":true,"tel":"04 67 23 88 98","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Route%20de%20Joncels%2C%2034650%20Lunas"},{"id":"domaine-de-clovallon","nom":"Domaine de Clovallon","picto":"🍇","lieu":"Bédarieux","zone":0,"gps":[43.6158,3.1589],"approx":true,"tel":"04 67 95 19 72","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Ancienne%20route%20de%20B%C3%A9ziers%2C%20BP%2021%2C%2034600%20B%C3%A9darieux"},{"id":"aupres-de-mon-cep","nom":"Auprès de mon Cep","picto":"🍷","lieu":"Les Aires","zone":0,"gps":[43.5814,3.1039],"approx":true,"tel":"06 20 08 24 90","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=1%20chemin%20de%20Bernaude%2C%2034600%20Les%20Aires"},{"id":"brasserie-des-aucels","nom":"Brasserie des Aucels","picto":"🍺","lieu":"Bédarieux","zone":0,"gps":[43.6158,3.1589],"approx":true,"tel":"04 30 40 64 85","site":"https://www.brasseriedesaucels.fr","maps":"https://www.google.com/maps/search/?api=1&query=84%20avenue%20Jean%20Jaur%C3%A8s%2C%2034600%20B%C3%A9darieux"},{"id":"charcuterie-millas","nom":"Charcuterie Millas","picto":"🥓","lieu":"Murat-sur-Vèbre (81)","zone":1,"gps":[43.6853,2.8539],"approx":true,"tel":"05 63 37 14 72","site":"https://charcuterie-millas.fr","maps":"https://www.google.com/maps/search/?api=1&query=Atelier-magasin%20%3A%204891%20route%20d'Albi%2C%20Moulin-Mage%2C%2081320%20Murat-sur-V%C3%A8bre"},{"id":"salaisons-ray-gal","nom":"Salaisons Ray-Gal","picto":"🍖","lieu":"Lacaune-les-Bains (81)","zone":1,"gps":[43.7086,2.6922],"approx":true,"tel":"05 63 37 02 54","site":"https://www.leraygaldelacaune.fr","maps":"https://www.google.com/maps/search/?api=1&query=25%20avenue%20du%20Montalet%2C%2081230%20Lacaune"},{"id":"maison-oberti","nom":"Maison Oberti","picto":"🐖","lieu":"Lacaune-les-Bains (81)","zone":1,"gps":[43.7086,2.6922],"approx":true,"tel":"05 63 37 00 21","site":"https://www.oberti.fr","maps":"https://www.google.com/maps/search/?api=1&query=Chemin%20de%20Granisse%2C%2081230%20Lacaune"},{"id":"moulin-du-louat","nom":"Moulin du Louat","picto":"🐄","lieu":"Murat-sur-Vèbre (81)","zone":1,"gps":[43.7149,2.8101],"approx":true,"tel":"06 87 91 33 97","site":"https://www.moulindelouat.fr","maps":"https://www.google.com/maps/search/?api=1&query=Le%20Louat%2C%2081320%20Murat-sur-V%C3%A8bre"},{"id":"fromagerie-lou-caoussarel","nom":"Fromagerie Lou Caoussarel","picto":"🐑","lieu":"Le Causse, Murat-sur-Vèbre (81)","zone":1,"gps":[43.6853,2.8539],"approx":true,"tel":"05 63 37 13 65","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Le%20Causse%2C%2081320%20Murat-sur-V%C3%A8bre"},{"id":"gaec-du-rouquis","nom":"GAEC du Rouquis","picto":"🥛","lieu":"La Trivalle, Moulin-Mage (81)","zone":1,"gps":[43.7058,2.7661],"approx":true,"tel":"05 63 37 22 06","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=La%20Trivalle%2C%2081320%20Moulin-Mage"},{"id":"les-escargots-de-barre","nom":"Les Escargots de Barre","picto":"🐌","lieu":"Barre (81)","zone":1,"gps":[43.7519,2.8261],"approx":true,"tel":"06 08 16 54 13","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Rue%20de%20l'%C3%89glise%2C%2081320%20Barre"},{"id":"miellerie-le-gazel","nom":"Miellerie Le Gazel","picto":"🍯","lieu":"Senaux (81)","zone":1,"gps":[43.7586,2.6189],"approx":true,"tel":"05 63 37 58 19","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Les%20Farguelles%2C%2081530%20Senaux"},{"id":"le-jardin-de-celine","nom":"Le Jardin de Céline","picto":"🥕","lieu":"Saint-Gervais-sur-Mare","zone":1,"gps":[43.6528,3.0408],"approx":true,"tel":"06 86 60 94 50","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=61%20rue%20de%20Castres%2C%2034610%20Saint-Gervais-sur-Mare"},{"id":"la-ferme-du-deves","nom":"La Ferme du Devès","picto":"🐔","lieu":"Castanet-le-Haut","zone":1,"gps":[43.6719,2.9215],"approx":true,"tel":"06 82 69 24 21","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Le%20Dev%C3%A8s%2C%2034610%20Castanet-le-Haut"},{"id":"les-ruchers-de-l-orb","nom":"Les Ruchers de l'Orb","picto":"🐝","lieu":"Mons-la-Trivalle","zone":1,"gps":[43.5722,2.9561],"approx":true,"tel":"06 31 52 30 91","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=5%20place%20du%20Roujas%2C%2034390%20Mons-la-Trivalle"},{"id":"la-fermiere-de-sylvanes","nom":"La Fermière de Sylvanès","picto":"🥩","lieu":"Ramondedieu, Sylvanès (12)","zone":2,"gps":[43.8203,2.9398],"approx":true,"tel":"05 65 99 50 99","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Ramondedieu%2C%2012360%20Sylvan%C3%A8s"},{"id":"gaec-de-brioges","nom":"GAEC de Brioges","picto":"🐓","lieu":"Brioges, Mélagues (12)","zone":2,"gps":[43.7428,3.0418],"approx":true,"tel":"06 87 25 02 05","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Brioges%2C%2012360%20M%C3%A9lagues"},{"id":"le-jardin-du-fada","nom":"Le Jardin du Fada","picto":"🌰","lieu":"La Baume, Sylvanès (12)","zone":2,"gps":[43.8342,2.9592],"approx":true,"tel":"06 85 39 40 61","site":"http://lejardindufada.blogspot.com/","maps":"https://www.google.com/maps/search/?api=1&query=La%20Baume%2C%2012360%20Sylvan%C3%A8s"},{"id":"ferme-de-saint-pierre-d-issis","nom":"Ferme de Saint-Pierre d'Issis","picto":"🐑","lieu":"Camarès (12)","zone":2,"gps":[43.8233,2.8803],"approx":true,"tel":"07 71 26 76 09","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=175%20chemin%20de%20Saint-Pierre%20d'Issis%2C%2012360%20Camar%C3%A8s"},{"id":"la-ferme-de-galamans","nom":"La Ferme de Galamans","picto":"🧺","lieu":"Montlaur (12)","zone":2,"gps":[43.8439,2.8285],"approx":true,"tel":"06 74 14 39 94","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Galamans%2C%2012400%20Montlaur"},{"id":"les-paysans-du-rance","nom":"Les Paysans du Rance","picto":"🧑‍🌾","lieu":"Belmont-sur-Rance (12)","zone":2,"gps":[43.8178,2.7558],"approx":true,"tel":null,"site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Place%20Georges%20Mouls%2C%2012370%20Belmont-sur-Rance"},{"id":"pisciculture-les-sources-de-l-avance","nom":"Pisciculture Les Sources de l'Avance","picto":"🎣","lieu":"Brusque (12)","zone":2,"gps":[43.765,2.9484],"approx":true,"tel":null,"site":null,"maps":"https://www.google.com/maps/search/?api=1&query=772%20chemin%20de%20Mialet%2C%2012360%20Brusque"},{"id":"la-pimpanelle","nom":"La Pimpanelle","picto":"🍎","lieu":"Rebourguil (12)","zone":2,"gps":[43.8743,2.7696],"approx":true,"tel":"06 84 20 70 34","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Saint-Pierre%2C%2012400%20Rebourguil"},{"id":"domaine-de-bias","nom":"Domaine de Bias","picto":"🍷","lieu":"Vabres-l'Abbaye (12)","zone":2,"gps":[43.9256,2.8273],"approx":true,"tel":"06 77 17 02 03","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Bias%2C%2012400%20Vabres-l'Abbaye"},{"id":"roquefort-le-vieux-berger-maison-combes","nom":"Roquefort Le Vieux Berger — Maison Combes","picto":"🧀","lieu":"Roquefort-sur-Soulzon (12)","zone":2,"gps":[43.9767,2.9889],"approx":true,"tel":"05 65 59 91 48","site":"https://www.le-vieux-berger.com/","maps":"https://www.google.com/maps/search/?api=1&query=7%20avenue%20du%20Combalou%2C%2012250%20Roquefort-sur-Soulzon"},{"id":"roquefort-carles","nom":"Roquefort Carles","picto":"🧀","lieu":"Roquefort-sur-Soulzon (12)","zone":2,"gps":[43.9767,2.9889],"approx":true,"tel":"05 65 59 90 28","site":"https://www.roquefort-carles.fr/","maps":"https://www.google.com/maps/search/?api=1&query=6%20avenue%20de%20Lauras%2C%2012250%20Roquefort-sur-Soulzon"},{"id":"maison-gabriel-coulet","nom":"Maison Gabriel Coulet","picto":"🧀","lieu":"Roquefort-sur-Soulzon (12)","zone":2,"gps":[43.9767,2.9889],"approx":true,"tel":"05 65 59 24 27","site":"https://www.gabriel-coulet.fr/","maps":"https://www.google.com/maps/search/?api=1&query=3-7%20avenue%20de%20Lauras%2C%2012250%20Roquefort-sur-Soulzon%20(le%20num%C3%A9ro%20exact%20varie%20selon%20les%20sources%20%3A%20boutique%20cit%C3%A9e%20au%203%20et%20au%205-7)"},{"id":"la-ferme-d-alfred","nom":"La Ferme d'Alfred","picto":"🥖","lieu":"Mas de Bousquel, Montagnol (12)","zone":2,"gps":[43.8187,3.0379],"approx":true,"tel":"06 29 85 51 78","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Mas%20de%20Bousquel%2C%2012360%20Montagnol"},{"id":"le-fournil-paysan","nom":"Le Fournil Paysan","picto":"🌾","lieu":"Salelles, Saint-Izaire (12)","zone":2,"gps":[43.9749,2.7215],"approx":true,"tel":"07 89 33 55 76","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Salelles%2C%2012480%20Saint-Izaire"},{"id":"maison-bourrel","nom":"Maison Bourrel","picto":"🍪","lieu":"Belmont-sur-Rance (12)","zone":2,"gps":[43.8178,2.7558],"approx":true,"tel":"06 81 08 79 20","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=81%20avenue%20de%20Saint-Affrique%2C%2012370%20Belmont-sur-Rance%20(une%20source"},{"id":"l-arc-en-miel","nom":"L'Arc en Miel","picto":"🐝","lieu":"Saint-Affrique (12)","zone":2,"gps":[43.9592,2.8872],"approx":true,"tel":"06 29 78 03 00","site":"https://www.larcenmiel.fr/","maps":"https://www.google.com/maps/search/?api=1&query=633%20chemin%20du%20Mas%20de%20Rouby%20(Mas%20de%20Rouby%20Haut)%2C%2012400%20Saint-Affrique"},{"id":"fromagerie-du-mas","nom":"Fromagerie du Mas","picto":"🧀","lieu":"Mas de Babeau, Rebourguil (12)","zone":2,"gps":[43.8682,2.7395],"approx":true,"tel":"06 74 42 06 04","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Mas%20de%20Babeau%2C%2012400%20Rebourguil%20(le%20long%20de%20la%20D999)"},{"id":"la-ferme-aux-12-chevres","nom":"La Ferme aux 12 Chèvres","picto":"🍦","lieu":"Hucaloup, Laval-Roquecézière (12)","zone":2,"gps":[43.8291,2.6236],"approx":true,"tel":"06 42 83 48 30","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Hucaloup%2C%2012380%20Laval-Roquec%C3%A9zi%C3%A8re"},{"id":"gaec-du-ramonetage","nom":"GAEC du Ramonetage","picto":"🐑","lieu":"Camarès (12)","zone":2,"gps":[43.8233,2.8803],"approx":true,"tel":"06 77 42 07 11","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=2%20route%20d'Andabre%2C%20Camplong%2C%2012360%20Camar%C3%A8s"},{"id":"gaec-blondes-aubrac","nom":"GAEC Blondes Aubrac","picto":"🐂","lieu":"Mounes-Prohencoux (12)","zone":2,"gps":[43.7867,2.8533],"approx":true,"tel":"05 65 49 55 45","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Le%20Bourg%2C%2012370%20Moun%C3%A8s-Prohencoux"},{"id":"gaec-de-puech-aussel","nom":"GAEC de Puech Aussel","picto":"🐄","lieu":"Montlaur (12)","zone":2,"gps":[43.88,2.8344],"approx":true,"tel":"05 65 99 86 04","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Puech%20Aussel%2C%2012400%20Montlaur"},{"id":"la-ferme-de-saint-louis","nom":"La Ferme de Saint Louis","picto":"🐖","lieu":"La Prade, Belmont-sur-Rance (12)","zone":2,"gps":[43.8053,2.7344],"approx":true,"tel":"05 65 99 98 69","site":"http://www.charcuteriestlouis.com/","maps":"https://www.google.com/maps/search/?api=1&query=La%20Prade%2C%2012370%20Belmont-sur-Rance"},{"id":"gaec-de-la-vallee-de-lauroux","nom":"GAEC de la Vallée de Lauroux","picto":"🐐","lieu":"Lauroux","zone":3,"gps":[43.7786,3.29],"approx":true,"tel":"04 67 96 43 45","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Chemin%20des%20Cailles%2C%2034700%20Lauroux"},{"id":"pelardon-de-pegairolles","nom":"Pélardon de Pégairolles","picto":"🐐","lieu":"Pégairolles-de-l'Escalette","zone":3,"gps":[43.8028,3.3231],"approx":true,"tel":"06 19 24 09 31","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=La%20Bergerie%2C%20route%20du%20Cimeti%C3%A8re%2C%2034700%20P%C3%A9gairolles-de-l'Escalette"},{"id":"confiserie-d-olives-de-saint-jean","nom":"Confiserie d'olives de Saint-Jean","picto":"🫒","lieu":"Saint-Jean-de-la-Blaquière","zone":3,"gps":[43.715,3.4228],"approx":true,"tel":"04 67 44 70 52","site":"https://www.olidoc.com/","maps":"https://www.google.com/maps/search/?api=1&query=Route%20de%20Lod%C3%A8ve%2C%2034700%20Saint-Jean-de-la-Blaqui%C3%A8re"},{"id":"miellerie-thierry-berthomieu","nom":"Miellerie Thierry Berthomieu","picto":"🍯","lieu":"Le Théronel, Fozières","zone":3,"gps":[43.7525,3.3578],"approx":true,"tel":"06 12 87 23 01","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Le%20Th%C3%A9rondel%20(route%20du%20Th%C3%A9rondel)%2C%2034700%20Fozi%C3%A8res"},{"id":"ferme-de-germane","nom":"Ferme de Germane","picto":"🐂","lieu":"Plateau de Germane, Salagou","zone":3,"gps":[43.648,3.398],"approx":true,"tel":"06 31 71 29 64","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Plateau%20de%20Germane%20(si%C3%A8ge%20%3A%2049%20rue%20des%20Jasses)%2C%2034800%20Clermont-l'H%C3%A9rault"},{"id":"flor-de-salagou","nom":"Flor de Salagou","picto":"🍑","lieu":"Mourèze","zone":3,"gps":[43.62,3.3567],"approx":true,"tel":"06 84 76 38 70","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=49%20route%20de%20la%20Dolomie%2C%2034800%20Mour%C3%A8ze"},{"id":"mas-fabregous","nom":"Mas Fabregous","picto":"🍇","lieu":"Soubès","zone":3,"gps":[43.7667,3.3461],"approx":true,"tel":"06 03 63 58 67","site":"https://mas-fabregous.fr/","maps":"https://www.google.com/maps/search/?api=1&query=1772%20route%20d'Aubaygues%2C%2034700%20Soub%C3%A8s"},{"id":"les-vignerons-de-pegairolles","nom":"Les Vignerons de Pégairolles","picto":"🍷","lieu":"Pégairolles-de-l'Escalette","zone":3,"gps":[43.8028,3.3231],"approx":true,"tel":"04 67 44 09 93","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=34700%20P%C3%A9gairolles-de-l'Escalette"},{"id":"mas-des-chimeres","nom":"Mas des Chimères","picto":"🍇","lieu":"Octon","zone":3,"gps":[43.6542,3.3028],"approx":true,"tel":"04 67 96 22 70","site":"https://masdeschimeres.com/","maps":"https://www.google.com/maps/search/?api=1&query=26%20rue%20de%20la%20Vialle%2C%2034800%20Octon"},{"id":"domaine-de-malavieille","nom":"Domaine de Malavieille","picto":"🍷","lieu":"Mérifons","zone":3,"gps":[43.6321,3.2959],"approx":true,"tel":"04 67 96 34 67","site":"https://www.domainemalavieille.com/","maps":"https://www.google.com/maps/search/?api=1&query=Malavieille%2C%2034800%20M%C3%A9rifons"},{"id":"le-clos-du-serres","nom":"Le Clos du Serres","picto":"🍇","lieu":"Saint-Jean-de-la-Blaquière","zone":3,"gps":[43.715,3.4228],"approx":true,"tel":"06 88 35 90 07","site":"https://www.leclosduserres.fr/","maps":"https://www.google.com/maps/search/?api=1&query=Route%20du%20Viala%2C%20440%20Les%20Condamines%2C%2034700%20Saint-Jean-de-la-Blaqui%C3%A8re"},{"id":"mas-lasta","nom":"Mas Lasta","picto":"🍷","lieu":"Saint-Privat","zone":3,"gps":[43.7531,3.425],"approx":true,"tel":"06 86 97 77 45","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=6%20route%20Rouquette%2C%2034700%20Saint-Jean-de-la-Blaqui%C3%A8re%20(vignes%20%C3%A0%20Saint-Privat)"},{"id":"domaine-du-pas-de-l-escalette","nom":"Domaine du Pas de l'Escalette","picto":"🍇","lieu":"Poujols","zone":3,"gps":[43.7647,3.3242],"approx":true,"tel":"04 67 96 13 42","site":"https://pasdelescalette.com/","maps":"https://www.google.com/maps/search/?api=1&query=Le%20Champ%20de%20Peyrottes%2C%2034700%20Poujols"},{"id":"les-bergers-du-larzac","nom":"Les Bergers du Larzac","picto":"🐑","lieu":"La Cavalerie (12)","zone":4,"gps":[44.0097,3.16],"approx":true,"tel":"05 65 62 71 45","site":"https://www.fromages-bergersdularzac-aveyron.fr","maps":"https://www.google.com/maps/search/?api=1&query=45%20rue%20des%20Carbonni%C3%A8res%2C%20ZAE%20Millau%20Sud%2C%2012230%20La%20Cavalerie"},{"id":"gaec-du-causse","nom":"GAEC du Causse","picto":"🥛","lieu":"Le Caylar","zone":4,"gps":[43.8639,3.3197],"approx":true,"tel":"06 16 40 44 96","site":"https://www.fermeducausse.com","maps":"https://www.google.com/maps/search/?api=1&query=Route%20de%20Saint-Pierre%2C%2034520%20Le%20Caylar"},{"id":"gaec-des-traversiers","nom":"GAEC des Traversiers","picto":"🐑","lieu":"La Couvertoirade (12)","zone":4,"gps":[43.9167,3.3088],"approx":true,"tel":"06 82 16 30 04 (Marie)","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Les%20Traversiers%2C%2012230%20La%20Couvertoirade%20(%C3%A0%20500%20m%20de%20la%20cit%C3%A9%20templi%C3%A8re)"},{"id":"miel-safran-du-larzac","nom":"Miel & Safran du Larzac","picto":"🍯","lieu":"Sorbs","zone":4,"gps":[43.8933,3.4011],"approx":true,"tel":"06 14 82 14 58","site":"https://safranetmieldularzac.wordpress.com","maps":"https://www.google.com/maps/search/?api=1&query=Chemin%20de%20la%20Baraque%2C%2034520%20Sorbs"},{"id":"les-escargots-du-larzac","nom":"Les Escargots du Larzac","picto":"🐌","lieu":"La Cavalerie (12)","zone":4,"gps":[44.0097,3.16],"approx":true,"tel":"05 65 78 14 09","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=608%20avenue%20Simone%20Veil%2C%2012230%20La%20Cavalerie"},{"id":"la-brasserie-du-larzac","nom":"La Brasserie du Larzac","picto":"🍺","lieu":"La Blaquière, Larzac (12)","zone":4,"gps":[44.0541,3.1547],"approx":true,"tel":"07 81 12 69 01","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=La%20Blaqui%C3%A8re%2C%2012100%20Millau"},{"id":"ferme-du-mas-du-pre","nom":"Ferme du Mas du Pré","picto":"🐑","lieu":"Vallée du Durzon, Nant (12)","zone":4,"gps":[43.997,3.2852],"approx":true,"tel":"05 65 62 26 57","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Le%20Mas%20du%20Pr%C3%A9%2C%2012230%20Nant"},{"id":"gaec-des-liquisses","nom":"GAEC des Liquisses","picto":"🌾","lieu":"Les Liquisses, Nant (12)","zone":4,"gps":[44.0276,3.2523],"approx":true,"tel":"05 65 62 12 44","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Les%20Liquisses%20Basses%2C%2012230%20Nant"},{"id":"aromatiques-du-larzac","nom":"Aromatiques du Larzac","picto":"🌿","lieu":"Les Homs, Nant (12)","zone":4,"gps":[44.0603,3.2635],"approx":true,"tel":"05 65 62 22 56","site":"https://aromatiquesdularzac.com","maps":"https://www.google.com/maps/search/?api=1&query=Les%20Homs%2C%2012230%20Nant"},{"id":"pisciculture-du-mas-de-pommiers","nom":"Pisciculture du Mas de Pommiers","picto":"🐟","lieu":"Nant (12)","zone":4,"gps":[43.9908,3.2615],"approx":true,"tel":"05 65 62 14 39","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Mas%20de%20Pommiers%2C%2012230%20Nant"},{"id":"la-voie-lactee","nom":"La Voie Lactée","picto":"🍦","lieu":"Piquetalen, La Bastide-Pradines (12)","zone":4,"gps":[44.019,3.0472],"approx":true,"tel":"06 19 28 42 52","site":"https://www.glace-fermiere-aveyron.fr","maps":"https://www.google.com/maps/search/?api=1&query=Piquetalen%2C%2012490%20La%20Bastide-Pradines"},{"id":"ferme-du-frayssinet","nom":"Ferme du Frayssinet","picto":"🐄","lieu":"Sainte-Eulalie-de-Cernon (12)","zone":4,"gps":[43.982,3.1337],"approx":true,"tel":"05 65 62 76 19","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Le%20Frayssinet%2C%2012230%20Sainte-Eulalie-de-Cernon"},{"id":"l-agneau-des-cledelles","nom":"L'Agneau des Clédelles","picto":"🐑","lieu":"Bengouzal, Sainte-Eulalie-de-Cernon (12)","zone":4,"gps":[43.9637,3.1263],"approx":true,"tel":"05 65 62 56 99","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Bengouzal%2C%2012230%20Sainte-Eulalie-de-Cernon"},{"id":"gaec-de-la-doline","nom":"GAEC de la Doline","picto":"🐑","lieu":"La Jasse, L'Hospitalet-du-Larzac (12)","zone":4,"gps":[43.9742,3.1969],"approx":true,"tel":"06 75 06 83 05","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=La%20Jasse%2C%2012230%20L'Hospitalet-du-Larzac"},{"id":"gaec-des-licides","nom":"GAEC des Licides","picto":"🐓","lieu":"Campestre-et-Luc (30)","zone":4,"gps":[43.9536,3.4206],"approx":true,"tel":"06 69 45 71 89","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=Les%20Licides%2C%2030770%20Campestre-et-Luc"},{"id":"domaine-de-ferrussac","nom":"Domaine de Ferrussac","picto":"🍷","lieu":"La Vacquerie-et-Saint-Martin","zone":4,"gps":[43.7968,3.4946],"approx":true,"tel":"06 95 15 33 45","site":"https://ferrussac.fr","maps":"https://www.google.com/maps/search/?api=1&query=Ferrussac%2C%2034520%20La%20Vacquerie-et-Saint-Martin-de-Castries"},{"id":"boutique-bistrot-paysans","nom":"Boutique & Bistrot Paysans","picto":"🧺","lieu":"Place du Claux, Nant (12)","zone":4,"gps":[44.0219,3.3011],"approx":true,"tel":"05 65 47 51 33","site":null,"maps":"https://www.google.com/maps/search/?api=1&query=5%20place%20du%20Claux%2C%2012230%20Nant"}]}</script>
 
+    <div id="resultats-producteurs" tabindex="-1">
+    <div class="prod-zone" data-zone="0">
     <h4 class="zone-title reveal">Autour du village — haute vallée de l'Orb</h4>
     <p class="zone-sub reveal">Avène, Lunas, Joncels, Camplong, La Tour-sur-Orb, Bédarieux… les voisins immédiats.</p>
     <div class="prod-grid">
-      <div class="prod-card reveal" id="gaec-de-la-source-de-l-orb">
-        <div class="picto">🐄</div>
+      <article class="prod-card reveal" id="gaec-de-la-source-de-l-orb" data-produits="viandes" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐄</div>
         <h4>GAEC de la Source de l'Orb</h4>
         <div class="where">Romiguières</div>
         <p>Éleveurs de Limousines depuis 2001, aux sources mêmes de l'Orb : bœuf, veau (élevé sous la mère) et agneau en vente directe.</p>
         <div class="contact"><a href="tel:+33630764376">📞 06 30 76 43 76</a><span class="sep"> · </span><a href="https://www.elevagebovin-sourceorb.com" target="_blank" rel="noopener">🌐 elevagebovin-sourceorb.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Village%2C%2034650%20Romigui%C3%A8res" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Colis de bœuf et veau sous vide (dès 5 kg) : retrait à la ferme sur rendez-vous, livraison gratuite en remorque frigorifique, points de rencontre le long de l'A75 Béziers/Le Caylar, dépôt au magasin de producteurs de Portiragnes.</p>
+        <p class="prod-labels"><strong>Labels :</strong> Blason Prestige (gamme Label Rouge) · Bienvenue à la ferme</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="gaec-des-monts-et-des-sources">
-        <div class="picto">🐖</div>
+      </article>
+      <article class="prod-card reveal" id="gaec-des-monts-et-des-sources" data-produits="viandes" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐖</div>
         <h4>GAEC des Monts et des Sources</h4>
         <div class="where">Hameau de Vinas, Avène</div>
         <p>Porc, agneau et chevreau élevés en plein air, transformés à la ferme, sans additifs — vente directe.</p>
         <div class="contact"><a href="tel:+33632896865">📞 06 32 89 68 65</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hameau%20de%20Vinas%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique à la ferme : viandes de porc, agneau et chevreau élevés en plein air, transformées sur place sans additifs, plus fruits, légumes et dépôt d'une trentaine de producteurs locaux.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="la-part-du-loup">
-        <div class="picto">🧀</div>
+      </article>
+      <article class="prod-card reveal" id="la-part-du-loup" data-produits="laitages douceurs" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧀</div>
         <h4>La Part du Loup</h4>
         <div class="where">Hameau des Planes, Avène</div>
         <p>Fromages, yaourts et glaces au lait de brebis bio, fabriqués à la ferme sur les hauteurs d'Avène.</p>
         <div class="contact"><a href="tel:+33672801696">📞 06 72 80 16 96</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hameau%20des%20Planes%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme du lundi au samedi de 8h30 à 12h30 ; marchés du Caylar, d'Avène, de Pézenas et de La Couvertoirade ; aussi via AMAP et magasins.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <a class="portrait" href="https://esquirols.fr/journal-la-part-du-loup.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="les-cocottes-d-avene">
-        <div class="picto">🥚</div>
+      </article>
+      <article class="prod-card reveal" id="les-cocottes-d-avene" data-produits="viandes" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥚</div>
         <h4>Les Cocottes d'Avène</h4>
         <div class="where">Les Planes, Avène</div>
         <p>Les œufs fermiers de Laurence Rouquette : sur place à la demande, et en dépôt dans les commerces du pays — dont Ceilhes.</p>
         <div class="contact"><a href="tel:+33676931714">📞 06 76 93 17 14</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Planes%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Œufs vendus à la ferme sur demande et en dépôt : Le Local (Bédarieux), Chez Cécile (Camplong), L'Esquirol (Ceilhes-et-Rocozels), Les Jardins d'Émilien (Le Bousquet-d'Orb), marché du Caroux (Villemagne-l'Argentière).</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="ferme-du-licidou">
-        <div class="picto">🐑</div>
+      </article>
+      <article class="prod-card reveal" id="ferme-du-licidou" data-produits="laitages viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>Ferme du Licidou</h4>
         <div class="where">Hameau de Vinas, Avène</div>
         <p>190 brebis laitières : fromages fermiers au lait cru (Licidou, Picou, tomme La Vinette), yaourts et agneau. Vente à la ferme de décembre à juillet, au rythme de la lactation.</p>
         <div class="contact"><a href="tel:+33467231107">📞 04 67 23 11 07</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hameau%20de%20Vinas%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="les-terrasses-de-baudes">
-        <div class="picto">🌱</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Fromages et yaourts au lait cru de brebis fabriqués du 1er décembre au 31 juillet ; vente à la ferme sur rendez-vous et au marché du Bousquet-d'Orb le samedi matin ; agneau de Pâques sur commande.</p>
+        <p class="prod-labels"><strong>Labels :</strong> Bienvenue à la ferme</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="les-terrasses-de-baudes" data-produits="" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🌱</div>
         <h4>Les Terrasses de Baudes</h4>
         <div class="where">Joncels</div>
         <p>Une association qui fait revivre les terrasses de Joncels : agriculture respectueuse de l'environnement, ateliers, sorties nature et animations culturelles.</p>
         <div class="contact"><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Placette%2C%2034650%20Joncels" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="le-fournil-de-fonbine">
-        <div class="picto">🥖</div>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="le-fournil-de-fonbine" data-produits="douceurs" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥖</div>
         <h4>Le Fournil de Fonbine</h4>
         <div class="where">Hameau de Fonbine, Joncels</div>
         <p>Pain artisanal pétri et cuit au hameau, à retrouver sur les marchés du pays.</p>
         <div class="contact"><a href="tel:+33467234625">📞 04 67 23 46 25</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hameau%20de%20Fonbine%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Pains bio au levain (dont épeautre) et brioches cuits au four à bois traditionnel ; pizza végétarienne le vendredi soir ; fougasses tomates séchées-olives noires.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="le-pain-de-l-arche">
-        <div class="picto">🔥</div>
+      </article>
+      <article class="prod-card reveal" id="le-pain-de-l-arche" data-produits="douceurs" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🔥</div>
         <h4>Le pain de l'Arche</h4>
         <div class="where">La Borie Noble, Roqueredonde</div>
         <p>La communauté de l'Arche, fondée par Lanza del Vasto en 1948, cuit pains, pâtisseries et pizzas au feu de bois — vente le samedi après-midi à la Borie Noble.</p>
         <div class="contact"><a href="https://archecom.org/la-borie-noble" target="_blank" rel="noopener">🌐 archecom.org</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Borie%20Noble%2C%2034650%20Roqueredonde" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Pain au levain pétri à la main et cuit au four à bois (pain d'épeautre réputé), vente sur place à la communauté de l'Arche.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="domaine-de-gravezon-eric-pailles">
-        <div class="picto">🍷</div>
+      </article>
+      <article class="prod-card reveal" id="domaine-de-gravezon-eric-pailles" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍷</div>
         <h4>Domaine de Gravezon — Éric Paillès</h4>
         <div class="where">Joncels</div>
         <p>Sur 4 hectares de vignes héritées du début du XXᵉ siècle, Éric Paillès cultive des cépages oubliés (villard blanc, aramon, grenache…) identifiés avec l'INRA de Montpellier.</p>
         <div class="contact"><a href="tel:+33682156278">📞 06 82 15 62 78</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Village%2C%2034650%20Joncels" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="les-sorbets-deci-dela">
-        <div class="picto">🍧</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente au domaine (4 ha, cépages patrimoniaux : Villard blanc, Grenache, Aramon) ; distribué aux Caves Notre Dame et Caves des Poètes à Béziers.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="les-sorbets-deci-dela" data-produits="vegetal douceurs" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍧</div>
         <h4>Les Sorbets Deci Delà</h4>
         <div class="where">Lunas</div>
         <p>Sorbets artisanaux aux fruits et aux plantes aromatiques — ceux-là mêmes qu'on déguste en terrasse à l'Esquirol.</p>
         <div class="contact"><a href="https://www.google.com/maps/search/?api=1&amp;query=1%20Grand%20Rue%2C%2034650%20Lunas-les-Ch%C3%A2teaux" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Sorbets de fruits et de plantes aromatiques (cassis, groseille, mûre, griotte, violette) vendus sur les marchés locaux, notamment le marché estival de Lunas, depuis l'été 2021.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🍧 En terrasse à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="miellerie-du-mas-valette-philippe-chevalier">
-        <div class="picto">🍯</div>
+      </article>
+      <article class="prod-card reveal" id="miellerie-du-mas-valette-philippe-chevalier" data-produits="miel" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍯</div>
         <h4>Miellerie du Mas Valette — Philippe Chevalier</h4>
         <div class="where">Route de Ceilhes, Avène</div>
         <p>Apiculteur depuis plus de quarante ans, Philippe Chevalier récolte les miels des Monts d'Orb — propolis, pollen et bonbons au miel — à deux pas du village. Visite et achat sur rendez-vous.</p>
         <div class="contact"><a href="tel:+33684307058">📞 06 84 30 70 58</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Mas%20Valette%2C%20route%20de%20Ceilhes%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Miels (garrigue, fleurs, châtaignier, acacia, lavande), propolis et pollen ; vente principalement sur les marchés locaux et à la miellerie sur rendez-vous.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <a class="portrait" href="https://esquirols.fr/journal-miels-philippe-chevalier.html" target="_blank" rel="noopener">Choisir son pot →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="les-ruchers-des-monts-d-avene">
-        <div class="picto">🐝</div>
+      </article>
+      <article class="prod-card reveal" id="les-ruchers-des-monts-d-avene" data-produits="miel" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐝</div>
         <h4>Les Ruchers des Monts d'Avène</h4>
         <div class="where">Le Bousquet-d'Orb</div>
         <p>Miels de pays issus des ruchers installés sur les hauteurs des Monts d'Orb.</p>
         <div class="contact"><a href="tel:+33467238947">📞 04 67 23 89 47</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=29%20bis%20route%20d'Av%C3%A8ne%2C%2034260%20Le%20Bousquet-d'Orb" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="safran-des-hauts-cantons">
-        <div class="picto">🌸</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe tous les jours (appeler avant), visites du rucher sur rendez-vous, miels et produits dérivés aussi en dépôt dans plusieurs commerces locaux.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="safran-des-hauts-cantons" data-produits="miel vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🌸</div>
         <h4>Safran des Hauts Cantons</h4>
         <div class="where">La Tour-sur-Orb</div>
         <p>Safran, miel, plantes aromatiques, truffes et conserves artisanales. Vente sur place les mardis, jeudis et samedis matin.</p>
         <div class="contact"><a href="tel:+33467954169">📞 04 67 95 41 69</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=8%20impasse%20des%20Causses%2C%2034260%20La%20Tour-sur-Orb" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-mandaline">
-        <div class="picto">🥬</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Safran, miels (fleurs, châtaignier, miel au safran), confitures et gelées artisanales ; vente à la ferme, par correspondance et sur les marchés et salons ; visites de la safranière l'été (Mercredis au Pays).</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-mandaline" data-produits="vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥬</div>
         <h4>La Mandaline</h4>
         <div class="where">Camplong</div>
         <p>Maraîchage bio diversifié sur sol vivant, safran, fruits et petite pépinière. Retrait à la ferme, marché BioNat de Bédarieux le samedi matin.</p>
         <div class="contact"><a href="tel:+33635956589">📞 06 35 95 65 89</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=7%20chemin%20de%20St-Sauveur%2C%2034260%20Camplong" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="brasserie-pompon">
-        <div class="picto">🍺</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Légumes, safran, fruits et gelées bio : retrait à la ferme à Camplong, marché BioNat de Bédarieux le samedi matin, marché de Lamalou-les-Bains le mardi matin ; livraison gratuite entre Camplong et Bédarieux dès 15 €.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="brasserie-pompon" data-produits="boissons" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍺</div>
         <h4>Brasserie Pompon</h4>
         <div class="where">Camplong</div>
         <p>Bières artisanales brassées avec l'eau des sources granitiques de Camplong — et baptisées en hommage à Pompon, petit chien emblématique du village.</p>
         <div class="contact"><a href="tel:+33620022410">📞 06 20 02 24 10</a><span class="sep"> · </span><a href="https://brasseriepompon.odoo.com" target="_blank" rel="noopener">🌐 brasseriepompon.odoo.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=3%20rue%20du%20Pompon%2C%2034260%20Camplong" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Bières artisanales (blonde 4,3°, NEIPA) brassées à l'eau de source granitique de Camplong, en bouteilles et fûts de 20 L, avec location de tireuse.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="pisciculture-du-gravezon">
-        <div class="picto">🐟</div>
+      </article>
+      <article class="prod-card reveal" id="pisciculture-du-gravezon" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐟</div>
         <h4>Pisciculture du Gravezon</h4>
         <div class="where">Lunas</div>
         <p>Truites et saumons de fontaine élevés en eau vive depuis 1977 : vente au détail sur place, parcours de pêche et aire de pique-nique.</p>
         <div class="contact"><a href="tel:+33467238898">📞 04 67 23 88 98</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Route%20de%20Joncels%2C%2034650%20Lunas" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="domaine-de-clovallon">
-        <div class="picto">🍇</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Ouvert tous les jours sauf lundi, 9h30-19h, du 1er mars à la 3e semaine de septembre : parcours de pêche (truites payées au poids, dès 8,80 €/kg), vente de truites au détail sur place ou en livraison, aire de pique-nique.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="domaine-de-clovallon" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍇</div>
         <h4>Domaine de Clovallon</h4>
         <div class="where">Bédarieux</div>
         <p>Vins bio et biodynamie de la haute vallée de l'Orb, pionnier du pinot noir en Languedoc. Dégustation et vente à la propriété sur rendez-vous.</p>
         <div class="contact"><a href="tel:+33467951972">📞 04 67 95 19 72</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Ancienne%20route%20de%20B%C3%A9ziers%2C%20BP%2021%2C%2034600%20B%C3%A9darieux" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="aupres-de-mon-cep">
-        <div class="picto">🍷</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente au domaine sur rendez-vous ; caveau de dégustation à Faugères (route de Pézenas, près de la mairie) ouvert tous les jours sauf dimanche de 14h30 à 17h30.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB · Demeter</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="aupres-de-mon-cep" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍷</div>
         <h4>Auprès de mon Cep</h4>
         <div class="where">Les Aires</div>
         <p>Micro-domaine en biodynamie certifié Demeter : vins naturels sans sulfites ajoutés, vignes labourées au cheval.</p>
         <div class="contact"><a href="tel:+33620082490">📞 06 20 08 24 90</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=1%20chemin%20de%20Bernaude%2C%2034600%20Les%20Aires" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="brasserie-des-aucels">
-        <div class="picto">🍺</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vins nature sans sulfites ajoutés, vendanges manuelles, travail au cheval ; cuvées uniques chaque année, distribuées chez des cavistes de vin nature (Mains Rouges, etc.).</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB · Demeter · Nature &amp; Progrès</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="brasserie-des-aucels" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍺</div>
         <h4>Brasserie des Aucels</h4>
         <div class="where">Bédarieux</div>
         <p>Plus de trente bières bio, limonades et sodas artisanaux. Boutique à l'année, visites, dégustations et ateliers de brassage.</p>
         <div class="contact"><a href="tel:+33430406485">📞 04 30 40 64 85</a><span class="sep"> · </span><a href="https://www.brasseriedesaucels.fr" target="_blank" rel="noopener">🌐 brasseriedesaucels.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=84%20avenue%20Jean%20Jaur%C3%A8s%2C%2034600%20B%C3%A9darieux" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Bières bio, limonades et sodas artisanaux ; vente sur place en semaine (env. lun-mar 9h-18h, jeu 9h-19h, ven 9h-20h, fermé mer/sam/dim — à confirmer par téléphone) ; stages de brassage et location de tireuses.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+    </div>
     </div>
 
+    <div class="prod-zone" data-zone="1">
     <h4 class="zone-title reveal">Monts de Lacaune &amp; vallée de la Mare</h4>
     <p class="zone-sub reveal">Derrière la crête, côté Tarn : Murat-sur-Vèbre — la commune voisine — et Lacaune, pays des salaisons ; puis la vallée de la Mare et le Caroux.</p>
     <div class="prod-grid">
-      <div class="prod-card reveal" id="charcuterie-millas">
-        <div class="picto">🥓</div>
+      <article class="prod-card reveal" id="charcuterie-millas" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥓</div>
         <h4>Charcuterie Millas</h4>
         <div class="where">Murat-sur-Vèbre (81)</div>
         <p>Jambons IGP Lacaune, melsat et bougnette sans sel nitrité, avec les porcs de trois éleveurs à moins de 30 km. Boutiques à Lacaune et Moulin-Mage.</p>
         <div class="contact"><a href="tel:+33563371472">📞 05 63 37 14 72</a><span class="sep"> · </span><a href="https://charcuterie-millas.fr" target="_blank" rel="noopener">🌐 charcuterie-millas.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Atelier-magasin%20%3A%204891%20route%20d'Albi%2C%20Moulin-Mage%2C%2081320%20Murat-sur-V%C3%A8bre" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="salaisons-ray-gal">
-        <div class="picto">🍖</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Atelier de Moulin-Mage ouvert 9h-12h/15h-19h (fermé le dimanche) ; boutique de Lacaune mardi-samedi 9h-12h30/15h-19h et dimanche 9h-12h30.</p>
+        <p class="prod-labels"><strong>Labels :</strong> IGP Lacaune · Collège Culinaire de France</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="salaisons-ray-gal" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍖</div>
         <h4>Salaisons Ray-Gal</h4>
         <div class="where">Lacaune-les-Bains (81)</div>
         <p>Les salaisons de la famille Galiber, séchées à l'air libre. Boutique de vente directe — et distributeur automatique de charcuterie, pour les fringales tardives.</p>
         <div class="contact"><a href="tel:+33563370254">📞 05 63 37 02 54</a><span class="sep"> · </span><a href="https://www.leraygaldelacaune.fr" target="_blank" rel="noopener">🌐 leraygaldelacaune.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=25%20avenue%20du%20Montalet%2C%2081230%20Lacaune" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="maison-oberti">
-        <div class="picto">🐖</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe à l'atelier et commande en ligne.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="maison-oberti" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐖</div>
         <h4>Maison Oberti</h4>
         <div class="where">Lacaune-les-Bains (81)</div>
         <p>Maison familiale de salaisons depuis 1956 : jambons et saucissons de Lacaune, vente directe en boutique.</p>
         <div class="contact"><a href="tel:+33563370021">📞 05 63 37 00 21</a><span class="sep"> · </span><a href="https://www.oberti.fr" target="_blank" rel="noopener">🌐 oberti.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Chemin%20de%20Granisse%2C%2081230%20Lacaune" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="moulin-du-louat">
-        <div class="picto">🐄</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique à l'atelier avec circuit de visite audioguidé et dégustation, lundi-samedi 9h30-11h15 et 14h-17h45 ; vente par correspondance.</p>
+        <p class="prod-labels"><strong>Labels :</strong> IGP Lacaune</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="moulin-du-louat" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐄</div>
         <h4>Moulin du Louat</h4>
         <div class="where">Murat-sur-Vèbre (81)</div>
         <p>Bœuf, veau, porc, charcuteries et pommes de terre de Géraldine et Yannick Feliu : magasin à la ferme et livraisons en Aveyron et Hérault.</p>
         <div class="contact"><a href="tel:+33687913397">📞 06 87 91 33 97</a><span class="sep"> · </span><a href="https://www.moulindelouat.fr" target="_blank" rel="noopener">🌐 moulindelouat.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Louat%2C%2081320%20Murat-sur-V%C3%A8bre" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="fromagerie-lou-caoussarel">
-        <div class="picto">🐑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Magasin à la ferme ouvert tous les jours (charcuteries et conserves) ; bœuf, veau et porc en colis sur commande ; tournées de livraison en Aveyron et Hérault tous les deux mois.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="fromagerie-lou-caoussarel" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>Fromagerie Lou Caoussarel</h4>
         <div class="where">Le Causse, Murat-sur-Vèbre (81)</div>
         <p>Fromages de brebis au lait cru depuis 1990, sur les hauteurs des monts de Lacaune.</p>
         <div class="contact"><a href="tel:+33563371365">📞 05 63 37 13 65</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Causse%2C%2081320%20Murat-sur-V%C3%A8bre" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-du-rouquis">
-        <div class="picto">🥛</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme.</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-du-rouquis" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥛</div>
         <h4>GAEC du Rouquis</h4>
         <div class="where">La Trivalle, Moulin-Mage (81)</div>
         <p>Yaourts et caillés de brebis, nature ou vanille, de janvier à début août. À la ferme, et en dépôt à l'épicerie de Brusque.</p>
         <div class="contact"><a href="tel:+33563372206">📞 05 63 37 22 06</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Trivalle%2C%2081320%20Moulin-Mage" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="les-escargots-de-barre">
-        <div class="picto">🐌</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Yaourts et caillés de brebis en saison (janvier à début août), à la ferme, sur commande et au magasin Le Terroir à Lacaune.</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="les-escargots-de-barre" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐌</div>
         <h4>Les Escargots de Barre</h4>
         <div class="where">Barre (81)</div>
         <p>Gros-gris et petits-gris élevés en plein air par Jérôme Salvignol, frais et en conserves. Visites commentées gratuites.</p>
         <div class="contact"><a href="tel:+33608165413">📞 06 08 16 54 13</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Rue%20de%20l'%C3%89glise%2C%2081320%20Barre" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="miellerie-le-gazel">
-        <div class="picto">🍯</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme et sur les marchés (dont le marché gourmand de La Salvetat-sur-Agoût en été) ; dépôt chez Trésors des Monts de Lacaune.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="miellerie-le-gazel" data-produits="miel douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍯</div>
         <h4>Miellerie Le Gazel</h4>
         <div class="where">Senaux (81)</div>
         <p>Miels de montagne, confitures et pain d'épices. Sur rendez-vous à la miellerie, et au marché de Lacaune le dimanche matin d'avril à octobre.</p>
         <div class="contact"><a href="tel:+33563375819">📞 05 63 37 58 19</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Farguelles%2C%2081530%20Senaux" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="le-jardin-de-celine">
-        <div class="picto">🥕</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la miellerie sur rendez-vous ; marché de Lacaune le dimanche matin d'avril à l'automne.</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="le-jardin-de-celine" data-produits="vegetal douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥕</div>
         <h4>Le Jardin de Céline</h4>
         <div class="where">Saint-Gervais-sur-Mare</div>
         <p>Maraîchage bio en variétés anciennes, travaillé en traction animale : légumes, chutneys, veloutés et confitures. À la ferme et en paniers.</p>
         <div class="contact"><a href="tel:+33686609450">📞 06 86 60 94 50</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=61%20rue%20de%20Castres%2C%2034610%20Saint-Gervais-sur-Mare" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-ferme-du-deves">
-        <div class="picto">🐔</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> À la ferme et en paniers sur abonnement ; dépôt à L'Arbre à Pains (Saint-Gervais) mercredi et vendredi 17h-19h.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-ferme-du-deves" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐔</div>
         <h4>La Ferme du Devès</h4>
         <div class="where">Castanet-le-Haut</div>
         <p>Œufs et poulets bio à 880 mètres d'altitude, sur le GR 653 : ferme pédagogique, table d'accueil paysan et gîte d'étape.</p>
         <div class="contact"><a href="tel:+33682692421">📞 06 82 69 24 21</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Dev%C3%A8s%2C%2034610%20Castanet-le-Haut" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="les-ruchers-de-l-orb">
-        <div class="picto">🐝</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Œufs bio sur commande et poulets fermiers bio à la ferme (livraison possible) ; table paysanne toute l'année sur réservation.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB · Accueil Paysan</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="les-ruchers-de-l-orb" data-produits="miel" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐝</div>
         <h4>Les Ruchers de l'Orb</h4>
         <div class="where">Mons-la-Trivalle</div>
         <p>Les 110 ruches bio d'Agathe Thommeret transhument sur les flancs du Caroux. Vente à la ferme sur demande et en boutiques locales.</p>
         <div class="contact"><a href="tel:+33631523091">📞 06 31 52 30 91</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=5%20place%20du%20Roujas%2C%2034390%20Mons-la-Trivalle" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la miellerie sur demande ; miel, pollen frais et propolis en épiceries de la vallée et sur les marchés.</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+    </div>
     </div>
 
+    <div class="prod-zone" data-zone="2">
     <h4 class="zone-title reveal">Sud Aveyron — du rougier de Camarès au pays de Roquefort</h4>
     <p class="zone-sub reveal">Sylvanès, Camarès, Mélagues, Brusque, la vallée du Dourdou… et les caves de Roquefort à une petite heure.</p>
     <div class="prod-grid">
-      <div class="prod-card reveal" id="la-fermiere-de-sylvanes">
-        <div class="picto">🥩</div>
+      <article class="prod-card reveal" id="la-fermiere-de-sylvanes" data-produits="viandes vegetal" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥩</div>
         <h4>La Fermière de Sylvanès</h4>
         <div class="where">Ramondedieu, Sylvanès (12)</div>
         <p>Chez Patrice et Nadine Ramondenc : colis de viande sur commande, charcuterie fermière (pâtés, melsat, fricandeaux, saucisse à l'huile) et conserves cuisinées, en vente directe à la ferme.</p>
         <div class="contact"><a href="tel:+33565995099">📞 05 65 99 50 99</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Ramondedieu%2C%2012360%20Sylvan%C3%A8s" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique à la ferme, charcuterie artisanale (pâtés, melsat, boudin, saucisses, conserves) ; horaires indiqués lun-sam 9h-12h / 14h-18h (non vérifiés, appeler avant)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <a class="portrait" href="https://esquirols.fr/journal-fermiere-de-sylvanes.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="gaec-de-brioges">
-        <div class="picto">🐓</div>
+      </article>
+      <article class="prod-card reveal" id="gaec-de-brioges" data-produits="viandes" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐓</div>
         <h4>GAEC de Brioges</h4>
         <div class="where">Brioges, Mélagues (12)</div>
         <p>Volailles fermières et œufs de Sylvie et Jean-Louis Rivemale : à la ferme, en livraison et sur les marchés de Camarès et Saint-Affrique.</p>
         <div class="contact"><a href="tel:+33687250205">📞 06 87 25 02 05</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Brioges%2C%2012360%20M%C3%A9lagues" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme et livraison sur rendez-vous ; marché de Camarès le mercredi (toute l'année) et marché nocturne des producteurs de pays à Saint-Affrique ; dépôts Intermarché et Vival Camarès, commerces de Brusque</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="le-jardin-du-fada">
-        <div class="picto">🌰</div>
+      </article>
+      <article class="prod-card reveal" id="le-jardin-du-fada" data-produits="vegetal boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🌰</div>
         <h4>Le Jardin du Fada</h4>
         <div class="where">La Baume, Sylvanès (12)</div>
         <p>Huiles de noix et de tournesol, jus de pomme, crème et liqueur de châtaigne, vin de noix chez Daniel Fabre. Vente à la ferme tous les jours en milieu de journée.</p>
         <div class="contact"><a href="tel:+33685394061">📞 06 85 39 40 61</a><span class="sep"> · </span><a href="http://lejardindufada.blogspot.com/" target="_blank" rel="noopener">🌐 lejardindufada.blogspot.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Baume%2C%2012360%20Sylvan%C3%A8s" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="ferme-de-saint-pierre-d-issis">
-        <div class="picto">🐑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme toute l'année, tous les jours de 11h à 15h et sur rendez-vous ; huiles (noix, tournesol), jus de fruits, crème de châtaigne, liqueur de châtaigne, vin de noix ; service de pressage ; boutique en ligne via Cobeia</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="ferme-de-saint-pierre-d-issis" data-produits="laitages miel viandes vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>Ferme de Saint-Pierre d'Issis</h4>
         <div class="where">Camarès (12)</div>
         <p>Brebis laitières en zone Roquefort, polyculture : Roquefort, œufs, miel, agneau, lentilles et pois chiches au point de vente de la ferme. Visite gratuite le vendredi sur réservation.</p>
         <div class="contact"><a href="tel:+33771267609">📞 07 71 26 76 09</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=175%20chemin%20de%20Saint-Pierre%20d'Issis%2C%2012360%20Camar%C3%A8s" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-ferme-de-galamans">
-        <div class="picto">🧺</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique à la ferme : œufs, viande d'agneau, miel, lentilles et pois chiches (sans traitement) ; visite gratuite de la ferme chaque vendredi sur réservation</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Roquefort (lait livré à la coopérative La Pastourelle)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-ferme-de-galamans" data-produits="" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧺</div>
         <h4>La Ferme de Galamans</h4>
         <div class="where">Montlaur (12)</div>
         <p>420 brebis laitières en plein rougier de Camarès : visites avec dégustation et boutique de produits fermiers ouverte toute l'année.</p>
         <div class="contact"><a href="tel:+33674143994">📞 06 74 14 39 94</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Galamans%2C%2012400%20Montlaur" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="les-paysans-du-rance">
-        <div class="picto">🧑‍🌾</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique fermière ouverte toute l'année (vente directe de Roquefort La Pastourelle et produits de la ferme) ; visites de ferme avec dégustation</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Roquefort (via coopérative La Pastourelle)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="les-paysans-du-rance" data-produits="laitages viandes vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧑‍🌾</div>
         <h4>Les Paysans du Rance</h4>
         <div class="where">Belmont-sur-Rance (12)</div>
         <p>La boutique paysanne d'une soixantaine de fermes du Rance, aux trois quarts bio : fromages de brebis, viandes, légumes — mardi, jeudi et dimanche matin.</p>
         <div class="contact"><a href="https://www.google.com/maps/search/?api=1&amp;query=Place%20Georges%20Mouls%2C%2012370%20Belmont-sur-Rance" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="pisciculture-les-sources-de-l-avance">
-        <div class="picto">🎣</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique collective de producteurs et artisans : ouverture relevée mardi et jeudi 9h-12h30 (dimanche 9h-12h30 cité par certaines sources) ; légumes bio de saison, miel bio, pérail et fromages de brebis</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="pisciculture-les-sources-de-l-avance" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🎣</div>
         <h4>Pisciculture Les Sources de l'Avance</h4>
         <div class="where">Brusque (12)</div>
         <p>Truites arc-en-ciel et saumons de fontaine élevés en eau de source, vente de poisson frais sur place.</p>
         <div class="contact"><a href="https://www.google.com/maps/search/?api=1&amp;query=772%20chemin%20de%20Mialet%2C%2012360%20Brusque" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-pimpanelle">
-        <div class="picto">🍎</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe de truite arc-en-ciel et saumon de fontaine, dégustation sur place ; horaires non publiés</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-pimpanelle" data-produits="vegetal douceurs boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍎</div>
         <h4>La Pimpanelle</h4>
         <div class="where">Rebourguil (12)</div>
         <p>L'atelier coopératif d'une soixantaine de paysans du Sud-Aveyron : crème de châtaigne, confitures, jus et soupes — avec boutique de produits locaux attenante.</p>
         <div class="contact"><a href="tel:+33684207034">📞 06 84 20 70 34</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Saint-Pierre%2C%2012400%20Rebourguil" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="domaine-de-bias">
-        <div class="picto">🍷</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Atelier coopératif (SCOP) de transformation de fruits et légumes avec boutique attenante ; ouvert toute l'année sur rendez-vous ; compotes, confitures, jus, soupes, ratatouille et produits locaux</p>
+        <p class="prod-labels"><strong>Labels :</strong> Transformation certifiée bio CERTIPAQ FR-BIO-09</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="domaine-de-bias" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍷</div>
         <h4>Domaine de Bias</h4>
         <div class="where">Vabres-l'Abbaye (12)</div>
         <p>Dans la vallée du Dourdou, les jumeaux Alazard cultivent pinot noir, chardonnay et roussanne sur 6 hectares certifiés HVE. Vente directe au domaine.</p>
         <div class="contact"><a href="tel:+33677170203">📞 06 77 17 02 03</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Bias%2C%2012400%20Vabres-l'Abbaye" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="roquefort-le-vieux-berger-maison-combes">
-        <div class="picto">🧀</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Cave ouverte le vendredi 16h-21h de mai à octobre ; visites et dégustations sur rendez-vous téléphonique le reste de l'année ; vins IGP Aveyron blanc, rouge, rosé et Cuvée du Rouergue</p>
+        <p class="prod-labels"><strong>Labels :</strong> HVE (Haute Valeur Environnementale) · IGP Vins d'Aveyron</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="roquefort-le-vieux-berger-maison-combes" data-produits="laitages" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧀</div>
         <h4>Roquefort Le Vieux Berger — Maison Combes</h4>
         <div class="where">Roquefort-sur-Soulzon (12)</div>
         <p>Le plus petit fabricant de Roquefort, artisan familial depuis 1923. Visite libre gratuite en semaine avec dégustation, boutique au pied du Combalou.</p>
         <div class="contact"><a href="tel:+33565599148">📞 05 65 59 91 48</a><span class="sep"> · </span><a href="https://www.le-vieux-berger.com/" target="_blank" rel="noopener">🌐 le-vieux-berger.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=7%20avenue%20du%20Combalou%2C%2012250%20Roquefort-sur-Soulzon" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe lun-jeu 9h-12h15 / 13h30-17h30, ven 9h-12h15 / 13h30-16h30 ; fermé week-ends et jours fériés ; visites d'entreprise proposées via l'office de tourisme</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Roquefort · Entreprise du Patrimoine Vivant (depuis 2012)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <a class="portrait" href="https://esquirols.fr/journal-roquefort-vieux-berger.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="roquefort-carles">
-        <div class="picto">🧀</div>
+      </article>
+      <article class="prod-card reveal" id="roquefort-carles" data-produits="laitages douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧀</div>
         <h4>Roquefort Carles</h4>
         <div class="where">Roquefort-sur-Soulzon (12)</div>
         <p>Maison familiale depuis 1927 : Roquefort au lait cru ensemencé au moulage, avec un penicillium « maison » cultivé sur pains. Boutique au cœur du village, caves sur rendez-vous.</p>
         <div class="contact"><a href="tel:+33565599028">📞 05 65 59 90 28</a><span class="sep"> · </span><a href="https://www.roquefort-carles.fr/" target="_blank" rel="noopener">🌐 roquefort-carles.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=6%20avenue%20de%20Lauras%2C%2012250%20Roquefort-sur-Soulzon" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="maison-gabriel-coulet">
-        <div class="picto">🧀</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe à la boutique du lundi au vendredi 8h15-17h30, fermée samedi et dimanche ; découpe à la demande (gammes Convoitise et Élégance)</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Roquefort</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="maison-gabriel-coulet" data-produits="" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧀</div>
         <h4>Maison Gabriel Coulet</h4>
         <div class="where">Roquefort-sur-Soulzon (12)</div>
         <p>Cinq générations depuis 1872. Visite gratuite des caves et de leurs fleurines naturelles, dégustation offerte, tous les jours.</p>
         <div class="contact"><a href="tel:+33565592427">📞 05 65 59 24 27</a><span class="sep"> · </span><a href="https://www.gabriel-coulet.fr/" target="_blank" rel="noopener">🌐 gabriel-coulet.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=3-7%20avenue%20de%20Lauras%2C%2012250%20Roquefort-sur-Soulzon%20(le%20num%C3%A9ro%20exact%20varie%20selon%20les%20sources%20%3A%20boutique%20cit%C3%A9e%20au%203%20et%20au%205-7)" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-ferme-d-alfred">
-        <div class="picto">🥖</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique (plus de 150 produits régionaux) et visite gratuite des caves toute l'année selon saison, avec film et dégustation</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Roquefort</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-ferme-d-alfred" data-produits="douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥖</div>
         <h4>La Ferme d'Alfred</h4>
         <div class="where">Mas de Bousquel, Montagnol (12)</div>
         <p>Les pains au levain d'Alexia Amourdedieu — nature, seigle, petit épeautre — sur commande au fournil et en dépôt à Camarès.</p>
         <div class="contact"><a href="tel:+33629855178">📞 06 29 85 51 78</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Mas%20de%20Bousquel%2C%2012360%20Montagnol" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="le-fournil-paysan">
-        <div class="picto">🌾</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Pain au levain (nature, blanc, seigle, épeautre) toute l'année sur commande au fournil ; dépôt au Vival de Camarès</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="le-fournil-paysan" data-produits="douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🌾</div>
         <h4>Le Fournil Paysan</h4>
         <div class="where">Salelles, Saint-Izaire (12)</div>
         <p>Paysanne-boulangère bio : le blé de la ferme, moulu sur meule de pierre, cuit au levain et au feu de bois.</p>
         <div class="contact"><a href="tel:+33789335576">📞 07 89 33 55 76</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Salelles%2C%2012480%20Saint-Izaire" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="maison-bourrel">
-        <div class="picto">🍪</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Pain bio au levain naturel cuit au four à bois ; vente à la ferme lundi et jeudi 17h-20h30 ; sur commande par téléphone ou email ; dépôts Biocoop et épicerie Del Païs à Saint-Affrique, casiers réfrigérés du « local paysan » de Saint-Izaire</p>
+        <p class="prod-labels"><strong>Labels :</strong> Agriculture Biologique (blé cultivé en bio, farine moulue à la meule de pierre)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="maison-bourrel" data-produits="laitages vegetal douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍪</div>
         <h4>Maison Bourrel</h4>
         <div class="where">Belmont-sur-Rance (12)</div>
         <p>Biscuiterie artisanale faite main : macarons aux noix, craquelés au citron — et croquants au Roquefort. Boutique sur place.</p>
         <div class="contact"><a href="tel:+33681087920">📞 06 81 08 79 20</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=81%20avenue%20de%20Saint-Affrique%2C%2012370%20Belmont-sur-Rance%20(une%20source" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="l-arc-en-miel">
-        <div class="picto">🐝</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Biscuiterie artisanale, fabrication et cuisson sur place (macarons aux noix, craquelés citron, chips au Roquefort) ; horaires souples, appeler avant de passer</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="l-arc-en-miel" data-produits="miel" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐝</div>
         <h4>L'Arc en Miel</h4>
         <div class="where">Saint-Affrique (12)</div>
         <p>Apiculture bio au Mas de Rouby : visites immersives de la ferme d'abeilles, dégustation commentée d'une dizaine de miels, ateliers.</p>
         <div class="contact"><a href="tel:+33629780300">📞 06 29 78 03 00</a><span class="sep"> · </span><a href="https://www.larcenmiel.fr/" target="_blank" rel="noopener">🌐 larcenmiel.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=633%20chemin%20du%20Mas%20de%20Rouby%20(Mas%20de%20Rouby%20Haut)%2C%2012400%20Saint-Affrique" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="fromagerie-du-mas">
-        <div class="picto">🧀</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe à la miellerie et boutique en ligne ; visites immersives, ateliers cire et stages sur réservation ; miels de printemps, toutes fleurs, châtaignier, montagne, serpolet (300 ruches)</p>
+        <p class="prod-labels"><strong>Labels :</strong> Agriculture Biologique · Nature &amp; Progrès</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="fromagerie-du-mas" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧀</div>
         <h4>Fromagerie du Mas</h4>
         <div class="where">Mas de Babeau, Rebourguil (12)</div>
         <p>Les 320 brebis de Stéphan et Karine Mas : tomme, pérail, recuite et yaourts au lait cru. À la ferme du lundi au samedi, marché de Camarès l'été.</p>
         <div class="contact"><a href="tel:+33674420604">📞 06 74 42 06 04</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Mas%20de%20Babeau%2C%2012400%20Rebourguil%20(le%20long%20de%20la%20D999)" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-ferme-aux-12-chevres">
-        <div class="picto">🍦</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme tous les jours sauf dimanche (8 mois de l'année, pendant la lactation) ; marchés de Saint-Affrique et Camarès ; tomme, pérail, yaourts, recuite, caillé au lait cru de brebis Lacaune (320 brebis) ; également sur La Ruche qui dit Oui</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-ferme-aux-12-chevres" data-produits="laitages douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍦</div>
         <h4>La Ferme aux 12 Chèvres</h4>
         <div class="where">Hucaloup, Laval-Roquecézière (12)</div>
         <p>Les glaces à l'italienne au lait de chèvre de Virginie Stordeur — au marché de pays de Saint-Sernin-sur-Rance en été.</p>
         <div class="contact"><a href="tel:+33642834830">📞 06 42 83 48 30</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hucaloup%2C%2012380%20Laval-Roquec%C3%A9zi%C3%A8re" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-du-ramonetage">
-        <div class="picto">🐑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Glaces à l'italienne au lait de chèvre ; marché de pays de Saint-Sernin-sur-Rance en juillet-août ; disponible pour événements</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-du-ramonetage" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>GAEC du Ramonetage</h4>
         <div class="where">Camarès (12)</div>
         <p>L'agneau élevé sous la mère de la ferme de Camplong, en caissettes Label Rouge. Retrait à la ferme sur commande.</p>
         <div class="contact"><a href="tel:+33677420711">📞 06 77 42 07 11</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=2%20route%20d'Andabre%2C%20Camplong%2C%2012360%20Camar%C3%A8s" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-blondes-aubrac">
-        <div class="picto">🐂</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Caissettes d'agneau élevé sous la mère, sur commande par téléphone toute l'année ; retrait à la ferme (découpé et emballé) ou livraison sur rendez-vous</p>
+        <p class="prod-labels"><strong>Labels :</strong> Label Rouge « Lou Paillol » (agneau fermier)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-blondes-aubrac" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐂</div>
         <h4>GAEC Blondes Aubrac</h4>
         <div class="where">Mounes-Prohencoux (12)</div>
         <p>Bœuf de race Aubrac en caissettes, sur commande, avec livraison à domicile.</p>
         <div class="contact"><a href="tel:+33565495545">📞 05 65 49 55 45</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Bourg%2C%2012370%20Moun%C3%A8s-Prohencoux" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-de-puech-aussel">
-        <div class="picto">🐄</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Viande de bœuf de race Aubrac en vente sur commande avec livraison à domicile</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-de-puech-aussel" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐄</div>
         <h4>GAEC de Puech Aussel</h4>
         <div class="where">Montlaur (12)</div>
         <p>Veau de race Aubrac en caissettes, toute l'année à la ferme sur commande.</p>
         <div class="contact"><a href="tel:+33565998604">📞 05 65 99 86 04</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Puech%20Aussel%2C%2012400%20Montlaur" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-ferme-de-saint-louis">
-        <div class="picto">🐖</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Caissettes de viande et veaux de race Aubrac, vente sur commande, à la ferme et sur rendez-vous</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-ferme-de-saint-louis" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐖</div>
         <h4>La Ferme de Saint Louis</h4>
         <div class="where">La Prade, Belmont-sur-Rance (12)</div>
         <p>Porc élevé sur paille : charcuterie fermière, conserves cuisinées et caissettes, sans colorants ni conservateurs.</p>
         <div class="contact"><a href="tel:+33565999869">📞 05 65 99 98 69</a><span class="sep"> · </span><a href="http://www.charcuteriestlouis.com/" target="_blank" rel="noopener">🌐 charcuteriestlouis.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Prade%2C%2012370%20Belmont-sur-Rance" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme : mardi-mercredi 10h-12h / 14h-18h, jeudi-vendredi 9h-12h / 14h-18h, samedi 9h-12h ; porcs élevés sur paille (sans antibiotiques ni OGM), charcuterie, conserves cuisinées, caissettes sur commande ; également agneaux sous la mère</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+    </div>
     </div>
 
+    <div class="prod-zone" data-zone="3">
     <h4 class="zone-title reveal">Lodévois &amp; Salagou</h4>
     <p class="zone-sub reveal">Sous l'Escalette et autour du lac : Lauroux, Pégairolles, Saint-Jean-de-la-Blaquière, Octon — le pays des Terrasses du Larzac.</p>
     <div class="prod-grid">
-      <div class="prod-card reveal" id="gaec-de-la-vallee-de-lauroux">
-        <div class="picto">🐐</div>
+      <article class="prod-card reveal" id="gaec-de-la-vallee-de-lauroux" data-produits="laitages viandes" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐐</div>
         <h4>GAEC de la Vallée de Lauroux</h4>
         <div class="where">Lauroux</div>
         <p>Fromages de chèvre et agneau élevés en plein air, en bio, dans la vallée sous l'Escalette. Sur les marchés de Lodève et Pézenas.</p>
         <div class="contact"><a href="tel:+33467964345">📞 04 67 96 43 45</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Chemin%20des%20Cailles%2C%2034700%20Lauroux" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente au magasin de producteurs « Aux P'tits Producteurs » à Lodève ; marchés : Lodève (samedi), Sète (jeudi) selon Biolocal, Pézenas également cité par une autre source</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB (certifié Ecocert depuis 2007)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="pelardon-de-pegairolles">
-        <div class="picto">🐐</div>
+      </article>
+      <article class="prod-card reveal" id="pelardon-de-pegairolles" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐐</div>
         <h4>Pélardon de Pégairolles</h4>
         <div class="where">Pégairolles-de-l'Escalette</div>
         <p>Le Pélardon AOP au lait cru de la famille Chabrier, maintes fois médaillé — en boutiques à Lodève et au Caylar, et sur les marchés.</p>
         <div class="contact"><a href="tel:+33619240931">📞 06 19 24 09 31</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Bergerie%2C%20route%20du%20Cimeti%C3%A8re%2C%2034700%20P%C3%A9gairolles-de-l'Escalette" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="confiserie-d-olives-de-saint-jean">
-        <div class="picto">🫒</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe le vendredi matin devant la cave coopérative de Pégairolles ; en été le mardi soir au marché paysan de Lodève ; boutiques de Lodève et du Caylar, marchés régionaux</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Pélardon</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="confiserie-d-olives-de-saint-jean" data-produits="vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🫒</div>
         <h4>Confiserie d'olives de Saint-Jean</h4>
         <div class="where">Saint-Jean-de-la-Blaquière</div>
         <p>La coopérative (1947) confit la Lucques du Languedoc : olives au thym, à l'ail ou au fenouil, tapenades et huile — aujourd'hui unie au moulin L'Oli d'Oc de Clermont-l'Hérault.</p>
         <div class="contact"><a href="tel:+33467447052">📞 04 67 44 70 52</a><span class="sep"> · </span><a href="https://www.olidoc.com/" target="_blank" rel="noopener">🌐 olidoc.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Route%20de%20Lod%C3%A8ve%2C%2034700%20Saint-Jean-de-la-Blaqui%C3%A8re" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="miellerie-thierry-berthomieu">
-        <div class="picto">🍯</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique ouverte 9h-12h / 14h-18h, fermée le dimanche (selon Petit Futé) ; olives Lucques, escabèche, tapenades, huile</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Lucques du Languedoc</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="miellerie-thierry-berthomieu" data-produits="miel" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍯</div>
         <h4>Miellerie Thierry Berthomieu</h4>
         <div class="where">Le Théronel, Fozières</div>
         <p>Miels de garrigue certifiés bio depuis 2008, récoltés et vendus à la miellerie.</p>
         <div class="contact"><a href="tel:+33612872301">📞 06 12 87 23 01</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Th%C3%A9rondel%20(route%20du%20Th%C3%A9rondel)%2C%2034700%20Fozi%C3%A8res" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="ferme-de-germane">
-        <div class="picto">🐂</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe à la miellerie (miel, gelée royale)</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB (depuis 2008)</p>
+        <p class="prod-confirmation">Activité et coordonnées à confirmer avant de vous déplacer.</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="ferme-de-germane" data-produits="viandes vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐂</div>
         <h4>Ferme de Germane</h4>
         <div class="where">Plateau de Germane, Salagou</div>
         <p>Bœuf Galloway bio nourri à l'herbe, agneau de brebis transhumantes — et fraises, abricots et prunes bio. Vente à la ferme.</p>
         <div class="contact"><a href="tel:+33631712964">📞 06 31 71 29 64</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Plateau%20de%20Germane%20(si%C3%A8ge%20%3A%2049%20rue%20des%20Jasses)%2C%2034800%20Clermont-l'H%C3%A9rault" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="flor-de-salagou">
-        <div class="picto">🍑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente en colis (bœuf, demi-agneau minimum) ; agneau de fin février à mi-août ; fraises, abricots, prunes en saison ; point de vente relais cité à Gignac (Zone Cosmo, 04 67 66 38 84)</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB (conversion bio depuis 2016)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="flor-de-salagou" data-produits="vegetal douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍑</div>
         <h4>Flor de Salagou</h4>
         <div class="where">Mourèze</div>
         <p>Les confitures d'un Maître Confiturier de France : figue, abricot, gelée de thym, confits d'oignon. Dégustation et vente sur place.</p>
         <div class="contact"><a href="tel:+33684763870">📞 06 84 76 38 70</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=49%20route%20de%20la%20Dolomie%2C%2034800%20Mour%C3%A8ze" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="mas-fabregous">
-        <div class="picto">🍇</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique-dégustation dans une ancienne cave vinicole au cœur du cirque de Mourèze, ouverte 7j/7 de 13h30 à 18h30 (selon annuaires) ; buvette-snacking en saison</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="mas-fabregous" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍇</div>
         <h4>Mas Fabregous</h4>
         <div class="where">Soubès</div>
         <p>Vins bio du nord des Terrasses du Larzac, sur 37 parcelles entre 300 et 460 mètres d'altitude. Vente au domaine.</p>
         <div class="contact"><a href="tel:+33603635867">📞 06 03 63 58 67</a><span class="sep"> · </span><a href="https://mas-fabregous.fr/" target="_blank" rel="noopener">🌐 mas-fabregous.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=1772%20route%20d'Aubaygues%2C%2034700%20Soub%C3%A8s" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="les-vignerons-de-pegairolles">
-        <div class="picto">🍷</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Caveau : retrait de bouteilles et dégustations sur rendez-vous ; boutique en ligne sur le site</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="les-vignerons-de-pegairolles" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍷</div>
         <h4>Les Vignerons de Pégairolles</h4>
         <div class="where">Pégairolles-de-l'Escalette</div>
         <p>La plus ancienne et la plus petite cave coopérative de l'Hérault (1927) : Terrasses du Larzac cultivées en terrasses à murets de pierre sèche. Dégustations et balades vigneronnes.</p>
         <div class="contact"><a href="tel:+33467440993">📞 04 67 44 09 93</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=34700%20P%C3%A9gairolles-de-l'Escalette" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="mas-des-chimeres">
-        <div class="picto">🍇</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Caveau ouvert le vendredi : 8h-16h en hiver, 9h-17h en été ; autres jours sur rendez-vous</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="mas-des-chimeres" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍇</div>
         <h4>Mas des Chimères</h4>
         <div class="where">Octon</div>
         <p>Les vins bio de la famille Dardé, sur les terres rouges et les basaltes du Salagou. Caveau de vente au village.</p>
         <div class="contact"><a href="tel:+33467962270">📞 04 67 96 22 70</a><span class="sep"> · </span><a href="https://masdeschimeres.com/" target="_blank" rel="noopener">🌐 masdeschimeres.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=26%20rue%20de%20la%20Vialle%2C%2034800%20Octon" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="domaine-de-malavieille">
-        <div class="picto">🍷</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Caveau : du 1er janvier au 30 juin 2026, semaine 17h30-18h30 et samedi 15h-18h30 (fermé dimanche et fériés) ; du 1er juillet au 31 août 2026, tous les jours 10h-12h et 17h-19h</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="domaine-de-malavieille" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍷</div>
         <h4>Domaine de Malavieille</h4>
         <div class="where">Mérifons</div>
         <p>Bio depuis 2003, biodynamie Demeter depuis 2005 : une vingtaine de cépages sur grès rouges et basaltes. Caves sur rendez-vous.</p>
         <div class="contact"><a href="tel:+33467963467">📞 04 67 96 34 67</a><span class="sep"> · </span><a href="https://www.domainemalavieille.com/" target="_blank" rel="noopener">🌐 domainemalavieille.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Malavieille%2C%2034800%20M%C3%A9rifons" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="le-clos-du-serres">
-        <div class="picto">🍇</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente au domaine ; visites guidées des caves sur demande</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB · Demeter</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="le-clos-du-serres" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍇</div>
         <h4>Le Clos du Serres</h4>
         <div class="where">Saint-Jean-de-la-Blaquière</div>
         <p>Quinze hectares bio en AOP Terrasses du Larzac, de la roussanne au mourvèdre. Caveau au domaine.</p>
         <div class="contact"><a href="tel:+33688359007">📞 06 88 35 90 07</a><span class="sep"> · </span><a href="https://www.leclosduserres.fr/" target="_blank" rel="noopener">🌐 leclosduserres.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Route%20du%20Viala%2C%20440%20Les%20Condamines%2C%2034700%20Saint-Jean-de-la-Blaqui%C3%A8re" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="mas-lasta">
-        <div class="picto">🍷</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Dégustation et vente au caveau sur rendez-vous</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="mas-lasta" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍷</div>
         <h4>Mas Lasta</h4>
         <div class="where">Saint-Privat</div>
         <p>Vieilles vignes adossées au causse : vins bio « méthode nature », sans intrants ni sulfites, par Anne-Laure Sicard.</p>
         <div class="contact"><a href="tel:+33686977745">📞 06 86 97 77 45</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=6%20route%20Rouquette%2C%2034700%20Saint-Jean-de-la-Blaqui%C3%A8re%20(vignes%20%C3%A0%20Saint-Privat)" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="domaine-du-pas-de-l-escalette">
-        <div class="picto">🍇</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Accueil du lundi au samedi 8h-18h selon la fiche Hérault Tourisme — appeler avant</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="domaine-du-pas-de-l-escalette" data-produits="" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍇</div>
         <h4>Domaine du Pas de l'Escalette</h4>
         <div class="where">Poujols</div>
         <p>Vingt hectares en terrasses à 350 mètres, entre clapas, en bio et biodynamie — au pied du même col que la vallée de Lauroux.</p>
         <div class="contact"><a href="tel:+33467961342">📞 04 67 96 13 42</a><span class="sep"> · </span><a href="https://pasdelescalette.com/" target="_blank" rel="noopener">🌐 pasdelescalette.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Champ%20de%20Peyrottes%2C%2034700%20Poujols" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Dégustation uniquement sur rendez-vous : lundi, mardi, jeudi, vendredi 9h-12h30 et 14h-17h ; dégustation gratuite, groupes de 4 à 15 personnes</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+    </div>
     </div>
 
+    <div class="prod-zone" data-zone="4">
     <h4 class="zone-title reveal">Le Larzac</h4>
     <p class="zone-sub reveal">Du Caylar à Nant par La Couvertoirade : le causse des brebis, des templiers et des lavognes.</p>
     <div class="prod-grid">
-      <div class="prod-card reveal" id="les-bergers-du-larzac">
-        <div class="picto">🐑</div>
+      <article class="prod-card reveal" id="les-bergers-du-larzac" data-produits="laitages" data-esquirol="true" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>Les Bergers du Larzac</h4>
         <div class="where">La Cavalerie (12)</div>
         <p>Vingt producteurs du Larzac et du Lévézou réunis en coopérative : pérails, tommes et fromages de brebis, en conventionnel et en bio. Boutique de vente directe à La Cavalerie.</p>
         <div class="contact"><a href="tel:+33565627145">📞 05 65 62 71 45</a><span class="sep"> · </span><a href="https://www.fromages-bergersdularzac-aveyron.fr" target="_blank" rel="noopener">🌐 fromages-bergersdularzac-aveyron.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=45%20rue%20des%20Carbonni%C3%A8res%2C%20ZAE%20Millau%20Sud%2C%2012230%20La%20Cavalerie" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Magasin à la fromagerie : lun-ven 9h-19h, sam 9h-13h et 13h30-18h</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB (une partie de la gamme : 9 fromages bio sur ~26)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
         <a class="portrait" href="https://esquirols.fr/journal-fromage-brebis-larzac.html" target="_blank" rel="noopener">Lire l'article →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
-      </div>
-      <div class="prod-card reveal" id="gaec-du-causse">
-        <div class="picto">🥛</div>
+      </article>
+      <article class="prod-card reveal" id="gaec-du-causse" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🥛</div>
         <h4>GAEC du Causse</h4>
         <div class="where">Le Caylar</div>
         <p>Des vaches laitières sur le Larzac : lait, beurre cru, crème fraîche, yaourts et fromages transformés à la ferme. Vente le vendredi en fin d'après-midi.</p>
         <div class="contact"><a href="tel:+33616404496">📞 06 16 40 44 96</a><span class="sep"> · </span><a href="https://www.fermeducausse.com" target="_blank" rel="noopener">🌐 fermeducausse.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Route%20de%20Saint-Pierre%2C%2034520%20Le%20Caylar" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-des-traversiers">
-        <div class="picto">🐑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme le vendredi 16h-18h30 (et samedi matin 9h-12h selon sources) ; boutique paysanne au Caylar</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-des-traversiers" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>GAEC des Traversiers</h4>
         <div class="where">La Couvertoirade (12)</div>
         <p>Fromages et yaourts de brebis certifiés bio, à 500 mètres de la cité templière. Vente à la ferme.</p>
         <div class="contact"><a href="tel:+33682163004">📞 06 82 16 30 04 (Marie)</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Traversiers%2C%2012230%20La%20Couvertoirade%20(%C3%A0%20500%20m%20de%20la%20cit%C3%A9%20templi%C3%A8re)" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="miel-safran-du-larzac">
-        <div class="picto">🍯</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme, boutiques de producteurs locales, marché des producteurs de La Couvertoirade le jeudi soir (18h) en juillet-août</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="miel-safran-du-larzac" data-produits="miel vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍯</div>
         <h4>Miel &amp; Safran du Larzac</h4>
         <div class="where">Sorbs</div>
         <p>Guillaume Perier conduit 180 ruches en bio — miels de thym, bruyère, châtaignier — et cultive le safran. Sur rendez-vous et aux marchés d'été de La Couvertoirade.</p>
         <div class="contact"><a href="tel:+33614821458">📞 06 14 82 14 58</a><span class="sep"> · </span><a href="https://safranetmieldularzac.wordpress.com" target="_blank" rel="noopener">🌐 safranetmieldularzac.wordpress.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Chemin%20de%20la%20Baraque%2C%2034520%20Sorbs" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="les-escargots-du-larzac">
-        <div class="picto">🐌</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> À la ferme sur rendez-vous ; marchés de producteurs juillet-août : La Couvertoirade jeudi 18h-21h, Campestre-et-Luc vendredi 17h-20h ; revendeurs locaux</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="les-escargots-du-larzac" data-produits="laitages viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐌</div>
         <h4>Les Escargots du Larzac</h4>
         <div class="where">La Cavalerie (12)</div>
         <p>Gros-gris et bourgogne élevés en plein air sur le plateau, préparés persillés, au Roquefort ou au jambon de pays. À la ferme et sur les marchés.</p>
         <div class="contact"><a href="tel:+33565781409">📞 05 65 78 14 09</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=608%20avenue%20Simone%20Veil%2C%2012230%20La%20Cavalerie" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-brasserie-du-larzac">
-        <div class="picto">🍺</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme et sur les marchés de l'Aveyron ; escargots persillés, au Roquefort, au jambon de pays (par 12 ou 24)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-brasserie-du-larzac" data-produits="boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍺</div>
         <h4>La Brasserie du Larzac</h4>
         <div class="where">La Blaquière, Larzac (12)</div>
         <p>Bières bio non filtrées ni pasteurisées, brassées au cœur du plateau — une dizaine de références, vente à la brasserie et visite sur réservation.</p>
         <div class="contact"><a href="tel:+33781126901">📞 07 81 12 69 01</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Blaqui%C3%A8re%2C%2012100%20Millau" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="ferme-du-mas-du-pre">
-        <div class="picto">🐑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe et café à la brasserie : avril-juin et septembre le vendredi 16h-18h ; juillet-août mardi-samedi 15h-19h ; visites sur réservation</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="ferme-du-mas-du-pre" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>Ferme du Mas du Pré</h4>
         <div class="where">Vallée du Durzon, Nant (12)</div>
         <p>« Lou Fernandou » : pérails et fromages de brebis, tout le lait du troupeau transformé sur place. Point de vente à la ferme.</p>
         <div class="contact"><a href="tel:+33565622657">📞 05 65 62 26 57</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Mas%20du%20Pr%C3%A9%2C%2012230%20Nant" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-des-liquisses">
-        <div class="picto">🌾</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme tous les jours 17h-19h30 ; sur commande et dans les boutiques de producteurs locales</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-des-liquisses" data-produits="vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🌾</div>
         <h4>GAEC des Liquisses</h4>
         <div class="where">Les Liquisses, Nant (12)</div>
         <p>Les « Perles bio du Larzac » de la famille Brun : lentilles vertes, pois chiches, pois blonds et farines, cultivés depuis 1984.</p>
         <div class="contact"><a href="tel:+33565621244">📞 05 65 62 12 44</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Liquisses%20Basses%2C%2012230%20Nant" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="aromatiques-du-larzac">
-        <div class="picto">🌿</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme sur commande, par correspondance et dans les boutiques de producteurs (Les Produits du Larzac, bienmanger.com…)</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="aromatiques-du-larzac" data-produits="vegetal boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🌿</div>
         <h4>Aromatiques du Larzac</h4>
         <div class="where">Les Homs, Nant (12)</div>
         <p>Trente plantes aromatiques bio à la ferme des Homs : tisanes, vinaigres, hydrolats — et le fameux Pastis des Homs. Boutique à l'année, visite-dégustation l'été.</p>
         <div class="contact"><a href="tel:+33565622256">📞 05 65 62 22 56</a><span class="sep"> · </span><a href="https://aromatiquesdularzac.com" target="_blank" rel="noopener">🌐 aromatiquesdularzac.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Homs%2C%2012230%20Nant" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="pisciculture-du-mas-de-pommiers">
-        <div class="picto">🐟</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique à la ferme ouverte toute l'année (nov-avril : lun-ven 10h-12h30 / 14h-18h) ; en été visite-dégustation gratuite le vendredi 16h sur réservation ; sentier de visite libre de 550 m</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="pisciculture-du-mas-de-pommiers" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐟</div>
         <h4>Pisciculture du Mas de Pommiers</h4>
         <div class="where">Nant (12)</div>
         <p>Truites arc-en-ciel et fario bio, saumon de fontaine, en eau courante depuis 2006. À la ferme et sur les marchés de Millau et La Cavalerie.</p>
         <div class="contact"><a href="tel:+33565621439">📞 05 65 62 14 39</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Mas%20de%20Pommiers%2C%2012230%20Nant" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="la-voie-lactee">
-        <div class="picto">🍦</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe à la pisciculture ; présent au Marché des Pays de l'Aveyron</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="la-voie-lactee" data-produits="laitages douceurs" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍦</div>
         <h4>La Voie Lactée</h4>
         <div class="where">Piquetalen, La Bastide-Pradines (12)</div>
         <p>Les glaces fermières bio de la famille Arnal, au lait des brebis de la ferme.</p>
         <div class="contact"><a href="tel:+33619284252">📞 06 19 28 42 52</a><span class="sep"> · </span><a href="https://www.glace-fermiere-aveyron.fr" target="_blank" rel="noopener">🌐 glace-fermiere-aveyron.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Piquetalen%2C%2012490%20La%20Bastide-Pradines" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="ferme-du-frayssinet">
-        <div class="picto">🐄</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme (lundi, mardi, jeudi, samedi 11h-17h selon sources ; caissettes de viande sur commande) ; marchés de producteurs locaux</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="ferme-du-frayssinet" data-produits="laitages" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐄</div>
         <h4>Ferme du Frayssinet</h4>
         <div class="where">Sainte-Eulalie-de-Cernon (12)</div>
         <p>Brebis laitières de Roquefort et vaches Aubrac : visites guidées avec dégustation ou goûter, d'avril à fin octobre.</p>
         <div class="contact"><a href="tel:+33565627619">📞 05 65 62 76 19</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Frayssinet%2C%2012230%20Sainte-Eulalie-de-Cernon" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="l-agneau-des-cledelles">
-        <div class="picto">🐑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Visites guidées avec goûter/dégustation sur réservation du 15 juin au 15 septembre</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="l-agneau-des-cledelles" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>L'Agneau des Clédelles</h4>
         <div class="where">Bengouzal, Sainte-Eulalie-de-Cernon (12)</div>
         <p>Agneau du Larzac élevé en plein air : viande découpée à la demande d'avril à septembre, conserves toute l'année. Retrait à la ferme sur commande.</p>
         <div class="contact"><a href="tel:+33565625699">📞 05 65 62 56 99</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Bengouzal%2C%2012230%20Sainte-Eulalie-de-Cernon" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-de-la-doline">
-        <div class="picto">🐑</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe toute l'année (agneau du Larzac élevé en plein air)</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-de-la-doline" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐑</div>
         <h4>GAEC de la Doline</h4>
         <div class="where">La Jasse, L'Hospitalet-du-Larzac (12)</div>
         <p>Agneau bio de 350 brebis menées sur 300 hectares de causse. À la ferme, sur commande.</p>
         <div class="contact"><a href="tel:+33675068305">📞 06 75 06 83 05</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Jasse%2C%2012230%20L'Hospitalet-du-Larzac" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="gaec-des-licides">
-        <div class="picto">🐓</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe d'agneaux : de septembre à décembre (agneaux d'herbe nés au printemps) et de mars à juillet (agneaux nés en bergerie)</p>
+        <p class="prod-labels"><strong>Labels :</strong> AB</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="gaec-des-licides" data-produits="viandes" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🐓</div>
         <h4>GAEC des Licides</h4>
         <div class="where">Campestre-et-Luc (30)</div>
         <p>Poulets et pintades fermiers, œufs, et bœuf croisé Aubrac-Limousine en colis — à la ferme, uniquement sur commande.</p>
         <div class="contact"><a href="tel:+33669457189">📞 06 69 45 71 89</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Licides%2C%2030770%20Campestre-et-Luc" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="domaine-de-ferrussac">
-        <div class="picto">🍷</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe à la ferme : poulets, pintades, œufs fermiers ; présent au marché de producteurs de Campestre-et-Luc en été</p>
+        <p class="prod-labels"><strong>Labels :</strong> Bienvenue à la ferme</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="domaine-de-ferrussac" data-produits="viandes boissons" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🍷</div>
         <h4>Domaine de Ferrussac</h4>
         <div class="where">La Vacquerie-et-Saint-Martin</div>
         <p>Des Terrasses du Larzac en bio et des bœufs Aubrac, sur 700 hectares de causse semés de dolmens et de lavognes. Dégustation au domaine.</p>
         <div class="contact"><a href="tel:+33695153345">📞 06 95 15 33 45</a><span class="sep"> · </span><a href="https://ferrussac.fr" target="_blank" rel="noopener">🌐 ferrussac.fr</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Ferrussac%2C%2034520%20La%20Vacquerie-et-Saint-Martin-de-Castries" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
-      <div class="prod-card reveal" id="boutique-bistrot-paysans">
-        <div class="picto">🧺</div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Dégustation et vente au caveau sur rendez-vous (06 95 15 33 45) ; également chez des cavistes et boutiques de producteurs</p>
+        <p class="prod-labels"><strong>Labels :</strong> AOP Terrasses du Larzac</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+      <article class="prod-card reveal" id="boutique-bistrot-paysans" data-produits="laitages miel viandes vegetal" data-esquirol="false" tabindex="-1">
+        <div class="picto" aria-hidden="true">🧺</div>
         <h4>Boutique &amp; Bistrot Paysans</h4>
         <div class="where">Place du Claux, Nant (12)</div>
         <p>Une quinzaine de fermes du Larzac et des vallées y vendent en direct, en tenant la boutique à tour de rôle : fromages, viandes, miel, légumes, plantes.</p>
         <div class="contact"><a href="tel:+33565475133">📞 05 65 47 51 33</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=5%20place%20du%20Claux%2C%2012230%20Nant" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
-      </div>
+        <p class="prod-vente"><strong>Pour acheter :</strong> Boutique collective d'une quinzaine de paysans des Causses et Cévennes (fruits, légumes, fromages, viandes, conserves, miel, vins, bières, glaces…) ; ouvert notamment le dimanche matin ; bistrot sur place</p>
+        <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
+      </article>
+    </div>
+    </div>
+    </div>
+    <p id="aucun-producteur" class="prod-vide" hidden>Aucun producteur ne correspond à ces critères. Essayez un autre mot ou effacez les filtres.</p>
     </div>
     <!-- @/producteurs -->
 
     <!-- @marches — généré par scripts/marches.mjs depuis data/marches.json : ne pas modifier à la main, modifier le fichier de données -->
-    <h4 class="zone-title reveal">Les marchés du pays</h4>
+    <h4 id="marches-du-pays" class="zone-title reveal">Les marchés du pays</h4>
     <p class="zone-sub reveal">Où remplir son panier, jour par jour — et les belles soirées de producteurs de l'été.</p>
     <div class="marches reveal">
       <div class="marches-col">
@@ -776,6 +1057,7 @@
   </div>
 </section>
 <section id="circuit-court" style="background:linear-gradient(180deg,#f0e6d2,var(--sable))"><div class="container"><div class="callout ocre reveal"><h4>✦ Le circuit le plus court est le plus juste</h4><p>Derrière chaque étal de L'Esquirol, il y a une ferme voisine, un nom, un visage. En privilégiant les producteurs du pays, le commerce de village fait vivre tout un territoire — pour le goût, pour le producteur, et pour le lien. C'est le sens d'une entreprise de l'économie sociale et solidaire.</p></div></div></section>
+</main>
 <footer>
   <div class="ftitle">Ceilhes-et-Rocozels</div>
   <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>
@@ -789,6 +1071,7 @@
 
 <button id="totop" aria-label="Retour en haut">↑</button>
 <script src="assets/leaflet/leaflet.js"></script>
-<script src="assets/script.js?v=297c2526"></script>
+<script src="assets/script.js"></script>
+<script src="assets/producteurs.js"></script>
 </body>
 </html>

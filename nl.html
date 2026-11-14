@@ -30,10 +30,11 @@
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="inner">
+<a class="skip" href="#contenu">Naar de inhoud</a>
 <div id="progress"></div>
-<nav id="nav">
+<nav id="nav" aria-label="Navigation principale">
   <a href="index.html" class="logo">Ceilhes<span>-et-</span>Rocozels</a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul id="menu">
     <li><a href="le-lac.html">Le lac</a></li>
     <li><a href="l-orb.html">L'Orb</a></li>
@@ -49,6 +50,7 @@
     <li><a href="infos-pratiques.html">Infos</a></li>
   </ul>
 </nav>
+<main id="contenu" tabindex="-1">
 <header class="subhero">
   <picture><source type="image/webp" srcset="images/leo/lac-ete-640.webp 640w, images/leo/lac-ete-1000.webp 1000w, images/leo/lac-ete-1600.webp 1600w" sizes="100vw"><img loading="lazy" decoding="async" width="1600" height="1067" class="subbg" src="images/leo/lac-ete.jpg" alt="" aria-hidden="true" onerror="this.remove()"></picture>
   <div class="kicker">Welkom</div>
@@ -59,8 +61,8 @@
 <section id="decouvrir">
   <div class="container">
     <div class="infos-grid">
-      <div class="info-box reveal"><h3>🏊 Het meer & zwemmen</h3><p>Het 6 km lange Lac d'Avène voor kano, sup en rustige zwemrondjes — plus Le Bouloc, de familievijver aan de rand van het dorp, met speeltuin en vissteigers. Waterkwaliteit officieel „goed”. <a href="le-lac.html">Het meer (in het Frans) →</a></p></div>
-      <div class="info-box reveal"><h3>🏞 De rivier de Orb</h3><p>Natuurlijke rotsbaden die de hele zomer koel blijven — dé zwemplek van de dorpelingen. <a href="l-orb.html">De rivier (in het Frans) →</a></p></div>
+      <div class="info-box reveal"><h3>🏊 Het meer & zwemmen</h3><p>Het 6 km lange Lac d'Avène biedt mogelijkheden voor kanoën en suppen. Le Bouloc, aan de dorpsrand, heeft speelplekken, picknickplaatsen en vissteigers. Bij Le Bouloc en het meer is geen zwemtoezicht. Controleer vóór het zwemmen de recente watermetingen, plaatselijke borden en toegestane zones; een oudere beoordeling zegt niets over de omstandigheden van vandaag. <a href="le-lac.html#baignade">Het meer en officiële informatie (in het Frans) →</a></p><p><small>Advies bijgewerkt op <time datetime="2026-11-14">14 november 2026</time>.</small></p></div>
+      <div class="info-box reveal"><h3>🏞 De rivier de Orb</h3><p>De Orb stroomt door het dorp, met een doorwaadbare plaats en natuurlijke rotsbaden. Ontdek de rivier vanaf de oever, zeker met kinderen. Na regen kunnen het waterpeil en de stroming veranderen; helder, koel water garandeert niet dat zwemmen veilig is. Controleer de plaatselijke beperkingen en omstandigheden. <a href="l-orb.html#repere-gue">De rivier en toegang (in het Frans) →</a></p></div>
       <div class="info-box reveal"><h3>🥾 Wandelen & fietsen</h3><p>Gemarkeerde paden vanuit het dorp, en een langeafstandspad van ons meer naar het Lac du Salagou. <a href="randonnees.html">De paden (in het Frans) →</a></p></div>
       <div class="info-box reveal"><h3>🧀 Streekproducten</h3><p>L'Esquirol, de dorpswinkel met café: producten van boerderijen uit de streek, 's zomers met een fijn terras. Ruim 80 boerderijen verkopen hier rechtstreeks — kaas, honing, wijn, roquefort. <a href="terroir.html">Producenten & markten (in het Frans) →</a></p></div>
       <div class="info-box reveal"><h3>🏛 Erfgoed</h3><p>Tempelierskerken, de cisterciënzerabdij van Sylvanès, de versterkte tempeliersstad La Couvertoirade op de Larzac. <a href="patrimoine.html">Erfgoed (in het Frans) →</a></p></div>
@@ -82,6 +84,7 @@
     <div class="callout reveal" style="margin-top:2rem"><p>🌍 De rest van deze site is in het Frans — de vertaalfunctie van uw browser maakt er prima Nederlands van, en alle kaarten, telefoonnummers en openingstijden werken in elke taal.</p><p style="margin-top:.8rem"><a href="index.html" style="font-weight:600;color:var(--lac)">Naar de Franse site →</a> &nbsp;·&nbsp; <a href="en.html">English</a> · <a href="de.html">Deutsch</a> · <a href="es.html">Español</a> · <a href="it.html">Italiano</a> · <a href="pt.html">Português</a></p></div>
   </div>
 </section>
+</main>
 <footer>
   <div class="ftitle">Ceilhes-et-Rocozels</div>
   <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>

@@ -23,9 +23,12 @@
   .barre .etat{font-size:.88rem}
   textarea{width:100%;height:9rem;font:0.82rem/1.4 monospace;border-radius:var(--r);border:1px solid var(--pierre);padding:.8rem;background:var(--blanc)}
   .marqueur-nom{background:var(--foret-fonce);color:#fff;border-radius:6px;padding:1px 7px;font-size:.72rem;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+.skip{position:absolute;left:-9999px;top:0;background:#fff;padding:1rem;z-index:2000}.skip:focus{left:0}
 </style>
 </head>
 <body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<main id="contenu" tabindex="-1">
 <h1>Réglage de la carte des producteurs</h1>
 <p class="aide"><strong>Mode d'emploi :</strong> zoome sur une ferme que tu connais, puis <strong>fais glisser son épingle</strong> jusqu'à sa position réelle (le fond de carte affiche les bâtiments en zoomant). L'épingle devient verte, et le bloc de corrections en bas se remplit tout seul. Quand tu as fini, clique « Copier les corrections » et envoie le texte à Claude — ou garde cette page ouverte et recommence plus tard, rien n'est perdu tant que tu ne fermes pas l'onglet. Les positions actuelles sont au centre de la commune : un écart de quelques kilomètres est normal.</p>
 <div id="carte-reglage"></div>
@@ -35,6 +38,7 @@
   <span class="etat" id="etat">Aucune correction pour l'instant.</span>
 </div>
 <textarea id="sortie" readonly placeholder="Les corrections apparaîtront ici, au format à envoyer à Claude."></textarea>
+</main>
 <script src="assets/leaflet/leaflet.js"></script>
 <script>
 (async function(){

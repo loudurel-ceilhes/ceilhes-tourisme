@@ -25,14 +25,15 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0E241C" />
-<link rel="stylesheet" href="assets/styles.css?v=39135ee0">
+<link rel="stylesheet" href="assets/styles.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://ceilhes-tourisme.fr/"},{"@type":"ListItem","position":2,"name":"Hébergeurs particuliers","item":"https://ceilhes-tourisme.fr/hebergeurs.html"}]}</script>
 </head>
 <body class="inner">
+<a class="skip" href="#contenu">Aller au contenu</a>
 <div id="progress"></div>
-<nav id="nav">
+<nav id="nav" aria-label="Navigation principale">
   <a href="index.html" class="logo">Ceilhes<span>-et-</span>Rocozels</a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul id="menu">
     <li><a href="le-lac.html">Le lac</a></li>
     <li><a href="l-orb.html">L'Orb</a></li>
@@ -43,11 +44,12 @@
     <li><a href="alentours.html">Alentours</a></li>
     <li><a href="agenda.html">Agenda</a></li>
     <li><a href="vie-associative.html">Vie du village</a></li>
-    <li><a href="hebergeurs.html" class="active">Hébergeurs</a></li>
+    <li><a href="hebergeurs.html" class="active" aria-current="page">Hébergeurs</a></li>
     <li><a href="galerie.html">Galerie</a></li>
     <li><a href="infos-pratiques.html">Infos</a></li>
   </ul>
 </nav>
+<main id="contenu" tabindex="-1">
 <header class="subhero">
   <picture><source type="image/webp" srcset="images/coucher-soleil-640.webp 640w, images/coucher-soleil-1000.webp 1000w" sizes="100vw"><img loading="lazy" decoding="async" width="1200" height="1600" class="subbg" src="images/coucher-soleil.jpg" alt="" aria-hidden="true" onerror="this.remove()"></picture><span class="credit">Photo © Angélique Villa</span>
   <div class="crumb"><a href="index.html">Accueil</a> › Hébergeurs</div>
@@ -57,27 +59,33 @@
   <p>Gîtes de charme, mas rénovés et hébergements écologiques en pleine nature : trois belles adresses autour de Ceilhes-et-Rocozels, plus les campings et annuaires du territoire.</p>
   
 </header>
+<nav class="page-reperes" aria-label="Choisir un hébergement">
+  <a href="#lascours">Gîtes à Lascours</a>
+  <a href="#libellules">Gîtes des Libellules</a>
+  <a href="#rouvignac">Gîtes de Rouvignac</a>
+  <a href="#autres">Campings &amp; autres adresses</a>
+</nav>
 <section id="hosts-intro"><div class="container"><div class="prose reveal dropcap"><p>Autour de Ceilhes-et-Rocozels, des <strong>hébergeurs particuliers</strong> passionnés vous accueillent : gîtes de charme, mas rénovés et hébergements écologiques, en pleine nature, au bord du lac, de l'Orb ou aux portes du Salagou. Voici trois adresses à découvrir.</p></div></div></section>
 
 <section id="lascours"><div class="container"><div class="feature">
   <div class="ftxt"><div class="gfacts">Ceilhes-et-Rocozels · Gîtes & restaurant</div><h3>Lascours — La Source in the Wood</h3><p>Ancien <strong>mas cévenol entièrement rénové</strong>, l'auberge de Lascours vous reçoit dans un lieu privilégié de la commune, au cœur du Parc, aux côtés d'un site archéologique. Un hameau où se côtoient <strong>gîtes</strong>, <strong>restaurant</strong> et une <strong>résidence d'artistes</strong> portée par l'association « La Source in the Wood ».</p><p>Autour : cascade, lac, rivières et sentiers de randonnée à perte de vue.</p>
   <div class="amen"><span>Gîtes</span><span>Restaurant</span><span>Résidence d'artistes</span><span>Pleine nature</span></div>
-  <a class="btn btn-primary" href="https://lascours34.fr" target="_blank" rel="noopener">Découvrir Lascours →</a><p class="note">Lascours, 34260 Ceilhes-et-Rocozels · 07 82 03 71 66</p></div>
-  <div class="fimg"><span class="emo">🏡</span><picture><source type="image/webp" srcset="images/vallee-panorama-640.webp 640w, images/vallee-panorama-1000.webp 1000w, images/vallee-panorama-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="961" src="images/vallee-panorama.jpg" alt="Le hameau de Lascours à Ceilhes-et-Rocozels" loading="lazy" onerror="this.remove()"></picture></div>
+  <a class="btn btn-primary" href="https://lascours34.fr" target="_blank" rel="noopener">Découvrir Lascours →</a><p class="note hosts-contact">Lascours, 34260 Ceilhes-et-Rocozels · <a href="tel:+33782037166">Appeler : 07 82 03 71 66</a></p></div>
+  <div class="fimg"><span class="emo">🏡</span><picture><source type="image/webp" srcset="images/vallee-panorama-640.webp 640w, images/vallee-panorama-1000.webp 1000w, images/vallee-panorama-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="961" src="images/vallee-panorama.jpg" alt="Panorama d’automne sur la haute vallée de l’Orb — paysage d’illustration" loading="lazy" onerror="this.remove()"></picture><p class="illustration-note">Paysage d’illustration · consultez les photos de l’hébergement sur son site</p></div>
 </div></div></section>
 
 <section id="libellules" style="background:linear-gradient(180deg,var(--sable),#eef3ec)"><div class="container"><div class="feature rev">
-  <div class="fimg"><span class="emo">🐉</span><picture><source type="image/webp" srcset="images/foins-2-640.webp 640w, images/foins-2-1000.webp 1000w, images/foins-2-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="1200" src="images/foins-2.jpg" alt="Les Gîtes des Libellules, en pleine nature près du Salagou" loading="lazy" onerror="this.remove()"></picture></div>
+  <div class="fimg"><span class="emo">🐉</span><picture><source type="image/webp" srcset="images/foins-2-640.webp 640w, images/foins-2-1000.webp 1000w, images/foins-2-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="1200" src="images/foins-2.jpg" alt="Champ fauché dans la vallée — paysage d’illustration" loading="lazy" onerror="this.remove()"></picture><p class="illustration-note">Paysage d’illustration · consultez les photos de l’hébergement sur son site</p></div>
   <div class="ftxt"><div class="gfacts">Joncels (34650) · Aux portes du Salagou</div><h3>Les Gîtes des Libellules</h3><p>À Joncelets, aux portes du <strong>lac du Salagou</strong>, deux <strong>gîtes écologiques</strong> en pleine nature, pensés en construction bioclimatique : calme absolu, ciel étoilé, et le chant des oiseaux pour seul voisinage.</p><p>Le <strong>Gîte des Libellules</strong> (1 à 6 personnes, 100 m², 3 chambres, 2 salles de bain, terrasse de 30 m²) et le <strong>Gîte des Demoiselles</strong> (1 à 6 personnes, 75 m², 2 chambres). Wifi fibre pour le télétravail, animaux acceptés.</p>
   <div class="amen"><span>Écologique</span><span>1–6 pers.</span><span>Wifi fibre</span><span>Animaux acceptés</span><span>Terrasse</span></div>
-  <a class="btn btn-primary" href="https://www.gitedeslibellules.com" target="_blank" rel="noopener">Découvrir les Libellules →</a><p class="note">Joncelets, 34650 · 04 67 95 13 75</p></div>
+  <a class="btn btn-primary" href="https://www.gitedeslibellules.com" target="_blank" rel="noopener">Découvrir les Libellules →</a><p class="note hosts-contact">Joncelets, 34650 · <a href="tel:+33467951375">Appeler : 04 67 95 13 75</a></p></div>
 </div></div></section>
 
 <section id="rouvignac"><div class="container"><div class="feature">
   <div class="ftxt"><div class="gfacts">Avène (34260) · 9 gîtes 3★ · Note 9,2/10</div><h3>Les Gîtes de Rouvignac</h3><p>Dans le <strong>hameau historique de Rouvignac</strong> (à 6 km de la station thermale d'Avène et tout près de Ceilhes), Lucie et Mathias vous accueillent dans <strong>9 gîtes de charme classés 3 étoiles</strong>, répartis sur <strong>33 hectares</strong> de nature préservée — autour de l'église Saint-Pierre du XII<sup>e</sup> siècle.</p><p>De <strong>2 à 8 personnes</strong>, dès 34 €/nuit, animaux acceptés, deux gîtes accessibles PMR. Aire de jeux, barbecue, place du village : idéal en famille, et privatisable pour groupes, mariages et séminaires.</p>
   <div class="amen"><span>9 gîtes 3★</span><span>2–8 pers.</span><span>Accès PMR</span><span>Animaux acceptés</span><span>Privatisable</span><span>Thermalisme</span></div>
-  <a class="btn btn-primary" href="https://www.rouvignac.fr" target="_blank" rel="noopener">Découvrir Rouvignac →</a><p class="note">Hameau de Rouvignac, 34260 Avène · 06 73 89 56 74</p></div>
-  <div class="fimg"><span class="emo">🌿</span><picture><source type="image/webp" srcset="images/lac-bouloc-640.webp 640w, images/lac-bouloc-1000.webp 1000w, images/lac-bouloc-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="959" src="images/lac-bouloc.jpg" alt="Les Gîtes de Rouvignac, près d'Avène" loading="lazy" onerror="this.remove()"></picture></div>
+  <a class="btn btn-primary" href="https://www.rouvignac.fr" target="_blank" rel="noopener">Découvrir Rouvignac →</a><p class="note hosts-contact">Hameau de Rouvignac, 34260 Avène · <a href="tel:+33673895674">Appeler : 06 73 89 56 74</a></p></div>
+  <div class="fimg"><span class="emo">🌿</span><picture><source type="image/webp" srcset="images/lac-bouloc-640.webp 640w, images/lac-bouloc-1000.webp 1000w, images/lac-bouloc-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="959" src="images/lac-bouloc.jpg" alt="Le plan d’eau du Bouloc à Ceilhes — paysage d’illustration" loading="lazy" onerror="this.remove()"></picture><p class="illustration-note">Paysage d’illustration · consultez les photos de l’hébergement sur son site</p></div>
 </div></div></section>
 
 <section id="autres" style="background:linear-gradient(180deg,var(--sable),#eef3ec)"><div class="container"><div class="section-head reveal"><div class="kicker">Et aussi</div><h2>Autres hébergements & annuaires</h2><div class="line"></div></div>
@@ -89,6 +97,7 @@
   </div>
   <div class="hosts-cta reveal"><h3>Vous hébergez des visiteurs ?</h3><p>Gîte, meublé, chambre d'hôtes : faites-vous connaître et apparaissez sur ce site, gratuitement.</p><a class="btn btn-secondary" href="mailto:lou.durel@gmail.com?subject=Référencement%20hébergeur%20-%20Ceilhes-et-Rocozels">Être référencé ici →</a></div>
 </div></section>
+</main>
 <footer>
   <div class="ftitle">Ceilhes-et-Rocozels</div>
   <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>
@@ -101,6 +110,6 @@
 </footer>
 
 <button id="totop" aria-label="Retour en haut">↑</button>
-<script src="assets/script.js?v=297c2526"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>

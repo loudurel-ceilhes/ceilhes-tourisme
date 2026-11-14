@@ -1,0 +1,69 @@
+/* Les accès pratiques de l'accueil restent lisibles sans JavaScript. */
+.sejour{background:var(--blanc);scroll-margin-top:5rem}
+.sejour .section-head{margin-bottom:2.2rem}
+.sejour-intro{max-width:650px;margin:1.1rem auto 0;font-size:1.05rem}
+.sejour-acces{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;list-style:none}
+.sejour-acces a{display:flex;align-items:center;gap:1.1rem;height:100%;padding:1.5rem;border:1px solid var(--pierre);border-radius:var(--r);color:var(--foret-fonce);background:var(--sable);text-decoration:none;transition:background .2s,border-color .2s}
+.sejour-acces a:hover,.sejour-acces a:focus-visible{background:var(--brume);border-color:var(--foret)}
+.sejour-num{align-self:flex-start;padding-top:.3rem;color:var(--foret);font-size:.8rem;letter-spacing:.08em}
+.sejour-acces strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.9rem;line-height:1.2;font-weight:700}
+.sejour-acces strong+span{display:block;margin-top:.35rem;font-size:.94rem;line-height:1.5}
+.sejour-fleche{margin-left:auto;font-size:1.5rem}
+.sejour-rendezvous{display:flex;justify-content:space-between;align-items:center;gap:.6rem 1.5rem;flex-wrap:wrap;padding:1.4rem .25rem;border-bottom:1px solid var(--pierre)}
+.sejour-rendezvous a,.sejour-parcours a{color:var(--foret);font-weight:500;text-underline-offset:.2em;text-decoration-thickness:1px}
+.sejour-rendezvous a{display:inline-block;padding:.5rem 0}
+.sejour-rendezvous a:hover,.sejour-parcours a:hover{text-decoration-thickness:2px}
+.sejour-idees{margin-top:3rem}
+.sejour-idees-entete h3{color:var(--foret-fonce);font-size:2.3rem;line-height:1.15}
+.sejour-idees-entete p{margin-top:.6rem}
+.sejour-choix{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.5rem}
+.sejour-choix button{min-height:46px;padding:.65rem 1.15rem;border:1px solid var(--foret);border-radius:50px;background:var(--blanc);color:var(--foret);font:inherit;cursor:pointer}
+.sejour-choix button[aria-selected="true"]{background:var(--foret);color:var(--blanc)}
+.sejour-choix button:hover{box-shadow:inset 0 0 0 1px var(--foret)}
+.sejour-parcours{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin-top:1.5rem}
+.sejour-ready .sejour-parcours{display:block}
+.sejour-parcours article{border:1px solid var(--pierre);border-radius:var(--r);padding:1.7rem;background:var(--sable)}
+.sejour-programme-entete{max-width:68ch}
+.sejour-etiquette{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;color:var(--foret);font-weight:600}
+.sejour-parcours h4{font-family:'Cormorant Garamond',serif;margin:.35rem 0 .55rem;font-size:2rem;line-height:1.2;font-weight:700;color:var(--foret-fonce)}
+.sejour-parcours p{font-size:.97rem;line-height:1.7}
+.sejour-etapes{list-style:none;counter-reset:etape;display:grid;gap:1.25rem;margin-top:1.5rem}
+.sejour-etapes li{counter-increment:etape;display:flex;align-items:flex-start;gap:.9rem}
+.sejour-etapes li::before{content:counter(etape);flex:0 0 2rem;line-height:2rem;text-align:center;border-radius:50%;background:var(--foret);color:var(--blanc);font-size:.85rem}
+.sejour-etapes h5{font:inherit;font-weight:600;font-size:1.03rem;color:var(--foret-fonce);margin-bottom:.25rem}
+.sejour-etapes li>div{min-width:0}
+.sejour-ready .sejour-etapes{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.7rem}
+.sejour-programme-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.25rem}
+.sejour-programme-actions button{font:inherit;font-weight:500;background:var(--blanc);color:var(--foret);border:1px solid var(--foret);border-radius:.5rem;padding:.65rem 1rem;min-height:46px;cursor:pointer}
+.sejour-programme-actions button:hover{background:var(--brume)}
+.sejour-programme-actions p{font-size:.85rem;color:var(--foret)}
+@media(max-width:900px){.sejour-ready .sejour-etapes{grid-template-columns:1fr}}
+@media(max-width:640px){
+  .sejour{padding:3.5rem 5vw}
+  .sejour-acces,.sejour-parcours{grid-template-columns:1fr}
+  .sejour-acces{gap:.75rem}
+  .sejour-acces a{padding:1.1rem;gap:.8rem}
+  .sejour-acces strong{font-size:1.7rem}
+  .sejour-acces strong+span{font-size:.9rem}
+  .sejour-rendezvous{padding-top:1.1rem;padding-bottom:1.1rem}
+  .sejour-parcours{gap:1.6rem}
+  .sejour-parcours article{padding:1.2rem}
+  .sejour-choix{gap:.5rem}
+  .sejour-choix button{flex:1 1 calc(50% - .5rem);padding:.6rem .5rem;font-size:.9rem}
+  .sejour-parcours h4{font-size:1.8rem}
+}
+@media print{
+  body.imprimer-programme{background:var(--blanc)}
+  .sejour-choix,.sejour-programme-actions{display:none!important}
+  .sejour-parcours{display:block}
+  .sejour-parcours article{break-inside:avoid;margin:1rem 0;background:var(--blanc);border-color:var(--foret);padding:1rem}
+  .sejour-ready .sejour-etapes{grid-template-columns:1fr;gap:1rem}
+  .sejour-parcours a{text-decoration:underline}
+  body.imprimer-programme> :not(main),
+  body.imprimer-programme main> :not(#preparer-sejour),
+  body.imprimer-programme #preparer-sejour>.container> :not(.sejour-idees),
+  body.imprimer-programme .sejour-idees> :not(.sejour-parcours){display:none!important}
+  body.imprimer-programme .sejour,body.imprimer-programme .sejour-idees{padding:0;margin:0}
+  body.imprimer-programme .sejour-parcours::before{content:'Votre programme à Ceilhes-et-Rocozels';display:block;font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--foret-fonce)}
+  body.imprimer-programme .sejour-parcours::after{content:'Suggestions à adapter à la saison, à la météo et aux ouvertures. Retrouvez les informations et les liens sur ceilhes-tourisme.fr';display:block;margin-top:1rem;font-size:.85rem}
+}

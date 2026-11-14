@@ -1,0 +1,30 @@
+/* Annuaire : les commandes complètent la liste statique, sans la remplacer. */
+#annuaire-producteurs{scroll-margin-top:6rem}
+#annuaire-producteurs [hidden]{display:none!important}
+.prod-filtres{background:var(--brume);border:1px solid var(--lac-clair);border-radius:var(--r);padding:1.5rem;margin:2rem 0 1rem}
+.prod-champs{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;align-items:end}
+.prod-champs label{display:flex;flex-direction:column;gap:.4rem;font-size:.9rem;font-weight:600;color:var(--foret-fonce);min-width:0}
+.prod-champs input,.prod-champs select{width:100%;min-width:0;min-height:48px;border:1px solid var(--foret);border-radius:8px;background:var(--blanc);color:var(--texte);padding:.65rem;font:inherit;font-weight:400;font-size:1rem}
+.prod-options{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+.prod-checkbox{display:flex;align-items:center;gap:.65rem;min-height:44px;cursor:pointer}
+.prod-checkbox input{width:20px;height:20px;accent-color:var(--foret)}
+.prod-options button{font:inherit;color:var(--foret-fonce);background:var(--blanc);border:1px solid var(--foret);border-radius:8px;min-height:44px;padding:.55rem 1rem;cursor:pointer}
+.prod-options button:hover{background:var(--sable)}
+.prod-result-nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1rem;margin-top:.75rem}
+.prod-result-nav a{color:var(--foret);font-weight:500;padding:.4rem 0;min-height:44px;text-underline-offset:3px}
+#compte-producteurs{font-weight:600;color:var(--foret-fonce)}
+#resultats-producteurs{scroll-margin-top:6rem}
+.prod-conseil,.prod-carte-note{font-size:.9rem;max-width:800px;margin:1rem auto;text-align:center}
+.prod-carte{margin-top:1.5rem}
+.prod-carte-note{color:var(--foret-fonce)}
+#etat-carte-producteurs{border-left:3px solid var(--ocre);padding:.75rem 1rem;background:var(--pierre);text-align:left}
+.prod-vide{padding:2rem;background:var(--brume);border-radius:var(--r);text-align:center}
+.prod-card{scroll-margin-top:6rem;overflow-wrap:anywhere}
+.prod-card .prod-vente{margin-top:.9rem;border-top:1px solid var(--pierre);padding-top:.8rem}
+.prod-card .prod-labels{margin-top:.65rem;color:var(--foret)}
+.prod-card .prod-maj{font-size:.78rem;margin-top:.8rem;color:var(--foret)}
+.prod-card .prod-confirmation{margin-top:.65rem;font-weight:500}
+.prod-card .contact a{white-space:normal;display:inline-block;min-height:36px;padding:.2rem 0;color:var(--foret);text-decoration:underline;text-underline-offset:3px}
+.prod-epingle{display:block;width:22px;height:22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid var(--blanc);box-shadow:var(--ombre)}
+@media(max-width:900px){.prod-champs{grid-template-columns:1fr 1fr}.prod-champs label:first-child{grid-column:1/-1}}
+@media(max-width:540px){.prod-filtres{padding:1rem}.prod-champs{grid-template-columns:1fr}.prod-champs label:first-child{grid-column:auto}.prod-options{align-items:stretch;flex-direction:column}.prod-options button{align-self:flex-start}.prod-grid{grid-template-columns:1fr}}

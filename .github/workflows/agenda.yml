@@ -37,6 +37,13 @@ jobs:
       - name: Récupérer les événements à venir
         run: node scripts/agenda.mjs
 
+      # Un push fait avec GITHUB_TOKEN ne déclenche pas verification.yml.
+      # Contrôler ici la page générée avant de l'enregistrer et de la publier.
+      - name: Vérifier l'agenda et le site avant publication
+        run: |
+          node scripts/verifier-site.mjs
+          node --test tests/*.test.mjs
+
       - name: Publier si l'agenda a changé
         run: |
           if git diff --quiet -- agenda.html; then
