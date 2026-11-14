@@ -26,9 +26,13 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
+import { SOURCE_CENOMES, instantaneCenomes, evenementsCenomes } from './agenda-cenomes.mjs'
+import { dateValide } from '../assets/agenda-calendrier.js'
 
 const RACINE = fileURLToPath(new URL('..', import.meta.url))
 const PAGE = join(RACINE, 'agenda.html')
+const CACHE = join(RACINE, 'data/agenda-source.json')
+const OUVERTURES = join(RACINE, 'data/agenda-ouvertures.json')
 
 /** Jeu de données « fêtes et manifestations » de DATAtourisme. */
 const API =
@@ -66,14 +70,7 @@ const CODES = [...new Set(COMMUNES.map((c) => c.split('#')[0]))]
 /** La commune du site : ses événements passent toujours en premier. */
 const ICI = '34260#Ceilhes-et-Rocozels'
 
-/**
- * Nombre d'événements des communes voisines affichés au maximum.
- *
- * ⚠️ Sans ce découpage, Lodève (musée, cinéma, médiathèque : 54 fiches)
- * remplit la page à elle seule et la féria de Ceilhes disparaît. Or c'est un
- * site sur Ceilhes : ses rendez-vous passent d'abord, toujours et tous.
- */
-const MAX_ALENTOURS = 30
+// Toutes les fiches restent filtrables ; la présentation initiale est limitée côté navigateur.
 
 /* -------------------------------------------------------------------------- */
 
@@ -111,9 +108,6 @@ export function dateParis(instant = new Date()) {
   return `${champ('year')}-${champ('month')}-${champ('day')}`
 }
 
-const dateValide = (v) => /^\d{4}-\d{2}-\d{2}$/.test(v) &&
-  !Number.isNaN(Date.parse(v)) && new Date(v).toISOString().slice(0, 10) === v
-
 /** Garde les vrais débuts/fins, y compris pour une manifestation en cours. */
 export function periodesAVenir(valeur, aujourdhui) {
   if (!valeur) return []
@@ -126,12 +120,22 @@ export function periodesAVenir(valeur, aujourdhui) {
     .sort((a, b) => a.debut.localeCompare(b.debut) || a.fin.localeCompare(b.fin))
 }
 
-export function preparerEvenements(brut, aujourdhui = dateParis()) {
+export function ouvertureEvenement(e, rules = {}) {
+  const rule = rules[e.URI_ID_du_POI]
+  if (!rule) return null
+  const normalize = s => String(s || '').replace(/\s+/g, ' ').trim().toLocaleLowerCase('fr')
+  if (!dateValide(rule.from) || !dateValide(rule.through) || rule.from > rule.through ||
+      !Array.isArray(rule.weekdays) || !rule.weekdays.length || rule.weekdays.some(d => !Number.isInteger(d) || d < 0 || d > 6) ||
+      !rule.descriptionIncludes || !normalize(e.Description).includes(normalize(rule.descriptionIncludes))) return null
+  return {from:rule.from, through:rule.through, weekdays:rule.weekdays, closedHolidays:rule.closedHolidays===true, label:rule.label}
+}
+
+export function preparerEvenements(brut, aujourdhui = dateParis(), ouvertures = {}) {
   return brut.map((e) => {
     const periodes = periodesAVenir(e.Periodes_regroupees, aujourdhui)
     const periode = periodes[0]
     return {
-      nom: joliTitre(e.Nom_du_POI), periodes,
+      nom: joliTitre(e.Nom_du_POI), periodes, opening: ouvertureEvenement(e, ouvertures),
       debut: periode?.debut, fin: periode?.fin,
       enCours: periode ? periode.debut < aujourdhui : false,
       dateTri: periode ? (periode.debut < aujourdhui ? aujourdhui : periode.debut) : null,
@@ -185,6 +189,7 @@ function rendreDetails(e, id) {
   const adresse = [e.adresse, [e.codePostal, e.commune].filter(Boolean).join(' ')].filter(Boolean).join(' · ')
   const source = urlWeb(e.sourceUri)
   const maj = String(e.maj || '').slice(0, 10)
+  const sourceLabel = e.sourceKind === 'cenomes' ? 'Programme de L’Esquirol Cénomes' : 'Donnée source DATAtourisme'
   const contacts = [
     ...telephones.map(t => `<a href="${echappe(t.href)}">Appeler le ${echappe(t.libelle)}</a>`),
     ...liens.map(lien => `<a href="${echappe(lien)}" target="_blank" rel="noopener">Site indiqué par l’organisateur · ${echappe(new URL(lien).hostname)} <span aria-hidden="true">↗</span></a>`),
@@ -195,44 +200,51 @@ function rendreDetails(e, id) {
               ${description ? `<p class="ev-description">${echappe(description)}</p>` : '<p>Le descriptif n’est pas renseigné dans la source.</p>'}
               ${adresse ? `<p class="ev-adresse"><strong>Lieu annoncé :</strong> ${echappe(adresse)}</p>` : ''}
               ${contacts.length ? `<div class="ev-contacts" aria-label="Contacts et informations du rendez-vous">${contacts.join('')}</div>` : ''}
-              <p class="ev-source">${e.createur ? `${echappe(e.createur)} · ` : ''}${source ? `<a href="${echappe(source)}" target="_blank" rel="noopener">Donnée source DATAtourisme</a>` : 'Source : DATAtourisme'}${dateValide(maj) ? ` · fiche mise à jour le <time datetime="${maj}">${dateLisible(maj)}</time>` : ''}. Confirmez les horaires et les conditions auprès de l’organisateur.</p>
+              <p class="ev-source">${e.createur ? `${echappe(e.createur)} · ` : ''}${source ? `<a href="${echappe(source)}" target="_blank" rel="noopener">${sourceLabel}</a>` : 'Source : DATAtourisme'}${dateValide(maj) ? ` · fiche mise à jour le <time datetime="${maj}">${dateLisible(maj)}</time>` : ''}. Confirmez les horaires et les conditions auprès de l’organisateur.</p>
               <a class="ev-permalien" href="#${id}">Lien vers ce rendez-vous</a>
             </div>
           </details>`.replace(/[ \t]+$/gm, '')
 }
 
+export function rendrePeriode({debut, fin}, enCours = false) {
+  const texte = enCours ? `En cours jusqu’au <time datetime="${fin}">${dateLisible(fin)}</time>`
+    : debut === fin ? `Le <time datetime="${debut}">${dateLisible(debut)}</time>`
+      : `Du <time datetime="${debut}">${dateLisible(debut)}</time> au <time datetime="${fin}">${dateLisible(fin)}</time>`
+  return `<li class="ev-periode">${texte}</li>`
+}
 export function rendreCartes(liste, avecLieu) {
   return liste.map((e) => {
     const date = new Date((e.enCours ? e.fin : e.debut) + 'T00:00:00Z')
     const id = identifiantEvenement(e)
     const lieu = avecLieu ? `\n          <span class="ev-lieu">${echappe(e.commune)}</span>` : ''
-    // Toutes les occurrences doivent être lisibles : le filtre du week-end
-    // peut retenir une seconde date, et pas uniquement la première affichée.
-    const periodes = e.periodes.map(({ debut, fin }, occurrence) => {
-      const texte = occurrence === 0 && e.enCours
-        ? `En cours jusqu’au <time datetime="${fin}">${dateLisible(fin)}</time>`
-        : debut === fin
-          ? `Le <time datetime="${debut}">${dateLisible(debut)}</time>`
-          : `Du <time datetime="${debut}">${dateLisible(debut)}</time> au <time datetime="${fin}">${dateLisible(fin)}</time>`
-      return `<li class="ev-periode">${texte}</li>`
-    }).join('')
-    return `      <article class="ev-card reveal" id="${id}" data-commune="${echappe(e.commune)}" data-activite="${echappe(etiquette(e.nom))}" data-periodes="${echappe(JSON.stringify(e.periodes))}" data-carnet-id="${id}" data-carnet-title="${echappe(e.nom)}" data-carnet-category="Événement" data-carnet-url="agenda.html#${id}">
+    const first = e.periodes.slice(0,3).map((p,i)=>rendrePeriode(p,i===0&&e.enCours)).join('')
+    const more = e.periodes.slice(3).map(p=>rendrePeriode(p)).join('')
+    const dates = e.periodes.every(p=>p.debut===p.fin) && e.periodes.length<=200 ? [...new Set(e.periodes.map(p=>p.debut))] : []
+    const activity = e.activity || etiquette(e.nom)
+    const opening = e.opening ? ` data-ouverture="${echappe(JSON.stringify(e.opening))}"` : ''
+    const carnetDates = dates.length ? ` data-carnet-dates="${echappe(JSON.stringify(dates))}"` : ''
+    const moreDates = more ? `<details class="ev-autres-dates"><summary>Voir les ${e.periodes.length-3} autres dates</summary><ul class="ev-periodes">${more}</ul></details>` : ''
+    const openingNotice = e.opening?.label || (e.periodes.some(p=>p.debut!==p.fin) ? 'Période annoncée : les jours et horaires d’ouverture sont à vérifier dans les détails ou auprès de l’organisateur.' : '')
+    return `      <article class="ev-card reveal" id="${id}" data-commune="${echappe(e.commune)}" data-activite="${echappe(activity)}"${e.sourceKind === 'cenomes' ? ' data-agenda-source="cenomes"' : ''}${opening} data-periodes="${echappe(JSON.stringify(e.periodes))}" data-carnet-id="${id}" data-carnet-title="${echappe(e.nom)}" data-carnet-category="Événement" data-carnet-url="agenda.html#${id}"${carnetDates}>
         <div class="ev-date" aria-hidden="true"><span class="d">${date.getUTCDate()}</span><span class="m">${MOIS[date.getUTCMonth()]}</span></div>
         <div class="ev-body">
-          <span class="ev-tag">${etiquette(e.nom)}</span>${lieu}
+          <span class="ev-tag">${echappe(activity)}</span>${lieu}
           <h3>${echappe(e.nom)}</h3>
-          <ul class="ev-periodes" aria-label="Dates du rendez-vous">${periodes}</ul>
+          <div class="ev-dates"><ul class="ev-periodes" aria-label="Prochaines dates du rendez-vous">${first}</ul>${moreDates}</div>
+          ${openingNotice ? `<p class="ev-ouverture">${echappe(openingNotice)}</p>` : ''}
+          ${e.service ? `<p class="ev-service">Le soir · ${e.priceEur === null ? 'horaire et tarif à confirmer' : `${echappe(new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR'}).format(e.priceEur))} TTC · horaire à confirmer`}</p>` : ''}
           <p>${echappe(couper(e.description))}</p>
+          ${e.bookingUrl ? `<p class="ev-reserver"><a href="${echappe(e.bookingUrl)}">Voir cette soirée et réserver</a></p>` : ''}
           ${rendreDetails(e, id)}
         </div>
       </article>`
-  }).join('\n')
+  }).join('\n').replace(/[ \t]+$/gm, '')
 }
 
 export function donneesStructurees(liste) {
   return {
     '@context': 'https://schema.org',
-    '@graph': liste.slice(0, 40).flatMap((e) => e.periodes.map(({ debut, fin }) => ({
+    '@graph': liste.flatMap((e) => e.periodes.map(({ debut, fin }) => ({
       '@type': 'Event', name: e.nom, startDate: debut, endDate: fin,
       eventStatus: 'https://schema.org/EventScheduled',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
@@ -356,83 +368,68 @@ async function recuperer() {
 /** « 34260#Ceilhes-et-Rocozels » → « Ceilhes-et-Rocozels ». */
 const nomCommune = (v) => String(v || '').split('#')[1] || ''
 
-async function main() {
-  const essai = process.argv.includes('--dry-run')
-  const aujourdhui = dateParis()
-  const brut = await recuperer()
-  const evenements = preparerEvenements(brut, aujourdhui)
+const PUBLIC_FIELDS = ['Nom_du_POI','Periodes_regroupees','Description','Adresse_postale','Contacts_du_POI','URI_ID_du_POI','Code_postal_et_commune','Latitude','Longitude','Createur_de_la_donnee','Date_de_mise_a_jour']
+export const donneesPubliques = rows => rows.map(row=>Object.fromEntries(PUBLIC_FIELDS.filter(key=>key in row).map(key=>[key,row[key]])))
 
-  const ici = evenements.filter((e) => e.identifiant === ICI)
-  const alentours = evenements
-    .filter((e) => e.identifiant !== ICI)
-    .slice(0, MAX_ALENTOURS)
-
-  if (!evenements.length) {
-    console.log('Aucun événement à venir dans le flux — la page est laissée telle quelle.')
-    return
+export async function actualiserAgenda({cacheOnly=false, dryRun=false, today=dateParis()}={}) {
+  let cache
+  if (cacheOnly) cache=JSON.parse(await readFile(CACHE,'utf8'))
+  else {
+    const [brut, ardoise] = await Promise.all([recuperer(), telecharger(SOURCE_CENOMES,'ardoise Cénomes')])
+    cache={version:1,datatourisme:{source:API,receivedOn:today,events:donneesPubliques(brut)},cenomes:instantaneCenomes(ardoise,today)}
   }
-
-  const cartesIci = rendreCartes(ici, false)
-  const cartesAlentours = rendreCartes(alentours, true)
-  const jsonld = donneesStructurees([...ici, ...alentours])
-
-  const maj = evenements.map((e) => e.maj).filter(Boolean).sort().pop()
-  const createur = evenements.find((e) => e.createur)?.createur ?? 'Office de tourisme du Grand Orb'
-
-  const communesAlentours = [...new Set(alentours.map((e) => e.commune))].sort()
-
-  const blocAlentours = alentours.length
-    ? `
+  if (cache.version!==1 || cache.datatourisme?.source!==API || !dateValide(cache.datatourisme.receivedOn) || !Array.isArray(cache.datatourisme.events)) throw new Error('Instantané de l’agenda invalide')
+  const rules=JSON.parse(await readFile(OUVERTURES,'utf8'))
+  const evenements=preparerEvenements(cache.datatourisme.events,today,rules.events)
+  const cenomes=evenementsCenomes(cache.cenomes,today)
+  const ici=evenements.filter(e=>e.identifiant===ICI)
+  const alentours=evenements.filter(e=>e.identifiant!==ICI)
+  const all=[...ici,...alentours,...cenomes]
+  const jsonld=donneesStructurees(all)
+  const maj=evenements.map(e=>e.maj).filter(Boolean).sort().pop()
+  const createur=evenements.find(e=>e.createur)?.createur??'Office de tourisme du Grand Orb'
+  const communesAlentours=[...new Set(alentours.map(e=>e.commune))].sort()
+  const blocAlentours=alentours.length ? `
     <h2 class="agenda-titre">Aux alentours</h2>
     <p class="agenda-sous-titre">Les rendez-vous des villages voisins : ${echappe(communesAlentours.join(', '))}.</p>
     <div class="agenda-list">
-${cartesAlentours}
-    </div>`
-    : ''
-
-  const bloc = `<!-- @agenda -->
+${rendreCartes(alentours,true)}
+    </div>` : ''
+  const blocCenomes=cenomes.length ? `
+    <h2 class="agenda-titre" id="soirees-cenomes">Les soirées de Cénomes</h2>
+    <p class="agenda-sous-titre">Au restaurant L’Esquirol, à Cénomes (commune de Montagnol, Aveyron). Programme communiqué par l’établissement, distinct des animations du village et des données de l’office.</p>
+    <div class="agenda-list">
+${rendreCartes(cenomes,true)}
+    </div>
+    <p class="agenda-attribution">Source : <a href="https://esquirols.fr/cenomes.html">L’Esquirol Cénomes</a> · programme mis à jour le ${dateLisible(cache.cenomes.data.updated)}, consulté le ${dateLisible(cache.cenomes.receivedOn)}. L’horaire précis, le tarif et la disponibilité sont à confirmer lors de la réservation.</p>` : ''
+  const bloc=`<!-- @agenda -->
+    ${cenomes.length ? '<p class="agenda-acces"><a href="#soirees-cenomes">Voir les prochaines soirées de Cénomes</a></p>' : ''}
     <h2 class="agenda-titre">À Ceilhes-et-Rocozels</h2>
     <div class="agenda-list">
-${cartesIci || '      <p class="agenda-vide">Pas de rendez-vous annoncé au village pour le moment. Les animations des alentours sont ci-dessous.</p>'}
+${rendreCartes(ici,false)||'      <p class="agenda-vide">Pas de rendez-vous annoncé au village pour le moment. Les animations des alentours sont ci-dessous.</p>'}
     </div>${blocAlentours}
     <p class="agenda-attribution">
       ${ici.length} rendez-vous au village et ${alentours.length} aux alentours.
-      Source :
-      <strong>${echappe(createur)}</strong>, via
+      Source : <strong>${echappe(createur)}</strong>, via
       <a href="https://www.datatourisme.fr/" rel="noopener" target="_blank">DATAtourisme</a>
-      (Licence Ouverte 2.0)${maj ? ` — donnée mise à jour le ${maj.split('-').reverse().join('/')}` : ''}.
-      Actualisation automatique prévue chaque jour. Confirmez les horaires auprès de l’organisateur.
-    </p>
-    <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>
+      (Licence Ouverte 2.0)${maj ? ` — donnée mise à jour le ${echappe(String(maj).slice(0,10).split('-').reverse().join('/'))}` : ''}.
+      Flux consulté le ${dateLisible(cache.datatourisme.receivedOn)}. Actualisation automatique prévue chaque jour. Confirmez les horaires auprès de l’organisateur.
+    </p>${blocCenomes}
+    <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g,'\\u003c')}</script>
   <!-- @/agenda -->`
-
-  let html = await readFile(PAGE, 'utf8')
-
-  if (html.includes('<!-- @agenda -->')) {
-    html = html.replace(/<!-- @agenda -->[\s\S]*?<!-- @\/agenda -->/, bloc)
-  } else {
-    // Première exécution : on remplace la liste écrite à la main.
-    const re = /<div class="agenda-list">[\s\S]*?<\/div>\s*(?=<div class="agenda-src)/
-    if (!re.test(html)) {
-      throw new Error("Liste d'événements introuvable dans agenda.html")
-    }
-    html = html.replace(re, bloc + '\n  ')
+  const previous=await readFile(PAGE,'utf8')
+  if (!previous.includes('<!-- @agenda -->')) throw new Error('Bloc agenda introuvable')
+  const html=previous.replace(/<!-- @agenda -->[\s\S]*?<!-- @\/agenda -->/,bloc)
+  if (dryRun) {
+    console.log(`${ici.length} au village, ${alentours.length} aux alentours, ${cenomes.length} soirées à Cénomes ; simulation sans écriture.`)
+    return {cache,html,events:all}
   }
-
-  if (essai) {
-    console.log(`${ici.length} au village, ${alentours.length} aux alentours :`)
-    for (const e of [...ici, ...alentours]) {
-      console.log(`  ${e.debut} → ${e.fin}  ${(e.commune||'').padEnd(22)} ${e.nom.slice(0,52)}`)
-    }
-    console.log('\n(--dry-run : agenda.html non modifié)')
-    return
-  }
-
-  await writeFile(PAGE, html, 'utf8')
-  console.log(`agenda.html mis à jour — ${evenements.length} événement(s) à venir, source ${createur}`)
+  if (!cacheOnly) await writeFile(CACHE,JSON.stringify(cache,null,2)+'\n','utf8')
+  await writeFile(PAGE,html,'utf8')
+  console.log(`agenda.html mis à jour : ${all.length} rendez-vous dont ${cenomes.length} soirées de Cénomes`)
+  return {cache,html,events:all}
 }
-
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main().catch((e) => {
-  console.error('Échec de la mise à jour de l’agenda :', e.message)
+if (process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) actualiserAgenda({cacheOnly:process.argv.includes('--from-cache'),dryRun:process.argv.includes('--dry-run')}).catch(e=>{
+  console.error('Échec de la mise à jour de l’agenda :',e.message)
   process.exit(1)
 })

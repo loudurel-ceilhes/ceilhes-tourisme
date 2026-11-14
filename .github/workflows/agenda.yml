@@ -48,16 +48,17 @@ jobs:
 
       - name: Publier si l'agenda a changé
         run: |
-          if git diff --quiet -- agenda.html data/carnet-catalogue.json mon-sejour.html; then
+          if git diff --quiet -- agenda.html data/agenda-source.json data/carnet-catalogue.json mon-sejour.html recherche.html data/recherche.json; then
             echo "Aucun changement dans l'agenda — rien à publier."
             exit 0
           fi
           git config user.name "Agenda du village"
           git config user.email "actions@users.noreply.github.com"
-          git add agenda.html data/carnet-catalogue.json mon-sejour.html
+          git add agenda.html data/agenda-source.json data/carnet-catalogue.json mon-sejour.html recherche.html data/recherche.json
           git commit -m "agenda : mise à jour depuis les données ouvertes de Grand Orb
 
-          Source : office de tourisme du Grand Orb, via DATAtourisme
-          (Licence Ouverte 2.0). Mise à jour automatique quotidienne."
+          Sources : office de tourisme du Grand Orb, via DATAtourisme
+          (Licence Ouverte 2.0), et programme de L’Esquirol Cénomes.
+          Mise à jour automatique quotidienne."
           git push
           echo "Agenda mis à jour et publié."

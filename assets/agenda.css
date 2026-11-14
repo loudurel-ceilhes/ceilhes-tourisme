@@ -25,3 +25,16 @@
 @media(max-width:800px){.agenda-champs{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.agenda-champs{grid-template-columns:1fr}.agenda-filtres{padding:1rem}}
 @media(max-width:600px){#agenda-list .ev-card{display:block;padding:1rem}#agenda-list .ev-date{display:none}}
+.ev-autres-dates{margin:.5rem 0 .8rem;border:1px solid var(--pierre);border-radius:.4rem;background:var(--blanc)}
+.ev-autres-dates summary{cursor:pointer;min-height:44px;padding:.65rem .8rem;font-weight:600;color:var(--foret)}
+.ev-autres-dates ul{padding:0 .8rem .8rem}
+.ev-body .ev-ouverture,.ev-body .ev-service{font-size:.9rem;color:var(--foret);opacity:1;margin:.5rem 0}
+.ev-reserver a{display:inline-flex;min-height:44px;align-items:center;color:var(--foret);font-weight:600;text-underline-offset:.2em}
+.agenda-dates{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+.agenda-dates label{display:block;font-weight:600;color:var(--foret);margin-bottom:.4rem}
+.agenda-dates input{width:100%;min-width:0;min-height:48px;padding:.7rem .8rem;font:inherit;color:var(--foret);border:1px solid var(--foret);border-radius:.5rem;background:var(--blanc)}
+.agenda-dates p{grid-column:1/-1;font-size:.9rem}.agenda-dates a{color:var(--foret)}
+#agenda-dates-statut{color:var(--foret);font-size:.9rem;margin-top:.7rem}
+@media(max-width:500px){.agenda-dates{grid-template-columns:1fr}}
+@media print{.ev-autres-dates>ul{display:block!important}.agenda-filtres{display:none}}
+.agenda-acces a{display:inline-flex;min-height:44px;align-items:center;margin-bottom:1rem;color:var(--foret);font-weight:600;text-underline-offset:.2em}

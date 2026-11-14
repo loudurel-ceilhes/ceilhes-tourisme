@@ -9,6 +9,12 @@
   let undo = null;
   let feedbackTimer;
   let refreshTransfer = () => {};
+  const dates = window.SejourDates;
+  const validDay = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) &&
+    !Number.isNaN(new Date(value + 'T12:00:00Z').getTime()) && new Date(value + 'T12:00:00Z').toISOString().slice(0, 10) === value;
+  const dateLabel = value => new Intl.DateTimeFormat('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(value + 'T12:00:00Z'));
+  const catalog = new Map();
+  let catalogReady = false;
   const area = document.getElementById('carnet-contenu');
   const list = document.getElementById('carnet-liste');
   const count = document.getElementById('carnet-compteur');
@@ -42,7 +48,10 @@
     if (typeof id !== 'string' || !/^[a-z0-9-]{1,180}$/.test(id) ||
         typeof title !== 'string' || !title.trim() || title.length > 200 ||
         !categories.has(category) || !url) return null;
-    return { id, title: title.trim(), category, url };
+    const clean = { id, title: title.trim(), category, url };
+    if (validDay(item.day)) clean.day = item.day;
+    if (Array.isArray(item.dates) && item.dates.length <= 200 && item.dates.every(validDay)) clean.dates = [...new Set(item.dates)].sort();
+    return clean;
   }
 
   function decode(raw) {
@@ -130,8 +139,20 @@
     warning.hidden = !notice;
     document.getElementById('carnet-annulation').hidden = !undo;
     list.replaceChildren();
-    items.forEach(item => {
+    const ordered = [...items].sort((a, b) => (a.day || '9999').localeCompare(b.day || '9999'));
+    let section = null;
+    ordered.forEach(item => {
+      const day = item.day || '';
+      if (day !== section) {
+        if (ordered.some(i => i.day)) {
+          const group = element('li', undefined, 'carnet-jour-titre');
+          group.append(element('h2', day ? dateLabel(day) : 'À organiser'));
+          list.append(group);
+        }
+        section = day;
+      }
       const row = element('li', undefined, 'carnet-fiche');
+      row.dataset.ideaId = item.id;
       const body = element('div');
       body.append(element('p', item.category, 'carnet-categorie'));
       const heading = element('h2');
@@ -141,6 +162,31 @@
       body.append(heading);
       const printable = item.url.startsWith('/') ? 'https://ceilhes-tourisme.fr' + item.url : item.url;
       body.append(element('p', printable, 'carnet-url'));
+      const planning = element('div', undefined, 'carnet-affectation');
+      const label = element('label', 'Ma journée (facultatif)');
+      const input = element('input');
+      input.type = 'date';
+      input.value = item.day || '';
+      input.setAttribute('aria-label', `Journée prévue pour ${item.title}`);
+      label.append(input);
+      planning.append(label);
+      input.addEventListener('change', () => {
+        const chosenDay = input.value;
+        if (chosenDay && !validDay(chosenDay)) return;
+        const next = items.map(entry => {
+          if (entry.id !== item.id) return entry;
+          const updated = { ...entry }; delete updated.day;
+          if (chosenDay) updated.day = chosenDay;
+          return updated;
+        });
+        change(next, chosenDay ? `Journée choisie : ${dateLabel(chosenDay)}.` : 'Cette idée reste dans votre carnet, sans journée choisie.');
+      });
+      body.append(planning);
+      const range = dates?.read();
+      const knownDates = catalog.get(item.id)?.dates;
+      if (item.day && range && (item.day < range.start || item.day > range.end)) body.append(element('p', 'Cette journée est en dehors de vos dates de séjour. Votre choix est conservé.', 'carnet-incompatibilite'));
+      if (item.day && knownDates?.length && !knownDates.includes(item.day)) body.append(element('p', 'Cet événement n’est pas annoncé à la journée choisie. Consultez ses dates avant de vous déplacer.', 'carnet-incompatibilite'));
+      else if (!item.day && range && knownDates?.length && !knownDates.some(day => day >= range.start && day <= range.end)) body.append(element('p', 'Aucune date annoncée pour cet événement pendant votre séjour.', 'carnet-incompatibilite'));
       const removeButton = element('button', 'Retirer', 'carnet-retirer');
       removeButton.type = 'button';
       removeButton.setAttribute('aria-label', `Retirer ${item.title} du carnet`);
@@ -167,6 +213,39 @@
   });
 
   if (area) {
+    const rangeStart = document.getElementById('carnet-debut');
+    const rangeEnd = document.getElementById('carnet-fin');
+    const rangeFeedback = document.getElementById('carnet-dates-retour');
+    function refreshRange() {
+      const range = dates?.read();
+      rangeStart.value = range?.start || '';
+      rangeEnd.value = range?.end || '';
+      const query = range ? `?debut=${range.start}&fin=${range.end}` : '';
+      document.getElementById('carnet-agenda-dates').href = 'agenda.html' + (range ? query + '&periode=sejour' : '');
+      document.getElementById('carnet-marches-dates').href = 'terroir.html' + query + '#marches-du-pays';
+      rangeFeedback.textContent = range ? `Du ${dateLabel(range.start)} au ${dateLabel(range.end)}. Ces dates sont proposées dans l’agenda et les marchés.` : 'Vous pouvez garder vos idées sans fixer de dates.';
+    }
+    document.getElementById('carnet-dates-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const range = { start: rangeStart.value, end: rangeEnd.value };
+      if (!dates?.validRange(range)) { rangeFeedback.textContent = 'Choisissez une période valide, dans l’ordre, de 31 jours maximum.'; return; }
+      if (!dates.write(range)) { rangeFeedback.textContent = 'Le navigateur n’a pas pu enregistrer ces dates. Les dates précédentes sont conservées.'; return; }
+      // Une ancienne URL ne doit pas reprendre le dessus au rechargement.
+      const url = new URL(location.href); url.searchParams.delete('debut'); url.searchParams.delete('fin');
+      history.replaceState(history.state, '', url);
+      refreshRange(); render();
+    });
+    document.getElementById('carnet-dates-effacer').addEventListener('click', () => {
+      if (!dates?.clear()) { rangeFeedback.textContent = 'Le navigateur n’a pas pu effacer vos dates.'; return; }
+      const url = new URL(location.href); url.searchParams.delete('debut'); url.searchParams.delete('fin'); history.replaceState(history.state, '', url);
+      refreshRange(); render();
+    });
+    addEventListener('sejour:dates-changed', () => {
+      const url = new URL(location.href); url.searchParams.delete('debut'); url.searchParams.delete('fin');
+      try { history.replaceState(history.state, '', url); } catch { /* Le programme affiché reste à jour. */ }
+      refreshRange(); render();
+    });
+    refreshRange();
     document.getElementById('carnet-imprimer').addEventListener('click', () => {
       try { window.print(); } catch { say('Utilisez la fonction Imprimer de votre navigateur.'); }
     });
@@ -187,8 +266,6 @@
     const previewSummary = document.getElementById('carnet-apercu-resume');
     const importButton = document.getElementById('carnet-importer');
     let incoming = null;
-    let catalogReady = false;
-    const catalog = new Map();
 
     try {
       const data = JSON.parse(document.getElementById('carnet-catalogue').textContent);
@@ -204,12 +281,40 @@
     }
 
     function selectedPublic() {
-      return items.map(item => catalog.get(item.id)).filter(Boolean);
+      return items.map(item => catalog.has(item.id) ? { ...catalog.get(item.id), ...(item.day ? { day: item.day } : {}) } : null).filter(Boolean)
+        .sort((a, b) => (a.day || '9999').localeCompare(b.day || '9999'));
     }
 
     function parseIds(ids) {
       if (!Array.isArray(ids) || !ids.length || ids.length > LIMIT || ids.some(id => typeof id !== 'string' || !/^[a-z0-9-]{1,180}$/.test(id))) throw new Error('format');
       return [...new Set(ids)];
+    }
+
+    function planFor(chosen) {
+      const plan = {};
+      const stay = dates?.read();
+      if (stay) plan.stay = stay;
+      const days = Object.fromEntries(chosen.filter(item => item.day).map(item => [item.id, item.day]));
+      if (Object.keys(days).length) plan.days = days;
+      return plan;
+    }
+
+    function readPlan(plan, ids) {
+      if (!plan || typeof plan !== 'object' || Array.isArray(plan)) throw new Error('plan');
+      const clean = {};
+      if (plan.stay !== undefined) {
+        if (!dates?.validRange(plan.stay)) throw new Error('dates');
+        clean.stay = { start: plan.stay.start, end: plan.stay.end };
+      }
+      if (plan.days !== undefined) {
+        if (!plan.days || typeof plan.days !== 'object' || Array.isArray(plan.days) || Object.keys(plan.days).length > LIMIT) throw new Error('jours');
+        clean.days = {};
+        for (const [id, day] of Object.entries(plan.days)) {
+          if (!ids.includes(id) || !validDay(day)) throw new Error('jour');
+          clean.days[id] = day;
+        }
+      }
+      return clean;
     }
 
     function renderPreview() {
@@ -221,6 +326,7 @@
         const link = element('a', `${item.title} · ${item.category}`);
         link.href = item.url;
         row.append(link);
+        if (incoming.plan.days?.[item.id]) row.append(element('span', ` · ${dateLabel(incoming.plan.days[item.id])}`));
         previewList.append(row);
       });
       const additions = incoming.recognized.filter(item => !items.some(saved => saved.id === item.id));
@@ -228,16 +334,19 @@
       const lines = [`${incoming.recognized.length} idée${incoming.recognized.length > 1 ? 's' : ''} reconnue${incoming.recognized.length > 1 ? 's' : ''}.`];
       if (incoming.missing) lines.push(`${incoming.missing} référence${incoming.missing > 1 ? 's' : ''} ancienne${incoming.missing > 1 ? 's' : ''} ou inconnue${incoming.missing > 1 ? 's' : ''} ${incoming.missing > 1 ? 'n’ont' : 'n’a'} pas pu être retrouvée${incoming.missing > 1 ? 's' : ''}.`);
       if (duplicates) lines.push(`${duplicates} idée${duplicates > 1 ? 's sont déjà présentes' : ' est déjà présente'} dans votre carnet.`);
+      const dated = incoming.recognized.filter(item => incoming.plan.days?.[item.id] && !items.find(saved => saved.id === item.id)?.day).length;
+      if (dated) lines.push(`${dated} idée(s) recevront la journée proposée. Les journées déjà choisies sont conservées.`);
+      if (incoming.plan.stay) lines.push(dates?.read() ? 'Vos dates de séjour actuelles seront conservées.' : `Dates proposées : du ${dateLabel(incoming.plan.stay.start)} au ${dateLabel(incoming.plan.stay.end)}.`);
       if (items.length + additions.length > LIMIT) lines.push(`La limite est de ${LIMIT} idées. Retirez d’abord ${items.length + additions.length - LIMIT} idée(s) de votre carnet pour pouvoir ajouter cette sélection.`);
       else if (additions.length) lines.push(`${additions.length} idée${additions.length > 1 ? 's seront ajoutées' : ' sera ajoutée'}, sans retirer votre sélection actuelle.`);
       previewSummary.textContent = lines.join(' ');
-      importButton.disabled = !additions.length || items.length + additions.length > LIMIT;
+      importButton.disabled = (!additions.length && !dated && !(incoming.plan.stay && !dates?.read())) || !incoming.recognized.length || items.length + additions.length > LIMIT;
     }
 
-    function offer(ids) {
+    function offer(ids, plan = {}) {
       const unique = parseIds(ids);
       const recognized = unique.map(id => catalog.get(id)).filter(Boolean);
-      incoming = { recognized, missing: unique.length - recognized.length };
+      incoming = { recognized, missing: unique.length - recognized.length, plan: readPlan(plan, unique) };
       renderPreview();
       document.getElementById('carnet-apercu-titre').focus();
     }
@@ -245,8 +354,20 @@
     function readHash() {
       if (!catalogReady || !location.hash.startsWith('#carnet=')) return;
       try {
-        if (location.hash.length > 12000) throw new Error('format');
-        offer(decodeURIComponent(location.hash.slice(8)).split(','));
+        if (location.hash.length > 24000) throw new Error('format');
+        const params = new URLSearchParams(location.hash.slice(1));
+        const plan = {};
+        if (params.has('sejour')) {
+          const stay = params.get('sejour').split(',');
+          if (stay.length !== 2) throw new Error('dates');
+          plan.stay = { start: stay[0], end: stay[1] };
+        }
+        if (params.has('jours')) {
+          const days = params.get('jours').split(',').map(value => value.split(':'));
+          if (days.some(pair => pair.length !== 2)) throw new Error('jours');
+          plan.days = Object.fromEntries(days);
+        }
+        offer(params.get('carnet').split(','), plan);
         importFeedback.textContent = '';
       } catch {
         incoming = null;
@@ -268,7 +389,11 @@
       // Un ancien lien affiché ne doit pas être confondu avec la sélection modifiée.
       if (!sharePanel.hidden) {
         const chosen = selectedPublic();
-        shareLink.value = chosen.length ? 'https://ceilhes-tourisme.fr/mon-sejour.html#carnet=' + chosen.map(item => item.id).join(',') : '';
+        const plan = planFor(chosen);
+        let fragment = chosen.map(item => item.id).join(',');
+        if (plan.stay) fragment += '&sejour=' + plan.stay.start + ',' + plan.stay.end;
+        if (plan.days) fragment += '&jours=' + Object.entries(plan.days).map(([id, day]) => id + ':' + day).join(',');
+        shareLink.value = chosen.length ? 'https://ceilhes-tourisme.fr/mon-sejour.html#carnet=' + fragment : '';
         shareFeedback.textContent = items.length > chosen.length ? `${items.length - chosen.length} ancienne(s) idée(s) ne figurent plus dans le guide et ne sont pas incluses dans le partage.` : '';
         document.getElementById('carnet-copier').disabled = !chosen.length;
       }
@@ -300,7 +425,7 @@
         if (file.size > 32768) throw new Error('size');
         const data = JSON.parse(await file.text());
         if (!data || data.format !== 'ceilhes-mon-sejour' || data.version !== 2) throw new Error('format');
-        offer(data.ids);
+        offer(data.ids, { ...(data.stay !== undefined ? { stay: data.stay } : {}), ...(data.days !== undefined ? { days: data.days } : {}) });
         importFeedback.textContent = 'Fichier lu. Vérifiez les idées ci-dessous avant de les ajouter.';
       } catch {
         incoming = null;
@@ -311,10 +436,13 @@
     importButton.addEventListener('click', () => {
       if (!incoming) return;
       const additions = incoming.recognized.filter(item => !items.some(saved => saved.id === item.id));
-      if (!additions.length || items.length + additions.length > LIMIT) return;
-      if (change([...items, ...additions], `${additions.length} idée(s) ajoutée(s) à votre carnet.`, null)) {
+      if (importButton.disabled || items.length + additions.length > LIMIT) return;
+      const proposal = incoming.plan;
+      const next = [...items, ...additions].map(item => item.day || !proposal.days?.[item.id] ? item : { ...item, day: proposal.days[item.id] });
+      if (change(next, `${additions.length} idée(s) ajoutée(s) à votre carnet.`, null)) {
+        const datesSaved = !proposal.stay || dates?.read() || dates?.write(proposal.stay);
         clearPreview();
-        importFeedback.textContent = 'Les idées ont été ajoutées à votre carnet. Votre sélection précédente est conservée.';
+        importFeedback.textContent = 'Les idées et les journées proposées ont été ajoutées à votre carnet. Votre sélection et vos journées précédentes sont conservées.' + (datesSaved ? '' : ' Le navigateur n’a pas pu conserver les dates du séjour ; vous pouvez les saisir dans « Mes dates » ci-dessous.');
         count.focus();
       }
     });
@@ -338,7 +466,7 @@
     document.getElementById('carnet-exporter').addEventListener('click', () => {
       const chosen = selectedPublic();
       if (!chosen.length) return;
-      const data = { format: 'ceilhes-mon-sejour', version: 2, ids: chosen.map(item => item.id) };
+      const data = { format: 'ceilhes-mon-sejour', version: 2, ids: chosen.map(item => item.id), ...planFor(chosen) };
       download(JSON.stringify(data, null, 2) + '\n', 'application/json', 'mon-sejour-ceilhes.json');
       say('Fichier de carnet préparé. Les anciennes idées absentes du guide ne sont pas exportées.');
     });
@@ -350,9 +478,14 @@
       const date = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeZone: 'Europe/Paris' }).format(new Date());
       const cards = chosen.map(item => {
         const url = item.url.startsWith('/') ? 'https://ceilhes-tourisme.fr' + item.url : item.url;
-        return `<li><p class="category">${escape(item.category)}</p><h2>${escape(item.title)}</h2><p><a href="${escape(url)}">Ouvrir la fiche en ligne</a></p><p class="url">${escape(url)}</p></li>`;
+        const day = item.day ? `<p><strong>${escape(dateLabel(item.day))}</strong></p>` : '';
+        const known = item.dates?.length ? `<p>Dates annoncées : ${item.dates.slice(0, 5).map(value => escape(dateLabel(value))).join(' · ')}${item.dates.length > 5 ? ' · autres dates sur la fiche' : ''}.</p>` : '';
+        const mismatch = item.day && item.dates?.length && !item.dates.includes(item.day) ? '<p>Attention : cet événement n’est pas annoncé à la journée choisie.</p>' : '';
+        return `<li><p class="category">${escape(item.category)}</p><h2>${escape(item.title)}</h2>${day}${known}${mismatch}<p><a href="${escape(url)}">Ouvrir la fiche en ligne</a></p><p class="url">${escape(url)}</p></li>`;
       }).join('\n');
-      const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"><title>Mon séjour à Ceilhes — copie hors ligne</title><style>:root{--foret:#244836;--blanc:#fff;--pierre:#dcd8ca}body{font:17px/1.6 system-ui,sans-serif;max-width:48rem;margin:2rem auto;padding:0 1rem;background:var(--blanc);color:var(--foret)}h1{line-height:1.2}h2{font-size:1.3rem;margin:.3rem 0}ul{list-style:none;padding:0}li{border:1px solid var(--pierre);border-radius:.5rem;padding:1rem;margin:1rem 0;break-inside:avoid}a{color:inherit}.category{font-size:.85rem;margin:0}.url{font-size:.8rem;overflow-wrap:anywhere}@media print{body{margin:0}}</style></head><body><h1>Mon séjour à Ceilhes</h1><p>Copie téléchargée le ${escape(date)} · ${chosen.length} idée(s).</p><p>Cette liste se lit sans connexion. Les liens vers les fiches demandent un accès à Internet. Vérifiez avant votre départ les dates, ouvertures et conditions d’accès : cette copie n’est pas actualisée automatiquement et ne constitue pas une réservation.</p><ul>${cards}</ul><p>Pour une copie papier, utilisez la fonction Imprimer de votre navigateur.</p><p><a href="https://ceilhes-tourisme.fr/mon-sejour.html">Retrouver le guide en ligne</a></p></body></html>`;
+      const stay = dates?.read();
+      const programme = stay ? `<p>Séjour prévu du ${escape(dateLabel(stay.start))} au ${escape(dateLabel(stay.end))}.</p>` : '';
+      const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"><title>Mon séjour à Ceilhes — copie hors ligne</title><style>:root{--foret:#244836;--blanc:#fff;--pierre:#dcd8ca}body{font:17px/1.6 system-ui,sans-serif;max-width:48rem;margin:2rem auto;padding:0 1rem;background:var(--blanc);color:var(--foret)}h1{line-height:1.2}h2{font-size:1.3rem;margin:.3rem 0}ul{list-style:none;padding:0}li{border:1px solid var(--pierre);border-radius:.5rem;padding:1rem;margin:1rem 0;break-inside:avoid}a{color:inherit}.category{font-size:.85rem;margin:0}.url{font-size:.8rem;overflow-wrap:anywhere}@media print{body{margin:0}}</style></head><body><h1>Mon séjour à Ceilhes</h1>${programme}<p>Copie téléchargée le ${escape(date)} · ${chosen.length} idée(s).</p><p>Cette liste se lit sans connexion. Les liens vers les fiches demandent un accès à Internet. Vérifiez avant votre départ les dates, ouvertures et conditions d’accès : cette copie n’est pas actualisée automatiquement et ne constitue pas une réservation.</p><ul>${cards}</ul><p>Pour une copie papier, utilisez la fonction Imprimer de votre navigateur.</p><p><a href="https://ceilhes-tourisme.fr/mon-sejour.html">Retrouver le guide en ligne</a></p></body></html>`;
       download(html, 'text/html;charset=utf-8', 'mon-sejour-ceilhes-hors-ligne.html');
       say('Copie hors ligne préparée. Retrouvez-la dans les téléchargements de votre appareil.');
     });

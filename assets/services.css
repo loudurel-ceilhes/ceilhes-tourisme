@@ -1,0 +1,19 @@
+#services-carte{height:360px;margin-top:1rem;border:1px solid var(--pierre);border-radius:var(--r);z-index:0}
+#services-carte[hidden]{display:none}
+.service-print{display:none}
+.service-address{font-style:normal}
+.page-services .guide-hero h1{max-width:22ch}
+@media print{
+ .page-services .service-screen,.page-services .guide-crumb,.page-services .guide-hero .kicker{display:none!important}
+ .page-services .service-print{display:block!important}
+ .page-services .guide-hero{padding:0!important}
+ .page-services .guide-hero h1{max-width:none;font-size:24pt;margin:0 0 8mm}
+ .page-services .guide-hero p{font-size:10pt}
+ .page-services .guide-hero .guide-meta{display:none}
+ .page-services .service-print h2{font-size:16pt;margin-bottom:4mm}
+ .service-print table{border-collapse:collapse;width:100%;font-size:10pt}
+ .service-print th,.service-print td{border:1px solid #777;padding:3mm;text-align:left;vertical-align:top}
+ .service-print th{width:34%}
+ .service-print tr{break-inside:avoid}
+ .service-print p{font-size:9pt;margin-top:4mm!important}
+}

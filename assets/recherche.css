@@ -1,0 +1,11 @@
+#recherche-form{max-width:48rem;margin-bottom:1rem}
+#recherche-form label{display:block;font-weight:600;margin-bottom:.5rem}
+.recherche-champs{display:flex;gap:.7rem;flex-wrap:wrap}
+.recherche-champs input{font:inherit;flex:1 1 220px;min-width:0;max-width:100%;padding:.7rem;border:1px solid var(--foret);border-radius:.5rem;background:var(--blanc);color:var(--foret)}
+.recherche-champs button{font:inherit;min-height:44px;padding:.7rem 1rem;background:var(--foret);color:var(--blanc);border:1px solid var(--foret);border-radius:.5rem;cursor:pointer}
+#recherche-resultats{list-style:none;padding:0;margin:1.5rem 0;display:grid;gap:1rem}
+#recherche-resultats li{padding:1.2rem;border:1px solid var(--pierre);border-radius:var(--r);background:var(--blanc)}
+#recherche-resultats h2{font-size:1.6rem;margin:.3rem 0 .6rem}
+.recherche-categorie{font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+.recherche-raccourcis{margin:1.5rem 0}
+@media print{#recherche-form{display:none}}

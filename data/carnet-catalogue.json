@@ -92,28 +92,102 @@
       "url": "/circuits-producteurs.html#roquefort"
     },
     {
+      "id": "ev-029b39706e43b8a0",
+      "title": "Soirée raclette",
+      "category": "Événement",
+      "url": "/agenda.html#ev-029b39706e43b8a0",
+      "dates": [
+        "2026-12-04"
+      ]
+    },
+    {
+      "id": "ev-04e36f508e2e25b2",
+      "title": "Movie movie",
+      "category": "Événement",
+      "url": "/agenda.html#ev-04e36f508e2e25b2",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-0c522b889a9a6547",
+      "title": "La grande expérience du professeur rafouh",
+      "category": "Événement",
+      "url": "/agenda.html#ev-0c522b889a9a6547",
+      "dates": [
+        "2026-12-22",
+        "2026-12-23",
+        "2027-02-09",
+        "2027-02-11",
+        "2027-02-16",
+        "2027-02-18"
+      ]
+    },
+    {
       "id": "ev-0d6d262eaa078c5b",
       "title": "\" flor’Avène \"",
       "category": "Événement",
       "url": "/agenda.html#ev-0d6d262eaa078c5b"
     },
     {
+      "id": "ev-126e29d55d73a4ac",
+      "title": "Repas de la sainte barbe",
+      "category": "Événement",
+      "url": "/agenda.html#ev-126e29d55d73a4ac",
+      "dates": [
+        "2026-12-04"
+      ]
+    },
+    {
+      "id": "ev-13e09d6e2add290d",
+      "title": "Marché de noël",
+      "category": "Événement",
+      "url": "/agenda.html#ev-13e09d6e2add290d",
+      "dates": [
+        "2026-11-29"
+      ]
+    },
+    {
+      "id": "ev-150620829efa7b09",
+      "title": "Stage de poterie",
+      "category": "Événement",
+      "url": "/agenda.html#ev-150620829efa7b09"
+    },
+    {
       "id": "ev-19e09b393f70a6d6",
       "title": "Concert dessiné",
       "category": "Événement",
-      "url": "/agenda.html#ev-19e09b393f70a6d6"
+      "url": "/agenda.html#ev-19e09b393f70a6d6",
+      "dates": [
+        "2026-11-25"
+      ]
+    },
+    {
+      "id": "ev-1bbf8d4fa8eaccf7",
+      "title": "Soirée raclette",
+      "category": "Événement",
+      "url": "/agenda.html#ev-1bbf8d4fa8eaccf7",
+      "dates": [
+        "2027-01-01"
+      ]
     },
     {
       "id": "ev-22cbd07148ab57db",
       "title": "Atelier stop motion",
       "category": "Événement",
-      "url": "/agenda.html#ev-22cbd07148ab57db"
+      "url": "/agenda.html#ev-22cbd07148ab57db",
+      "dates": [
+        "2026-11-25"
+      ]
     },
     {
       "id": "ev-2acb7fb9053b1f7b",
       "title": "Visite commentée du village",
       "category": "Événement",
-      "url": "/agenda.html#ev-2acb7fb9053b1f7b"
+      "url": "/agenda.html#ev-2acb7fb9053b1f7b",
+      "dates": [
+        "2026-11-17"
+      ]
     },
     {
       "id": "ev-2c378e48296df3a9",
@@ -122,28 +196,115 @@
       "url": "/agenda.html#ev-2c378e48296df3a9"
     },
     {
-      "id": "ev-390c3184653ddc10",
-      "title": "Fabrication de lifofer, le secret d’un sol vivant",
+      "id": "ev-35a55bc17ab4004a",
+      "title": "Rocc alter : sur le fil des possibles",
       "category": "Événement",
-      "url": "/agenda.html#ev-390c3184653ddc10"
+      "url": "/agenda.html#ev-35a55bc17ab4004a",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-39704f096ec8e4bc",
+      "title": "Ecran mon amour",
+      "category": "Événement",
+      "url": "/agenda.html#ev-39704f096ec8e4bc",
+      "dates": [
+        "2026-11-26"
+      ]
     },
     {
       "id": "ev-3c7f42a6b1b86324",
       "title": "Marché traditionnel de lodève",
       "category": "Événement",
-      "url": "/agenda.html#ev-3c7f42a6b1b86324"
+      "url": "/agenda.html#ev-3c7f42a6b1b86324",
+      "dates": [
+        "2026-11-21",
+        "2026-11-28",
+        "2026-12-05",
+        "2026-12-12",
+        "2026-12-19",
+        "2026-12-26",
+        "2027-01-02",
+        "2027-01-09",
+        "2027-01-16",
+        "2027-01-23",
+        "2027-01-30",
+        "2027-02-06",
+        "2027-02-13",
+        "2027-02-20",
+        "2027-02-27",
+        "2027-03-06",
+        "2027-03-13",
+        "2027-03-20",
+        "2027-03-27",
+        "2027-04-03",
+        "2027-04-10",
+        "2027-04-17",
+        "2027-04-24",
+        "2027-05-01",
+        "2027-05-08",
+        "2027-05-15",
+        "2027-05-22",
+        "2027-05-29",
+        "2027-06-05",
+        "2027-06-12",
+        "2027-06-19",
+        "2027-06-26",
+        "2027-07-03",
+        "2027-07-10",
+        "2027-07-17",
+        "2027-07-24",
+        "2027-07-31",
+        "2027-08-07",
+        "2027-08-14",
+        "2027-08-21",
+        "2027-08-28",
+        "2027-09-04",
+        "2027-09-11",
+        "2027-09-18",
+        "2027-09-25",
+        "2027-10-02",
+        "2027-10-09",
+        "2027-10-16",
+        "2027-10-23",
+        "2027-10-30",
+        "2027-11-06",
+        "2027-11-13",
+        "2027-11-20",
+        "2027-11-27",
+        "2027-12-04",
+        "2027-12-11",
+        "2027-12-18",
+        "2027-12-25"
+      ]
     },
     {
       "id": "ev-416bfc7196d4ebc8",
       "title": "Club de lecture",
       "category": "Événement",
-      "url": "/agenda.html#ev-416bfc7196d4ebc8"
+      "url": "/agenda.html#ev-416bfc7196d4ebc8",
+      "dates": [
+        "2026-11-25"
+      ]
+    },
+    {
+      "id": "ev-46aceb05244e01c8",
+      "title": "Visite guidée par matthieu gounelle",
+      "category": "Événement",
+      "url": "/agenda.html#ev-46aceb05244e01c8",
+      "dates": [
+        "2026-11-28"
+      ]
     },
     {
       "id": "ev-56ae036e5172f8d3",
       "title": "Balade guidée à vélo : lodève-manger comme on sème",
       "category": "Événement",
-      "url": "/agenda.html#ev-56ae036e5172f8d3"
+      "url": "/agenda.html#ev-56ae036e5172f8d3",
+      "dates": [
+        "2026-11-22"
+      ]
     },
     {
       "id": "ev-5d9d77d797aa16dd",
@@ -152,22 +313,202 @@
       "url": "/agenda.html#ev-5d9d77d797aa16dd"
     },
     {
+      "id": "ev-603bb2c5c5e4adc1",
+      "title": "Visite guidée 1er dimanche du mois \"météorites entre ciel et terre\"",
+      "category": "Événement",
+      "url": "/agenda.html#ev-603bb2c5c5e4adc1",
+      "dates": [
+        "2026-12-06",
+        "2027-01-03",
+        "2027-02-07",
+        "2027-03-07",
+        "2027-04-04",
+        "2027-05-02",
+        "2027-06-06",
+        "2027-07-04",
+        "2027-08-01"
+      ]
+    },
+    {
+      "id": "ev-62294f8b47c905ef",
+      "title": "Petites histoires de dino",
+      "category": "Événement",
+      "url": "/agenda.html#ev-62294f8b47c905ef",
+      "dates": [
+        "2026-12-22",
+        "2026-12-29"
+      ]
+    },
+    {
       "id": "ev-64c1a6176d0a2c3e",
       "title": "Atelier vannerie sauvage",
       "category": "Événement",
-      "url": "/agenda.html#ev-64c1a6176d0a2c3e"
+      "url": "/agenda.html#ev-64c1a6176d0a2c3e",
+      "dates": [
+        "2026-11-21"
+      ]
     },
     {
       "id": "ev-654e0e8c07db3eea",
       "title": "Brocante  - vide-grenier de lodève",
       "category": "Événement",
-      "url": "/agenda.html#ev-654e0e8c07db3eea"
+      "url": "/agenda.html#ev-654e0e8c07db3eea",
+      "dates": [
+        "2026-11-15",
+        "2026-11-22",
+        "2026-11-29",
+        "2026-12-06",
+        "2026-12-13",
+        "2026-12-20",
+        "2026-12-27",
+        "2027-01-03",
+        "2027-01-10",
+        "2027-01-17",
+        "2027-01-24",
+        "2027-01-31",
+        "2027-02-07",
+        "2027-02-14",
+        "2027-02-21",
+        "2027-02-28",
+        "2027-03-07",
+        "2027-03-14",
+        "2027-03-21",
+        "2027-03-28",
+        "2027-04-04",
+        "2027-04-11",
+        "2027-04-18",
+        "2027-04-25",
+        "2027-05-02",
+        "2027-05-09",
+        "2027-05-16",
+        "2027-05-23",
+        "2027-05-30",
+        "2027-06-06",
+        "2027-06-13",
+        "2027-06-20",
+        "2027-06-27",
+        "2027-07-04",
+        "2027-07-11",
+        "2027-07-18",
+        "2027-07-25",
+        "2027-08-01",
+        "2027-08-08",
+        "2027-08-15",
+        "2027-08-22",
+        "2027-08-29",
+        "2027-09-05",
+        "2027-09-12",
+        "2027-09-19",
+        "2027-09-26",
+        "2027-10-03",
+        "2027-10-10",
+        "2027-10-17",
+        "2027-10-24",
+        "2027-10-31",
+        "2027-11-07",
+        "2027-11-14",
+        "2027-11-21",
+        "2027-11-28",
+        "2027-12-05",
+        "2027-12-12",
+        "2027-12-19",
+        "2027-12-26"
+      ]
+    },
+    {
+      "id": "ev-6b7e6f5c4c96e05c",
+      "title": "Visite guidée famille de l’exposition «météorites entre ciel et terre »",
+      "category": "Événement",
+      "url": "/agenda.html#ev-6b7e6f5c4c96e05c",
+      "dates": [
+        "2026-12-20",
+        "2026-12-23",
+        "2026-12-27",
+        "2026-12-29",
+        "2026-12-30",
+        "2027-02-10",
+        "2027-02-12",
+        "2027-02-14",
+        "2027-02-17",
+        "2027-02-19",
+        "2027-02-21"
+      ]
+    },
+    {
+      "id": "ev-6f56dbd186c87a69",
+      "title": "Rando telethon avec taill aventure",
+      "category": "Événement",
+      "url": "/agenda.html#ev-6f56dbd186c87a69",
+      "dates": [
+        "2026-12-06"
+      ]
     },
     {
       "id": "ev-703545e8c7d11392",
       "title": "Soirée karaoké",
       "category": "Événement",
-      "url": "/agenda.html#ev-703545e8c7d11392"
+      "url": "/agenda.html#ev-703545e8c7d11392",
+      "dates": [
+        "2026-11-17",
+        "2026-11-24",
+        "2026-12-01",
+        "2026-12-08",
+        "2026-12-15",
+        "2026-12-22",
+        "2026-12-29",
+        "2027-01-05",
+        "2027-01-12",
+        "2027-01-19",
+        "2027-01-26",
+        "2027-02-02",
+        "2027-02-09",
+        "2027-02-16",
+        "2027-02-23",
+        "2027-03-02",
+        "2027-03-09",
+        "2027-03-16",
+        "2027-03-23",
+        "2027-03-30",
+        "2027-04-06",
+        "2027-04-13",
+        "2027-04-20",
+        "2027-04-27",
+        "2027-05-04",
+        "2027-05-11",
+        "2027-05-18",
+        "2027-05-25",
+        "2027-06-01",
+        "2027-06-08",
+        "2027-06-15",
+        "2027-06-22",
+        "2027-06-29",
+        "2027-07-06",
+        "2027-07-13",
+        "2027-07-20",
+        "2027-07-27",
+        "2027-08-03",
+        "2027-08-10",
+        "2027-08-17",
+        "2027-08-24",
+        "2027-08-31",
+        "2027-09-07",
+        "2027-09-14",
+        "2027-09-21",
+        "2027-09-28",
+        "2027-10-05",
+        "2027-10-12",
+        "2027-10-19",
+        "2027-10-26",
+        "2027-11-02",
+        "2027-11-09",
+        "2027-11-16",
+        "2027-11-23",
+        "2027-11-30",
+        "2027-12-07",
+        "2027-12-14",
+        "2027-12-21",
+        "2027-12-28"
+      ]
     },
     {
       "id": "ev-725cd1ff3cd252be",
@@ -179,7 +520,19 @@
       "id": "ev-74e522a7e24499db",
       "title": "Voyage intérieur: atelier dessin",
       "category": "Événement",
-      "url": "/agenda.html#ev-74e522a7e24499db"
+      "url": "/agenda.html#ev-74e522a7e24499db",
+      "dates": [
+        "2026-11-15"
+      ]
+    },
+    {
+      "id": "ev-7812853921e550ab",
+      "title": "« faites un voeu »",
+      "category": "Événement",
+      "url": "/agenda.html#ev-7812853921e550ab",
+      "dates": [
+        "2026-11-28"
+      ]
     },
     {
       "id": "ev-7921bd4edebc8756",
@@ -188,28 +541,267 @@
       "url": "/agenda.html#ev-7921bd4edebc8756"
     },
     {
+      "id": "ev-7caace8ad7041b6a",
+      "title": "Projection du film \" naïs de marcel pagnol \"",
+      "category": "Événement",
+      "url": "/agenda.html#ev-7caace8ad7041b6a",
+      "dates": [
+        "2026-12-13"
+      ]
+    },
+    {
       "id": "ev-7ce56e1880a13586",
       "title": "Cours de gymnastique",
       "category": "Événement",
-      "url": "/agenda.html#ev-7ce56e1880a13586"
+      "url": "/agenda.html#ev-7ce56e1880a13586",
+      "dates": [
+        "2026-11-17",
+        "2026-11-24",
+        "2026-12-01",
+        "2026-12-08",
+        "2026-12-15",
+        "2026-12-22",
+        "2026-12-29"
+      ]
+    },
+    {
+      "id": "ev-7d7d0927ad62ed7e",
+      "title": "Fabrication de jeux optiques",
+      "category": "Événement",
+      "url": "/agenda.html#ev-7d7d0927ad62ed7e",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-7da0a7e52e2dd50e",
+      "title": "Stages cyanotype",
+      "category": "Événement",
+      "url": "/agenda.html#ev-7da0a7e52e2dd50e",
+      "dates": [
+        "2026-11-29",
+        "2027-01-10"
+      ]
+    },
+    {
+      "id": "ev-87779d54b1f97179",
+      "title": "Les dimanches du patrimoine : l’hôtel de fleury : toute une histoire !",
+      "category": "Événement",
+      "url": "/agenda.html#ev-87779d54b1f97179",
+      "dates": [
+        "2026-12-06"
+      ]
     },
     {
       "id": "ev-87ebe55e8125e085",
       "title": "Marché de Noël à Camarès",
       "category": "Événement",
-      "url": "/agenda.html#ev-87ebe55e8125e085"
+      "url": "/agenda.html#ev-87ebe55e8125e085",
+      "dates": [
+        "2026-11-22"
+      ]
+    },
+    {
+      "id": "ev-8b8af8b80b0515af",
+      "title": "Soirée raclette",
+      "category": "Événement",
+      "url": "/agenda.html#ev-8b8af8b80b0515af",
+      "dates": [
+        "2027-02-05"
+      ]
     },
     {
       "id": "ev-8c92bc9faeffab84",
       "title": "Visite commentée de l’église st andré de rieussec",
       "category": "Événement",
-      "url": "/agenda.html#ev-8c92bc9faeffab84"
+      "url": "/agenda.html#ev-8c92bc9faeffab84",
+      "dates": [
+        "2026-11-20"
+      ]
+    },
+    {
+      "id": "ev-93d023620d13d879",
+      "title": "Escape game : urgence paléo adulte",
+      "category": "Événement",
+      "url": "/agenda.html#ev-93d023620d13d879",
+      "dates": [
+        "2026-12-24",
+        "2026-12-31"
+      ]
+    },
+    {
+      "id": "ev-9841604851e3c1eb",
+      "title": "Visite guidée famille 1er dimanche du mois",
+      "category": "Événement",
+      "url": "/agenda.html#ev-9841604851e3c1eb",
+      "dates": [
+        "2027-01-03",
+        "2027-02-07"
+      ]
+    },
+    {
+      "id": "ev-9a20186b6f1b2ca0",
+      "title": "Rocc alter : sur le fil des possibles",
+      "category": "Événement",
+      "url": "/agenda.html#ev-9a20186b6f1b2ca0",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-9e5ae320402f7121",
+      "title": "Journée mexicaine : déjeuner et loto",
+      "category": "Événement",
+      "url": "/agenda.html#ev-9e5ae320402f7121",
+      "dates": [
+        "2026-12-08"
+      ]
+    },
+    {
+      "id": "ev-a0e39b2c7adaa68d",
+      "title": "Montée au clocher de la cathédrale saint-fulcran",
+      "category": "Événement",
+      "url": "/agenda.html#ev-a0e39b2c7adaa68d",
+      "dates": [
+        "2026-11-28",
+        "2026-12-26",
+        "2027-01-23"
+      ]
+    },
+    {
+      "id": "ev-aac87de05705d1dd",
+      "title": "Cercle de lecture",
+      "category": "Événement",
+      "url": "/agenda.html#ev-aac87de05705d1dd",
+      "dates": [
+        "2026-12-10"
+      ]
+    },
+    {
+      "id": "ev-ab8eb1067fbef278",
+      "title": "Reveillon saint sylvestre - foyer rural",
+      "category": "Événement",
+      "url": "/agenda.html#ev-ab8eb1067fbef278",
+      "dates": [
+        "2026-12-31"
+      ]
+    },
+    {
+      "id": "ev-ac8104e61188c7f4",
+      "title": "Moules-frites de décembre",
+      "category": "Événement",
+      "url": "/agenda.html#ev-ac8104e61188c7f4",
+      "dates": [
+        "2026-12-18"
+      ]
     },
     {
       "id": "ev-aee9609f872362cd",
       "title": "Visite guidée de l’exposition \"météorites entre ciel et terre\"",
       "category": "Événement",
-      "url": "/agenda.html#ev-aee9609f872362cd"
+      "url": "/agenda.html#ev-aee9609f872362cd",
+      "dates": [
+        "2026-11-21",
+        "2026-11-25",
+        "2026-11-27",
+        "2026-11-28",
+        "2026-12-02",
+        "2026-12-04",
+        "2026-12-05",
+        "2026-12-09",
+        "2026-12-11",
+        "2026-12-12",
+        "2026-12-16",
+        "2026-12-18",
+        "2026-12-19",
+        "2026-12-20",
+        "2026-12-26",
+        "2026-12-27",
+        "2026-12-30",
+        "2027-01-02",
+        "2027-01-03",
+        "2027-01-06",
+        "2027-01-08",
+        "2027-01-09",
+        "2027-01-13",
+        "2027-01-15",
+        "2027-01-16",
+        "2027-01-20",
+        "2027-01-22",
+        "2027-01-23",
+        "2027-01-27",
+        "2027-01-29",
+        "2027-01-30",
+        "2027-02-03",
+        "2027-02-05",
+        "2027-02-06",
+        "2027-02-10",
+        "2027-02-11",
+        "2027-02-13",
+        "2027-02-14",
+        "2027-02-17",
+        "2027-02-18",
+        "2027-02-20",
+        "2027-02-21",
+        "2027-02-24",
+        "2027-02-26",
+        "2027-02-27",
+        "2027-03-03",
+        "2027-03-05",
+        "2027-03-06",
+        "2027-03-10",
+        "2027-03-12",
+        "2027-03-13",
+        "2027-03-17",
+        "2027-03-19",
+        "2027-03-20",
+        "2027-03-24",
+        "2027-03-26",
+        "2027-03-27",
+        "2027-03-31",
+        "2027-04-02",
+        "2027-04-03",
+        "2027-04-21",
+        "2027-04-23",
+        "2027-04-24",
+        "2027-04-28",
+        "2027-04-30",
+        "2027-05-01",
+        "2027-05-05",
+        "2027-05-07",
+        "2027-05-08",
+        "2027-05-12",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-19",
+        "2027-05-21",
+        "2027-05-22",
+        "2027-05-26",
+        "2027-05-28",
+        "2027-05-29",
+        "2027-06-02",
+        "2027-06-04",
+        "2027-06-05",
+        "2027-06-09",
+        "2027-06-11",
+        "2027-06-12",
+        "2027-06-16",
+        "2027-06-18",
+        "2027-06-19",
+        "2027-06-23",
+        "2027-06-25",
+        "2027-06-26",
+        "2027-06-30"
+      ]
+    },
+    {
+      "id": "ev-b09ddd8dbaae282c",
+      "title": "Soirée moules-frites",
+      "category": "Événement",
+      "url": "/agenda.html#ev-b09ddd8dbaae282c",
+      "dates": [
+        "2027-01-29"
+      ]
     },
     {
       "id": "ev-b412b3f7ec7f3fb4",
@@ -224,10 +816,44 @@
       "url": "/agenda.html#ev-b526c8d58ca0dd55"
     },
     {
+      "id": "ev-c0c3ec089800619b",
+      "title": "Broderie punk",
+      "category": "Événement",
+      "url": "/agenda.html#ev-c0c3ec089800619b",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-c3a6ec1aa39ed753",
+      "title": "Visite « flash »",
+      "category": "Événement",
+      "url": "/agenda.html#ev-c3a6ec1aa39ed753",
+      "dates": [
+        "2026-12-19",
+        "2026-12-22",
+        "2026-12-26",
+        "2026-12-29",
+        "2027-01-02"
+      ]
+    },
+    {
+      "id": "ev-c6880bcf99078314",
+      "title": "Journée mexicaine : conférence",
+      "category": "Événement",
+      "url": "/agenda.html#ev-c6880bcf99078314",
+      "dates": [
+        "2026-12-08"
+      ]
+    },
+    {
       "id": "ev-cd1dc930cb9d4f89",
       "title": "Projection de film \" moi, daniel blake \"",
       "category": "Événement",
-      "url": "/agenda.html#ev-cd1dc930cb9d4f89"
+      "url": "/agenda.html#ev-cd1dc930cb9d4f89",
+      "dates": [
+        "2026-11-22"
+      ]
     },
     {
       "id": "ev-cdf9ad9f72edbb65",
@@ -239,7 +865,21 @@
       "id": "ev-ce6b59898b43877c",
       "title": "Après midi jeux de société",
       "category": "Événement",
-      "url": "/agenda.html#ev-ce6b59898b43877c"
+      "url": "/agenda.html#ev-ce6b59898b43877c",
+      "dates": [
+        "2026-11-17",
+        "2026-12-01",
+        "2026-12-15"
+      ]
+    },
+    {
+      "id": "ev-cf34a319f6f56030",
+      "title": "Marché de noël",
+      "category": "Événement",
+      "url": "/agenda.html#ev-cf34a319f6f56030",
+      "dates": [
+        "2026-12-06"
+      ]
     },
     {
       "id": "ev-d4b1a089c4a97654",
@@ -248,10 +888,70 @@
       "url": "/agenda.html#ev-d4b1a089c4a97654"
     },
     {
+      "id": "ev-d9dffd49b8add8e0",
+      "title": "Chasse au tresor",
+      "category": "Événement",
+      "url": "/agenda.html#ev-d9dffd49b8add8e0",
+      "dates": [
+        "2026-12-19"
+      ]
+    },
+    {
       "id": "ev-dbbae207df1b694c",
       "title": "Visite de l’atelier de korin",
       "category": "Événement",
-      "url": "/agenda.html#ev-dbbae207df1b694c"
+      "url": "/agenda.html#ev-dbbae207df1b694c",
+      "dates": [
+        "2026-11-17"
+      ]
+    },
+    {
+      "id": "ev-dcf6ddc526216a1d",
+      "title": "Sophrologie",
+      "category": "Événement",
+      "url": "/agenda.html#ev-dcf6ddc526216a1d",
+      "dates": [
+        "2026-12-03"
+      ]
+    },
+    {
+      "id": "ev-df1ec1618f5fb08b",
+      "title": "Soirée moules-frites",
+      "category": "Événement",
+      "url": "/agenda.html#ev-df1ec1618f5fb08b",
+      "dates": [
+        "2026-11-27"
+      ]
+    },
+    {
+      "id": "ev-dfce64776c9fac89",
+      "title": "Kamishibaï d’ombre",
+      "category": "Événement",
+      "url": "/agenda.html#ev-dfce64776c9fac89",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-e92858a1ac8e2476",
+      "title": "Gratiferia",
+      "category": "Événement",
+      "url": "/agenda.html#ev-e92858a1ac8e2476",
+      "dates": [
+        "2026-12-13"
+      ]
+    },
+    {
+      "id": "ev-eb6a605a9a4fcfd6",
+      "title": "Escape game : urgence paléo famille",
+      "category": "Événement",
+      "url": "/agenda.html#ev-eb6a605a9a4fcfd6",
+      "dates": [
+        "2026-12-22",
+        "2026-12-23",
+        "2026-12-29",
+        "2026-12-30"
+      ]
     },
     {
       "id": "ev-ee6f14d497be7e09",
@@ -263,13 +963,66 @@
       "id": "ev-ee968489fc656cd8",
       "title": "Voyages sonores, gongs, bols chantants, didgeridoos",
       "category": "Événement",
-      "url": "/agenda.html#ev-ee968489fc656cd8"
+      "url": "/agenda.html#ev-ee968489fc656cd8",
+      "dates": [
+        "2026-11-18",
+        "2026-11-25",
+        "2026-12-02",
+        "2026-12-09",
+        "2026-12-16",
+        "2026-12-23",
+        "2026-12-30",
+        "2027-01-06",
+        "2027-01-13",
+        "2027-01-20",
+        "2027-01-27",
+        "2027-02-03",
+        "2027-02-10",
+        "2027-02-17",
+        "2027-02-24",
+        "2027-03-03",
+        "2027-03-10",
+        "2027-03-17",
+        "2027-03-24",
+        "2027-03-31",
+        "2027-04-07",
+        "2027-04-14",
+        "2027-04-21",
+        "2027-04-28",
+        "2027-05-05",
+        "2027-05-12",
+        "2027-05-19",
+        "2027-05-26",
+        "2027-06-02",
+        "2027-06-09",
+        "2027-06-16",
+        "2027-06-23",
+        "2027-06-30"
+      ]
     },
     {
       "id": "ev-efdb6a5fac1094d4",
       "title": "Stage de sculpture et modelage d’argile à lodève avec solveig lafitte",
       "category": "Événement",
       "url": "/agenda.html#ev-efdb6a5fac1094d4"
+    },
+    {
+      "id": "ev-f8d7df212e890bc8",
+      "title": "Les dimanches du patrimoine : l’apothicairerie, ancienne pharmacie de l’hôpital de lodève",
+      "category": "Événement",
+      "url": "/agenda.html#ev-f8d7df212e890bc8",
+      "dates": [
+        "2027-01-10"
+      ]
+    },
+    {
+      "id": "ev-fdf5e92b3b3ef0b5",
+      "title": "De l’écriture cinématographique à l’écriture littéraire",
+      "category": "Événement",
+      "url": "/agenda.html#ev-fdf5e92b3b3ef0b5",
+      "dates": [
+        "2026-11-27"
+      ]
     },
     {
       "id": "guide-cure-decouvertes",
@@ -288,6 +1041,12 @@
       "title": "Cure à Avène : préparer le retour",
       "category": "Guide",
       "url": "/guide-curistes-avene.html#trois-semaines"
+    },
+    {
+      "id": "guide-services-essentiels",
+      "title": "Les services essentiels pendant le séjour",
+      "category": "Guide",
+      "url": "/services-essentiels.html"
     },
     {
       "id": "hebergement-bouloc",

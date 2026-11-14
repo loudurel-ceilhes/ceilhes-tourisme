@@ -317,3 +317,7 @@ L’agenda automatique actualise et enregistre également ce catalogue.
 Le sélecteur de marchés utilise les règles datées de `data/marches.json`.
 Les calendriers saisonniers ne sont pas reconduits dans une nouvelle année
 sans source : voir `docs/sources-marches.md`.
+
+Les dates facultatives du séjour (31 jours maximum) sont partagées entre le carnet, les marchés et l’agenda par `assets/sejour-dates.js`. Le carnet peut répartir les idées par journée ; conserver la compatibilité des anciens imports et la fusion sans écrasement décrites dans `docs/carnet-partage.md`. `recherche.html` utilise l’index local généré avec le catalogue, sans service externe.
+
+L’agenda se construit hors réseau depuis `data/agenda-source.json`, rafraîchi par son workflow à partir de DATAtourisme et de l’ardoise canonique de Cénomes. Les ouvertures sourcées sont distinctes des périodes d’exposition ; voir `docs/agenda-et-dates.md`. Ne jamais ressaisir manuellement les dates des soirées dans ce dépôt. La fiche `services-essentiels.html`, sa carte et son PDF ne présentent que des adresses ou équipements sourcés ; les limites de vérification et les sources figurent dans `docs/sources-services.md`.

@@ -5,11 +5,13 @@ import { fileURLToPath } from 'node:url'
 
 const racine = dirname(dirname(fileURLToPath(import.meta.url)))
 const liens = [
+  ['mon-sejour.html', 'Mon séjour'], ['recherche.html', 'Rechercher'],
+  ['agenda.html', 'Agenda'],
   ['le-lac.html', 'Le lac'], ['l-orb.html', "L’Orb"],
   ['randonnees.html', 'Randonnées'], ['nature.html', 'Nature'],
   ['terroir.html', 'Terroir'], ['producteurs-region.html', 'Producteurs'],
   ['patrimoine.html', 'Patrimoine'], ['alentours.html', 'Alentours'],
-  ['agenda.html', 'Agenda'], ['vie-associative.html', 'Vie du village'],
+  ['vie-associative.html', 'Vie du village'],
   ['hebergeurs.html', 'Hébergeurs'], ['galerie.html', 'Galerie'],
   ['infos-pratiques.html', 'Infos'],
 ]
@@ -19,6 +21,7 @@ const guides = [
   ['petites-balades.html', 'Petites balades'],
   ['bienvenue.html', 'Bien préparer son arrivée'],
   ['kit-hebergeurs.html', 'Kit pour les hébergeurs'],
+  ['services-essentiels.html', 'Services essentiels'],
 ]
 
 export function navigation(page) {
@@ -31,7 +34,6 @@ ${liens.map(item => `    <li>${lien(item)}</li>`).join('\n')}
     <li><details class="nav-guides"><summary>Guides pratiques</summary><div class="nav-guides-list">
 ${guides.map(item => `      ${lien(item)}`).join('\n')}
     </div></details></li>
-    <li>${lien(['mon-sejour.html', 'Mon séjour'])}</li>
   </ul>
 </nav>`
 }

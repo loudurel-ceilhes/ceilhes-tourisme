@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "events": {
+    "https://data.datatourisme.fr/32/e1202df1-7ede-3f39-9aa4-50156f240733": {
+      "from": "2026-11-02",
+      "through": "2027-02-28",
+      "weekdays": [1, 2, 3, 4, 5],
+      "closedHolidays": true,
+      "descriptionIncludes": "Fermé mardi après midi, samedi, dimanche et les jours fériés.",
+      "sourceUpdated": "2026-11-09",
+      "checkedOn": "2026-11-15",
+      "label": "Ouverture annoncée du lundi au vendredi, hors jours fériés ; horaires dans les détails."
+    }
+  }
+}

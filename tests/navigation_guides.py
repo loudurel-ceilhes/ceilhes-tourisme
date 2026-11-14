@@ -36,7 +36,7 @@ class NavigationGuides(unittest.TestCase):
         self.go('infos-pratiques.html')
         summary = self.page.locator('.nav-guides summary')
         summary.click()
-        expect(self.page.locator('.nav-guides-list a')).to_have_count(5)
+        expect(self.page.locator('.nav-guides-list a')).to_have_count(6)
         self.page.locator('h1').click()
         self.assertFalse(self.page.locator('.nav-guides').evaluate('(el) => el.open'))
         summary.click()

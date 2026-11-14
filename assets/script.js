@@ -36,7 +36,13 @@ if(nav){
       if(!menu.classList.contains('open'))return;
       if(e.key==='Escape'){e.preventDefault();setMenu(false,true);}
       if(e.key==='Tab'){
-        const links=[burger,...menu.querySelectorAll('a[href],summary')].filter(el=>el.getClientRects().length);
+        const links=[burger,...menu.querySelectorAll('a[href],summary')].filter(el=>{
+          // Chromium peut garder des rectangles pour les liens d'un details
+          // fermé. Seul son summary appartient alors au parcours clavier.
+          if(!el.getClientRects().length)return false;
+          const closed=el.closest('details:not([open])');
+          return !closed||(el.tagName==='SUMMARY'&&el.parentElement===closed);
+        });
         const first=links[0],last=links[links.length-1];
         if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
         else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}

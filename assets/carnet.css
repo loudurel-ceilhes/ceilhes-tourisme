@@ -61,3 +61,13 @@
 #carnet-apercu-liste{padding-left:1.25rem;display:grid;gap:.5rem}
 #carnet-apercu-titre:focus{outline:2px solid var(--ocre);outline-offset:5px}
 @media print{.carnet-transfert{display:none!important}}
+
+/* Programme facultatif par journée, sans masquer les choix devenus incompatibles. */
+.carnet-dates-champs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.carnet-dates-champs input,.carnet-affectation input{display:block;font:inherit;padding:.5rem;border:1px solid var(--foret);border-radius:.4rem;min-height:44px;max-width:100%;box-sizing:border-box;background:var(--blanc);color:var(--foret)}
+.carnet-affectation{margin-top:1rem;font-size:.9rem}
+.carnet-affectation label{display:block;font-weight:500}
+.carnet-jour-titre h2{font-size:1.5rem;color:var(--foret);margin-top:1rem}
+.carnet-incompatibilite{font-size:.88rem;padding:.6rem .8rem;margin-top:.7rem;border-left:3px solid var(--ocre);background:var(--brume)}
+@media(max-width:450px){.carnet-dates-champs{grid-template-columns:1fr;gap:0}}
+@media print{#carnet-programme form,.carnet-affectation{display:none!important}#carnet-programme{display:block!important;border:0;padding:0;margin:1rem 0}.carnet-jour-titre{break-after:avoid}}

@@ -102,11 +102,29 @@ class Parcours(unittest.TestCase):
         expect(burger).to_have_attribute('aria-expanded', 'true')
         expect(menu.locator('a').first).to_be_focused()
         self.assertTrue(self.page.locator('main').evaluate('(e)=>e.inert'))
-        menu.locator('a').last.focus()
+        # Un guide fermé contient des liens dans le DOM, mais ils ne font pas
+        # partie du parcours clavier. Le dernier contrôle est son résumé.
+        expect(menu.locator('.nav-guides')).not_to_have_attribute('open', '')
+        last_visible = menu.locator('a[href]:visible, summary:visible').last
+        expect(last_visible).to_have_text('Guides pratiques')
+        last_visible.focus()
         self.page.keyboard.press('Tab')
         expect(burger).to_be_focused()
         self.page.keyboard.press('Shift+Tab')
-        expect(menu.locator('a').last).to_be_focused()
+        expect(last_visible).to_be_focused()
+        # Vérifier également la boucle lorsque les liens des guides deviennent
+        # visibles : elle doit inclure le dernier guide, puis le bouton Menu.
+        self.page.keyboard.press('Enter')
+        expect(menu.locator('.nav-guides')).to_have_attribute('open', '')
+        last_open = menu.locator('a[href]:visible, summary:visible').last
+        expect(last_open).to_have_attribute('href', 'services-essentiels.html')
+        last_open.focus()
+        self.page.keyboard.press('Tab')
+        expect(burger).to_be_focused()
+        self.page.keyboard.press('Shift+Tab')
+        expect(last_open).to_be_focused()
+        self.page.keyboard.press('Escape')
+        expect(menu.locator('.nav-guides summary')).to_be_focused()
         self.page.keyboard.press('Escape')
         expect(burger).to_be_focused()
         self.assertFalse(self.page.locator('main').evaluate('(e)=>e.inert'))
