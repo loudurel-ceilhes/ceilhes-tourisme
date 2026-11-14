@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon séjour à Ceilhes — Mes sorties et bonnes adresses</title>
+<meta name="description" content="Composez votre séjour à Ceilhes-et-Rocozels : gardez vos randonnées, producteurs, événements et bonnes adresses, puis imprimez votre sélection.">
+<link rel="canonical" href="https://ceilhes-tourisme.fr/mon-sejour.html">
+<meta property="og:title" content="Mon séjour à Ceilhes — Mes sorties et bonnes adresses">
+<meta property="og:description" content="Gardez vos idées de sorties et vos bonnes adresses dans un carnet personnel, sans compte.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ceilhes-tourisme.fr/mon-sejour.html">
+<meta property="og:image" content="https://ceilhes-tourisme.fr/images/og/index.jpg">
+<meta name="theme-color" content="#0E241C">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/carnet.css">
+</head>
+<body class="inner page-carnet">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div id="progress"></div>
+<nav id="nav" aria-label="Navigation principale">
+  <a href="index.html" class="logo">Ceilhes<span>-et-</span>Rocozels</a>
+  <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul id="menu">
+    <li><a href="le-lac.html">Le lac</a></li>
+    <li><a href="l-orb.html">L'Orb</a></li>
+    <li><a href="randonnees.html">Randonnées</a></li>
+    <li><a href="nature.html">Nature</a></li>
+    <li><a href="terroir.html">Terroir</a></li>
+    <li><a href="patrimoine.html">Patrimoine</a></li>
+    <li><a href="alentours.html">Alentours</a></li>
+    <li><a href="agenda.html">Agenda</a></li>
+    <li><a href="vie-associative.html">Vie du village</a></li>
+    <li><a href="hebergeurs.html">Hébergeurs</a></li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="infos-pratiques.html">Infos</a></li>
+    <li><a href="mon-sejour.html">Mon séjour</a></li>
+  </ul>
+</nav>
+<main id="contenu" tabindex="-1">
+<header class="carnet-entete"><div class="container"><p>À composer à votre rythme</p><h1>Mon séjour à Ceilhes</h1><p>Vos sorties, vos rencontres et vos bonnes adresses, réunies au même endroit.</p></div></header>
+<section class="carnet-page"><div class="container">
+<p class="carnet-intro">Sur les fiches, choisissez « Ajouter à mon séjour ». Votre sélection reste dans ce navigateur, sans compte et sans envoi de données. Elle n'est pas synchronisée avec vos autres appareils. Retrouvez aussi nos <a href="index.html#idees-sejour">quatre programmes de séjour</a>.</p>
+<div id="carnet-sans-js" class="carnet-vide"><h2>Un carnet dans votre navigateur</h2><p>JavaScript est nécessaire pour retrouver et modifier votre sélection. Les <a href="index.html#idees-sejour">programmes de séjour</a>, les <a href="randonnees.html">randonnées</a> et les <a href="infos-pratiques.html#manger">bonnes adresses</a> restent consultables et imprimables sans cette fonction.</p></div>
+<div id="carnet-contenu" hidden>
+<p id="carnet-stockage" role="status" hidden></p>
+<p id="carnet-compteur" tabindex="-1" aria-live="polite"></p>
+<div id="carnet-vide" class="carnet-vide carnet-bienvenue">
+  <div><h2>Votre séjour commence ici</h2><p>Gardez une balade, un producteur ou une adresse qui vous plaît. Vous retrouverez votre sélection sur cette page.</p><ul><li><a href="randonnees.html#sentiers">Choisir une randonnée</a></li><li><a href="terroir.html#annuaire-producteurs">Rencontrer un producteur</a></li><li><a href="infos-pratiques.html#manger">Choisir une bonne adresse</a></li><li><a href="hebergeurs.html">Trouver un hébergement</a></li><li><a href="agenda.html">Repérer un événement</a></li></ul></div>
+  <figure class="carnet-illustration">
+    <picture><source type="image/webp" srcset="images/illustrations/carnet-voyage-640.webp 640w, images/illustrations/carnet-voyage-1000.webp 1000w, images/illustrations/carnet-voyage-1536.webp 1536w" sizes="(max-width: 700px) 240px, 320px"><img src="images/illustrations/carnet-voyage.jpg" width="1536" height="1024" alt="Aquarelle d'un carnet ouvert, d'un sac à dos, d'une gourde et de feuilles de chêne" loading="lazy" decoding="async"></picture>
+    <figcaption>Illustration d’ambiance générée par IA</figcaption>
+  </figure>
+</div>
+<div id="carnet-actions" class="carnet-actions" hidden><button type="button" id="carnet-imprimer">Imprimer mon séjour</button><a href="index.html#explorer">Ajouter d'autres découvertes</a></div>
+<ul id="carnet-liste" aria-label="Mes idées de séjour"></ul>
+<p id="carnet-annulation" hidden><button type="button" id="carnet-annuler">Annuler le dernier retrait</button></p>
+<p class="carnet-intro">Ce carnet garde vos idées, sans effectuer de réservation. Avant votre départ, vérifiez les ouvertures, les dates des événements et les conditions d'accès sur les fiches d'origine.</p>
+</div>
+</div></section>
+</main>
+<footer>
+  <div class="ftitle">Ceilhes-et-Rocozels</div>
+  <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>
+  <div class="links"><a href="index.html">Accueil</a><a href="le-lac.html">Le lac</a><a href="l-orb.html">L'Orb</a><a href="randonnees.html">Randonnées</a><a href="peche.html">Pêche</a><a href="nature.html">Nature</a><a href="terroir.html">Terroir</a><a href="patrimoine.html">Patrimoine</a><a href="alentours.html">Alentours</a><a href="agenda.html">Agenda</a><a href="vie-associative.html">Vie du village</a><a href="hebergeurs.html">Hébergeurs</a><a href="galerie.html">Galerie</a><a href="infos-pratiques.html">Infos</a><a href="mon-sejour.html">Mon séjour</a><a href="thermes-avene.html">Thermes d'Avène</a><a href="herault-moto.html">À moto</a><a href="pompiers-ceilhes.html">Pompiers</a></div>
+  <div class="links">
+    <a href="https://esquirols.fr" target="_blank" rel="noopener">L'Esquirol</a><a href="https://ville-ceilhes.fr" target="_blank" rel="noopener">Mairie</a><a href="https://www.tourisme.grandorb.fr" target="_blank" rel="noopener">Tourisme Grand Orb</a><a href="https://www.herault-tourisme.com" target="_blank" rel="noopener">Hérault Tourisme</a>
+  </div>
+    <div class="links"><a href="en.html">English</a> · <a href="de.html">Deutsch</a> · <a href="nl.html">Nederlands</a> · <a href="es.html">Español</a> · <a href="it.html">Italiano</a> · <a href="pt.html">Português</a></div>
+  <small>Site de découverte non officiel édité par Lou Durel · <a href="mentions-legales.html" style="color:var(--lac-clair)">Mentions légales</a> · Photographies © <b>Léo Daniel</b> &amp; autres auteurs (<a href="mentions-legales.html" style="color:var(--lac-clair)">mentions légales</a>) · Données carte © OpenStreetMap</small>
+</footer>
+<button id="totop" aria-label="Retour en haut">↑</button>
+<script src="assets/script.js"></script>
+<script src="assets/carnet.js"></script>
+</body>
+</html>

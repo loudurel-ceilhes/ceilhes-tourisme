@@ -37,8 +37,9 @@
 <link rel="stylesheet" href="assets/accueil.css">
 <link rel="stylesheet" href="assets/decouvrir.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TouristDestination","name":"Ceilhes-et-Rocozels","description":"Village du Haut-Languedoc (Hérault), au bord du lac des Monts d'Orb et aux sources de l'Orb : baignade, randonnées, nature, terroir et patrimoine.","url":"https://ceilhes-tourisme.fr/","geo":{"@type":"GeoCoordinates","latitude":43.813,"longitude":3.095},"containedInPlace":{"@type":"AdministrativeArea","name":"Hérault — Parc naturel régional du Haut-Languedoc"}}</script>
+<link rel="stylesheet" href="assets/carnet.css">
 </head>
-<body>
+<body class="accueil">
 <a class="skip" href="#contenu">Aller au contenu</a>
 <div id="progress"></div>
 <nav id="nav" aria-label="Navigation principale">
@@ -57,6 +58,7 @@
     <li><a href="hebergeurs.html">Hébergeurs</a></li>
     <li><a href="galerie.html">Galerie</a></li>
     <li><a href="infos-pratiques.html">Infos</a></li>
+    <li><a href="mon-sejour.html">Mon séjour</a></li>
   </ul>
 </nav>
 <main id="contenu" tabindex="-1">
@@ -145,11 +147,9 @@
 </section>
 <div class="stats">
   <div class="container">
-    <div class="stat reveal"><div class="num" data-count="430">430</div><div class="label">mètres d'altitude</div></div>
+    <div class="stat reveal"><div class="num" data-count="430">430</div><div class="label">m d'altitude</div></div>
     <div class="stat reveal"><div class="num" data-count="6">6</div><div class="label">km de lac</div></div>
     <div class="stat reveal"><div class="num" data-count="20">20</div><div class="label">min de l'A75</div></div>
-    <div class="stat reveal"><div class="num" data-count="135">135</div><div class="label">km de l'Orb jusqu'à la mer</div></div>
-    <div class="stat reveal"><div class="num" data-count="1181">1181</div><div class="label">église des Templiers</div></div>
   </div>
 </div>
 <section id="village">
@@ -188,12 +188,11 @@
         </svg>
       </div>
       <div class="reveal">
-        <p><strong>Ceilhes</strong> et <strong>Rocozels</strong>, réunis en une seule commune, veillent sur la haute vallée de l'Orb, à la frontière de l'Hérault et de l'Aveyron, entre Lodève et Camarès. Niché au cœur du <strong>Parc naturel régional du Haut-Languedoc</strong>, le village est à un peu plus d'une heure de Montpellier et Béziers — et à seulement 20 minutes de l'A75.</p>
-        <p>Au Moyen Âge, Ceilhes était une petite ville très active, renommée pour ses <strong>foires aux bestiaux</strong> qui ont perduré jusqu'au XX<sup>e</sup> siècle. La puissante famille de Rocozels y a laissé son empreinte : deux évêques au XII<sup>e</sup> et XIII<sup>e</sup> siècles, puis le duché-pairie de Fleury créé en 1736.</p>
-        <p>Aujourd'hui, c'est un havre de nature : forêts profondes, eaux poissonneuses et sentiers à perte de vue.</p>
+        <p><strong>Ceilhes et Rocozels</strong> partagent une commune dans la haute vallée de l'Orb, entre Hérault et Aveyron. Au cœur du <strong>Parc naturel régional du Haut-Languedoc</strong>, ruelles, forêts et berges invitent à prendre le temps.</p>
+        <p>Églises, anciennes foires et famille de Rocozels : <a class="accueil-histoire" href="patrimoine.html">découvrez le patrimoine du village&nbsp;→</a></p>
         <div class="village-escales">
           <h3>Prendre le temps de vivre le village</h3>
-          <p>Faire ses courses, s'arrêter autour d'une table, découvrir une animation : les bonnes adresses font aussi partie du séjour.</p>
+          <p>Une pause, quelques courses ou une rencontre : faites une halte au village.</p>
           <ul>
             <li><a href="terroir.html#terroir"><strong>L'épicerie &amp; les produits du pays</strong><span>L'Esquirol, avenue du Lac <span aria-hidden="true">→</span></span></a></li>
             <li><a href="infos-pratiques.html#manger"><strong>Les cafés &amp; les restaurants</strong><span>Choisir sa pause au village et dans les hameaux <span aria-hidden="true">→</span></span></a></li>
@@ -204,17 +203,10 @@
     </div>
   </div>
 </section>
-<section id="orb-teaser" style="background:linear-gradient(180deg,#dcebe9,var(--sable))">
+<section id="orb-teaser" class="accueil-orb" aria-labelledby="orb-accueil-titre">
   <div class="container">
-    <div class="feature">
-      <div class="ftxt">
-        <div class="kicker" style="color:var(--lac);text-transform:uppercase;letter-spacing:4px;font-size:.78rem;font-weight:600">Le fil bleu du pays</div>
-        <h3>L'Orb naît ici, dans la haute vallée</h3>
-        <p>À quelques kilomètres du village, le fleuve sourd des terres volcaniques de l'Escandorgue. À Ceilhes, l'Orb est encore un torrent d'enfance — celui des truites, des libellules et des pieds dans l'eau fraîche. Il lui reste 135 kilomètres à parcourir jusqu'à la Méditerranée.</p>
-        <a class="btn btn-primary" href="l-orb.html">Suivre l'Orb, de la source à la mer →</a>
-      </div>
-      <div class="fimg"><span class="emo">🏞️</span><picture><source type="image/webp" srcset="images/riviere-gue-640.webp 640w, images/riviere-gue-1000.webp 1000w, images/riviere-gue-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="1200" src="images/riviere-gue.jpg" alt="Le gué et les eaux turquoise de l'Orb à Ceilhes" loading="lazy" onerror="this.remove()"></picture></div>
-    </div>
+    <div><div class="kicker">Le fil bleu du pays</div><h2 id="orb-accueil-titre">L'Orb, de la source à la mer</h2><p>Né sur l'Escandorgue, le fleuve traverse Ceilhes avant de rejoindre la Méditerranée.</p></div>
+    <a href="l-orb.html">Découvrir le fleuve et ses berges <span aria-hidden="true">→</span></a>
   </div>
 </section>
 <section id="explorer">
@@ -242,35 +234,28 @@
     <div class="decouvrir-suite">
       <h3>Pour prolonger la découverte</h3>
       <ul>
-        <li><a href="l-orb.html"><strong>Suivre l'Orb</strong><span>Le fleuve, de sa source à la mer</span></a></li>
-        <li><a href="nature.html"><strong>Observer la nature</strong><span>Faune, flore et saisons du Parc</span></a></li>
-        <li><a href="alentours.html"><strong>Explorer les alentours</strong><span>Avène, Lunas, Lodève et le Salagou</span></a></li>
-        <li><a href="agenda.html"><strong>Trouver une animation</strong><span>Les rendez-vous du territoire</span></a></li>
-        <li><a href="vie-associative.html"><strong>Vivre le village</strong><span>Bibliothèque, ateliers et associations</span></a></li>
-        <li><a href="hebergeurs.html"><strong>Prolonger le séjour</strong><span>Gîtes, chambres d'hôtes et campings</span></a></li>
-        <li><a href="infos-pratiques.html"><strong>Préparer sa venue</strong><span>Accès, services et contacts utiles</span></a></li>
+        <li><a href="l-orb.html"><strong>L'Orb</strong></a></li>
+        <li><a href="nature.html"><strong>La nature</strong></a></li>
+        <li><a href="alentours.html"><strong>Les alentours</strong></a></li>
+        <li><a href="agenda.html"><strong>L'agenda</strong></a></li>
+        <li><a href="vie-associative.html"><strong>La vie du village</strong></a></li>
+        <li><a href="hebergeurs.html"><strong>Les hébergements</strong></a></li>
+        <li><a href="infos-pratiques.html"><strong>Les infos pratiques</strong></a></li>
       </ul>
     </div>
   </div>
 </section>
-<section class="photo-band">
-  <div class="section-head reveal">
-    <div class="kicker" style="color:var(--or)">La galerie</div>
-    <h2>Photographies de <em>Léo Daniel</em></h2>
-    <div class="line"></div>
+<section class="accueil-galerie" aria-labelledby="galerie-accueil-titre">
+  <div class="container">
+    <a href="galerie.html" class="accueil-galerie-photo"><picture><source type="image/webp" srcset="images/leo/rayons-or-640.webp 640w, images/leo/rayons-or-1000.webp 1000w, images/leo/rayons-or-1600.webp 1600w" sizes="(max-width: 700px) 90vw, (max-width: 1311px) 44vw, 574px"><img decoding="async" width="1600" height="1067" src="images/leo/rayons-or.jpg" alt="Voir la galerie : percée de lumière dorée sur les monts" loading="lazy"></picture></a>
+    <div><div class="kicker">La galerie</div><h2 id="galerie-accueil-titre">Le pays en images</h2><p>Les lumières, les paysages et la faune photographiés par Léo Daniel et les autres auteurs du site.</p><a href="galerie.html">Voir toute la galerie <span aria-hidden="true">→</span></a><p class="accueil-galerie-credit">Photographie © Léo Daniel</p></div>
   </div>
-  <div class="grid">
-    <figure class="reveal"><picture><source type="image/webp" srcset="images/leo/rayons-or-640.webp 640w, images/leo/rayons-or-1000.webp 1000w, images/leo/rayons-or-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="1067" src="images/leo/rayons-or.jpg" alt="Percée de lumière dorée sur les monts" loading="lazy" onerror="this.closest('figure').remove()"></picture><figcaption>Percée dorée sur les monts</figcaption></figure>
-    <figure class="reveal"><picture><source type="image/webp" srcset="images/leo/aube-salagou-640.webp 640w, images/leo/aube-salagou-1000.webp 1000w, images/leo/aube-salagou-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="1067" src="images/leo/aube-salagou.jpg" alt="Le lac du Salagou à l'aube, vu du col du Perthus" loading="lazy" onerror="this.closest('figure').remove()"></picture><figcaption>Le Salagou à l'aube, depuis le col du Perthus</figcaption></figure>
-    <figure class="reveal"><picture><source type="image/webp" srcset="images/leo/vautours-ronde-640.webp 640w, images/leo/vautours-ronde-1000.webp 1000w, images/leo/vautours-ronde-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 900px"><img decoding="async" width="1600" height="1000" src="images/leo/vautours-ronde.jpg" alt="Vol de vautours fauves dans le ciel" loading="lazy" onerror="this.closest('figure').remove()"></picture><figcaption>La ronde des vautours fauves</figcaption></figure>
-  </div>
-  <div class="more reveal"><a class="btn btn-primary" href="galerie.html">Voir toute la galerie &rarr;</a></div>
 </section>
 </main>
 <footer>
   <div class="ftitle">Ceilhes-et-Rocozels</div>
   <p>Entre lac et forêts, au cœur du Haut-Languedoc.</p>
-  <div class="links"><a href="index.html">Accueil</a><a href="le-lac.html">Le lac</a><a href="l-orb.html">L'Orb</a><a href="randonnees.html">Randonnées</a><a href="peche.html">Pêche</a><a href="nature.html">Nature</a><a href="terroir.html">Terroir</a><a href="patrimoine.html">Patrimoine</a><a href="alentours.html">Alentours</a><a href="agenda.html">Agenda</a><a href="vie-associative.html">Vie du village</a><a href="hebergeurs.html">Hébergeurs</a><a href="galerie.html">Galerie</a><a href="infos-pratiques.html">Infos</a><a href="thermes-avene.html">Thermes d'Avène</a><a href="herault-moto.html">À moto</a><a href="pompiers-ceilhes.html">Pompiers</a></div>
+  <div class="links"><a href="index.html">Accueil</a><a href="le-lac.html">Le lac</a><a href="l-orb.html">L'Orb</a><a href="randonnees.html">Randonnées</a><a href="peche.html">Pêche</a><a href="nature.html">Nature</a><a href="terroir.html">Terroir</a><a href="patrimoine.html">Patrimoine</a><a href="alentours.html">Alentours</a><a href="agenda.html">Agenda</a><a href="vie-associative.html">Vie du village</a><a href="hebergeurs.html">Hébergeurs</a><a href="galerie.html">Galerie</a><a href="infos-pratiques.html">Infos</a><a href="mon-sejour.html">Mon séjour</a><a href="thermes-avene.html">Thermes d'Avène</a><a href="herault-moto.html">À moto</a><a href="pompiers-ceilhes.html">Pompiers</a></div>
   <div class="links">
     <a href="https://esquirols.fr" target="_blank" rel="noopener">L'Esquirol</a><a href="https://ville-ceilhes.fr" target="_blank" rel="noopener">Mairie</a><a href="https://www.tourisme.grandorb.fr" target="_blank" rel="noopener">Tourisme Grand Orb</a><a href="https://www.herault-tourisme.com" target="_blank" rel="noopener">Hérault Tourisme</a>
   </div>
@@ -281,5 +266,6 @@
 <button id="totop" aria-label="Retour en haut">↑</button>
 <script src="assets/script.js"></script>
 <script src="assets/sejour.js"></script>
+<script src="assets/carnet.js"></script>
 </body>
 </html>

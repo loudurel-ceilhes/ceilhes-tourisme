@@ -17,7 +17,7 @@ C'est volontaire : un site de village doit pouvoir être repris dans cinq ans.
 Les pages comprennent `le-lac.html`, `l-orb.html`, `randonnees.html`,
 `patrimoine.html`, `nature.html`, `terroir.html`,
 `thermes-avene.html`, `hebergeurs.html`, `agenda.html`, `alentours.html`,
-`galerie.html`, `vie-associative.html`, `infos-pratiques.html` et les six
+`galerie.html`, `vie-associative.html`, `infos-pratiques.html`, `mon-sejour.html` et les six
 accueils étrangers. `randonnees-vtt.html` est une redirection, pas un fichier.
 Le vérificateur affiche le nombre réel de pages présentes.
 
@@ -213,6 +213,30 @@ page et les balises `hreflang` suffisent aux visiteurs et à Google. Toute
 modification importante du site (nouvelle activité majeure, changement
 d'accès…) mérite d'être reportée dans les six pages — elles sont courtes
 exprès pour que ça reste une petite tâche.
+
+Les six accueils contiennent aussi quatre programmes en trois étapes,
+les accès en train/car et des bonnes adresses. Ces contenus se lisent sans
+JavaScript. Les liens qui ouvrent une page française sont signalés.
+
+## Le carnet « Mon séjour »
+
+`assets/carnet.js` ajoute les boutons aux fiches portant `data-carnet-id`,
+`data-carnet-title`, `data-carnet-category` et `data-carnet-url`. Ces attributs
+doivent être sur un conteneur, jamais sur un lien. Pour les producteurs et
+l'agenda, ils sont écrits par leurs générateurs. Les identifiants restent
+stables : une réorganisation des fiches ne doit pas créer de doublons.
+
+La sélection (60 éléments maximum) est conservée uniquement dans
+`localStorage`, sous la clé `ceilhes:mon-sejour:v1`, sans compte ni requête
+vers un serveur. `mon-sejour.html` permet de consulter, retirer, annuler le
+dernier retrait et imprimer les idées avec leurs liens. Une écriture refusée
+ne doit jamais être annoncée comme réussie. Les textes sont affichés comme
+texte, et seuls les liens locaux et les traces SityTrail attendues sont
+acceptés à la relecture. Les tests `tests/carnet.py` couvrent ces cas.
+
+Les coordonnées des hébergements et commerces sont documentées dans
+`docs/sources-adresses.md`. Les photos restent sur les galeries officielles,
+conformément au choix de Lou ; aucun droit de copie n'est supposé.
 
 ## Le gardien des liens
 

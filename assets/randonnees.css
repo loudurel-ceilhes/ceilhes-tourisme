@@ -23,9 +23,38 @@
 #rando-lien-manuel{margin-top:.7rem}
 #rando-lien-manuel label{display:block;font-size:.9rem}
 #rando-lien-manuel input{width:100%;font:inherit;min-height:44px;padding:.5rem;border:1px solid var(--foret);border-radius:.4rem;color:var(--foret);background:var(--blanc)}
-.rando-defilement{display:none}
 #toutes-randos:focus{outline:none}
 #toutes-randos caption{text-align:left;font-size:.9rem;padding:.8rem;color:var(--foret);background:var(--sable)}
+#toutes-randos .rtable-wrap{margin-top:1.4rem;border-radius:var(--r);box-shadow:var(--ombre)}
+#toutes-randos table{width:100%;border-collapse:collapse;background:var(--blanc);font-size:.9rem}
+#toutes-randos thead th{background:var(--foret);color:var(--blanc);text-align:left;font-weight:600;letter-spacing:.02em;padding:.75rem .9rem;white-space:nowrap}
+#toutes-randos tbody td{padding:.7rem .9rem;border-top:1px solid var(--pierre);color:var(--texte);vertical-align:top}
+#toutes-randos tbody td.r-name{width:34%;overflow-wrap:anywhere}
+#toutes-randos tbody tr:nth-child(even){background:var(--sable)}
+#toutes-randos a.r-link{display:inline-block;min-height:44px;color:var(--foret);font-weight:600;text-decoration:underline;text-underline-offset:.2em}
+#toutes-randos a.r-link:hover{color:var(--foret-fonce);text-decoration-thickness:2px}
+#toutes-randos .r-type{font-size:.85rem;color:var(--foret);font-weight:600}
+#toutes-randos .r-src{font-size:.8rem;color:var(--foret);margin-top:.9rem}
+#toutes-randos .r-cell-label{display:none}
+#toutes-randos .r-cell-value{overflow-wrap:anywhere}
+/* Une seule table : sur téléphone, chaque ligne devient une fiche.
+   Les libellés sont du HTML, et les en-têtes restent accessibles. */
+@media(max-width:800px){
+  #toutes-randos .rtable-wrap{box-shadow:none;border-radius:0}
+  #toutes-randos table,#toutes-randos caption,#toutes-randos tbody{display:block}
+  #toutes-randos table{background:transparent}
+  #toutes-randos caption{padding:.6rem 0;margin-bottom:.6rem}
+  #toutes-randos thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  #toutes-randos tbody{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+  #toutes-randos tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem 1rem;align-content:start;min-width:0;padding:1.1rem;background:var(--blanc);border:1px solid var(--pierre);border-radius:var(--r);box-shadow:var(--ombre)}
+  #toutes-randos tbody tr:nth-child(even){background:var(--blanc)}
+  #toutes-randos tbody td{display:block;min-width:0;padding:0;border:0}
+  #toutes-randos tbody td.r-name{grid-column:1/-1;width:auto;padding-bottom:.7rem;border-bottom:1px solid var(--pierre)}
+  #toutes-randos tbody td.r-type{grid-column:1/-1}
+  #toutes-randos a.r-link{font-size:1.05rem;line-height:1.5;min-height:44px}
+  #toutes-randos .r-cell-label{display:block;font-size:.76rem;font-weight:500;letter-spacing:.03em;color:var(--foret)}
+  #toutes-randos .r-cell-value{display:block;font-size:.94rem;font-weight:600;line-height:1.5}
+}
 @media(max-width:650px){
   .rando-acces,.rando-champs{grid-template-columns:1fr}
   .rando-acces{gap:.65rem}
@@ -33,9 +62,10 @@
   .rando-filtres{padding:1rem}
   .rando-resultats{align-items:flex-start;flex-direction:column}
   .rando-champs button{justify-self:start}
-  .rando-defilement{display:block;font-size:.88rem;margin-top:1rem;color:var(--foret)}
+  #toutes-randos tbody{grid-template-columns:1fr}
 }
 @media print{
-  .rando-choisir,.rando-filtres,.rando-defilement{display:none!important}
+  .rando-choisir,.rando-filtres{display:none!important}
   #toutes-randos tbody tr[hidden]{display:none!important}
+  #toutes-randos tbody tr{break-inside:avoid;box-shadow:none}
 }

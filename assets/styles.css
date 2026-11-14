@@ -101,16 +101,16 @@ body.inner #nav{background:rgba(9,23,18,.86);backdrop-filter:blur(14px);box-shad
 .burger.open span:nth-child(2){opacity:0}
 .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 body.menu-open{overflow:hidden}
-@media(min-width:1025px){
+@media(min-width:1200px){
   .burger{display:none}
   nav ul#menu{position:static!important;transform:none!important;height:auto;width:auto;inset:auto;background:none!important;backdrop-filter:none;flex-direction:row;justify-content:flex-end;align-items:center;gap:1.1rem;padding:0;overflow:visible}
   nav ul#menu a{font-size:.78rem;color:rgba(255,255,255,.88)}
 }
-@media(min-width:1025px) and (max-width:1500px){
+@media(min-width:1200px) and (max-width:1500px){
   nav ul#menu{gap:.65rem}
   nav ul#menu a{font-size:.69rem;letter-spacing:.4px}
 }
-@media(max-width:1024px){
+@media(max-width:1199px){
   #nav:not(.nav-ready){position:relative;flex-wrap:wrap;background:var(--foret-fonce);gap:1rem}
   nav ul#menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:.5rem;margin:0}
   nav.nav-ready .burger{display:flex}

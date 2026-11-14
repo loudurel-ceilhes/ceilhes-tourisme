@@ -123,8 +123,23 @@
   form.addEventListener('reset', e => {
     e.preventDefault(); period.value = 'tous'; commune.value = 'toutes'; activity.value = 'toutes'; filter();
   });
-  addEventListener('popstate', () => { readSelection(); filter(); });
+  function revealLinkedEvent() {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    const card = cards.find(item => item.id === id);
+    if (!card) return;
+    // Un rendez-vous gardé dans le carnet prime sur des filtres incompatibles.
+    if (card.hidden) {
+      period.value = 'tous'; commune.value = 'toutes'; activity.value = 'toutes'; filter();
+    }
+    const details = card.querySelector('.ev-details');
+    if (details) details.open = true;
+    card.scrollIntoView({ block: 'start' });
+  }
+  addEventListener('popstate', () => { readSelection(); filter(); revealLinkedEvent(); });
+  addEventListener('hashchange', revealLinkedEvent);
   readSelection();
   filter();
+  revealLinkedEvent();
   form.hidden = false;
 })();

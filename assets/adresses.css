@@ -1,0 +1,37 @@
+/* Des repères comparables et des contacts directs, lisibles sans script. */
+.hebergement-section{padding:1rem 5vw 2rem}
+.hebergement-fiche{background:var(--blanc);border:1px solid var(--pierre);border-radius:var(--r);padding:2rem;max-width:960px;margin:0 auto}
+.hebergement-entete{max-width:75ch}
+.adresse-repere{font-size:.78rem;color:var(--foret);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.hebergement-entete h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;color:var(--foret-fonce);margin:.5rem 0 1rem}
+.adresse-faits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.5rem;margin:1.2rem 0}
+.adresse-faits>div{padding:.85rem 0;border-top:1px solid var(--pierre);min-width:0}
+.adresse-faits dt{font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--foret);margin-bottom:.25rem}
+.adresse-faits dd{font-size:.95rem;line-height:1.65;margin:0}
+.adresse-faits-courtes{grid-template-columns:1fr}
+.adresse-liens{display:flex;flex-wrap:wrap;gap:.6rem 1rem;margin-top:1rem}
+.adresse-liens a{display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--foret);border-radius:.5rem;padding:.65rem 1rem;color:var(--foret);font-weight:600;text-decoration:none}
+.adresse-liens a:hover{background:var(--brume)}
+.adresse-contact-secondaire a{display:inline-flex;align-items:center;min-height:44px;color:var(--foret);font-weight:500;text-underline-offset:3px}
+.adresse-verification{font-size:.8rem!important;line-height:1.6;color:var(--foret);margin-top:1rem}
+.adresse-verification a{color:var(--foret);text-underline-offset:3px}
+.adresses-a-confirmer{margin-top:1.5rem;border:1px solid var(--pierre);background:var(--sable);border-radius:var(--r);padding:0}
+.adresses-a-confirmer summary{font-size:.95rem;padding:1rem 1.2rem;color:var(--foret);cursor:pointer}
+.adresses-attente{padding:0 1.2rem 1rem}
+.adresses-attente article{border-top:1px solid var(--pierre);padding:.8rem 0}
+.adresses-attente h4{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--foret-fonce)}
+.adresses-attente p{padding:.3rem 0;font-size:.9rem}
+.adresses-attente a{display:inline-flex;align-items:center;min-height:44px;color:var(--foret);text-underline-offset:3px}
+.hebergement-camping .adresse-liens{display:block}
+.hebergement-camping .adresse-liens a{display:inline-flex;margin:.25rem .4rem .25rem 0}
+@media(max-width:640px){
+  .hebergement-fiche{padding:1.2rem}
+  .adresse-faits{grid-template-columns:1fr}
+  .adresse-liens{gap:.5rem}
+  .adresse-liens a{font-size:.9rem;padding:.6rem .8rem}
+}
+@media print{
+  .hebergement-section{padding:.5rem 0}
+  .hebergement-fiche{break-inside:avoid;border-color:var(--pierre);padding:1rem}
+  .adresse-liens a{border:0;padding:.2rem 0}
+}

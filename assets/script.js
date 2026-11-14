@@ -5,7 +5,7 @@ if(nav){
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60),{passive:true});
   const burger=document.getElementById('burger'),menu=document.getElementById('menu');
   if(burger&&menu){
-    const mobile=matchMedia('(max-width:1024px)');
+    const mobile=matchMedia('(max-width:1199px)');
     let restoreBackground=()=>{};
     function setMenu(open,returnFocus=false){
       open=open&&mobile.matches;
