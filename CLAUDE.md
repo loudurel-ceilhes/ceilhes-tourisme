@@ -268,8 +268,9 @@ alertes. Le même gardien veille sur le dépôt esquirols.
 - **Une page ajoutée** doit l'être aussi dans le menu de **toutes** les pages
   et dans `sitemap.xml`.
 - **Couleurs et polices** : uniquement via les variables CSS de `assets/`.
-- **En-tête et pied de page recopiés dans chaque fichier** : toute
-  modification se fait dans **toutes** les pages, sans exception.
+- **Navigation commune** : `scripts/navigation.mjs` génère le menu dans
+  toutes les pages publiques. Modifier sa liste de liens puis relancer le script.
+  Le pied de page reste recopié dans chaque fichier.
 
 ## Lien avec les autres projets
 
@@ -297,3 +298,22 @@ jamais casser un lien croisé sans le remplacer.
 
 Aucun secret dans ce dépôt, et il ne doit jamais y en avoir : le site est
 entièrement statique.
+
+## Guides pratiques et carnet partagé
+
+Les guides `guide-curistes-avene.html`, `circuits-producteurs.html`,
+`petites-balades.html`, `bienvenue.html` et `kit-hebergeurs.html` sont reliés
+par le groupe « Guides pratiques » de la navigation. Le kit comprend un QR
+local et une fiche PDF, sans envoi de message automatique. Les sources et
+limites terrain sont documentées dans `docs/sources-guides.md`.
+
+La construction exécute `scripts/navigation.mjs`, puis
+`scripts/carnet-catalogue.mjs` après les générateurs de contenus. Ce dernier
+actualise `data/carnet-catalogue.json` et le catalogue intégré à Mon séjour.
+Le partage transmet des identifiants publics, avec ajout explicite au carnet
+existant ; l’export HTML constitue une copie autonome hors connexion.
+L’agenda automatique actualise et enregistre également ce catalogue.
+
+Le sélecteur de marchés utilise les règles datées de `data/marches.json`.
+Les calendriers saisonniers ne sont pas reconduits dans une nouvelle année
+sans source : voir `docs/sources-marches.md`.

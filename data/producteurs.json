@@ -87,7 +87,7 @@
           "facebook": null,
           "instagram": null,
           "adresse": "Hameau des Planes, 34260 Avène",
-          "vente": "Vente à la ferme du lundi au samedi de 8h30 à 12h30 ; marchés du Caylar, d'Avène, de Pézenas et de La Couvertoirade ; aussi via AMAP et magasins.",
+          "vente": "Vente directe à la ferme sur rendez-vous du lundi au vendredi ; marché du Bousquet-d'Orb le samedi de 9h à 12h ; dimanche fermé, selon la fiche Vivre en Grand Orb consultée le 14 novembre 2026. Appeler pour convenir du retrait.",
           "labels": [
             "AB"
           ],
@@ -98,8 +98,8 @@
             "https://www.lapartduloup.com/",
             "https://bio34.com/annuaire/gaec-la-part-du-loup-avene"
           ],
-          "note": "Émilie et Basile Dequiedt, brebis laitières 100 % bio (lait AOP Roquefort, fromages, yaourts, glaces). L'email est affiché sans arobase dans la source (« lapartduloup1orange.fr ») : forme reconstituée à vérifier. Présence Facebook/Instagram mentionnée mais URL non retrouvée. Ancien site https://www.lapartduloup.com expiré (constaté par le gardien des liens le 12/08/2026).",
-          "maj": "2026-08-12",
+          "note": "Émilie et Basile Dequiedt, brebis laitières 100 % bio (lait AOP Roquefort, fromages, yaourts, glaces). L'email est affiché sans arobase dans la source (« lapartduloup1orange.fr ») : forme reconstituée à vérifier. Présence Facebook/Instagram mentionnée mais URL non retrouvée. Ancien site https://www.lapartduloup.com expiré (constaté par le gardien des liens le 12/08/2026). Mise à jour du 14/11/2026 : Vivre en Grand Orb indique RDV lundi–vendredi, marché du Bousquet le samedi 9h–12h, dimanche fermé. Les visites De ferme en ferme sont un événement ponctuel.",
+          "maj": "2026-11-14",
           "gps": [
             43.7464,
             3.1344
@@ -1002,13 +1002,13 @@
             "url": "https://esquirols.fr/journal-fermiere-de-sylvanes.html",
             "libelle": "Lire son portrait →"
           },
-          "telephone": "05 65 99 50 99",
+          "telephone": "06 48 75 72 82",
           "email": null,
           "site": null,
           "facebook": null,
           "instagram": null,
           "adresse": "Ramondedieu, 12360 Sylvanès",
-          "vente": "Boutique à la ferme, charcuterie artisanale (pâtés, melsat, boudin, saucisses, conserves) ; horaires indiqués lun-sam 9h-12h / 14h-18h (non vérifiés, appeler avant)",
+          "vente": "Boutique à la ferme à Ramondedieu : charcuterie artisanale, conserves et plats cuisinés. Horaires non indiqués sur Tourisme Aveyron ; appeler avant le déplacement.",
           "labels": [],
           "actif": "oui",
           "sources": [
@@ -1016,8 +1016,8 @@
             "https://www.annuaire-horaire.fr/societe/Charcuterie-Sylvanes-La-Fermiere-de-Sylvanes/1446341",
             "https://www.societe.com/societe/la-fermiere-de-sylvanes-833875701.html"
           ],
-          "note": "SAS créée en 2017, Patrice Ramondenc président. Un annuaire inverse cite aussi un ancien numéro 05 65 49 56 44 ; le 05 65 99 50 99 est le plus largement repris.",
-          "maj": "2026-08-12",
+          "note": "SAS créée en 2017, Patrice Ramondenc président. Un annuaire inverse cite aussi un ancien numéro 05 65 49 56 44 ; le 05 65 99 50 99 est le plus largement repris. Mise à jour du 14/11/2026 : Tourisme Aveyron confirme la boutique à la ferme et affiche le 06 48 75 72 82 ; ancienne grille horaire non reprise sans confirmation.",
+          "maj": "2026-11-14",
           "gps": [
             43.8203,
             2.9398

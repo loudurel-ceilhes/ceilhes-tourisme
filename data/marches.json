@@ -14,9 +14,18 @@
         "https://www.jours-de-marche.fr/34600-bedarieux/"
       ],
       "confiance": "haute",
-      "maj": "2026-08-12",
+      "maj": "2026-11-14",
       "jourTri": 0,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-bedarieux-1",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          1
+        ],
+        "confirmation": "habitude"
+      },
+      "sourceRelue": "https://www.bedarieux.fr/Vivre/Ma-ville/Marches-et-salons/1/71.html"
     },
     {
       "commune": "Lamalou-les-Bains",
@@ -34,7 +43,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 1,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-lamalou-les-bains-2",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          2
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Murat-sur-Vèbre",
@@ -52,7 +69,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 1,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-murat-sur-vebre-3",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          2
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Clermont-l'Hérault",
@@ -71,7 +96,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 2,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-clermont-l-herault-4",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          3
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Camarès",
@@ -89,7 +122,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 2,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-camares-5",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          3
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Lamalou-les-Bains",
@@ -107,7 +148,16 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-lamalou-les-bains-6",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4,
+          6
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Saint-Gervais-sur-Mare",
@@ -125,7 +175,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-saint-gervais-sur-mare-7",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Graissessac",
@@ -143,7 +201,15 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-graissessac-8",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Belmont-sur-Rance",
@@ -161,7 +227,16 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-belmont-sur-rance-9",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4,
+          0
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Saint-Sernin-sur-Rance",
@@ -179,7 +254,15 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-saint-sernin-sur-rance-10",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "La Tour-sur-Orb",
@@ -197,7 +280,15 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 4,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-la-tour-sur-orb-11",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          5
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Le Bousquet-d'Orb",
@@ -215,7 +306,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 5,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-le-bousquet-d-orb-12",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          6
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Bédarieux",
@@ -230,9 +329,18 @@
         "https://www.bedarieux.fr/Vivre/Ma-ville/Marches-et-salons/1/71.html"
       ],
       "confiance": "haute",
-      "maj": "2026-08-12",
+      "maj": "2026-11-14",
       "jourTri": 5,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-bedarieux-13",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          6
+        ],
+        "confirmation": "habitude"
+      },
+      "sourceRelue": "https://www.bedarieux.fr/Vivre/Ma-ville/Marches-et-salons/1/71.html"
     },
     {
       "commune": "Hérépian",
@@ -250,7 +358,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 5,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-herepian-14",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          6
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Lodève",
@@ -269,7 +385,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 5,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-lodeve-15",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          6
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Saint-Affrique",
@@ -288,7 +412,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 5,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-saint-affrique-16",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          6
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Le Caylar",
@@ -306,7 +438,15 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 6,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-le-caylar-17",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          0
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Lacaune",
@@ -324,7 +464,15 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 6,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-lacaune-18",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          0
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Lacaune",
@@ -342,7 +490,22 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 7,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-lacaune-19",
+      "calendrier": {
+        "type": "mensuel",
+        "regles": [
+          {
+            "jour": 6,
+            "rang": 3
+          },
+          {
+            "jour": 5,
+            "rang": 3
+          }
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Soubès",
@@ -360,7 +523,18 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 0,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-soubes-20",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          1
+        ],
+        "annee": 2026,
+        "debut": "2026-07-06",
+        "fin": "2026-08-24",
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Ceilhes-et-Rocozels",
@@ -370,15 +544,28 @@
       "periode": "juillet-août",
       "lieu": "plan d'eau du Bouloc",
       "type": "marché des producteurs de pays, nocturne, avec concerts",
-      "note": "Rendez-vous estival avec animation musicale ; dates précises publiées chaque année",
+      "note": "Dates 2026 conservées à titre de calendrier passé. Les anciennes fiches de l’office ont été retirées ou redirigées ; consulter l’agenda de l’office ou la mairie pour une prochaine édition.",
       "sources": [
-        "https://www.herault-tourisme.com/fr/fiche/fetes-et-manifestations/marche-des-producteurs-de-pays-ceilhes-et-rocozels_TFOFMALAR034V525SNT/",
-        "https://www.haut-languedoc-vignobles.com/agenda/les-marches-et-fetes-traditionnelles/bienvenu-a-la-ferme-marche-des-producteurs-de-pays-3680995"
+        "https://www.haut-languedoc-vignobles.com/agenda/les-marches-et-fetes-traditionnelles",
+        "https://ville-ceilhes.fr/"
       ],
       "confiance": "haute",
-      "maj": "2026-08-12",
+      "maj": "2026-11-14",
       "jourTri": 1,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-ceilhes-et-rocozels-21",
+      "calendrier": {
+        "type": "dates",
+        "dates": [
+          "2026-07-07",
+          "2026-07-21",
+          "2026-08-04",
+          "2026-08-18"
+        ],
+        "annee": 2026,
+        "confirmation": "dates-publiees"
+      },
+      "sourceRelue": "https://www.haut-languedoc-vignobles.com/agenda/les-marches-et-fetes-traditionnelles"
     },
     {
       "commune": "Avène",
@@ -388,15 +575,22 @@
       "periode": "saison thermale (printemps-automne)",
       "lieu": "place du marché (repli salle polyvalente en cas de pluie)",
       "type": "alimentaire, plein vent",
-      "note": "Ouvre avec la saison thermale ; renforcé en producteurs et artisans en juillet-août (« marché estival »)",
+      "note": "Rendez-vous du mercredi décrit par la mairie dans un article publié le 27 mars 2022 ; ses dates ne sont pas reconduites automatiquement.",
       "sources": [
         "https://commune-avene.fr/marche-hebdomadaire-du-mercredi-matin-a-avene/",
         "https://www.jours-de-marche.fr/34260-avene/"
       ],
       "confiance": "haute",
-      "maj": "2026-08-12",
+      "maj": "2026-11-14",
       "jourTri": 2,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-avene-22",
+      "calendrier": {
+        "type": "a-confirmer",
+        "annee": 2022,
+        "motif": "La mairie annonce le mercredi de 9h à 12h30 dans un article de mars 2022. Les dates de la saison actuelle sont à confirmer."
+      },
+      "sourceRelue": "https://commune-avene.fr/marche-hebdomadaire-du-mercredi-matin-a-avene/"
     },
     {
       "commune": "Lunas",
@@ -414,7 +608,29 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 2,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-lunas-23",
+      "calendrier": {
+        "type": "mensuel",
+        "regles": [
+          {
+            "jour": 3,
+            "rang": 1
+          },
+          {
+            "jour": 3,
+            "rang": 3,
+            "mois": [
+              7,
+              8
+            ]
+          }
+        ],
+        "debut": "2026-03-01",
+        "fin": "2026-11-30",
+        "annee": 2026,
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Le Caylar",
@@ -430,9 +646,21 @@
         "https://www.escapadeslr.com/agenda-marche-des-producteurs-de-pays-du-caylar-le-caylar-herault-784.html"
       ],
       "confiance": "haute",
-      "maj": "2026-08-12",
+      "maj": "2026-11-14",
       "jourTri": 2,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-le-caylar-24",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          3
+        ],
+        "annee": 2026,
+        "debut": "2026-07-01",
+        "fin": "2026-08-31",
+        "confirmation": "habitude"
+      },
+      "sourceRelue": "https://le-caylar-en-larzac.fr/a-la-une/marches-des-producteurs-tous-les-mercredis-soirs-de-juillet-et-aout/"
     },
     {
       "commune": "Camarès",
@@ -450,7 +678,18 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 2,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-camares-25",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          3
+        ],
+        "annee": 2026,
+        "debut": "2026-07-01",
+        "fin": "2026-08-26",
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "La Couvertoirade",
@@ -469,7 +708,18 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-la-couvertoirade-26",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4
+        ],
+        "annee": 2026,
+        "debut": "2026-07-01",
+        "fin": "2026-08-31",
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Saint-Affrique",
@@ -487,7 +737,18 @@
       "confiance": "haute",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-saint-affrique-27",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4
+        ],
+        "annee": 2026,
+        "debut": "2026-07-09",
+        "fin": "2026-08-20",
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "La Salvetat-sur-Agoût",
@@ -497,7 +758,7 @@
       "periode": "toute l'année (rythme renforcé en saison)",
       "lieu": "centre du village ; esplanade des Troubadours en juillet-août",
       "type": "alimentaire, producteurs (fromages, volailles, miel)",
-      "note": "Les sources divergent sur le détail jeudi/samedi/dimanche selon la saison ; le jeudi matin est le jour le plus constant",
+      "note": "Le jeudi matin est le rendez-vous le plus constant entre les sources. Les samedis et dimanches supplémentaires sont à confirmer selon la saison et ne sont pas calculés ici.",
       "sources": [
         "https://www.jours-de-marche.fr/34330-la-salvetat-sur-agout/",
         "https://www.annuaire-mairie.fr/marche-la-salvetat-sur-agout.html"
@@ -505,7 +766,15 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 3,
-      "saisonnier": false
+      "saisonnier": false,
+      "id": "marche-la-salvetat-sur-agout-28",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          4
+        ],
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Campestre-et-Luc",
@@ -523,7 +792,18 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 4,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-campestre-et-luc-29",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          5
+        ],
+        "annee": 2026,
+        "debut": "2026-07-01",
+        "fin": "2026-08-31",
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Sylvanès",
@@ -541,24 +821,42 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 4,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-sylvanes-30",
+      "calendrier": {
+        "type": "hebdomadaire",
+        "jours": [
+          5
+        ],
+        "annee": 2026,
+        "debut": "2026-07-01",
+        "fin": "2026-08-31",
+        "confirmation": "habitude"
+      }
     },
     {
       "commune": "Avène",
       "departement": "34",
       "jour": "2e jeudi du mois",
       "horaires": "17h-19h",
-      "periode": "mai à novembre",
+      "periode": "saison 2025 décrite par la source ; prochaine édition à confirmer",
       "lieu": "atrium d'Eau Thermale Avène l'hôtel (Avène-les-Bains)",
       "type": "producteurs et artisans locaux",
-      "note": "Marché mensuel en intérieur, destiné aux curistes et visiteurs",
+      "note": "Annonce datée du 11 mars 2025 : deuxième jeudi du mois, première édition le 10 avril 2025. Aucune date 2026 ou 2027 n’est déduite de cette annonce.",
       "sources": [
         "https://www.eauthermaleavene-lhotel.com/marche-des-artisans-et-producteurs-locaux-eau-thermale-avene-lhotel"
       ],
       "confiance": "moyenne",
-      "maj": "2026-08-12",
+      "maj": "2026-11-14",
       "jourTri": 7,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-avene-31",
+      "calendrier": {
+        "type": "a-confirmer",
+        "annee": 2025,
+        "motif": "La page de l’hôtel décrit la saison 2025. Les dates de la prochaine saison sont à demander à l’hôtel."
+      },
+      "sourceRelue": "https://www.eauthermaleavene-lhotel.com/marche-des-artisans-et-producteurs-locaux-eau-thermale-avene-lhotel"
     },
     {
       "commune": "La Salvetat-sur-Agoût",
@@ -577,7 +875,13 @@
       "confiance": "moyenne",
       "maj": "2026-08-12",
       "jourTri": 7,
-      "saisonnier": true
+      "saisonnier": true,
+      "id": "marche-la-salvetat-sur-agout-32",
+      "calendrier": {
+        "type": "a-confirmer",
+        "annee": 2026,
+        "motif": "Les dates ponctuelles sont publiées chaque saison ; aucun jour fixe n’est retenu."
+      }
     }
   ]
 }

@@ -45,3 +45,19 @@
   .carnet-fiche h2{font-size:1.3rem}
   .carnet-url{display:block;font-size:.75rem;overflow-wrap:anywhere;margin-top:.5rem}
 }
+
+/* Transfert volontaire : aperçu avant fusion, jamais de remplacement implicite. */
+.carnet-transfert{margin:1.5rem 0;padding:1.25rem;background:var(--blanc);border:1px solid var(--pierre);border-radius:var(--r);max-width:48rem}
+.carnet-transfert[hidden]{display:none}
+.carnet-transfert h2{font-size:1.8rem;line-height:1.2;margin-bottom:.75rem;color:var(--foret)}
+.carnet-transfert p{margin:.6rem 0;max-width:70ch}
+.carnet-transfert label{display:block;font-weight:600;margin:.8rem 0 .4rem}
+.carnet-transfert textarea,.carnet-transfert input{font:inherit;max-width:100%;width:100%;box-sizing:border-box;min-height:44px}
+.carnet-transfert textarea{padding:.7rem;border:1px solid var(--foret);border-radius:.4rem;resize:vertical;overflow-wrap:anywhere}
+.carnet-transfert input[type=file]{padding:.5rem 0;overflow:hidden}
+.carnet-transfert button{font:inherit;min-height:44px;padding:.6rem .85rem;border:1px solid var(--foret);border-radius:.5rem;background:var(--blanc);color:var(--foret);cursor:pointer}
+.carnet-transfert button:disabled,.carnet-actions button:disabled{opacity:.55;cursor:not-allowed}
+.carnet-transfert a{color:var(--foret);text-underline-offset:3px}
+#carnet-apercu-liste{padding-left:1.25rem;display:grid;gap:.5rem}
+#carnet-apercu-titre:focus{outline:2px solid var(--ocre);outline-offset:5px}
+@media print{.carnet-transfert{display:none!important}}

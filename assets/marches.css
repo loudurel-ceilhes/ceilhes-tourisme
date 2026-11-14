@@ -1,0 +1,22 @@
+.marches-outil{padding:1.5rem;background:var(--blanc);border:1px solid var(--pierre);border-radius:var(--r);margin:1rem 0 2rem}
+.marches-outil h5{font-size:1.6rem;color:var(--foret);margin:0 0 .5rem}
+.marches-aide,.marche-preuve,.marche-note,.marche-source{font-size:.85rem;line-height:1.6}
+.marches-champs{display:flex;flex-wrap:wrap;align-items:end;gap:1rem;margin-top:1rem}
+.marches-champs label{display:grid;gap:.4rem;flex:1 1 180px;font-size:.9rem;min-width:0}
+.marches-champs input,.marches-champs select{font:inherit;border:1px solid var(--pierre);border-radius:6px;padding:.7rem;background:var(--blanc);color:var(--foret);width:100%;min-width:0}
+.marches-champs button{font:inherit;cursor:pointer;border:1px solid var(--foret);border-radius:6px;padding:.75rem 1rem;background:var(--foret);color:var(--blanc)}
+.marches-champs .marches-secondaire{background:var(--blanc);color:var(--foret)}
+.marches-champs :focus-visible,.marche-liens a:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+#marches-statut{margin:1.3rem 0;font-weight:600}
+#marches-statut[role=alert]{border-left:3px solid var(--ocre);padding-left:1rem}
+.marche-date{font-size:1.35rem;color:var(--foret);margin:1.6rem 0 .6rem;text-transform:capitalize}
+.marche-resultat{border-left:3px solid var(--pierre);padding:.8rem 1rem;margin:.6rem 0;background:var(--creme,var(--blanc));overflow-wrap:anywhere}
+.marche-resultat h6{font-family:inherit;font-size:1rem;font-weight:600;line-height:1.5;color:var(--foret)}
+.marche-resultat p{margin:.3rem 0}
+.marche-preuve{color:var(--foret);font-weight:600}
+.marche-liens{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem}
+.marche-liens a,.marche-source a{text-underline-offset:3px}
+.marche-reference{display:block;font-size:.8rem;line-height:1.6;margin:.35rem 0;color:var(--foret)}
+.marches li{overflow-wrap:anywhere}
+@media(max-width:600px){.marches-outil{padding:1rem}.marches-champs label{flex-basis:100%}.marches-champs button{width:100%}}
+@media print{#marches-sejour{display:none!important}.marches-outil{border:0;padding:0}.marche-resultat{break-inside:avoid}.marche-liens{display:none}}
