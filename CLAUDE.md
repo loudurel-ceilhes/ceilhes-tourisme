@@ -17,7 +17,8 @@ C'est volontaire : un site de village doit pouvoir être repris dans cinq ans.
 Les pages comprennent `le-lac.html`, `l-orb.html`, `randonnees.html`,
 `patrimoine.html`, `nature.html`, `terroir.html`,
 `thermes-avene.html`, `hebergeurs.html`, `agenda.html`, `alentours.html`,
-`galerie.html`, `vie-associative.html`, `infos-pratiques.html`, `mon-sejour.html` et les six
+`galerie.html`, `vie-associative.html`, `infos-pratiques.html`, `mon-sejour.html`,
+`producteurs-region.html` et les six
 accueils étrangers. `randonnees-vtt.html` est une redirection, pas un fichier.
 Le vérificateur affiche le nombre réel de pages présentes.
 
@@ -190,6 +191,18 @@ champ `gps` ([latitude, longitude]) place l'épingle, `gpsPrecision` vaut
 géolocalisé) ou `"exacte"` (position relevée à la ferme). Un producteur sans
 `gps` reste dans l'annuaire mais pas sur la carte.
 
+Les badges et le filtre « Habituellement proposé à L'Esquirol » décrivent
+la sélection habituelle, pas le stock du jour. Les valeurs historiques du
+champ `badge` sont conservées dans les données et reformulées à l'affichage
+par le générateur. Le filtre garde son identifiant `esquirol` pour que les
+liens déjà partagés restent valides.
+
+Le répertoire des producteurs régionaux dispose d'une page distincte,
+`producteurs-region.html`, générée par `scripts/reseau-galtier.mjs` depuis
+`data/reseau-producteurs.json`. Il complète l'annuaire de proximité sans
+présenter tous les contacts comme fournisseurs ou comme produits en stock.
+Les identités, sources et statuts sont conservés dans ce fichier de référence.
+
 Pour affiner une épingle sans toucher au JSON :
 **ceilhes-tourisme.fr/reglage-carte.html** — page-outil interne (hors menu,
 hors sitemap, non indexée). On y fait glisser les épingles sur la position
@@ -263,7 +276,19 @@ alertes. Le même gardien veille sur le dépôt esquirols.
 - **`esquirols`** — le site de L'Esquirol, l'épicerie du village. Les deux
   sites se citent mutuellement : le touriste qui cherche une randonnée doit
   trouver où acheter son casse-croûte, et inversement.
-- **`transhumance`** — l'application de vente et le fichier client.
+- **`odoo`** — l'outillage de gestion de la boutique distante
+  **boutique.esquirols.fr**, qui porte les commandes et la réservation de
+  Cénomes. Les liens commerciaux utiles utilisent `utm_source=ceilhes-tourisme`,
+  `utm_medium=referral` et `utm_campaign=ecosysteme`. Ces paramètres identifient
+  l'origine du lien ; ils ne chargent aucun outil de suivi dans ce site.
+- **`transhumance`** — ancien projet mentionné dans l'historique. Son rôle
+  actuel n'est pas confirmé ; ne pas le présenter comme le service commercial
+  en fonctionnement.
+
+Les horaires et les fermetures exceptionnelles restent portés par la vitrine
+Esquirols (`assets/data/etablissements.json` dans son dépôt). Le guide renvoie
+vers `https://esquirols.fr/ceilhes.html#horaires` : il ne recopie pas les périodes
+de fermeture dans une seconde configuration.
 
 Ce maillage entre les deux sites est un atout de référencement local : ne
 jamais casser un lien croisé sans le remplacer.

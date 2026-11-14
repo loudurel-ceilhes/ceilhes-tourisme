@@ -11,7 +11,7 @@ import tempfile
 import time
 import unittest
 import urllib.request
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, urlsplit
 
 from playwright.sync_api import sync_playwright, expect
 
@@ -287,6 +287,35 @@ class Parcours(unittest.TestCase):
         self.go('terroir.html')
         self.page.locator('.page-reperes a[href="#marches-du-pays"]').click()
         expect(self.page.locator('#marches-du-pays')).to_be_in_viewport()
+
+    def test_passages_vers_boutique_reservation_et_carnet(self):
+        self.go('terroir.html')
+        # Le texte et les boutons restent lisibles : la présentation du
+        # commerce passe sous la photo sur téléphone, pas en colonne étroite.
+        self.assertTrue(self.page.locator('.esquirol').evaluate(
+            '(e)=>getComputedStyle(e).gridTemplateColumns.split(" ").length===1'))
+        for chemin, texte in [('/shop', 'Retrouver les produits en ligne'),
+                               ('/appointment/1', 'réserver une table')]:
+            lien = self.page.locator('.esquirol').get_by_role('link', name=texte, exact=True)
+            adresse = urlsplit(lien.get_attribute('href'))
+            self.assertEqual((adresse.scheme, adresse.hostname, adresse.path),
+                             ('https', 'boutique.esquirols.fr', chemin))
+            self.assertEqual(parse_qs(adresse.query), {'utm_source':['ceilhes-tourisme'],
+                                                     'utm_medium':['referral'],
+                                                     'utm_campaign':['ecosysteme']})
+        self.page.locator('#esquirol-producteurs').check()
+        expect(self.page.locator('.prod-card[data-esquirol="false"]:visible')).to_have_count(0)
+        self.assertGreater(self.page.locator('.prod-card:visible').count(), 0)
+        expect(self.page.locator('.prod-conseil')).to_contain_text('pas le stock du jour')
+        self.go('infos-pratiques.html#adresse-esquirol-cenomes')
+        fiche = self.page.locator('#adresse-esquirol-cenomes')
+        expect(fiche.get_by_role('link', name='Réserver une table →')).to_have_attribute(
+            'href', 'https://boutique.esquirols.fr/appointment/1?utm_source=ceilhes-tourisme&utm_medium=referral&utm_campaign=ecosysteme')
+        fiche.locator('.carnet-ajouter').click()
+        self.go('mon-sejour.html')
+        expect(self.page.locator('.carnet-fiche h2')).to_have_text("L'Esquirol Cénomes")
+        self.page.locator('.carnet-fiche a').first.click()
+        expect(self.page.locator('#adresse-esquirol-cenomes')).to_be_in_viewport()
 
 
 if __name__ == '__main__':

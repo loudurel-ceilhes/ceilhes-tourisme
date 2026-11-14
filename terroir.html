@@ -43,6 +43,7 @@
     <li><a href="randonnees.html">Randonnées</a></li>
     <li><a href="nature.html">Nature</a></li>
     <li><a href="terroir.html" class="active" aria-current="page">Terroir</a></li>
+    <li><a href="producteurs-region.html">Producteurs</a></li>
     <li><a href="patrimoine.html">Patrimoine</a></li>
     <li><a href="alentours.html">Alentours</a></li>
     <li><a href="agenda.html">Agenda</a></li>
@@ -95,12 +96,18 @@
           <li>Plats à emporter hors saison</li>
         </ul>
         <p>En <strong>juillet-août</strong>, la belle terrasse (30 couverts) s'anime : cuisine maison de saison, planches de charcuterie et fromages locaux, crêpes maison et sorbets bio du coin.</p>
-        <a class="btn btn-primary" href="https://esquirols.fr/produits.html" target="_blank" rel="noopener" style="margin-top:.5rem">Les producteurs du pays, en rayon</a>
+        <div class="esquirol-actions">
+          <a class="btn btn-primary" href="https://boutique.esquirols.fr/shop?utm_source=ceilhes-tourisme&amp;utm_medium=referral&amp;utm_campaign=ecosysteme" target="_blank" rel="noopener">Retrouver les produits en ligne</a>
+          <a class="btn btn-secondary" href="https://esquirols.fr/produits.html" target="_blank" rel="noopener">Les producteurs de l'épicerie</a>
+        </div>
+        <p class="esquirol-pratique">La boutique précise les produits commandables et leurs modes de réception. Avant de venir, consultez les <a href="https://esquirols.fr/ceilhes.html#horaires" target="_blank" rel="noopener">horaires et fermetures exceptionnelles de Ceilhes</a>.</p>
+        <p class="esquirol-pratique">Pour un repas à Cénomes : <a href="https://boutique.esquirols.fr/appointment/1?utm_source=ceilhes-tourisme&amp;utm_medium=referral&amp;utm_campaign=ecosysteme" target="_blank" rel="noopener">réserver une table</a> ou consulter <a href="https://esquirols.fr/cenomes.html" target="_blank" rel="noopener">le programme du restaurant</a>.</p>
       </div>
     </div>
 
     <h3 class="reveal" style="font-size:1.9rem;color:var(--foret-fonce);margin:0 0 .5rem;text-align:center">Les producteurs du pays</h3>
-    <p class="reveal" style="text-align:center;font-weight:300;max-width:640px;margin:0 auto 1rem">Autour de Ceilhes, cinq pays de fermes : la haute vallée de l'Orb, les monts de Lacaune, le rougier de Camarès, le Lodévois et le Larzac. Plus de quatre-vingts adresses en vente directe — celles marquées 🛒 sont en rayon à L'Esquirol, pour goûter le territoire sans quitter le village.</p>
+    <p class="reveal" style="text-align:center;font-weight:300;max-width:640px;margin:0 auto 1rem">Autour de Ceilhes, cinq pays de fermes : la haute vallée de l'Orb, les monts de Lacaune, le rougier de Camarès, le Lodévois et le Larzac. Les fiches indiquent les possibilités d'achat direct. Les producteurs marqués 🛒 sont habituellement proposés à L'Esquirol ; leur disponibilité se confirme auprès du magasin.</p>
+    <p class="prod-reseau reveal"><a href="producteurs-region.html">Découvrir aussi les producteurs de la région →</a><br>Un réseau régional plus large, avec les spécialités et les liens utiles de chaque acteur.</p>
 
     <!-- @producteurs — généré par scripts/producteurs.mjs depuis data/producteurs.json : ne pas modifier à la main, modifier le fichier de données -->
     <div id="annuaire-producteurs">
@@ -132,7 +139,7 @@
         </label>
       </div>
       <div class="prod-options">
-        <label class="prod-checkbox"><input type="checkbox" name="esquirol" id="esquirol-producteurs"> En rayon à L'Esquirol</label>
+        <label class="prod-checkbox"><input type="checkbox" name="esquirol" id="esquirol-producteurs"> Habituellement proposé à L'Esquirol</label>
         <button type="reset">Effacer les filtres</button>
       </div>
       <div class="prod-result-nav">
@@ -140,7 +147,7 @@
         <a href="#resultats-producteurs">Voir les fiches ↓</a>
       </div>
     </form>
-    <p class="prod-conseil">Avant de partir, appelez pour confirmer l'ouverture et les produits disponibles. Les horaires peuvent évoluer selon la saison.</p>
+    <p class="prod-conseil">Les badges indiquent une sélection habituelle, pas le stock du jour. Avant de partir, appelez pour confirmer l'ouverture et les produits disponibles. Les horaires peuvent évoluer selon la saison.</p>
     <p id="etat-carte-producteurs" class="prod-carte-note" role="status" hidden></p>
     <div class="prod-carte" id="bloc-carte-producteurs" hidden>
     <div id="carte-prod" aria-label="Carte des producteurs" role="region"></div>
@@ -169,7 +176,7 @@
         <p class="prod-vente"><strong>Pour acheter :</strong> Colis de bœuf et veau sous vide (dès 5 kg) : retrait à la ferme sur rendez-vous, livraison gratuite en remorque frigorifique, points de rencontre le long de l'A75 Béziers/Le Caylar, dépôt au magasin de producteurs de Portiragnes.</p>
         <p class="prod-labels"><strong>Labels :</strong> Blason Prestige (gamme Label Rouge) · Bienvenue à la ferme</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="gaec-des-monts-et-des-sources" data-produits="viandes" data-esquirol="true" data-carnet-id="producteur-gaec-des-monts-et-des-sources" data-carnet-title="GAEC des Monts et des Sources" data-carnet-category="Producteur" data-carnet-url="terroir.html#gaec-des-monts-et-des-sources" tabindex="-1">
         <div class="picto" aria-hidden="true">🐖</div>
@@ -179,7 +186,7 @@
         <div class="contact"><a href="tel:+33632896865">📞 06 32 89 68 65</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hameau%20de%20Vinas%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Boutique à la ferme : viandes de porc, agneau et chevreau élevés en plein air, transformées sur place sans additifs, plus fruits, légumes et dépôt d'une trentaine de producteurs locaux.</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="la-part-du-loup" data-produits="laitages douceurs" data-esquirol="true" data-carnet-id="producteur-la-part-du-loup" data-carnet-title="La Part du Loup" data-carnet-category="Producteur" data-carnet-url="terroir.html#la-part-du-loup" tabindex="-1">
         <div class="picto" aria-hidden="true">🧀</div>
@@ -190,7 +197,7 @@
         <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme du lundi au samedi de 8h30 à 12h30 ; marchés du Caylar, d'Avène, de Pézenas et de La Couvertoirade ; aussi via AMAP et magasins.</p>
         <p class="prod-labels"><strong>Labels :</strong> AB</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <a class="portrait" href="https://esquirols.fr/journal-la-part-du-loup.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
+        <a class="portrait" href="https://esquirols.fr/journal-la-part-du-loup.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="les-cocottes-d-avene" data-produits="viandes" data-esquirol="true" data-carnet-id="producteur-les-cocottes-d-avene" data-carnet-title="Les Cocottes d'Avène" data-carnet-category="Producteur" data-carnet-url="terroir.html#les-cocottes-d-avene" tabindex="-1">
         <div class="picto" aria-hidden="true">🥚</div>
@@ -200,7 +207,7 @@
         <div class="contact"><a href="tel:+33676931714">📞 06 76 93 17 14</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Planes%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Œufs vendus à la ferme sur demande et en dépôt : Le Local (Bédarieux), Chez Cécile (Camplong), L'Esquirol (Ceilhes-et-Rocozels), Les Jardins d'Émilien (Le Bousquet-d'Orb), marché du Caroux (Villemagne-l'Argentière).</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="ferme-du-licidou" data-produits="laitages viandes" data-esquirol="false" data-carnet-id="producteur-ferme-du-licidou" data-carnet-title="Ferme du Licidou" data-carnet-category="Producteur" data-carnet-url="terroir.html#ferme-du-licidou" tabindex="-1">
         <div class="picto" aria-hidden="true">🐑</div>
@@ -230,7 +237,7 @@
         <p class="prod-vente"><strong>Pour acheter :</strong> Pains bio au levain (dont épeautre) et brioches cuits au four à bois traditionnel ; pizza végétarienne le vendredi soir ; fougasses tomates séchées-olives noires.</p>
         <p class="prod-labels"><strong>Labels :</strong> AB</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="le-pain-de-l-arche" data-produits="douceurs" data-esquirol="true" data-carnet-id="producteur-le-pain-de-l-arche" data-carnet-title="Le pain de l'Arche" data-carnet-category="Producteur" data-carnet-url="terroir.html#le-pain-de-l-arche" tabindex="-1">
         <div class="picto" aria-hidden="true">🔥</div>
@@ -240,7 +247,7 @@
         <div class="contact"><a href="https://archecom.org/la-borie-noble" target="_blank" rel="noopener">🌐 archecom.org</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Borie%20Noble%2C%2034650%20Roqueredonde" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Pain au levain pétri à la main et cuit au four à bois (pain d'épeautre réputé), vente sur place à la communauté de l'Arche.</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="domaine-de-gravezon-eric-pailles" data-produits="boissons" data-esquirol="false" data-carnet-id="producteur-domaine-de-gravezon-eric-pailles" data-carnet-title="Domaine de Gravezon — Éric Paillès" data-carnet-category="Producteur" data-carnet-url="terroir.html#domaine-de-gravezon-eric-pailles" tabindex="-1">
         <div class="picto" aria-hidden="true">🍷</div>
@@ -259,7 +266,7 @@
         <div class="contact"><a href="https://www.google.com/maps/search/?api=1&amp;query=1%20Grand%20Rue%2C%2034650%20Lunas-les-Ch%C3%A2teaux" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Sorbets de fruits et de plantes aromatiques (cassis, groseille, mûre, griotte, violette) vendus sur les marchés locaux, notamment le marché estival de Lunas, depuis l'été 2021.</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🍧 En terrasse à L'Esquirol</span>
+        <span class="tag">🍧 Habituellement proposé en terrasse à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="miellerie-du-mas-valette-philippe-chevalier" data-produits="miel" data-esquirol="true" data-carnet-id="producteur-miellerie-du-mas-valette-philippe-chevalier" data-carnet-title="Miellerie du Mas Valette — Philippe Chevalier" data-carnet-category="Producteur" data-carnet-url="terroir.html#miellerie-du-mas-valette-philippe-chevalier" tabindex="-1">
         <div class="picto" aria-hidden="true">🍯</div>
@@ -269,7 +276,7 @@
         <div class="contact"><a href="tel:+33684307058">📞 06 84 30 70 58</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Mas%20Valette%2C%20route%20de%20Ceilhes%2C%2034260%20Av%C3%A8ne" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Miels (garrigue, fleurs, châtaignier, acacia, lavande), propolis et pollen ; vente principalement sur les marchés locaux et à la miellerie sur rendez-vous.</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <a class="portrait" href="https://esquirols.fr/journal-miels-philippe-chevalier.html" target="_blank" rel="noopener">Choisir son pot →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
+        <a class="portrait" href="https://esquirols.fr/journal-miels-philippe-chevalier.html" target="_blank" rel="noopener">Choisir son pot →</a><span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="les-ruchers-des-monts-d-avene" data-produits="miel" data-esquirol="false" data-carnet-id="producteur-les-ruchers-des-monts-d-avene" data-carnet-title="Les Ruchers des Monts d'Avène" data-carnet-category="Producteur" data-carnet-url="terroir.html#les-ruchers-des-monts-d-avene" tabindex="-1">
         <div class="picto" aria-hidden="true">🐝</div>
@@ -308,7 +315,7 @@
         <div class="contact"><a href="tel:+33620022410">📞 06 20 02 24 10</a><span class="sep"> · </span><a href="https://brasseriepompon.odoo.com" target="_blank" rel="noopener">🌐 brasseriepompon.odoo.com</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=3%20rue%20du%20Pompon%2C%2034260%20Camplong" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Bières artisanales (blonde 4,3°, NEIPA) brassées à l'eau de source granitique de Camplong, en bouteilles et fûts de 20 L, avec location de tireuse.</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="pisciculture-du-gravezon" data-produits="viandes" data-esquirol="false" data-carnet-id="producteur-pisciculture-du-gravezon" data-carnet-title="Pisciculture du Gravezon" data-carnet-category="Producteur" data-carnet-url="terroir.html#pisciculture-du-gravezon" tabindex="-1">
         <div class="picto" aria-hidden="true">🐟</div>
@@ -478,7 +485,7 @@
         <div class="contact"><a href="tel:+33565995099">📞 05 65 99 50 99</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Ramondedieu%2C%2012360%20Sylvan%C3%A8s" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Boutique à la ferme, charcuterie artisanale (pâtés, melsat, boudin, saucisses, conserves) ; horaires indiqués lun-sam 9h-12h / 14h-18h (non vérifiés, appeler avant)</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <a class="portrait" href="https://esquirols.fr/journal-fermiere-de-sylvanes.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
+        <a class="portrait" href="https://esquirols.fr/journal-fermiere-de-sylvanes.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="gaec-de-brioges" data-produits="viandes" data-esquirol="true" data-carnet-id="producteur-gaec-de-brioges" data-carnet-title="GAEC de Brioges" data-carnet-category="Producteur" data-carnet-url="terroir.html#gaec-de-brioges" tabindex="-1">
         <div class="picto" aria-hidden="true">🐓</div>
@@ -488,7 +495,7 @@
         <div class="contact"><a href="tel:+33687250205">📞 06 87 25 02 05</a><span class="sep"> · </span><a href="https://www.google.com/maps/search/?api=1&amp;query=Brioges%2C%2012360%20M%C3%A9lagues" target="_blank" rel="noopener">🧭 Itinéraire</a></div>
         <p class="prod-vente"><strong>Pour acheter :</strong> Vente à la ferme et livraison sur rendez-vous ; marché de Camarès le mercredi (toute l'année) et marché nocturne des producteurs de pays à Saint-Affrique ; dépôts Intermarché et Vival Camarès, commerces de Brusque</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="le-jardin-du-fada" data-produits="vegetal boissons" data-esquirol="false" data-carnet-id="producteur-le-jardin-du-fada" data-carnet-title="Le Jardin du Fada" data-carnet-category="Producteur" data-carnet-url="terroir.html#le-jardin-du-fada" tabindex="-1">
         <div class="picto" aria-hidden="true">🌰</div>
@@ -567,7 +574,7 @@
         <p class="prod-vente"><strong>Pour acheter :</strong> Vente directe lun-jeu 9h-12h15 / 13h30-17h30, ven 9h-12h15 / 13h30-16h30 ; fermé week-ends et jours fériés ; visites d'entreprise proposées via l'office de tourisme</p>
         <p class="prod-labels"><strong>Labels :</strong> AOP Roquefort · Entreprise du Patrimoine Vivant (depuis 2012)</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <a class="portrait" href="https://esquirols.fr/journal-roquefort-vieux-berger.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
+        <a class="portrait" href="https://esquirols.fr/journal-roquefort-vieux-berger.html" target="_blank" rel="noopener">Lire son portrait →</a><span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="roquefort-carles" data-produits="laitages douceurs" data-esquirol="false" data-carnet-id="producteur-roquefort-carles" data-carnet-title="Roquefort Carles" data-carnet-category="Producteur" data-carnet-url="terroir.html#roquefort-carles" tabindex="-1">
         <div class="picto" aria-hidden="true">🧀</div>
@@ -701,7 +708,7 @@
         <p class="prod-vente"><strong>Pour acheter :</strong> Vente au magasin de producteurs « Aux P'tits Producteurs » à Lodève ; marchés : Lodève (samedi), Sète (jeudi) selon Biolocal, Pézenas également cité par une autre source</p>
         <p class="prod-labels"><strong>Labels :</strong> AB (certifié Ecocert depuis 2007)</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <span class="tag">🛒 En rayon à L'Esquirol</span>
+        <span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="pelardon-de-pegairolles" data-produits="laitages" data-esquirol="false" data-carnet-id="producteur-pelardon-de-pegairolles" data-carnet-title="Pélardon de Pégairolles" data-carnet-category="Producteur" data-carnet-url="terroir.html#pelardon-de-pegairolles" tabindex="-1">
         <div class="picto" aria-hidden="true">🐐</div>
@@ -839,7 +846,7 @@
         <p class="prod-vente"><strong>Pour acheter :</strong> Magasin à la fromagerie : lun-ven 9h-19h, sam 9h-13h et 13h30-18h</p>
         <p class="prod-labels"><strong>Labels :</strong> AB (une partie de la gamme : 9 fromages bio sur ~26)</p>
         <p class="prod-maj">Fiche mise à jour le <time datetime="2026-08-12">12/08/2026</time></p>
-        <a class="portrait" href="https://esquirols.fr/journal-fromage-brebis-larzac.html" target="_blank" rel="noopener">Lire l'article →</a><span class="tag">🛒 En rayon à L'Esquirol</span>
+        <a class="portrait" href="https://esquirols.fr/journal-fromage-brebis-larzac.html" target="_blank" rel="noopener">Lire l'article →</a><span class="tag">🛒 Produits habituellement proposés à L'Esquirol</span>
       </article>
       <article class="prod-card reveal" id="gaec-du-causse" data-produits="laitages" data-esquirol="false" data-carnet-id="producteur-gaec-du-causse" data-carnet-title="GAEC du Causse" data-carnet-category="Producteur" data-carnet-url="terroir.html#gaec-du-causse" tabindex="-1">
         <div class="picto" aria-hidden="true">🥛</div>

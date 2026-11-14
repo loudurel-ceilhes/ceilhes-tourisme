@@ -73,10 +73,11 @@ localement. Les commandes suivantes reconstruisent ces trois annuaires :
 node scripts/producteurs.mjs
 node scripts/marches.mjs
 node scripts/monuments.mjs
+node scripts/reseau-galtier.mjs
 ```
 
 Ne pas modifier à la main les blocs HTML entre les balises `@producteurs`,
-`@marches` ou `@monuments`. Le guide [CLAUDE.md](CLAUDE.md) explique les
+`@marches` ou `@monuments`, ni la page générée des producteurs régionaux. Le guide [CLAUDE.md](CLAUDE.md) explique les
 données, les photos et les conventions du site.
 
 L'agenda est actualisé par sa tâche GitHub à partir de DATAtourisme. Pour
@@ -99,7 +100,7 @@ Il n'y a pas de dossier à glisser-déposer : les photos, polices et icônes
 sont déjà dans le dépôt.
 
 La configuration `netlify.toml` indique le dossier à publier (`.`) et les
-étapes : producteurs, marchés, monuments, empreintes des styles et scripts
+étapes : producteurs, marchés, monuments, producteurs régionaux, empreintes des styles et scripts
 pour éviter les anciennes copies en cache, puis contrôle du résultat.
 Ce dernier contrôle (`node scripts/verifier-site.mjs --publication`) vérifie
 les fichiers et empreintes déjà générés sans relancer la génération. S'il

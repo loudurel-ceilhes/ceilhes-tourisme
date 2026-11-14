@@ -103,8 +103,10 @@ body.inner #nav{background:rgba(9,23,18,.86);backdrop-filter:blur(14px);box-shad
 body.menu-open{overflow:hidden}
 @media(min-width:1200px){
   .burger{display:none}
-  nav ul#menu{position:static!important;transform:none!important;height:auto;width:auto;inset:auto;background:none!important;backdrop-filter:none;flex-direction:row;justify-content:flex-end;align-items:center;gap:1.1rem;padding:0;overflow:visible}
-  nav ul#menu a{font-size:.78rem;color:rgba(255,255,255,.88)}
+  #nav{gap:1.25rem}
+  nav .logo{flex-shrink:0;white-space:nowrap}
+  nav ul#menu{position:static!important;transform:none!important;height:auto;width:auto;inset:auto;background:none!important;backdrop-filter:none;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:.4rem 1.1rem;padding:0;overflow:visible}
+  nav ul#menu a{font-size:.78rem;color:rgba(255,255,255,.88);white-space:nowrap}
 }
 @media(min-width:1200px) and (max-width:1500px){
   nav ul#menu{gap:.65rem}
@@ -393,6 +395,17 @@ footer small a{color:var(--lac-clair)}
 .esquirol ul{list-style:none;margin:.6rem 0 1.2rem;display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
 .esquirol ul li{font-size:.88rem;font-weight:300;padding-left:1.4rem;position:relative}
 .esquirol ul li::before{content:'✦';position:absolute;left:0;color:var(--ocre)}
+.esquirol-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin:1rem 0}
+.esquirol-actions .btn{white-space:normal;text-align:center}
+.esquirol .esquirol-pratique{font-size:.88rem;margin-top:.8rem}
+.esquirol-pratique a,.prod-reseau a{color:var(--foret);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.prod-reseau{max-width:640px;margin:0 auto 1.5rem;text-align:center;font-size:.92rem}
+@media(max-width:820px){
+  .esquirol{grid-template-columns:1fr}
+  .esquirol .photo-side{min-height:240px}
+  .esquirol .text-side{padding:1.6rem 1.35rem}
+  .esquirol-actions .btn{width:100%;padding:.9rem 1.2rem}
+}
 .prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
 .prod-card{background:var(--blanc);border-radius:var(--r);padding:1.7rem;box-shadow:var(--ombre);transition:transform .35s var(--ease),box-shadow .35s;border-bottom:3px solid var(--ocre)}
 .prod-card:hover{transform:translateY(-6px);box-shadow:var(--ombre-h)}

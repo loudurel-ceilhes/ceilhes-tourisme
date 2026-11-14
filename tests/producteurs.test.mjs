@@ -56,6 +56,19 @@ test('les données contenant du HTML ne deviennent pas des balises ou scripts', 
   })
 })
 
+test('les anciens badges de rayon ne promettent pas le stock et gardent le filtre partagé', async () => {
+  await avecCopie(async ({ donnees, generer }) => {
+    const producteurs = donnees.zones.flatMap(z => z.producteurs)
+    const html = await generer()
+    assert.doesNotMatch(html, /En rayon|sont en rayon/)
+    assert.match(html, /Produits habituellement proposés à L'Esquirol/)
+    assert.match(html, /Habituellement proposé en terrasse à L'Esquirol/)
+    assert.match(html, /name="esquirol" id="esquirol-producteurs"/)
+    assert.equal((html.match(/data-esquirol="true"/g) || []).length, producteurs.filter(p => p.badge).length)
+    assert.match(html, /pas le stock du jour/)
+  })
+})
+
 function categories(html) {
   return new Map([...html.matchAll(/<article[^>]*\bid="([^"]+)"[^>]*\bdata-produits="([^"]*)"/g)]
     .map(([, id, liste]) => [id, liste.split(' ').filter(Boolean)]))

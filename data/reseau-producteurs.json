@@ -1,0 +1,4963 @@
+{
+  "version": 1,
+  "maj": "2026-11-14",
+  "source": "Répertoire régional de L’Esquirol",
+  "nombreAnnuaire": 254,
+  "totauxCategoriesSource": {
+    "APERITIFS": 10,
+    "BIERE": 11,
+    "BISCUIT": 13,
+    "CHARCUTERIE": 18,
+    "CONSERVE": 11,
+    "CONSERVE FRUIT": 8,
+    "DIVERS": 9,
+    "FROMAGE": 61,
+    "FRUITS ET LEGUMES": 6,
+    "GLACIER": 1,
+    "MIELLERIE": 9,
+    "MINOTERIE": 9,
+    "PLATS PRÉPARÉS": 3,
+    "PRODUITS COSMETIQUES": 5,
+    "PRODUITS FERMIERS": 14,
+    "PRODUITS LAITIERS": 16,
+    "VIANDE": 31,
+    "VIN": 19
+  },
+  "avertissement": "Ces découvertes ne constituent pas un état du stock de L’Esquirol. Vérifier les conditions de visite et de vente auprès de chaque maison.",
+  "producteurs": [
+    {
+      "id": "producteur-69",
+      "nom": "AGRIVIANDE",
+      "commune": "CASSAGNES-BEGONHES",
+      "codePostal": "12120",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.agriviande-aveyron.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 69
+    },
+    {
+      "id": "producteur-126",
+      "nom": "ALAMBIC DU LARZAC",
+      "commune": "NANT",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Savons et cosmétiques"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.alambicdularzac.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 126
+    },
+    {
+      "id": "producteur-230",
+      "nom": "ALAVOSTRA",
+      "commune": "ENTRAYGUES",
+      "codePostal": "12140",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.alavostra.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "commande",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 230
+    },
+    {
+      "id": "producteur-314",
+      "nom": "AROMATIQUE DU LARZAC - FERME DES HOMS",
+      "commune": "NANT",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.aromatiquesdularzac.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "aromatiques-du-larzac",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 314
+    },
+    {
+      "id": "producteur-118",
+      "nom": "ARTISAN DU FRUIT",
+      "commune": "RODEZ",
+      "codePostal": "12000",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.artisandufruit.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 118
+    },
+    {
+      "id": "producteur-218",
+      "nom": "AU DELICE PAYSAN",
+      "commune": "LA SALVETAT PEYRALES",
+      "codePostal": "12440",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.audelicepaysan.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 218
+    },
+    {
+      "id": "producteur-27",
+      "nom": "AVEYRON FOIE GRAS",
+      "commune": "LA PRIMAUBE",
+      "codePostal": "12450",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 27
+    },
+    {
+      "id": "producteur-33",
+      "nom": "B DEL PUECH",
+      "commune": "CONQUES EN ROUERGUE",
+      "codePostal": "12320",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.bdelpuech.fr/index.html",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 33
+    },
+    {
+      "id": "producteur-29",
+      "nom": "BERBEZIE GAEC",
+      "commune": "ST SANTIN",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 29
+    },
+    {
+      "id": "producteur-30",
+      "nom": "BERGERS DU LARZAC",
+      "commune": "LA CAVALERIE",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "collectif",
+      "site": "https://www.bergersdularzac.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": "les-bergers-du-larzac",
+      "portrait": {
+        "url": "https://esquirols.fr/journal-fromage-brebis-larzac.html",
+        "libelle": "Lire l'article →"
+      },
+      "notesPubliques": "",
+      "annuaireId": 30
+    },
+    {
+      "id": "producteur-104",
+      "nom": "BISCUITERIE DES CAZES",
+      "commune": "SAINT-AFFRIQUE",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.biscuiterie-des-cazes.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 104
+    },
+    {
+      "id": "producteur-276",
+      "nom": "BLANC DAVID APICULTURE",
+      "commune": "CHASTEL-NOUVEL",
+      "codePostal": "48000",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 276
+    },
+    {
+      "id": "producteur-268",
+      "nom": "BLEU DES CAUSSES LAIT CRU FERMIER",
+      "commune": "QUINS",
+      "codePostal": "12800",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.bleu-des-causses-fermier.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 268
+    },
+    {
+      "id": "producteur-158",
+      "nom": "BOEUF BIO DU LAGAST",
+      "commune": "LA SELVE",
+      "codePostal": "12170",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 158
+    },
+    {
+      "id": "producteur-32",
+      "nom": "BORIE CHARCUTERIE",
+      "commune": "PLAISANCE",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 32
+    },
+    {
+      "id": "producteur-160",
+      "nom": "BOUBAL ET FILS GAEC",
+      "commune": "CRUEJOULS",
+      "codePostal": "12340",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.boubal-et-fils.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 160
+    },
+    {
+      "id": "producteur-78",
+      "nom": "BOUCHERIE GRIALOU",
+      "commune": "MUR-DE-BARREZ",
+      "codePostal": "12600",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 78
+    },
+    {
+      "id": "producteur-71",
+      "nom": "BOUSQUET",
+      "commune": "LA PRIMAUBE",
+      "codePostal": "12450",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.bousquetviande.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 71
+    },
+    {
+      "id": "producteur-176",
+      "nom": "BRASSERIE BEAU SOLEIL",
+      "commune": "SAINT-GENIEZ D'OLT ET D'AUBRAC",
+      "codePostal": "12130",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.labeausoleil.fr/bieres.html",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 176
+    },
+    {
+      "id": "producteur-173",
+      "nom": "BRASSERIE D OLT",
+      "commune": "ST GENIEZ D OLT",
+      "codePostal": "12130",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.brasseriedolt.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 173
+    },
+    {
+      "id": "producteur-274",
+      "nom": "BRASSERIE DE LA MUZE",
+      "commune": "CASTELNAU-PEGAYROLS",
+      "codePostal": "12620",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.brasserie-muze.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 274
+    },
+    {
+      "id": "producteur-180",
+      "nom": "BRASSERIE DE LOZERE",
+      "commune": "MENDE",
+      "codePostal": "48000",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.brasseriedelozere-la48.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 180
+    },
+    {
+      "id": "producteur-330",
+      "nom": "BRASSERIE DE ROCLES",
+      "commune": "LANGOGNE",
+      "codePostal": "48300",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.brasseriederocles.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 330
+    },
+    {
+      "id": "producteur-350",
+      "nom": "BRASSERIE L'ASTROLABE",
+      "commune": "SAINT AFFRIQUE",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 350
+    },
+    {
+      "id": "producteur-285",
+      "nom": "BRASSERIE LA BESTIA",
+      "commune": "CHANAC",
+      "codePostal": "48230",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 285
+    },
+    {
+      "id": "producteur-36",
+      "nom": "BRASSERIE LA CAUSSENARDE",
+      "commune": "SAINT-BEAULIZE",
+      "codePostal": "12540",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.ferme-brasserie-masandral.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 36
+    },
+    {
+      "id": "producteur-317",
+      "nom": "BRETON DISTRIBUTION",
+      "commune": "OLEMPS",
+      "codePostal": "12510",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "intermediaire",
+      "site": "https://www.breton-distribution.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 317
+    },
+    {
+      "id": "producteur-342",
+      "nom": "BRINS DE LAIT",
+      "commune": "SAINT SALVI DE CARCAVES",
+      "codePostal": "81530",
+      "departement": "81 · Tarn",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Yaourts et produits laitiers.",
+      "annuaireId": 342
+    },
+    {
+      "id": "producteur-287",
+      "nom": "BUFFA'LAUBENQ",
+      "commune": "LE CAYROL",
+      "codePostal": "12500",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.buffalaubenq.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 287
+    },
+    {
+      "id": "producteur-34",
+      "nom": "CANCE",
+      "commune": "VILLENEUVE D'AVEYRON",
+      "codePostal": "12260",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 34
+    },
+    {
+      "id": "producteur-325",
+      "nom": "CAVE BONBONNE",
+      "commune": "BERTHOLENE",
+      "codePostal": "12310",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "intermediaire",
+      "site": "https://www.cave-bonbonne.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 325
+    },
+    {
+      "id": "producteur-134",
+      "nom": "CAVE DES VIGNERONS DU VALON",
+      "commune": "VALADY",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "collectif",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 134
+    },
+    {
+      "id": "producteur-136",
+      "nom": "CELLIER LES VIGNERONS DE CARNAS - LA GRAVETTE",
+      "commune": "MILLAU",
+      "codePostal": "12100",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "collectif",
+      "site": "https://www.la-gravette.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 136
+    },
+    {
+      "id": "producteur-332",
+      "nom": "CES GARS-LA REGALENT",
+      "commune": "RIEUPEYROUX",
+      "codePostal": "12240",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.cesgarsla.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 332
+    },
+    {
+      "id": "producteur-102",
+      "nom": "CHARCUTERIE DU VIALA",
+      "commune": "VIALA-DU-TARN",
+      "codePostal": "12490",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.saucisse-seche.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 102
+    },
+    {
+      "id": "producteur-286",
+      "nom": "CHEVRERIE TREBOSC",
+      "commune": "MONTROZIER",
+      "codePostal": "12630",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.facebook.com/lachevreriedetrebosc",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 286
+    },
+    {
+      "id": "producteur-58",
+      "nom": "CHEVRES DU MONASTERE DE LA DALMERIE",
+      "commune": "JONCELS",
+      "codePostal": "34650",
+      "departement": "34 · Hérault",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 58
+    },
+    {
+      "id": "producteur-265",
+      "nom": "CHOCOLATERIE AGNES ET PIERRE",
+      "commune": "RODEZ",
+      "codePostal": "12000",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.agnesetpierre.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 265
+    },
+    {
+      "id": "producteur-243",
+      "nom": "DANIEL PEGUES",
+      "commune": "MONTPEYROUX",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.daniel-pegues.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 243
+    },
+    {
+      "id": "producteur-163",
+      "nom": "DELICES DU ROUGIER",
+      "commune": "VABRES L'ABBAYE",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lesdelicesdurougier.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 163
+    },
+    {
+      "id": "producteur-248",
+      "nom": "DOMAINE D'HELIX",
+      "commune": "MALEVILLE",
+      "codePostal": "12350",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.ledomainedhelix.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 248
+    },
+    {
+      "id": "producteur-206",
+      "nom": "DOMAINE DES CABRIDELLES",
+      "commune": "ISPAGNAC",
+      "codePostal": "48320",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 206
+    },
+    {
+      "id": "producteur-139",
+      "nom": "DOMAINE DES COSTES ROUGE",
+      "commune": "NAUVIALE",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 139
+    },
+    {
+      "id": "producteur-138",
+      "nom": "DOMAINE DU CROS",
+      "commune": "GOUTRENS",
+      "codePostal": "12390",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.domaine-du-cros.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 138
+    },
+    {
+      "id": "producteur-201",
+      "nom": "DOMAINE DU MIOULA",
+      "commune": "SALLES LA SOURCE",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.marcillac.net",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 201
+    },
+    {
+      "id": "producteur-140",
+      "nom": "DOMAINE DU VIEUX NOYER",
+      "commune": "RIVIERE SUR TARN",
+      "codePostal": "12640",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.domaineduvieuxnoyer.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 140
+    },
+    {
+      "id": "producteur-137",
+      "nom": "DOMAINE LAURENS",
+      "commune": "CLAIRVAUX D'AVEYRON",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.domaine-laurens.com/fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 137
+    },
+    {
+      "id": "producteur-262",
+      "nom": "DOMAINE LE VERDUS",
+      "commune": "SAINT CYPRIEN SUR DOURDOU",
+      "codePostal": "12320",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 262
+    },
+    {
+      "id": "producteur-135",
+      "nom": "DOMAINE MATHA",
+      "commune": "CLAIRVAUX D'AVEYRON",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.domainematha.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 135
+    },
+    {
+      "id": "producteur-204",
+      "nom": "DOMAINE ROLS",
+      "commune": "CONQUES EN ROUERGUE",
+      "codePostal": "12320",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 204
+    },
+    {
+      "id": "producteur-267",
+      "nom": "EARL DE L'EPINE BLANCHE",
+      "commune": "DRUELLE",
+      "codePostal": "12510",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lafermedelepineblanche.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 267
+    },
+    {
+      "id": "producteur-334",
+      "nom": "EARL DOMAINE ALAZARD",
+      "commune": "VABRES L' ABBAYE",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 334
+    },
+    {
+      "id": "producteur-284",
+      "nom": "EARL DOURNES ESPINACO",
+      "commune": "CAPDENAC",
+      "codePostal": "46100",
+      "departement": "46 · Lot",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.fromagechevreproducteurlot.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 284
+    },
+    {
+      "id": "producteur-40",
+      "nom": "EARL FERME DE DILHAC",
+      "commune": "LACROIX BARREZ",
+      "codePostal": "12600",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lafermededilhac.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 40
+    },
+    {
+      "id": "producteur-148",
+      "nom": "EARL LES MONTAGNETTES",
+      "commune": "LAGUIOLE",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.montagnette-aubrac.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 148
+    },
+    {
+      "id": "producteur-323",
+      "nom": "EARL MOUNIER",
+      "commune": "GORGES DU TARN CAUSSES",
+      "codePostal": "48320",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 323
+    },
+    {
+      "id": "producteur-256",
+      "nom": "ELO'DISTILLE",
+      "commune": "SAINT-AFFRIQUE",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Savons et cosmétiques"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 256
+    },
+    {
+      "id": "producteur-327",
+      "nom": "FABRIQUE AVEYRONNAISE",
+      "commune": "ALMONT LES JUNIES",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Plats préparés"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.fabriqueaveyronnaise.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 327
+    },
+    {
+      "id": "producteur-121",
+      "nom": "FARIBORNE",
+      "commune": "PIED-DE-BORNE",
+      "codePostal": "48800",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 121
+    },
+    {
+      "id": "producteur-319",
+      "nom": "FERME DE BIBIES",
+      "commune": "BROQUIES",
+      "codePostal": "12480",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fruits et légumes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 319
+    },
+    {
+      "id": "producteur-156",
+      "nom": "FERME DE FALGAYROLES",
+      "commune": "MONTEILS",
+      "codePostal": "12200",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.anawim.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 156
+    },
+    {
+      "id": "producteur-39",
+      "nom": "FERME DU CAUSSE",
+      "commune": "LA TIEULE",
+      "codePostal": "48500",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 39
+    },
+    {
+      "id": "producteur-165",
+      "nom": "FERME RESSOUCHE",
+      "commune": "LACHAMP",
+      "codePostal": "48100",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.ferme-ressouche.e-monsite.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 165
+    },
+    {
+      "id": "producteur-297",
+      "nom": "FINESSE DES VERGERS",
+      "commune": "NAJAC",
+      "codePostal": "12270",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.finessedesvergers.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 297
+    },
+    {
+      "id": "producteur-46",
+      "nom": "FONTALBAT MAZARS",
+      "commune": "MONTSALES",
+      "codePostal": "12260",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.fontalbat-mazars.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 46
+    },
+    {
+      "id": "producteur-309",
+      "nom": "FOURNIER THIBAUT LES JARDINS DU ROUGIER",
+      "commune": "REBOURGUIL",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fruits et légumes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 309
+    },
+    {
+      "id": "producteur-48",
+      "nom": "FROMABON",
+      "commune": "LA CAVALERIE",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.fromabon.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 48
+    },
+    {
+      "id": "producteur-365",
+      "nom": "FROMAGERIE BENOIT CHAPERT",
+      "commune": "AUMONT AUBRAC",
+      "codePostal": "48130",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fromagerie-benoit-chapert.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 365
+    },
+    {
+      "id": "producteur-43",
+      "nom": "FROMAGERIE DE HYELZAS SAS",
+      "commune": "HURES-LA-PARADE",
+      "codePostal": "48150",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fedou.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 43
+    },
+    {
+      "id": "producteur-216",
+      "nom": "FROMAGERIE DES CABASSES",
+      "commune": "VERRIERES",
+      "codePostal": "12520",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.cabasses.fr/la-fromagerie-aveyronnaise-les-cabasses/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 216
+    },
+    {
+      "id": "producteur-347",
+      "nom": "FROMAGERIE DU GRIFFOUL",
+      "commune": "PRADES SALARS",
+      "codePostal": "12290",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 347
+    },
+    {
+      "id": "producteur-213",
+      "nom": "FROMAGERIE LE VEZOU",
+      "commune": "PRADES-SALARS",
+      "codePostal": "12290",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 213
+    },
+    {
+      "id": "producteur-280",
+      "nom": "FROMAGERIE LES MONTS DE MARGERIDE",
+      "commune": "CHAUDEYRAC",
+      "codePostal": "48170",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fromagerie-margeride.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 280
+    },
+    {
+      "id": "producteur-83",
+      "nom": "FROMAGERIE MAZARS ALAIN",
+      "commune": "CAMBOULAZET",
+      "codePostal": "12160",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 83
+    },
+    {
+      "id": "producteur-63",
+      "nom": "FROMAGERIE RISSOAN",
+      "commune": "LUC",
+      "codePostal": "48250",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.laiterie-rissoan.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 63
+    },
+    {
+      "id": "producteur-42",
+      "nom": "FROMAGERS DE LOZERE DUOLOZERE",
+      "commune": "CHASTEL-NOUVEL",
+      "codePostal": "48000",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.duolozere.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 42
+    },
+    {
+      "id": "producteur-252",
+      "nom": "GAEC BELE ET BIO",
+      "commune": "ARVIEU",
+      "codePostal": "12120",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.ferme-bele-bio.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 252
+    },
+    {
+      "id": "producteur-328",
+      "nom": "GAEC CAMBON",
+      "commune": "ST PAUL DES LANDES",
+      "codePostal": "15250",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 328
+    },
+    {
+      "id": "producteur-211",
+      "nom": "GAEC D OC BRAC",
+      "commune": "MONTAGNOL",
+      "codePostal": "12360",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 211
+    },
+    {
+      "id": "producteur-312",
+      "nom": "GAEC DE BRIOGES",
+      "commune": "MELAGUES",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "gaec-de-brioges",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 312
+    },
+    {
+      "id": "producteur-310",
+      "nom": "GAEC DE BUZAERINGUES",
+      "commune": "SEVERAC D'AVEYRON",
+      "codePostal": "12150",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Plats préparés"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.gaecdebuzareingues.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 310
+    },
+    {
+      "id": "producteur-354",
+      "nom": "GAEC DE COURBIERE",
+      "commune": "ASSAC",
+      "codePostal": "81340",
+      "departement": "81 · Tarn",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 354
+    },
+    {
+      "id": "producteur-305",
+      "nom": "GAEC DE FARAL",
+      "commune": "VEZINS DE LEVEZOU",
+      "codePostal": "12780",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 305
+    },
+    {
+      "id": "producteur-82",
+      "nom": "GAEC DE LA BORIE HAUTE",
+      "commune": "SAINT-AMANS-DES-COTS",
+      "codePostal": "12460",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fermedelaboriehaute.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 82
+    },
+    {
+      "id": "producteur-362",
+      "nom": "GAEC DE LA VALESIE",
+      "commune": "TAYRAC",
+      "codePostal": "12440",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fruits et légumes"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lesjardinsdeginestet.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 362
+    },
+    {
+      "id": "producteur-343",
+      "nom": "GAEC DE LAGAROUSTE",
+      "commune": "LIVINHAC-LE-HAUT",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.gaec-la-garouste.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 343
+    },
+    {
+      "id": "producteur-329",
+      "nom": "GAEC DE LUEYSSE",
+      "commune": "LAVAL DU TARN",
+      "codePostal": "48500",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.biodelozere.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 329
+    },
+    {
+      "id": "producteur-253",
+      "nom": "GAEC DE MONTREDON",
+      "commune": "SALLES-CURAN",
+      "codePostal": "12410",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.produitsfermiersdemontredon.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 253
+    },
+    {
+      "id": "producteur-162",
+      "nom": "GAEC DES DEUX SOURCES",
+      "commune": "LE PONT DE MONTVERT",
+      "codePostal": "48220",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 162
+    },
+    {
+      "id": "producteur-368",
+      "nom": "GAEC DES FRIGOULES",
+      "commune": "ROGUES",
+      "codePostal": "30120",
+      "departement": "30 · Gard",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 368
+    },
+    {
+      "id": "producteur-53",
+      "nom": "GAEC DES GRANDS CAUSSES",
+      "commune": "SEVERAC-LE-CHATEAU",
+      "codePostal": "12150",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.ferme-seguin.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 53
+    },
+    {
+      "id": "producteur-93",
+      "nom": "GAEC DES PRADEILLES",
+      "commune": "ST JULIEN D ARPAON",
+      "codePostal": "48400",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 93
+    },
+    {
+      "id": "producteur-333",
+      "nom": "GAEC DES TRUELS DU LARZAC",
+      "commune": "MILLAU",
+      "codePostal": "12100",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 333
+    },
+    {
+      "id": "producteur-37",
+      "nom": "GAEC DU CAUSSE",
+      "commune": "LE CAYLAR",
+      "codePostal": "34520",
+      "departement": "34 · Hérault",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "gaec-du-causse",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 37
+    },
+    {
+      "id": "producteur-363",
+      "nom": "GAEC DU FIEU",
+      "commune": "BARAQUEVILLE",
+      "codePostal": "12160",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.gaecdufieu.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 363
+    },
+    {
+      "id": "producteur-311",
+      "nom": "GAEC DU FRONCALOU",
+      "commune": "CANET DE SALARS",
+      "codePostal": "12290",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 311
+    },
+    {
+      "id": "producteur-65",
+      "nom": "GAEC DU ROUCADEL",
+      "commune": "LAGUIOLE",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Fromages fermiers de l’Aubrac.",
+      "annuaireId": 65
+    },
+    {
+      "id": "producteur-302",
+      "nom": "GAEC FAU",
+      "commune": "LE FEL",
+      "codePostal": "12140",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 302
+    },
+    {
+      "id": "producteur-360",
+      "nom": "GAEC FERME DE L'HOM",
+      "commune": "LUNAC",
+      "codePostal": "12270",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 360
+    },
+    {
+      "id": "producteur-35",
+      "nom": "GAEC FERME DE LA BLAQUIERE",
+      "commune": "VERRIERES",
+      "codePostal": "12520",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lablaquiere.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Fromages fermiers.",
+      "annuaireId": 35
+    },
+    {
+      "id": "producteur-151",
+      "nom": "GAEC L EXCLANCIDE - LAIT DELICES DE LOZERE",
+      "commune": "PELOUSE",
+      "codePostal": "48000",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 151
+    },
+    {
+      "id": "producteur-130",
+      "nom": "GAEC L'ARC EN MIEL",
+      "commune": "SAINT-AFFRIQUE",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.larcenmiel.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": "l-arc-en-miel",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 130
+    },
+    {
+      "id": "producteur-288",
+      "nom": "GAEC LA CALMETTOISE",
+      "commune": "ARVIEU",
+      "codePostal": "12120",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lacalmettoisebierepaysanne.wordpress.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Bières fermières.",
+      "annuaireId": 288
+    },
+    {
+      "id": "producteur-315",
+      "nom": "GAEC PIC",
+      "commune": "MONTS DE RANDON",
+      "codePostal": "48700",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 315
+    },
+    {
+      "id": "producteur-64",
+      "nom": "GAEC RODIER",
+      "commune": "TRELANS",
+      "codePostal": "48340",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.elevagerodier.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 64
+    },
+    {
+      "id": "producteur-318",
+      "nom": "GAEC SOYDAKI",
+      "commune": "COMBRET",
+      "codePostal": "12370",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 318
+    },
+    {
+      "id": "producteur-77",
+      "nom": "GREFFEUILLE AVEYRON",
+      "commune": "RIGNAC",
+      "codePostal": "12390",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.allaiton.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 77
+    },
+    {
+      "id": "producteur-364",
+      "nom": "ISSALINI LE DOMAINE DE LA COMBE D AURIBAL DURAND LUCIE",
+      "commune": "BALSAC",
+      "codePostal": "12510",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.saveursaveyronnaise.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 364
+    },
+    {
+      "id": "producteur-21",
+      "nom": "JEUNE MONTAGNE",
+      "commune": "LAGUIOLE",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "collectif",
+      "site": "https://www.jeune-montagne-aubrac.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 21
+    },
+    {
+      "id": "contact-jasse-larzou",
+      "nom": "Jasse Larzou",
+      "commune": "La Cavalerie",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "intermediaire",
+      "site": "https://www.jasselarzou.fr",
+      "sources": [
+        "https://www.jasselarzou.fr"
+      ],
+      "maj": "2026-11-14",
+      "statut": "historique",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "provenance": "Répertoire de L’Esquirol ; coordonnées publiques à compléter.",
+      "annuaireId": null
+    },
+    {
+      "id": "producteur-115",
+      "nom": "L'ATELIER DU MIEL ET DE LA CHATAIGNE",
+      "commune": "FLORAC",
+      "codePostal": "48400",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 115
+    },
+    {
+      "id": "producteur-237",
+      "nom": "L'ESCARGOT DES SARADELLES",
+      "commune": "FLAVIN",
+      "codePostal": "12161",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.escargotdessarradelles.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 237
+    },
+    {
+      "id": "producteur-177",
+      "nom": "LA BRASSERIE DE L'AVEYRON",
+      "commune": "ONET-LE-CHâTEAU",
+      "codePostal": "12850",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.brasseriedelaveyron.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 177
+    },
+    {
+      "id": "producteur-250",
+      "nom": "LA CHATAIGNE DE CASTANET",
+      "commune": "CASTANET",
+      "codePostal": "12240",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 250
+    },
+    {
+      "id": "producteur-220",
+      "nom": "LA CHEVRERIE DU PETIT COMPOSTELLE",
+      "commune": "VILLENEUVE-D'AVEYRON",
+      "codePostal": "12260",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fabrique-en-aveyron.fr/entreprises/chevrerie-du-petit-compostelle",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 220
+    },
+    {
+      "id": "producteur-240",
+      "nom": "LA FERME AUX CHENES ROUGES",
+      "commune": "VILLEFRANCHE DE PANAT",
+      "codePostal": "12430",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 240
+    },
+    {
+      "id": "producteur-367",
+      "nom": "LA FERME CLAVEL",
+      "commune": "SAINT-SATURNIN",
+      "codePostal": "15190",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fermeclavel.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 367
+    },
+    {
+      "id": "producteur-234",
+      "nom": "LA FERME D'ALCAS",
+      "commune": "ST JEAN ET SAINT PAUL",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.alcas.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 234
+    },
+    {
+      "id": "producteur-341",
+      "nom": "LA FERME D'AMBIAS",
+      "commune": "LA CAVALERIE",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.ferme-ambias.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 341
+    },
+    {
+      "id": "producteur-366",
+      "nom": "LA FERME DE BELLEVUE",
+      "commune": "FLAVIN",
+      "codePostal": "12450",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 366
+    },
+    {
+      "id": "producteur-299",
+      "nom": "LA FERME DE BENJI ET CATHY",
+      "commune": "FONDAMENTE",
+      "codePostal": "12540",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.facebook.com/lafermedebenjietcathy",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 299
+    },
+    {
+      "id": "producteur-358",
+      "nom": "LA FERME DE FERRAND",
+      "commune": "CHALINARGUES",
+      "codePostal": "15170",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fermedeferrand.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 358
+    },
+    {
+      "id": "producteur-361",
+      "nom": "LA FERME DE FONTINELLE",
+      "commune": "RIEUPEYROUX",
+      "codePostal": "12240",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 361
+    },
+    {
+      "id": "producteur-157",
+      "nom": "LA FERME DE GAEC DU DEVEZOU",
+      "commune": "MANHAC",
+      "codePostal": "12160",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.ferme-du-devezou.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 157
+    },
+    {
+      "id": "producteur-259",
+      "nom": "LA FERME DE HAUTE VIALE",
+      "commune": "LA SELVE",
+      "codePostal": "12780",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 259
+    },
+    {
+      "id": "producteur-320",
+      "nom": "LA FERME DE LA CALSADE",
+      "commune": "SEVERAC D'AVEYRON",
+      "codePostal": "12150",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 320
+    },
+    {
+      "id": "producteur-84",
+      "nom": "LA FERME DE MAYRINHAC",
+      "commune": "BOZOULS",
+      "codePostal": "12340",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 84
+    },
+    {
+      "id": "producteur-143",
+      "nom": "LA FERME DE PALAYRET GAEC",
+      "commune": "MARTIEL",
+      "codePostal": "12200",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lafermedepalayret.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 143
+    },
+    {
+      "id": "producteur-235",
+      "nom": "LA FERME DE SAINT PIERRE GAEC",
+      "commune": "CAMARES",
+      "codePostal": "12360",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lapetitedistrib.shop/shop/fermedesaintpierre",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "ferme-de-saint-pierre-d-issis",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 235
+    },
+    {
+      "id": "producteur-344",
+      "nom": "LA FERME DE ST LOUIS",
+      "commune": "BELMONT SUR RANCE",
+      "codePostal": "12370",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.charcuteriestlouis.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "la-ferme-de-saint-louis",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 344
+    },
+    {
+      "id": "producteur-246",
+      "nom": "LA FERME DE TESSI",
+      "commune": "RIGNAC",
+      "codePostal": "12390",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 246
+    },
+    {
+      "id": "producteur-298",
+      "nom": "LA FERME DU BOS",
+      "commune": "LEYNHAC",
+      "codePostal": "15600",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.facebook.com/fermedubos",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 298
+    },
+    {
+      "id": "producteur-223",
+      "nom": "LA FERME DU BOUSQUET",
+      "commune": "CALMELS ET LE VIALA",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.facebook.com/lafermedubousquet",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 223
+    },
+    {
+      "id": "producteur-244",
+      "nom": "LA FERME DU CEOR",
+      "commune": "SALMIECH",
+      "codePostal": "12120",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.fermeduceor.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "historique",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 244
+    },
+    {
+      "id": "producteur-292",
+      "nom": "LA FERME DU SARGET",
+      "commune": "ESPEYRAC",
+      "codePostal": "12140",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lafermedusarget.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 292
+    },
+    {
+      "id": "producteur-146",
+      "nom": "LA FERME MARCELLINE",
+      "commune": "LA BASTIDE L'EVEQUE",
+      "codePostal": "12200",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lafermedemarcelline.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 146
+    },
+    {
+      "id": "producteur-346",
+      "nom": "LA FERME MATHONIERE",
+      "commune": "ALLANCHE",
+      "codePostal": "15160",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 346
+    },
+    {
+      "id": "producteur-322",
+      "nom": "LA FERME TARDIEU",
+      "commune": "MONTS-DE-RANDON",
+      "codePostal": "48700",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 322
+    },
+    {
+      "id": "producteur-260",
+      "nom": "LA FERME VACHEMENT FRUITEE",
+      "commune": "LE VIBAL",
+      "codePostal": "12290",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lafermevachementfruitee.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 260
+    },
+    {
+      "id": "producteur-229",
+      "nom": "LA FROMAGERIE DES ARTISOUS",
+      "commune": "LA CAVALERIE",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 229
+    },
+    {
+      "id": "producteur-282",
+      "nom": "LA FROMAGERIE DES CEVENNES",
+      "commune": "MOISSAC-VALLEE-FRANCAISE",
+      "codePostal": "48110",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lafromageriedescevennes.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 282
+    },
+    {
+      "id": "producteur-291",
+      "nom": "LA MAISON POUGET",
+      "commune": "PRUINES",
+      "codePostal": "12320",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.maison-pouget-aveyron.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 291
+    },
+    {
+      "id": "producteur-258",
+      "nom": "LA MAISON SAFRAN",
+      "commune": "MARTRIN",
+      "codePostal": "12550",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lamaisonsafran.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 258
+    },
+    {
+      "id": "producteur-133",
+      "nom": "LA MIELLERIE DE VIELVIC",
+      "commune": "SAINT ANDRÉ CAPCÈZE",
+      "codePostal": "48800",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 133
+    },
+    {
+      "id": "producteur-155",
+      "nom": "LA MINOTERIE DE COLAGNE",
+      "commune": "CHIRAC",
+      "codePostal": "48100",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.moulindecolagne.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 155
+    },
+    {
+      "id": "producteur-86",
+      "nom": "LA NAUCELLOISE",
+      "commune": "NAUCELLE",
+      "codePostal": "12800",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lanaucelloise.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 86
+    },
+    {
+      "id": "producteur-109",
+      "nom": "LA PASTOURELLE",
+      "commune": "MONTLAUR",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "collectif",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 109
+    },
+    {
+      "id": "producteur-212",
+      "nom": "LA REINE DES ABEILLES",
+      "commune": "NAJAC",
+      "codePostal": "12270",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lareinedesabeilles.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 212
+    },
+    {
+      "id": "producteur-226",
+      "nom": "LA ROSELLE MAZARS",
+      "commune": "LE BAS-SÉGALA",
+      "codePostal": "12200",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.ferme-de-la-roselle.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 226
+    },
+    {
+      "id": "producteur-120",
+      "nom": "LA SAUVAGINE",
+      "commune": "MASSEGROS CAUSSES GORGES",
+      "codePostal": "48500",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.confitures-la-sauvagine.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 120
+    },
+    {
+      "id": "producteur-225",
+      "nom": "LA TARTINETTE DES AVEYRONNAIS",
+      "commune": "ST ROME DE CERNON",
+      "codePostal": "12490",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 225
+    },
+    {
+      "id": "producteur-331",
+      "nom": "LA TRUITE DES MONTS D'AUBRAC",
+      "commune": "STE GENEVIEVE SUR ARGENCE",
+      "codePostal": "12420",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.latruitedesmontsdaubrac.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "commande",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 331
+    },
+    {
+      "id": "producteur-293",
+      "nom": "LABRUNIE JEREMY",
+      "commune": "LACAPELLE VIESCAMP",
+      "codePostal": "15150",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 293
+    },
+    {
+      "id": "producteur-224",
+      "nom": "LANDA'S DISTILLERIE",
+      "commune": "LESTRADE ET THOUELS",
+      "codePostal": "12430",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.landas.store",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 224
+    },
+    {
+      "id": "producteur-81",
+      "nom": "LANGUEDOC LOZERE VIANDE",
+      "commune": "ANTRENAS",
+      "codePostal": "48100",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "intermediaire",
+      "site": "https://www.languedoclozereviande.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Atelier de découpe et négoce de viande.",
+      "annuaireId": 81
+    },
+    {
+      "id": "producteur-290",
+      "nom": "LAZUECH SAS",
+      "commune": "DRULHE",
+      "codePostal": "12350",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Fromages.",
+      "annuaireId": 290
+    },
+    {
+      "id": "producteur-47",
+      "nom": "LE FOUILLADOL",
+      "commune": "LA FOUILLADE",
+      "codePostal": "12270",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lefouilladol.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 47
+    },
+    {
+      "id": "producteur-152",
+      "nom": "LE FRUITIER DES CEVENNES",
+      "commune": "SAINT GERMAIN DE CALBERTE",
+      "codePostal": "48370",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lefruitierdescevennes.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 152
+    },
+    {
+      "id": "producteur-339",
+      "nom": "LE JARDIN DU BASTARN",
+      "commune": "MILLAU",
+      "codePostal": "12100",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 339
+    },
+    {
+      "id": "producteur-129",
+      "nom": "LE MIEL DE MANON DALAC",
+      "commune": "ESTAING",
+      "codePostal": "12190",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 129
+    },
+    {
+      "id": "producteur-340",
+      "nom": "LE VERGER DE CONQUES",
+      "commune": "CONQUES",
+      "codePostal": "12320",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 340
+    },
+    {
+      "id": "producteur-270",
+      "nom": "LES ANNESSES DU CALARDES",
+      "commune": "BROMMAT",
+      "codePostal": "12600",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Savons et cosmétiques"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.anesses-carlades.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 270
+    },
+    {
+      "id": "producteur-179",
+      "nom": "LES BRASSEURS DE LA JONTE",
+      "commune": "GATUZIèRES",
+      "codePostal": "48150",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lesbrasseursdelajonte.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 179
+    },
+    {
+      "id": "producteur-345",
+      "nom": "LES BREBIS DE MONDESIR",
+      "commune": "MOYRAZES",
+      "codePostal": "12160",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 345
+    },
+    {
+      "id": "producteur-266",
+      "nom": "LES CABRIOLES DE BALAJOU",
+      "commune": "FIGEAC",
+      "codePostal": "46100",
+      "departement": "46 · Lot",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lescabriolesdebalajou.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 266
+    },
+    {
+      "id": "producteur-269",
+      "nom": "LES CHIPS DE L'AVEYRON",
+      "commune": "ST BEAUZELY",
+      "codePostal": "12620",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.leschipsdelaveyron.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 269
+    },
+    {
+      "id": "producteur-301",
+      "nom": "LES DELICES DE LA FLEURETTE",
+      "commune": "BOISSET",
+      "codePostal": "15600",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.facebook.com/pages/category/Cheese-Shop/Les-D%C3%A9lices-de-la-Fleurette-112268406931654/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 301
+    },
+    {
+      "id": "producteur-304",
+      "nom": "LES DELICES DE ZITA",
+      "commune": "LE CAYROL",
+      "codePostal": "12500",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 304
+    },
+    {
+      "id": "producteur-231",
+      "nom": "LES ELEVEURS DU ROUGIER",
+      "commune": "COMBRET",
+      "codePostal": "12370",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 231
+    },
+    {
+      "id": "producteur-261",
+      "nom": "LES FABLES DE LA TERRE",
+      "commune": "SEBAZAC-CONCOURES",
+      "codePostal": "12740",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.lesfablesdelaterre.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 261
+    },
+    {
+      "id": "producteur-277",
+      "nom": "LES FROMAGES D'ANGELE",
+      "commune": "QUINS",
+      "codePostal": "12800",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 277
+    },
+    {
+      "id": "producteur-94",
+      "nom": "LES GARIBOTES",
+      "commune": "BARAQUEVILLE",
+      "codePostal": "12160",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 94
+    },
+    {
+      "id": "producteur-52",
+      "nom": "LES GORGES DE L'AVEYRON",
+      "commune": "LA BASTIDE-L'EVEQUE",
+      "codePostal": "12200",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.les-gorges-aveyron-salaison.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 52
+    },
+    {
+      "id": "producteur-273",
+      "nom": "LES JARDINS DU MERCIE",
+      "commune": "VEZINS DE LEVEZOU",
+      "codePostal": "12780",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Savons et cosmétiques"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 273
+    },
+    {
+      "id": "producteur-300",
+      "nom": "LES OEUFS D'ERNEST",
+      "commune": "MONESTIES",
+      "codePostal": "81640",
+      "departement": "81 · Tarn",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.facebook.com/ernest.saffon.5",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 300
+    },
+    {
+      "id": "producteur-349",
+      "nom": "LES POTIONS D'OC - DISTILLERIE GAYRAL",
+      "commune": "PONT-DE-SALARS",
+      "codePostal": "12290",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.lespotionsdoc.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 349
+    },
+    {
+      "id": "producteur-197",
+      "nom": "LES RUCHERS D ODETTE",
+      "commune": "NOALHAC",
+      "codePostal": "48310",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 197
+    },
+    {
+      "id": "producteur-251",
+      "nom": "LES SAVEURS AUTHENTIQUES DE L'AVEYRON",
+      "commune": "COLOMBIES",
+      "codePostal": "12240",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 251
+    },
+    {
+      "id": "producteur-117",
+      "nom": "LES VENTS SAUVAGES",
+      "commune": "ALRANCE",
+      "codePostal": "12430",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 117
+    },
+    {
+      "id": "producteur-141",
+      "nom": "LES VERGERS DE L'AVEYRON",
+      "commune": "RIVIERE SUR TARN",
+      "codePostal": "12640",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fruits et légumes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 141
+    },
+    {
+      "id": "producteur-202",
+      "nom": "LES VIGNERONS D'OLT",
+      "commune": "COUBISOU",
+      "codePostal": "12190",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "collectif",
+      "site": "https://www.lesvigneronsdolt.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 202
+    },
+    {
+      "id": "producteur-112",
+      "nom": "LES VIGNERONS DE ST FELIX",
+      "commune": "SAINT-FELIX-DE-LODEZ",
+      "codePostal": "34725",
+      "departement": "34 · Hérault",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "collectif",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 112
+    },
+    {
+      "id": "producteur-144",
+      "nom": "LES VINS LAFON",
+      "commune": "VILLEFRANCHE DE ROUERGUE",
+      "codePostal": "12200",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "intermediaire",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 144
+    },
+    {
+      "id": "producteur-275",
+      "nom": "LES VOLAILLES D'ALICE",
+      "commune": "AYRENS",
+      "codePostal": "15250",
+      "departement": "15 · Cantal",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 275
+    },
+    {
+      "id": "producteur-255",
+      "nom": "LES VOLAILLES DE RUOLS",
+      "commune": "LUC-LA-PRIMAUBE",
+      "codePostal": "12450",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.les-volailles-de-ruols.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 255
+    },
+    {
+      "id": "producteur-54",
+      "nom": "LINARD",
+      "commune": "LANUEJOULS",
+      "codePostal": "12350",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.charcuterie-aveyron.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 54
+    },
+    {
+      "id": "producteur-359",
+      "nom": "LO CANTOU DE BASTIEN",
+      "commune": "SEGUR",
+      "codePostal": "12290",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.locantoudebastien.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 359
+    },
+    {
+      "id": "producteur-355",
+      "nom": "LOU MOUNTOGNOL - SARL PEGUES",
+      "commune": "FIRMI",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 355
+    },
+    {
+      "id": "producteur-55",
+      "nom": "LOU PASSOU BIO",
+      "commune": "SEVERAC-LE-CHATEAU",
+      "codePostal": "12150",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.loupassoubio.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 55
+    },
+    {
+      "id": "producteur-308",
+      "nom": "LOU RIAOL",
+      "commune": "VEBRON",
+      "codePostal": "48400",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 308
+    },
+    {
+      "id": "contact-tradition-patissiere",
+      "nom": "La Tradition Pâtissière",
+      "commune": "Firmi",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Gâteaux à la broche et spécialités sucrées.",
+      "provenance": "Répertoire de L’Esquirol ; coordonnées publiques à compléter.",
+      "annuaireId": null
+    },
+    {
+      "id": "contact-pates-remylie",
+      "nom": "Les Pâtes de Remylie",
+      "commune": "",
+      "codePostal": "",
+      "departement": "",
+      "categories": [
+        "Pâtes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Pâtes.",
+      "provenance": "Répertoire de L’Esquirol ; coordonnées publiques à compléter.",
+      "annuaireId": null
+    },
+    {
+      "id": "producteur-190",
+      "nom": "MADRE E HIJA - DE LA PENA VIRGINIA",
+      "commune": "MENDE",
+      "codePostal": "48000",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.madreehija.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 190
+    },
+    {
+      "id": "producteur-207",
+      "nom": "MAISON BLIEUX",
+      "commune": "SAINT-CYPRIEN-SUR-DOURDOU",
+      "codePostal": "12320",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.maison-blieux.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 207
+    },
+    {
+      "id": "producteur-272",
+      "nom": "MAISON CABRIT",
+      "commune": "STE CROIX",
+      "codePostal": "12260",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.maison-cabrit.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 272
+    },
+    {
+      "id": "producteur-38",
+      "nom": "MAISON CONQUET",
+      "commune": "LAGUIOLE",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.maison-conquet.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 38
+    },
+    {
+      "id": "producteur-326",
+      "nom": "MAISON DELCROS - ELEVAGE DE VOLAILLES",
+      "commune": "LES MONTS-VERTS",
+      "codePostal": "48200",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.maisondelcros.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Élevage et préparation de volailles.",
+      "annuaireId": 326
+    },
+    {
+      "id": "producteur-119",
+      "nom": "MAISON FAGES",
+      "commune": "LANGOGNE",
+      "codePostal": "48300",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.charcuterie-fages-lozere.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 119
+    },
+    {
+      "id": "producteur-161",
+      "nom": "MAISON GINISTY",
+      "commune": "SEBAZAC CONCOURES",
+      "codePostal": "12740",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.boucherie-maison-ginisty.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 161
+    },
+    {
+      "id": "producteur-352",
+      "nom": "MAISON ROUX",
+      "commune": "LAGUIOLE",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.fouace-laguiole-roux.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 352
+    },
+    {
+      "id": "producteur-159",
+      "nom": "MALAKOFF SARL",
+      "commune": "BANASSAC",
+      "codePostal": "48500",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.boutique-malakoff.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "historique",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 159
+    },
+    {
+      "id": "producteur-56",
+      "nom": "MANOIR ALEXANDRE",
+      "commune": "ESPALION",
+      "codePostal": "12500",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.manoir-alexandre.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 56
+    },
+    {
+      "id": "producteur-123",
+      "nom": "MARIE DE LIVINHAC",
+      "commune": "DECAZEVILLE",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Plats préparés"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.mariedelivinhac.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 123
+    },
+    {
+      "id": "producteur-116",
+      "nom": "MARIUS BONAL",
+      "commune": "ONET LE CHÂTEAU",
+      "codePostal": "12850",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.mariusbonal.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 116
+    },
+    {
+      "id": "producteur-357",
+      "nom": "MC&COT",
+      "commune": "SAINT VICTOR ET MELVIEU",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 357
+    },
+    {
+      "id": "producteur-132",
+      "nom": "MIELLERIE DES GRAND CAUSSE",
+      "commune": "VEYREAU",
+      "codePostal": "12720",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 132
+    },
+    {
+      "id": "producteur-170",
+      "nom": "MINOTERIE DE COUDOUSTRINES",
+      "commune": "BESSUÉJOULS",
+      "codePostal": "12500",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.moulindecoudoustrines.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 170
+    },
+    {
+      "id": "producteur-128",
+      "nom": "MINOTERIE DES CHAUVETS - SARL JAFFUEL",
+      "commune": "LANGOGNE",
+      "codePostal": "48300",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.minoteriedeschauvets.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 128
+    },
+    {
+      "id": "producteur-167",
+      "nom": "MINOTERIE VALLEE DU CREOR",
+      "commune": "SALMIECH",
+      "codePostal": "12120",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 167
+    },
+    {
+      "id": "producteur-57",
+      "nom": "MIQUEL SALAISONS",
+      "commune": "BOUILLAC",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 57
+    },
+    {
+      "id": "producteur-59",
+      "nom": "MONTOURCY",
+      "commune": "LE FEL",
+      "codePostal": "12140",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 59
+    },
+    {
+      "id": "producteur-127",
+      "nom": "MOULIN CALVET - CAMARES - CAYLA",
+      "commune": "RIGNAC",
+      "codePostal": "12390",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.moulin-calvet.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 127
+    },
+    {
+      "id": "producteur-169",
+      "nom": "MOULIN DE TRESCANOUS",
+      "commune": "SAINT SATURNIN DE LENNE",
+      "codePostal": "12560",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 169
+    },
+    {
+      "id": "producteur-154",
+      "nom": "MOULIN DU CASTANIE - MINOTERIE MARTY",
+      "commune": "MOYRAZÈS",
+      "codePostal": "12160",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.florimeule.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 154
+    },
+    {
+      "id": "producteur-153",
+      "nom": "MOULIN MEJANE",
+      "commune": "ESPEYRAC",
+      "codePostal": "12140",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Farines et moulins"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.moulin-mejane.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 153
+    },
+    {
+      "id": "producteur-174",
+      "nom": "MOUSSE DU ROUERGUE",
+      "commune": "DECAZEVILLE",
+      "codePostal": "12300",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Bières"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.moussesdurouergue.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 174
+    },
+    {
+      "id": "contact-maison-boubal",
+      "nom": "Maison Boubal",
+      "commune": "",
+      "codePostal": "",
+      "departement": "",
+      "categories": [
+        "Spécialités à préciser"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "provenance": "Répertoire de L’Esquirol ; coordonnées publiques à compléter.",
+      "annuaireId": null
+    },
+    {
+      "id": "producteur-87",
+      "nom": "NORD AVEYRON PORC",
+      "commune": "ESPALION",
+      "codePostal": "12500",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 87
+    },
+    {
+      "id": "producteur-89",
+      "nom": "ONET VIANDES",
+      "commune": "ONET-LE-CHATEAU",
+      "codePostal": "12850",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.boucherie-onet-viandes.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 89
+    },
+    {
+      "id": "producteur-108",
+      "nom": "PAPILLON FROMAGERIES",
+      "commune": "ROQUEFORT-SUR-SOULZON",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.roquefort-papillon.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 108
+    },
+    {
+      "id": "producteur-313",
+      "nom": "PATRICK CARLY",
+      "commune": "MOISSAC VALLEE FRANCAISE",
+      "codePostal": "48110",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 313
+    },
+    {
+      "id": "producteur-217",
+      "nom": "PAYSANS BIO D'AVEYRON",
+      "commune": "RODEZ",
+      "codePostal": "12026",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "collectif",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 217
+    },
+    {
+      "id": "producteur-257",
+      "nom": "PETIT GRAIN",
+      "commune": "SAINT-IZAIRE",
+      "codePostal": "12480",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Savons et cosmétiques"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.petit-grain.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 257
+    },
+    {
+      "id": "producteur-321",
+      "nom": "PETIT LUDO",
+      "commune": "ST CHRISTOPHE-VALLON",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.petitludo.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 321
+    },
+    {
+      "id": "producteur-90",
+      "nom": "PEYRE",
+      "commune": "AUMONT-AUBRAC",
+      "codePostal": "48130",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.societe-peyre.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 90
+    },
+    {
+      "id": "producteur-306",
+      "nom": "PHILIPPE BONVALOT",
+      "commune": "QUINS",
+      "codePostal": "12800",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fruits et légumes"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 306
+    },
+    {
+      "id": "producteur-110",
+      "nom": "PISCICULTURE MAS DE POMMIERS",
+      "commune": "NANT",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "pisciculture-du-mas-de-pommiers",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 110
+    },
+    {
+      "id": "producteur-92",
+      "nom": "PORC MONTAGNE",
+      "commune": "STE RADEGONDE",
+      "codePostal": "12850",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.groupe-apo.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 92
+    },
+    {
+      "id": "producteur-62",
+      "nom": "QUINTARD",
+      "commune": "SAINT-FELIX-DE-LUNEL",
+      "codePostal": "12320",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits fermiers"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.maison-quintard.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 62
+    },
+    {
+      "id": "producteur-307",
+      "nom": "RELAIS DES PRIMEURS",
+      "commune": "REQUISTA",
+      "codePostal": "12170",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fruits et légumes"
+      ],
+      "nature": "intermediaire",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 307
+    },
+    {
+      "id": "producteur-200",
+      "nom": "REVEL JEAN MARIE",
+      "commune": "SALLES LA SOURCE",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 200
+    },
+    {
+      "id": "producteur-171",
+      "nom": "ROCHER DES PALANGES",
+      "commune": "AGEN D'AVEYRON",
+      "codePostal": "12630",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 171
+    },
+    {
+      "id": "producteur-122",
+      "nom": "ROGER VIDAL",
+      "commune": "SAINT-JEAN-DU-BRUEL",
+      "codePostal": "12230",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Conserves"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.roger-vidal.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "historique",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 122
+    },
+    {
+      "id": "producteur-222",
+      "nom": "ROLLAND-MOLINIER",
+      "commune": "SALLES CURAN",
+      "codePostal": "12410",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.rolland-molinier.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 222
+    },
+    {
+      "id": "producteur-209",
+      "nom": "ROMAIN APICULTURE",
+      "commune": "MAYRAN",
+      "codePostal": "12390",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Miels"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.romain-apiculture.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 209
+    },
+    {
+      "id": "producteur-106",
+      "nom": "ROQUEFORT CARLES",
+      "commune": "ROQUEFORT-SUR-SOULZON",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.roquefort-carles.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "roquefort-carles",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 106
+    },
+    {
+      "id": "producteur-20",
+      "nom": "ROQUEFORT COULET",
+      "commune": "ROQUEFORT SUR SOULZON",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.gabriel-coulet.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "maison-gabriel-coulet",
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 20
+    },
+    {
+      "id": "producteur-324",
+      "nom": "ROQUEFORT LE VIEUX BERGER",
+      "commune": "ROQUEFORT SUR SOULZON",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.le-vieux-berger.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": "roquefort-le-vieux-berger-maison-combes",
+      "portrait": {
+        "url": "https://esquirols.fr/journal-roquefort-vieux-berger.html",
+        "libelle": "Lire son portrait →"
+      },
+      "notesPubliques": "",
+      "annuaireId": 324
+    },
+    {
+      "id": "producteur-96",
+      "nom": "SACOR",
+      "commune": "VILLEFRANCHE-DE-ROUERGUE",
+      "codePostal": "12200",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.sacor.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 96
+    },
+    {
+      "id": "producteur-74",
+      "nom": "SALAISONS CROS",
+      "commune": "REBOURGUIL",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.salaisons-cros.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 74
+    },
+    {
+      "id": "producteur-193",
+      "nom": "SALAISONS DU LANDOULET",
+      "commune": "MURASSON",
+      "codePostal": "12370",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "recu",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Charcuteries et salaisons.",
+      "annuaireId": 193
+    },
+    {
+      "id": "producteur-99",
+      "nom": "SALAISONS SERIN",
+      "commune": "ONET-LE-CHATEAU",
+      "codePostal": "12850",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.boucherie-serin.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 99
+    },
+    {
+      "id": "producteur-164",
+      "nom": "SALTEL BOUCHERIE",
+      "commune": "CHIRAC",
+      "codePostal": "48100",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Viandes"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 164
+    },
+    {
+      "id": "producteur-145",
+      "nom": "SANHES STEPHANE GAEC",
+      "commune": "STE RADEGONDE",
+      "codePostal": "12850",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Glaces"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.glacesanhes.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 145
+    },
+    {
+      "id": "producteur-125",
+      "nom": "SARABELLE CHARCUTERIE - MAISON CAMBON",
+      "commune": "MONTLAUR",
+      "codePostal": "12400",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.sarabelle.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 125
+    },
+    {
+      "id": "producteur-351",
+      "nom": "SARL BROCHE ET GOURMANDISES",
+      "commune": "TOURNEMIRE",
+      "codePostal": "12250",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 351
+    },
+    {
+      "id": "producteur-348",
+      "nom": "SAS LES BUFFLONNES D'OR",
+      "commune": "LA SALVETAT PEYRALES",
+      "codePostal": "12440",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.facebook.com/profile.php?id=61566985643095",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 348
+    },
+    {
+      "id": "producteur-245",
+      "nom": "SAS LES MONTAGNEUX",
+      "commune": "RODEZ CEDEX 9",
+      "codePostal": "12026",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Produits laitiers"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.montlait.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 245
+    },
+    {
+      "id": "producteur-166",
+      "nom": "SAVEUR LOZERE",
+      "commune": "BARJAC",
+      "codePostal": "48000",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Fromages"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.saveur-lozere.com",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 166
+    },
+    {
+      "id": "producteur-281",
+      "nom": "SAVEUR SAUVAGES DES CEVENNES",
+      "commune": "ST PRIVAT DE VALLONGUE",
+      "codePostal": "48240",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.saveurssauvagesdescevennes.wordpress.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 281
+    },
+    {
+      "id": "producteur-263",
+      "nom": "SAVEURS DES TERRES D'AUBRAC",
+      "commune": "ARGENCES EN AUBRAC",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Confitures et fruits"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.saveursaubrac.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 263
+    },
+    {
+      "id": "producteur-114",
+      "nom": "SECRET DE CACAO",
+      "commune": "LANGOGNE",
+      "codePostal": "48300",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.secretdecacao.com/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 114
+    },
+    {
+      "id": "producteur-67",
+      "nom": "SERRAULT CHARCUTERIES",
+      "commune": "CAPDENAC",
+      "codePostal": "12700",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Charcuteries"
+      ],
+      "nature": "producteur-artisan",
+      "site": "https://www.maison-serrault.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 67
+    },
+    {
+      "id": "producteur-208",
+      "nom": "SPECIALITE-AVEYRONNAISE",
+      "commune": "MARCILLAC-VALLON",
+      "codePostal": "12330",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Biscuits et chocolats"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.specialite-aveyronnaise.fr/",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 208
+    },
+    {
+      "id": "producteur-241",
+      "nom": "SPIRULINE DES GRANDS CAUSSES",
+      "commune": "SAINT ROME DE CERNON",
+      "codePostal": "12490",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 241
+    },
+    {
+      "id": "producteur-91",
+      "nom": "TRUITE DU MONT LOZERE SARL",
+      "commune": "VILLEFORT",
+      "codePostal": "48800",
+      "departement": "48 · Lozère",
+      "categories": [
+        "Autres spécialités"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 91
+    },
+    {
+      "id": "producteur-264",
+      "nom": "TWELVE WHISKY",
+      "commune": "LAGUIOLE",
+      "codePostal": "12210",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Apéritifs"
+      ],
+      "nature": "a-preciser",
+      "site": "https://www.whiskytwelve.fr",
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 264
+    },
+    {
+      "id": "contact-tanguy-vesinet",
+      "nom": "Tanguy Vesinet",
+      "commune": "",
+      "codePostal": "",
+      "departement": "",
+      "categories": [
+        "Conserves végétales"
+      ],
+      "nature": "producteur-artisan",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "contact",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "Soupes, tartinables et confits en bocaux.",
+      "provenance": "Répertoire de L’Esquirol ; coordonnées publiques à compléter.",
+      "annuaireId": null
+    },
+    {
+      "id": "producteur-205",
+      "nom": "VIGUIER LES BUIS",
+      "commune": "ENTRAYGUES SUR TRUYERE",
+      "codePostal": "12140",
+      "departement": "12 · Aveyron",
+      "categories": [
+        "Vins"
+      ],
+      "nature": "a-preciser",
+      "site": null,
+      "sources": [],
+      "maj": "2026-11-14",
+      "statut": "decouvert",
+      "ficheLocale": null,
+      "portrait": null,
+      "notesPubliques": "",
+      "annuaireId": 205
+    }
+  ]
+}

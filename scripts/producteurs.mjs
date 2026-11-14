@@ -27,7 +27,7 @@
 //   picto       l'émoji de la fiche
 //   lieu        hameau / commune (+ département entre parenthèses hors 34)
 //   description une ou deux phrases, uniquement des faits vérifiés
-//   badge       « 🛒 En rayon à L'Esquirol » ou variante, sinon null
+//   badge       sélection habituelle à L'Esquirol, sinon null ; pas un stock
 //   portrait    { url, libelle } vers un article du journal d'esquirols.fr
 //   telephone / email / site / facebook / instagram
 //   adresse     adresse postale précise (pour un futur plan, pas affichée)
@@ -144,7 +144,14 @@ function fiche(p) {
       `<a class="portrait" href="${echappe(p.portrait.url)}" target="_blank" rel="noopener">${echappe(p.portrait.libelle || 'Lire son portrait →')}</a>`
     )
   }
-  if (p.badge) pied.push(`<span class="tag">${echappe(p.badge)}</span>`)
+  if (p.badge) {
+    // Les sources éditoriales décrivent un assortiment habituel, jamais le
+    // stock du jour. Conserver les valeurs historiques dans les données.
+    const badge = /terrasse/i.test(p.badge)
+      ? "🍧 Habituellement proposé en terrasse à L'Esquirol"
+      : "🛒 Produits habituellement proposés à L'Esquirol"
+    pied.push(`<span class="tag">${echappe(badge)}</span>`)
+  }
   if (pied.length) lignes.push(`        ${pied.join('')}`)
   lignes.push('      </article>')
   return lignes.join('\n')
@@ -183,7 +190,7 @@ ${zones.map((z, i) => `            <option value="${i}">${echappe(z.titre.split(
         </label>
       </div>
       <div class="prod-options">
-        <label class="prod-checkbox"><input type="checkbox" name="esquirol" id="esquirol-producteurs"> En rayon à L'Esquirol</label>
+        <label class="prod-checkbox"><input type="checkbox" name="esquirol" id="esquirol-producteurs"> Habituellement proposé à L'Esquirol</label>
         <button type="reset">Effacer les filtres</button>
       </div>
       <div class="prod-result-nav">
@@ -191,7 +198,7 @@ ${zones.map((z, i) => `            <option value="${i}">${echappe(z.titre.split(
         <a href="#resultats-producteurs">Voir les fiches ↓</a>
       </div>
     </form>
-    <p class="prod-conseil">Avant de partir, appelez pour confirmer l'ouverture et les produits disponibles. Les horaires peuvent évoluer selon la saison.</p>`
+    <p class="prod-conseil">Les badges indiquent une sélection habituelle, pas le stock du jour. Avant de partir, appelez pour confirmer l'ouverture et les produits disponibles. Les horaires peuvent évoluer selon la saison.</p>`
 }
 
 /**

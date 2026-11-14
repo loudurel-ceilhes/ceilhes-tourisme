@@ -9,7 +9,7 @@
   #    la correction était en ligne. Détails dans scripts/version-assets.mjs.
   # 3. Vérifie le résultat généré ; toute erreur arrête ce déploiement,
   #    même si la modification a été envoyée directement sur main.
-  command = "node scripts/producteurs.mjs && node scripts/marches.mjs && node scripts/monuments.mjs && node scripts/version-assets.mjs && node scripts/verifier-site.mjs --publication"
+  command = "node scripts/producteurs.mjs && node scripts/marches.mjs && node scripts/monuments.mjs && node scripts/reseau-galtier.mjs && node scripts/version-assets.mjs && node scripts/verifier-site.mjs --publication"
 
 # Netlify retirait le « .html » des liens internes à la volée, alors que les
 # balises canoniques, les og:url, le sitemap et les données structurées
@@ -24,6 +24,13 @@
   from = "/randonnees-vtt.html"
   to = "/randonnees.html"
   status = 301
+
+# Les notes et preuves de maintenance ne font pas partie du site public.
+[[redirects]]
+  from = "/.maintenance/*"
+  to = "/404.html"
+  status = 404
+  force = true
 
 # Les photos ne changent jamais sans changer de nom : on les garde un an.
 [[headers]]

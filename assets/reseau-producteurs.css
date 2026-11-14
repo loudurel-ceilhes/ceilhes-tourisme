@@ -1,0 +1,23 @@
+.reseau-intro{max-width:70ch;margin:0 auto 2rem;line-height:1.8}
+.reseau-intro p+p{margin-top:1rem}
+.reseau-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.2rem 0}
+.reseau-filtres{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:1rem;align-items:end;padding:1.3rem;border:1px solid var(--sable);border-radius:12px;background:var(--blanc);margin:1.2rem 0 1.5rem}
+.reseau-filtres[hidden],.reseau-fiche[hidden],.reseau-vide[hidden]{display:none}
+.reseau-filtres label{display:flex;flex-direction:column;gap:.35rem;font-size:.9rem;min-width:0}
+.reseau-filtres input,.reseau-filtres select{width:100%;min-width:0;font:inherit;padding:.8rem .6rem;border:1px solid var(--sable);border-radius:6px;background:var(--blanc);color:var(--foret-fonce)}
+.reseau-filtres button{justify-self:start}
+.reseau-compteur{font-weight:500;color:var(--foret-fonce)}
+.reseau-grille{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.reseau-fiche{padding:1.4rem;border:1px solid var(--sable);border-radius:12px;background:var(--blanc);scroll-margin-top:7rem;overflow-wrap:anywhere}
+.reseau-fiche h2{font-size:1.65rem;line-height:1.15;margin:.5rem 0 .7rem;color:var(--foret-fonce)}
+.reseau-fiche p{font-size:.95rem;line-height:1.5;margin:.45rem 0}
+.reseau-fiche .reseau-specialite{font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;color:var(--foret)}
+.reseau-statut{font-weight:500}
+.reseau-liens{display:flex;flex-direction:column;gap:.55rem;margin-top:1rem}
+.reseau-liens a{text-decoration:underline;text-underline-offset:.18em;color:var(--foret-fonce)}
+.reseau-vide{padding:2rem 1rem;background:var(--sable);border-radius:8px}
+@media(max-width:1000px){.reseau-grille{grid-template-columns:repeat(2,minmax(0,1fr))}.reseau-filtres{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.reseau-grille,.reseau-filtres{grid-template-columns:1fr}.reseau-fiche{padding:1.1rem}.reseau-actions .btn{width:100%;text-align:center}}
+@media print{.reseau-filtres,.reseau-actions{display:none}.reseau-grille{display:block}.reseau-fiche{break-inside:avoid;border-bottom:1px solid currentColor}.reseau-liens a::after{content:" (" attr(href) ")";font-size:.7rem}}
+
+.reseau-intro a:not(.btn){color:var(--foret);text-underline-offset:.18em}
