@@ -108,3 +108,38 @@ test('mots entiers, pluriels et ligatures distinguent les produits des fragments
     return donnees
   })
 })
+
+test('une fiche sans accueil attesté présente les références sans suggérer un itinéraire ni une quantité en stock', async () => {
+  await avecCopie(async ({ generer }) => {
+    const html = await generer()
+    const fiche = html.match(/<article[^>]+id="les-eleveurs-du-rougier"[\s\S]*?<\/article>/)?.[0]
+    assert.ok(fiche)
+    assert.match(fiche, /data-esquirol="true"/)
+    assert.equal((fiche.match(/<li>/g) || []).length, 3)
+    assert.match(fiche, /nos-producteurs\?[^" ]+#les-eleveurs-du-rougier/)
+    assert.doesNotMatch(fiche, /Itinéraire|google\.com\/maps|class="contact"/)
+    const carte = JSON.parse(html.match(/<script[^>]+id="donnees-carte"[^>]*>([\s\S]*?)<\/script>/)[1])
+    assert.ok(!carte.reperes.some(p => p.id === 'les-eleveurs-du-rougier'))
+  })
+})
+
+test('les libellés de références sont échappés et les liens restent dans la boutique publique', async () => {
+  await avecCopie(async ({ generer }) => {
+    const html = await generer()
+    assert.match(html, /&lt;img src=x onerror=alert\(1\)&gt;/)
+    assert.match(html, /&lt;script&gt;alert\(2\)&lt;\/script&gt;/)
+    assert.doesNotMatch(html, /<img src=x|<script>alert/)
+  }, donnees => {
+    const p = donnees.zones.flatMap(z => z.producteurs).find(p => p.id === 'les-eleveurs-du-rougier')
+    p.produits[0] = { nom: '<img src=x onerror=alert(1)>', details: '<script>alert(2)</script>', url: 'https://boutique.esquirols.fr/nos-producteurs#tomme-du-rougier' }
+    return donnees
+  })
+  for (const url of ['javascript:alert(1)', 'https://boutique.esquirols.fr.evil.test/shop/test', 'https://boutique.esquirols.fr/web/login', 'https://secret@boutique.esquirols.fr/shop/test']) {
+    await avecCopie(async ({ generer }) => {
+      await assert.rejects(generer, /Lien de produit hors de la boutique publique/)
+    }, donnees => {
+      donnees.zones.flatMap(z => z.producteurs).find(p => p.id === 'les-eleveurs-du-rougier').boutique.url = url
+      return donnees
+    })
+  }
+})

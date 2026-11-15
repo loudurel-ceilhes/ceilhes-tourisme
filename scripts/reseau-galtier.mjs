@@ -43,7 +43,7 @@ export function generer(donnees) {
     '<div id="reseau-resultats" class="reseau-grille">']
   for (const p of producteurs) {
     const site = adressePublique(p.site)
-    const search = `${p.nom} ${p.commune} ${p.departement} ${p.categories.join(' ')} ${p.nature}`
+    const search = `${p.nom} ${p.commune} ${p.departement} ${p.categories.join(' ')} ${p.nature}${p.notesPubliques ? ` ${p.notesPubliques}` : ''}`
     lignes.push(`<article id="${e(p.id)}" class="reseau-fiche" data-reseau-recherche="${e(search)}" data-categories="${e(JSON.stringify(p.categories))}" data-departement="${e(p.departement)}" data-statut="${e(p.statut)}" data-fiche="${Boolean(p.ficheLocale)}">
 <p class="reseau-specialite">${e(p.categories.join(' · '))}</p><h2>${e(p.nom)}</h2>
 <p class="reseau-lieu">${e([p.commune, p.codePostal].filter(Boolean).join(' · ') || 'Commune à préciser')}</p>

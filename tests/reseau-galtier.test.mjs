@@ -49,6 +49,21 @@ test('les fiches du guide existant sont réutilisées avec leur ancre stable', a
   assert.match(html, /Disponibilité à confirmer/)
 })
 
+test('les noms de références sont cherchables dans la fiche régionale sans modifier le statut reçu', async () => {
+  const d = await lire()
+  const p = d.producteurs.find(p => p.id === 'producteur-231')
+  assert.equal(p.statut, 'recu')
+  assert.equal(p.nature, 'collectif')
+  assert.equal(p.site, null)
+  const fiche = generer(d).match(/<article[^>]+id="producteur-231"[\s\S]*?<\/article>/)?.[0]
+  assert.ok(fiche)
+  const recherche = fiche.match(/data-reseau-recherche="([^"]*)"/)[1].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  for (const nom of ['tomme du rougier', 'fondant du rougier', 'tomme des paturages']) assert.ok(recherche.includes(nom), nom)
+  assert.match(fiche, /terroir\.html#les-eleveurs-du-rougier/)
+  assert.match(fiche, /Déjà proposé à L’Esquirol/)
+  assert.match(fiche, /selon arrivages ; retrait en magasin/)
+})
+
 
 test('la présentation et les adresses publiques restent centrées sur les producteurs', async () => {
   const d = await lire()

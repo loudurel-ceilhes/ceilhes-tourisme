@@ -53,8 +53,11 @@ test('les dates certaines du carnet sont conservées, les dates impossibles refu
 
 test('la recherche indexe les fiches et les synonymes de pages sans indexer les outils internes', () => {
   const html = '<html lang="fr"><h1>Venir à Ceilhes</h1><h2>En train</h2></html>';
-  const data = indexerRecherche([['infos-pratiques.html', html], ['reglage-carte.html', html]], cataloguer([['a.html', card()]]));
+  const fiche = card().replace('<article ', '<article data-carnet-keywords="Jeu &amp; découverte" ');
+  const data = indexerRecherche([['infos-pratiques.html', html], ['reglage-carte.html', html]], cataloguer([['a.html', fiche]]));
   assert.equal(data.items.length, 2);
   assert.match(data.items[0].keywords, /bus car train/);
   assert.equal(data.items[1].title, 'Le Bouloc & le village');
+  assert.equal(data.items[1].keywords, 'Jeu & découverte');
+  assert.throws(() => cataloguer([['a.html', fiche.replace('Jeu &amp; découverte', 'a'.repeat(1001))]]), /trop longs/);
 });

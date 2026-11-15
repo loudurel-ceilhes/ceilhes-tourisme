@@ -3227,21 +3227,23 @@
     },
     {
       "id": "producteur-231",
-      "nom": "LES ELEVEURS DU ROUGIER",
+      "nom": "Les Éleveurs du Rougier",
       "commune": "COMBRET",
       "codePostal": "12370",
       "departement": "12 · Aveyron",
       "categories": [
         "Fromages"
       ],
-      "nature": "producteur-artisan",
+      "nature": "collectif",
       "site": null,
-      "sources": [],
-      "maj": "2026-11-14",
-      "statut": "decouvert",
-      "ficheLocale": null,
-      "portrait": null,
-      "notesPubliques": "",
+      "sources": [
+        "https://esquirols.fr/journal-eleveurs-du-rougier.html"
+      ],
+      "maj": "2026-11-15",
+      "statut": "recu",
+      "ficheLocale": "les-eleveurs-du-rougier",
+      "portrait": "https://esquirols.fr/journal-eleveurs-du-rougier.html",
+      "notesPubliques": "Collectif de Combret, en Aveyron. Trois fromages au lait de foin de brebis STG : Tomme du Rougier au lait cru, Fondant du Rougier au lait pasteurisé et Tomme des Pâturages au lait pasteurisé affinée dans le foin. La STG concerne le lait utilisé. Disponibles chez L’Esquirol, selon arrivages ; retrait en magasin.",
       "annuaireId": 231
     },
     {

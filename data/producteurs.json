@@ -1698,6 +1698,54 @@
           ],
           "gpsPrecision": "lieu-dit",
           "gpsSource": "https://www.tourisme-aveyron.com/fr/diffusio/autres-commerces/ferme-de-saint-louis-belmont-sur-rance_TFO295351705324"
+        },
+        {
+          "id": "les-eleveurs-du-rougier",
+          "nom": "Les Éleveurs du Rougier",
+          "picto": "🧀",
+          "lieu": "Combret · Aveyron",
+          "description": "Ce collectif installé à Combret présente trois fromages issus de lait de foin de brebis STG. La STG concerne le lait utilisé ; chaque fromage possède son propre caractère, de la tomme au lait cru au fondant à cuisiner.",
+          "badge": "Produits habituellement proposés à L’Esquirol",
+          "portrait": {
+            "url": "https://esquirols.fr/journal-eleveurs-du-rougier.html",
+            "libelle": "Découvrir les trois fromages et leurs usages →"
+          },
+          "telephone": null,
+          "email": null,
+          "site": null,
+          "facebook": null,
+          "instagram": null,
+          "adresse": null,
+          "itineraire": false,
+          "vente": "Disponibles chez L’Esquirol, selon arrivages ; retrait en magasin.",
+          "labels": [],
+          "actif": "oui",
+          "sources": [
+            "https://esquirols.fr/journal-eleveurs-du-rougier.html"
+          ],
+          "note": "Faits techniques issus des fiches du producteur : Fondant et Tomme des Pâturages, 12/06/2026 ; Tomme du Rougier, 03/11/2026. Aucun accueil public ni disponibilité n’est déduit de ces documents.",
+          "maj": "2026-11-15",
+          "produits": [
+            {
+              "nom": "Tomme du Rougier",
+              "details": "lait cru de brebis, pâte pressée non cuite et croûte lavée orangée.",
+              "url": "https://boutique.esquirols.fr/shop/esq-00006910-les-eleveurs-du-rougier-tomme-du-rougier-au-kg-7076?utm_source=ceilhes-tourisme&utm_medium=referral&utm_campaign=ecosysteme"
+            },
+            {
+              "nom": "Fondant du Rougier",
+              "details": "lait pasteurisé de brebis, pâte souple qui se prête à la fonte.",
+              "url": "https://boutique.esquirols.fr/shop/esq-00006911-les-eleveurs-du-rougier-fondant-du-rougier-au-kg-7077?utm_source=ceilhes-tourisme&utm_medium=referral&utm_campaign=ecosysteme"
+            },
+            {
+              "nom": "Tomme des Pâturages",
+              "details": "lait pasteurisé de brebis, affinage dans le foin et saveur douce aux notes de foin des prés.",
+              "url": "https://boutique.esquirols.fr/shop/esq-00006912-les-eleveurs-du-rougier-tomme-des-paturages-au-kg-7078?utm_source=ceilhes-tourisme&utm_medium=referral&utm_campaign=ecosysteme"
+            }
+          ],
+          "boutique": {
+            "url": "https://boutique.esquirols.fr/nos-producteurs?utm_source=ceilhes-tourisme&utm_medium=referral&utm_campaign=ecosysteme#les-eleveurs-du-rougier",
+            "libelle": "Découvrir les trois fromages dans la boutique →"
+          }
         }
       ],
       "couleur": "#a04b3c"

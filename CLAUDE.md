@@ -1,5 +1,11 @@
 # ceilhes-tourisme.fr — guide du dépôt
 
+## Les Éleveurs du Rougier — 15 novembre 2026
+
+La fiche régionale conserve `producteur-231` et renvoie vers la nouvelle fiche locale `terroir.html#les-eleveurs-du-rougier`. Lou a confirmé les trois fromages disponibles en magasin ; le statut reçu exprime cette relation, sans quantité ni stock permanent. Les produits sont de brebis, le lait de la Tomme du Rougier est cru et celui du Fondant et des Pâturages pasteurisé. Les noms de produits enrichissent les recherches locales, régionales et générales, ainsi que le carnet. Les liens commerciaux ciblent les trois fiches Odoo existantes, avec les paramètres de provenance communs.
+
+`itineraire: false` évite d’envoyer les visiteurs vers un siège sans accueil confirmé ; aucun repère de carte ou étape de visite n’est ajouté. Les données `produits` et `boutique` sont échappées par le générateur, avec liens limités à la boutique publique. Sources et limites : `docs/sources-eleveurs-rougier.md`. Le portrait et les photographies sont portés par esquirols.fr.
+
 ## Contributions, jeu et calendrier — 15 novembre 2026
 
 - `contribuer.html` prépare un courriel contextualisé vers l’éditeur. Aucun envoi ni téléversement automatique ; crédit et autorisation sont demandés pour une photo. `scripts/contributions.mjs` ajoute les liens des fiches et construit le catalogue des destinations admises. Il doit tourner après les générateurs de contenu/navigation et avant carnet-catalogue/version-assets, y compris dans le workflow agenda. Ne pas saisir un titre de fiche arbitraire depuis l’URL.

@@ -23,6 +23,9 @@
 .prod-card .prod-vente{margin-top:.9rem;border-top:1px solid var(--pierre);padding-top:.8rem}
 .prod-card .prod-labels{margin-top:.65rem;color:var(--foret)}
 .prod-card .prod-maj{font-size:.78rem;margin-top:.8rem;color:var(--foret)}
+.prod-card .prod-produits{padding-left:1.2rem;margin:.9rem 0;font-size:.9rem;line-height:1.65}
+.prod-card .prod-produits li+li{margin-top:.55rem}
+.prod-card .prod-produits a{color:var(--foret);text-decoration:underline;text-underline-offset:3px}
 .prod-card .prod-confirmation{margin-top:.65rem;font-weight:500}
 .prod-card .contact a{white-space:normal;display:inline-block;min-height:36px;padding:.2rem 0;color:var(--foret);text-decoration:underline;text-underline-offset:3px}
 .prod-epingle{display:block;width:22px;height:22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid var(--blanc);box-shadow:var(--ombre)}

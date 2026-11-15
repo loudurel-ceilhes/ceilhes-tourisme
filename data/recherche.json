@@ -27,7 +27,7 @@
       "category": "Page du guide",
       "url": "/circuits-producteurs.html",
       "description": "Huit maisons et trois idées de sorties autour d’Avène, Sylvanès, Camarès et Roquefort : vente directe, rendez-vous, sources et conseils pour préparer la visite.",
-      "keywords": " Une sortie à préparer autour de deux étapes 1. Avène : miel et fermes des hameaux Miellerie du Mas Valette La Part du Loup Ferme des Monts et des Sources 2. Sylvanès et Camarès : charcuterie et ferme du Rougier La Fermière de Sylvanès Ferme de Saint-Pierre d'Issis 3. Roquefort et le Larzac : choisir son fromage Le Vieux Berger — Maison Combes Maison Carles Les Bergers du Larzac Avant le départ"
+      "keywords": " Une sortie à préparer autour de deux étapes 1. Avène : miel et fermes des hameaux Miellerie du Mas Valette La Part du Loup Ferme des Monts et des Sources 2. Sylvanès et Camarès : charcuterie et ferme du Rougier La Fermière de Sylvanès Ferme de Saint-Pierre d'Issis Pour prolonger la découverte du Rougier 3. Roquefort et le Larzac : choisir son fromage Le Vieux Berger — Maison Combes Maison Carles Les Bergers du Larzac Avant le départ"
     },
     {
       "title": "Votre regard fait vivre le guide",
@@ -1246,6 +1246,13 @@
       "url": "/terroir.html#les-cocottes-d-avene",
       "description": "",
       "keywords": ""
+    },
+    {
+      "title": "Les Éleveurs du Rougier",
+      "category": "Producteur",
+      "url": "/terroir.html#les-eleveurs-du-rougier",
+      "description": "",
+      "keywords": "Tomme du Rougier · Fondant du Rougier · Tomme des Pâturages"
     },
     {
       "title": "Les Escargots de Barre",

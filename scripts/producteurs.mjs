@@ -29,6 +29,9 @@
 //   description une ou deux phrases, uniquement des faits vérifiés
 //   badge       sélection habituelle à L'Esquirol, sinon null ; pas un stock
 //   portrait    { url, libelle } vers un article du journal d'esquirols.fr
+//   produits    liste facultative { nom, details, url? } des références documentées
+//   boutique    { url, libelle } vers la présentation publique dans la boutique
+//   itineraire  false si l'adresse connue n'atteste pas d'un accueil public
 //   telephone / email / site / facebook / instagram
 //   adresse     adresse postale précise (pour un futur plan, pas affichée)
 //   vente       horaires, périodes, marchés — en une phrase
@@ -116,19 +119,36 @@ function contact(p) {
       `<a href="${echappe(p.site)}" target="_blank" rel="noopener">🌐 ${echappe(domaine(p.site))}</a>`
     )
   }
-  morceaux.push(
+  if (p.itineraire !== false) morceaux.push(
     `<a href="${echappe(lienMaps(p))}" target="_blank" rel="noopener">🧭 Itinéraire</a>`
   )
-  return `\n        <div class="contact">${morceaux.join('<span class="sep"> · </span>')}</div>`
+  return morceaux.length ? `\n        <div class="contact">${morceaux.join('<span class="sep"> · </span>')}</div>` : ''
+}
+
+/** Les liens commerciaux des références restent dans la boutique publique. */
+function lienBoutique(value) {
+  const url = new URL(value)
+  if (url.origin !== 'https://boutique.esquirols.fr' || url.username || url.password || !/^\/(?:shop|nos-producteurs)(?:\/|$)/.test(url.pathname)) throw new Error('Lien de produit hors de la boutique publique')
+  return url.href
+}
+
+function catalogueProduits(p) {
+  if (!p.produits?.length) return ''
+  const lignes = p.produits.map(produit => {
+    if (!produit.nom || !produit.details) throw new Error('Référence producteur incomplète')
+    const nom = produit.url ? `<a href="${echappe(lienBoutique(produit.url))}" target="_blank" rel="noopener">${echappe(produit.nom)}</a>` : `<strong>${echappe(produit.nom)}</strong>`
+    return `<li>${nom} — ${echappe(produit.details)}</li>`
+  })
+  return `\n        <ul class="prod-produits" aria-label="Les produits présentés">${lignes.join('')}</ul>`
 }
 
 /** Une fiche producteur complète. */
 function fiche(p) {
   const lignes = [
-    `      <article class="prod-card reveal" id="${echappe(p.id)}" data-produits="${produits(p).join(' ')}" data-esquirol="${Boolean(p.badge)}" data-carnet-id="producteur-${echappe(p.id)}" data-carnet-title="${echappe(p.nom)}" data-carnet-category="Producteur" data-carnet-url="terroir.html#${echappe(p.id)}" tabindex="-1">`,
+    `      <article class="prod-card reveal" id="${echappe(p.id)}" data-produits="${produits(p).join(' ')}" data-esquirol="${Boolean(p.badge)}" data-carnet-id="producteur-${echappe(p.id)}" data-carnet-title="${echappe(p.nom)}" data-carnet-category="Producteur" data-carnet-url="terroir.html#${echappe(p.id)}"${p.produits?.length ? ` data-carnet-keywords="${echappe(p.produits.map(produit => produit.nom).join(' · '))}"` : ''} tabindex="-1">`,
     `        <h4>${echappe(p.nom)}</h4>`,
     `        <div class="where">${echappe(p.lieu)}</div>`,
-    `        <p>${echappe(p.description)}</p>${contact(p)}`,
+    `        <p>${echappe(p.description)}</p>${contact(p)}${catalogueProduits(p)}`,
   ]
   if (p.vente) lignes.push(`        <p class="prod-vente"><strong>Pour acheter :</strong> ${echappe(p.vente)}</p>`)
   if (p.labels?.length) lignes.push(`        <p class="prod-labels"><strong>Labels :</strong> ${p.labels.map(echappe).join(' · ')}</p>`)
@@ -138,6 +158,7 @@ function fiche(p) {
     lignes.push(`        <p class="prod-maj">Fiche mise à jour le <time datetime="${p.maj}">${jour}/${mois}/${annee}</time></p>`)
   }
   const pied = []
+  if (p.boutique?.url) pied.push(`<a class="portrait" href="${echappe(lienBoutique(p.boutique.url))}" target="_blank" rel="noopener">${echappe(p.boutique.libelle || 'Retrouver cette maison dans la boutique →')}</a>`)
   if (p.portrait?.url) {
     pied.push(
       `<a class="portrait" href="${echappe(p.portrait.url)}" target="_blank" rel="noopener">${echappe(p.portrait.libelle || 'Lire son portrait →')}</a>`

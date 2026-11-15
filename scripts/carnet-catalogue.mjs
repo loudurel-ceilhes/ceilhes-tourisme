@@ -42,6 +42,10 @@ export function cataloguer(pages) {
         if (!Array.isArray(dates) || dates.length > 200 || dates.some(value => typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value) || Number.isNaN(Date.parse(value + 'T12:00:00Z')) || new Date(value + 'T12:00:00Z').toISOString().slice(0, 10) !== value)) throw new Error(`Dates de carnet invalides dans ${page}`);
         item.dates = [...new Set(dates)].sort();
       }
+      if (attrs['data-carnet-keywords']?.trim()) {
+        item.keywords = attrs['data-carnet-keywords'].trim();
+        if (item.keywords.length > 1000) throw new Error(`Mots-clés de carnet trop longs dans ${page}`);
+      }
       const previous = items.get(item.id);
       if (previous && JSON.stringify(previous) !== JSON.stringify(item)) throw new Error(`Identifiant de carnet contradictoire : ${item.id}`);
       items.set(item.id, item);
@@ -92,8 +96,8 @@ export function indexerRecherche(pages, catalog) {
     return { title, category: 'Page du guide', url: '/' + page, description, keywords: (keywords[page] || '') + ' ' + headings };
   });
   const dateLabel = value => new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(value + 'T12:00:00Z'));
-  return { version: 1, items: [...items, ...catalog.items.map(({ title, category, url, dates }) => ({ title, category, url,
-    description: dates?.length ? 'Dates annoncées : ' + dates.slice(0, 3).map(dateLabel).join(' · ') + (dates.length > 3 ? ' · autres dates sur la fiche.' : '.') : '', keywords: '' }))] };
+  return { version: 1, items: [...items, ...catalog.items.map(({ title, category, url, dates, keywords = '' }) => ({ title, category, url,
+    description: dates?.length ? 'Dates annoncées : ' + dates.slice(0, 3).map(dateLabel).join(' · ') + (dates.length > 3 ? ' · autres dates sur la fiche.' : '.') : '', keywords }))] };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) console.log(`Carnet : ${generer()} idées publiques partageables.`);
