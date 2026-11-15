@@ -24,7 +24,7 @@
 // sont obligatoires ; tout le reste peut être null ou absent) :
 //   id          identifiant court unique (minuscules-et-traits-d-union)
 //   nom         nom affiché
-//   picto       l'émoji de la fiche
+//   picto       le pictogramme du repère sur la carte
 //   lieu        hameau / commune (+ département entre parenthèses hors 34)
 //   description une ou deux phrases, uniquement des faits vérifiés
 //   badge       sélection habituelle à L'Esquirol, sinon null ; pas un stock
@@ -126,7 +126,6 @@ function contact(p) {
 function fiche(p) {
   const lignes = [
     `      <article class="prod-card reveal" id="${echappe(p.id)}" data-produits="${produits(p).join(' ')}" data-esquirol="${Boolean(p.badge)}" data-carnet-id="producteur-${echappe(p.id)}" data-carnet-title="${echappe(p.nom)}" data-carnet-category="Producteur" data-carnet-url="terroir.html#${echappe(p.id)}" tabindex="-1">`,
-    `        <div class="picto" aria-hidden="true">${echappe(p.picto)}</div>`,
     `        <h4>${echappe(p.nom)}</h4>`,
     `        <div class="where">${echappe(p.lieu)}</div>`,
     `        <p>${echappe(p.description)}</p>${contact(p)}`,

@@ -72,6 +72,26 @@ dans `verification.yml`.
 
 ## Les images : la règle à ne pas relâcher
 
+Lou a demandé le 15 novembre 2026 de corriger les photographies sans rapport
+avec leur contenu et de retirer les grands pictogrammes de remplacement.
+Une photo doit montrer le lieu ou le sujet annoncé : vérifier son contenu et
+sa provenance, sans se fier seulement à son nom de fichier. Les photos du
+Bouloc ne représentent pas les thermes d’Avène ; une vallée ne représente
+ni un hôtel, ni une bibliothèque, ni une mine.
+
+Lorsqu’une photographie pertinente manque, utiliser une présentation de texte
+soignée (`feature--texte`, `lake-card--texte`, `around-card--texte`) sans
+réserver un grand cadre vide. Ne pas ajouter d’émoji agrandi ou d’illustration
+générique à sa place. Conserver les petites icônes des commandes et les
+repères cartographiques utiles. Les titres et filtres des annuaires ne
+doivent pas dépendre de ces ornements.
+
+Les nouvelles photos des lieux voisins sont servies depuis `images/lieux/`.
+Leurs sources, auteurs, licences et dimensions sont documentés dans
+`docs/sources-photographies.md` ; les crédits figurent sur les pages et dans
+les mentions légales. Les galeries des hébergeurs restent sur leurs sites
+officiels. Toute nouvelle image doit suivre les règles d’optimisation ci-dessous.
+
 Le site pesait **15,5 Mo d'images**, dont **15,6 Mo sur la seule page
 `galerie.html`**. Les visiteurs arrivent en vacances, sur téléphone, avec une
 4G rurale — parfois depuis un gîte sans wifi. Une page qui met une minute à

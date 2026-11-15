@@ -17,12 +17,10 @@
 .carnet-vide h2{font-size:2rem;line-height:1.2;color:var(--foret);margin-bottom:.7rem}
 .carnet-vide ul{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;list-style:none;margin-top:1rem}
 .carnet-vide a{display:inline-block;min-height:44px;padding:.5rem 0;font-weight:600}
-.carnet-bienvenue{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:1.5rem;align-items:center}
-.carnet-illustration{margin:0;text-align:center}
-.carnet-illustration picture{display:block;background:var(--blanc);border-radius:var(--r);overflow:hidden}
-.carnet-illustration img{display:block;width:100%;height:auto}
-.carnet-illustration figcaption{font-size:.72rem;line-height:1.5;color:var(--foret);margin-top:.5rem}
-@media(max-width:700px){.carnet-bienvenue{grid-template-columns:1fr;gap:.75rem}.carnet-illustration{width:min(100%,240px);justify-self:center}}
+.carnet-bienvenue{border:1px solid var(--pierre);background:var(--blanc);padding:1.8rem}
+.carnet-bienvenue>div{max-width:75ch}
+.carnet-bienvenue ul{margin-top:1.3rem;padding-top:.8rem;border-top:1px solid var(--pierre)}
+@media(max-width:700px){.carnet-bienvenue{padding:1.2rem}}
 #carnet-liste{list-style:none;display:grid;gap:1rem;margin:1.3rem 0}
 .carnet-fiche{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.3rem;background:var(--blanc);border:1px solid var(--pierre);border-radius:var(--r)}
 .carnet-fiche>div{min-width:0}
@@ -35,7 +33,7 @@
 #carnet-annulation{margin:1rem 0}
 @media(max-width:600px){.carnet-fiche{align-items:flex-start;flex-direction:column;gap:1rem}.carnet-page{padding-top:1.8rem}.carnet-retour{max-width:calc(100vw - 2rem);bottom:5rem}}
 @media print{
-  .carnet-ajouter,.carnet-retirer,.carnet-retour,.carnet-actions,#carnet-annulation,.carnet-illustration{display:none!important}
+  .carnet-ajouter,.carnet-retirer,.carnet-retour,.carnet-actions,#carnet-annulation{display:none!important}
   .carnet-bienvenue{display:block}
   .page-carnet #nav,.page-carnet footer,.page-carnet #totop,.page-carnet #progress,.page-carnet .skip{display:none!important}
   .carnet-entete{padding:0;background:none;color:var(--foret)}
