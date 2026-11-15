@@ -1,4 +1,5 @@
 import { dateValide, ajouterJours, periodesChoisies, ouvertureConnue } from './agenda-calendrier.js';
+import { installerCalendrier } from './calendrier-ics.js';
 // Les cartes et leurs dates complètes restent lisibles sans JavaScript.
 (() => {
   const form=document.getElementById('agenda-filtres');
@@ -24,7 +25,7 @@ import { dateValide, ajouterJours, periodesChoisies, ouvertureConnue } from './a
     card.querySelector('.ev-body').append(notice);
     const openingNotice=card.querySelector('.ev-ouverture');
     return {card,commune:card.dataset.commune||event?.location?.address?.addressLocality||card.querySelector('.ev-lieu')?.textContent||'Ceilhes-et-Rocozels',
-      activity:card.dataset.activite||card.querySelector('.ev-tag')?.textContent||'Animation',dates,opening,
+      activity:card.dataset.activite||card.querySelector('.ev-tag')?.textContent||'Animation',dates,opening,calendar:precise?installerCalendrier(card,dates):null,
       uncertainEnd:!precise&&Boolean(event?.startDate)&&!event.endDate,notice,openingNotice,originalOpening:openingNotice?.textContent};
   });
   for (const [select,values] of [[commune,data.map(e=>e.commune)],[activity,data.map(e=>e.activity)]]) {
@@ -83,7 +84,7 @@ import { dateValide, ajouterJours, periodesChoisies, ouvertureConnue } from './a
       if(matches)matched++;
       const paged=matches&&limited&&item.card.dataset.agendaSource!=='cenomes'&&++nearby>12;
       item.card.hidden=!matches||paged;item.notice.hidden=!(matches&&!paged&&item.uncertainEnd&&range);if(!item.notice.hidden)uncertain++;
-      if(matches&&!paged){visible++;showDates(item,dates,Boolean(range));}
+      if(matches&&!paged){visible++;showDates(item,dates,Boolean(range));item.calendar?.update(dates);}
       if(item.openingNotice){
         item.openingNotice.textContent=range&&!ouvertureConnue(item.opening,range.from,range.to)&&item.dates.some(p=>p.debut!==p.fin)
           ?'Manifestation en cours : ouverture pendant ces dates à vérifier auprès de l’organisateur.' : item.originalOpening;

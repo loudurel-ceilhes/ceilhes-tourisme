@@ -13,3 +13,43 @@ Les exceptions d’ouverture sont dans `data/agenda-ouvertures.json`, par identi
 Les champs `data-carnet-dates` ne sont produits que pour des occurrences ponctuelles certaines, jamais pour une plage d’exposition. Le module commun `assets/sejour-dates.js` garde les dates facultatives du séjour ; l’agenda écrit ses paramètres `periode=sejour`, `debut` et `fin`. Réinitialiser le filtre conserve la préférence, tandis qu’effacer les dates communes propage l’effacement entre les onglets.
 
 Vérifications : `node --test tests/agenda.test.mjs tests/agenda-calendrier.test.mjs`, puis les parcours Playwright `agenda_details.py`, `agenda_periodes.py` et `partage.py`. Les essais n’envoient aucun formulaire et ne créent aucune réservation.
+
+## Ajouter un rendez-vous à un calendrier
+
+Dans les détails d’une fiche, « Dans mon calendrier » permet de choisir une
+occurrence puis de télécharger un fichier `.ics`, importable dans Apple
+Calendrier, Outlook et Google Agenda. Un lien Google Agenda ouvre également
+un formulaire prérempli, sans créer l’événement à la place du visiteur. Aucun
+compte n’est relié au site, aucun abonnement ni synchronisation n’est créé.
+Le fichier est préparé dans le navigateur, sans requête à un service distant.
+
+Les sources actuelles donnent des dates civiles, sans heures structurées.
+L’export utilise donc `DTSTART;VALUE=DATE` et une fin exclusive au lendemain
+du dernier jour ; il n’invente ni heure ni durée. L’interface et le fichier
+précisent « journée entière, horaire à confirmer » : cela ne signifie pas une
+activité ou une ouverture pendant toute la journée. Ces dates ne sont pas
+converties en instants UTC et restent exactes lors des changements d’heure.
+Le lien Google indique `Europe/Paris` et les mêmes dates civiles.
+
+Une exposition conserve sa période d’origine : le bouton est explicitement
+« Ajouter la période (.ics) ». Un seul événement couvre cette période, sans
+récurrence quotidienne et sans prétendre que le lieu ouvre chaque jour. Un
+filtre de séjour restreint le choix des occurrences ponctuelles, mais ne
+transforme jamais un fragment de période en journée d’ouverture confirmée.
+Les réservations restent des démarches distinctes ; l’export enregistre une
+idée de sortie et ne confirme aucune réservation.
+
+`assets/calendrier-ics.js` produit le format RFC 5545 : identifiant stable par
+fiche et date de début, lieu, lien permanent de la fiche, provenance, fin
+exclusive, échappement des caractères réservés et lignes pliées à 75 octets
+sans couper un caractère UTF-8. Les liens restent activables au clavier et
+les erreurs de téléchargement sont affichées. Sans JavaScript, les dates,
+les détails et les contacts existants restent consultables.
+
+Aucun nouveau générateur n’est nécessaire. Après modification des ressources,
+`node scripts/version-assets.mjs` actualise leurs empreintes dans les pages.
+Tests ciblés : `node --test tests/calendrier-ics.test.mjs tests/agenda.test.mjs
+tests/agenda-calendrier.test.mjs` et `python3 -m unittest discover -s tests -p
+'agenda_ics.py' -v`. Ce parcours télécharge de vrais fichiers locaux, teste le
+clavier, les filtres, une exposition, un échec de préparation et le repli sans
+JavaScript ; il ne contacte aucun calendrier distant.

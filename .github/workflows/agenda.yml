@@ -37,6 +37,7 @@ jobs:
       - name: Récupérer les événements à venir
         run: |
           node scripts/agenda.mjs
+          node scripts/contributions.mjs
           node scripts/carnet-catalogue.mjs
 
       # Un push fait avec GITHUB_TOKEN ne déclenche pas verification.yml.
@@ -48,13 +49,13 @@ jobs:
 
       - name: Publier si l'agenda a changé
         run: |
-          if git diff --quiet -- agenda.html data/agenda-source.json data/carnet-catalogue.json mon-sejour.html recherche.html data/recherche.json; then
+          if git diff --quiet -- agenda.html contribuer.html data/agenda-source.json data/carnet-catalogue.json mon-sejour.html recherche.html data/recherche.json; then
             echo "Aucun changement dans l'agenda — rien à publier."
             exit 0
           fi
           git config user.name "Agenda du village"
           git config user.email "actions@users.noreply.github.com"
-          git add agenda.html data/agenda-source.json data/carnet-catalogue.json mon-sejour.html recherche.html data/recherche.json
+          git add agenda.html contribuer.html data/agenda-source.json data/carnet-catalogue.json mon-sejour.html recherche.html data/recherche.json
           git commit -m "agenda : mise à jour depuis les données ouvertes de Grand Orb
 
           Sources : office de tourisme du Grand Orb, via DATAtourisme

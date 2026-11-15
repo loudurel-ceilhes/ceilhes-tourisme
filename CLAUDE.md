@@ -1,5 +1,12 @@
 # ceilhes-tourisme.fr — guide du dépôt
 
+## Contributions, jeu et calendrier — 15 novembre 2026
+
+- `contribuer.html` prépare un courriel contextualisé vers l’éditeur. Aucun envoi ni téléversement automatique ; crédit et autorisation sont demandés pour une photo. `scripts/contributions.mjs` ajoute les liens des fiches et construit le catalogue des destinations admises. Il doit tourner après les générateurs de contenu/navigation et avant carnet-catalogue/version-assets, y compris dans le workflow agenda. Ne pas saisir un titre de fiche arbitraire depuis l’URL.
+- `jeu-village.html` contient sept énigmes, des indices et un corrigé séparé. Les sources sont dans `docs/sources-jeu-village.md`. Les réponses restent locales, le jeu fonctionne sans JavaScript et l’impression sépare questions et solutions. Il ne constitue pas un itinéraire ni une promesse d’accès aux bâtiments.
+- `assets/calendrier-ics.js` exporte une occurrence de l’agenda, ou une période explicitement choisie, vers un fichier `.ics`. Sans heure structurée confirmée, conserver le rappel de journée entière clairement signalé ; ne pas déduire d’heure du descriptif et ne pas annoncer de réservation. Les dates civiles et la fin exclusive évitent les changements de jour selon le fuseau.
+
+
 Site touristique du village de **Ceilhes-et-Rocozels** (Hérault, 34260) :
 le lac, l'Orb, les randonnées, le patrimoine, les hébergeurs, l'agenda.
 

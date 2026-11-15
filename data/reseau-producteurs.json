@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "maj": "2026-11-14",
+  "maj": "2026-11-15",
   "source": "Répertoire régional de L’Esquirol",
   "nombreAnnuaire": 254,
   "totauxCategoriesSource": {
@@ -714,7 +714,7 @@
     },
     {
       "id": "producteur-58",
-      "nom": "CHEVRES DU MONASTERE DE LA DALMERIE",
+      "nom": "MONASTÈRE SAINT-NICOLAS DE LA DALMERIE — FROMAGERIE",
       "commune": "JONCELS",
       "codePostal": "34650",
       "departement": "34 · Hérault",
@@ -722,13 +722,15 @@
         "Fromages"
       ],
       "nature": "producteur-artisan",
-      "site": null,
-      "sources": [],
-      "maj": "2026-11-14",
+      "site": "https://dalmerie.jimdofree.com/la-fromagerie/",
+      "sources": [
+        "https://dalmerie.jimdofree.com/la-fromagerie/"
+      ],
+      "maj": "2026-11-15",
       "statut": "decouvert",
       "ficheLocale": null,
       "portrait": null,
-      "notesPubliques": "",
+      "notesPubliques": "La fromagerie du monastère a remplacé son activité caprine par des fromages au lait de brebis à partir de 2016. Contacter le monastère pour l’offre et l’accueil actuels.",
       "annuaireId": 58
     },
     {
@@ -798,13 +800,13 @@
         "Autres spécialités"
       ],
       "nature": "producteur-artisan",
-      "site": "https://www.ledomainedhelix.com",
+      "site": null,
       "sources": [],
-      "maj": "2026-11-14",
+      "maj": "2026-11-15",
       "statut": "decouvert",
       "ficheLocale": null,
       "portrait": null,
-      "notesPubliques": "",
+      "notesPubliques": "Site officiel à confirmer.",
       "annuaireId": 248
     },
     {

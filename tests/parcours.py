@@ -117,7 +117,7 @@ class Parcours(unittest.TestCase):
         self.page.keyboard.press('Enter')
         expect(menu.locator('.nav-guides')).to_have_attribute('open', '')
         last_open = menu.locator('a[href]:visible, summary:visible').last
-        expect(last_open).to_have_attribute('href', 'services-essentiels.html')
+        expect(last_open).to_have_attribute('href', 'contribuer.html')
         last_open.focus()
         self.page.keyboard.press('Tab')
         expect(burger).to_be_focused()

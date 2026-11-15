@@ -1,0 +1,67 @@
+.jeu-page{--jeu-largeur:980px}
+.jeu-page .container{max-width:var(--jeu-largeur)}
+.jeu-hero{padding:8.5rem 5vw 3rem;background:var(--brume)}
+.jeu-hero h1{font-size:clamp(2.8rem,7vw,4.8rem);line-height:1.05;max-width:780px;margin:.8rem 0 1.2rem}
+.jeu-hero p{max-width:740px;font-size:1.1rem}
+.jeu-crumb{font-size:.9rem;margin-bottom:1.5rem}
+.jeu-page a{color:var(--foret);text-underline-offset:3px;overflow-wrap:anywhere}
+.jeu-page section{padding:2.7rem 5vw}
+.jeu-page h2{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin-bottom:1rem}
+.jeu-page h3{font-size:1.8rem;line-height:1.2;margin:.3rem 0 .9rem}
+.jeu-page p+p{margin-top:.8rem}
+.jeu-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.3rem 0}
+.jeu-actions a,.jeu-actions button{min-height:44px;padding:.7rem 1rem;border:1px solid var(--foret);border-radius:8px;background:var(--foret);color:var(--blanc);font:inherit;text-align:center;cursor:pointer;text-decoration:none}
+.jeu-actions .secondary{background:var(--blanc);color:var(--foret)}
+.jeu-mode-emploi{border-left:3px solid var(--ocre);padding:.8rem 1.2rem;margin:1.2rem 0;background:var(--blanc)}
+.jeu-etat{padding:1rem 1.2rem;border:1px solid var(--pierre);border-radius:var(--r);background:var(--blanc);margin-bottom:1.5rem}
+.jeu-etat progress{display:block;width:100%;height:.6rem;margin:.6rem 0;accent-color:var(--foret)}
+.jeu-stockage{font-size:.88rem}
+.jeu-carte{padding:1.6rem;margin:1.3rem 0;background:var(--blanc);border:1px solid var(--pierre);border-radius:var(--r);break-inside:avoid}
+.jeu-numero{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--foret)}
+.jeu-avec-photo{display:grid;grid-template-columns:minmax(180px,.8fr) minmax(0,1.2fr);gap:1.6rem;align-items:start}
+.jeu-carte figure{margin:0;min-width:0}
+.jeu-carte picture,.jeu-carte img{display:block;width:100%;height:auto}
+.jeu-carte img{border-radius:10px}
+.jeu-carte figcaption{font-size:.82rem;line-height:1.5;margin-top:.55rem}
+.jeu-document{border-left:3px solid var(--lac);padding:.75rem 1rem;margin:1rem 0;background:var(--brume)}
+.jeu-question{font-weight:600;margin:1rem 0}
+.jeu-carte label{display:block;font-weight:600;margin-top:1rem}
+.jeu-reponse{display:block;width:100%;min-height:90px;margin:.4rem 0 .8rem;padding:.7rem .8rem;border:1px solid var(--foret);border-radius:8px;font:inherit;color:var(--texte);background:var(--blanc);resize:vertical}
+.jeu-indice summary,.jeu-solutions>summary{cursor:pointer;min-height:44px;padding:.6rem 0;color:var(--foret);font-weight:600}
+.jeu-indice p{padding:.3rem 0 .8rem}
+.jeu-frise{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;list-style:none;margin:1rem 0;padding:0}
+.jeu-frise li{padding:.8rem;border:1px solid var(--pierre);border-radius:8px}
+.jeu-frise strong{display:block;font-size:1.2rem;color:var(--foret)}
+.jeu-solutions{border:1px solid var(--foret);border-radius:var(--r);padding:1rem 1.4rem;background:var(--blanc)}
+.jeu-solutions>summary{font-size:1.1rem}
+.jeu-corrige{padding-top:1rem}
+.jeu-corrige ol{padding-left:1.5rem}
+.jeu-corrige li{padding:.7rem 0;break-inside:avoid}
+.jeu-corrige h3{font-size:1.45rem;margin-bottom:.5rem}
+.jeu-source{font-size:.88rem;margin-top:.5rem}
+.jeu-sources ul{padding-left:1.2rem;margin:.7rem 0}
+.jeu-sources li{margin:.6rem 0}
+.jeu-papier,.jeu-impression-titre,.jeu-impression-lien{display:none}
+@media(max-width:650px){.jeu-hero{padding-top:7rem}.jeu-page section{padding:2rem 5vw}.jeu-carte{padding:1.2rem}.jeu-avec-photo{grid-template-columns:1fr;gap:1.1rem}.jeu-avec-photo figure{max-width:360px;margin:auto}.jeu-actions>*{flex:1 1 200px}.jeu-frise{grid-template-columns:1fr}.jeu-solutions{padding:.8rem 1rem}}
+@media print{
+ @page{size:A4;margin:13mm}
+ body,main,.jeu-hero,.jeu-page section,.jeu-carte,.jeu-document,.jeu-solutions{background:white!important;color:black!important}
+ #nav,footer,#progress,#totop,.skip,.carnet-ajouter,.jeu-crumb,.jeu-actions,.jeu-etat,.jeu-indice,.jeu-reponse,.jeu-carte label,.jeu-mode-emploi,.jeu-sources,.jeu-ecran,.jeu-solutions-section{display:none!important}
+ .jeu-hero{padding:0 0 4mm}.jeu-hero h1{font-size:25pt;margin:0 0 3mm}.jeu-hero p{font-size:10pt;line-height:1.4}.jeu-hero .kicker{font-size:8pt}
+ .jeu-page section{padding:0}.jeu-page{font-size:10pt;line-height:1.4}.jeu-page h2{font-size:17pt}.jeu-page h3{font-size:15pt;margin-bottom:2mm}
+ .jeu-carte{padding:4mm;margin:3mm 0;border:1px solid var(--pierre);border-radius:0;break-inside:avoid}
+ .jeu-avec-photo{display:grid;grid-template-columns:48mm minmax(0,1fr);gap:5mm}.jeu-avec-photo figure{max-width:none;margin:0}
+ .jeu-carte img{max-height:62mm;width:auto;max-width:100%;border-radius:0}.jeu-carte figcaption{font-size:7pt;margin-top:2mm}
+ .jeu-carte figcaption a{display:none!important}.jeu-impression-lien{display:block;font-size:8pt!important;margin-top:2mm}
+ .jeu-numero{font-size:8pt}.jeu-question{margin:2mm 0}.jeu-document{padding:2mm 3mm;margin:2mm 0;border-color:black}.jeu-page p+p{margin-top:2mm}
+ .jeu-frise{grid-template-columns:repeat(2,minmax(0,1fr));gap:2mm;margin:2mm 0}.jeu-frise li{padding:2mm}.jeu-frise strong{font-size:11pt}
+ .jeu-papier{display:block;height:12mm;margin-top:2mm;border-bottom:1px solid black;font-size:8pt}
+ .jeu-solutions-section{display:none!important}
+ body[data-jeu-print="solutions"] .jeu-hero,body[data-jeu-print="solutions"] .jeu-questions-section{display:none!important}
+ body[data-jeu-print="solutions"] .jeu-solutions-section{display:block!important}
+ body[data-jeu-print="solutions"] .jeu-solutions>summary,body[data-jeu-print="solutions"] .jeu-solutions-section>div>h2,body[data-jeu-print="solutions"] .jeu-solutions-section>div>p{display:none!important}
+ body[data-jeu-print="solutions"] .jeu-solutions,body[data-jeu-print="solutions"] .jeu-corrige{display:block!important;padding:0;border:0}
+ body[data-jeu-print="solutions"] .jeu-impression-titre{display:block;font-size:24pt;margin-bottom:4mm}
+ .jeu-corrige li{padding:2mm 0}.jeu-corrige h3{font-size:13pt}.jeu-source{font-size:8pt}
+ .jeu-page a{color:black!important;text-decoration:none}
+}

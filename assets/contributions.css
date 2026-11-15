@@ -1,0 +1,24 @@
+.contribution-form{max-width:780px;margin:1.5rem 0}
+.contribution-form fieldset{min-width:0;border:0;padding:0;margin:1.4rem 0}
+.contribution-form legend{font-weight:600;font-size:1.15rem;padding:0;margin-bottom:.7rem}
+.contribution-form label{display:block;font-weight:500;margin:.9rem 0 .3rem}
+.contribution-form input:not([type=radio]):not([type=checkbox]),.contribution-form textarea,.contribution-message{display:block;width:100%;max-width:100%;min-height:46px;padding:.75rem;border:1px solid var(--foret);border-radius:7px;background:var(--blanc);color:var(--texte);font:inherit;box-sizing:border-box}
+.contribution-form textarea{min-height:130px;resize:vertical}
+.contribution-form .contribution-choix{display:flex;gap:.65rem;align-items:flex-start;min-height:44px;padding:.4rem 0;margin:.25rem 0;font-weight:400}
+.contribution-choix input{flex:0 0 auto;width:1.2rem;height:1.2rem;margin-top:.22rem;accent-color:var(--foret)}
+.contribution-aide{font-size:.9rem;color:var(--foret);max-width:780px}
+.contribution-apercu{max-width:780px;border:1px solid var(--pierre);border-radius:var(--r);padding:1.5rem;background:var(--blanc);margin-top:1.5rem}
+.contribution-message{min-height:330px;resize:vertical;line-height:1.5}
+#contribution-statut{max-width:780px;min-height:1.5em;margin:1rem 0;font-weight:500;overflow-wrap:anywhere}
+.contribution-liens{display:flex;flex-wrap:wrap;gap:.2rem 1rem;border-top:1px solid var(--pierre);padding-top:.6rem;margin-top:1rem;font-size:.86rem}
+.contribution-liens a{display:inline-flex;align-items:center;min-height:44px;color:var(--foret);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.contribution-page{padding:1.3rem 5vw;background:var(--brume)}
+.contribution-page>div{max-width:1100px;margin:auto}
+.contribution-page p{margin:0}
+.contribution-page .contribution-liens{border:0;padding:0;margin:.3rem 0 0}
+.monuments .contribution-liens,.asso .contribution-liens{border:0;padding:0;margin-top:.3rem;font-size:.8rem;column-gap:.9rem;flex-direction:row}
+.monuments .contribution-liens a,.asso .contribution-liens a{min-height:44px;font-size:.8rem;font-weight:400;text-decoration:underline}
+.contribution-form [hidden],.contribution-apercu[hidden],#contribution-message-long[hidden]{display:none!important}
+.contribution-form :focus-visible,.contribution-apercu :focus-visible,.contribution-liens a:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+@media(max-width:600px){.contribution-apercu{padding:1rem}.contribution-liens{flex-direction:column;gap:0}.contribution-message{min-height:360px}.contribution-form input,.contribution-form textarea{font-size:16px!important}}
+@media print{.contribution-form,.contribution-liens,.contribution-page,.contribution-apercu .guide-actions{display:none!important}}

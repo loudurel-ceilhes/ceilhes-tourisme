@@ -19,9 +19,11 @@ const guides = [
   ['guide-curistes-avene.html', 'Séjour des curistes'],
   ['circuits-producteurs.html', 'Circuits de producteurs'],
   ['petites-balades.html', 'Petites balades'],
+  ['jeu-village.html', 'Jeu découverte'],
   ['bienvenue.html', 'Bien préparer son arrivée'],
   ['kit-hebergeurs.html', 'Kit pour les hébergeurs'],
   ['services-essentiels.html', 'Services essentiels'],
+  ['contribuer.html', 'Proposer une photo ou une correction'],
 ]
 
 export function navigation(page) {

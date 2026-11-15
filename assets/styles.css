@@ -305,6 +305,8 @@ section{padding:6.5rem 5vw}
   .timeline::before{left:10px}
   .t-item{width:100%;left:0!important;text-align:left!important;padding:1rem 0 2rem 2.6rem}
   .t-item::before{left:3px!important;right:auto!important}
+  .t-item.reveal,.t-item.reveal:nth-child(even){transform:translateY(18px)}
+  .t-item.reveal.visible,.t-item.reveal.visible:nth-child(even){transform:none}
 }
 
 /* alentours */

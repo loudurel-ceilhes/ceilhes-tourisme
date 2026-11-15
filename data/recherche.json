@@ -30,6 +30,13 @@
       "keywords": " Une sortie à préparer autour de deux étapes 1. Avène : miel et fermes des hameaux Miellerie du Mas Valette La Part du Loup Ferme des Monts et des Sources 2. Sylvanès et Camarès : charcuterie et ferme du Rougier La Fermière de Sylvanès Ferme de Saint-Pierre d'Issis 3. Roquefort et le Larzac : choisir son fromage Le Vieux Berger — Maison Combes Maison Carles Les Bergers du Larzac Avant le départ"
     },
     {
+      "title": "Votre regard fait vivre le guide",
+      "category": "Page du guide",
+      "url": "/contribuer.html",
+      "description": "Une adresse à corriger ou une photo du pays à partager ? Préparez un message pour le guide de Ceilhes, puis envoyez-le depuis votre messagerie.",
+      "keywords": " Une correction ou une photo Votre message à relire Vous pouvez aussi écrire directement"
+    },
+    {
       "title": "Le pays, en images",
       "category": "Page du guide",
       "url": "/galerie.html",
@@ -70,6 +77,13 @@
       "url": "/infos-pratiques.html",
       "description": "Préparer sa venue à Ceilhes-et-Rocozels : accès en voiture, train ou car, où manger, préparer un pique-nique, trouver les services et les contacts du village.",
       "keywords": "bus car train gare transports taxi venir accès sans voiture courses manger restaurant Comment venir à Ceilhes ? En voiture En train En car Taxis & transferts 🛏️ Hébergement 📅 Quand venir ? ℹ️ Renseignements Les services du village 🥖 Courses & pain frais ⛽ Carburant 🔌 Voiture électrique 🚲 À vélo 🚒 Secours Où manger à Ceilhes ? Au village et au bord du Bouloc Dans le hameau de Lascours À Cénomes, sur le plateau voisin Les acteurs du village La galerie Bon à savoir"
+    },
+    {
+      "title": "Sept énigmes entre Ceilhes et Rocozels",
+      "category": "Page du guide",
+      "url": "/jeu-village.html",
+      "description": "Un carnet de sept énigmes sur Ceilhes et Rocozels : observer les photos, lire les indices et découvrir le patrimoine. Sur téléphone ou sur papier, avec corrigé séparé.",
+      "keywords": " Votre carnet d’observation Le rendez-vous du clocher Le pont a-t-il une sœur ? Avant le robinet Deux rôles pour une église 1709, un siècle de décalage Le clocher en quatre faces Quatre cartes, huit siècles Le corrigé, à ouvrir après avoir joué Sept énigmes — le corrigé L’horloge du clocher Le reflet dans l’Orb Venir chercher de l’eau Une fonction défensive Le XVIII e siècle Huit baies selon la notice B, D, A, C — puis 61 ans Pour prolonger la découverte"
     },
     {
       "title": "Le kit d’accueil des hébergeurs",
@@ -146,7 +160,7 @@
       "category": "Page du guide",
       "url": "/producteurs-region.html",
       "description": "Découvrez les producteurs, artisans et maisons de la région : spécialités, communes et liens vers leurs sites, autour de l’Aveyron et de la Lozère.",
-      "keywords": " AGRIVIANDE ALAMBIC DU LARZAC ALAVOSTRA AROMATIQUE DU LARZAC - FERME DES HOMS ARTISAN DU FRUIT AU DELICE PAYSAN AVEYRON FOIE GRAS B DEL PUECH BERBEZIE GAEC BERGERS DU LARZAC BISCUITERIE DES CAZES BLANC DAVID APICULTURE BLEU DES CAUSSES LAIT CRU FERMIER BOEUF BIO DU LAGAST BORIE CHARCUTERIE BOUBAL ET FILS GAEC BOUCHERIE GRIALOU BOUSQUET BRASSERIE BEAU SOLEIL BRASSERIE D OLT BRASSERIE DE LA MUZE BRASSERIE DE LOZERE BRASSERIE DE ROCLES BRASSERIE L'ASTROLABE BRASSERIE LA BESTIA BRASSERIE LA CAUSSENARDE BRETON DISTRIBUTION BRINS DE LAIT BUFFA'LAUBENQ CANCE CAVE BONBONNE CAVE DES VIGNERONS DU VALON CELLIER LES VIGNERONS DE CARNAS - LA GRAVETTE CES GARS-LA REGALENT CHARCUTERIE DU VIALA CHEVRERIE TREBOSC CHEVRES DU MONASTERE DE LA DALMERIE CHOCOLATERIE AGNES ET PIERRE DANIEL PEGUES DELICES DU ROUGIER DOMAINE D'HELIX DOMAINE DES CABRIDELLES DOMAINE DES COSTES ROUGE DOMAINE DU CROS DOMAINE DU MIOULA DOMAINE DU VIEUX NOYER DOMAINE LAURENS DOMAINE LE VERDUS DOMAINE MATHA DOMAINE ROLS EARL DE L'EPINE BLANCHE EARL DOMAINE ALAZARD EARL DOURNES ESPINACO EARL FERME DE DILHAC EARL LES MONTAGNETTES EARL MOUNIER ELO'DISTILLE FABRIQUE AVEYRONNAISE FARIBORNE FERME DE BIBIES FERME DE FALGAYROLES FERME DU CAUSSE FERME RESSOUCHE FINESSE DES VERGERS FONTALBAT MAZARS FOURNIER THIBAUT LES JARDINS DU ROUGIER FROMABON FROMAGERIE BENOIT CHAPERT FROMAGERIE DE HYELZAS SAS FROMAGERIE DES CABASSES FROMAGERIE DU GRIFFOUL FROMAGERIE LE VEZOU FROMAGERIE LES MONTS DE MARGERIDE FROMAGERIE MAZARS ALAIN FROMAGERIE RISSOAN FROMAGERS DE LOZERE DUOLOZERE GAEC BELE ET BIO GAEC CAMBON GAEC D OC BRAC GAEC DE BRIOGES GAEC DE BUZAERINGUES GAEC DE COURBIERE GAEC DE FARAL GAEC DE LA BORIE HAUTE GAEC DE LA VALESIE GAEC DE LAGAROUSTE GAEC DE LUEYSSE GAEC DE MONTREDON GAEC DES DEUX SOURCES GAEC DES FRIGOULES GAEC DES GRANDS "
+      "keywords": " AGRIVIANDE ALAMBIC DU LARZAC ALAVOSTRA AROMATIQUE DU LARZAC - FERME DES HOMS ARTISAN DU FRUIT AU DELICE PAYSAN AVEYRON FOIE GRAS B DEL PUECH BERBEZIE GAEC BERGERS DU LARZAC BISCUITERIE DES CAZES BLANC DAVID APICULTURE BLEU DES CAUSSES LAIT CRU FERMIER BOEUF BIO DU LAGAST BORIE CHARCUTERIE BOUBAL ET FILS GAEC BOUCHERIE GRIALOU BOUSQUET BRASSERIE BEAU SOLEIL BRASSERIE D OLT BRASSERIE DE LA MUZE BRASSERIE DE LOZERE BRASSERIE DE ROCLES BRASSERIE L'ASTROLABE BRASSERIE LA BESTIA BRASSERIE LA CAUSSENARDE BRETON DISTRIBUTION BRINS DE LAIT BUFFA'LAUBENQ CANCE CAVE BONBONNE CAVE DES VIGNERONS DU VALON CELLIER LES VIGNERONS DE CARNAS - LA GRAVETTE CES GARS-LA REGALENT CHARCUTERIE DU VIALA CHEVRERIE TREBOSC CHOCOLATERIE AGNES ET PIERRE DANIEL PEGUES DELICES DU ROUGIER DOMAINE D'HELIX DOMAINE DES CABRIDELLES DOMAINE DES COSTES ROUGE DOMAINE DU CROS DOMAINE DU MIOULA DOMAINE DU VIEUX NOYER DOMAINE LAURENS DOMAINE LE VERDUS DOMAINE MATHA DOMAINE ROLS EARL DE L'EPINE BLANCHE EARL DOMAINE ALAZARD EARL DOURNES ESPINACO EARL FERME DE DILHAC EARL LES MONTAGNETTES EARL MOUNIER ELO'DISTILLE FABRIQUE AVEYRONNAISE FARIBORNE FERME DE BIBIES FERME DE FALGAYROLES FERME DU CAUSSE FERME RESSOUCHE FINESSE DES VERGERS FONTALBAT MAZARS FOURNIER THIBAUT LES JARDINS DU ROUGIER FROMABON FROMAGERIE BENOIT CHAPERT FROMAGERIE DE HYELZAS SAS FROMAGERIE DES CABASSES FROMAGERIE DU GRIFFOUL FROMAGERIE LE VEZOU FROMAGERIE LES MONTS DE MARGERIDE FROMAGERIE MAZARS ALAIN FROMAGERIE RISSOAN FROMAGERS DE LOZERE DUOLOZERE GAEC BELE ET BIO GAEC CAMBON GAEC D OC BRAC GAEC DE BRIOGES GAEC DE BUZAERINGUES GAEC DE COURBIERE GAEC DE FARAL GAEC DE LA BORIE HAUTE GAEC DE LA VALESIE GAEC DE LAGAROUSTE GAEC DE LUEYSSE GAEC DE MONTREDON GAEC DES DEUX SOURCES GAEC DES FRIGOULES GAEC DES GRANDS CAUSSES GAEC DES PRADEILLES GAEC DES"
     },
     {
       "title": "Randonnée, VTT & grands sentiers",
@@ -838,6 +852,13 @@
       "title": "Le Village des Sources",
       "category": "Hébergement",
       "url": "/hebergeurs.html#camping-sources",
+      "description": "",
+      "keywords": ""
+    },
+    {
+      "title": "Sept énigmes entre Ceilhes et Rocozels",
+      "category": "Guide",
+      "url": "/jeu-village.html",
       "description": "",
       "keywords": ""
     },

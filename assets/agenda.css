@@ -38,3 +38,13 @@
 @media(max-width:500px){.agenda-dates{grid-template-columns:1fr}}
 @media print{.ev-autres-dates>ul{display:block!important}.agenda-filtres{display:none}}
 .agenda-acces a{display:inline-flex;min-height:44px;align-items:center;margin-bottom:1rem;color:var(--foret);font-weight:600;text-underline-offset:.2em}
+
+.ev-calendrier{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--pierre)}
+.ev-calendrier h4{margin:0 0 .6rem;color:var(--foret)}
+.ev-calendrier label{display:block;font-weight:600;color:var(--foret);margin-bottom:.35rem}
+.ev-calendrier select{display:block;width:100%;max-width:100%;min-width:0;min-height:48px;padding:.6rem;font:inherit;color:var(--foret);background:var(--blanc);border:1px solid var(--foret);border-radius:.4rem}
+.ev-calendrier p{margin-top:.5rem;font-size:.9rem;overflow-wrap:anywhere}
+.ev-calendrier .ev-calendrier-formats{font-size:.8rem}
+.ev-calendrier [role=status]:empty{display:none}
+.ev-calendrier a:focus-visible,.ev-calendrier select:focus-visible{outline:3px solid var(--foret);outline-offset:3px}
+@media print{.ev-calendrier{display:none}}
