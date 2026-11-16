@@ -1,5 +1,9 @@
 # ceilhes-tourisme.fr — guide du dépôt
 
+## Projet de L’Esquirol — 16 novembre 2026
+
+La page de référence `https://esquirols.fr/notre-projet.html` présente la démarche des commerces et leur vision du local. Deux liens contextualisés la rendent accessible depuis la présentation de L’Esquirol dans `terroir.html` et sous « Nature du site » dans `mentions-legales.html`, hors des blocs générés. Le guide conserve son caractère indépendant et non officiel ; ce raccordement ne qualifie aucun acteur de fournisseur ou de partenaire. Le texte du projet reste sur esquirols.fr, sans duplication dans les annuaires.
+
 ## Les Éleveurs du Rougier — 15 novembre 2026
 
 La fiche régionale conserve `producteur-231` et renvoie vers la nouvelle fiche locale `terroir.html#les-eleveurs-du-rougier`. Lou a confirmé les trois fromages disponibles en magasin ; le statut reçu exprime cette relation, sans quantité ni stock permanent. Les produits sont de brebis, le lait de la Tomme du Rougier est cru et celui du Fondant et des Pâturages pasteurisé. Les noms de produits enrichissent les recherches locales, régionales et générales, ainsi que le carnet. Les liens commerciaux ciblent les trois fiches Odoo existantes, avec les paramètres de provenance communs.
