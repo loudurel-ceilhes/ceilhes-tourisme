@@ -195,6 +195,9 @@ section{padding:6.5rem 5vw}
 .photo-credit a{color:inherit;text-underline-offset:.2em}
 .photo-fig.reveal img{transform:scale(1.045);transition:transform 1.4s var(--ease)}
 .photo-fig.reveal.visible img{transform:scale(1)}
+.mine-photo{margin:0;min-width:0}
+.mine-photo figcaption{display:block;opacity:1;color:var(--foret)}
+.mine-photo .photo-credit{display:block;margin-top:.3rem;font-size:.75rem;overflow-wrap:anywhere}
 .photo-duo{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:1100px;margin:2.6rem auto}
 .photo-duo figure{margin:0}
 .photo-duo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;border-radius:var(--r);box-shadow:var(--ombre);display:block;transition:transform .6s var(--ease)}
@@ -484,8 +487,8 @@ a.dir-card:hover{transform:translateY(-5px);box-shadow:var(--ombre-h)}
 .feature .fimg img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:2;transition:transform .8s var(--ease)}
 .feature .fimg:hover img{transform:scale(1.045)}
 .feature .fimg:not(:has(img)){display:none}
-.feature--texte,.feature:not(:has(.fimg img)){grid-template-columns:minmax(0,1fr);max-width:780px;gap:0}
-.feature--texte .ftxt,.feature:not(:has(.fimg img)) .ftxt{order:0}
+.feature--texte,.feature:not(:has(.fimg img,.mine-photo img)){grid-template-columns:minmax(0,1fr);max-width:780px;gap:0}
+.feature--texte .ftxt,.feature:not(:has(.fimg img,.mine-photo img)) .ftxt{order:0}
 .feature h3{font-size:1.95rem;color:var(--foret-fonce);margin-bottom:.6rem}
 .feature p{font-weight:300;margin-bottom:.9rem}
 .feature.rev .ftxt{order:2}
