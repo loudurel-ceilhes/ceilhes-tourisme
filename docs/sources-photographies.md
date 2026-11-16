@@ -36,6 +36,12 @@ Sur chaque carte ou figure, conserver un crédit visible avec **l’auteur, un l
 
 Le village d’Avène ne représente pas les bâtiments de la station thermale. Sa légende doit rester « Le village d’Avène au bord de l’Orb ». La photo du temple de Lerab Ling montre le bâtiment ; elle remplace l’ancienne photo nº 2, qui montrait une statue dans le parc. La photo de Celles montre le lac du Salagou et ses rives dans une vue ouverte. Elle remplace la vue ancienne dominée par un agave au premier plan, peu lisible en vignette.
 
+## Photographie de la mine de Cénomes
+
+La vue `images/cenomes/visite-galerie.jpg` montre des visiteurs casqués dans une galerie de la mine, devant une ouverture maçonnée. Elle correspond à la deuxième des trois photos dont Lou a transmis l’autorisation le 15 novembre 2026. Crédit exact : **© AAlliès_Mine de Cénomes_2024**.
+
+Elle illustre `alentours.html#mine-cenomes`, avec un crédit visible également rappelé dans les mentions légales. Les variantes WebP 640, 1000 et 1600 px conservent le cadrage d’origine. La source officielle, les dimensions et la portée de l’autorisation sont documentées dans [images/cenomes/README.md](../images/cenomes/README.md). Aucune licence Creative Commons n’est présumée pour cette image.
+
 ## Photographies locales déjà disponibles
 
 Leur autorisation d’utilisation et leurs auteurs sont déjà documentés dans `mentions-legales.html` et les légendes de `galerie.html` :
