@@ -107,7 +107,10 @@ Les nouvelles photos des lieux voisins sont servies depuis `images/lieux/`.
 Leurs sources, auteurs, licences et dimensions sont documentés dans
 `docs/sources-photographies.md` ; les crédits figurent sur les pages et dans
 les mentions légales. Les galeries des hébergeurs restent sur leurs sites
-officiels. Toute nouvelle image doit suivre les règles d’optimisation ci-dessous.
+officiels, sauf autorisation explicite documentée. Xavier a autorisé le
+17 novembre 2026 les photos des Gîtes des Libellules : sélection, sources et
+attribution dans `images/libellules/README.md`. Toute nouvelle image doit
+suivre les règles d’optimisation ci-dessous.
 
 Le site pesait **15,5 Mo d'images**, dont **15,6 Mo sur la seule page
 `galerie.html`**. Les visiteurs arrivent en vacances, sur téléphone, avec une
@@ -286,7 +289,8 @@ acceptés à la relecture. Les tests `tests/carnet.py` couvrent ces cas.
 
 Les coordonnées des hébergements et commerces sont documentées dans
 `docs/sources-adresses.md`. Les photos restent sur les galeries officielles,
-conformément au choix de Lou ; aucun droit de copie n'est supposé.
+sauf accord explicite comme celui reçu pour les Gîtes des Libellules le
+17 novembre 2026 ; aucun droit de copie n'est supposé pour les autres sites.
 
 ## Le gardien des liens
 

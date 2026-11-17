@@ -32,7 +32,7 @@ Les sources téléchargées sont des versions Commons dimensionnées pour cet us
 | `salagou-celles` | alentours.html et infos-pratiques.html : carte du Salagou |
 | `lodeve-cathedrale` | alentours.html : carte de Lodève |
 
-Sur chaque carte ou figure, conserver un crédit visible avec **l’auteur, un lien vers le fichier source et la licence**. Exemple : « Photo : Yacov Rosenblum · CC BY-SA 4.0 ». Le lien sur le nom peut ouvrir la fiche Commons et le lien sur la licence son texte. Pour un fichier CC0 ou du domaine public, l’attribution est néanmoins conservée comme provenance. Les noms de fichiers seuls ou la formule « Photo Wikimedia Commons » ne remplacent pas ces renseignements.
+Sur chaque carte ou figure utilisant une photo issue de Commons, conserver un crédit visible avec **l’auteur, un lien vers le fichier source et la licence**. Exemple : « Photo : Yacov Rosenblum · CC BY-SA 4.0 ». Le lien sur le nom peut ouvrir la fiche Commons et le lien sur la licence son texte. Pour un fichier CC0 ou du domaine public, l’attribution est néanmoins conservée comme provenance. Les noms de fichiers seuls ou la formule « Photo Wikimedia Commons » ne remplacent pas ces renseignements.
 
 Le village d’Avène ne représente pas les bâtiments de la station thermale. Sa légende doit rester « Le village d’Avène au bord de l’Orb ». La photo du temple de Lerab Ling montre le bâtiment ; elle remplace l’ancienne photo nº 2, qui montrait une statue dans le parc. La photo de Celles montre le lac du Salagou et ses rives dans une vue ouverte. Elle remplace la vue ancienne dominée par un agave au premier plan, peu lisible en vignette.
 
@@ -41,6 +41,19 @@ Le village d’Avène ne représente pas les bâtiments de la station thermale. 
 La vue `images/cenomes/visite-galerie.jpg` montre des visiteurs casqués dans une galerie de la mine, devant une ouverture maçonnée. Elle correspond à la deuxième des trois photos dont Lou a transmis l’autorisation le 15 novembre 2026. Crédit exact : **© AAlliès_Mine de Cénomes_2024**.
 
 Elle illustre `alentours.html#mine-cenomes`, avec un crédit visible également rappelé dans les mentions légales. Les variantes WebP 640, 1000 et 1600 px conservent le cadrage d’origine. La source officielle, les dimensions et la portée de l’autorisation sont documentées dans [images/cenomes/README.md](../images/cenomes/README.md). Aucune licence Creative Commons n’est présumée pour cette image.
+
+## Photographies des Gîtes des Libellules
+
+Le 17 novembre 2026, Lou a transmis l’autorisation de Xavier de télécharger
+les photos de son site pour illustrer la fiche. Deux vues ont été retenues :
+`images/libellules/libellules-passerelle.jpg` montre l’extérieur du gîte des
+Libellules et `images/libellules/demoiselles-cuisine.jpg` la pièce à vivre du
+gîte des Demoiselles. Conserver cette distinction dans les légendes.
+
+Attribution : **Photos : Gîtes des Libellules · reproduites avec autorisation**,
+avec un lien vers le site officiel. Aucun auteur individuel ni licence libre
+n’est présumé. Les sources, empreintes, dimensions et exports sans recadrage
+sont détaillés dans [images/libellules/README.md](../images/libellules/README.md).
 
 ## Photographies locales déjà disponibles
 
@@ -55,7 +68,7 @@ Leur autorisation d’utilisation et leurs auteurs sont déjà documentés dans 
 
 - `lac-bouloc.jpg` ne doit pas illustrer la station thermale d’Avène sous une légende prétendant y avoir été prise.
 - `vallee-panorama.jpg` ne montre ni l’hôtel-restaurant d’Avène ni la mine de Cénomes. Sans photo exacte documentée, conserver une présentation sans image et les liens utiles.
-- Ne pas copier les photos des hébergeurs ou commerces : les liens vers leurs galeries officielles respectent le choix documenté de Lou dans `docs/sources-adresses.md`.
+- Ne pas copier les photos des hébergeurs ou commerces sans autorisation explicite documentée. L’accord reçu pour les Gîtes des Libellules constitue une exception ; les liens vers les galeries officielles restent conservés. Voir `docs/sources-adresses.md`.
 - Ne pas remplacer une photo manquante par un grand emoji, un cadre de couleur vide ou une image générique prétendant représenter le lieu.
 
 ## Intégration et entretien

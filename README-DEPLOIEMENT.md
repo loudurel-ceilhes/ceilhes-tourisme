@@ -57,7 +57,10 @@ BROWSER_EXECUTABLE=/usr/bin/chromium python3 -m unittest discover -s tests -p '*
 Les fiches d'hébergements et de restauration indiquent leur source et la
 date de consultation. Les références détaillées et les points restant à
 confirmer sont dans `docs/sources-adresses.md`. Les photos sont accessibles
-par les galeries officielles des établissements.
+par les galeries officielles des établissements. Deux photos des Gîtes des
+Libellules sont aussi hébergées localement avec l’autorisation de Xavier
+transmise le 17 novembre 2026 ; leur provenance et leur attribution figurent
+dans `images/libellules/README.md`.
 
 Le carnet `mon-sejour.html` conserve les choix dans le navigateur du
 visiteur, sans serveur ni compte. Son bouton d'impression permet de garder
