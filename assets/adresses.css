@@ -1,4 +1,9 @@
 /* Des repères comparables et des contacts directs, lisibles sans script. */
+.subhero.hebergeurs-hero{min-height:0;padding:8.5rem 5vw 2.5rem}
+.hebergeurs-hero .line{margin:.8rem auto 1rem}
+.hebergeurs-intro{max-width:850px;margin:0 auto;padding:1.5rem 5vw .75rem;text-align:center;font-size:.95rem}
+.page-reperes .hebergement-repere-vedette{background:var(--foret);color:var(--blanc);font-weight:600}
+.page-reperes .hebergement-repere-vedette:hover{background:var(--foret-fonce)}
 .hebergement-section{padding:1rem 5vw 2rem}
 .hebergement-fiche{background:var(--blanc);border:1px solid var(--pierre);border-radius:var(--r);padding:2rem;max-width:960px;margin:0 auto}
 .hebergement-entete{max-width:75ch}
@@ -24,14 +29,60 @@
 .adresses-attente a{display:inline-flex;align-items:center;min-height:44px;color:var(--foret);text-underline-offset:3px}
 .hebergement-camping .adresse-liens{display:block}
 .hebergement-camping .adresse-liens a{display:inline-flex;margin:.25rem .4rem .25rem 0}
+.hebergement-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.5rem;align-items:start}
+.hebergement-photos figure{margin:0;min-width:0}
+.hebergement-photos picture,.hebergement-photos img{display:block;width:100%}
+.hebergement-photos img{height:auto;border-radius:var(--r)}
+.hebergement-photos figcaption{font-size:.85rem;line-height:1.5;margin-top:.65rem}
+.hebergement-photos figcaption strong{display:block;color:var(--foret)}
+.hebergement-photos-credit{font-size:.78rem;line-height:1.6;color:var(--foret);margin-top:.85rem}
+.hebergement-photos-credit a{color:inherit;text-underline-offset:3px}
+.hebergement-fiche--vedette{max-width:1120px;border-top:4px solid var(--ocre);box-shadow:var(--ombre)}
+.hebergement-vedette-entete{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:2rem;align-items:center}
+.hebergement-badge{display:inline-block;background:var(--pierre);color:var(--foret-fonce);border-radius:2rem;padding:.25rem .85rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem}
+.hebergement-fiche--vedette .hebergement-entete h2{font-size:clamp(2.2rem,4.5vw,3.3rem);margin:.4rem 0 .8rem}
+.hebergement-reserver{display:flex;flex-direction:column;align-items:center;gap:.5rem;text-align:center}
+.hebergement-reserver .btn{width:100%;padding:.9rem 1rem;font-size:.9rem}
+.hebergement-appeler{display:block;padding:.5rem;min-height:44px;color:var(--foret);font-weight:600;text-underline-offset:4px}
+.hebergement-appeler span{font-size:.95rem;font-weight:400}
+.hebergement-reserver p{font-size:.78rem;color:var(--foret)}
+.hebergement-choix{gap:1.5rem;margin-top:2rem;align-items:stretch}
+.hebergement-gite{display:flex;flex-direction:column;min-width:0;background:var(--sable);border:1px solid var(--pierre);border-radius:var(--r);padding-bottom:1rem}
+.hebergement-gite img{border-radius:var(--r) var(--r) 0 0}
+.hebergement-gite figcaption{margin:1rem 1.25rem 0}
+.hebergement-gite h3{font-size:1.9rem;line-height:1.15;color:var(--foret-fonce);margin-bottom:.4rem}
+.hebergement-capacite{margin:.8rem 1.25rem .4rem;font-weight:600;color:var(--foret);font-size:.95rem}
+.hebergement-capacite span{margin:0 .25rem}
+.hebergement-equipements{margin:0 1.25rem 1rem;padding-left:1.1rem;font-size:.9rem}
+.hebergement-galerie{display:flex;align-items:center;min-height:44px;margin:auto 1.25rem 0;color:var(--foret);font-size:.9rem;font-weight:600;text-underline-offset:4px}
+.hebergement-preparer{margin-top:1.5rem;padding:1.25rem 1.5rem .25rem;background:var(--brume);border-radius:var(--r)}
+.hebergement-preparer h3{font-size:1.7rem;line-height:1.2;color:var(--foret-fonce)}
+.hebergement-preparer .adresse-faits{margin:.75rem 0}
+.hebergement-preparer .adresse-faits>div{border-color:var(--foret)}
+@media(max-width:850px){
+  .hebergement-vedette-entete{grid-template-columns:1fr;gap:1rem}
+  .hebergement-reserver{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;gap:.6rem 1.2rem;text-align:left}
+  .hebergement-reserver .btn{width:auto}
+  .hebergement-appeler{padding:.25rem 0}
+  .hebergement-reserver p{flex-basis:100%}
+}
 @media(max-width:640px){
+  .subhero.hebergeurs-hero{padding:6.5rem 5vw 2rem}
   .hebergement-fiche{padding:1.2rem}
   .adresse-faits{grid-template-columns:1fr}
+  .hebergement-photos{grid-template-columns:1fr;gap:1.25rem}
   .adresse-liens{gap:.5rem}
   .adresse-liens a{font-size:.9rem;padding:.6rem .8rem}
+  .hebergement-preparer{padding:1rem 1rem .25rem}
 }
 @media print{
+  .hebergement-photos,.hebergement-photos-credit{display:none}
   .hebergement-section{padding:.5rem 0}
   .hebergement-fiche{break-inside:avoid;border-color:var(--pierre);padding:1rem}
+  .hebergement-fiche--vedette{box-shadow:none}
+  .hebergement-choix{display:grid}
+  .hebergement-gite picture{display:none}
+  .hebergement-vedette-entete{grid-template-columns:1fr}
+  .hebergement-preparer{background:transparent}
   .adresse-liens a{border:0;padding:.2rem 0}
 }

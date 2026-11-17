@@ -29,8 +29,12 @@ téléphone ni une garantie des ouvertures ou disponibilités.
 - **Surfaces des Libellules** : la page Contact annonce 100 m², la page
   de visite 110 m². Ces surfaces contradictoires ne sont pas reprises.
 - **Photos** : les boutons ouvrent les pages et galeries des établissements.
-  Aucune photo n'a été copiée depuis ces sites. Cette présentation correspond
-  au choix explicite de Lou d'utiliser les galeries officielles.
+  Lou a transmis le 17 novembre 2026 l’autorisation de Xavier de choisir et
+  télécharger les photos du site des Gîtes des Libellules. Deux vues sourcées
+  illustrent donc cette fiche localement, sans supprimer les liens vers les
+  galeries complètes ; détails dans `images/libellules/README.md`.
+  Pour les autres établissements, les galeries officielles restent la règle
+  tant qu’aucune autorisation de reproduction n’est documentée.
 
 ## Entretien
 
