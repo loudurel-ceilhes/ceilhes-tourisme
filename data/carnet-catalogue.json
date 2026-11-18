@@ -875,6 +875,12 @@
       "url": "/agenda.html#ev-d4b1a089c4a97654"
     },
     {
+      "id": "ev-d527a6ec4b78f049",
+      "title": "Marché de noël à l’atelier muska",
+      "category": "Événement",
+      "url": "/agenda.html#ev-d527a6ec4b78f049"
+    },
+    {
       "id": "ev-d9dffd49b8add8e0",
       "title": "Chasse au tresor",
       "category": "Événement",
@@ -976,6 +982,15 @@
         "2027-06-16",
         "2027-06-23",
         "2027-06-30"
+      ]
+    },
+    {
+      "id": "ev-eeea0189bbb720e3",
+      "title": "Concert de noël au profit de france choroïderemie",
+      "category": "Événement",
+      "url": "/agenda.html#ev-eeea0189bbb720e3",
+      "dates": [
+        "2026-12-13"
       ]
     },
     {
