@@ -2,7 +2,7 @@
   "version": 1,
   "datatourisme": {
     "source": "https://tabular-api.data.gouv.fr/api/resources/2c6023f2-ffce-4c1a-9728-bdc020e463b5/data/",
-    "receivedOn": "2026-11-19",
+    "receivedOn": "2026-11-20",
     "events": [
       {
         "Nom_du_POI": "COURS DE GYMNASTIQUE",
@@ -840,7 +840,7 @@
   },
   "cenomes": {
     "source": "https://esquirols.fr/assets/data/ardoise-cenomes.json",
-    "receivedOn": "2026-11-19",
+    "receivedOn": "2026-11-20",
     "sha256": "0be77604e470a1703de7185a0fe8861f1bf8ba699b8078780c35029b4a97f241",
     "data": {
       "version": 1,
