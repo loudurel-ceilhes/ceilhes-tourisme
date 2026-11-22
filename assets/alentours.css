@@ -1,8 +1,10 @@
 /* La destination Sylvanès et ses photographies, sur la page Alentours. */
 .sylvanes-card h3 a,.sylvanes-card-link{color:inherit;text-underline-offset:4px}
 .sylvanes-card-link{display:inline-block;min-height:44px;padding:.6rem 0;font-weight:500}
+.sylvanes-card{flex-direction:column;align-items:stretch}
+.sylvanes-card .bg{position:relative;inset:auto;height:220px;flex:none}
 .sylvanes-card .bg img{animation:none}
-.sylvanes-card .info{background:linear-gradient(0deg,var(--foret-fonce),color-mix(in srgb,var(--foret-fonce) 72%,transparent))}
+.sylvanes-card .info{background:var(--foret-fonce);flex:1}
 .sylvanes-card .dist{letter-spacing:1px}
 .sylvanes-section{background:var(--blanc)}
 .sylvanes-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem 3rem;align-items:start}
