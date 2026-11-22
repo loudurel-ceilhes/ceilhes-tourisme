@@ -1,5 +1,34 @@
 # Sources des photographies et choix des visuels
 
+## Abbaye de Sylvanès — 22 novembre 2026
+
+Stéphanie Pezé, responsable communication de l’abbaye, a transmis à Lou Durel
+des photographies expressément destinées à illustrer les pages de Ceilhes
+Tourisme. Son message et les photographies ont été communiqués dans la
+conversation du 22 novembre 2026. Lou a confirmé le crédit « Abbaye de
+Sylvanès » pour les deux vues de visiteurs au casque. L’autorisation porte
+sur cette illustration ; aucune licence de libre réutilisation n’est déduite.
+
+Les deux fichiers ci-dessous ont été retrouvés sur le site officiel et
+comparés visuellement avec les envois. Ils sont hébergés localement. Seuls
+le redimensionnement et la compression ont été appliqués.
+
+| Fichier local | Sujet et crédit | Fichier officiel utilisé | Dimensions publiées |
+| --- | --- | --- | --- |
+| `images/lieux/sylvanes-accueil.jpg` | Nouvel accueil, bois, pierre et verre — © Abbaye de Sylvanès | [BlogNouveaubatiement.jpg](https://sylvanes.com/wp-content/uploads/2026/09/BlogNouveaubatiement.jpg) | JPEG et WebP 500 × 500 ; recadrage carré officiel de la photographie transmise, sans agrandissement du fichier |
+| `images/lieux/sylvanes-visite-sonore.jpg` | Visiteuse au casque devant l’orgue — © Abbaye de Sylvanès | [Visite_Abbaye5-scaled.jpg](https://sylvanes.com/wp-content/uploads/2026/09/Visite_Abbaye5-scaled.jpg) | Original 1947 × 2560 ; JPEG 1217 × 1600 ; WebP de largeur 640, 1000 et 1217 pixels |
+
+Source de contexte : [Le nouvel espace d’accueil inauguré](https://sylvanes.com/2026/09/21/le-nouvel-espace-daccueil-inaugure/).
+Les crédits sont visibles sur `alentours.html` et dans les mentions légales.
+Les autres auteurs cités dans le courriel ne sont pas attribués à ces vues.
+
+Sources des informations de visite : message de l’abbaye transmis par Lou,
+[parcours sonore depuis le 1er juillet 2026](https://sylvanes.com/2026/06/24/un-nouveau-parcours-de-visite-sonore-et-immersive-des-ce-1er-juillet/)
+et [page Visiter](https://sylvanes.com/visiter/#toggle-id-1), consultées le
+22 novembre 2026. Les horaires et tarifs ne sont pas recopiés : le guide
+renvoie vers leur mise à jour officielle. Sylvanès est présenté parmi les
+destinations patrimoniales et culturelles, hors de la rubrique spirituelle.
+
 Revue du **15 novembre 2026**. Les sujets, les fichiers Wikimedia Commons et leurs licences ont été vérifiés sur les fiches sources ; les huit photographies ont également été inspectées visuellement. Les fichiers sont servis localement depuis `images/lieux/`. Aucun visuel de lieu n’a été généré par IA.
 
 ## Photographies ajoutées
