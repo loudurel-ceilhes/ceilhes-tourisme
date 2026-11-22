@@ -2,6 +2,13 @@
   "version": 1,
   "items": [
     {
+      "id": "abbaye-sylvanes",
+      "title": "Abbaye de Sylvanès : patrimoine, visite sonore et musique",
+      "category": "Guide",
+      "url": "/alentours.html#sylvanes",
+      "keywords": "monument historique centre culturel concert festival musique visite sonore immersive casque neuf étapes"
+    },
+    {
       "id": "adresse-bouloc",
       "title": "Le snack-buvette du Bouloc",
       "category": "Adresse",

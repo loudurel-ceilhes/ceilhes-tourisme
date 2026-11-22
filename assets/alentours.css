@@ -1,0 +1,25 @@
+/* La destination Sylvanès et ses photographies, sur la page Alentours. */
+.sylvanes-card h3 a,.sylvanes-card-link{color:inherit;text-underline-offset:4px}
+.sylvanes-card-link{display:inline-block;min-height:44px;padding:.6rem 0;font-weight:500}
+.sylvanes-card .bg img{animation:none}
+.sylvanes-card .info{background:linear-gradient(0deg,var(--foret-fonce),color-mix(in srgb,var(--foret-fonce) 72%,transparent))}
+.sylvanes-card .dist{letter-spacing:1px}
+.sylvanes-section{background:var(--blanc)}
+.sylvanes-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem 3rem;align-items:start}
+.sylvanes-copy{min-width:0}
+.sylvanes-copy h3,.sylvanes-pratique h3{font-size:1.65rem;line-height:1.2;margin:1.5rem 0 .7rem;color:var(--foret)}
+.sylvanes-copy p+p{margin-top:1rem}
+.sylvanes-copy a,.sylvanes-pratique a:not(.btn){color:var(--foret);font-weight:500;text-underline-offset:4px}
+.sylvanes-photo{margin:0;min-width:0}
+.sylvanes-photo img{display:block;width:100%;height:auto;border-radius:var(--r)}
+.sylvanes-photo figcaption{margin-top:.65rem;font-size:.85rem;line-height:1.6;color:var(--texte)}
+.sylvanes-photo .photo-credit{display:block;font-size:.78rem}
+.sylvanes-pratique{grid-column:1/-1;background:var(--sable);padding:1.6rem;border-radius:var(--r)}
+.sylvanes-pratique h3{margin-top:0}
+.sylvanes-actions{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;margin-top:1rem}
+.sylvanes-actions a{max-width:100%;white-space:normal}
+.sylvanes-actions a:not(.btn){display:inline-flex;align-items:center;min-height:44px}
+.sylvanes-story>.carnet-ajouter,.sylvanes-story>.contribution-liens{grid-column:1/-1}
+.sylvanes-story>.carnet-ajouter{justify-self:start;margin-top:0}
+@media(max-width:860px){.sylvanes-story{grid-template-columns:minmax(0,1fr);gap:1.5rem}.sylvanes-pratique{padding:1.25rem}}
+@media(max-width:340px){.around-grid{grid-template-columns:minmax(0,1fr)}}
