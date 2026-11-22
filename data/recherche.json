@@ -6,7 +6,7 @@
       "category": "Page du guide",
       "url": "/agenda.html",
       "description": "Concerts, marchés, fêtes et animations à Ceilhes-et-Rocozels, Avène, Lunas, Lodève, Sylvanès et Camarès. Mis à jour chaque jour.",
-      "keywords": " À Ceilhes-et-Rocozels Aux alentours \" flor’Avène \" Animations a la médiathèque Anouck manzoni, anagogie - musée de lodève Atelier vannerie sauvage Cours de couture Marché traditionnel de lodève Rencontre avec l’art visionnaire & les peuples premiers Répare & vélo Rétrospective gaston arnal Salon des artisans créateurs de lodève Séances au cinéma lutéva Still life with pomegranates Visite guidée de l’exposition \"météorites entre ciel et terre\" Balade guidée à vélo : lodève-manger comme on sème Brocante - vide-grenier de lodève Marché de Noël à Camarès Projection de film \" moi, daniel blake \" Cours de gymnastique Soirée karaoké Atelier stop motion Club de lecture Concert dessiné Voyages sonores, gongs, bols chantants, didgeridoos Ecran mon amour De l’écriture cinématographique à l’écriture littéraire « faites un voeu » Broderie punk Fabrication de jeux optiques Kamishibaï d’ombre Montée au clocher de la cathédrale saint-fulcran Movie movie Rocc alter : sur le fil des possibles Rocc alter : sur le fil des possibles Salon du livre des auteurs locaux Visite guidée par matthieu gounelle Marché de noël Stages cyanotype Après midi jeux de société Sophrologie Marché de noël à l’atelier muska Repas de la sainte barbe Stage de poterie Stage de sculpture et modelage d’argile à lodève avec solveig lafitte Les dimanches du patrimoine : l’hôtel de fleury : toute une histoire ! Marché de noël Rando telethon avec taill aventure Visite guidée 1er dimanche du mois \"météorites entre ciel et terre\" Journée mexicaine : conférence Journée mexicaine : déjeuner et loto Cercle de lecture Concert de noël au profit de france choroïderemie Gratiferia Projection du film \" naïs de marcel pagnol \" Chasse au tresor Visite « flash » Visite guidée famille de l’exposition «météorites entre ciel et terre »"
+      "keywords": " À Ceilhes-et-Rocozels Aux alentours \" flor’Avène \" Animations a la médiathèque Anouck manzoni, anagogie - musée de lodève Balade guidée à vélo : lodève-manger comme on sème Brocante - vide-grenier de lodève Cours de couture Marché de Noël à Camarès Projection de film \" moi, daniel blake \" Rencontre avec l’art visionnaire & les peuples premiers Répare & vélo Rétrospective gaston arnal Salon des artisans créateurs de lodève Séances au cinéma lutéva Still life with pomegranates Cours de gymnastique Soirée karaoké Atelier stop motion Club de lecture Concert dessiné Projection : se souvenir des tournesols | sandrine mercier & juan gordillo hidalgo Visite guidée de l’exposition \"météorites entre ciel et terre\" Voyages sonores, gongs, bols chantants, didgeridoos Ciné-quiz à l’oreille Ecran mon amour Projection : instinct de famille | maurice hermet Projection : nos mémoires englouties | yohann benedetti De l’écriture cinématographique à l’écriture littéraire Performance gourmande : la giornata autour d’un minestrone Projection : des femmes comme les autres | dominique cabrera « faites un voeu » Broderie punk Cine gouter : petite casbah | antoine colomb Fabrication de jeux optiques Kamishibaï d’ombre Marché traditionnel de lodève Montée au clocher de la cathédrale saint-fulcran Movie movie Projection : les musiciens | grégory magne Projection : une journée particulière | ettore scola Rocc alter : sur le fil des possibles Salon du livre des auteurs locaux Visite guidée par matthieu gounelle Marché de noël Stages cyanotype Après midi jeux de société Sophrologie Marché de noël à l’atelier muska Repas de la sainte barbe Stage \" jeux de jambes\" Stage de poterie Stage de sculpture et modelage d’argile à lodève avec solveig lafitte Les dimanches du patrimoine : l’hôtel de fleury : tou"
     },
     {
       "title": "Aux alentours",
@@ -303,6 +303,13 @@
       "keywords": ""
     },
     {
+      "title": "Ciné-quiz à l’oreille",
+      "category": "Événement",
+      "url": "/agenda.html#ev-00e98ff075f8dd55",
+      "description": "Dates annoncées : 26 novembre 2026.",
+      "keywords": ""
+    },
+    {
       "title": "Soirée raclette",
       "category": "Événement",
       "url": "/agenda.html#ev-029b39706e43b8a0",
@@ -321,6 +328,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-0c522b889a9a6547",
       "description": "Dates annoncées : 22 décembre 2026 · 23 décembre 2026 · 9 février 2027 · autres dates sur la fiche.",
+      "keywords": ""
+    },
+    {
+      "title": "Performance gourmande : la giornata autour d’un minestrone",
+      "category": "Événement",
+      "url": "/agenda.html#ev-0c8ce269ce39b5aa",
+      "description": "Dates annoncées : 27 novembre 2026.",
       "keywords": ""
     },
     {
@@ -380,10 +394,24 @@
       "keywords": ""
     },
     {
+      "title": "Projection : les musiciens | grégory magne",
+      "category": "Événement",
+      "url": "/agenda.html#ev-315b158212e95b67",
+      "description": "Dates annoncées : 28 novembre 2026.",
+      "keywords": ""
+    },
+    {
       "title": "Rocc alter : sur le fil des possibles",
       "category": "Événement",
       "url": "/agenda.html#ev-35a55bc17ab4004a",
       "description": "Dates annoncées : 28 novembre 2026.",
+      "keywords": ""
+    },
+    {
+      "title": "Projection : se souvenir des tournesols | sandrine mercier & juan gordillo hidalgo",
+      "category": "Événement",
+      "url": "/agenda.html#ev-3800e3f6dad43b0d",
+      "description": "Dates annoncées : 25 novembre 2026.",
       "keywords": ""
     },
     {
@@ -394,10 +422,17 @@
       "keywords": ""
     },
     {
+      "title": "Projection : des femmes comme les autres | dominique cabrera",
+      "category": "Événement",
+      "url": "/agenda.html#ev-3a4cd647f7a2e4c0",
+      "description": "Dates annoncées : 27 novembre 2026.",
+      "keywords": ""
+    },
+    {
       "title": "Marché traditionnel de lodève",
       "category": "Événement",
       "url": "/agenda.html#ev-3c7f42a6b1b86324",
-      "description": "Dates annoncées : 21 novembre 2026 · 28 novembre 2026 · 5 décembre 2026 · autres dates sur la fiche.",
+      "description": "Dates annoncées : 28 novembre 2026 · 5 décembre 2026 · 12 décembre 2026 · autres dates sur la fiche.",
       "keywords": ""
     },
     {
@@ -412,6 +447,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-46aceb05244e01c8",
       "description": "Dates annoncées : 28 novembre 2026.",
+      "keywords": ""
+    },
+    {
+      "title": "Projection : nos mémoires englouties | yohann benedetti",
+      "category": "Événement",
+      "url": "/agenda.html#ev-556a4add8d02bf49",
+      "description": "Dates annoncées : 26 novembre 2026.",
       "keywords": ""
     },
     {
@@ -436,17 +478,17 @@
       "keywords": ""
     },
     {
+      "title": "Cine gouter : petite casbah | antoine colomb",
+      "category": "Événement",
+      "url": "/agenda.html#ev-60f46990b11632f8",
+      "description": "Dates annoncées : 28 novembre 2026.",
+      "keywords": ""
+    },
+    {
       "title": "Petites histoires de dino",
       "category": "Événement",
       "url": "/agenda.html#ev-62294f8b47c905ef",
       "description": "Dates annoncées : 22 décembre 2026 · 29 décembre 2026.",
-      "keywords": ""
-    },
-    {
-      "title": "Atelier vannerie sauvage",
-      "category": "Événement",
-      "url": "/agenda.html#ev-64c1a6176d0a2c3e",
-      "description": "Dates annoncées : 21 novembre 2026.",
       "keywords": ""
     },
     {
@@ -461,6 +503,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-6b7e6f5c4c96e05c",
       "description": "Dates annoncées : 20 décembre 2026 · 23 décembre 2026 · 27 décembre 2026 · autres dates sur la fiche.",
+      "keywords": ""
+    },
+    {
+      "title": "Stage \" jeux de jambes\"",
+      "category": "Événement",
+      "url": "/agenda.html#ev-6ba07b26573a775f",
+      "description": "Dates annoncées : 5 décembre 2026 · 6 décembre 2026.",
       "keywords": ""
     },
     {
@@ -562,13 +611,6 @@
       "keywords": ""
     },
     {
-      "title": "Rocc alter : sur le fil des possibles",
-      "category": "Événement",
-      "url": "/agenda.html#ev-9a20186b6f1b2ca0",
-      "description": "Dates annoncées : 28 novembre 2026.",
-      "keywords": ""
-    },
-    {
       "title": "Journée mexicaine : déjeuner et loto",
       "category": "Événement",
       "url": "/agenda.html#ev-9e5ae320402f7121",
@@ -614,7 +656,7 @@
       "title": "Visite guidée de l’exposition \"météorites entre ciel et terre\"",
       "category": "Événement",
       "url": "/agenda.html#ev-aee9609f872362cd",
-      "description": "Dates annoncées : 21 novembre 2026 · 25 novembre 2026 · 27 novembre 2026 · autres dates sur la fiche.",
+      "description": "Dates annoncées : 25 novembre 2026 · 27 novembre 2026 · 28 novembre 2026 · autres dates sur la fiche.",
       "keywords": ""
     },
     {
@@ -657,6 +699,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-c6880bcf99078314",
       "description": "Dates annoncées : 8 décembre 2026.",
+      "keywords": ""
+    },
+    {
+      "title": "Projection : instinct de famille | maurice hermet",
+      "category": "Événement",
+      "url": "/agenda.html#ev-cc7d58101bc645a7",
+      "description": "Dates annoncées : 26 novembre 2026.",
       "keywords": ""
     },
     {
@@ -776,6 +825,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-f8d7df212e890bc8",
       "description": "Dates annoncées : 10 janvier 2027.",
+      "keywords": ""
+    },
+    {
+      "title": "Projection : une journée particulière | ettore scola",
+      "category": "Événement",
+      "url": "/agenda.html#ev-fac6b6a4a12c19c9",
+      "description": "Dates annoncées : 28 novembre 2026.",
       "keywords": ""
     },
     {

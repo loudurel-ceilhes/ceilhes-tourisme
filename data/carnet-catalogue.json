@@ -92,6 +92,15 @@
       "url": "/circuits-producteurs.html#roquefort"
     },
     {
+      "id": "ev-00e98ff075f8dd55",
+      "title": "Ciné-quiz à l’oreille",
+      "category": "Événement",
+      "url": "/agenda.html#ev-00e98ff075f8dd55",
+      "dates": [
+        "2026-11-26"
+      ]
+    },
+    {
       "id": "ev-029b39706e43b8a0",
       "title": "Soirée raclette",
       "category": "Événement",
@@ -121,6 +130,15 @@
         "2027-02-11",
         "2027-02-16",
         "2027-02-18"
+      ]
+    },
+    {
+      "id": "ev-0c8ce269ce39b5aa",
+      "title": "Performance gourmande : la giornata autour d’un minestrone",
+      "category": "Événement",
+      "url": "/agenda.html#ev-0c8ce269ce39b5aa",
+      "dates": [
+        "2026-11-27"
       ]
     },
     {
@@ -187,12 +205,30 @@
       "url": "/agenda.html#ev-2c378e48296df3a9"
     },
     {
+      "id": "ev-315b158212e95b67",
+      "title": "Projection : les musiciens | grégory magne",
+      "category": "Événement",
+      "url": "/agenda.html#ev-315b158212e95b67",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
       "id": "ev-35a55bc17ab4004a",
       "title": "Rocc alter : sur le fil des possibles",
       "category": "Événement",
       "url": "/agenda.html#ev-35a55bc17ab4004a",
       "dates": [
         "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-3800e3f6dad43b0d",
+      "title": "Projection : se souvenir des tournesols | sandrine mercier & juan gordillo hidalgo",
+      "category": "Événement",
+      "url": "/agenda.html#ev-3800e3f6dad43b0d",
+      "dates": [
+        "2026-11-25"
       ]
     },
     {
@@ -205,12 +241,20 @@
       ]
     },
     {
+      "id": "ev-3a4cd647f7a2e4c0",
+      "title": "Projection : des femmes comme les autres | dominique cabrera",
+      "category": "Événement",
+      "url": "/agenda.html#ev-3a4cd647f7a2e4c0",
+      "dates": [
+        "2026-11-27"
+      ]
+    },
+    {
       "id": "ev-3c7f42a6b1b86324",
       "title": "Marché traditionnel de lodève",
       "category": "Événement",
       "url": "/agenda.html#ev-3c7f42a6b1b86324",
       "dates": [
-        "2026-11-21",
         "2026-11-28",
         "2026-12-05",
         "2026-12-12",
@@ -289,6 +333,15 @@
       ]
     },
     {
+      "id": "ev-556a4add8d02bf49",
+      "title": "Projection : nos mémoires englouties | yohann benedetti",
+      "category": "Événement",
+      "url": "/agenda.html#ev-556a4add8d02bf49",
+      "dates": [
+        "2026-11-26"
+      ]
+    },
+    {
       "id": "ev-56ae036e5172f8d3",
       "title": "Balade guidée à vélo : lodève-manger comme on sème",
       "category": "Événement",
@@ -321,6 +374,15 @@
       ]
     },
     {
+      "id": "ev-60f46990b11632f8",
+      "title": "Cine gouter : petite casbah | antoine colomb",
+      "category": "Événement",
+      "url": "/agenda.html#ev-60f46990b11632f8",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
       "id": "ev-62294f8b47c905ef",
       "title": "Petites histoires de dino",
       "category": "Événement",
@@ -328,15 +390,6 @@
       "dates": [
         "2026-12-22",
         "2026-12-29"
-      ]
-    },
-    {
-      "id": "ev-64c1a6176d0a2c3e",
-      "title": "Atelier vannerie sauvage",
-      "category": "Événement",
-      "url": "/agenda.html#ev-64c1a6176d0a2c3e",
-      "dates": [
-        "2026-11-21"
       ]
     },
     {
@@ -422,6 +475,16 @@
         "2027-02-17",
         "2027-02-19",
         "2027-02-21"
+      ]
+    },
+    {
+      "id": "ev-6ba07b26573a775f",
+      "title": "Stage \" jeux de jambes\"",
+      "category": "Événement",
+      "url": "/agenda.html#ev-6ba07b26573a775f",
+      "dates": [
+        "2026-12-05",
+        "2026-12-06"
       ]
     },
     {
@@ -610,15 +673,6 @@
       ]
     },
     {
-      "id": "ev-9a20186b6f1b2ca0",
-      "title": "Rocc alter : sur le fil des possibles",
-      "category": "Événement",
-      "url": "/agenda.html#ev-9a20186b6f1b2ca0",
-      "dates": [
-        "2026-11-28"
-      ]
-    },
-    {
       "id": "ev-9e5ae320402f7121",
       "title": "Journée mexicaine : déjeuner et loto",
       "category": "Événement",
@@ -680,7 +734,6 @@
       "category": "Événement",
       "url": "/agenda.html#ev-aee9609f872362cd",
       "dates": [
-        "2026-11-21",
         "2026-11-25",
         "2026-11-27",
         "2026-11-28",
@@ -823,6 +876,15 @@
       "url": "/agenda.html#ev-c6880bcf99078314",
       "dates": [
         "2026-12-08"
+      ]
+    },
+    {
+      "id": "ev-cc7d58101bc645a7",
+      "title": "Projection : instinct de famille | maurice hermet",
+      "category": "Événement",
+      "url": "/agenda.html#ev-cc7d58101bc645a7",
+      "dates": [
+        "2026-11-26"
       ]
     },
     {
@@ -996,6 +1058,15 @@
       "url": "/agenda.html#ev-f8d7df212e890bc8",
       "dates": [
         "2027-01-10"
+      ]
+    },
+    {
+      "id": "ev-fac6b6a4a12c19c9",
+      "title": "Projection : une journée particulière | ettore scola",
+      "category": "Événement",
+      "url": "/agenda.html#ev-fac6b6a4a12c19c9",
+      "dates": [
+        "2026-11-28"
       ]
     },
     {
