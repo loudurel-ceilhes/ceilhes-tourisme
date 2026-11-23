@@ -349,21 +349,6 @@
       ]
     },
     {
-      "id": "ev-56ae036e5172f8d3",
-      "title": "Balade guidée à vélo : lodève-manger comme on sème",
-      "category": "Événement",
-      "url": "/agenda.html#ev-56ae036e5172f8d3",
-      "dates": [
-        "2026-11-22"
-      ]
-    },
-    {
-      "id": "ev-5d9d77d797aa16dd",
-      "title": "Salon des artisans créateurs de lodève",
-      "category": "Événement",
-      "url": "/agenda.html#ev-5d9d77d797aa16dd"
-    },
-    {
       "id": "ev-603bb2c5c5e4adc1",
       "title": "Visite guidée 1er dimanche du mois \"météorites entre ciel et terre\"",
       "category": "Événement",
@@ -405,7 +390,6 @@
       "category": "Événement",
       "url": "/agenda.html#ev-654e0e8c07db3eea",
       "dates": [
-        "2026-11-22",
         "2026-11-29",
         "2026-12-06",
         "2026-12-13",
@@ -639,15 +623,6 @@
       "url": "/agenda.html#ev-87779d54b1f97179",
       "dates": [
         "2026-12-06"
-      ]
-    },
-    {
-      "id": "ev-87ebe55e8125e085",
-      "title": "Marché de Noël à Camarès",
-      "category": "Événement",
-      "url": "/agenda.html#ev-87ebe55e8125e085",
-      "dates": [
-        "2026-11-22"
       ]
     },
     {
@@ -892,15 +867,6 @@
       "url": "/agenda.html#ev-cc7d58101bc645a7",
       "dates": [
         "2026-11-26"
-      ]
-    },
-    {
-      "id": "ev-cd1dc930cb9d4f89",
-      "title": "Projection de film \" moi, daniel blake \"",
-      "category": "Événement",
-      "url": "/agenda.html#ev-cd1dc930cb9d4f89",
-      "dates": [
-        "2026-11-22"
       ]
     },
     {
@@ -1769,6 +1735,13 @@
       "title": "Forêt de l'Escandorgue (VTT)",
       "category": "Randonnée",
       "url": "/randonnees.html#vtt-escandorgue"
+    },
+    {
+      "id": "village-la-couvertoirade",
+      "title": "La Couvertoirade : remparts, château et patrimoine",
+      "category": "Guide",
+      "url": "/patrimoine.html#la-couvertoirade",
+      "keywords": "Larzac cité médiévale Templiers Hospitaliers remparts château église cimetière hôtel Grailhe"
     }
   ]
 }
