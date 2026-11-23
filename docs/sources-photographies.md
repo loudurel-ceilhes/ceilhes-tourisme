@@ -1,5 +1,36 @@
 # Sources des photographies et choix des visuels
 
+## La Couvertoirade — 23 novembre 2026
+
+Anne-Sixtine, du service tourisme de La Couvertoirade, a répondu à la
+demande d’illustration des fiches du guide : « Voici quelques photos que
+vous pouvez utiliser, le crédit à indiquer est dans le titre ». Le message
+et quatre vues ont été transmis par Lou Durel le 23 novembre 2026. Lou a
+confirmé le crédit à afficher pour ces photographies : **© OTLV Virginie
+Govignon**. Cette autorisation d’illustration du guide ne constitue pas une
+licence de libre réutilisation.
+
+| Fichier local | Sujet | Source officielle retrouvée | Dimensions |
+| --- | --- | --- | --- |
+| `images/lieux/couvertoirade-remparts.jpg` | Remparts, tours et groupe de visiteurs à l’entrée du village | [Photographie OTLV — Virginie Govignon](https://lacouvertoirade.com/wp-content/uploads/2016/02/OTLV-La_Couvertoirade-_DSF440512-ao%C3%BBt-2022-Fb-VGovignon-sign%C3%A9e.jpg) | Original 2048 × 1365 ; JPEG 1600 × 1066 ; WebP de largeur 640, 1000 et 1600 pixels |
+
+La photographie a été comparée visuellement à celle du message. La version
+officielle comporte le logo de l’office et la signature de la photographe,
+conservés dans les fichiers publiés. Le traitement se limite au
+redimensionnement et à la compression. Le crédit figure sur les pages et
+dans les mentions légales.
+
+Les trois autres vues du message (hôtel de Grailhe, château avec le moulin
+en arrière-plan, église et ancien cimetière) ont le même crédit confirmé.
+Leurs fichiers originaux restent à recevoir : elles ne sont pas remplacées
+par d’autres photographies et aucun emplacement vide n’est publié.
+
+Les textes s’appuient sur les quatre notices Mérimée déjà documentées dans
+`data/monuments.json` (PA00094009, PA00094005, PA00094006 et PA00094007).
+Les anciennes ancres et notices sont conservées. Les horaires, tarifs et
+conditions d’accès ne sont pas déduits des photographies : le guide renvoie
+vers le [site officiel de La Couvertoirade](https://lacouvertoirade.com/).
+
 ## Abbaye de Sylvanès — 22 novembre 2026
 
 Stéphanie Pezé, responsable communication de l’abbaye, a transmis à Lou Durel

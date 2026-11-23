@@ -1,0 +1,25 @@
+/* Photographies des destinations patrimoniales et liens vers leurs notices. */
+.patrimoine-destination{flex-direction:column;align-items:stretch}
+.patrimoine-destination .bg{position:relative;inset:auto;height:auto;aspect-ratio:1600/1066;flex:none}
+.patrimoine-destination .bg img{animation:none}
+.patrimoine-destination .info{background:var(--foret-fonce);flex:1}
+.patrimoine-destination h3 a,.patrimoine-destination-link{color:inherit;text-underline-offset:4px}
+.patrimoine-destination .dist{letter-spacing:1px}
+.patrimoine-destination-link{display:inline-block;min-height:44px;padding:.6rem 0;font-weight:500}
+.patrimoine-visuel{background:var(--blanc)}
+.patrimoine-visuel-intro{max-width:760px;margin:0 auto 2rem;font-size:1.05rem}
+.patrimoine-galerie{columns:2;column-gap:2rem}
+.patrimoine-galerie:has(>.patrimoine-vue:only-child){columns:1;max-width:980px;margin-inline:auto}
+.patrimoine-vue{break-inside:avoid;margin:0 0 2rem;min-width:0}
+.patrimoine-vue picture,.patrimoine-vue img{display:block;width:100%}
+.patrimoine-vue img{height:auto;border-radius:var(--r)}
+.patrimoine-vue figcaption{padding:.8rem .15rem 0}
+.patrimoine-vue h3{font-size:1.7rem;line-height:1.2;color:var(--foret);margin-bottom:.4rem}
+.patrimoine-vue p{font-size:.94rem;line-height:1.6;margin:.35rem 0}
+.patrimoine-vue .photo-credit{font-size:.78rem}
+.patrimoine-vue a,.patrimoine-visuel a:not(.btn){color:var(--foret);font-weight:500;text-underline-offset:4px}
+.patrimoine-vue a{display:inline-block;min-height:44px;padding:.6rem 0}
+.patrimoine-visuel-actions{margin-top:1.5rem;padding:1.6rem;background:var(--sable);border-radius:var(--r)}
+.patrimoine-visuel-actions p{margin-bottom:1rem}
+.patrimoine-visuel-actions .btn{white-space:normal;max-width:100%}
+@media(max-width:700px){.patrimoine-galerie{columns:1}}
