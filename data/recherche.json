@@ -6,7 +6,7 @@
       "category": "Page du guide",
       "url": "/agenda.html",
       "description": "Concerts, marchés, fêtes et animations à Ceilhes-et-Rocozels, Avène, Lunas, Lodève, Sylvanès et Camarès. Mis à jour chaque jour.",
-      "keywords": " À Ceilhes-et-Rocozels Sortie nature : la rivière et sa forêt Atelier \"apprenez à vous soigner naturellement\" Aux alentours \" flor’Avène \" Animations a la médiathèque Anouck manzoni, anagogie - musée de lodève Ciné-quiz à l’oreille Cours de couture Ecran mon amour Projection : instinct de famille | maurice hermet Projection : nos mémoires englouties | yohann benedetti Rencontre avec l’art visionnaire & les peuples premiers Répare & vélo Rétrospective gaston arnal Séances au cinéma lutéva Still life with pomegranates De l’écriture cinématographique à l’écriture littéraire Performance gourmande : la giornata autour d’un minestrone Projection : des femmes comme les autres | dominique cabrera Visite guidée de l’exposition \"météorites entre ciel et terre\" « faites un voeu » Broderie punk Cine gouter : petite casbah | antoine colomb Fabrication de jeux optiques Kamishibaï d’ombre Marché traditionnel de lodève Montée au clocher de la cathédrale saint-fulcran Movie movie Projection : les musiciens | grégory magne Projection : une journée particulière | ettore scola Rocc alter : sur le fil des possibles Salon du livre des auteurs locaux Visite guidée par matthieu gounelle Brocante - vide-grenier de lodève Marché de noël Stages cyanotype Après midi jeux de société Cours de gymnastique Soirée karaoké Voyages sonores, gongs, bols chantants, didgeridoos Sophrologie Marché de noël à l’atelier muska Repas de la sainte barbe Soirée de soutien au planning familial de lodève Stage \" jeux de jambes\" Stage de poterie Stage de sculpture et modelage d’argile à lodève avec solveig lafitte Les dimanches du patrimoine : l’hôtel de fleury : toute une histoire ! Marché de noël Rando telethon avec taill aventure Visite guidée 1er dimanche du mois \"météorites entre ciel et terre\" Journée mexicaine :"
+      "keywords": " À Ceilhes-et-Rocozels Sortie nature : la rivière et sa forêt Atelier \"apprenez à vous soigner naturellement\" Aux alentours Animations a la médiathèque Anouck manzoni, anagogie - musée de lodève Ciné-quiz à l’oreille Cours de couture Ecran mon amour Flor’Avène Projection : instinct de famille | maurice hermet Projection : nos mémoires englouties | yohann benedetti Rencontre avec l’art visionnaire & les peuples premiers Répare & vélo Rétrospective gaston arnal Séances au cinéma lutéva Still life with pomegranates De l’écriture cinématographique à l’écriture littéraire Performance gourmande : la giornata autour d’un minestrone Projection : des femmes comme les autres | dominique cabrera Visite guidée de l’exposition \"météorites entre ciel et terre\" « faites un voeu » Broderie punk Cine gouter : petite casbah | antoine colomb Fabrication de jeux optiques Kamishibaï d’ombre Marché traditionnel de lodève Montée au clocher de la cathédrale saint-fulcran Movie movie Projection : les musiciens | grégory magne Projection : naucisaä de la vallée du vent de hayao miyazaki Projection : retour vers le futur de robert zemeckis Projection : une journée particulière de ettore scola Rocc alter : sur le fil des possibles Salon du livre des auteurs locaux Visite guidée par matthieu gounelle Brocante - vide-grenier de lodève Marché de noël Projection : interstellar de christopher nolan Projection : l’armée des 12 singes de terry gilliam Projection : la jetée de chris marker Stages cyanotype Après midi jeux de société Cours de gymnastique Soirée karaoké Voyages sonores, gongs, bols chantants, didgeridoos Atelier \"répare et café\" Sophrologie Marché de noël à l’atelier muska Repas spectacle de la sainte barbe Soirée de soutien au planning familial de lodève Stage \" jeux de jambes\" Stage de pot"
     },
     {
       "title": "Aux alentours",
@@ -345,7 +345,7 @@
       "keywords": ""
     },
     {
-      "title": "\" flor’Avène \"",
+      "title": "Flor’Avène",
       "category": "Événement",
       "url": "/agenda.html#ev-0d6d262eaa078c5b",
       "description": "",
@@ -359,7 +359,7 @@
       "keywords": ""
     },
     {
-      "title": "Repas de la sainte barbe",
+      "title": "Repas spectacle de la sainte barbe",
       "category": "Événement",
       "url": "/agenda.html#ev-126e29d55d73a4ac",
       "description": "Dates annoncées : 4 décembre 2026.",
@@ -387,6 +387,13 @@
       "keywords": ""
     },
     {
+      "title": "Projection : retour vers le futur de robert zemeckis",
+      "category": "Événement",
+      "url": "/agenda.html#ev-15602ea05f8f5194",
+      "description": "Dates annoncées : 28 novembre 2026.",
+      "keywords": ""
+    },
+    {
       "title": "Soirée raclette",
       "category": "Événement",
       "url": "/agenda.html#ev-1bbf8d4fa8eaccf7",
@@ -405,6 +412,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-2d98376f23043c88",
       "description": "Dates annoncées : 6 décembre 2026.",
+      "keywords": ""
+    },
+    {
+      "title": "Projection : la jetée de chris marker",
+      "category": "Événement",
+      "url": "/agenda.html#ev-3133641351b43269",
+      "description": "Dates annoncées : 29 novembre 2026.",
       "keywords": ""
     },
     {
@@ -447,6 +461,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-46aceb05244e01c8",
       "description": "Dates annoncées : 28 novembre 2026.",
+      "keywords": ""
+    },
+    {
+      "title": "Projection : l’armée des 12 singes de terry gilliam",
+      "category": "Événement",
+      "url": "/agenda.html#ev-53f399cd649c4441",
+      "description": "Dates annoncées : 29 novembre 2026.",
       "keywords": ""
     },
     {
@@ -576,6 +597,20 @@
       "keywords": ""
     },
     {
+      "title": "Projection : naucisaä de la vallée du vent de hayao miyazaki",
+      "category": "Événement",
+      "url": "/agenda.html#ev-8c6cd865ef5888af",
+      "description": "",
+      "keywords": ""
+    },
+    {
+      "title": "Arty lab",
+      "category": "Événement",
+      "url": "/agenda.html#ev-8dcbd0c898653088",
+      "description": "Dates annoncées : 16 décembre 2026.",
+      "keywords": ""
+    },
+    {
       "title": "Escape game : urgence paléo adulte",
       "category": "Événement",
       "url": "/agenda.html#ev-93d023620d13d879",
@@ -618,7 +653,7 @@
       "keywords": ""
     },
     {
-      "title": "Reveillon saint sylvestre - foyer rural",
+      "title": "Réveillon de la saint sylvestre",
       "category": "Événement",
       "url": "/agenda.html#ev-ab8eb1067fbef278",
       "description": "Dates annoncées : 31 décembre 2026.",
@@ -674,7 +709,14 @@
       "keywords": ""
     },
     {
-      "title": "Journée mexicaine : conférence",
+      "title": "Atelier \"répare et café\"",
+      "category": "Événement",
+      "url": "/agenda.html#ev-c3aa33642535166d",
+      "description": "Dates annoncées : 3 décembre 2026.",
+      "keywords": ""
+    },
+    {
+      "title": "Journée mexicaine : conférence bien-être",
       "category": "Événement",
       "url": "/agenda.html#ev-c6880bcf99078314",
       "description": "Dates annoncées : 8 décembre 2026.",
@@ -723,13 +765,6 @@
       "keywords": ""
     },
     {
-      "title": "Chasse au tresor",
-      "category": "Événement",
-      "url": "/agenda.html#ev-d9dffd49b8add8e0",
-      "description": "Dates annoncées : 19 décembre 2026.",
-      "keywords": ""
-    },
-    {
       "title": "Sophrologie",
       "category": "Événement",
       "url": "/agenda.html#ev-dcf6ddc526216a1d",
@@ -748,6 +783,13 @@
       "category": "Événement",
       "url": "/agenda.html#ev-dfce64776c9fac89",
       "description": "Dates annoncées : 28 novembre 2026.",
+      "keywords": ""
+    },
+    {
+      "title": "Projection : interstellar de christopher nolan",
+      "category": "Événement",
+      "url": "/agenda.html#ev-e80370c6c8e1b54e",
+      "description": "Dates annoncées : 29 novembre 2026.",
       "keywords": ""
     },
     {
@@ -800,7 +842,7 @@
       "keywords": ""
     },
     {
-      "title": "Projection : une journée particulière | ettore scola",
+      "title": "Projection : une journée particulière de ettore scola",
       "category": "Événement",
       "url": "/agenda.html#ev-fac6b6a4a12c19c9",
       "description": "Dates annoncées : 28 novembre 2026.",

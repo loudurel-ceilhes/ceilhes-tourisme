@@ -150,7 +150,7 @@
     },
     {
       "id": "ev-0d6d262eaa078c5b",
-      "title": "\" flor’Avène \"",
+      "title": "Flor’Avène",
       "category": "Événement",
       "url": "/agenda.html#ev-0d6d262eaa078c5b"
     },
@@ -165,7 +165,7 @@
     },
     {
       "id": "ev-126e29d55d73a4ac",
-      "title": "Repas de la sainte barbe",
+      "title": "Repas spectacle de la sainte barbe",
       "category": "Événement",
       "url": "/agenda.html#ev-126e29d55d73a4ac",
       "dates": [
@@ -198,6 +198,15 @@
       "url": "/agenda.html#ev-150620829efa7b09"
     },
     {
+      "id": "ev-15602ea05f8f5194",
+      "title": "Projection : retour vers le futur de robert zemeckis",
+      "category": "Événement",
+      "url": "/agenda.html#ev-15602ea05f8f5194",
+      "dates": [
+        "2026-11-28"
+      ]
+    },
+    {
       "id": "ev-1bbf8d4fa8eaccf7",
       "title": "Soirée raclette",
       "category": "Événement",
@@ -219,6 +228,15 @@
       "url": "/agenda.html#ev-2d98376f23043c88",
       "dates": [
         "2026-12-06"
+      ]
+    },
+    {
+      "id": "ev-3133641351b43269",
+      "title": "Projection : la jetée de chris marker",
+      "category": "Événement",
+      "url": "/agenda.html#ev-3133641351b43269",
+      "dates": [
+        "2026-11-29"
       ]
     },
     {
@@ -329,6 +347,15 @@
       "url": "/agenda.html#ev-46aceb05244e01c8",
       "dates": [
         "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-53f399cd649c4441",
+      "title": "Projection : l’armée des 12 singes de terry gilliam",
+      "category": "Événement",
+      "url": "/agenda.html#ev-53f399cd649c4441",
+      "dates": [
+        "2026-11-29"
       ]
     },
     {
@@ -625,6 +652,21 @@
       ]
     },
     {
+      "id": "ev-8c6cd865ef5888af",
+      "title": "Projection : naucisaä de la vallée du vent de hayao miyazaki",
+      "category": "Événement",
+      "url": "/agenda.html#ev-8c6cd865ef5888af"
+    },
+    {
+      "id": "ev-8dcbd0c898653088",
+      "title": "Arty lab",
+      "category": "Événement",
+      "url": "/agenda.html#ev-8dcbd0c898653088",
+      "dates": [
+        "2026-12-16"
+      ]
+    },
+    {
       "id": "ev-93d023620d13d879",
       "title": "Escape game : urgence paléo adulte",
       "category": "Événement",
@@ -684,7 +726,7 @@
     },
     {
       "id": "ev-ab8eb1067fbef278",
-      "title": "Reveillon saint sylvestre - foyer rural",
+      "title": "Réveillon de la saint sylvestre",
       "category": "Événement",
       "url": "/agenda.html#ev-ab8eb1067fbef278",
       "dates": [
@@ -841,8 +883,17 @@
       ]
     },
     {
+      "id": "ev-c3aa33642535166d",
+      "title": "Atelier \"répare et café\"",
+      "category": "Événement",
+      "url": "/agenda.html#ev-c3aa33642535166d",
+      "dates": [
+        "2026-12-03"
+      ]
+    },
+    {
       "id": "ev-c6880bcf99078314",
-      "title": "Journée mexicaine : conférence",
+      "title": "Journée mexicaine : conférence bien-être",
       "category": "Événement",
       "url": "/agenda.html#ev-c6880bcf99078314",
       "dates": [
@@ -896,15 +947,6 @@
       "url": "/agenda.html#ev-d527a6ec4b78f049"
     },
     {
-      "id": "ev-d9dffd49b8add8e0",
-      "title": "Chasse au tresor",
-      "category": "Événement",
-      "url": "/agenda.html#ev-d9dffd49b8add8e0",
-      "dates": [
-        "2026-12-19"
-      ]
-    },
-    {
       "id": "ev-dcf6ddc526216a1d",
       "title": "Sophrologie",
       "category": "Événement",
@@ -929,6 +971,15 @@
       "url": "/agenda.html#ev-dfce64776c9fac89",
       "dates": [
         "2026-11-28"
+      ]
+    },
+    {
+      "id": "ev-e80370c6c8e1b54e",
+      "title": "Projection : interstellar de christopher nolan",
+      "category": "Événement",
+      "url": "/agenda.html#ev-e80370c6c8e1b54e",
+      "dates": [
+        "2026-11-29"
       ]
     },
     {
@@ -1023,7 +1074,7 @@
     },
     {
       "id": "ev-fac6b6a4a12c19c9",
-      "title": "Projection : une journée particulière | ettore scola",
+      "title": "Projection : une journée particulière de ettore scola",
       "category": "Événement",
       "url": "/agenda.html#ev-fac6b6a4a12c19c9",
       "dates": [
