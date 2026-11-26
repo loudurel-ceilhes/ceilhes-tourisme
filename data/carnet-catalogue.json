@@ -198,30 +198,12 @@
       "url": "/agenda.html#ev-150620829efa7b09"
     },
     {
-      "id": "ev-19e09b393f70a6d6",
-      "title": "Concert dessiné",
-      "category": "Événement",
-      "url": "/agenda.html#ev-19e09b393f70a6d6",
-      "dates": [
-        "2026-11-25"
-      ]
-    },
-    {
       "id": "ev-1bbf8d4fa8eaccf7",
       "title": "Soirée raclette",
       "category": "Événement",
       "url": "/agenda.html#ev-1bbf8d4fa8eaccf7",
       "dates": [
         "2027-01-01"
-      ]
-    },
-    {
-      "id": "ev-22cbd07148ab57db",
-      "title": "Atelier stop motion",
-      "category": "Événement",
-      "url": "/agenda.html#ev-22cbd07148ab57db",
-      "dates": [
-        "2026-11-25"
       ]
     },
     {
@@ -255,15 +237,6 @@
       "url": "/agenda.html#ev-35a55bc17ab4004a",
       "dates": [
         "2026-11-28"
-      ]
-    },
-    {
-      "id": "ev-3800e3f6dad43b0d",
-      "title": "Projection : se souvenir des tournesols | sandrine mercier & juan gordillo hidalgo",
-      "category": "Événement",
-      "url": "/agenda.html#ev-3800e3f6dad43b0d",
-      "dates": [
-        "2026-11-25"
       ]
     },
     {
@@ -347,15 +320,6 @@
         "2027-12-11",
         "2027-12-18",
         "2027-12-25"
-      ]
-    },
-    {
-      "id": "ev-416bfc7196d4ebc8",
-      "title": "Club de lecture",
-      "category": "Événement",
-      "url": "/agenda.html#ev-416bfc7196d4ebc8",
-      "dates": [
-        "2026-11-25"
       ]
     },
     {
@@ -742,7 +706,6 @@
       "category": "Événement",
       "url": "/agenda.html#ev-aee9609f872362cd",
       "dates": [
-        "2026-11-25",
         "2026-11-27",
         "2026-11-28",
         "2026-12-02",
@@ -1001,7 +964,6 @@
       "category": "Événement",
       "url": "/agenda.html#ev-ee968489fc656cd8",
       "dates": [
-        "2026-11-25",
         "2026-12-02",
         "2026-12-09",
         "2026-12-16",
