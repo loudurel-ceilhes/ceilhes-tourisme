@@ -131,15 +131,6 @@
       ]
     },
     {
-      "id": "ev-0c8ce269ce39b5aa",
-      "title": "Performance gourmande : la giornata autour d’un minestrone",
-      "category": "Événement",
-      "url": "/agenda.html#ev-0c8ce269ce39b5aa",
-      "dates": [
-        "2026-11-27"
-      ]
-    },
-    {
       "id": "ev-0d6d262eaa078c5b",
       "title": "Flor’Avène",
       "category": "Événement",
@@ -207,6 +198,15 @@
       ]
     },
     {
+      "id": "ev-1fd17e04a3d2e1c6",
+      "title": "Soirée moules-frites",
+      "category": "Événement",
+      "url": "/agenda.html#ev-1fd17e04a3d2e1c6",
+      "dates": [
+        "2027-02-26"
+      ]
+    },
+    {
       "id": "ev-2c378e48296df3a9",
       "title": "Répare & vélo",
       "category": "Événement",
@@ -246,15 +246,6 @@
       "url": "/agenda.html#ev-35a55bc17ab4004a",
       "dates": [
         "2026-11-28"
-      ]
-    },
-    {
-      "id": "ev-3a4cd647f7a2e4c0",
-      "title": "Projection : des femmes comme les autres | dominique cabrera",
-      "category": "Événement",
-      "url": "/agenda.html#ev-3a4cd647f7a2e4c0",
-      "dates": [
-        "2026-11-27"
       ]
     },
     {
@@ -739,7 +730,6 @@
       "category": "Événement",
       "url": "/agenda.html#ev-aee9609f872362cd",
       "dates": [
-        "2026-11-27",
         "2026-11-28",
         "2026-12-02",
         "2026-12-04",
@@ -938,15 +928,6 @@
       ]
     },
     {
-      "id": "ev-df1ec1618f5fb08b",
-      "title": "Soirée moules-frites",
-      "category": "Événement",
-      "url": "/agenda.html#ev-df1ec1618f5fb08b",
-      "dates": [
-        "2026-11-27"
-      ]
-    },
-    {
       "id": "ev-dfce64776c9fac89",
       "title": "Kamishibaï d’ombre",
       "category": "Événement",
@@ -1061,15 +1042,6 @@
       "url": "/agenda.html#ev-fac6b6a4a12c19c9",
       "dates": [
         "2026-11-28"
-      ]
-    },
-    {
-      "id": "ev-fdf5e92b3b3ef0b5",
-      "title": "De l’écriture cinématographique à l’écriture littéraire",
-      "category": "Événement",
-      "url": "/agenda.html#ev-fdf5e92b3b3ef0b5",
-      "dates": [
-        "2026-11-27"
       ]
     },
     {
