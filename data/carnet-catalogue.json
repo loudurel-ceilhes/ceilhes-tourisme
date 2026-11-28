@@ -207,6 +207,18 @@
       ]
     },
     {
+      "id": "ev-22eb7d1d2598276c",
+      "title": "Mission cosmos : créez en famille !",
+      "category": "Événement",
+      "url": "/agenda.html#ev-22eb7d1d2598276c",
+      "dates": [
+        "2026-12-22",
+        "2026-12-23",
+        "2026-12-29",
+        "2026-12-30"
+      ]
+    },
+    {
       "id": "ev-2c378e48296df3a9",
       "title": "Répare & vélo",
       "category": "Événement",
@@ -1027,12 +1039,31 @@
       "url": "/agenda.html#ev-efdb6a5fac1094d4"
     },
     {
+      "id": "ev-f3da443795d732ea",
+      "title": "La visite du passionné",
+      "category": "Événement",
+      "url": "/agenda.html#ev-f3da443795d732ea",
+      "dates": [
+        "2026-12-22",
+        "2026-12-29"
+      ]
+    },
+    {
       "id": "ev-f8d7df212e890bc8",
       "title": "Les dimanches du patrimoine : l’apothicairerie, ancienne pharmacie de l’hôpital de lodève",
       "category": "Événement",
       "url": "/agenda.html#ev-f8d7df212e890bc8",
       "dates": [
         "2027-01-10"
+      ]
+    },
+    {
+      "id": "ev-fa39084248d44556",
+      "title": "Loto à lodève",
+      "category": "Événement",
+      "url": "/agenda.html#ev-fa39084248d44556",
+      "dates": [
+        "2026-12-13"
       ]
     },
     {

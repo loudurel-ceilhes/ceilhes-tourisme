@@ -5,19 +5,6 @@
     "receivedOn": "2026-11-28",
     "events": [
       {
-        "Nom_du_POI": "SOPHROLOGIE",
-        "Periodes_regroupees": "2026-12-03<->2026-12-03|2026-11-05<->2026-11-05|2026-10-08<->2026-10-08",
-        "Description": "Venez participer à un cours de sophrologie\nRDV à 17h à la salle polyvalente de Truscas (34260 AVENE), tous les 1er jeudis du mois (hors vacances scolaires). \nParticipation : 8€/personne non adhérente. 5€ pour les adhérents qui ne pratiquent pas la gym.\nGratuit pour les adhérents qui pratiquent la gym\nPortez des vêtements confort + eau \nInformations au 06 78 01 08 51 ou 06 25 50 73 28",
-        "Adresse_postale": "Hameau de Truscas",
-        "Contacts_du_POI": "#|SOPHROLOGIE#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/6c342319-b28e-380b-ad52-f12341fe99d3",
-        "Code_postal_et_commune": "34260#Avène",
-        "Latitude": 43.6910175,
-        "Longitude": 3.1177555,
-        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-10-02"
-      },
-      {
         "Nom_du_POI": "COURS DE GYMNASTIQUE",
         "Periodes_regroupees": "2026-07-21<->2026-07-21|2026-11-17<->2026-11-17|2026-01-27<->2026-01-27|2026-10-13<->2026-10-13|2026-03-03<->2026-03-03|2026-04-21<->2026-04-21|2026-10-06<->2026-10-06|2026-04-28<->2026-04-28|2026-02-03<->2026-02-03|2026-07-07<->2026-07-07|2026-02-17<->2026-02-17|2026-11-10<->2026-11-10|2026-06-16<->2026-06-16|2026-05-26<->2026-05-26|2026-11-24<->2026-11-24|2026-06-23<->2026-06-23|2026-12-29<->2026-12-29|2026-01-20<->2026-01-20|2026-05-19<->2026-05-19|2026-03-17<->2026-03-17|2026-03-24<->2026-03-24|2026-07-14<->2026-07-14|2026-11-03<->2026-11-03|2026-12-01<->2026-12-01|2026-01-06<->2026-01-06|2026-04-07<->2026-04-07|2026-06-02<->2026-06-02|2026-12-08<->2026-12-08|2026-12-15<->2026-12-15|2026-05-12<->2026-05-12|2026-06-09<->2026-06-09|2026-04-14<->2026-04-14|2026-01-13<->2026-01-13|2026-03-10<->2026-03-10|2026-12-22<->2026-12-22|2026-05-05<->2026-05-05|2026-02-24<->2026-02-24|2026-03-31<->2026-03-31|2026-06-30<->2026-06-30|2026-02-10<->2026-02-10",
         "Description": "Cours de gymnastique. \nVenez prendre soin de votre corps, tous niveaux confondus. \nRDV à la salle polyvalente de Truscas (34260 AVENE) à 17h15 pour 1 h de renforcement musculaire et d'étirements. \nTous les mardis (hors vacances scolaires). Participation 5€/personne non adhérente. \nInformations au 06 25 50 73 28",
@@ -31,6 +18,19 @@
         "Date_de_mise_a_jour": "2026-09-28"
       },
       {
+        "Nom_du_POI": "SOPHROLOGIE",
+        "Periodes_regroupees": "2026-12-03<->2026-12-03|2026-11-05<->2026-11-05|2026-10-08<->2026-10-08",
+        "Description": "Venez participer à un cours de sophrologie\nRDV à 17h à la salle polyvalente de Truscas (34260 AVENE), tous les 1er jeudis du mois (hors vacances scolaires). \nParticipation : 8€/personne non adhérente. 5€ pour les adhérents qui ne pratiquent pas la gym.\nGratuit pour les adhérents qui pratiquent la gym\nPortez des vêtements confort + eau \nInformations au 06 78 01 08 51 ou 06 25 50 73 28",
+        "Adresse_postale": "Hameau de Truscas",
+        "Contacts_du_POI": "#|SOPHROLOGIE#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/6c342319-b28e-380b-ad52-f12341fe99d3",
+        "Code_postal_et_commune": "34260#Avène",
+        "Latitude": 43.6910175,
+        "Longitude": 3.1177555,
+        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
+        "Date_de_mise_a_jour": "2026-10-02"
+      },
+      {
         "Nom_du_POI": "FLOR'AVENE",
         "Periodes_regroupees": "2026-11-02<->2026-11-30",
         "Description": "Passionnée par la photographie mais aussi par les fleurs et le village d'Avène, Christiane propose un magnifique mélange photographique nature-patrimoine de la commune.   \nOuverture Novembre : Lundi Mercredi Jeudi et Vendredi 10h 12h et 14h 17h. Mardi 9h 12h.",
@@ -41,33 +41,7 @@
         "Latitude": 43.75761,
         "Longitude": 3.10148,
         "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-11-25"
-      },
-      {
-        "Nom_du_POI": "SOIRÉE KARAOKÉ",
-        "Periodes_regroupees": "2026-10-27<->2026-10-27|2026-09-08<->2026-09-08|2026-08-18<->2026-08-18|2027-04-13<->2027-04-13|2026-07-21<->2026-07-21|2026-11-17<->2026-11-17|2027-04-06<->2027-04-06|2027-12-28<->2027-12-28|2026-09-01<->2026-09-01|2027-12-14<->2027-12-14|2027-06-15<->2027-06-15|2026-10-13<->2026-10-13|2027-06-22<->2027-06-22|2027-12-07<->2027-12-07|2027-01-05<->2027-01-05|2026-10-06<->2026-10-06|2027-08-03<->2027-08-03|2027-03-30<->2027-03-30|2027-09-21<->2027-09-21|2027-08-31<->2027-08-31|2027-07-27<->2027-07-27|2027-05-04<->2027-05-04|2027-09-14<->2027-09-14|2026-07-28<->2026-07-28|2026-07-07<->2026-07-07|2027-07-06<->2027-07-06|2026-11-10<->2026-11-10|2026-11-24<->2026-11-24|2026-12-29<->2026-12-29|2027-12-21<->2027-12-21|2027-11-09<->2027-11-09|2027-03-16<->2027-03-16|2026-08-11<->2026-08-11|2026-07-14<->2026-07-14|2026-11-03<->2026-11-03|2027-02-16<->2027-02-16|2027-07-20<->2027-07-20|2026-10-20<->2026-10-20|2026-09-15<->2026-09-15|2027-01-19<->2027-01-19|2027-08-24<->2027-08-24|2026-12-01<->2026-12-01|2027-10-05<->2027-10-05|2027-01-12<->2027-01-12|2027-11-23<->2027-11-23|2027-08-17<->2027-08-17|2026-12-08<->2026-12-08|2027-10-19<->2027-10-19|2027-02-02<->2027-02-02|2026-08-25<->2026-08-25|2027-05-18<->2027-05-18|2026-12-15<->2026-12-15|2027-10-26<->2027-10-26|2027-11-30<->2027-11-30|2027-02-09<->2027-02-09|2027-03-23<->2027-03-23|2027-10-12<->2027-10-12|2026-08-04<->2026-08-04|2027-04-27<->2027-04-27|2027-11-16<->2027-11-16|2027-05-25<->2027-05-25|2027-11-02<->2027-11-02|2027-01-26<->2027-01-26|2027-03-09<->2027-03-09|2027-06-29<->2027-06-29|2027-06-01<->2027-06-01|2027-05-11<->2027-05-11|2027-09-07<->2027-09-07|2026-09-29<->2026-09-29|2027-03-02<->2027-03-02|2026-12-22<->2026-12-22|2027-09-28<->2027-09-28|2027-07-13<->2027-07-13|2027-06-08<->2027-06-08|2027-08-10<->2027-08-10|2026-09-22<->2026-09-22|2026-06-30<->2026-06-30|2027-02-23<->2027-02-23|2027-04-20<->2027-04-20",
-        "Description": "Soirée karaoké au café du Nord au Bousquet d'orb tous les mardis. \nInformations au 04 67 97 90 10",
-        "Adresse_postale": "20 Avenue Lyon-Caen",
-        "Contacts_du_POI": "SOIRÉE KARAOKÉ#|#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/986af3a8-f12c-30fd-bb8d-ccea45d1fc6e",
-        "Code_postal_et_commune": "34260#Le Bousquet-d'Orb",
-        "Latitude": 43.6936098,
-        "Longitude": 3.1651145,
-        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-08-23"
-      },
-      {
-        "Nom_du_POI": "VOYAGES SONORES, GONGS, BOLS CHANTANTS, DIDGERIDOOS",
-        "Periodes_regroupees": "2027-06-23<->2027-06-23|2026-10-21<->2026-10-21|2027-04-14<->2027-04-14|2026-09-23<->2026-09-23|2026-11-11<->2026-11-11|2027-03-31<->2027-03-31|2027-06-16<->2027-06-16|2026-12-16<->2026-12-16|2026-11-18<->2026-11-18|2026-12-30<->2026-12-30|2027-03-24<->2027-03-24|2027-04-28<->2027-04-28|2026-11-25<->2026-11-25|2027-01-13<->2027-01-13|2027-05-12<->2027-05-12|2027-02-10<->2027-02-10|2027-05-19<->2027-05-19|2027-06-09<->2027-06-09|2027-01-20<->2027-01-20|2027-02-24<->2027-02-24|2026-09-30<->2026-09-30|2027-05-26<->2027-05-26|2027-03-03<->2027-03-03|2026-12-23<->2026-12-23|2026-09-02<->2026-09-02|2027-03-10<->2027-03-10|2027-01-06<->2027-01-06|2026-10-14<->2026-10-14|2027-04-07<->2027-04-07|2027-03-17<->2027-03-17|2026-10-07<->2026-10-07|2027-05-05<->2027-05-05|2026-11-04<->2026-11-04|2027-02-17<->2027-02-17|2027-06-30<->2027-06-30|2027-02-03<->2027-02-03|2027-01-27<->2027-01-27|2027-04-21<->2027-04-21|2026-10-28<->2026-10-28|2027-06-02<->2027-06-02|2026-09-09<->2026-09-09|2026-12-09<->2026-12-09|2026-09-16<->2026-09-16|2026-12-02<->2026-12-02",
-        "Description": "Serge Scherrer vous propose des voyages sonores, accompagnés de gongs,de bols tibétains, de flutes, de tambour, de guimbarde ... et autres instruments du monde. \nUn voyage au coeur de vos ressentis et du son, dans un lieu exceptionnel : un Zome .",
-        "Adresse_postale": "Brès",
-        "Contacts_du_POI": "#|VOYAGES SONORES, GONGS, BOLS CHANTANTS, DIDGERIDOOS#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/c3259fc3-5259-3f00-ab0b-4148297ce8d7",
-        "Code_postal_et_commune": "34260#Avène",
-        "Latitude": 43.763599,
-        "Longitude": 3.109619,
-        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-09-09"
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "RÉVEILLON DE LA SAINT SYLVESTRE",
@@ -96,6 +70,19 @@
         "Date_de_mise_a_jour": "2026-11-18"
       },
       {
+        "Nom_du_POI": "VOYAGES SONORES, GONGS, BOLS CHANTANTS, DIDGERIDOOS",
+        "Periodes_regroupees": "2026-11-25<->2026-11-25|2027-01-13<->2027-01-13|2027-05-12<->2027-05-12|2027-02-10<->2027-02-10|2027-05-19<->2027-05-19|2027-06-09<->2027-06-09|2027-01-20<->2027-01-20|2027-02-24<->2027-02-24|2026-09-30<->2026-09-30|2027-05-26<->2027-05-26|2027-03-03<->2027-03-03|2026-12-23<->2026-12-23|2026-09-02<->2026-09-02|2027-03-10<->2027-03-10|2027-01-06<->2027-01-06|2026-10-14<->2026-10-14|2027-04-07<->2027-04-07|2027-03-17<->2027-03-17|2026-10-07<->2026-10-07|2027-05-05<->2027-05-05|2026-11-04<->2026-11-04|2027-02-17<->2027-02-17|2027-06-30<->2027-06-30|2027-02-03<->2027-02-03|2027-01-27<->2027-01-27|2027-04-21<->2027-04-21|2026-10-28<->2026-10-28|2027-06-02<->2027-06-02|2026-09-09<->2026-09-09|2026-12-09<->2026-12-09|2026-09-16<->2026-09-16|2026-12-02<->2026-12-02|2027-06-23<->2027-06-23|2026-10-21<->2026-10-21|2027-04-14<->2027-04-14|2026-09-23<->2026-09-23|2026-11-11<->2026-11-11|2027-03-31<->2027-03-31|2027-06-16<->2027-06-16|2026-12-16<->2026-12-16|2026-11-18<->2026-11-18|2026-12-30<->2026-12-30|2027-03-24<->2027-03-24|2027-04-28<->2027-04-28",
+        "Description": "Serge Scherrer vous propose des voyages sonores, accompagnés de gongs,de bols tibétains, de flutes, de tambour, de guimbarde ... et autres instruments du monde. \nUn voyage au coeur de vos ressentis et du son, dans un lieu exceptionnel : un Zome .",
+        "Adresse_postale": "Brès",
+        "Contacts_du_POI": "#|VOYAGES SONORES, GONGS, BOLS CHANTANTS, DIDGERIDOOS#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/c3259fc3-5259-3f00-ab0b-4148297ce8d7",
+        "Code_postal_et_commune": "34260#Avène",
+        "Latitude": 43.763599,
+        "Longitude": 3.109619,
+        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
+        "Date_de_mise_a_jour": "2026-09-09"
+      },
+      {
         "Nom_du_POI": "PROJECTION DU FILM \" NAÏS DE MARCEL PAGNOL \"",
         "Periodes_regroupees": "2026-12-13<->2026-12-13",
         "Description": "Venez profiter d'un moment convivial autour de la projection d'un film. \nRDV à la salle polyvalente du village d'Avène à 17h. \nInformations au 04 67 23 43 38  ou 06 78 01 08 51.",
@@ -107,6 +94,19 @@
         "Longitude": 3.10165,
         "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
         "Date_de_mise_a_jour": "2026-05-29"
+      },
+      {
+        "Nom_du_POI": "SOIRÉE KARAOKÉ",
+        "Periodes_regroupees": "2027-10-26<->2027-10-26|2027-11-30<->2027-11-30|2027-02-09<->2027-02-09|2027-03-23<->2027-03-23|2027-10-12<->2027-10-12|2026-08-04<->2026-08-04|2027-04-27<->2027-04-27|2027-11-16<->2027-11-16|2027-05-25<->2027-05-25|2027-11-02<->2027-11-02|2027-01-26<->2027-01-26|2027-03-09<->2027-03-09|2027-06-29<->2027-06-29|2027-06-01<->2027-06-01|2027-05-11<->2027-05-11|2027-09-07<->2027-09-07|2026-09-29<->2026-09-29|2027-03-02<->2027-03-02|2026-12-22<->2026-12-22|2027-09-28<->2027-09-28|2027-07-13<->2027-07-13|2027-06-08<->2027-06-08|2027-08-10<->2027-08-10|2026-09-22<->2026-09-22|2026-06-30<->2026-06-30|2027-02-23<->2027-02-23|2027-04-20<->2027-04-20|2026-10-27<->2026-10-27|2026-09-08<->2026-09-08|2026-08-18<->2026-08-18|2027-04-13<->2027-04-13|2026-07-21<->2026-07-21|2026-11-17<->2026-11-17|2027-04-06<->2027-04-06|2027-12-28<->2027-12-28|2026-09-01<->2026-09-01|2027-12-14<->2027-12-14|2027-06-15<->2027-06-15|2026-10-13<->2026-10-13|2027-06-22<->2027-06-22|2027-12-07<->2027-12-07|2027-01-05<->2027-01-05|2026-10-06<->2026-10-06|2027-08-03<->2027-08-03|2027-03-30<->2027-03-30|2027-09-21<->2027-09-21|2027-08-31<->2027-08-31|2027-07-27<->2027-07-27|2027-05-04<->2027-05-04|2027-09-14<->2027-09-14|2026-07-28<->2026-07-28|2026-07-07<->2026-07-07|2027-07-06<->2027-07-06|2026-11-10<->2026-11-10|2026-11-24<->2026-11-24|2026-12-29<->2026-12-29|2027-12-21<->2027-12-21|2027-11-09<->2027-11-09|2027-03-16<->2027-03-16|2026-08-11<->2026-08-11|2026-07-14<->2026-07-14|2026-11-03<->2026-11-03|2027-02-16<->2027-02-16|2027-07-20<->2027-07-20|2026-10-20<->2026-10-20|2026-09-15<->2026-09-15|2027-01-19<->2027-01-19|2027-08-24<->2027-08-24|2026-12-01<->2026-12-01|2027-10-05<->2027-10-05|2027-01-12<->2027-01-12|2027-11-23<->2027-11-23|2027-08-17<->2027-08-17|2026-12-08<->2026-12-08|2027-10-19<->2027-10-19|2027-02-02<->2027-02-02|2026-08-25<->2026-08-25|2027-05-18<->2027-05-18|2026-12-15<->2026-12-15",
+        "Description": "Soirée karaoké au café du Nord au Bousquet d'orb tous les mardis. \nInformations au 04 67 97 90 10",
+        "Adresse_postale": "20 Avenue Lyon-Caen",
+        "Contacts_du_POI": "SOIRÉE KARAOKÉ#|#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/986af3a8-f12c-30fd-bb8d-ccea45d1fc6e",
+        "Code_postal_et_commune": "34260#Le Bousquet-d'Orb",
+        "Latitude": 43.6936098,
+        "Longitude": 3.1651145,
+        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
+        "Date_de_mise_a_jour": "2026-08-23"
       },
       {
         "Nom_du_POI": "STILL LIFE WITH POMEGRANATES",
@@ -132,20 +132,7 @@
         "Latitude": 43.694741,
         "Longitude": 3.164517,
         "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-11-25"
-      },
-      {
-        "Nom_du_POI": "JOURNÉE MEXICAINE : CONFÉRENCE BIEN-ÊTRE",
-        "Periodes_regroupees": "2026-12-08<->2026-12-08",
-        "Description": "Mardi 8 décembre à 10h salle Marcel Roux\nConférence bien être avec découverte de petits articles et dispositifs médicaux (sans obligation d'achat)\nAccueil café dès 9h30\nDurée : 1h30\nInfo au 06 81 37 96 64",
-        "Adresse_postale": "3 Chemin du Stade",
-        "Contacts_du_POI": "JOURNÉE MEXICAINE : CONFÉRENCE BIEN-ÊTRE#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/efee61d8-310c-335b-b0bd-27ff16ef980f",
-        "Code_postal_et_commune": "34260#Le Bousquet-d'Orb",
-        "Latitude": 43.6947845,
-        "Longitude": 3.1666463,
-        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-11-25"
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "REPAS SPECTACLE DE LA SAINTE BARBE",
@@ -174,17 +161,43 @@
         "Date_de_mise_a_jour": "2026-11-15"
       },
       {
-        "Nom_du_POI": "SORTIE NATURE : LA RIVIÈRE ET SA FORÊT",
-        "Periodes_regroupees": "2026-12-06<->2026-12-06",
-        "Description": "Sortie nature : La rivière et sa forêt le dimanche 6 décembre 2026 de 10h à 12h30 \nDans le cadre des observatoires citoyens des cours d'eau. \nDécouvrez les liens qui unissent ces deux milieux. \nRDV sur le parking du lac le Bouloc. \nGRATUIT - réservation conseillée au  07 71 27 79 33",
-        "Adresse_postale": "Avenue du Lac",
-        "Contacts_du_POI": "#|SORTIE NATURE : LA RIVIÈRE ET SA FORÊT#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/ed57f03d-37ba-368c-b8d6-f30db6c24239",
-        "Code_postal_et_commune": "34260#Ceilhes-et-Rocozels",
-        "Latitude": 43.8031991,
-        "Longitude": 3.1058721,
+        "Nom_du_POI": "JOURNÉE MEXICAINE : CONFÉRENCE BIEN-ÊTRE",
+        "Periodes_regroupees": "2026-12-08<->2026-12-08",
+        "Description": "Mardi 8 décembre à 10h salle Marcel Roux\nConférence bien être avec découverte de petits articles et dispositifs médicaux (sans obligation d'achat)\nAccueil café dès 9h30\nDurée : 1h30\nInfo au 06 81 37 96 64",
+        "Adresse_postale": "3 Chemin du Stade",
+        "Contacts_du_POI": "JOURNÉE MEXICAINE : CONFÉRENCE BIEN-ÊTRE#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/efee61d8-310c-335b-b0bd-27ff16ef980f",
+        "Code_postal_et_commune": "34260#Le Bousquet-d'Orb",
+        "Latitude": 43.6947845,
+        "Longitude": 3.1666463,
         "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
         "Date_de_mise_a_jour": "2026-11-25"
+      },
+      {
+        "Nom_du_POI": "REPAS ET SOIRÉE ANIMÉE DE NOËL AVEC LINE 7",
+        "Periodes_regroupees": "2026-12-18<->2026-12-18",
+        "Description": "Soirée de Noël à Avène proposée par le Comité des Fêtes en collaboration avec la commune \n19h30 au plateau Sportif pour le feu d'artifice \n20h30  à la salle polyvalente pour l'apéritif de Noël\n21h à la salle polyvalente pour le repas de Noël et sa soirée animée par LINE 7\n27€/adhérent / 30€/non adhérent \nInscription avant le 10 12 au 06 18 54 42 04",
+        "Adresse_postale": "Salle polyvalente",
+        "Contacts_du_POI": "#|REPAS ET SOIRÉE ANIMÉE DE NOËL AVEC LINE 7#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/479f7a12-97b5-3ac2-8de2-307ec2e870bb",
+        "Code_postal_et_commune": "34260#Avène",
+        "Latitude": 43.756966,
+        "Longitude": 3.09923,
+        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
+        "Date_de_mise_a_jour": "2026-11-27"
+      },
+      {
+        "Nom_du_POI": "FEU D'ARTIFICE ET APÉRITIF DE NOËL",
+        "Periodes_regroupees": "2026-12-18<->2026-12-18",
+        "Description": "Soirée de Noël à Avène proposée par le Comité des Fêtes en collaboration avec la commune \n19h30 au plateau Sportif pour le feu d'artifice \n20h30  à la salle polyvalente pour l'péritif de Noël\n21h à la salle polyvalente pour le repas de Noël et sa soirée animée par LINE 7\n27€/adhérent / 30€/non adhérent \nInscription avant le 10 12 au 06 18 54 42 04",
+        "Adresse_postale": "Place du marché",
+        "Contacts_du_POI": "#|FEU D'ARTIFICE ET APÉRITIF DE NOËL#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/bb39671a-74b9-3a38-a790-d0c2335bd724",
+        "Code_postal_et_commune": "34260#Avène",
+        "Latitude": 43.7567607,
+        "Longitude": 3.1009977,
+        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "ATELIER \"APPRENEZ À VOUS SOIGNER NATURELLEMENT\"",
@@ -200,56 +213,30 @@
         "Date_de_mise_a_jour": "2026-11-25"
       },
       {
-        "Nom_du_POI": "FEU D'ARTIFICE ET APÉRITIF DE NOËL",
-        "Periodes_regroupees": "2026-12-18<->2026-12-18",
-        "Description": "Soirée de Noël à Avène proposée par le Comité des Fêtes en collaboration avec la commune \n19h30 au plateau Sportif pour le feu d'artifice \n20h30  à la salle polyvalente pour l'péritif de Noël\n21h à la salle polyvalente pour le repas de Noël et sa soirée animée par LINE 7\n27€/adhérent / 30€/non adhérent \nInscription avant le 10 12 au 06 18 54 42 04",
-        "Adresse_postale": "Place du marché",
-        "Contacts_du_POI": "#|FEU D'ARTIFICE ET APÉRITIF DE NOËL#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/bb39671a-74b9-3a38-a790-d0c2335bd724",
-        "Code_postal_et_commune": "34260#Avène",
-        "Latitude": 43.7567607,
-        "Longitude": 3.1009977,
+        "Nom_du_POI": "SORTIE NATURE : LA RIVIÈRE ET SA FORÊT",
+        "Periodes_regroupees": "2026-12-06<->2026-12-06",
+        "Description": "Sortie nature : La rivière et sa forêt le dimanche 6 décembre 2026 de 10h à 12h30 \nDans le cadre des observatoires citoyens des cours d'eau. \nDécouvrez les liens qui unissent ces deux milieux. \nRDV sur le parking du lac le Bouloc. \nGRATUIT - réservation conseillée au  07 71 27 79 33",
+        "Adresse_postale": "Avenue du Lac",
+        "Contacts_du_POI": "#|SORTIE NATURE : LA RIVIÈRE ET SA FORÊT#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/ed57f03d-37ba-368c-b8d6-f30db6c24239",
+        "Code_postal_et_commune": "34260#Ceilhes-et-Rocozels",
+        "Latitude": 43.8031991,
+        "Longitude": 3.1058721,
         "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-11-26"
-      },
-      {
-        "Nom_du_POI": "REPAS ET SOIRÉE ANIMÉE DE NOËL AVEC LINE 7",
-        "Periodes_regroupees": "2026-12-18<->2026-12-18",
-        "Description": "Soirée de Noël à Avène proposée par le Comité des Fêtes en collaboration avec la commune \n19h30 au plateau Sportif pour le feu d'artifice \n20h30  à la salle polyvalente pour l'apéritif de Noël\n21h à la salle polyvalente pour le repas de Noël et sa soirée animée par LINE 7\n27€/adhérent / 30€/non adhérent \nInscription avant le 10 12 au 06 18 54 42 04",
-        "Adresse_postale": "Salle polyvalente",
-        "Contacts_du_POI": "#|REPAS ET SOIRÉE ANIMÉE DE NOËL AVEC LINE 7#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/479f7a12-97b5-3ac2-8de2-307ec2e870bb",
-        "Code_postal_et_commune": "34260#Avène",
-        "Latitude": 43.756966,
-        "Longitude": 3.09923,
-        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-11-26"
-      },
-      {
-        "Nom_du_POI": "CERCLE DE LECTURE",
-        "Periodes_regroupees": "2026-06-11<->2026-06-11|2026-10-08<->2026-10-08|2026-11-12<->2026-11-12|2026-12-10<->2026-12-10|2026-09-10<->2026-09-10",
-        "Description": "Cercle de lecture organisé par le Foyer Rural d'Avène\nChaque 2ème jeudi du mois - salle polyvalente de Truscas\nEntrée libre",
-        "Adresse_postale": null,
-        "Contacts_du_POI": "CERCLE DE LECTURE#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/d3489fe7-6769-3f5d-a332-e50137ad56b4",
-        "Code_postal_et_commune": "34260#Avène",
-        "Latitude": 43.731518,
-        "Longitude": 3.120609,
-        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-09-24"
+        "Date_de_mise_a_jour": "2026-11-25"
       },
       {
         "Nom_du_POI": "MARCHÉ DE NOËL",
-        "Periodes_regroupees": "2026-11-29<->2026-11-29",
-        "Description": "Dimanche 29 novembre de 10H à 18H\nMarché de Noël à Truscas\n\n\nLe marché de Noël à Truscas vous attend de 10h à 18h pour faire le plein d'idées cadeaux et déco !",
+        "Periodes_regroupees": "2026-12-06<->2026-12-06",
+        "Description": "Marché de Noël à Camplong\nLe dimanche 6 décembre 2026, rendez-vous à la salle des écoles de Camplong pour le Marché de Noël, de 9 h à 17 h.\n\nRestauration et buvette sur place.\nRéservation : lespaze@mailo.com\nRenseignements : 06 58 39 26 61.",
         "Adresse_postale": null,
         "Contacts_du_POI": "MARCHÉ DE NOËL#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/321e08e4-2aa8-30fe-b455-d8b7f4323a6b",
-        "Code_postal_et_commune": "34260#Avène",
-        "Latitude": 43.75767,
-        "Longitude": 3.10173,
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/dfbfd866-59ab-3680-939d-fc7a8e2fb541",
+        "Code_postal_et_commune": "34260#Camplong",
+        "Latitude": 43.6726,
+        "Longitude": 3.11844,
         "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-11-05"
+        "Date_de_mise_a_jour": "2026-11-07"
       },
       {
         "Nom_du_POI": "RANDO TELETHON AVEC TAILL AVENTURE",
@@ -279,16 +266,29 @@
       },
       {
         "Nom_du_POI": "MARCHÉ DE NOËL",
-        "Periodes_regroupees": "2026-12-06<->2026-12-06",
-        "Description": "Marché de Noël à Camplong\nLe dimanche 6 décembre 2026, rendez-vous à la salle des écoles de Camplong pour le Marché de Noël, de 9 h à 17 h.\n\nRestauration et buvette sur place.\nRéservation : lespaze@mailo.com\nRenseignements : 06 58 39 26 61.",
+        "Periodes_regroupees": "2026-11-29<->2026-11-29",
+        "Description": "Dimanche 29 novembre de 10H à 18H\nMarché de Noël à Truscas\n\n\nLe marché de Noël à Truscas vous attend de 10h à 18h pour faire le plein d'idées cadeaux et déco !",
         "Adresse_postale": null,
         "Contacts_du_POI": "MARCHÉ DE NOËL#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/dfbfd866-59ab-3680-939d-fc7a8e2fb541",
-        "Code_postal_et_commune": "34260#Camplong",
-        "Latitude": 43.6726,
-        "Longitude": 3.11844,
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/321e08e4-2aa8-30fe-b455-d8b7f4323a6b",
+        "Code_postal_et_commune": "34260#Avène",
+        "Latitude": 43.75767,
+        "Longitude": 3.10173,
         "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
-        "Date_de_mise_a_jour": "2026-11-07"
+        "Date_de_mise_a_jour": "2026-11-05"
+      },
+      {
+        "Nom_du_POI": "CERCLE DE LECTURE",
+        "Periodes_regroupees": "2026-06-11<->2026-06-11|2026-10-08<->2026-10-08|2026-11-12<->2026-11-12|2026-12-10<->2026-12-10|2026-09-10<->2026-09-10",
+        "Description": "Cercle de lecture organisé par le Foyer Rural d'Avène\nChaque 2ème jeudi du mois - salle polyvalente de Truscas\nEntrée libre",
+        "Adresse_postale": null,
+        "Contacts_du_POI": "CERCLE DE LECTURE#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/d3489fe7-6769-3f5d-a332-e50137ad56b4",
+        "Code_postal_et_commune": "34260#Avène",
+        "Latitude": 43.731518,
+        "Longitude": 3.120609,
+        "Createur_de_la_donnee": "34 - OFFICE DE TOURISME DU GRAND ORB",
+        "Date_de_mise_a_jour": "2026-09-24"
       },
       {
         "Nom_du_POI": "VISITE GUIDÉE 1ER DIMANCHE DU MOIS \"MÉTÉORITES ENTRE CIEL ET TERRE\"",
@@ -328,6 +328,32 @@
         "Longitude": 3.31996709,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
         "Date_de_mise_a_jour": "2026-11-15"
+      },
+      {
+        "Nom_du_POI": "MISSION COSMOS : CRÉEZ EN FAMILLE !",
+        "Periodes_regroupees": "2026-12-29<->2026-12-29|2026-12-22<->2026-12-22|2026-12-23<->2026-12-23|2026-12-30<->2026-12-30",
+        "Description": "Dés 7 ans. Vivez une aventure interstellaire et créative en famille ! ",
+        "Adresse_postale": "Square Georges Auric",
+        "Contacts_du_POI": "#https://boutique.museedelodeve.fr/fr/produit/xpo1|MISSION COSMOS : CRÉEZ EN FAMILLE !#https://www.museedelodeve.fr/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/c9d5c161-c54d-3ed0-94e3-6a65e12ac150",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.731747,
+        "Longitude": 3.31994559,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-27"
+      },
+      {
+        "Nom_du_POI": "LA VISITE DU PASSIONNÉ",
+        "Periodes_regroupees": "2026-12-29<->2026-12-29|2026-12-22<->2026-12-22",
+        "Description": "Visite de haut vol par un passionné de météorites pour un public aguerri",
+        "Adresse_postale": "Square Georges Auric",
+        "Contacts_du_POI": "LA VISITE DU PASSIONNÉ#http://www.museedelodeve.fr/|#https://boutique.museedelodeve.fr/fr/produit/lecture",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/d412d4b1-d469-3232-901e-6a16b8d409dd",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7315124,
+        "Longitude": 3.3199439,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "VISITE « FLASH »",
@@ -408,19 +434,6 @@
         "Date_de_mise_a_jour": "2026-09-16"
       },
       {
-        "Nom_du_POI": "DE L'ÉCRITURE CINÉMATOGRAPHIQUE À L'ÉCRITURE LITTÉRAIRE",
-        "Periodes_regroupees": "2026-11-27<->2026-11-27",
-        "Description": "Rencontre avec Meryem-Bahia Arfaoui, Carole Agari et Lou-Anna Reix, trois réalisatrices d’Occitanie qui viennent de publier leurs premiers romans.",
-        "Adresse_postale": "Square Georges Auric",
-        "Contacts_du_POI": "DE L'ÉCRITURE CINÉMATOGRAPHIQUE À L'ÉCRITURE LITTÉRAIRE#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/1d2de0d0-7a7b-3c43-84f0-4a5152884575",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7314796,
-        "Longitude": 3.3195834,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-05"
-      },
-      {
         "Nom_du_POI": "VISITE GUIDÉE PAR MATTHIEU GOUNELLE",
         "Periodes_regroupees": "2026-11-28<->2026-11-28",
         "Description": "Une visite unique avec un spécialiste des météorites",
@@ -486,19 +499,6 @@
         "Date_de_mise_a_jour": "2026-11-19"
       },
       {
-        "Nom_du_POI": "MARCHÉ TRADITIONNEL DE LODÈVE",
-        "Periodes_regroupees": "2026-11-21<->2026-11-21|2027-10-30<->2027-10-30|2026-06-13<->2026-06-13|2027-07-10<->2027-07-10|2026-02-14<->2026-02-14|2026-08-01<->2026-08-01|2026-09-26<->2026-09-26|2026-12-19<->2026-12-19|2027-09-11<->2027-09-11|2027-04-03<->2027-04-03|2026-08-08<->2026-08-08|2026-10-03<->2026-10-03|2026-07-25<->2026-07-25|2027-12-25<->2027-12-25|2027-09-04<->2027-09-04|2026-09-19<->2026-09-19|2026-11-07<->2026-11-07|2027-05-15<->2027-05-15|2027-08-07<->2027-08-07|2026-03-07<->2026-03-07|2027-07-17<->2027-07-17|2026-02-21<->2026-02-21|2026-07-11<->2026-07-11|2026-12-26<->2026-12-26|2027-07-31<->2027-07-31|2026-10-10<->2026-10-10|2026-05-02<->2026-05-02|2026-05-30<->2026-05-30|2027-02-06<->2027-02-06|2027-05-22<->2027-05-22|2026-06-06<->2026-06-06|2026-06-27<->2026-06-27|2026-05-16<->2026-05-16|2027-06-19<->2027-06-19|2027-04-24<->2027-04-24|2026-03-21<->2026-03-21|2027-11-13<->2027-11-13|2026-11-28<->2026-11-28|2027-12-04<->2027-12-04|2027-01-16<->2027-01-16|2026-07-04<->2026-07-04|2026-10-24<->2026-10-24|2026-05-23<->2026-05-23|2027-11-20<->2027-11-20|2026-03-14<->2026-03-14|2026-08-22<->2026-08-22|2026-09-12<->2026-09-12|2026-09-05<->2026-09-05|2027-12-18<->2027-12-18|2026-12-12<->2026-12-12|2027-01-02<->2027-01-02|2027-08-28<->2027-08-28|2026-04-04<->2026-04-04|2027-04-10<->2027-04-10|2027-11-06<->2027-11-06|2026-05-09<->2026-05-09|2027-04-17<->2027-04-17|2027-09-25<->2027-09-25|2027-09-18<->2027-09-18|2026-02-28<->2026-02-28|2027-08-21<->2027-08-21|2027-01-30<->2027-01-30|2027-06-12<->2027-06-12|2026-11-14<->2026-11-14|2026-01-17<->2026-01-17|2027-02-27<->2027-02-27|2026-04-11<->2026-04-11|2027-12-11<->2027-12-11|2026-01-10<->2026-01-10|2027-06-05<->2027-06-05|2027-10-16<->2027-10-16|2026-08-15<->2026-08-15|2026-07-18<->2026-07-18|2027-05-29<->2027-05-29|2027-03-20<->2027-03-20|2027-01-23<->2027-01-23|2026-01-31<->2026-01-31|2026-12-05<->2026-12-05|2027-02-13<->2027-02-13|2027-01-09<->2027-01-09|2027-11-27<->2027-11-27|2027-08-14<->2027-08-14|2026-04-25<->2026-04-25|2026-02-07<->2026-02-07|2026-06-20<->2026-06-20|2027-03-27<->2027-03-27|2026-10-17<->2026-10-17|2027-03-06<->2027-03-06|2026-04-18<->2026-04-18|2027-07-03<->2027-07-03|2027-10-23<->2027-10-23|2027-02-20<->2027-02-20|2026-03-28<->2026-03-28|2027-05-08<->2027-05-08|2027-06-26<->2027-06-26|2026-08-29<->2026-08-29|2026-01-24<->2026-01-24|2027-05-01<->2027-05-01|2027-07-24<->2027-07-24|2027-10-02<->2027-10-02|2026-01-03<->2026-01-03|2026-10-31<->2026-10-31|2027-10-09<->2027-10-09|2027-03-13<->2027-03-13",
-        "Description": "Le samedi matin, venez flâner sur le marché traditionnel de Lodève et faire vos emplettes sur les nombreux stands. Traditionnel, bio, produits du terroir, paysans, producteurs, fleurs, vêtements...",
-        "Adresse_postale": "Place du marché",
-        "Contacts_du_POI": "MARCHÉ TRADITIONNEL DE LODÈVE#https://lodeve.fr/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/02e1f8d6-a4ba-3b1b-bac6-72f7f4c50417",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7306341,
-        "Longitude": 3.3204959,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-04-17"
-      },
-      {
         "Nom_du_POI": "BROCANTE  - VIDE-GRENIER DE LODÈVE",
         "Periodes_regroupees": "2026-06-07<->2026-06-07|2027-01-24<->2027-01-24|2026-08-02<->2026-08-02|2026-03-08<->2026-03-08|2027-11-21<->2027-11-21|2027-06-13<->2027-06-13|2027-05-16<->2027-05-16|2026-06-28<->2026-06-28|2026-02-08<->2026-02-08|2027-10-10<->2027-10-10|2027-03-21<->2027-03-21|2027-07-04<->2027-07-04|2026-10-11<->2026-10-11|2027-05-23<->2027-05-23|2026-12-20<->2026-12-20|2026-12-13<->2026-12-13|2026-11-15<->2026-11-15|2027-03-28<->2027-03-28|2027-04-18<->2027-04-18|2027-11-28<->2027-11-28|2026-08-30<->2026-08-30|2026-04-05<->2026-04-05|2027-12-19<->2027-12-19|2027-04-25<->2027-04-25|2026-09-27<->2026-09-27|2026-02-22<->2026-02-22|2026-03-15<->2026-03-15|2026-03-01<->2026-03-01|2026-05-10<->2026-05-10|2026-05-17<->2026-05-17|2027-07-18<->2027-07-18|2026-06-14<->2026-06-14|2027-09-12<->2027-09-12|2027-10-03<->2027-10-03|2027-03-14<->2027-03-14|2027-03-07<->2027-03-07|2027-05-02<->2027-05-02|2027-10-24<->2027-10-24|2027-06-06<->2027-06-06|2026-11-08<->2026-11-08|2027-05-30<->2027-05-30|2027-04-04<->2027-04-04|2026-09-13<->2026-09-13|2027-10-17<->2027-10-17|2026-12-27<->2026-12-27|2026-03-22<->2026-03-22|2026-08-23<->2026-08-23|2027-11-14<->2027-11-14|2026-04-12<->2026-04-12|2026-04-19<->2026-04-19|2026-05-03<->2026-05-03|2027-10-31<->2027-10-31|2026-12-06<->2026-12-06|2027-02-14<->2027-02-14|2026-07-19<->2026-07-19|2026-07-26<->2026-07-26|2027-07-11<->2027-07-11|2026-02-01<->2026-02-01|2027-11-07<->2027-11-07|2026-06-21<->2026-06-21|2026-10-25<->2026-10-25|2027-12-12<->2027-12-12|2027-09-19<->2027-09-19|2026-11-29<->2026-11-29|2027-02-21<->2027-02-21|2027-08-01<->2027-08-01|2027-05-09<->2027-05-09|2026-07-05<->2026-07-05|2026-04-26<->2026-04-26|2026-01-11<->2026-01-11|2027-01-17<->2027-01-17|2027-12-05<->2027-12-05|2027-08-29<->2027-08-29|2027-06-27<->2027-06-27|2027-07-25<->2027-07-25|2026-08-09<->2026-08-09|2027-08-08<->2027-08-08|2027-06-20<->2027-06-20|2027-01-03<->2027-01-03|2026-02-15<->2026-02-15|2026-11-22<->2026-11-22|2026-08-16<->2026-08-16|2026-01-18<->2026-01-18|2026-09-06<->2026-09-06|2026-05-31<->2026-05-31|2027-09-05<->2027-09-05|2027-08-22<->2027-08-22|2027-08-15<->2027-08-15|2027-09-26<->2027-09-26|2026-01-04<->2026-01-04|2027-01-31<->2027-01-31|2027-12-26<->2027-12-26|2026-05-24<->2026-05-24|2026-11-01<->2026-11-01|2027-02-28<->2027-02-28|2026-10-04<->2026-10-04|2027-04-11<->2027-04-11|2026-10-18<->2026-10-18|2027-01-10<->2027-01-10|2027-02-07<->2027-02-07|2026-09-20<->2026-09-20|2026-03-29<->2026-03-29|2026-01-25<->2026-01-25|2026-07-12<->2026-07-12",
         "Description": "Les Brocs’Arts de Lodève tous les dimanches matins sur le parking de la sous-préfecture dans le secteur des allées de Verdun-esplanade à Lodève.",
@@ -510,6 +510,32 @@
         "Longitude": 3.31894,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
         "Date_de_mise_a_jour": "2026-03-11"
+      },
+      {
+        "Nom_du_POI": "MARCHÉ TRADITIONNEL DE LODÈVE",
+        "Periodes_regroupees": "2027-03-20<->2027-03-20|2027-01-23<->2027-01-23|2026-01-31<->2026-01-31|2026-12-05<->2026-12-05|2027-02-13<->2027-02-13|2027-01-09<->2027-01-09|2027-11-27<->2027-11-27|2027-08-14<->2027-08-14|2026-04-25<->2026-04-25|2026-02-07<->2026-02-07|2026-06-20<->2026-06-20|2027-03-27<->2027-03-27|2026-10-17<->2026-10-17|2027-03-06<->2027-03-06|2026-04-18<->2026-04-18|2027-07-03<->2027-07-03|2027-10-23<->2027-10-23|2027-02-20<->2027-02-20|2026-03-28<->2026-03-28|2027-05-08<->2027-05-08|2027-06-26<->2027-06-26|2026-08-29<->2026-08-29|2026-01-24<->2026-01-24|2027-05-01<->2027-05-01|2027-07-24<->2027-07-24|2027-10-02<->2027-10-02|2026-01-03<->2026-01-03|2026-10-31<->2026-10-31|2027-10-09<->2027-10-09|2027-03-13<->2027-03-13|2026-11-21<->2026-11-21|2027-10-30<->2027-10-30|2026-06-13<->2026-06-13|2027-07-10<->2027-07-10|2026-02-14<->2026-02-14|2026-08-01<->2026-08-01|2026-09-26<->2026-09-26|2026-12-19<->2026-12-19|2027-09-11<->2027-09-11|2027-04-03<->2027-04-03|2026-08-08<->2026-08-08|2026-10-03<->2026-10-03|2026-07-25<->2026-07-25|2027-12-25<->2027-12-25|2027-09-04<->2027-09-04|2026-09-19<->2026-09-19|2026-11-07<->2026-11-07|2027-05-15<->2027-05-15|2027-08-07<->2027-08-07|2026-03-07<->2026-03-07|2027-07-17<->2027-07-17|2026-02-21<->2026-02-21|2026-07-11<->2026-07-11|2026-12-26<->2026-12-26|2027-07-31<->2027-07-31|2026-10-10<->2026-10-10|2026-05-02<->2026-05-02|2026-05-30<->2026-05-30|2027-02-06<->2027-02-06|2027-05-22<->2027-05-22|2026-06-06<->2026-06-06|2026-06-27<->2026-06-27|2026-05-16<->2026-05-16|2027-06-19<->2027-06-19|2027-04-24<->2027-04-24|2026-03-21<->2026-03-21|2027-11-13<->2027-11-13|2026-11-28<->2026-11-28|2027-12-04<->2027-12-04|2027-01-16<->2027-01-16|2026-07-04<->2026-07-04|2026-10-24<->2026-10-24|2026-05-23<->2026-05-23|2027-11-20<->2027-11-20|2026-03-14<->2026-03-14|2026-08-22<->2026-08-22|2026-09-12<->2026-09-12|2026-09-05<->2026-09-05|2027-12-18<->2027-12-18|2026-12-12<->2026-12-12|2027-01-02<->2027-01-02|2027-08-28<->2027-08-28|2026-04-04<->2026-04-04|2027-04-10<->2027-04-10|2027-11-06<->2027-11-06|2026-05-09<->2026-05-09|2027-04-17<->2027-04-17|2027-09-25<->2027-09-25|2027-09-18<->2027-09-18|2026-02-28<->2026-02-28|2027-08-21<->2027-08-21|2027-01-30<->2027-01-30|2027-06-12<->2027-06-12|2026-11-14<->2026-11-14|2026-01-17<->2026-01-17|2027-02-27<->2027-02-27|2026-04-11<->2026-04-11|2027-12-11<->2027-12-11|2026-01-10<->2026-01-10|2027-06-05<->2027-06-05|2027-10-16<->2027-10-16|2026-08-15<->2026-08-15|2026-07-18<->2026-07-18|2027-05-29<->2027-05-29",
+        "Description": "Le samedi matin, venez flâner sur le marché traditionnel de Lodève et faire vos emplettes sur les nombreux stands. Traditionnel, bio, produits du terroir, paysans, producteurs, fleurs, vêtements...",
+        "Adresse_postale": "Place du marché",
+        "Contacts_du_POI": "MARCHÉ TRADITIONNEL DE LODÈVE#https://lodeve.fr/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/02e1f8d6-a4ba-3b1b-bac6-72f7f4c50417",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7306341,
+        "Longitude": 3.3204959,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-04-17"
+      },
+      {
+        "Nom_du_POI": "ANIMATIONS A LA MÉDIATHÈQUE",
+        "Periodes_regroupees": "2026-01-01<->2026-12-31",
+        "Description": "Le pôle culturel - Médiathèque Confluence de Lodève propose une programmation riche et variée tout au long de l’année. \nExpositions, rencontres littéraires, ateliers créatifs, projections, concerts et spectacles rythment la vie de cet espace dédié à la découverte et à l’échange. \nProgramme complet : https://bit.ly/mediatheque_lodeve",
+        "Adresse_postale": "Rue Joseph Galtier",
+        "Contacts_du_POI": "ANIMATIONS A LA MÉDIATHÈQUE#https://mediatheque-lodeve.bibli.fr/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/c9cfc3ed-cddb-340d-a4e5-ead6333deaea",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7318156,
+        "Longitude": 3.31660226,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-08-27"
       },
       {
         "Nom_du_POI": "RENCONTRE AVEC L'ART VISIONNAIRE & LES PEUPLES PREMIERS",
@@ -551,19 +577,6 @@
         "Date_de_mise_a_jour": "2026-01-01"
       },
       {
-        "Nom_du_POI": "ANIMATIONS A LA MÉDIATHÈQUE",
-        "Periodes_regroupees": "2026-01-01<->2026-12-31",
-        "Description": "Le pôle culturel - Médiathèque Confluence de Lodève propose une programmation riche et variée tout au long de l’année. \nExpositions, rencontres littéraires, ateliers créatifs, projections, concerts et spectacles rythment la vie de cet espace dédié à la découverte et à l’échange. \nProgramme complet : https://bit.ly/mediatheque_lodeve",
-        "Adresse_postale": "Rue Joseph Galtier",
-        "Contacts_du_POI": "ANIMATIONS A LA MÉDIATHÈQUE#https://mediatheque-lodeve.bibli.fr/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/c9cfc3ed-cddb-340d-a4e5-ead6333deaea",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7318156,
-        "Longitude": 3.31660226,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-08-27"
-      },
-      {
         "Nom_du_POI": "MONTÉE AU CLOCHER DE LA CATHÉDRALE SAINT-FULCRAN",
         "Periodes_regroupees": "2027-01-23<->2027-01-23|2026-12-26<->2026-12-26|2026-11-28<->2026-11-28|2026-10-24<->2026-10-24",
         "Description": "Prenez de la hauteur ! 220 marches vous mènent sous le clocher, au sommet de la cathédrale Saint-Fulcran : un belvédère  sur la ville et son écrin de verdure.",
@@ -575,32 +588,6 @@
         "Longitude": 3.31755796,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
         "Date_de_mise_a_jour": "2026-09-06"
-      },
-      {
-        "Nom_du_POI": "STAGE DE SCULPTURE ET MODELAGE D’ARGILE À LODÈVE AVEC SOLVEIG LAFITTE",
-        "Periodes_regroupees": "2026-10-24<->2026-10-25|2026-12-05<->2026-12-06|2026-11-14<->2026-11-15|2026-10-31<->2026-11-01",
-        "Description": "Stage de sculpture et modelage d’argile pour adultes, une parenthèse créative et apaisante pour laisser libre cours à son imagination.",
-        "Adresse_postale": "Route de Montpellier",
-        "Contacts_du_POI": "#|STAGE DE SCULPTURE ET MODELAGE D’ARGILE À LODÈVE AVEC SOLVEIG LAFITTE#https://lasol30.wixsite.com/solveig",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/a9635c36-f507-35c3-b890-b91e22111dac",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7181981,
-        "Longitude": 3.3241559,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-10-13"
-      },
-      {
-        "Nom_du_POI": "COURS DE COUTURE",
-        "Periodes_regroupees": "2026-09-21<->2026-12-30|2027-01-01<->2027-06-09",
-        "Description": "Besoin d’un coup de pouce pour votre projet de couture ? Venez transformer ou réparer vos vêtements existants, ou créer la tenue de vos envies grâce à un accompagnement personnalisé. Des séances ouvertes à tous les projets, sans engagement et sur réservation.",
-        "Adresse_postale": "276, Avenue du Général de Gaulles",
-        "Contacts_du_POI": "#|COURS DE COUTURE#https://www.labeilleverte.net/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/4bcfd585-f9e4-3de1-9ed5-d114c48be0fb",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7273482,
-        "Longitude": 3.3236456,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-10-04"
       },
       {
         "Nom_du_POI": "STAGES CYANOTYPE",
@@ -629,17 +616,17 @@
         "Date_de_mise_a_jour": "2026-10-12"
       },
       {
-        "Nom_du_POI": "RÉPARE & VÉLO",
-        "Periodes_regroupees": "2027-01-01<->2027-07-01|2026-10-01<->2026-12-30",
-        "Description": "Un moment de partage de connaissance, avec des passionnés, pour apprendre à réparer son vélo.",
-        "Adresse_postale": "17, Boulevard Jean Jaurès",
-        "Contacts_du_POI": "RÉPARE & VÉLO#https://www.labeilleverte.net/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/7a5250b9-18b5-375d-a45d-5c15e2441c72",
+        "Nom_du_POI": "STAGE DE SCULPTURE ET MODELAGE D’ARGILE À LODÈVE AVEC SOLVEIG LAFITTE",
+        "Periodes_regroupees": "2026-10-24<->2026-10-25|2026-12-05<->2026-12-06|2026-11-14<->2026-11-15|2026-10-31<->2026-11-01",
+        "Description": "Stage de sculpture et modelage d’argile pour adultes, une parenthèse créative et apaisante pour laisser libre cours à son imagination.",
+        "Adresse_postale": "Route de Montpellier",
+        "Contacts_du_POI": "#|STAGE DE SCULPTURE ET MODELAGE D’ARGILE À LODÈVE AVEC SOLVEIG LAFITTE#https://lasol30.wixsite.com/solveig",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/a9635c36-f507-35c3-b890-b91e22111dac",
         "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7300748,
-        "Longitude": 3.3200529,
+        "Latitude": 43.7181981,
+        "Longitude": 3.3241559,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-10-04"
+        "Date_de_mise_a_jour": "2026-10-13"
       },
       {
         "Nom_du_POI": "ROCC ALTER : SUR LE FIL DES POSSIBLES",
@@ -655,69 +642,30 @@
         "Date_de_mise_a_jour": "2026-10-30"
       },
       {
-        "Nom_du_POI": "SALON DU LIVRE DES AUTEURS LOCAUX",
-        "Periodes_regroupees": "2026-11-28<->2026-11-28",
-        "Description": "Le Salon du Livre des auteurs locaux investit la halle Dardé de Lodève. \nAu programme : rencontres avec les auteurs, conférence sur Paul Dardé, lectures pour adultes et enfants , suivies d'un repas crêpes/galettes et d'un concert de Lula Heldt. Crêpes, galettes et vin chaud toute la journée !",
-        "Adresse_postale": "Place de la Halle Dardé",
-        "Contacts_du_POI": "SALON DU LIVRE DES AUTEURS LOCAUX#|#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/8a249b49-2f87-31d5-902f-17832548ea74",
+        "Nom_du_POI": "RÉPARE & VÉLO",
+        "Periodes_regroupees": "2027-01-01<->2027-07-01|2026-10-01<->2026-12-30",
+        "Description": "Un moment de partage de connaissance, avec des passionnés, pour apprendre à réparer son vélo.",
+        "Adresse_postale": "17, Boulevard Jean Jaurès",
+        "Contacts_du_POI": "RÉPARE & VÉLO#https://www.labeilleverte.net/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/7a5250b9-18b5-375d-a45d-5c15e2441c72",
         "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7304429,
-        "Longitude": 3.3211904,
+        "Latitude": 43.7300748,
+        "Longitude": 3.3200529,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-19"
+        "Date_de_mise_a_jour": "2026-10-04"
       },
       {
-        "Nom_du_POI": "MARCHÉ DE NOËL À L’ATELIER MUSKA",
-        "Periodes_regroupees": "2026-12-04<->2026-12-28",
-        "Description": "Marché de Noël à l’Atelier Muska : un rendez-vous artisanal réunissant quatre créatrices et leurs œuvres originales",
-        "Adresse_postale": "27 Rue Neuve des Marchés",
-        "Contacts_du_POI": "MARCHÉ DE NOËL À L’ATELIER MUSKA#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/9cb61ab7-07e6-3dea-b131-31f51fcdcd34",
+        "Nom_du_POI": "COURS DE COUTURE",
+        "Periodes_regroupees": "2026-09-21<->2026-12-30|2027-01-01<->2027-06-09",
+        "Description": "Besoin d’un coup de pouce pour votre projet de couture ? Venez transformer ou réparer vos vêtements existants, ou créer la tenue de vos envies grâce à un accompagnement personnalisé. Des séances ouvertes à tous les projets, sans engagement et sur réservation.",
+        "Adresse_postale": "276, Avenue du Général de Gaulles",
+        "Contacts_du_POI": "#|COURS DE COUTURE#https://www.labeilleverte.net/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/4bcfd585-f9e4-3de1-9ed5-d114c48be0fb",
         "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7305848,
-        "Longitude": 3.3213462,
+        "Latitude": 43.7273482,
+        "Longitude": 3.3236456,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-19"
-      },
-      {
-        "Nom_du_POI": "MOVIE MOVIE",
-        "Periodes_regroupees": "2026-11-28<->2026-11-28",
-        "Description": "Atelier proposé dans le cadre de \"Ce qui nous lie, rencontres de cinéma\", et dans le cadre de la résidence artistique de la Cie Barbès 35 et leur spectacle en création La Giornata.",
-        "Adresse_postale": "Quai Mégisserie",
-        "Contacts_du_POI": "MOVIE MOVIE#https://mediatheque-lodeve.bibli.fr/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/02e66589-2dd5-37ee-a9d4-056702c292c2",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7299789,
-        "Longitude": 3.3190648,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-05"
-      },
-      {
-        "Nom_du_POI": "PERFORMANCE GOURMANDE : LA GIORNATA AUTOUR D'UN MINESTRONE",
-        "Periodes_regroupees": "2026-11-27<->2026-11-27",
-        "Description": "Pour les yeux et les oreilles, un duo performatif caustique et mordant inspiré du film Una giornata particolare d’Ettore Scola. Et pour les papilles, minestrone et bruschetta !\nPar Cendre Chassanne & Jean-Baptiste Gillet, Cie Barbès 35 \nDès 12 ans\n\nDans le cadre de la résidence artistique de la Cie Barbès 35, avec la complicité des Mangeurs d’étoiles & Entrez libres ! et des Rencontres de cinéma c",
-        "Adresse_postale": "Quai Mégisserie",
-        "Contacts_du_POI": "PERFORMANCE GOURMANDE : LA GIORNATA AUTOUR D'UN MINESTRONE#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/16b020af-f670-3448-94b8-6018c720345f",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7299789,
-        "Longitude": 3.3190648,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-23"
-      },
-      {
-        "Nom_du_POI": "KAMISHIBAÏ D'OMBRE",
-        "Periodes_regroupees": "2026-11-28<->2026-11-28",
-        "Description": "Un spectacle participatif à la médiathèque Confluence pour les tous petits.",
-        "Adresse_postale": "place Francis Morand",
-        "Contacts_du_POI": "KAMISHIBAÏ D'OMBRE#https://mediatheque-lodeve.bibli.fr/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/be4990e1-7cd3-34ac-9cf9-38a7320a730f",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7318603,
-        "Longitude": 3.3165558,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-05"
+        "Date_de_mise_a_jour": "2026-10-04"
       },
       {
         "Nom_du_POI": "FABRICATION DE JEUX OPTIQUES",
@@ -726,6 +674,19 @@
         "Adresse_postale": "place Francis Morand",
         "Contacts_du_POI": "FABRICATION DE JEUX OPTIQUES#https://mediatheque-lodeve.bibli.fr/",
         "URI_ID_du_POI": "https://data.datatourisme.fr/32/002066a0-0328-33e2-8692-f8ab6a2b6123",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7318603,
+        "Longitude": 3.3165558,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-05"
+      },
+      {
+        "Nom_du_POI": "KAMISHIBAÏ D'OMBRE",
+        "Periodes_regroupees": "2026-11-28<->2026-11-28",
+        "Description": "Un spectacle participatif à la médiathèque Confluence pour les tous petits.",
+        "Adresse_postale": "place Francis Morand",
+        "Contacts_du_POI": "KAMISHIBAÏ D'OMBRE#https://mediatheque-lodeve.bibli.fr/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/be4990e1-7cd3-34ac-9cf9-38a7320a730f",
         "Code_postal_et_commune": "34700#Lodève",
         "Latitude": 43.7318603,
         "Longitude": 3.3165558,
@@ -744,6 +705,110 @@
         "Longitude": 3.3165558,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
         "Date_de_mise_a_jour": "2026-10-30"
+      },
+      {
+        "Nom_du_POI": "MOVIE MOVIE",
+        "Periodes_regroupees": "2026-11-28<->2026-11-28",
+        "Description": "Atelier proposé dans le cadre de \"Ce qui nous lie, rencontres de cinéma\", et dans le cadre de la résidence artistique de la Cie Barbès 35 et leur spectacle en création La Giornata.",
+        "Adresse_postale": "Quai Mégisserie",
+        "Contacts_du_POI": "MOVIE MOVIE#https://mediatheque-lodeve.bibli.fr/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/02e66589-2dd5-37ee-a9d4-056702c292c2",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7299789,
+        "Longitude": 3.3190648,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-05"
+      },
+      {
+        "Nom_du_POI": "SOIRÉE DE SOUTIEN AU PLANNING FAMILIAL DE LODÈVE",
+        "Periodes_regroupees": "2026-12-04<->2026-12-04",
+        "Description": "Spectacle avec buvette, cantine, conseillé à partir de 8 ans.",
+        "Adresse_postale": "9 Avenue Denfert",
+        "Contacts_du_POI": "SOIRÉE DE SOUTIEN AU PLANNING FAMILIAL DE LODÈVE#|#https://www.onparticipe.fr/b/MuertoCocoPlanningFamilial",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/34808f0e-b116-3762-a4b8-263969bb7023",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7301048,
+        "Longitude": 3.3240831,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-27"
+      },
+      {
+        "Nom_du_POI": "STAGE \" JEUX DE JAMBES\"",
+        "Periodes_regroupees": "2026-12-06<->2026-12-06|2026-12-05<->2026-12-05",
+        "Description": "STAGE \" Jeux de Jambes\" - Parce que le Tango n’est pas qu’une affaire d’Abrazo … Apprends à donner vie à tes jambes pour une danse encore plus riche et joueuse.\nUn stage qui n’est pas seulement pour apprendre mais pour maîtriser et intégrer cette dimension à votre danse.",
+        "Adresse_postale": "9 Avenue Denfert",
+        "Contacts_du_POI": "STAGE \" JEUX DE JAMBES\"#https://www.claireynicolastango.fr/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/c750a225-8d49-3b70-9742-a0d25a71e5b2",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7300469,
+        "Longitude": 3.3239678,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-23"
+      },
+      {
+        "Nom_du_POI": "MARCHÉ DE NOËL À L’ATELIER MUSKA",
+        "Periodes_regroupees": "2026-12-04<->2026-12-28",
+        "Description": "Marché de Noël à l’Atelier Muska : un rendez-vous artisanal réunissant quatre créatrices et leurs œuvres originales",
+        "Adresse_postale": "27 Rue Neuve des Marchés",
+        "Contacts_du_POI": "MARCHÉ DE NOËL À L’ATELIER MUSKA#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/9cb61ab7-07e6-3dea-b131-31f51fcdcd34",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7305848,
+        "Longitude": 3.3213462,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-19"
+      },
+      {
+        "Nom_du_POI": "SALON DU LIVRE DES AUTEURS LOCAUX",
+        "Periodes_regroupees": "2026-11-28<->2026-11-28",
+        "Description": "Le Salon du Livre des auteurs locaux investit la halle Dardé de Lodève. \nAu programme : rencontres avec les auteurs, conférence sur Paul Dardé, lectures pour adultes et enfants , suivies d'un repas crêpes/galettes et d'un concert de Lula Heldt. Crêpes, galettes et vin chaud toute la journée !",
+        "Adresse_postale": "Place de la Halle Dardé",
+        "Contacts_du_POI": "#|SALON DU LIVRE DES AUTEURS LOCAUX#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/8a249b49-2f87-31d5-902f-17832548ea74",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7304429,
+        "Longitude": 3.3211904,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-19"
+      },
+      {
+        "Nom_du_POI": "ATELIER \"RÉPARE ET CAFÉ\"",
+        "Periodes_regroupees": "2026-12-03<->2026-12-03",
+        "Description": "Apprenez à entretenir et réparer vos petits appareils électroménagers",
+        "Adresse_postale": "11 Avenue Docteur Joseph Maury",
+        "Contacts_du_POI": "ATELIER \"RÉPARE ET CAFÉ\"#https://www.labeilleverte.net/",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/5302f494-e3c5-382a-a7f8-4dd486351eda",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7328026,
+        "Longitude": 3.3140393,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-27"
+      },
+      {
+        "Nom_du_POI": "PROJECTION : INTERSTELLAR DE CHRISTOPHER NOLAN",
+        "Periodes_regroupees": "2026-11-29<->2026-11-29",
+        "Description": "Un voyage interstellaire dans le cadre du Festival \"Ce qui nous lie\"",
+        "Adresse_postale": "Avenue Docteur Joseph Maury",
+        "Contacts_du_POI": "PROJECTION : INTERSTELLAR DE CHRISTOPHER NOLAN#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/60843a2b-0ccf-3a7f-97ea-631bc3abe50c",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7326331,
+        "Longitude": 3.3142456,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-27"
+      },
+      {
+        "Nom_du_POI": "PROJECTION : L'ARMÉE DES 12 SINGES DE TERRY GILLIAM",
+        "Periodes_regroupees": "2026-11-29<->2026-11-29",
+        "Description": "Un thriller de science-fiction dystopique de 1995 dans le cadre du Festival \"Ce qui noue lie\"",
+        "Adresse_postale": "Avenue Docteur Joseph Maury",
+        "Contacts_du_POI": "PROJECTION : L'ARMÉE DES 12 SINGES DE TERRY GILLIAM#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/f3b8670d-ad3c-314d-8fb3-62577e9259e2",
+        "Code_postal_et_commune": "34700#Lodève",
+        "Latitude": 43.7326331,
+        "Longitude": 3.3142456,
+        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "PROJECTION : LES MUSICIENS | GRÉGORY MAGNE",
@@ -772,19 +837,6 @@
         "Date_de_mise_a_jour": "2026-11-25"
       },
       {
-        "Nom_du_POI": "PROJECTION : DES FEMMES COMME LES AUTRES | DOMINIQUE CABRERA",
-        "Periodes_regroupees": "2026-11-27<->2026-11-27",
-        "Description": "Projection cinéma\nFrance 2027 | comédie dramatique\nEn présence de la réalisatrice | médiation : Marie Demunter\nEn partenariat avec l’Agence Unique et en présence de Corine Girieud, docteure en histoire de l’art\nProposée dans le cadre des Rencontres de cinéma Ce qui nous lie, du 25 au 28 novembre 2026",
-        "Adresse_postale": "Avenue Docteur Joseph Maury",
-        "Contacts_du_POI": "PROJECTION : DES FEMMES COMME LES AUTRES | DOMINIQUE CABRERA#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/cc604f77-a640-3b59-ad36-c4da96160e3c",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7326331,
-        "Longitude": 3.3142456,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-23"
-      },
-      {
         "Nom_du_POI": "CINE GOUTER : PETITE CASBAH | ANTOINE COLOMB",
         "Periodes_regroupees": "2026-11-28<->2026-11-28",
         "Description": "Projection cinéma\nFrance 2026 | animé dès 7 ans \nAlgérie, juin 1955. Khadidja quitte la Kabylie pour rejoindre son frère Malek à Alger. Celui-ci se fait arrêter par la police. Khadidja et ses amis vont alors tout mettre en oeuvre pour le retrouver. Depuis les toits de la Casbah, ils mènent l’enquête...\nProposé dans le cadre des Rencontres de cinéma Ce qui nous lie, du 25 au 28 novembre 2026",
@@ -808,7 +860,7 @@
         "Latitude": 43.7326331,
         "Longitude": 3.3142456,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-25"
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "PROJECTION : LA JETÉE DE CHRIS MARKER",
@@ -821,20 +873,7 @@
         "Latitude": 43.7326331,
         "Longitude": 3.3142456,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-25"
-      },
-      {
-        "Nom_du_POI": "PROJECTION : INTERSTELLAR DE CHRISTOPHER NOLAN",
-        "Periodes_regroupees": "2026-11-29<->2026-11-29",
-        "Description": "Un voyage interstellaire dans le cadre du Festival \"Ce qui nous lie\"",
-        "Adresse_postale": "Avenue Docteur Joseph Maury",
-        "Contacts_du_POI": "PROJECTION : INTERSTELLAR DE CHRISTOPHER NOLAN#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/60843a2b-0ccf-3a7f-97ea-631bc3abe50c",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7326331,
-        "Longitude": 3.3142456,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-25"
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "PROJECTION : NAUCISAÄ DE LA VALLÉE DU VENT DE HAYAO MIYAZAKI",
@@ -847,59 +886,20 @@
         "Latitude": 43.7326331,
         "Longitude": 3.3142456,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-25"
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
-        "Nom_du_POI": "PROJECTION : L'ARMÉE DES 12 SINGES DE TERRY GILLIAM",
-        "Periodes_regroupees": "2026-11-29<->2026-11-29",
-        "Description": "Un thriller de science-fiction dystopique de 1995 dans le cadre du Festival \"Ce qui noue lie\"",
+        "Nom_du_POI": "LOTO À LODÈVE",
+        "Periodes_regroupees": "2026-12-13<->2026-12-13",
+        "Description": null,
         "Adresse_postale": "Avenue Docteur Joseph Maury",
-        "Contacts_du_POI": "PROJECTION : L'ARMÉE DES 12 SINGES DE TERRY GILLIAM#",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/f3b8670d-ad3c-314d-8fb3-62577e9259e2",
+        "Contacts_du_POI": "LOTO À LODÈVE#",
+        "URI_ID_du_POI": "https://data.datatourisme.fr/32/68749acb-dbe0-3324-b2d3-b4feb2aaeffc",
         "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7326331,
-        "Longitude": 3.3142456,
+        "Latitude": 43.732904,
+        "Longitude": 3.3139394,
         "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-25"
-      },
-      {
-        "Nom_du_POI": "STAGE \" JEUX DE JAMBES\"",
-        "Periodes_regroupees": "2026-12-06<->2026-12-06|2026-12-05<->2026-12-05",
-        "Description": "STAGE \" Jeux de Jambes\" - Parce que le Tango n’est pas qu’une affaire d’Abrazo … Apprends à donner vie à tes jambes pour une danse encore plus riche et joueuse.\nUn stage qui n’est pas seulement pour apprendre mais pour maîtriser et intégrer cette dimension à votre danse.",
-        "Adresse_postale": "9 Avenue Denfert",
-        "Contacts_du_POI": "STAGE \" JEUX DE JAMBES\"#https://www.claireynicolastango.fr/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/c750a225-8d49-3b70-9742-a0d25a71e5b2",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7300469,
-        "Longitude": 3.3239678,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-23"
-      },
-      {
-        "Nom_du_POI": "SOIRÉE DE SOUTIEN AU PLANNING FAMILIAL DE LODÈVE",
-        "Periodes_regroupees": "2026-12-04<->2026-12-04",
-        "Description": "Spectacle avec buvette, cantine, conseillé à partir de 8 ans.",
-        "Adresse_postale": "9 Avenue Denfert",
-        "Contacts_du_POI": "SOIRÉE DE SOUTIEN AU PLANNING FAMILIAL DE LODÈVE#|#https://www.onparticipe.fr/b/MuertoCocoPlanningFamilial",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/34808f0e-b116-3762-a4b8-263969bb7023",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7301048,
-        "Longitude": 3.3240831,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-24"
-      },
-      {
-        "Nom_du_POI": "ATELIER \"RÉPARE ET CAFÉ\"",
-        "Periodes_regroupees": "2026-12-03<->2026-12-03",
-        "Description": "Apprenez à entretenir et réparer vos petits appareils électroménagers",
-        "Adresse_postale": "11 Avenue Docteur Joseph Maury",
-        "Contacts_du_POI": "ATELIER \"RÉPARE ET CAFÉ\"#https://www.labeilleverte.net/",
-        "URI_ID_du_POI": "https://data.datatourisme.fr/32/5302f494-e3c5-382a-a7f8-4dd486351eda",
-        "Code_postal_et_commune": "34700#Lodève",
-        "Latitude": 43.7328026,
-        "Longitude": 3.3140393,
-        "Createur_de_la_donnee": "34 - OT LODEVOIS ET LARZAC",
-        "Date_de_mise_a_jour": "2026-11-25"
+        "Date_de_mise_a_jour": "2026-11-27"
       },
       {
         "Nom_du_POI": "LES DIMANCHES DU PATRIMOINE : L'APOTHICAIRERIE, ANCIENNE PHARMACIE DE L'HÔPITAL DE LODÈVE",
